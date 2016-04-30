@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class GameTest {
     @Test
     public void shouldLoadSettingsFromFile() throws Exception {
-        final Map<String, Object> settings = Game.getSettings();
+        final Map<String, Object> settings = Game.getSettings("server");
         for (Map.Entry settingPair: settings.entrySet()) {
             System.out.println(settingPair.getKey() + ": " + settingPair.getValue());
         }

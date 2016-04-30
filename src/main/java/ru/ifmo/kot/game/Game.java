@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.ifmo.kot.game.util.JsonUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,33 +16,23 @@ public class Game {
     private static final Logger LOGGER = LogManager.getRootLogger();
     private static final String SETTINGS_FILE_PATH = "settings.json";
     private static final ObjectMapper JSON_MAPPER = new ObjectMapper();
-
     private static Map<String, Object> settings;
+
     static {
         loadSettingsFromFile();
     }
 
-    public static void loadSettingsFromFile() {
-        final ClassLoader classLoader = Game.class.getClassLoader();
-        final URL settingsUrl = classLoader.getResource(SETTINGS_FILE_PATH);
-        File settingsFile = null;
-        if (settingsUrl != null) {
-            settingsFile = new File(settingsUrl.getFile());
-        } else {
-            LOGGER.error("Settings file is not found");
-            System.exit(-1);
-        }
-        try {
-           settings = JSON_MAPPER.readValue(settingsFile, new
-                    TypeReference<Map<String, Object>>(){});
-            LOGGER.debug("Settings are loaded successfully");
-        } catch (IOException e) {
-            LOGGER.error("Settings cannot be loaded", e);
+    private static void loadSettingsFromFile() {
+        settings = JsonUtil.loadJsonFile(SETTINGS_FILE_PATH);
+        if (settings == null) {
+            LOGGER.error("Settings has not loaded. Program is finishing.");
             System.exit(-1);
         }
     }
 
-    public static Map<String, Object> getSettings() {
-        return settings;
+
+    @SuppressWarnings("unchecked")
+    public static Map<String, Object> getSettings(final String key) {
+        return (Map<String, Object>) settings.get(key);
     }
 }
