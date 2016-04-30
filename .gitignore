@@ -1,0 +1,12 @@
+# IntelliJ project files
+.idea
+out
+gen
+
+# Gradle template
+.gradle
+build
+
+!gradle-wrapper.jar
+!gradlew
+!gradlew.bat
