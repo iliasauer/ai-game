@@ -1,6 +1,5 @@
 package ru.ifmo.kot.game;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.util.JsonUtil;
@@ -11,7 +10,6 @@ public class Game {
 
     private static final Logger LOGGER = LogManager.getRootLogger();
     private static final String SETTINGS_FILE_PATH = "settings.json";
-    private static final ObjectMapper JSON_MAPPER = new ObjectMapper();
     private static Map<String, Object> settings;
 
     static {

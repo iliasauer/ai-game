@@ -4,6 +4,7 @@
     "contextPath": "/"
   },
   "elements": {
-    "verticesFilePath": "vertices.json"
+    "verticesFilePath": "vertices.json",
+    "numberOfLives": 3
   }
 }
