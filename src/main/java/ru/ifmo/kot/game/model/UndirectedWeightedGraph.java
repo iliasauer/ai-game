@@ -3,11 +3,14 @@ package ru.ifmo.kot.game.model;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import ru.ifmo.kot.game.util.BinaryRandom;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class UndirectedWeightedGraph {
+
+    private int numberOfVertices;
     private Map<Integer, Vertex> vertices;
     private Map<Map.Entry<Integer, Integer>, Edge> edges;
     private int[][] adjacencyMatrix;
@@ -18,7 +21,7 @@ public class UndirectedWeightedGraph {
     }
 
     public UndirectedWeightedGraph(final List<String> verticesNames) {
-        final int numberOfVertices = verticesNames.size();
+        numberOfVertices = verticesNames.size();
         vertices = new HashMap<>(numberOfVertices);
         int index = 0;
         for (final String vertexName: verticesNames) {
@@ -81,11 +84,24 @@ public class UndirectedWeightedGraph {
     }
 
     public void printEdges() {
-        final int numberOfVertices = vertices.size();
         for (int i = 0; i < vertices.size(); i++) {
             for (int j = i + 1; j < numberOfVertices; j++) {
 //                edges.get()
             }
         }
+    }
+
+    public List<Edge> adjacentEdges() {
+        return null;
+    }
+
+    public Iterable<Edge> edges() {
+        List<Edge> edges = new ArrayList<>();
+        for (final Vertex vertex: vertices.values()) {
+            for (final Edge adjacentEdge: adjacentEdges()) {
+//                if (adjacentEdge.otherVertex(vertex) > vertex)
+            }
+        }
+        return null;
     }
 }
