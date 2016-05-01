@@ -1,5 +1,7 @@
 package ru.ifmo.kot.game.model;
 
+import ru.ifmo.kot.game.util.BinaryRandom;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,18 +10,28 @@ public class Graph {
     private Map<Integer, Vertex> vertices;
     private List<Edge> edges;
     private int[][] adjacencyMatrix;
+    private double coefficientOfEdgeNumber = 0.6;
 
     public Graph(final int numberOfVertices) {
         initAdjacencyMatrix(numberOfVertices);
     }
 
     public Graph(final List<String> verticesNames) {
-        vertices = new HashMap<>(verticesNames.size());
+        final int numberOfVertices = verticesNames.size();
+        vertices = new HashMap<>(numberOfVertices);
         int index = 0;
         for (final String vertexName: verticesNames) {
             vertices.put(index++, new Vertex(vertexName));
         }
-        initAdjacencyMatrix(verticesNames.size());
+        initAdjacencyMatrix(numberOfVertices);
+        final BinaryRandom random = new BinaryRandom(coefficientOfEdgeNumber);
+        for (int i = 0; i < numberOfVertices - 1; i++) {
+            for (int j = i + 1; j < numberOfVertices; j++) {
+                if (random.nextBoolean()) {
+                    putEdge(new Edge(i, j, 50));
+                }
+            }
+        }
     }
 
     private void initAdjacencyMatrix(final int numberOfVertices) {
