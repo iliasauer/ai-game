@@ -1,6 +1,5 @@
 package ru.ifmo.kot.game.server;
 
-import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.util.log.Logger;
 
 public class SimplestLogger implements Logger {

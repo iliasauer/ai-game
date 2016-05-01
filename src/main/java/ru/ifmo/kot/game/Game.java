@@ -1,14 +1,10 @@
 package ru.ifmo.kot.game;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.util.JsonUtil;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
 import java.util.Map;
 
 public class Game {
