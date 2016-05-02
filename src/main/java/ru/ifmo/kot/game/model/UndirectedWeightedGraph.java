@@ -1,107 +1,86 @@
 package ru.ifmo.kot.game.model;
 
-import org.apache.commons.lang3.tuple.ImmutablePair;
 import ru.ifmo.kot.game.util.BinaryRandom;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
-public class UndirectedWeightedGraph {
+public class UndirectedWeightedGraph implements Graph {
 
-    private int numberOfVertices;
-    private Map<Integer, Vertex> vertices;
-    private Map<Map.Entry<Integer, Integer>, Edge> edges;
-    private int[][] adjacencyMatrix;
-    private double coefficientOfEdgeNumber = 0.6;
+    private static final double COEFFICIENT_OF_EDGE_NUMBER = 0.3;
+    private static final int WEIGHT_MULTIPLIER_UPPER_BOUND = 15;
+    private static final int WEIGHT_MULTIPLIER_LOWER_BOUND = 13;
+    private static final int WEIGHT_MULTIPLIER_RANGE =
+            WEIGHT_MULTIPLIER_UPPER_BOUND - WEIGHT_MULTIPLIER_LOWER_BOUND;
+    private static final BinaryRandom BINARY_RANDOM = new BinaryRandom(COEFFICIENT_OF_EDGE_NUMBER);
+    private static final Random USUAL_RANDOM = new Random();
 
-    public UndirectedWeightedGraph(final int numberOfVertices) {
-        initAdjacencyMatrix(numberOfVertices);
-    }
+    private final int numberOfVertices;
+    private int numberOfEdges;
+    private List<Map<Integer, Integer>> adjacencyEdgeList;
+    @SuppressWarnings("FieldCanBeLocal")
 
-    public UndirectedWeightedGraph(final List<String> verticesNames) {
-        numberOfVertices = verticesNames.size();
-        vertices = new HashMap<>(numberOfVertices);
-        int index = 0;
-        for (final String vertexName: verticesNames) {
-            vertices.put(index, new Vertex(vertexName));
-            index++;
+    UndirectedWeightedGraph(final int numberOfVertices) {
+        this.numberOfVertices = numberOfVertices;
+        this.numberOfEdges = 0;
+        adjacencyEdgeList = new ArrayList<>(numberOfVertices);
+        for (int i = 0; i < numberOfVertices; i++) {
+            adjacencyEdgeList.add(new HashMap<>());
         }
-        initAdjacencyMatrix(numberOfVertices);
-        final BinaryRandom random = new BinaryRandom(coefficientOfEdgeNumber);
-        index = 0;
-        for (int i = 0; i < numberOfVertices - 1; i++) {
-            for (int j = i + 1; j < numberOfVertices; j++) {
-                if (random.nextBoolean()) {
-                    final int weight = 29;
-                    putEdge(i, j, weight);;
+        for (int srcVrtxIndex = 0; srcVrtxIndex < numberOfVertices - 1; srcVrtxIndex++) {
+            for (int dstVrtxIndx = srcVrtxIndex + 1; dstVrtxIndx < numberOfVertices; dstVrtxIndx++) {
+                if (BINARY_RANDOM.nextBoolean()) {
+                    final int weight = nextWeight(srcVrtxIndex, dstVrtxIndx);
+                    putEdge(srcVrtxIndex, dstVrtxIndx, weight);
                 }
             }
         }
     }
 
-    private void initAdjacencyMatrix(final int numberOfVertices) {
-        adjacencyMatrix = new int[numberOfVertices][numberOfVertices];
+    @Override
+    public int numberOfVertices() {
+        return numberOfVertices;
     }
 
-    public void printAdjacencyMatrix() {
-        for (int[] row: adjacencyMatrix) {
-            for (int value: row) {
-                System.out.print(value + " ");
-            }
-            System.out.println();
-        }
+    @Override
+    public int numberOfEdges() {
+        return numberOfEdges;
     }
 
+    @Override
     public void putEdge(final int srcVrtxIndx, final int dstVrtxIndx, final int weight) {
-        final Vertex srcVertex = getVertex(srcVrtxIndx);
-        final Vertex dstVertex = getVertex(dstVrtxIndx);
-        final Edge edge = new Edge(srcVertex, dstVertex, weight);
-        edges.put(new ImmutablePair<>(srcVrtxIndx, dstVrtxIndx), edge);
-        adjacencyMatrix[srcVrtxIndx][dstVrtxIndx] =
-        adjacencyMatrix[dstVrtxIndx][srcVrtxIndx] = weight;
+        adjacencyEdgeList.get(srcVrtxIndx).put(dstVrtxIndx, weight);
+        adjacencyEdgeList.get(dstVrtxIndx).put(srcVrtxIndx, weight);
+        numberOfEdges++;
     }
 
-    public int getWeight(final int srcVrtxIndx,
-                         final int dstVrtxIndx) {
-        return adjacencyMatrix[srcVrtxIndx][dstVrtxIndx];
-    }
-
-    public boolean areConnected(final int srcVrtxIndx,
-                                final int dstVrtxIndx) {
-        return getWeight(srcVrtxIndx, dstVrtxIndx) > 0;
-    }
-
-    public Vertex getVertex(final int index) {
-        return vertices.get(index);
-    }
-
-    public void printVertices() {
-        for (final Map.Entry<Integer, Vertex> vertexEntry: vertices.entrySet()) {
-            System.out.println(vertexEntry.getKey() + ": " + vertexEntry.getValue());
-        }
-    }
-
-    public void printEdges() {
-        for (int i = 0; i < vertices.size(); i++) {
-            for (int j = i + 1; j < numberOfVertices; j++) {
-//                edges.get()
-            }
-        }
-    }
-
-    public List<Edge> adjacentEdges() {
-        return null;
-    }
-
+    @Override
     public Iterable<Edge> edges() {
         List<Edge> edges = new ArrayList<>();
-        for (final Vertex vertex: vertices.values()) {
-            for (final Edge adjacentEdge: adjacentEdges()) {
-//                if (adjacentEdge.otherVertex(vertex) > vertex)
+        for (int srcVrtxIndx = 0; srcVrtxIndx < adjacencyEdgeList.size(); srcVrtxIndx++) {
+            for (final Map.Entry<Integer, Integer> edgePair :
+                    adjacencyEdgeList.get(srcVrtxIndx).entrySet()) {
+                final int dstVrtxIndx = edgePair.getKey();
+                final int weight = edgePair.getValue();
+                if (srcVrtxIndx < dstVrtxIndx){
+                    edges.add(new Edge(srcVrtxIndx, dstVrtxIndx, weight));
+                }
             }
         }
-        return null;
+        return edges;
     }
+
+    private int deltaIndex(final int srcVrtxIndx, final int dstVrtxIndx) {
+        return Math.abs(srcVrtxIndx - dstVrtxIndx);
+    }
+
+    private int nextWeight(final int srcVrtxIndx, final int dstVrtxIndx) {
+        return (USUAL_RANDOM.nextInt(WEIGHT_MULTIPLIER_RANGE + 1) + WEIGHT_MULTIPLIER_LOWER_BOUND)
+                *
+                deltaIndex(srcVrtxIndx, dstVrtxIndx);
+    }
+
 }

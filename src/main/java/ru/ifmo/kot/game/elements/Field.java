@@ -2,6 +2,7 @@ package ru.ifmo.kot.game.elements;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.ifmo.kot.game.model.SymbolGraph;
 import ru.ifmo.kot.game.model.UndirectedWeightedGraph;
 import ru.ifmo.kot.game.util.JsonUtil;
 
@@ -20,7 +21,7 @@ public class Field {
         return SETTINGS.get(key);
     }
 
-    private UndirectedWeightedGraph gameModel;
+    private SymbolGraph gameModel;
 
     @SuppressWarnings("unchecked")
     public Field() {
@@ -33,13 +34,13 @@ public class Field {
             LOGGER.error("Vertices are not specified");
         }
         if (verticesNames != null) {
-            gameModel = new UndirectedWeightedGraph(verticesNames);
+            gameModel = new SymbolGraph(verticesNames);
         } else {
             LOGGER.error("Vertices names are not specified");
         }
     }
 
-    public UndirectedWeightedGraph getGameModel() {
+    public SymbolGraph getGameModel() {
         return gameModel;
     }
 }

@@ -4,28 +4,34 @@ import java.text.MessageFormat;
 
 public class Edge implements Comparable<Edge> {
 
-    private Vertex sourceVertex;
-    private Vertex destinationVertex;
+    public static final String STRING_PATTERN = "{0} - {1}: {2}";
+
+    private int srcVrtxIndx;
+    private int dstVrtxIndx;
     private int weight;
 
-    public Edge(final Vertex sourceVertex, final Vertex destinationVertex, final int weight) {
-        this.sourceVertex = sourceVertex;
-        this.destinationVertex = destinationVertex;
+    public Edge(final int srcVrtxIndx, final int dstVrtxIndx, final int weight) {
+        this.srcVrtxIndx = srcVrtxIndx;
+        this.dstVrtxIndx = dstVrtxIndx;
         this.weight = weight;
     }
 
-    public Vertex anyVertex() {
-        return sourceVertex;
+    public int anyVertexIndex() {
+        return srcVrtxIndx;
     }
 
-    public Vertex otherVertex(final Vertex vertex) {
-        if (vertex == sourceVertex) {
-            return destinationVertex;
+    public int otherVertexIndex(final int vrtxIndx) {
+        if (vrtxIndx == srcVrtxIndx) {
+            return dstVrtxIndx;
         }
-        if (vertex == destinationVertex) {
-            return sourceVertex;
+        if (vrtxIndx == dstVrtxIndx) {
+            return srcVrtxIndx;
         }
-        return null;
+        return -1; //todo maybe replace with Exception
+    }
+
+    public int weight() {
+        return weight;
     }
 
     @Override
@@ -43,7 +49,6 @@ public class Edge implements Comparable<Edge> {
 
     @Override
     public String toString() {
-        return MessageFormat.format("{0} - {1} {2}",
-                sourceVertex.name(), destinationVertex.name(), weight);
+        return MessageFormat.format(STRING_PATTERN, srcVrtxIndx, dstVrtxIndx, weight);
     }
 }
