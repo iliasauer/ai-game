@@ -7,7 +7,9 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.net.URLDecoder;
 import java.util.Map;
 
 public class JsonUtil {
@@ -19,9 +21,13 @@ public class JsonUtil {
     public static Map<String, Object> loadJsonFile(final String jsonFilePath) {
         final ClassLoader classLoader = JsonUtil.class.getClassLoader();
         final URL jsonFileUrl = classLoader.getResource(jsonFilePath);
-        File jsonFile;
+        File jsonFile = null;
         if (jsonFileUrl != null) {
-            jsonFile = new File(jsonFileUrl.getFile());
+            try {
+                jsonFile = new File(URLDecoder.decode(jsonFileUrl.getFile(), "UTF-8"));
+            } catch (UnsupportedEncodingException e) {
+                LOGGER.error("The path is not correct");
+            }
         } else {
             LOGGER.error("The file is not found");
             return null;
@@ -30,7 +36,7 @@ public class JsonUtil {
             return JSON_MAPPER.readValue(jsonFile, new
                     TypeReference<Map<String, Object>>(){});
         } catch (IOException e) {
-            LOGGER.error("The file cannot be mapped", e);
+            LOGGER.error("The file cannot be mapped");
             return null;
         }
     }
