@@ -4,10 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import ru.ifmo.kot.game.model.Edge;
-import ru.ifmo.kot.game.model.Graph;
-import ru.ifmo.kot.game.model.SymbolGraph;
-import ru.ifmo.kot.game.model.UndirectedWeightedGraph;
+import ru.ifmo.kot.game.model.*;
 
 import static org.junit.Assert.*;
 
