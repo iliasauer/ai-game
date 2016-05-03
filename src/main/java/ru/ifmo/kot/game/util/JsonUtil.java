@@ -19,7 +19,7 @@ public class JsonUtil {
     public static Map<String, Object> loadJsonFile(final String jsonFilePath) {
         final ClassLoader classLoader = JsonUtil.class.getClassLoader();
         final URL jsonFileUrl = classLoader.getResource(jsonFilePath);
-        File jsonFile = null;
+        File jsonFile;
         if (jsonFileUrl != null) {
             jsonFile = new File(jsonFileUrl.getFile());
         } else {

@@ -20,7 +20,7 @@ public class FieldTest {
         final Field field = new Field();
         gameModel = field.getGameModel();
     }
-    
+
     @Test
     public void shouldChangeWeight() throws Exception {
         Graph graph = gameModel.graph();
