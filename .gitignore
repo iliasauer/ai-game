@@ -8,6 +8,8 @@ gen
 .gradle
 build
 
+logs
+
 !gradle-wrapper.jar
 !gradlew
 !gradlew.bat
