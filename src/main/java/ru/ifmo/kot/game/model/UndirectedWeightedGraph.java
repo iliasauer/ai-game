@@ -4,13 +4,15 @@ import ru.ifmo.kot.game.util.BinaryRandom;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 
 public class UndirectedWeightedGraph implements Graph {
 
-    private static final double COEFFICIENT_OF_EDGE_NUMBER = 0.3;
+    private static final double COEFFICIENT_OF_EDGE_NUMBER = 0.1;
     private static final int WEIGHT_MULTIPLIER_UPPER_BOUND = 15;
     private static final int WEIGHT_MULTIPLIER_LOWER_BOUND = 13;
     private static final int WEIGHT_MULTIPLIER_RANGE =
@@ -21,9 +23,12 @@ public class UndirectedWeightedGraph implements Graph {
     private final int numberOfVertices;
     private int numberOfEdges;
     private List<Map<Integer, Integer>> adjacencyEdgeList;
-    @SuppressWarnings("FieldCanBeLocal")
+    private Set<Integer> mainVerticesTree;
 
     UndirectedWeightedGraph(final int numberOfVertices) {
+        if (numberOfVertices < 1) {
+            throw new IllegalArgumentException();
+        }
         this.numberOfVertices = numberOfVertices;
         this.numberOfEdges = 0;
         adjacencyEdgeList = new ArrayList<>(numberOfVertices);
@@ -38,6 +43,11 @@ public class UndirectedWeightedGraph implements Graph {
                 }
             }
         }
+        collectMainTreeVertices();
+        if (! hasSpanningTree()) {
+            fillGaps();
+            collectMainTreeVertices();
+        }
     }
 
     @Override
@@ -51,10 +61,15 @@ public class UndirectedWeightedGraph implements Graph {
     }
 
     @Override
-    public void putEdge(final int srcVrtxIndx, final int dstVrtxIndx, final int weight) {
-        adjacencyEdgeList.get(srcVrtxIndx).put(dstVrtxIndx, weight);
-        adjacencyEdgeList.get(dstVrtxIndx).put(srcVrtxIndx, weight);
-        numberOfEdges++;
+    public boolean putEdge(final int srcVrtxIndx, final int dstVrtxIndx, final int weight) {
+        if (srcVrtxIndx < numberOfVertices && dstVrtxIndx < numberOfVertices) {
+            adjacencyEdgeList.get(srcVrtxIndx).put(dstVrtxIndx, weight);
+            adjacencyEdgeList.get(dstVrtxIndx).put(srcVrtxIndx, weight);
+            numberOfEdges++;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
@@ -65,12 +80,17 @@ public class UndirectedWeightedGraph implements Graph {
                     adjacencyEdgeList.get(srcVrtxIndx).entrySet()) {
                 final int dstVrtxIndx = edgePair.getKey();
                 final int weight = edgePair.getValue();
-                if (srcVrtxIndx < dstVrtxIndx){
+                if (srcVrtxIndx < dstVrtxIndx) {
                     edges.add(new Edge(srcVrtxIndx, dstVrtxIndx, weight));
                 }
             }
         }
         return edges;
+    }
+
+    @Override
+    public int getWeight(final int srcVrtxIndx, final int dstVrtxIndx) {
+        return adjacencyEdgeList.get(srcVrtxIndx).get(dstVrtxIndx);
     }
 
     private int deltaIndex(final int srcVrtxIndx, final int dstVrtxIndx) {
@@ -81,6 +101,54 @@ public class UndirectedWeightedGraph implements Graph {
         return (USUAL_RANDOM.nextInt(WEIGHT_MULTIPLIER_RANGE + 1) + WEIGHT_MULTIPLIER_LOWER_BOUND)
                 *
                 deltaIndex(srcVrtxIndx, dstVrtxIndx);
+    }
+
+    private void collectMainTreeVertices() {
+        Set<Integer> mainVerticesTree = new HashSet<>();
+        Set<Integer> checkedKeys = new HashSet<>();
+        mainVerticesTree.add(0);
+        mainVerticesTree.addAll(adjacencyEdgeList.get(0).keySet());
+        checkedKeys.add(0);
+        while (checkedKeys.size() < mainVerticesTree.size()) {
+            Set<Integer> keySet = new HashSet<>();
+            for (Integer key : mainVerticesTree) {
+                if (! checkedKeys.contains(key)) {
+                    keySet.addAll(adjacencyEdgeList.get(key).keySet());
+                    checkedKeys.add(key);
+                }
+            }
+            mainVerticesTree.addAll(keySet);
+        }
+        this.mainVerticesTree = mainVerticesTree;
+    }
+
+    @Override
+    public boolean hasSpanningTree() {
+        return mainVerticesTree.size() == numberOfVertices;
+    }
+
+    private void fillGaps() {
+        if (numberOfVertices < 2) {
+            return;
+        }
+        if (! mainVerticesTree.contains(0)) {
+            putEdge(0, 1, nextWeight(0, 1));
+        }
+        if (numberOfVertices == 2) {
+            return;
+        }
+        if (numberOfVertices > 2) {
+            final int lastIndex = numberOfVertices - 1;
+            final int preLastIndex = lastIndex - 1;
+            if (! mainVerticesTree.contains(lastIndex)) {
+                putEdge(preLastIndex, lastIndex, nextWeight(preLastIndex, lastIndex));
+            }
+            for (int i = 1; i < lastIndex; i++) {
+                if (! mainVerticesTree.contains(i)) {
+                    putEdge(i, i + 1, nextWeight(i, i + 1));
+                }
+            }
+        }
     }
 
 }

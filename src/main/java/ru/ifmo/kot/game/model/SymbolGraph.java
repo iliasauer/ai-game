@@ -52,4 +52,21 @@ public class SymbolGraph {
                     edge.weight()));
         }
     }
+
+    public boolean putEdge(final String vertexName1, final String vertexName2, final int weight) {
+        if (contains(vertexName1) && contains(vertexName2)) {
+            graph.putEdge(index(vertexName1), index(vertexName2), weight);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int getWeight(final String vertexName1, final String vertexName2) {
+        if (contains(vertexName1) && contains(vertexName2)) {
+            return graph.getWeight(index(vertexName1), index(vertexName2));
+        } else {
+            return -1;
+        }
+    }
 }
