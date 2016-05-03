@@ -1,7 +1,5 @@
 package ru.ifmo.kot.game.elements;
 
-import org.junit.Assert;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import ru.ifmo.kot.game.model.*;
