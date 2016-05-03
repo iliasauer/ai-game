@@ -1,0 +1,3 @@
+rootProject.name = 'ai-game'
+
+include 'ai-game-server', 'ai-game-client'
