@@ -11,4 +11,6 @@ interface ServerConstants {
     String WEBAPP_PATH = "src/main/webapp";
     String WEBXML_PATH = WEBAPP_PATH + "/WEB-INF/web.xml";
     Map<String, Object> SETTINGS = Game.getSettings(SETTINGS_KEY);
+    Integer PORT = (Integer) SETTINGS.get(PORT_KEY);
+    String CONTEXT_PATH = (String) SETTINGS.get(CONTEXT_PATH_KEY);
 }

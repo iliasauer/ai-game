@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-2level %c{1} - %msg%n"/>
+        </Console>
+        <RollingFile name="RollingFile" fileName="logs/game-stat.log"
+                     filePattern="logs/$${date:MM-dd-yyyy}/game-stat-%i.log">
+            <PatternLayout pattern="%msg%n"/>
+            <Policies>
+                <OnStartupTriggeringPolicy />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="ERROR">
+            <AppenderRef ref="Console"/>
+        </Root>
+        <logger name="ru.ifmo.kot.game" level="DEBUG">
+            <AppenderRef ref="Console"/>
+        </logger>
+    </Loggers>
+</Configuration>

@@ -13,14 +13,10 @@ public class MainServer {
     private static final Logger LOGGER = Log.getLogger("SimplestLogger");
     static { LOGGER.setDebugEnabled(false); }
 
-    private static Object getSetting(final String key) {
-        return SETTINGS.get(key);
-    }
-
     public static void main(final String[] args) {
-        final Server server = new Server((Integer) getSetting(PORT_KEY));
+        final Server server = new Server(PORT);
         final WebAppContext context = new WebAppContext();
-        context.setContextPath((String) getSetting(CONTEXT_PATH_KEY));
+        context.setContextPath(CONTEXT_PATH);
         context.setResourceBase(WEBAPP_PATH);
         context.setDescriptor(WEBXML_PATH);
         context.setParentLoaderPriority(true);
