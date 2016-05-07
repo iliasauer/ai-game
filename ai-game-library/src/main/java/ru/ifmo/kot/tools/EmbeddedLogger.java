@@ -1,8 +1,8 @@
-package ru.ifmo.kot.game.server;
+package ru.ifmo.kot.tools;
 
 import org.eclipse.jetty.util.log.Logger;
 
-class EmbeddedLogger implements Logger {
+public class EmbeddedLogger implements Logger {
 
     private final String name = "EmbeddedLogger";
     private boolean debugEnabling = false;

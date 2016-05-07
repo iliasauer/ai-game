@@ -2,7 +2,7 @@ package ru.ifmo.kot.game;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.ifmo.kot.tools.util.JsonUtil;
+import ru.ifmo.kot.tools.JsonFileMapper;
 
 import java.util.Map;
 
@@ -17,7 +17,7 @@ public class Game {
     }
 
     private static void loadSettingsFromFile() {
-        settings = JsonUtil.loadJsonFile(SETTINGS_FILE_PATH);
+        settings = JsonFileMapper.readJson(SETTINGS_FILE_PATH);
         if (settings == null) {
             LOGGER.error("Settings has not loaded. Program is finishing.");
             System.exit(-1);

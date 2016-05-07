@@ -3,7 +3,7 @@ package ru.ifmo.kot.game.elements;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.model.SymbolGraph;
-import ru.ifmo.kot.tools.util.JsonUtil;
+import ru.ifmo.kot.tools.JsonFileMapper;
 
 import java.util.List;
 import java.util.Map;
@@ -19,7 +19,7 @@ public class Field {
     @SuppressWarnings("unchecked")
     public Field() {
         final Map<String, Object> verticesMap =
-                JsonUtil.loadJsonFile(VERTICES_FILE_PATH);
+                JsonFileMapper.readJson(VERTICES_FILE_PATH);
         List<String> verticesNames = null;
         if (verticesMap != null) {
             verticesNames = (List<String>) verticesMap.get(VERTICES_NAMES_KEY);

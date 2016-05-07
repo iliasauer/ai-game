@@ -1,4 +1,4 @@
-package ru.ifmo.kot.tools.util;
+package ru.ifmo.kot.tools;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -15,14 +15,14 @@ import java.util.Map;
 /**
  * Created on 07.05.16.
  */
-public class JsonUtil {
+public class JsonFileMapper {
 
-	private static final Logger LOGGER = LogManager.getLogger(JsonUtil.class);
+	private static final Logger LOGGER = LogManager.getLogger(JsonFileMapper.class);
 
 	private static final ObjectMapper JSON_MAPPER = new ObjectMapper();
 
-	public static Map<String, Object> loadJsonFile(final String jsonFilePath) {
-		final ClassLoader classLoader = JsonUtil.class.getClassLoader();
+	public static Map<String, Object> readJson(final String jsonFilePath) {
+		final ClassLoader classLoader = JsonFileMapper.class.getClassLoader();
 		final URL jsonFileUrl = classLoader.getResource(jsonFilePath);
 		File jsonFile = null;
 		if (jsonFileUrl != null) {

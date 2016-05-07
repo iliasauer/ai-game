@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.webapp.WebAppContext;
+import ru.ifmo.kot.tools.EmbeddedLogger;
 
 import javax.websocket.OnClose;
 import javax.websocket.OnError;
@@ -54,7 +55,7 @@ public class GameServer {
                 session.close();
                 LOGGER.debug("Exceeded the maximal number of clients");
             } catch (IOException exception) {
-                LOGGER.debug("Failed to close session");
+                LOGGER.debug("Failed to close the session");
             }
         }
     }
@@ -67,7 +68,7 @@ public class GameServer {
 
     @OnError
     public void handleClientError(final Session session, final Throwable error) {
-        LOGGER.debug("An error occurred on %s client", session.getId());
+        LOGGER.debug("An error occurred on the %s client", session.getId());
         removeClient(session);
     }
 
