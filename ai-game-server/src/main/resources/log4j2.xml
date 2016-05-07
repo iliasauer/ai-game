@@ -16,7 +16,7 @@
         <Root level="ERROR">
             <AppenderRef ref="Console"/>
         </Root>
-        <logger name="ru.ifmo.kot.game" level="DEBUG">
+        <logger name="ru.ifmo.kot.game" level="DEBUG" additivity="false">
             <AppenderRef ref="Console"/>
         </logger>
     </Loggers>

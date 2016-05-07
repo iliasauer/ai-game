@@ -3,8 +3,7 @@ package ru.ifmo.kot.game.elements;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.model.SymbolGraph;
-import ru.ifmo.kot.game.model.UndirectedWeightedGraph;
-import ru.ifmo.kot.game.util.JsonUtil;
+import ru.ifmo.kot.tools.util.JsonUtil;
 
 import java.util.List;
 import java.util.Map;

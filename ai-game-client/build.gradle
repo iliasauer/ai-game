@@ -8,4 +8,6 @@ dependencies {
 
     compile 'org.eclipse.jetty.websocket:websocket-client:9.3.9.M1'
     compile 'org.eclipse.jetty.websocket:javax-websocket-client-impl:9.3.9.M1'
+
+    compile project(':ai-game-library')
 }

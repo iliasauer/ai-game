@@ -1,7 +1,8 @@
 {
   "server": {
     "port": 8080,
-    "contextPath": "/"
+    "contextPath": "/",
+    "maxNumOfClients": 3
   },
   "elements": {
     "verticesFilePath": "vertices.json",

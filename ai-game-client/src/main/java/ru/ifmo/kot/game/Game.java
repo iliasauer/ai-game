@@ -2,7 +2,7 @@ package ru.ifmo.kot.game;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import util.JsonUtil;
+import ru.ifmo.kot.tools.util.JsonUtil;
 
 import java.util.Map;
 

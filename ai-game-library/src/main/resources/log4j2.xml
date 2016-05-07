@@ -4,8 +4,8 @@
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} %-2level %c{1} - %msg%n"/>
         </Console>
-        <RollingFile name="RollingFile" fileName="logs/game-stat.log"
-                     filePattern="logs/$${date:MM-dd-yyyy}/game-stat-%i.log">
+        <RollingFile name="RollingFile" fileName="logs/tools.log"
+                     filePattern="logs/$${date:MM-dd-yyyy}/tools-%i.log">
             <PatternLayout pattern="%msg%n"/>
             <Policies>
                 <OnStartupTriggeringPolicy />
@@ -16,7 +16,7 @@
         <Root level="ERROR">
             <AppenderRef ref="Console"/>
         </Root>
-        <logger name="ru.ifmo.kot.game" level="DEBUG" additivity="false">
+        <logger name="ru.ifmo.kot.tools" level="DEBUG" additivity="false">
             <AppenderRef ref="Console"/>
         </logger>
     </Loggers>
