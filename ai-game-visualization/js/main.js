@@ -6,8 +6,9 @@ require(["./requirejs/config"], function() {
         './controllers/mainController'
         
     ], function($, mainController) {
-        $.get('/main', function () {
-            mainController.render();
-        });
+        // $.get('/main', function () {
+        //     mainController.render();
+        // });
+        mainController.render();
     });
 });

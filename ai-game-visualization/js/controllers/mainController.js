@@ -1,8 +1,8 @@
 define(['jquery',
         'text!../../templates/app.hbs',
-        '../util/handlebarsUtil',
-        '../util/templateUtil',
-        '../util/cssUtil',
+        '../common/util/handlebarsUtil',
+        '../common/util/templateUtil',
+        '../common/util/cssUtil',
         './webSocketController'],
     function ($,
               appTemplate,
@@ -17,14 +17,12 @@ define(['jquery',
 
 
 
-        function render(prerunChartArr) {
+        function render() {
             function renderApp() {
                 hbUtil.compileAndInsertInside(jqId(['app']), appTemplate);
             }
-
-
             renderApp();
-            // webSocketController.connectWs();
+            webSocketController.connectWs();
         }
 
         return {

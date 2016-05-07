@@ -3,23 +3,18 @@ package ru.ifmo.kot.game.server;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.log.Log;
-import org.eclipse.jetty.webapp.WebAppContext;
-import ru.ifmo.kot.tools.EmbeddedLogger;
+import org.eclipse.jetty.servlet.ServletContextHandler;
 
-import javax.websocket.OnClose;
-import javax.websocket.OnError;
-import javax.websocket.OnMessage;
-import javax.websocket.OnOpen;
-import javax.websocket.Session;
+import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static ru.ifmo.kot.game.server.ServerConstants.*;
+import static ru.ifmo.kot.game.server.ServerConstants.CONTEXT_PATH;
+import static ru.ifmo.kot.game.server.ServerConstants.PORT;
 
-@ServerEndpoint("/gameserver")
+@ServerEndpoint(value = "/gameserver")
 public class GameServer {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameServer.class);
@@ -27,20 +22,28 @@ public class GameServer {
 
 
     public static void main(String[] args) {
-        Log.setLog(new EmbeddedLogger());
+//        Log.setLog(new EmbeddedLogger());
         final Server server = new Server(PORT);
-        final WebAppContext context = new WebAppContext();
-        context.setContextPath(CONTEXT_PATH);
-        context.setResourceBase(WEBAPP_PATH);
-        context.setDescriptor(WEBXML_PATH);
-        context.setParentLoaderPriority(true);
-        server.setHandler(context);
+//        final WebAppContext context = new WebAppContext();
+//        context.setContextPath(CONTEXT_PATH);
+//        context.setResourceBase(WEBAPP_PATH);
+//        context.setDescriptor(WEBXML_PATH);
+//        context.setParentLoaderPriority(true);
+//        server.setHandler(context);
         try {
+            ServletContextHandler context =
+                    new ServletContextHandler(ServletContextHandler.SESSIONS);
+            context.setContextPath(CONTEXT_PATH);
+//            server.setHandler(context);
+            // Initialize the JSR-356 layer
+//            final ServerContainer container =
+//                    WebSocketServerContainerInitializer.configureContext(context);
+//            container.addEndpoint(GameServer.class);
             server.start();
             LOGGER.debug("The game server started.");
             server.join();
-        } catch (Exception e) {
-            LOGGER.debug("The game server cannot started.", e);
+        } catch (Throwable e) {
+            LOGGER.debug("The game server cannot started.");
         }
     }
 
@@ -55,7 +58,7 @@ public class GameServer {
                 session.close();
                 LOGGER.debug("Exceeded the maximal number of clients");
             } catch (IOException exception) {
-                LOGGER.debug("Failed to close the session");
+                LOGGER.error("Failed to close the session");
             }
         }
     }
@@ -68,7 +71,7 @@ public class GameServer {
 
     @OnError
     public void handleClientError(final Session session, final Throwable error) {
-        LOGGER.debug("An error occurred on the %s client", session.getId());
+        LOGGER.error("An error occurred on the %s client", session.getId());
         removeClient(session);
     }
 
@@ -77,14 +80,10 @@ public class GameServer {
         LOGGER.info("The client %s: %s", session.getId(), message);
     }
 
-    public void sendMessage(final String message) {
+    public void sendMessage(final String message) throws IOException {
         for (final Session session: clients) {
             if (session.isOpen()) { // todo check the need
-                try {
-                    session.getBasicRemote().sendText(message);
-                } catch (IOException e) {
-                    LOGGER.debug("Failed to send the message to the client");
-                }
+                session.getBasicRemote().sendText(message);
             } else {
                 removeClient(session);
             }
