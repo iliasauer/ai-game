@@ -4,8 +4,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
 
 import javax.websocket.*;
+import javax.websocket.server.ServerContainer;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -34,11 +36,11 @@ public class GameServer {
             ServletContextHandler context =
                     new ServletContextHandler(ServletContextHandler.SESSIONS);
             context.setContextPath(CONTEXT_PATH);
-//            server.setHandler(context);
+            server.setHandler(context);
             // Initialize the JSR-356 layer
-//            final ServerContainer container =
-//                    WebSocketServerContainerInitializer.configureContext(context);
-//            container.addEndpoint(GameServer.class);
+            final ServerContainer container =
+                    WebSocketServerContainerInitializer.configureContext(context);
+            container.addEndpoint(GameServer.class);
             server.start();
             LOGGER.debug("The game server started.");
             server.join();

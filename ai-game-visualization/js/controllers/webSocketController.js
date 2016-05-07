@@ -37,7 +37,7 @@ define(['jquery',
 			if (!ws) {
 
 				ws = new WebSocket(WS_URL);
-
+				
 				ws.onopen = greetServer;
 
 				ws.onclose = handleClose;
