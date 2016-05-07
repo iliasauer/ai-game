@@ -7,4 +7,5 @@ dependencies {
 
     compile 'org.eclipse.jetty.websocket:websocket-server:9.3.9.M1'
     compile 'org.eclipse.jetty.websocket:websocket-common:9.3.9.M1'
+    compile 'org.eclipse.jetty.websocket:javax-websocket-server-impl:9.3.9.M1'
 }
