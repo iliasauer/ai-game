@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
+import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerContainer;
@@ -16,11 +17,11 @@ import java.util.List;
 import static ru.ifmo.kot.game.server.ServerConstants.CONTEXT_PATH;
 import static ru.ifmo.kot.game.server.ServerConstants.PORT;
 
-@ServerEndpoint(value = "/gameserver")
+@ServerEndpoint(value = "/game")
 public class GameServer {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameServer.class);
-    private List<Session> clients = new ArrayList<>(ServerConstants.MAX_NUM_OF_CLIENTS);
+    private final List<Session> clients = new ArrayList<>(ServerConstants.MAX_NUM_OF_CLIENTS);
 
 
     public static void main(String[] args) {
@@ -41,6 +42,7 @@ public class GameServer {
             final ServerContainer container =
                     WebSocketServerContainerInitializer.configureContext(context);
             container.addEndpoint(GameServer.class);
+            container.addEndpoint(VisualizationEndpoint.class);
             server.start();
             LOGGER.debug("The game server started.");
             server.join();

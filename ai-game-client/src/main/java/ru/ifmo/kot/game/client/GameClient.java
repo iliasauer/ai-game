@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
 @ClientEndpoint
 public class GameClient {
 
-    private static List<GameClient> CLIENTS = new ArrayList<>();
+    private static List<Session> CLIENTS = new ArrayList<>();
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameClient.class);
     private static final String GREETING = "The connection is open";
     private Session session;
@@ -65,8 +65,8 @@ public class GameClient {
         final WebSocketContainer webSocketContainer = ContainerProvider.getWebSocketContainer();
         webSocketContainer.setDefaultMaxSessionIdleTimeout(TimeUnit.SECONDS.toMillis(30));
         try {
-            webSocketContainer.connectToServer(GameClient.class,
-                    URI.create(ClientConstants.SERVER_URL));
+            CLIENTS.add(webSocketContainer.connectToServer(GameClient.class,
+                    URI.create(ClientConstants.SERVER_URL)));
             TimeUnit.SECONDS.sleep(30);
         } catch (DeploymentException | IOException e) {
             LOGGER.error("Failed to connect to the server");
