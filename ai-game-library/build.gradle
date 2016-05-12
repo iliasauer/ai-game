@@ -4,5 +4,6 @@ description = 'an educational ai game - common library'
 dependencies {
 
     compile 'javax.json:javax.json-api:1.0'
+    compile 'org.glassfish:javax.json:1.0.4'
 
 }

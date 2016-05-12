@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
-import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
+import ru.ifmo.kot.tools.Messenger;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerContainer;
@@ -17,7 +17,10 @@ import java.util.List;
 import static ru.ifmo.kot.game.server.ServerConstants.CONTEXT_PATH;
 import static ru.ifmo.kot.game.server.ServerConstants.PORT;
 
-@ServerEndpoint(value = "/game")
+@ServerEndpoint(
+        value = "/game",
+        encoders = {Messenger.MessageEncoder.class},
+        decoders = {Messenger.MessageDecoder.class})
 public class GameServer {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameServer.class);
@@ -27,22 +30,15 @@ public class GameServer {
     public static void main(String[] args) {
 //        Log.setLog(new EmbeddedLogger());
         final Server server = new Server(PORT);
-//        final WebAppContext context = new WebAppContext();
-//        context.setContextPath(CONTEXT_PATH);
-//        context.setResourceBase(WEBAPP_PATH);
-//        context.setDescriptor(WEBXML_PATH);
-//        context.setParentLoaderPriority(true);
-//        server.setHandler(context);
         try {
             ServletContextHandler context =
                     new ServletContextHandler(ServletContextHandler.SESSIONS);
             context.setContextPath(CONTEXT_PATH);
             server.setHandler(context);
-            // Initialize the JSR-356 layer
             final ServerContainer container =
                     WebSocketServerContainerInitializer.configureContext(context);
             container.addEndpoint(GameServer.class);
-            container.addEndpoint(VisualizationEndpoint.class);
+//            container.addEndpoint(VisualizationEndpoint.class);
             server.start();
             LOGGER.debug("The game server started.");
             server.join();
@@ -80,14 +76,21 @@ public class GameServer {
     }
 
     @OnMessage
-    public void handleMessage(final Session session, final String message) {
-        LOGGER.info("The client %s: %s", session.getId(), message);
+    public void handleMessage(final Messenger.Message message, final Session session) {
+        LOGGER.info("The client %s: %s", message.getPlayerName(), message.getContent());
+        for (final Session client: clients) {
+            try {
+                sendMessage(message);
+            } catch (final Exception e) {
+                LOGGER.error("Failed to send the message to a client");
+            }
+        }
     }
 
-    public void sendMessage(final String message) throws IOException {
+    private void sendMessage(final Messenger.Message message) throws IOException, EncodeException {
         for (final Session session: clients) {
             if (session.isOpen()) { // todo check the need
-                session.getBasicRemote().sendText(message);
+                session.getBasicRemote().sendObject(message);
             } else {
                 removeClient(session);
             }

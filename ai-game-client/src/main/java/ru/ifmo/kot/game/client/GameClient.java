@@ -2,16 +2,10 @@ package ru.ifmo.kot.game.client;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.ifmo.kot.tools.EmbeddedLogger;
+import ru.ifmo.kot.tools.Messenger;
 
-import javax.websocket.ClientEndpoint;
-import javax.websocket.ContainerProvider;
-import javax.websocket.DeploymentException;
-import javax.websocket.OnClose;
-import javax.websocket.OnError;
-import javax.websocket.OnMessage;
-import javax.websocket.OnOpen;
-import javax.websocket.Session;
-import javax.websocket.WebSocketContainer;
+import javax.websocket.*;
 
 import java.io.IOException;
 import java.net.URI;
@@ -19,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-@ClientEndpoint
+@ClientEndpoint(encoders = {Messenger.MessageEncoder.class}, decoders = {Messenger.MessageDecoder.class})
 public class GameClient {
 
     private static List<Session> CLIENTS = new ArrayList<>();
@@ -31,9 +25,9 @@ public class GameClient {
     public void greetServer(final Session session) {
         this.session = session;
         try {
-            session.getBasicRemote().sendText(GREETING);
+            sendMessage(new Messenger.Message("Player", "Hello!"));
             LOGGER.debug(GREETING);
-        } catch (IOException e) {
+        } catch (Exception e) {
             LOGGER.error("Failed to greet the server");
         }
     }
@@ -44,8 +38,8 @@ public class GameClient {
     }
 
     @OnMessage
-    public void handleMessage(final String message) {
-        LOGGER.info("The server: %s", message);
+    public void handleMessage(final Messenger.Message message) {
+        LOGGER.info("The server %s: %s" , message.getPlayerName(), message.getContent());
     }
 
     @OnError
@@ -53,9 +47,9 @@ public class GameClient {
         LOGGER.debug("An error occurred on the server");
     }
 
-    public void sendMessage(final String message) throws IOException {
+    private void sendMessage(final Messenger.Message message) throws IOException, EncodeException {
         if (session.isOpen()) {
-            session.getBasicRemote().sendText(message);
+            session.getBasicRemote().sendObject(message);
         } else {
             LOGGER.error("Failed to send message to the server");
         }

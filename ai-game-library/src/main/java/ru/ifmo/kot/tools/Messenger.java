@@ -67,7 +67,7 @@ public class Messenger {
         public void destroy() {}
     }
 
-    private static class Message {
+    public static class Message {
 
         private final String playerName;
         private final String content;
