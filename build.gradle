@@ -21,6 +21,8 @@ subprojects {
     dependencies {
         compile 'org.apache.logging.log4j:log4j-core:2.5'
 
+        compile 'javax.websocket:javax.websocket-api:1.1'
+
         compile 'org.eclipse.jetty:jetty-webapp:9.3.9.M1'
         compile 'org.eclipse.jetty:jetty-annotations:9.3.9.M1'
         compile 'org.eclipse.jetty:jetty-plus:9.3.9.M1'
