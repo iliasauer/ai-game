@@ -4,9 +4,6 @@ requirejs.config({
         'jquery': 'libs/jquery',
         'handlebars': 'libs/handlebars',
         'text': 'libs/text',
-        'ChartCore': 'libs/ChartCore',
-        'ChartFork': 'libs/ChartFork',
-        'ChartScatter': 'libs/ChartScatter',
         'cytoscape': 'libs/cytoscape'
     },
     map: {
