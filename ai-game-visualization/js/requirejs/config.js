@@ -6,7 +6,8 @@ requirejs.config({
         'text': 'libs/text',
         'ChartCore': 'libs/ChartCore',
         'ChartFork': 'libs/ChartFork',
-        'ChartScatter': 'libs/ChartScatter'
+        'ChartScatter': 'libs/ChartScatter',
+        'cytoscape': 'libs/cytoscape'
     },
     map: {
         'ChartScatter': {
