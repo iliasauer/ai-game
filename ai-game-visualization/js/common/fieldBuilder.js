@@ -12,13 +12,16 @@ define(['jquery',
 		var fieldFrame = {
 			container: undefined,
 			elements: [ // list of graph elements to start with
-				{ // node a
+				{
+					group: 'nodes',
 					data: { id: 'a' }
 				},
-				{ // node b
+				{
+					group: 'nodes',
 					data: { id: 'b' }
 				},
 				{ // edge ab
+					group: 'edges',
 					data: { id: 'ab', source: 'a', target: 'b' }
 				}
 			],
@@ -35,9 +38,7 @@ define(['jquery',
 					selector: 'edge',
 					style: {
 						'width': 3,
-						'line-color': '#ccc',
-						'target-arrow-color': '#ccc',
-						'target-arrow-shape': 'triangle'
+						'line-color': '#ccc'
 					}
 				}
 			],
