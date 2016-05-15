@@ -1,14 +1,16 @@
 version = '0.1'
 description = 'an educational ai game'
 
-apply plugin: 'idea'
+//apply plugin: 'idea'
 
-idea.project.ipr {
-    withXml {
-        def node = it.asNode()
-        node.appendNode('iLove', 'tinkering with the output *.ipr file!')
-    }
-}
+//idea.project.ipr {
+//    withXml { provider ->
+//        provider.node.
+//        OR
+//        def node = it.asNode()
+//        node.appendNode('iLove', 'tinkering with the output *.ipr file!')
+//    }
+//}
 
 
 subprojects {
