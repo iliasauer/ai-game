@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ai-game.iml" filepath="$PROJECT_DIR$/.idea/modules/ai-game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ai-game-client/ai-game-client.iml" filepath="$PROJECT_DIR$/.idea/modules/ai-game-client/ai-game-client.iml" group="ai-game-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ai-game-client/ai-game-client_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ai-game-client/ai-game-client_main.iml" group="ai-game-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ai-game-client/ai-game-client_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ai-game-client/ai-game-client_test.iml" group="ai-game-client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ai-game-library/ai-game-library.iml" filepath="$PROJECT_DIR$/.idea/modules/ai-game-library/ai-game-library.iml" group="ai-game-library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ai-game-library/ai-game-library_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ai-game-library/ai-game-library_main.iml" group="ai-game-library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ai-game-library/ai-game-library_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ai-game-library/ai-game-library_test.iml" group="ai-game-library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ai-game-server/ai-game-server.iml" filepath="$PROJECT_DIR$/.idea/modules/ai-game-server/ai-game-server.iml" group="ai-game-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ai-game-server/ai-game-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ai-game-server/ai-game-server_main.iml" group="ai-game-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ai-game-server/ai-game-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ai-game-server/ai-game-server_test.iml" group="ai-game-server" />
+      <module fileurl="file://$PROJECT_DIR$/ai-game-visualization/ai-game-visualization.iml" filepath="$PROJECT_DIR$/ai-game-visualization/ai-game-visualization.iml" />
+    </modules>
+  </component>
+</project>

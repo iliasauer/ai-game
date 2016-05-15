@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="handlebars.js" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/ai-game-visualization/js/libs/handlebars.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/ai-game-visualization/js/libs/handlebars.js" />
+    </CLASSES>
+    <DOCUMENTATION>
+      <root url="http://handlebarsjs.com" />
+    </DOCUMENTATION>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

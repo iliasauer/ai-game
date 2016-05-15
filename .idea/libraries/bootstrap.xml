@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="bootstrap" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/ai-game-visualization/js/libs/bootstrap.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/ai-game-visualization/js/libs/bootstrap.js" />
+    </CLASSES>
+    <DOCUMENTATION>
+      <root url="http://getboostrap.com/javascript" />
+    </DOCUMENTATION>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
