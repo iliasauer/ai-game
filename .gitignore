@@ -1,10 +1,7 @@
 # IntelliJ project files
-.idea/*
-*.iml
-*.ipr
+.idea
+!*.ipr
 *.iws
-!.idea/jsLibraryMappings.xml
-!.idea/workspace.xml
 out
 gen
 
