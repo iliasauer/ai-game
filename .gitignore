@@ -1,8 +1,9 @@
 # IntelliJ project files
-.idea
+.idea/*
 *.iml
 *.ipr
 *.iws
+!.idea/jsLibraryMappings.xml
 out
 gen
 
