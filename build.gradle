@@ -1,15 +1,25 @@
 version = '0.1'
 description = 'an educational ai game'
 
+apply plugin: 'idea'
+
+idea.project.ipr {
+    withXml {
+        def node = it.asNode()
+        node.appendNode('iLove', 'tinkering with the output *.ipr file!')
+    }
+}
+
+
 subprojects {
-    apply plugin: "java"
+    apply plugin: 'java'
 
     tasks.withType(JavaCompile) {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
-    task "create-dirs" << {
+    task 'create-dirs' << {
         sourceSets*.java.srcDirs*.each { it.mkdirs() }
         sourceSets*.resources.srcDirs*.each { it.mkdirs() }
     }
