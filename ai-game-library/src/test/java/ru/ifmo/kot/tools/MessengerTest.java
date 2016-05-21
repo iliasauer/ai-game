@@ -79,14 +79,14 @@ public class MessengerTest {
         NAMES.add(new Person("__Konstantin", 50, true));
     }
 
-    private void processSuitableNames(final List<Person> persons,
-                                      final Predicate<Person> tester,
-                                      final Function<Person, String> mapper,
-                                      final Consumer<String> actor) {
-        for (final Person person: persons) {
-            if (tester.test(person)) {
-                final String data = mapper.apply(person);
-                actor.accept(data);
+    private <X, Y> void processSuitableData(final Iterable<X> data,
+                                      final Predicate<X> tester,
+                                      final Function<X, Y> mapper,
+                                      final Consumer<Y> actor) {
+        for (final X aData: data) {
+            if (tester.test(aData)) {
+                final Y item = mapper.apply(aData);
+                actor.accept(item);
             }
         }
     }
@@ -145,7 +145,7 @@ public class MessengerTest {
 
     @Test
     public void shouldExecuteSimpleLambdaExpression() {
-        processSuitableNames(NAMES,
+        processSuitableData(NAMES,
                 person -> !person.getName().startsWith("_"),
                 person -> person.getName(),
                 name -> System.out.println(name) );
