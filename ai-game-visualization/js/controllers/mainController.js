@@ -3,13 +3,15 @@ define(['jquery',
         '../common/util/handlebarsUtil',
         '../common/util/templateUtil',
         '../common/util/cssUtil',
-        './webSocketController'],
+        './webSocketController',
+        '../common/fieldBuilder'],
     function ($,
               appTemplate,
               hbUtil,
               templateUtil,
               cssUtil,
-              webSocketController) {
+              webSocketController, 
+              fieldBuilder) {
 
         const plainId = templateUtil.plainId;
         const jqId = templateUtil.jqId;
@@ -22,7 +24,9 @@ define(['jquery',
                 hbUtil.compileAndInsertInside(jqId(['app']), appTemplate);
             }
             renderApp();
-            webSocketController.connectWs();
+            fieldBuilder.setFieldElement($('#field'));
+            fieldBuilder.build();
+            // webSocketController.connectWs();
         }
 
         return {
