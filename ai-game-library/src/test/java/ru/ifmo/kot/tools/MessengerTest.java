@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 /**
  * Created on 5/21/2016.
@@ -98,6 +99,12 @@ public class MessengerTest {
         data.stream().filter(tester).map(mapper).forEach(actor);
     }
 
+    private <X, Y> List<Y> collectSuitableItems(final List<X> data,
+                                          final Predicate<X> tester,
+                                          final Function<X, Y> mapper) {
+        return data.stream().filter(tester).map(mapper).collect(Collectors.toList());
+    }
+
     @Test
     public void shouldReadJsonObject() throws Exception {
         final JsonObject personObject;
@@ -164,6 +171,14 @@ public class MessengerTest {
                 person -> !person.getName().startsWith("_"),
                 Person::getName,
                 System.out::println);
+    }
+
+    @Test
+    public void shouldCollectItems() {
+        final List<String> names = collectSuitableItems(NAMES,
+                person -> !person.getName().startsWith("_"),
+                Person::getName);
+        names.forEach(System.out::println);
     }
 
 }
