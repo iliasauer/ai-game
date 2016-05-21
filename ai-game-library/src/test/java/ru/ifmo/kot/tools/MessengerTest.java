@@ -6,8 +6,11 @@ import javax.json.*;
 
 import java.io.StringReader;
 import java.text.MessageFormat;
-
-import static org.junit.Assert.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 /**
  * Created on 5/21/2016.
@@ -35,6 +38,59 @@ public class MessengerTest {
                     " }";
 
     private static final String PERSON_JSON_DATA_ARRAY = "[" + PERSON_JSON_DATA + "]";
+
+    private static class Person {
+        private String name;
+        private int age;
+        private boolean isMarried;
+
+        Person(String name, int age, boolean isMarried) {
+            this.name = name;
+            this.age = age;
+            this.isMarried = isMarried;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public boolean isMarried() {
+            return isMarried;
+        }
+
+        @Override
+        public String toString() {
+            return MessageFormat.format("Name: {0}\nAge: {1}\nIs married: {2}\n",
+                    name, age, isMarried);
+        }
+    }
+
+    private static final List<Person> NAMES = new ArrayList<>();
+
+    static {
+        NAMES.add(new Person("Ilya", 21, false));
+        NAMES.add(new Person("Oleg", 51, true));
+        NAMES.add(new Person("Marina", 53, true));
+        NAMES.add(new Person("__Olga", 49, true));
+        NAMES.add(new Person("__Konstantin", 50, true));
+    }
+
+    private void processSuitableNames(final List<Person> persons,
+                                      final Predicate<Person> tester,
+                                      final Function<Person, String> mapper,
+                                      final Consumer<String> actor) {
+        for (final Person person: persons) {
+            if (tester.test(person)) {
+                final String data = mapper.apply(person);
+                actor.accept(data);
+            }
+        }
+    }
+
     @Test
     public void shouldReadJsonObject() throws Exception {
         final JsonObject personObject;
@@ -85,6 +141,14 @@ public class MessengerTest {
                 .build();
 
         System.out.println("Object: " + personObject);
+    }
+
+    @Test
+    public void shouldExecuteSimpleLambdaExpression() {
+        processSuitableNames(NAMES,
+                person -> !person.getName().startsWith("_"),
+                person -> person.getName(),
+                name -> System.out.println(name) );
     }
 
 }
