@@ -79,16 +79,23 @@ public class MessengerTest {
         NAMES.add(new Person("__Konstantin", 50, true));
     }
 
-    private <X, Y> void processSuitableData(final Iterable<X> data,
-                                      final Predicate<X> tester,
-                                      final Function<X, Y> mapper,
-                                      final Consumer<Y> actor) {
+    private <X, Y> void processData(final Iterable<X> data,
+                                    final Predicate<X> tester,
+                                    final Function<X, Y> mapper,
+                                    final Consumer<Y> actor) {
         for (final X aData: data) {
             if (tester.test(aData)) {
                 final Y item = mapper.apply(aData);
                 actor.accept(item);
             }
         }
+    }
+
+    private <X, Y> void processDataInStream(final List<X> data,
+                                            final Predicate<X> tester,
+                                            final Function<X, Y> mapper,
+                                            final Consumer<Y> actor) {
+        data.stream().filter(tester).map(mapper).forEach(actor);
     }
 
     @Test
@@ -144,11 +151,19 @@ public class MessengerTest {
     }
 
     @Test
-    public void shouldExecuteSimpleLambdaExpression() {
-        processSuitableData(NAMES,
+    public void shouldExecuteSimpleLambdaExpressions() {
+        processData(NAMES,
                 person -> !person.getName().startsWith("_"),
                 person -> person.getName(),
                 name -> System.out.println(name) );
+    }
+
+    @Test
+    public void shouldExecuteLambdaExpressionsInStream() {
+        processDataInStream(NAMES,
+                person -> !person.getName().startsWith("_"),
+                Person::getName,
+                System.out::println);
     }
 
 }
