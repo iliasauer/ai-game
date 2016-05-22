@@ -6,8 +6,9 @@ public class Edge implements Comparable<Edge> {
 
     public static final String STRING_PATTERN = "{0} - {1}: {2}";
 
-    private int srcVrtxIndx;
-    private int dstVrtxIndx;
+    private String name;
+    private final int srcVrtxIndx;
+    private final int dstVrtxIndx;
     private int weight;
 
     public Edge(final int srcVrtxIndx, final int dstVrtxIndx, final int weight) {
@@ -30,6 +31,10 @@ public class Edge implements Comparable<Edge> {
         return -1; //todo maybe replace with Exception
     }
 
+    public int otherVertexIndex() {
+        return dstVrtxIndx;
+    }
+
     public int weight() {
         return weight;
     }
@@ -45,6 +50,10 @@ public class Edge implements Comparable<Edge> {
                 return 0;
             }
         }
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override

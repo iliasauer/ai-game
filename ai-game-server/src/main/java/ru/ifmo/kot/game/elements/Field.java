@@ -5,6 +5,10 @@ import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.model.SymbolGraph;
 import ru.ifmo.kot.tools.JsonFileMapper;
 
+import javax.json.JsonArray;
+import javax.json.JsonObject;
+import java.text.MessageFormat;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -36,5 +40,10 @@ public class Field {
     public SymbolGraph getGameModel() {
         return gameModel;
     }
+
+    public JsonArray getGameModelAsJson() {
+        return gameModel.graphAsJson();
+    }
+
 }
 

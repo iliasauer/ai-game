@@ -9,4 +9,13 @@ public interface Graph {
     boolean hasSpanningTree();
     boolean putEdge(final int srcVrtxIndx, final int dstVrtxIndx, final int weight);
 
+    String TYPE_KEY = "group";
+    String CONTENT_KEY = "data";
+    String NAME_KEY = "id";
+    String SOURCE_KEY = "source";
+    String TARGET_KEY = "target";
+
+    String VERTEX = "nodes";
+    String EDGE = "edges";
+
 }
