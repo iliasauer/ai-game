@@ -90,7 +90,7 @@ public class SymbolGraph {
 
 	private JsonObject edgeAsJson(final JsonEdge edge) {
 		return Json.createObjectBuilder()
-				.add(TYPE_KEY, VERTEX)
+				.add(TYPE_KEY, EDGE)
 				.add(CONTENT_KEY, Json.createObjectBuilder()
 						.add(NAME_KEY, edge.getId())
 						.add(SOURCE_KEY, edge.getSource())
