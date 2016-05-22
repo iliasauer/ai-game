@@ -142,7 +142,7 @@ public class SymbolGraph {
 			return source;
 		}
 
-		public String getTarget() {
+		String getTarget() {
 			return target;
 		}
 	}

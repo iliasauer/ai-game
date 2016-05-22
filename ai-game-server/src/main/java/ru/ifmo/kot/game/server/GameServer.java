@@ -5,9 +5,16 @@ import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
+import ru.ifmo.kot.game.elements.Field;
+import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
 import ru.ifmo.kot.tools.Messenger;
 
-import javax.websocket.*;
+import javax.websocket.EncodeException;
+import javax.websocket.OnClose;
+import javax.websocket.OnError;
+import javax.websocket.OnMessage;
+import javax.websocket.OnOpen;
+import javax.websocket.Session;
 import javax.websocket.server.ServerContainer;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
@@ -38,7 +45,7 @@ public class GameServer {
             final ServerContainer container =
                     WebSocketServerContainerInitializer.configureContext(context);
             container.addEndpoint(GameServer.class);
-//            container.addEndpoint(VisualizationEndpoint.class);
+            container.addEndpoint(VisualizationEndpoint.class);
             server.start();
             LOGGER.debug("The game server started.");
             server.join();

@@ -24,9 +24,7 @@ define(['jquery',
                 hbUtil.compileAndInsertInside(jqId(['app']), appTemplate);
             }
             renderApp();
-            fieldBuilder.setFieldElement($('#field'));
-            fieldBuilder.build();
-            // webSocketController.connectWs();
+            webSocketController.connectWs();
         }
 
         return {

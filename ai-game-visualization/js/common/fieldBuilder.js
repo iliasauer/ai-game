@@ -52,12 +52,18 @@ define(['jquery',
 			fieldFrame.container = elem;
 		}
 
+
+		function setFieldData(data) {
+			fieldFrame.elements = data;
+		}
+
 		function build() {
 			cytoscape(fieldFrame);
 		}
 
 		return {
 			setFieldElement: setFieldElement,
+			setFieldData: setFieldData,
 			build: build
 		}
 	});

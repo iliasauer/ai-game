@@ -1,11 +1,14 @@
 define(['jquery',
-		'../common/constants'],
+		'../common/constants',
+		'../common/fieldBuilder'],
 	function ($,
-	          constants) {
+	          constants,
+	          fieldBuilder) {
 
 		const WS_URL = constants.WS_URL;
 		const GREETING = 'The connection is open';
 		var ws;
+		var gameField;
 
 		function greetServer() {
 			sendMessage(GREETING);
@@ -13,7 +16,14 @@ define(['jquery',
 		}
 
 		function handleMessage(message) {
-			console.log('The server: ' + message);
+			console.log('The server: ' + message.data);
+			const JSON_MESSAGE = JSON.parse(message.data);
+			if (JSON_MESSAGE.map) {
+				gameField = JSON_MESSAGE.map;
+				fieldBuilder.setFieldElement($('#field'));
+				fieldBuilder.setFieldData(gameField);
+				fieldBuilder.build();
+			}
 		}
 
 		function handleServerError(error) {

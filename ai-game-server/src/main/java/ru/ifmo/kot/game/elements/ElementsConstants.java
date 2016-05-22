@@ -12,4 +12,6 @@ interface ElementsConstants {
     String PLAYERS_LIVES_NUMBER_KEY = "numberOfLives";
     Map<String, Object> SETTINGS = Game.getSettings(ElementsConstants.SETTINGS_KEY);
     String VERTICES_FILE_PATH = (String) SETTINGS.get(VERTICES_FILE_PATH_KEY);
+
+    String GAME_MODEL_KEY = "map";
 }

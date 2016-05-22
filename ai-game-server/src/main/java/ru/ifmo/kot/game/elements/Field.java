@@ -5,8 +5,10 @@ import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.model.SymbolGraph;
 import ru.ifmo.kot.tools.JsonFileMapper;
 
+import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
 import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.List;
@@ -41,8 +43,8 @@ public class Field {
         return gameModel;
     }
 
-    public JsonArray getGameModelAsJson() {
-        return gameModel.graphAsJson();
+    public JsonObject getGameModelAsJson() {
+        return Json.createObjectBuilder().add("map", gameModel.graphAsJson()).build();
     }
 
 }
