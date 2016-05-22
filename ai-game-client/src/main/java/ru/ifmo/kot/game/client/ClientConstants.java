@@ -2,11 +2,12 @@ package ru.ifmo.kot.game.client;
 
 import ru.ifmo.kot.game.Game;
 
+import javax.json.JsonObject;
 import java.util.Map;
 
 public interface ClientConstants {
     String SETTINGS_KEY = "client";
     String SERVER_URL_KEY = "serverUrl";
-    Map<String, Object> SETTINGS = Game.getSettings(SETTINGS_KEY);
-    String SERVER_URL = (String) SETTINGS.get(SERVER_URL_KEY);
+    JsonObject SETTINGS = Game.getSettings().getJsonObject(SETTINGS_KEY);
+    String SERVER_URL = SETTINGS.getString(SERVER_URL_KEY);
 }

@@ -11,21 +11,8 @@ define(['jquery',
 
 		var fieldFrame = {
 			container: undefined,
-			elements: [ // list of graph elements to start with
-				{
-					group: 'nodes',
-					data: { id: 'a' }
-				},
-				{
-					group: 'nodes',
-					data: { id: 'b' }
-				},
-				{ // edge ab
-					group: 'edges',
-					data: { id: 'ab', source: 'a', target: 'b' }
-				}
-			],
-			style: [ // the stylesheet for the graph
+			elements: undefined,
+			style: [
 				{
 					selector: 'node',
 					style: {

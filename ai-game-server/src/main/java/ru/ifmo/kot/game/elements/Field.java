@@ -3,16 +3,14 @@ package ru.ifmo.kot.game.elements;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.model.SymbolGraph;
-import ru.ifmo.kot.tools.JsonFileMapper;
+import ru.ifmo.kot.tools.JsonFileReader;
 
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonObject;
-import javax.json.JsonObjectBuilder;
-import java.text.MessageFormat;
-import java.util.HashMap;
+import javax.json.JsonString;
 import java.util.List;
-import java.util.Map;
+import java.util.stream.Collectors;
 
 import static ru.ifmo.kot.game.elements.ElementsConstants.*;
 
@@ -24,15 +22,19 @@ public class Field {
 
     @SuppressWarnings("unchecked")
     public Field() {
-        final Map<String, Object> verticesMap =
-                JsonFileMapper.readJson(VERTICES_FILE_PATH);
-        List<String> verticesNames = null;
-        if (verticesMap != null) {
-            verticesNames = (List<String>) verticesMap.get(VERTICES_NAMES_KEY);
+        final JsonObject verticesJson =
+                JsonFileReader.readJson(VERTICES_FILE_PATH);
+        JsonArray verticesNamesArray = null;
+        if (verticesJson != null) {
+            verticesNamesArray = verticesJson.getJsonArray(VERTICES_NAMES_KEY);
         } else {
             LOGGER.error("Vertices are not specified");
         }
-        if (verticesNames != null) {
+        if (verticesNamesArray != null) {
+            final List<String> verticesNames =
+                    verticesNamesArray.getValuesAs(JsonString.class).stream()
+                            .collect(Collectors.mapping(
+                                    JsonString::getString, Collectors.toList()));
             gameModel = new SymbolGraph(verticesNames);
         } else {
             LOGGER.error("Vertices names are not specified");
@@ -44,7 +46,7 @@ public class Field {
     }
 
     public JsonObject getGameModelAsJson() {
-        return Json.createObjectBuilder().add("map", gameModel.graphAsJson()).build();
+        return Json.createObjectBuilder().add(GAME_MODEL_KEY, gameModel.graphAsJson()).build();
     }
 
 }

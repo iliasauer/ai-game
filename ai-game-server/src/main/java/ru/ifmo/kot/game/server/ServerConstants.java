@@ -2,6 +2,7 @@ package ru.ifmo.kot.game.server;
 
 import ru.ifmo.kot.game.Game;
 
+import javax.json.JsonObject;
 import java.util.Map;
 
 interface ServerConstants {
@@ -9,10 +10,8 @@ interface ServerConstants {
     String PORT_KEY = "port";
     String CONTEXT_PATH_KEY = "contextPath";
     String MAX_NUM_OF_CLIENTS_KEY = "maxNumOfClients";
-    String WEBAPP_PATH = "src/main/webapp";
-    String WEBXML_PATH = WEBAPP_PATH + "/WEB-INF/web.xml";
-    Map<String, Object> SETTINGS = Game.getSettings(SETTINGS_KEY);
-    Integer PORT = (Integer) SETTINGS.get(PORT_KEY);
-    String CONTEXT_PATH = (String) SETTINGS.get(CONTEXT_PATH_KEY);
-    Integer MAX_NUM_OF_CLIENTS = (Integer) SETTINGS.get(MAX_NUM_OF_CLIENTS_KEY);
+    JsonObject SETTINGS = Game.getSettings().getJsonObject(SETTINGS_KEY);
+    int PORT = SETTINGS.getInt(PORT_KEY);
+    String CONTEXT_PATH = SETTINGS.getString(CONTEXT_PATH_KEY);
+    int MAX_NUM_OF_CLIENTS = SETTINGS.getInt(MAX_NUM_OF_CLIENTS_KEY);
 }

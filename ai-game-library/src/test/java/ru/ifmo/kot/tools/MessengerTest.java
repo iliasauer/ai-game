@@ -4,7 +4,11 @@ import org.junit.Test;
 
 import javax.json.*;
 
+import java.io.File;
+import java.io.FileReader;
 import java.io.StringReader;
+import java.net.URL;
+import java.net.URLDecoder;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;

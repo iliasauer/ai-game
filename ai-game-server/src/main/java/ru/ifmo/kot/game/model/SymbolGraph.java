@@ -4,6 +4,7 @@ import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
+import javax.json.JsonString;
 import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.List;
@@ -142,7 +143,7 @@ public class SymbolGraph {
 			return source;
 		}
 
-		String getTarget() {
+		public String getTarget() {
 			return target;
 		}
 	}
