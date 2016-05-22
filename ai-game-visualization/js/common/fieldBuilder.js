@@ -44,7 +44,7 @@ define(['jquery',
 			],
 			layout: {
 				name: 'grid',
-				rows: 1
+				rows: 10
 			}
 		};
 
