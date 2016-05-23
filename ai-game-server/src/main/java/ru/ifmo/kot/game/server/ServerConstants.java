@@ -3,7 +3,6 @@ package ru.ifmo.kot.game.server;
 import ru.ifmo.kot.game.Game;
 
 import javax.json.JsonObject;
-import java.util.Map;
 
 interface ServerConstants {
     String SETTINGS_KEY = "server";

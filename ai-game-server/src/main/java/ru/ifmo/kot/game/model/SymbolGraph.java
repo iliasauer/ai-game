@@ -109,7 +109,7 @@ public class SymbolGraph {
 				edgeAsJson(
 						new JsonEdge(
 								name(edge.anyVertexIndex()),
-								name(edge.otherVertexIndex(edge.anyVertexIndex())),
+								name(edge.otherVertexIndex()),
 								edge.weight()))));
 		return jsonArrayBuilder.build();
 	}

@@ -5,7 +5,6 @@ import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.tools.JsonFileReader;
 
 import javax.json.JsonObject;
-import java.util.Map;
 
 public class Game {
 

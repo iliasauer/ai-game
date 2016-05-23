@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
-public class UndirectedWeightedGraph implements Graph {
+class UndirectedWeightedGraph implements Graph {
 
     private static final double COEFFICIENT_OF_EDGE_NUMBER = 0.1;
     private static final int WEIGHT_MULTIPLIER_UPPER_BOUND = 15;
@@ -23,7 +23,7 @@ public class UndirectedWeightedGraph implements Graph {
     private final int numberOfVertices;
     private int numberOfEdges;
     private List<Map<Integer, Integer>> adjacencyEdgeList;
-    private Set<Integer> mainVerticesTree;
+    private Set<Integer> mainVerticesSet;
 
     UndirectedWeightedGraph(final int numberOfVertices) {
         if (numberOfVertices < 1) {
@@ -43,10 +43,10 @@ public class UndirectedWeightedGraph implements Graph {
                 }
             }
         }
-        collectMainTreeVertices();
+        collectMainVerticesSet();
         if (! hasSpanningTree()) {
             fillGaps();
-            collectMainTreeVertices();
+            collectMainVerticesSet();
         }
     }
 
@@ -103,35 +103,34 @@ public class UndirectedWeightedGraph implements Graph {
                 deltaIndex(srcVrtxIndx, dstVrtxIndx);
     }
 
-    private void collectMainTreeVertices() {
-        Set<Integer> mainVerticesTree = new HashSet<>();
-        Set<Integer> checkedKeys = new HashSet<>();
-        mainVerticesTree.add(0);
-        mainVerticesTree.addAll(adjacencyEdgeList.get(0).keySet());
-        checkedKeys.add(0);
-        while (checkedKeys.size() < mainVerticesTree.size()) {
-            Set<Integer> keySet = new HashSet<>();
-            for (Integer key : mainVerticesTree) {
-                if (! checkedKeys.contains(key)) {
-                    keySet.addAll(adjacencyEdgeList.get(key).keySet());
-                    checkedKeys.add(key);
-                }
-            }
-            mainVerticesTree.addAll(keySet);
+    private void collectMainVerticesSet() {
+        final Set<Integer> mainVerticesSet = new HashSet<>();
+        final Set<Integer> checkedVertices = new HashSet<>();
+        mainVerticesSet.add(0);
+        mainVerticesSet.addAll(adjacencyEdgeList.get(0).keySet());
+        checkedVertices.add(0);
+        while (checkedVertices.size() < mainVerticesSet.size()) {
+            Set<Integer> currentVerticesSet = new HashSet<>();
+            mainVerticesSet.stream().filter(vertex -> !checkedVertices.contains(vertex))
+                    .forEach(vertex -> {
+                        currentVerticesSet.addAll(adjacencyEdgeList.get(vertex).keySet());
+                        checkedVertices.add(vertex);
+                    });
+            mainVerticesSet.addAll(currentVerticesSet);
         }
-        this.mainVerticesTree = mainVerticesTree;
+        this.mainVerticesSet = mainVerticesSet;
     }
 
     @Override
     public boolean hasSpanningTree() {
-        return mainVerticesTree.size() == numberOfVertices;
+        return mainVerticesSet.size() == numberOfVertices;
     }
 
     private void fillGaps() {
         if (numberOfVertices < 2) {
             return;
         }
-        if (! mainVerticesTree.contains(0)) {
+        if (! mainVerticesSet.contains(0)) {
             putEdge(0, 1, nextWeight(0, 1));
         }
         if (numberOfVertices == 2) {
@@ -140,11 +139,11 @@ public class UndirectedWeightedGraph implements Graph {
         if (numberOfVertices > 2) {
             final int lastIndex = numberOfVertices - 1;
             final int preLastIndex = lastIndex - 1;
-            if (! mainVerticesTree.contains(lastIndex)) {
+            if (! mainVerticesSet.contains(lastIndex)) {
                 putEdge(preLastIndex, lastIndex, nextWeight(preLastIndex, lastIndex));
             }
             for (int i = 1; i < lastIndex; i++) {
-                if (! mainVerticesTree.contains(i)) {
+                if (! mainVerticesSet.contains(i)) {
                     putEdge(i, i + 1, nextWeight(i, i + 1));
                 }
             }

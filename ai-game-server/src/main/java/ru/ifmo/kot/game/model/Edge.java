@@ -4,14 +4,13 @@ import java.text.MessageFormat;
 
 public class Edge implements Comparable<Edge> {
 
-    public static final String STRING_PATTERN = "{0} - {1}: {2}";
+    static final String STRING_PATTERN = "{0} - {1}: {2}";
 
-    private String name;
     private final int srcVrtxIndx;
     private final int dstVrtxIndx;
     private int weight;
 
-    public Edge(final int srcVrtxIndx, final int dstVrtxIndx, final int weight) {
+    Edge(final int srcVrtxIndx, final int dstVrtxIndx, final int weight) {
         this.srcVrtxIndx = srcVrtxIndx;
         this.dstVrtxIndx = dstVrtxIndx;
         this.weight = weight;
@@ -50,10 +49,6 @@ public class Edge implements Comparable<Edge> {
                 return 0;
             }
         }
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     @Override

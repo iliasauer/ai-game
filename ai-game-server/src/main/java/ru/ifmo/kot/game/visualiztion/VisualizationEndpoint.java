@@ -37,6 +37,7 @@ public class VisualizationEndpoint {
 		LOGGER.debug("The visualizer %s was removed successfully", session.getId());
 	}
 
+	@SuppressWarnings("UnusedParameters")
 	@OnError
 	public void handleVisualizerError(final Session session, final Throwable error) {
 		LOGGER.error("An error occurred on the %s visualizer", session.getId());

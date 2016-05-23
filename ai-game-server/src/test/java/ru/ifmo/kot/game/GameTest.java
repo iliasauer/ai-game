@@ -1,14 +1,9 @@
 package ru.ifmo.kot.game;
 
 import org.junit.Test;
-import ru.ifmo.kot.tools.Messenger;
 
-import javax.json.Json;
 import javax.json.JsonObject;
 import java.text.MessageFormat;
-import java.util.Map;
-
-import static org.junit.Assert.*;
 
 public class GameTest {
     @Test

@@ -5,7 +5,6 @@ import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
-import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
 import ru.ifmo.kot.tools.Messenger;
 
@@ -76,6 +75,7 @@ public class GameServer {
         LOGGER.debug("The client %s was removed successfully", session.getId());
     }
 
+    @SuppressWarnings("UnusedParameters")
     @OnError
     public void handleClientError(final Session session, final Throwable error) {
         LOGGER.error("An error occurred on the %s client", session.getId());

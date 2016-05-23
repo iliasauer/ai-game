@@ -3,8 +3,6 @@ package ru.ifmo.kot.game.elements;
 import ru.ifmo.kot.game.Game;
 
 import javax.json.JsonObject;
-import java.util.List;
-import java.util.Map;
 
 interface ElementsConstants {
     String SETTINGS_KEY = "elements";
