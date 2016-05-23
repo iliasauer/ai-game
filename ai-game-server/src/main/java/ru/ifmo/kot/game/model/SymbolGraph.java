@@ -95,7 +95,8 @@ public class SymbolGraph {
 				.add(CONTENT_KEY, Json.createObjectBuilder()
 						.add(NAME_KEY, edge.getId())
 						.add(SOURCE_KEY, edge.getSource())
-						.add(TARGET_KEY, edge.getTarget()))
+						.add(TARGET_KEY, edge.getTarget())
+						.add(WEIGHT_KEY, edge.getWeight()))
 				.build();
 	}
 
@@ -108,7 +109,8 @@ public class SymbolGraph {
 				edgeAsJson(
 						new JsonEdge(
 								name(edge.anyVertexIndex()),
-								name(edge.otherVertexIndex(edge.anyVertexIndex()))))));
+								name(edge.otherVertexIndex(edge.anyVertexIndex())),
+								edge.weight()))));
 		return jsonArrayBuilder.build();
 	}
 
@@ -128,11 +130,13 @@ public class SymbolGraph {
 		private final String id;
 		private final String source;
 		private final String target;
+		private final int weight;
 
-		JsonEdge(final String srcVrtxName, final String dstVrtxName) {
+		JsonEdge(final String srcVrtxName, final String dstVrtxName, final int weight) {
 			id = srcVrtxName + dstVrtxName;
 			source = srcVrtxName;
 			target = dstVrtxName;
+			this.weight = weight;
 		}
 
 		String getId() {
@@ -143,8 +147,12 @@ public class SymbolGraph {
 			return source;
 		}
 
-		public String getTarget() {
+		String getTarget() {
 			return target;
+		}
+
+		public int getWeight() {
+			return weight;
 		}
 	}
 }

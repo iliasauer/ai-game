@@ -25,7 +25,9 @@ define(['jquery',
 					selector: 'edge',
 					style: {
 						'width': 3,
-						'line-color': '#ccc'
+						'line-color': '#ccc',
+						'label': 'data(weight)',
+						'edge-text-rotation': 'autorotate'
 					}
 				}
 			],

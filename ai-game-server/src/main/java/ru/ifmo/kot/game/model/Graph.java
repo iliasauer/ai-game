@@ -14,6 +14,7 @@ public interface Graph {
     String NAME_KEY = "id";
     String SOURCE_KEY = "source";
     String TARGET_KEY = "target";
+    String WEIGHT_KEY = "weight";
 
     String VERTEX = "nodes";
     String EDGE = "edges";
