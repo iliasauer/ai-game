@@ -150,4 +150,9 @@ class UndirectedWeightedGraph implements Graph {
         }
     }
 
+    @Override
+    public Set<Integer> nextVertices(final int vrtxIndx) {
+        return adjacencyEdgeList.get(vrtxIndx).keySet();
+    }
+
 }

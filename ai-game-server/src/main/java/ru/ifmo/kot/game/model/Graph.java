@@ -1,5 +1,7 @@
 package ru.ifmo.kot.game.model;
 
+import java.util.Set;
+
 public interface Graph {
 
     int numberOfVertices();
@@ -8,6 +10,7 @@ public interface Graph {
     int getWeight(final int srcVrtxIndx, final int dstVrtxIndx);
     boolean hasSpanningTree();
     boolean putEdge(final int srcVrtxIndx, final int dstVrtxIndx, final int weight);
+    Set<Integer> nextVertices(final int vrtxIndx);
 
     String TYPE_KEY = "group";
     String CONTENT_KEY = "data";

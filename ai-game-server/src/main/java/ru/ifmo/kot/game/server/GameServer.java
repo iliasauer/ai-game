@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
+import ru.ifmo.kot.game.Game;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
 import ru.ifmo.kot.tools.Messenger;
 
@@ -31,6 +32,7 @@ public class GameServer {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameServer.class);
     private final List<Session> clients = new ArrayList<>(ServerConstants.MAX_NUM_OF_CLIENTS);
+    private final Game game = new Game();
 
 
     public static void main(String[] args) {
@@ -84,14 +86,22 @@ public class GameServer {
 
     @OnMessage
     public void handleMessage(final Messenger.Message message, final Session session) {
-        LOGGER.info("The client %s: %s", message.getPlayerName(), message.getContent());
-        for (final Session client: clients) {
-            try {
-                sendMessage(message);
-            } catch (final Exception e) {
-                LOGGER.error("Failed to send the message to a client");
-            }
+        LOGGER.info("The client: %s. The command: %s", message.getPlayerName(), message.getCommand(), message.getArgs());
+        LOGGER.info("Arguments: %s, %s", (Object[]) message.getArgs());
+        final String[] args = message.getArgs();
+        final int response = game.weight(args[0], args[1]);
+        try {
+            sendMessage(new Messenger.Message("server", "response", String.valueOf(response)));
+        } catch(IOException | EncodeException e) {
+            LOGGER.error("Failed to send a message to clients");
         }
+        //        for (final Session client: clients) {
+//            try {
+//                sendMessage(new Messenger.Message("server", "response", String.valueOf(response)));
+//            } catch (final Exception e) {
+//                LOGGER.error("Failed to send the message to a client");
+//            }
+//        }
     }
 
     private void sendMessage(final Messenger.Message message) throws IOException, EncodeException {

@@ -2,7 +2,6 @@ package ru.ifmo.kot.game.client;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.ifmo.kot.tools.EmbeddedLogger;
 import ru.ifmo.kot.tools.Messenger;
 
 import javax.websocket.*;
@@ -16,7 +15,6 @@ import java.util.concurrent.TimeUnit;
 @ClientEndpoint(encoders = {Messenger.MessageEncoder.class}, decoders = {Messenger.MessageDecoder.class})
 public class GameClient {
 
-    private static List<Session> CLIENTS = new ArrayList<>();
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameClient.class);
     private static final String GREETING = "The connection is open";
     private Session session;
@@ -25,7 +23,7 @@ public class GameClient {
     public void greetServer(final Session session) {
         this.session = session;
         try {
-            sendMessage(new Messenger.Message("Player", "Hello!"));
+            sendMessage(new Messenger.Message("player1", "weight", "Moscow", "Novosibirsk"));
             LOGGER.debug(GREETING);
         } catch (Exception e) {
             LOGGER.error("Failed to greet the server");
@@ -39,12 +37,14 @@ public class GameClient {
 
     @OnMessage
     public void handleMessage(final Messenger.Message message) {
-        LOGGER.info("The server %s: %s" , message.getPlayerName(), message.getContent());
+        final String response = Messenger.handleMessageString(message.getArgs()[0]);
+        final String formattedResponse =  Integer.valueOf(response) > 0 ? response : "not connected";
+        LOGGER.info("The %s command %s: %s" , message.getPlayerName(), message.getCommand(), formattedResponse);
     }
 
     @OnError
-    public void handleServerError(final Session session, final Throwable error) {
-        LOGGER.debug("An error occurred on the server");
+    public void handleError(final Session session, final Throwable error) {
+        LOGGER.debug("An error occurred");
     }
 
     private void sendMessage(final Messenger.Message message) throws IOException, EncodeException {
@@ -59,8 +59,9 @@ public class GameClient {
         final WebSocketContainer webSocketContainer = ContainerProvider.getWebSocketContainer();
         webSocketContainer.setDefaultMaxSessionIdleTimeout(TimeUnit.SECONDS.toMillis(30));
         try {
-            CLIENTS.add(webSocketContainer.connectToServer(GameClient.class,
-                    URI.create(ClientConstants.SERVER_URL)));
+            final Session server = webSocketContainer.connectToServer(GameClient.class,
+                URI.create(ClientConstants.SERVER_URL)
+            ); // todo check is it the same session
             TimeUnit.SECONDS.sleep(30);
         } catch (DeploymentException | IOException e) {
             LOGGER.error("Failed to connect to the server");

@@ -1,31 +1,54 @@
 package ru.ifmo.kot.game;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import ru.ifmo.kot.tools.JsonFileReader;
+import ru.ifmo.kot.game.elements.Field;
+import ru.ifmo.kot.game.elements.Player;
+import ru.ifmo.kot.game.model.SymbolGraph;
 
-import javax.json.JsonObject;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
-public class Game {
+/**
+ Created on 24.05.16.
+ */
+public class Game implements Api {
 
-    private static final Logger LOGGER = LogManager.getRootLogger();
-    private static final String SETTINGS_FILE_PATH = "settings.json";
-    private static JsonObject settings;
+	private final Field field = new Field();
+	private List<Player> players = new ArrayList<>();
 
-    static {
-        loadSettingsFromFile();
-    }
+	@Override
+	public boolean move(final String vertexName) {
+		throw new UnsupportedOperationException();
+	}
 
-    private static void loadSettingsFromFile() {
-        settings = JsonFileReader.readJson(SETTINGS_FILE_PATH);
-        if (settings == null) {
-            LOGGER.error("Settings has not loaded. Program is finishing.");
-            System.exit(-1);
-        }
-    }
+	@Override
+	public Set<String> nextVertices(final String vertex) {
+		final SymbolGraph gameModel = field.getGameModel();
+		final int vertexIndex = gameModel.index(vertex);
+		final Set<Integer> nextVerticesIndices = gameModel.graph().nextVertices(vertexIndex);
+		return nextVerticesIndices.stream()
+			.collect(Collectors.mapping(gameModel::name, Collectors.toCollection(HashSet::new)));
+	}
 
+	@Override
+	public int weight(final String vertex1, final String vertex2) {
+		return field.getGameModel().getWeight(vertex1, vertex2);
+	}
 
-    public static JsonObject getSettings() {
-        return settings;
-    }
+	@Override
+	public String whereIsCompetitor(final int index) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public String whereIsCompetitor(final String id) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public String whereIsCompetitor() {
+		throw new UnsupportedOperationException();
+	}
 }
