@@ -1,11 +1,6 @@
 package ru.ifmo.kot.tools;
 
-import javax.json.Json;
-import javax.json.JsonArrayBuilder;
-import javax.json.JsonObject;
-import javax.json.JsonReader;
-import javax.json.JsonReaderFactory;
-import javax.json.JsonValue;
+import javax.json.*;
 import javax.websocket.DecodeException;
 import javax.websocket.Decoder;
 import javax.websocket.EncodeException;
@@ -37,8 +32,14 @@ public class Messenger {
 		public String encode(final Message message)
 		throws EncodeException {
 			final JsonArrayBuilder argsArrayBuilder = Json.createArrayBuilder();
-			for (final String arg: message.getArgs()) {
-				argsArrayBuilder.add(arg);
+			for (final Object arg: message.getArgs()) {
+                if (arg instanceof Integer) {
+                    final Integer castedArg = (Integer) arg;
+                    argsArrayBuilder.add(castedArg);
+                } else if (arg instanceof String) {
+                    final String castedArg = (String) arg;
+                    argsArrayBuilder.add(castedArg);
+                }
 			}
 			return Json.createObjectBuilder()
 				.add(PLAYER_NAME_KEY, message.getPlayerName())
@@ -72,11 +73,20 @@ public class Messenger {
 				final JsonObject jsonObject = reader.readObject();
 				final String playerName = jsonObject.getString(PLAYER_NAME_KEY);
 				final String command = jsonObject.getString(COMMAND_KEY);
-				final List<String> argsList = jsonObject.getJsonArray(ARGS_KEY).stream().collect(
-					Collectors.mapping(JsonValue:: toString, Collectors.toList()));
-				String[] args = new String[argsList.size()];
-				argsList.toArray(args);
-				message = new Message(playerName, command, args);
+				final List<JsonValue> argsList = jsonObject.getJsonArray(ARGS_KEY);
+                final List<Object> objectArgsList =
+                argsList.stream().collect(Collectors.mapping(arg -> {
+                    if (arg.getValueType().equals(JsonValue.ValueType.STRING)) {
+                        return ((JsonString) arg).getString();
+                    }
+                    if (arg.getValueType().equals(JsonValue.ValueType.NUMBER)) {
+                        return ((JsonNumber) arg).intValue();
+                    }
+                    return null;
+                }, Collectors.toList()));
+                final Object[] objectArgs = new Object[objectArgsList.size()];
+                objectArgsList.toArray(objectArgs);
+				message = new Message(playerName, command, objectArgs);
 			}
 			return message;
 		}
@@ -95,13 +105,13 @@ public class Messenger {
 
 		private final String playerName;
 		private final String command;
-		private final String[] args;
+		private final Object[] args;
 
-		public Message(final String playerName, final String command, String ... args) {
-			this.playerName = playerName;
-			this.command = command;
-			this.args = args;
-		}
+        public Message(final String playerName, final String command, final Object ... args) {
+            this.playerName = playerName;
+            this.command = command;
+            this.args = args;
+        }
 
 		public String getPlayerName() {
 			return playerName;
@@ -111,7 +121,7 @@ public class Messenger {
 			return command;
 		}
 
-		public String[] getArgs() {
+		public Object[] getArgs() {
 			return args;
 		}
 	}
@@ -119,4 +129,5 @@ public class Messenger {
 	public static String handleMessageString(final String string) {
 		return string.substring(1, string.length() - 1);
 	}
+
 }

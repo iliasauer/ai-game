@@ -4,9 +4,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
 import ru.ifmo.kot.game.Game;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
+import ru.ifmo.kot.tools.EmbeddedLogger;
 import ru.ifmo.kot.tools.Messenger;
 
 import javax.websocket.EncodeException;
@@ -36,7 +38,7 @@ public class GameServer {
 
 
     public static void main(String[] args) {
-//        Log.setLog(new EmbeddedLogger());
+        Log.setLog(new EmbeddedLogger());
         final Server server = new Server(PORT);
         try {
             ServletContextHandler context =
@@ -88,20 +90,17 @@ public class GameServer {
     public void handleMessage(final Messenger.Message message, final Session session) {
         LOGGER.info("The client: %s. The command: %s", message.getPlayerName(), message.getCommand(), message.getArgs());
         LOGGER.info("Arguments: %s, %s", (Object[]) message.getArgs());
-        final String[] args = message.getArgs();
-        final int response = game.weight(args[0], args[1]);
-        try {
-            sendMessage(new Messenger.Message("server", "response", String.valueOf(response)));
-        } catch(IOException | EncodeException e) {
-            LOGGER.error("Failed to send a message to clients");
+        final Object[] args = message.getArgs();
+        if (message.getCommand().equals("weight")) {
+            final String vrtx1 = (String) args[0];
+            final String vrtx2 = (String) args[1];
+            final int weight = game.weight(vrtx1, vrtx2);
+            try {
+                sendMessage(new Messenger.Message("server", "weight", weight));
+            } catch(IOException | EncodeException e) {
+                LOGGER.error("Failed to send a message to clients", e);
+            }
         }
-        //        for (final Session client: clients) {
-//            try {
-//                sendMessage(new Messenger.Message("server", "response", String.valueOf(response)));
-//            } catch (final Exception e) {
-//                LOGGER.error("Failed to send the message to a client");
-//            }
-//        }
     }
 
     private void sendMessage(final Messenger.Message message) throws IOException, EncodeException {

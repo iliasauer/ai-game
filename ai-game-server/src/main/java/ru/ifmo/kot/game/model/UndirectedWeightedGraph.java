@@ -90,7 +90,12 @@ class UndirectedWeightedGraph implements Graph {
 
     @Override
     public int getWeight(final int srcVrtxIndx, final int dstVrtxIndx) {
-        return adjacencyEdgeList.get(srcVrtxIndx).get(dstVrtxIndx);
+        final Map<Integer, Integer> nextVerticesWeights = adjacencyEdgeList.get(srcVrtxIndx);
+        if (nextVerticesWeights.containsKey(dstVrtxIndx)) {
+            return nextVerticesWeights.get(dstVrtxIndx);
+        } else {
+            return -1;
+        }
     }
 
     private int deltaIndex(final int srcVrtxIndx, final int dstVrtxIndx) {

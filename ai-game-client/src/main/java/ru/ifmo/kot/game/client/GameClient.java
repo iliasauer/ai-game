@@ -37,9 +37,12 @@ public class GameClient {
 
     @OnMessage
     public void handleMessage(final Messenger.Message message) {
-        final String response = Messenger.handleMessageString(message.getArgs()[0]);
-        final String formattedResponse =  Integer.valueOf(response) > 0 ? response : "not connected";
-        LOGGER.info("The %s command %s: %s" , message.getPlayerName(), message.getCommand(), formattedResponse);
+        if (message.getCommand().equals("weight")) {
+            final Integer response = (Integer) message.getArgs()[0];
+            LOGGER.info("The %s command %s: %d" , message.getPlayerName(), message.getCommand(),
+                    response);
+        }
+
     }
 
     @OnError
