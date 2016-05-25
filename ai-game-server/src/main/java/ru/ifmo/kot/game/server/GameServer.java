@@ -8,6 +8,7 @@ import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
 import ru.ifmo.kot.game.Game;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
+import ru.ifmo.kot.tools.ApiCommands;
 import ru.ifmo.kot.tools.EmbeddedLogger;
 import ru.ifmo.kot.tools.Messenger;
 
@@ -38,7 +39,7 @@ public class GameServer {
 
 
     public static void main(String[] args) {
-        Log.setLog(new EmbeddedLogger());
+//        Log.setLog(new EmbeddedLogger());
         final Server server = new Server(PORT);
         try {
             ServletContextHandler context =
@@ -88,18 +89,23 @@ public class GameServer {
 
     @OnMessage
     public void handleMessage(final Messenger.Message message, final Session session) {
-        LOGGER.info("The client: %s. The command: %s", message.getPlayerName(), message.getCommand(), message.getArgs());
-        LOGGER.info("Arguments: %s, %s", (Object[]) message.getArgs());
+//        LOGGER.info("The client: %s. The command: %s", message.getParticipant(), message.getCommand(), message.getArgs());
+//        LOGGER.info("Arguments: %s, %s", (Object[]) message.getArgs());
         final Object[] args = message.getArgs();
-        if (message.getCommand().equals("weight")) {
-            final String vrtx1 = (String) args[0];
-            final String vrtx2 = (String) args[1];
-            final int weight = game.weight(vrtx1, vrtx2);
-            try {
-                sendMessage(new Messenger.Message("server", "weight", weight));
-            } catch(IOException | EncodeException e) {
-                LOGGER.error("Failed to send a message to clients", e);
-            }
+        switch (message.getCommand()) {
+            case ApiCommands.WEIGHT:
+                final String vrtx1 = (String) args[0];
+                final String vrtx2 = (String) args[1];
+                final int weight = game.weight(vrtx1, vrtx2);
+                try {
+                    sendMessage(new Messenger.Message("server", ApiCommands.WEIGHT, weight));
+                } catch(IOException | EncodeException e) {
+                    LOGGER.error("Failed to send a message to clients");
+                }
+                break;
+            default:
+                LOGGER.error("The %s command:", message.getParticipant(), ApiCommands
+                        .UNRECOGNIZABLE);
         }
     }
 

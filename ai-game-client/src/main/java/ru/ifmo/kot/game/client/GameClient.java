@@ -2,14 +2,13 @@ package ru.ifmo.kot.game.client;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.ifmo.kot.tools.ApiCommands;
 import ru.ifmo.kot.tools.Messenger;
 
 import javax.websocket.*;
 
 import java.io.IOException;
 import java.net.URI;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 @ClientEndpoint(encoders = {Messenger.MessageEncoder.class}, decoders = {Messenger.MessageDecoder.class})
@@ -37,12 +36,17 @@ public class GameClient {
 
     @OnMessage
     public void handleMessage(final Messenger.Message message) {
-        if (message.getCommand().equals("weight")) {
-            final Integer response = (Integer) message.getArgs()[0];
-            LOGGER.info("The %s command %s: %d" , message.getPlayerName(), message.getCommand(),
-                    response);
+        final String command = message.getCommand();
+        final String participant = message.getParticipant();
+        switch (command) {
+            case ApiCommands.WEIGHT:
+                final Integer response = (Integer) message.getArgs()[0];
+                LOGGER.info("The %s %s command. The result: %d" , participant, command, response);
+                break;
+            default:
+                LOGGER.info("The %s command response:" , message.getParticipant(),
+                        ApiCommands.UNRECOGNIZABLE);
         }
-
     }
 
     @OnError

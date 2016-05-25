@@ -7,7 +7,6 @@ import javax.websocket.EncodeException;
 import javax.websocket.Encoder;
 import javax.websocket.EndpointConfig;
 import java.io.StringReader;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,7 +16,7 @@ import java.util.stream.Collectors;
  */
 public class Messenger {
 
-	private static final String PLAYER_NAME_KEY = "playerName";
+	private static final String PLAYER_NAME_KEY = "participant";
 	private static final String COMMAND_KEY = "command";
 	private static final String ARGS_KEY = "args";
 
@@ -42,7 +41,7 @@ public class Messenger {
                 }
 			}
 			return Json.createObjectBuilder()
-				.add(PLAYER_NAME_KEY, message.getPlayerName())
+				.add(PLAYER_NAME_KEY, message.getParticipant())
 				.add(COMMAND_KEY, message.getCommand())
 				.add(ARGS_KEY, argsArrayBuilder.build())
 				.build().toString();
@@ -103,18 +102,18 @@ public class Messenger {
 
 	public static class Message {
 
-		private final String playerName;
+		private final String participant;
 		private final String command;
 		private final Object[] args;
 
-        public Message(final String playerName, final String command, final Object ... args) {
-            this.playerName = playerName;
+        public Message(final String participant, final String command, final Object ... args) {
+            this.participant = participant;
             this.command = command;
             this.args = args;
         }
 
-		public String getPlayerName() {
-			return playerName;
+		public String getParticipant() {
+			return participant;
 		}
 
 		public String getCommand() {
