@@ -76,7 +76,7 @@ public class GameClient {
                 final String startVertex = (String) message.getArgs()[0];
                 final String finishVertex = (String) message.getArgs()[1];
                 game.initStartVertices(startVertex, finishVertex);
-                game.knowNextVertices();
+                game.knowNextVertices(game.currentVertex());
                 break;
             case ApiCommands.NEXT_VERTICES:
                 final List<String> nextVertices = new ArrayList<>();
@@ -87,9 +87,10 @@ public class GameClient {
                 break;
             case ApiCommands.MOVE:
                 this.response = message.getArgs()[0];
-                if (response.equals(Response.OK)) {
-                    LOGGER.info("Ok. Now I should do a next move");
-                }
+//                if (response.equals(Response.OK)) {
+//                    LOGGER.info("Ok. Now I should do a next move");
+//                }
+                game.knowNextVertices(game.currentVertex());
                 break;
             default:
                 LOGGER.info("The %s command response:", message.getParticipant(),
@@ -144,10 +145,12 @@ public class GameClient {
     private class Game implements Runnable {
 
         private String startVertex;
+        private String currentVertex;
         private String finishVertex;
 
         void initStartVertices(final String startVertex, final String finishVertex) {
             this.startVertex = startVertex;
+            this.currentVertex = startVertex;
             this.finishVertex = finishVertex;
             LOGGER.info("I should go from %s to %s", startVertex, finishVertex);
         }
@@ -163,8 +166,17 @@ public class GameClient {
             sendMessage(ApiCommands.NEXT_VERTICES, startVertex);
         }
 
+        void knowNextVertices(final String vertexName) {
+            sendMessage(ApiCommands.NEXT_VERTICES, vertexName);
+        }
+
+        String currentVertex() {
+            return currentVertex;
+        }
+
         void move(final String vertexName) {
             LOGGER.info("Now I go to %s", vertexName);
+            currentVertex = vertexName;
             sendMessage(ApiCommands.MOVE, vertexName);
         }
 

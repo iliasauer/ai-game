@@ -26,8 +26,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import static ru.ifmo.kot.game.server.ServerConstants.CONTEXT_PATH;
+import static ru.ifmo.kot.game.server.ServerConstants.MAX_NUM_OF_CLIENTS;
 import static ru.ifmo.kot.game.server.ServerConstants.PORT;
 
 @ServerEndpoint(
@@ -38,6 +40,7 @@ public class GameServer {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameServer.class);
     private static final Game game = new Game();
+    private static boolean finishFlag = false;
     private static final List<Session> clients = new ArrayList<>(ServerConstants.MAX_NUM_OF_CLIENTS);
 
     private Session clientSession;
@@ -95,6 +98,9 @@ public class GameServer {
     @SuppressWarnings("ConfusingArgumentToVarargsMethod")
     @OnMessage
     public void handleMessage(final Messenger.Message message, final Session session) {
+        if (finishFlag) {
+            System.exit(0);
+        }
         final Object[] args = message.getArgs();
         switch (message.getCommand()) {
             case ApiCommands.WEIGHT:
@@ -108,6 +114,12 @@ public class GameServer {
                 if (game.addPlayer(playerName)) {
                     LOGGER.info("The player was added successfully as %s", playerName);
                     sendMessage(ApiCommands.NAME, Response.OK);
+                    while (clients.size() < MAX_NUM_OF_CLIENTS) {
+                        try {
+                            TimeUnit.MILLISECONDS.sleep(100);
+                        } catch (InterruptedException ignored) {
+                        }
+                    }
                     sendMessage(ApiCommands.START_DATA, game.startVertices());
                 } else {
                     LOGGER.info("Failed to add the player");
@@ -123,8 +135,14 @@ public class GameServer {
                 break;
             case ApiCommands.MOVE:
                 final String nextVertexName = (String) args[0];
-                game.move(message.getParticipant(), nextVertexName);
-                sendMessage(ApiCommands.MOVE, Response.OK);
+                if (nextVertexName.equals(game.finishVertex())) {
+                    LOGGER.info("The game finished. Player %s won!", message.getParticipant());
+                    finishFlag = true;
+                    System.exit(0);
+                } else {
+                    game.move(message.getParticipant(), nextVertexName);
+                    sendMessage(ApiCommands.MOVE, Response.OK);
+                }
                 break;
             default:
                 LOGGER.error("The %s command: %s", message.getParticipant(),
@@ -151,6 +169,7 @@ public class GameServer {
     private static class Game {
 
         private final Field field = new Field();
+        private final String finishVertex = startVertices()[1];
 
         boolean addPlayer(final String playerName) {
             return Player.addPlayer(playerName);
@@ -174,6 +193,9 @@ public class GameServer {
             return true;
         }
 
+        public String finishVertex() {
+            return finishVertex;
+        }
     }
 
 }
