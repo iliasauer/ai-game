@@ -4,12 +4,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
-import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
 import ru.ifmo.kot.game.Game;
+import ru.ifmo.kot.game.elements.Player;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
 import ru.ifmo.kot.tools.ApiCommands;
-import ru.ifmo.kot.tools.EmbeddedLogger;
 import ru.ifmo.kot.tools.Messenger;
 
 import javax.websocket.EncodeException;
@@ -103,8 +102,26 @@ public class GameServer {
                     LOGGER.error("Failed to send a message to clients");
                 }
                 break;
+            case ApiCommands.NAME:
+                final String name = (String) args[0];
+                if (Player.addPlayer(name)) {
+                    LOGGER.info("The player was added successfully as %s", name);
+                    try {
+                        sendMessage(new Messenger.Message("server", ApiCommands.NAME, Response.OK));
+                    } catch(IOException | EncodeException e) {
+                        LOGGER.error("Failed to send a message to clients");
+                    }
+                } else {
+                    LOGGER.info("Failed to add the player");
+                    try {
+                        sendMessage(new Messenger.Message("server", ApiCommands.NAME, Response.FAIL));
+                    } catch(IOException | EncodeException e) {
+                        LOGGER.error("Failed to send a message to clients");
+                    }
+                }
+                break;
             default:
-                LOGGER.error("The %s command:", message.getParticipant(), ApiCommands
+                LOGGER.error("The %s command: %s", message.getParticipant(), ApiCommands
                         .UNRECOGNIZABLE);
         }
     }

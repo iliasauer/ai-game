@@ -1,12 +1,9 @@
 package ru.ifmo.kot.game;
 
 import ru.ifmo.kot.game.elements.Field;
-import ru.ifmo.kot.game.elements.Player;
 import ru.ifmo.kot.game.model.SymbolGraph;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -16,7 +13,6 @@ import java.util.stream.Collectors;
 public class Game implements Api {
 
 	private final Field field = new Field();
-	private List<Player> players = new ArrayList<>();
 
 	@Override
 	public boolean move(final String vertexName) {
