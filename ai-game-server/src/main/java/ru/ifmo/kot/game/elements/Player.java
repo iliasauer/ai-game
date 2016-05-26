@@ -1,5 +1,8 @@
 package ru.ifmo.kot.game.elements;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -9,6 +12,7 @@ import java.util.function.Function;;
 
 public class Player {
 
+    private static final Logger LOGGER = LogManager.getFormatterLogger(Player.class);
     private static List<Player> players = new ArrayList<>();
     private static Set<String> names = new HashSet<>();
     private static int NUMBER_OF_LIVES = 3;
@@ -69,6 +73,10 @@ public class Player {
         this.name = name;
     }
 
+    public void setCurrentPosition(String currentPosition) {
+        this.currentPosition = currentPosition;
+        LOGGER.info("Now player %s in %s", name, currentPosition);
+    }
 
 
 }

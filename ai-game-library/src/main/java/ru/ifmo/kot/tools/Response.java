@@ -1,4 +1,4 @@
-package ru.ifmo.kot.game.server;
+package ru.ifmo.kot.tools;
 
 /**
  Created on 26.05.16.

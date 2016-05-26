@@ -18,7 +18,7 @@ import static ru.ifmo.kot.game.elements.ElementsConstants.*;
 
 public class Field {
 
-    private static final Logger LOGGER = LogManager.getLogger(Field.class);
+    private static final Logger LOGGER = LogManager.getFormatterLogger(Field.class);
 
     private SymbolGraph gameModel;
     private static String[] startVertices;
@@ -45,6 +45,7 @@ public class Field {
         final List<String> startVerticesList = gameModel.randomVertexNamesPair();
         startVertices = new String[startVerticesList.size()];
         startVerticesList.toArray(startVertices);
+        LOGGER.info("Players should go from %s to %s", startVertices[0], startVertices[1]);
     }
 
     public SymbolGraph getGameModel() {
