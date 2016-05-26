@@ -13,12 +13,6 @@ public class Player {
     private static Set<String> names = new HashSet<>();
     private static int NUMBER_OF_LIVES = 3;
 
-    private final String name;
-
-    private Player(final String name) {
-        this.name = name;
-    }
-
     public static boolean addPlayer(final String name) {
         if (isNameOccupied(name)) {
             return false;
@@ -41,7 +35,6 @@ public class Player {
     public static void removePlayer(final int index) {
         afterCheckIndex(index, (Consumer<Integer>) players::remove);
     }
-
 
     public static Player getPlayer(final String name) {
         return players.stream().filter(player -> player.name.equals(name)).findFirst().orElse(null);
@@ -68,5 +61,14 @@ public class Player {
     private static boolean isNameOccupied(final String name) {
         return names.contains(name);
     }
+
+    private final String name;
+    private String currentPosition;
+
+    private Player(final String name) {
+        this.name = name;
+    }
+
+
 
 }

@@ -4,6 +4,7 @@ import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.model.SymbolGraph;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -21,11 +22,11 @@ public class Game implements Api {
 
 	@Override
 	public Set<String> nextVertices(final String vertex) {
-		final SymbolGraph gameModel = field.getGameModel();
-		final int vertexIndex = gameModel.index(vertex);
-		final Set<Integer> nextVerticesIndices = gameModel.graph().nextVertices(vertexIndex);
-		return nextVerticesIndices.stream()
-			.collect(Collectors.mapping(gameModel::name, Collectors.toCollection(HashSet::new)));
+		return field.getNextVertices(vertex);
+	}
+
+	public String[] startVertices() {
+		return field.getStartVertices();
 	}
 
 	@Override

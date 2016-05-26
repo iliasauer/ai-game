@@ -108,6 +108,7 @@ public class GameServer {
                     LOGGER.info("The player was added successfully as %s", name);
                     try {
                         sendMessage(new Messenger.Message("server", ApiCommands.NAME, Response.OK));
+                        sendMessage(new Messenger.Message("server", ApiCommands.START_DATA, game.startVertices()));
                     } catch(IOException | EncodeException e) {
                         LOGGER.error("Failed to send a message to clients");
                     }

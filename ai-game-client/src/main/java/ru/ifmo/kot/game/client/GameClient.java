@@ -2,7 +2,6 @@ package ru.ifmo.kot.game.client;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.eclipse.jetty.util.log.Log;
 import ru.ifmo.kot.tools.ApiCommands;
 import ru.ifmo.kot.tools.Messenger;
 
@@ -61,6 +60,12 @@ public class GameClient {
 				break;
 			case ApiCommands.NAME:
 				this.response = message.getArgs()[0];
+				break;
+			case ApiCommands.START_DATA:
+				final String startVertex = (String) message.getArgs()[0];
+				final String finishVertex = (String) message.getArgs()[1];
+				game.initStartVertices(startVertex, finishVertex);
+				break;
 			default:
 				LOGGER.info("The %s command response:", message.getParticipant(),
 					ApiCommands.UNRECOGNIZABLE
@@ -107,12 +112,22 @@ public class GameClient {
 
 	private class Game implements Runnable {
 
+		private String startVertex;
+		private String finishVertex;
+
+		void initStartVertices(final String startVertex, final String finishVertex) {
+			this.startVertex = startVertex;
+			this.finishVertex = finishVertex;
+			LOGGER.info("Vertices are initialized: %s-%s", startVertex, finishVertex);
+		}
+
+
 		@Override
 		public void run() {
 			try {
 				final String name = "Sapsan" + new Random().nextInt(100);
 				sendMessage(new Messenger.Message("player1", ApiCommands.NAME, name));
-				LOGGER.info("I want my name was Sapsan");
+				LOGGER.info("I want my name was %s", name);
 			} catch(IOException | EncodeException | InterruptedException | ExecutionException e) {
 				e.printStackTrace();
 			}

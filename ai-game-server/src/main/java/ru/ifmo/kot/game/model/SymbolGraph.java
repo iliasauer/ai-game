@@ -6,17 +6,26 @@ import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
 import javax.json.JsonString;
 import java.text.MessageFormat;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import static ru.ifmo.kot.game.model.Graph.*;
 
 public class SymbolGraph {
 
+	private static final Random USUAL_RANDOM = new Random();
+
+
 	private Map<String, Integer> vertexIndices;
 	private List<String> verticesNames;
 	private Graph graph;
+
 
 	public SymbolGraph(final List<String> verticesNames) {
 		this.verticesNames = verticesNames;
@@ -79,6 +88,36 @@ public class SymbolGraph {
 		} else {
 			return -1;
 		}
+	}
+
+	private int randomVertexIndex() {
+		return USUAL_RANDOM.nextInt(graph.numberOfVertices());
+	}
+
+	private int otherRandomVertex(int vertexIndex) {
+		int otherVertexIndex = randomVertexIndex();
+		while (vertexIndex == otherVertexIndex) {
+			otherVertexIndex = randomVertexIndex();
+		}
+		return otherVertexIndex;
+	}
+
+	private int[] randomVertexIndicesPair() {
+		final int vertexIndex = randomVertexIndex();
+		return new int[] {vertexIndex, otherRandomVertex(vertexIndex)};
+	}
+
+	public List<String> randomVertexNamesPair() {
+		List<String> names = new ArrayList<>();
+		for (int index: randomVertexIndicesPair()) {
+			names.add(name(index));
+		}
+		return names;
+	}
+
+	public Set<String> nextVerticesNames(final String vrtxName) {
+		return graph.nextVertices(index(vrtxName)).stream()
+			.collect(Collectors.mapping(this::name, Collectors.toCollection(HashSet::new)));
 	}
 
 	private JsonObject vertexAsJson(final JsonVertex vertex) {

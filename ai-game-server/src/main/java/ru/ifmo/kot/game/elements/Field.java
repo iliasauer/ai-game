@@ -10,6 +10,8 @@ import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonString;
 import java.util.List;
+import java.util.Random;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import static ru.ifmo.kot.game.elements.ElementsConstants.*;
@@ -19,6 +21,7 @@ public class Field {
     private static final Logger LOGGER = LogManager.getLogger(Field.class);
 
     private SymbolGraph gameModel;
+    private static String[] startVertices;
 
     @SuppressWarnings("unchecked")
     public Field() {
@@ -39,6 +42,9 @@ public class Field {
         } else {
             LOGGER.error("Vertices names are not specified");
         }
+        final List<String> startVerticesList = gameModel.randomVertexNamesPair();
+        startVertices = new String[startVerticesList.size()];
+        startVerticesList.toArray(startVertices);
     }
 
     public SymbolGraph getGameModel() {
@@ -47,6 +53,14 @@ public class Field {
 
     public JsonObject getGameModelAsJson() {
         return Json.createObjectBuilder().add(GAME_MODEL_KEY, gameModel.graphAsJson()).build();
+    }
+
+    public String[] getStartVertices() {
+        return startVertices;
+    }
+
+    public Set<String> getNextVertices(final String vertexName) {
+        return gameModel.nextVerticesNames(vertexName);
     }
 
 }
