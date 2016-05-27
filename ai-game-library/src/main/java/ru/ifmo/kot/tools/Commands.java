@@ -1,6 +1,6 @@
 package ru.ifmo.kot.tools;
 
-public interface ApiCommands {
+public interface Commands {
     String WEIGHT = "weight";
     String NEXT_VERTICES = "nextVertices";
     String MOVE = "move";

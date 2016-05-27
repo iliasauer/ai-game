@@ -36,7 +36,7 @@ public class SymbolGraph {
 		graph = new UndirectedWeightedGraph(verticesNames.size());
 	}
 
-	public boolean contains(final String vertexName) {
+	private boolean contains(final String vertexName) {
 		return verticesNames.contains(vertexName);
 	}
 
@@ -52,25 +52,47 @@ public class SymbolGraph {
 		return graph;
 	}
 
-	public void printVertices() {
-		for (int i = 0; i < verticesNames.size(); i++) {
-			System.out.println(i + ": " + verticesNames.get(i));
-		}
-	}
+    public JsonArray graphAsJson() {
+        final JsonArrayBuilder jsonArrayBuilder = Json.createArrayBuilder();
+        verticesNames.forEach(vertexName -> jsonArrayBuilder.add(
+                vertexAsJson(
+                        new JsonVertex(vertexName))));
+        graph.edges().forEach(edge -> jsonArrayBuilder.add(
+                edgeAsJson(
+                        new JsonEdge(
+                                name(edge.anyVertexIndex()),
+                                name(edge.otherVertexIndex()),
+                                edge.weight()))));
+        return jsonArrayBuilder.build();
+    }
 
-	public void printEdges() {
-		for (final Edge edge : graph.edges()) {
-			final int srcVrtxIndx = edge.anyVertexIndex();
-			final int dstVrtxIndx = edge.otherVertexIndex(srcVrtxIndx);
-			System.out.println(MessageFormat.format(Edge.STRING_PATTERN,
-					name(srcVrtxIndx),
-					name(dstVrtxIndx),
-					edge.weight()));
-		}
-	}
+//	public void printVertices() {
+//		for (int i = 0; i < verticesNames.size(); i++) {
+//			System.out.println(i + ": " + verticesNames.get(i));
+//		}
+//	}
+//
+//	public void printEdges() {
+//		for (final Edge edge : graph.edges()) {
+//			final int srcVrtxIndx = edge.anyVertexIndex();
+//			final int dstVrtxIndx = edge.otherVertexIndex(srcVrtxIndx);
+//			System.out.println(MessageFormat.format(Edge.STRING_PATTERN,
+//					name(srcVrtxIndx),
+//					name(dstVrtxIndx),
+//					edge.weight()));
+//		}
+//	}
 
-	public List<String> getVerticesNames() {
-		return verticesNames;
+//	public List<String> verticesNames() {
+//		return verticesNames;
+//	}
+
+	public int getWeight(final String vertexName1, final String vertexName2) {
+		if (contains(vertexName1) && contains(vertexName2)) {
+			return graph.getWeight(index(vertexName1), index(vertexName2));
+		} else {
+			return -1;
+		}
 	}
 
 	public boolean putEdge(final String vertexName1, final String vertexName2, final int weight) {
@@ -79,14 +101,6 @@ public class SymbolGraph {
 			return true;
 		} else {
 			return false;
-		}
-	}
-
-	public int getWeight(final String vertexName1, final String vertexName2) {
-		if (contains(vertexName1) && contains(vertexName2)) {
-			return graph.getWeight(index(vertexName1), index(vertexName2));
-		} else {
-			return -1;
 		}
 	}
 
@@ -102,6 +116,12 @@ public class SymbolGraph {
 		return otherVertexIndex;
 	}
 
+
+	public Set<String> nextVertices(final String vrtxName) {
+		return graph.nextVertices(index(vrtxName)).stream()
+			.collect(Collectors.mapping(this::name, Collectors.toCollection(HashSet::new)));
+	}
+
 	private int[] randomVertexIndicesPair() {
 		final int vertexIndex = randomVertexIndex();
 		return new int[] {vertexIndex, otherRandomVertex(vertexIndex)};
@@ -113,11 +133,6 @@ public class SymbolGraph {
 			names.add(name(index));
 		}
 		return names;
-	}
-
-	public Set<String> nextVerticesNames(final String vrtxName) {
-		return graph.nextVertices(index(vrtxName)).stream()
-			.collect(Collectors.mapping(this::name, Collectors.toCollection(HashSet::new)));
 	}
 
 	private JsonObject vertexAsJson(final JsonVertex vertex) {
@@ -137,20 +152,6 @@ public class SymbolGraph {
 						.add(TARGET_KEY, edge.getTarget())
 						.add(WEIGHT_KEY, edge.getWeight()))
 				.build();
-	}
-
-	public JsonArray graphAsJson() {
-		final JsonArrayBuilder jsonArrayBuilder = Json.createArrayBuilder();
-		verticesNames.forEach(vertexName -> jsonArrayBuilder.add(
-				vertexAsJson(
-						new JsonVertex(vertexName))));
-		graph.edges().forEach(edge -> jsonArrayBuilder.add(
-				edgeAsJson(
-						new JsonEdge(
-								name(edge.anyVertexIndex()),
-								name(edge.otherVertexIndex()),
-								edge.weight()))));
-		return jsonArrayBuilder.build();
 	}
 
 	private static class JsonVertex {

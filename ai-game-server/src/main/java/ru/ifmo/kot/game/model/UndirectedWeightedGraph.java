@@ -126,11 +126,6 @@ class UndirectedWeightedGraph implements Graph {
         this.mainVerticesSet = mainVerticesSet;
     }
 
-    @Override
-    public boolean hasSpanningTree() {
-        return mainVerticesSet.size() == numberOfVertices;
-    }
-
     private void fillGaps() {
         if (numberOfVertices < 2) {
             return;
@@ -160,4 +155,8 @@ class UndirectedWeightedGraph implements Graph {
         return adjacencyEdgeList.get(vrtxIndx).keySet();
     }
 
+    @Override
+    public boolean hasSpanningTree() {
+        return mainVerticesSet.size() == numberOfVertices;
+    }
 }

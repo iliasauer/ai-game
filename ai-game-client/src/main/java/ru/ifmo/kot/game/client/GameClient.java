@@ -2,7 +2,7 @@ package ru.ifmo.kot.game.client;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.ifmo.kot.tools.ApiCommands;
+import ru.ifmo.kot.tools.Commands;
 import ru.ifmo.kot.tools.Messenger;
 import ru.ifmo.kot.tools.Response;
 
@@ -20,12 +20,8 @@ import java.io.IOException;
 import java.net.URI;
 import java.text.MessageFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
-import java.util.Set;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -63,29 +59,29 @@ public class GameClient {
     public void handleMessage(final Messenger.Message message, final Session session) {
         final String command = message.getCommand();
         switch (command) {
-            case ApiCommands.WEIGHT:
+            case Commands.WEIGHT:
                 this.response = message.getArgs()[0];
                 break;
-            case ApiCommands.NAME:
+            case Commands.NAME:
                 this.response = message.getArgs()[0];
                 if (response.equals(Response.FAIL)) {
                     game.setName();
                 }
                 break;
-            case ApiCommands.START_DATA:
+            case Commands.START_DATA:
                 final String startVertex = (String) message.getArgs()[0];
                 final String finishVertex = (String) message.getArgs()[1];
                 game.initStartVertices(startVertex, finishVertex);
                 game.knowNextVertices(game.currentVertex());
                 break;
-            case ApiCommands.NEXT_VERTICES:
+            case Commands.NEXT_VERTICES:
                 final List<String> nextVertices = new ArrayList<>();
                 for (final Object vertex: message.getArgs()) {
                     nextVertices.add((String) vertex);
                 }
                 game.move(nextVertices.get(USUAL_RANDOM.nextInt(nextVertices.size())));
                 break;
-            case ApiCommands.MOVE:
+            case Commands.MOVE:
                 this.response = message.getArgs()[0];
 //                if (response.equals(Response.OK)) {
 //                    LOGGER.info("Ok. Now I should do a next move");
@@ -94,7 +90,7 @@ public class GameClient {
                 break;
             default:
                 LOGGER.info("The %s command response:", message.getParticipant(),
-                        ApiCommands.UNRECOGNIZABLE
+                        Commands.UNRECOGNIZABLE
                 );
         }
     }
@@ -157,17 +153,17 @@ public class GameClient {
 
         void setName() {
             final String name = MessageFormat.format("Sapsan{0}", new Random().nextInt(100));
-            sendMessage(ApiCommands.NAME, name);
+            sendMessage(Commands.NAME, name);
             GameClient.this.name = name;
             LOGGER.info("I want my name was %s", name);
         }
 
         void knowNextVertices() {
-            sendMessage(ApiCommands.NEXT_VERTICES, startVertex);
+            sendMessage(Commands.NEXT_VERTICES, startVertex);
         }
 
         void knowNextVertices(final String vertexName) {
-            sendMessage(ApiCommands.NEXT_VERTICES, vertexName);
+            sendMessage(Commands.NEXT_VERTICES, vertexName);
         }
 
         String currentVertex() {
@@ -177,7 +173,7 @@ public class GameClient {
         void move(final String vertexName) {
             LOGGER.info("Now I go to %s", vertexName);
             currentVertex = vertexName;
-            sendMessage(ApiCommands.MOVE, vertexName);
+            sendMessage(Commands.MOVE, vertexName);
         }
 
         @Override

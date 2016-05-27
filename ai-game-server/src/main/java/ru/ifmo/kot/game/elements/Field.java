@@ -10,7 +10,6 @@ import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonString;
 import java.util.List;
-import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -61,7 +60,7 @@ public class Field {
     }
 
     public Set<String> getNextVertices(final String vertexName) {
-        return gameModel.nextVerticesNames(vertexName);
+        return gameModel.nextVertices(vertexName);
     }
 
 }

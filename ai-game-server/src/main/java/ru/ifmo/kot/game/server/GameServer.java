@@ -6,10 +6,11 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
+import ru.ifmo.kot.game.Api;
 import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.elements.Player;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
-import ru.ifmo.kot.tools.ApiCommands;
+import ru.ifmo.kot.tools.Commands;
 import ru.ifmo.kot.tools.EmbeddedLogger;
 import ru.ifmo.kot.tools.Messenger;
 import ru.ifmo.kot.tools.Response;
@@ -24,6 +25,7 @@ import javax.websocket.server.ServerContainer;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -40,11 +42,55 @@ public class GameServer {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameServer.class);
     private static final Game game = new Game();
-    private static boolean finishFlag = false;
-    private static final List<Session> clients = new ArrayList<>(ServerConstants.MAX_NUM_OF_CLIENTS);
+    private static volatile boolean finishFlag = false;
+    private static volatile int added = 0;
+    private static volatile int turnCounter = 1;
+    private static volatile boolean[] playerTurnFlags = new boolean[MAX_NUM_OF_CLIENTS];
+    static {
+        resetTurn();
+    }
+    private static final List<Session> clients = new ArrayList<>(MAX_NUM_OF_CLIENTS);
 
     private Session clientSession;
+    private int localTurnCounter = 0;
+    private Set<Integer> turns = new HashSet<>();
 
+    private static boolean checkTurn(final int index, final int localTurnCounter) {
+        boolean check = localTurnCounter < turnCounter;
+//        boolean check = playerTurnFlags[0];
+        for (int i = 1; i < playerTurnFlags.length; i++) {
+            if (i < index) {
+                check = check && playerTurnFlags[i];
+            } else {
+                check = check && !playerTurnFlags[i];
+            }
+        }
+        checkAndResetTurn();
+        return check;
+    }
+
+    private static void checkAndResetTurn() {
+        boolean check = true;
+        for (final boolean flag: playerTurnFlags) {
+            check = check && flag;
+        }
+        if (check) {
+            resetTurn();
+            turnCounter++;
+        }
+    }
+
+    private static void resetTurn() {
+        for (int i = 0; i < playerTurnFlags.length; i++) {
+            playerTurnFlags[i] = false;
+        }
+    }
+
+    private static int checkIn(final Session session) {
+        final int index = clients.indexOf(session);
+        playerTurnFlags[index] = true;
+        return index;
+    }
 
     public static void main(String[] args) {
         Log.setLog(new EmbeddedLogger());
@@ -72,6 +118,7 @@ public class GameServer {
             clients.add(session);
             clientSession = session;
             LOGGER.debug("The clientSession %s was added successfully", session.getId());
+            added++;
         } else {
             try {
                 session.close();
@@ -103,37 +150,47 @@ public class GameServer {
         }
         final Object[] args = message.getArgs();
         switch (message.getCommand()) {
-            case ApiCommands.WEIGHT:
+            case Commands.WEIGHT:
                 final String vrtx1 = (String) args[0];
                 final String vrtx2 = (String) args[1];
                 final int weight = game.weight(vrtx1, vrtx2);
-                sendMessage( ApiCommands.WEIGHT, weight);
+                sendMessage( Commands.WEIGHT, weight);
                 break;
-            case ApiCommands.NAME:
+            case Commands.NAME:
                 final String playerName = (String) args[0];
                 if (game.addPlayer(playerName)) {
                     LOGGER.info("The player was added successfully as %s", playerName);
-                    sendMessage(ApiCommands.NAME, Response.OK);
+                    sendMessage(Commands.NAME, Response.OK);
                     while (clients.size() < MAX_NUM_OF_CLIENTS) {
                         try {
                             TimeUnit.MILLISECONDS.sleep(100);
                         } catch (InterruptedException ignored) {
                         }
                     }
-                    sendMessage(ApiCommands.START_DATA, game.startVertices());
+                    sendMessage(Commands.START_DATA, game.startVertices());
                 } else {
                     LOGGER.info("Failed to add the player");
-                    sendMessage(ApiCommands.NAME, Response.FAIL);
+                    sendMessage(Commands.NAME, Response.FAIL);
                 }
                 break;
-            case ApiCommands.NEXT_VERTICES:
+            case Commands.NEXT_VERTICES:
                 final String currentVertexName = (String) args[0];
                 final Set<String> nextVerticesSet = game.nextVertices(currentVertexName);
                 String[] nextVertices = new String[nextVerticesSet.size()];
                 nextVerticesSet.toArray(nextVertices);
-                sendMessage(ApiCommands.NEXT_VERTICES, nextVertices);
+                sendMessage(Commands.NEXT_VERTICES, nextVertices);
                 break;
-            case ApiCommands.MOVE:
+            case Commands.MOVE:
+                final int i = checkIn(session);
+                while (checkTurn(i, localTurnCounter) && added < MAX_NUM_OF_CLIENTS) {
+                    try {
+                        TimeUnit.MILLISECONDS.sleep(1000);
+                    } catch (InterruptedException ignored) {
+                    }
+                }
+                if (finishFlag) {
+                    System.exit(0);
+                }
                 final String nextVertexName = (String) args[0];
                 if (nextVertexName.equals(game.finishVertex())) {
                     LOGGER.info("The game finished. Player %s won!", message.getParticipant());
@@ -141,12 +198,14 @@ public class GameServer {
                     System.exit(0);
                 } else {
                     game.move(message.getParticipant(), nextVertexName);
-                    sendMessage(ApiCommands.MOVE, Response.OK);
+                    sendMessage(Commands.MOVE, Response.OK);
                 }
+                localTurnCounter++;
+                turns.add(turnCounter);
                 break;
             default:
                 LOGGER.error("The %s command: %s", message.getParticipant(),
-                        ApiCommands.UNRECOGNIZABLE);
+                        Commands.UNRECOGNIZABLE);
         }
     }
 
@@ -166,7 +225,7 @@ public class GameServer {
         sendMessage(new Messenger.Message("server", command, args));
     }
 
-    private static class Game {
+    private static class Game implements Api {
 
         private final Field field = new Field();
         private final String finishVertex = startVertices()[1];
@@ -179,21 +238,31 @@ public class GameServer {
             return field.getStartVertices();
         }
 
-        int weight(final String vertex1, final String vertex2) {
+        @Override
+        public int weight(final String vertex1, final String vertex2) {
             return field.getGameModel().getWeight(vertex1, vertex2);
         }
 
-        Set<String> nextVertices(final String vertex) {
+        @Override
+        public String whereIsCompetitor(String id) {
+            final Player player = Player.getPlayer(id);
+            return player.getCurrentPosition();
+        }
+
+        @Override
+        public Set<String> nextVertices(final String vertex) {
             return field.getNextVertices(vertex);
         }
 
-        boolean move(final String playerName, final String vertexName) {
+        @Override
+        public boolean move(final String playerName, final String vertexName) {
             final Player player = Player.getPlayer(playerName);
             player.setCurrentPosition(vertexName);
+            LOGGER.info("Now player %s in %s", playerName, vertexName);
             return true;
         }
 
-        public String finishVertex() {
+        String finishVertex() {
             return finishVertex;
         }
     }

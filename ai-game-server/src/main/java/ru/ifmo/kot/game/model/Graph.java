@@ -8,9 +8,10 @@ public interface Graph {
     int numberOfEdges();
     Iterable<Edge> edges();
     int getWeight(final int srcVrtxIndx, final int dstVrtxIndx);
-    boolean hasSpanningTree();
     boolean putEdge(final int srcVrtxIndx, final int dstVrtxIndx, final int weight);
     Set<Integer> nextVertices(final int vrtxIndx);
+    boolean hasSpanningTree();
+
 
     String TYPE_KEY = "group";
     String CONTENT_KEY = "data";

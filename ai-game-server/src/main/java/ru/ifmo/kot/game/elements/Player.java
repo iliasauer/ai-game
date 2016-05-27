@@ -75,8 +75,10 @@ public class Player {
 
     public void setCurrentPosition(String currentPosition) {
         this.currentPosition = currentPosition;
-        LOGGER.info("Now player %s in %s", name, currentPosition);
     }
 
 
+    public String getCurrentPosition() {
+        return currentPosition;
+    }
 }
