@@ -7,5 +7,6 @@ public interface Response {
 
 	String OK = "OK";
 	String FAIL = "fail";
+	String INVITE = "invite";
 	
 }

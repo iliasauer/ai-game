@@ -41,12 +41,10 @@ public class GameServer {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameServer.class);
     private static final Game GAME = new Game();
-    private static volatile boolean finishFlag = false;
+//    private static volatile boolean finishFlag = false;
     private static final Map<Session, String> CLIENTS = new HashMap<>(MAX_NUM_OF_CLIENTS);
 
     private Session clientSession;
-
-
 
     public static void main(String[] args) {
         Log.setLog(new EmbeddedLogger());
@@ -61,10 +59,10 @@ public class GameServer {
             container.addEndpoint(GameServer.class);
             container.addEndpoint(VisualizationEndpoint.class);
             server.start();
-            LOGGER.info("The GAME started.");
+            LOGGER.info("The game server is started and waiting for players.");
             server.join();
         } catch (Throwable e) {
-            LOGGER.info("The GAME cannot started.");
+            LOGGER.info("The game server cannot be started.");
         }
     }
 
@@ -73,12 +71,16 @@ public class GameServer {
         if (CLIENTS.size() < ServerConstants.MAX_NUM_OF_CLIENTS) {
             CLIENTS.put(session, null);
             clientSession = session;
-            LOGGER.debug("The clientSession %s was added successfully", session.getId());
+            LOGGER.info("The player has successfully joined");
+            if (CLIENTS.size() == ServerConstants.MAX_NUM_OF_CLIENTS) {
+                LOGGER.info("It has enough players joined. The game initialization is started.");
+                nameInvite();
+            }
         } else {
             try {
                 session.close();
-                LOGGER.debug("Exceeded the maximal number of CLIENTS");
-            } catch (IOException exception) {
+                LOGGER.info("It has enough players joined");
+            } catch (IOException e) {
                 LOGGER.error("Failed to close the session");
             }
         }
@@ -97,61 +99,38 @@ public class GameServer {
         removeClient(session);
     }
 
-    @SuppressWarnings("ConfusingArgumentToVarargsMethod")
     @OnMessage
     public void handleMessage(final Messenger.Message message, final Session session) {
-        if (finishFlag) {
-            System.exit(0);
-        }
+//        if (finishFlag) {
+//            System.exit(0);
+//        }
         final Object[] args = message.getArgs();
         switch (message.getCommand()) {
             case Commands.WEIGHT:
-                final String vrtx1 = (String) args[0];
-                final String vrtx2 = (String) args[1];
-                final int weight = GAME.weight(vrtx1, vrtx2);
-                sendMessage( Commands.WEIGHT, weight);
+                weightResponse(args);
                 break;
             case Commands.NAME:
-                final String playerName = (String) args[0];
-                if (GAME.addPlayer(playerName)) {
-                    LOGGER.info("The player was added successfully as %s", playerName);
-                    sendMessage(Commands.NAME, Response.OK);
-                    while (CLIENTS.size() < MAX_NUM_OF_CLIENTS) {
-                        try {
-                            TimeUnit.MILLISECONDS.sleep(100);
-                        } catch (InterruptedException ignored) {
-                        }
-                    }
-                    sendMessage(Commands.START_DATA, GAME.startVertices());
-                } else {
-                    LOGGER.info("Failed to add the player");
-                    sendMessage(Commands.NAME, Response.FAIL);
-                }
+                nameResponse(session, args);
                 break;
             case Commands.NEXT_VERTICES:
-                final String currentVertexName = (String) args[0];
-                final Set<String> nextVerticesSet = GAME.nextVertices(currentVertexName);
-                String[] nextVertices = new String[nextVerticesSet.size()];
-                nextVerticesSet.toArray(nextVertices);
-                sendMessage(Commands.NEXT_VERTICES, nextVertices);
+                nextVertices(args);
                 break;
             case Commands.MOVE:
-                if (finishFlag) {
-                    System.exit(0);
-                }
-                final String nextVertexName = (String) args[0];
-                if (nextVertexName.equals(GAME.finishVertex())) {
-                    LOGGER.info("The GAME finished. Player %s won!", message.getParticipant());
-                    finishFlag = true;
-                    System.exit(0);
-                } else {
-                    GAME.move(message.getParticipant(), nextVertexName);
-                    sendMessage(Commands.MOVE, Response.OK);
-                }
+//                if (finishFlag) {
+//                    System.exit(0);
+//                }
+//
+//                if (nextVertexName.equals(GAME.finishVertex())) {
+////                    LOGGER.info("The GAME finished. Player %s won!", message.getParticipant());
+//                    finishFlag = true;
+//                    System.exit(0);
+//                } else {
+////                    GAME.move(message.getParticipant(), nextVertexName);
+//                    sendMessage(Commands.MOVE, Response.OK);
+//                }
                 break;
             default:
-                LOGGER.error("The %s command: %s", message.getParticipant(),
-                        Commands.UNRECOGNIZABLE);
+//                LOGGER.error("The %s command: %s", message.getParticipant(), Commands.UNRECOGNIZABLE);
         }
     }
 
@@ -168,10 +147,42 @@ public class GameServer {
     }
 
     private void sendMessage(final String command, final Object... args) {
-        sendMessage(new Messenger.Message("server", command, args));
+        sendMessage(new Messenger.Message(command, args));
     }
 
-    private static class Game implements Api {
+    private void weightResponse(final Object[] args) {
+        final String vrtx1 = (String) args[0];
+        final String vrtx2 = (String) args[1];
+        sendMessage(Commands.WEIGHT, GAME.weight(vrtx1, vrtx2));
+    }
+
+    private void nameResponse(final Session session, final Object[] args) {
+        final String name = (String) args[0];
+        if (GAME.name(session, name)) {
+            sendMessage(Commands.NAME, Response.OK);
+        } else {
+            sendMessage(Commands.NAME, Response.FAIL, name);
+        }
+    }
+
+    private void moveResponse(final Object[] args) {
+        final String nextVertexName = (String) args[0];
+    }
+
+    private void nameInvite() {
+        sendMessage(Commands.NAME, Response.INVITE);
+    }
+
+    @SuppressWarnings("ConfusingArgumentToVarargsMethod")
+    private void nextVertices(final Object[] args) {
+        final String currentVertex = (String) args[0];
+        final Set<String> nextVerticesSet = GAME.nextVertices(currentVertex);
+        String[] nextVertices = new String[nextVerticesSet.size()];
+        nextVerticesSet.toArray(nextVertices);
+        sendMessage(Commands.NEXT_VERTICES, nextVertices);
+    }
+
+    private static class Game {
 
         private final Field field = new Field();
         private final String finishVertex = startVertices()[1];
@@ -184,23 +195,28 @@ public class GameServer {
             return field.getStartVertices();
         }
 
-        @Override
-        public int weight(final String vertex1, final String vertex2) {
-            return field.getGameModel().getWeight(vertex1, vertex2);
+        private int weight(final String vrtx1, final String vrtx2) {
+            return field.getGameModel().getWeight(vrtx1, vrtx2);
         }
 
-        @Override
+        private boolean name(final Session session, final String name) {
+            if (!CLIENTS.values().contains(name)) {
+                CLIENTS.put(session, name);
+                return true;
+            } else {
+                return false;
+            }
+        }
+
         public String whereIsCompetitor(String id) {
             final Player player = Player.getPlayer(id);
             return player.getCurrentPosition();
         }
 
-        @Override
         public Set<String> nextVertices(final String vertex) {
             return field.getNextVertices(vertex);
         }
 
-        @Override
         public boolean move(final String playerName, final String vertexName) {
             final Player player = Player.getPlayer(playerName);
             player.setCurrentPosition(vertexName);

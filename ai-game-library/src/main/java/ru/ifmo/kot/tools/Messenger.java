@@ -16,7 +16,6 @@ import java.util.stream.Collectors;
  */
 public class Messenger {
 
-	private static final String PLAYER_NAME_KEY = "participant";
 	private static final String COMMAND_KEY = "command";
 	private static final String ARGS_KEY = "args";
 
@@ -41,7 +40,6 @@ public class Messenger {
                 }
 			}
 			return Json.createObjectBuilder()
-				.add(PLAYER_NAME_KEY, message.getParticipant())
 				.add(COMMAND_KEY, message.getCommand())
 				.add(ARGS_KEY, argsArrayBuilder.build())
 				.build().toString();
@@ -70,7 +68,6 @@ public class Messenger {
 				final JsonReader reader = readerFactory.createReader(new StringReader(inputString))
 			) {
 				final JsonObject jsonObject = reader.readObject();
-				final String playerName = jsonObject.getString(PLAYER_NAME_KEY);
 				final String command = jsonObject.getString(COMMAND_KEY);
 				final List<JsonValue> argsList = jsonObject.getJsonArray(ARGS_KEY);
                 final List<Object> objectArgsList =
@@ -85,7 +82,7 @@ public class Messenger {
                 }, Collectors.toList()));
                 final Object[] objectArgs = new Object[objectArgsList.size()];
                 objectArgsList.toArray(objectArgs);
-				message = new Message(playerName, command, objectArgs);
+				message = new Message(command, objectArgs);
 			}
 			return message;
 		}
@@ -102,19 +99,13 @@ public class Messenger {
 
 	public static class Message {
 
-		private final String participant;
 		private final String command;
 		private final Object[] args;
 
-        public Message(final String participant, final String command, final Object ... args) {
-            this.participant = participant;
+        public Message(final String command, final Object ... args) {
             this.command = command;
             this.args = args;
         }
-
-		public String getParticipant() {
-			return participant;
-		}
 
 		public String getCommand() {
 			return command;
@@ -123,10 +114,6 @@ public class Messenger {
 		public Object[] getArgs() {
 			return args;
 		}
-	}
-
-	public static String handleMessageString(final String string) {
-		return string.substring(1, string.length() - 1);
 	}
 
 }

@@ -36,14 +36,27 @@ public class GameClient {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameClient.class);
     private static final Random USUAL_RANDOM = new Random();
-    private static final String GREETING = "The connection is open";
+    private static final Map<Session, String> SERVER_SESSIONS = new HashMap<>(2);
     private Session serverSession;
-    private String name = "player";
     private Object response;
     private Game game = new Game();
 
+    public static void main(String[] args)
+    throws InterruptedException {
+        final WebSocketContainer webSocketContainer = ContainerProvider.getWebSocketContainer();
+        webSocketContainer.setDefaultMaxSessionIdleTimeout(TimeUnit.MINUTES.toMillis(2));
+        try {
+            webSocketContainer.connectToServer(GameClient.class,
+                URI.create(ClientConstants.SERVER_URL)
+            ); // todo check is it the same serverSession?
+            TimeUnit.SECONDS.sleep(30);
+        } catch (DeploymentException | IOException e) {
+            LOGGER.error("Failed to connect to the server");
+        }
+    }
+
     @OnOpen
-    public void greetServer(final Session session) {
+    public void addServerSession(final Session session) {
         this.serverSession = session;
         try {
             final ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -69,7 +82,7 @@ public class GameClient {
             case Commands.NAME:
                 this.response = message.getArgs()[0];
                 if (response.equals(Response.FAIL)) {
-                    game.nameMe();
+//                    game.nameMe();
                 }
                 break;
             case Commands.START_DATA:
@@ -83,7 +96,7 @@ public class GameClient {
                 for (final Object vertex: message.getArgs()) {
                     nextVertices.add((String) vertex);
                 }
-                game.move(nextVertices.get(USUAL_RANDOM.nextInt(nextVertices.size())));
+//                game.move(nextVertices.get(USUAL_RANDOM.nextInt(nextVertices.size())));
                 break;
             case Commands.MOVE:
                 this.response = message.getArgs()[0];
@@ -93,9 +106,7 @@ public class GameClient {
                 game.knowNextVertices(game.currentVertex());
                 break;
             default:
-                LOGGER.info("The %s command response:", message.getParticipant(),
-                        Commands.UNRECOGNIZABLE
-                );
+//                LOGGER.info("The %s command response:", message.getParticipant(), Commands.UNRECOGNIZABLE);
         }
     }
 
@@ -125,27 +136,12 @@ public class GameClient {
     }
 
     private Future<Object> sendMessage(final String command, final Object... args) {
-        return sendMessage(new Messenger.Message(name, command, args));
-    }
-
-    public static void main(String[] args)
-            throws InterruptedException {
-        final WebSocketContainer webSocketContainer = ContainerProvider.getWebSocketContainer();
-        webSocketContainer.setDefaultMaxSessionIdleTimeout(TimeUnit.SECONDS.toMillis(30));
-        try {
-            webSocketContainer.connectToServer(GameClient.class,
-                    URI.create(ClientConstants.SERVER_URL)
-            ); // todo check is it the same serverSession?
-            TimeUnit.SECONDS.sleep(30);
-        } catch (DeploymentException | IOException e) {
-            LOGGER.error("Failed to connect to the server");
-        }
+        return sendMessage(new Messenger.Message(command, args));
     }
 
     private class Game implements Runnable {
 
         private final Ai ai = new AiImpl();
-        private final String name = MessageFormat.format("Sapsan{0}", new Random().nextInt(100));
         private String startVertex;
         private String currentVertex;
 
@@ -157,7 +153,7 @@ public class GameClient {
 
         void nameMe(final String myName) {
             sendMessage(Commands.NAME, myName);
-            GameClient.this.name = myName;
+//            GameClient.this.name = myName;
             LOGGER.info("I want my name was %s", myName);
         }
 
@@ -179,7 +175,7 @@ public class GameClient {
 
         @Override
         public void run() {
-            nameMe(name);
+//            nameMe(name);
         }
 
     }
