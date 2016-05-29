@@ -1,19 +1,32 @@
 package ru.ifmo.kot.game.api;
 
+import ru.ifmo.kot.api.ServerApi;
+
+import java.util.List;
+
 /**
  Created on 25.05.16.
  */
-public class ServerApiImpl
-	implements ServerApi {
-	
+public class ServerApiImpl implements ServerApi {
+
 	@Override
-	public boolean move(final String vertexName) {
-		return false;
+	public String startVertex() {
+		return null;
 	}
 
 	@Override
-	public String[] nextVertices(final String vertex) {
-		return new String[0];
+	public String currentVertex() {
+		return null;
+	}
+
+	@Override
+	public String finishVertex() {
+		return null;
+	}
+
+	@Override
+	public List<String> nextVertices(final String vertex) {
+		return null;
 	}
 
 	@Override

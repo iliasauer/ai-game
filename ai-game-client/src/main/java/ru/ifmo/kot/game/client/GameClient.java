@@ -2,6 +2,8 @@ package ru.ifmo.kot.game.client;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.ifmo.kot.game.ai.Ai;
+import ru.ifmo.kot.game.ai.AiImpl;
 import ru.ifmo.kot.tools.Commands;
 import ru.ifmo.kot.tools.Messenger;
 import ru.ifmo.kot.tools.Response;
@@ -20,7 +22,9 @@ import java.io.IOException;
 import java.net.URI;
 import java.text.MessageFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -65,7 +69,7 @@ public class GameClient {
             case Commands.NAME:
                 this.response = message.getArgs()[0];
                 if (response.equals(Response.FAIL)) {
-                    game.setName();
+                    game.nameMe();
                 }
                 break;
             case Commands.START_DATA:
@@ -140,22 +144,21 @@ public class GameClient {
 
     private class Game implements Runnable {
 
+        private final Ai ai = new AiImpl();
+        private final String name = MessageFormat.format("Sapsan{0}", new Random().nextInt(100));
         private String startVertex;
         private String currentVertex;
-        private String finishVertex;
 
         void initStartVertices(final String startVertex, final String finishVertex) {
             this.startVertex = startVertex;
             this.currentVertex = startVertex;
-            this.finishVertex = finishVertex;
             LOGGER.info("I should go from %s to %s", startVertex, finishVertex);
         }
 
-        void setName() {
-            final String name = MessageFormat.format("Sapsan{0}", new Random().nextInt(100));
-            sendMessage(Commands.NAME, name);
-            GameClient.this.name = name;
-            LOGGER.info("I want my name was %s", name);
+        void nameMe(final String myName) {
+            sendMessage(Commands.NAME, myName);
+            GameClient.this.name = myName;
+            LOGGER.info("I want my name was %s", myName);
         }
 
         void knowNextVertices() {
@@ -170,15 +173,13 @@ public class GameClient {
             return currentVertex;
         }
 
-        void move(final String vertexName) {
-            LOGGER.info("Now I go to %s", vertexName);
-            currentVertex = vertexName;
-            sendMessage(Commands.MOVE, vertexName);
+        void move() {
+            sendMessage(Commands.MOVE, ai.move());
         }
 
         @Override
         public void run() {
-            setName();
+            nameMe(name);
         }
 
     }
