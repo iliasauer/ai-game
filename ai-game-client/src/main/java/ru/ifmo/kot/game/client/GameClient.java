@@ -81,8 +81,15 @@ public class GameClient {
                 break;
             case Commands.NAME:
                 this.response = message.getArgs()[0];
-                if (response.equals(Response.FAIL)) {
-//                    game.nameMe();
+                switch ((String) response) {
+                    case Response.INVITE:
+                        game.nameMe("Sapsan" + (new Random().nextInt(100) + 1));
+                        break;
+                    case Response.OK:
+                        LOGGER.info("Name is accepted. Let's play");
+                        break;
+                    case Response.FAIL:
+                        LOGGER.info("Name is not accepted. That's a crap");
                 }
                 break;
             case Commands.START_DATA:

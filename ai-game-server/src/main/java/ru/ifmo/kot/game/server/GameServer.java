@@ -6,7 +6,6 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
-import ru.ifmo.kot.game.Api;
 import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.elements.Player;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
@@ -24,26 +23,36 @@ import javax.websocket.Session;
 import javax.websocket.server.ServerContainer;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.stream.IntStream;
 
 import static ru.ifmo.kot.game.server.ServerConstants.CONTEXT_PATH;
-import static ru.ifmo.kot.game.server.ServerConstants.MAX_NUM_OF_CLIENTS;
 import static ru.ifmo.kot.game.server.ServerConstants.PORT;
 
 @ServerEndpoint(
-        value = "/GAME",
+        value = "/game",
         encoders = {Messenger.MessageEncoder.class},
         decoders = {Messenger.MessageDecoder.class})
 public class GameServer {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameServer.class);
     private static final Game GAME = new Game();
-//    private static volatile boolean finishFlag = false;
-    private static final Map<Session, String> CLIENTS = new HashMap<>(MAX_NUM_OF_CLIENTS);
-
+    private static final List<Session> clients = new ArrayList<>();
+    private static final Map<Session, Boolean> turnMap = new LinkedHashMap<>();
+    private static final ReentrantLock lock = new ReentrantLock();
+    //    private static volatile boolean finishFlag = false;
+    private static final Map<Session, String> CLIENTS_MAP = new TreeMap<>();
     private Session clientSession;
 
     public static void main(String[] args) {
@@ -68,19 +77,19 @@ public class GameServer {
 
     @OnOpen
     public void addClient(final Session session) {
-        if (CLIENTS.size() < ServerConstants.MAX_NUM_OF_CLIENTS) {
-            CLIENTS.put(session, null);
-            clientSession = session;
+        if (clients.size() < ServerConstants.MAX_NUM_OF_CLIENTS) {
+            clients.add(session);
+            turnMap.put(session, Boolean.FALSE);
             LOGGER.info("The player has successfully joined");
-            if (CLIENTS.size() == ServerConstants.MAX_NUM_OF_CLIENTS) {
+            if (clients.size() == ServerConstants.MAX_NUM_OF_CLIENTS) {
                 LOGGER.info("It has enough players joined. The game initialization is started.");
-                nameInvite();
+                Executors.newSingleThreadExecutor().submit(new SendInviteTask(Commands.NAME));
             }
         } else {
             try {
                 session.close();
                 LOGGER.info("It has enough players joined");
-            } catch (IOException e) {
+            } catch (final IOException e) {
                 LOGGER.error("Failed to close the session");
             }
         }
@@ -88,7 +97,7 @@ public class GameServer {
 
     @OnClose
     public void removeClient(final Session session) {
-        CLIENTS.remove(session);
+        CLIENTS_MAP.remove(session);
         LOGGER.debug("The client session %s was removed successfully", session.getId());
     }
 
@@ -96,6 +105,7 @@ public class GameServer {
     @OnError
     public void handleClientError(final Session session, final Throwable error) {
         LOGGER.error("An error occurred on the %s client session", session.getId());
+        LOGGER.error("", error);
         removeClient(session);
     }
 
@@ -134,6 +144,16 @@ public class GameServer {
         }
     }
 
+    private static void sendMessage(final Session session, final Messenger.Message message) {
+        if (session.isOpen()) {
+            try {
+                session.getBasicRemote().sendObject(message);
+            } catch (final IOException | EncodeException e) {
+                LOGGER.error("Failed to send a message to the client");
+            }
+        }
+    }
+
     private void sendMessage(final Messenger.Message message) {
         if (clientSession.isOpen()) { // todo check the need
             try {
@@ -144,6 +164,12 @@ public class GameServer {
         } else {
             removeClient(clientSession);
         }
+    }
+
+    private static void sendMessage(final Session session,
+                                    final String command,
+                                    final Object... args) {
+        sendMessage(session, new Messenger.Message(command, args));
     }
 
     private void sendMessage(final String command, final Object... args) {
@@ -157,11 +183,12 @@ public class GameServer {
     }
 
     private void nameResponse(final Session session, final Object[] args) {
+        turnMap.put(session, Boolean.TRUE);
         final String name = (String) args[0];
         if (GAME.name(session, name)) {
-            sendMessage(Commands.NAME, Response.OK);
+            sendMessage(session, Commands.NAME, Response.OK);
         } else {
-            sendMessage(Commands.NAME, Response.FAIL, name);
+            sendMessage(session, Commands.NAME, Response.FAIL, name);
         }
     }
 
@@ -169,8 +196,53 @@ public class GameServer {
         final String nextVertexName = (String) args[0];
     }
 
-    private void nameInvite() {
-        sendMessage(Commands.NAME, Response.INVITE);
+    private static class SendInviteTask implements Runnable {
+
+        private final String commandType;
+
+        SendInviteTask(final String commandType) {
+            this.commandType = commandType;
+        }
+
+        @Override
+        public void run() {
+            IntStream.range(0, clients.size()).forEach(i -> {
+                final Session client = clients.get(i);
+                LOGGER.info("Send %s invite to player #%d", commandType, (i + 1));
+                if (turnMap.get(client).equals(Boolean.FALSE)) {
+                    sendMessage(client, commandType, Response.INVITE);
+                    final Future<Boolean> future = Executors.newSingleThreadExecutor().submit(new
+                            WaitForClientTask(client));
+                    try {
+                        future.get();
+                    } catch (InterruptedException | ExecutionException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            turnMap.replaceAll((k, v) -> Boolean.FALSE);
+        }
+    }
+
+    private static class WaitForClientTask implements Callable<Boolean> {
+
+        private final Session client;
+
+        WaitForClientTask(final Session client) {
+            this.client = client;
+        }
+
+        @Override
+        public Boolean call() throws Exception {
+            while (turnMap.get(client).equals(Boolean.FALSE)) {
+                try {
+                    TimeUnit.MILLISECONDS.sleep(1L);
+                } catch (InterruptedException e) {
+                    throw new IllegalStateException(e);
+                }
+            }
+            return Boolean.TRUE;
+        }
     }
 
     @SuppressWarnings("ConfusingArgumentToVarargsMethod")
@@ -182,51 +254,48 @@ public class GameServer {
         sendMessage(Commands.NEXT_VERTICES, nextVertices);
     }
 
-    private static class Game {
+private static class Game {
 
-        private final Field field = new Field();
-        private final String finishVertex = startVertices()[1];
+    private final Field field = new Field();
+    private final String finishVertex = startVertices()[1];
 
-        boolean addPlayer(final String playerName) {
-            return Player.addPlayer(playerName);
-        }
-
-        String[] startVertices() {
-            return field.getStartVertices();
-        }
-
-        private int weight(final String vrtx1, final String vrtx2) {
-            return field.getGameModel().getWeight(vrtx1, vrtx2);
-        }
-
-        private boolean name(final Session session, final String name) {
-            if (!CLIENTS.values().contains(name)) {
-                CLIENTS.put(session, name);
-                return true;
-            } else {
-                return false;
-            }
-        }
-
-        public String whereIsCompetitor(String id) {
-            final Player player = Player.getPlayer(id);
-            return player.getCurrentPosition();
-        }
-
-        public Set<String> nextVertices(final String vertex) {
-            return field.getNextVertices(vertex);
-        }
-
-        public boolean move(final String playerName, final String vertexName) {
-            final Player player = Player.getPlayer(playerName);
-            player.setCurrentPosition(vertexName);
-            LOGGER.info("Now player %s in %s", playerName, vertexName);
-            return true;
-        }
-
-        String finishVertex() {
-            return finishVertex;
-        }
+    boolean addPlayer(final String playerName) {
+        return Player.addPlayer(playerName);
     }
+
+    String[] startVertices() {
+        return field.getStartVertices();
+    }
+
+    private int weight(final String vrtx1, final String vrtx2) {
+        return field.getGameModel().getWeight(vrtx1, vrtx2);
+    }
+
+    private boolean name(final Session session, final String name) {
+        LOGGER.info("There is %s name for session %s", name, session.getId());
+
+        return true;
+    }
+
+    public String whereIsCompetitor(String id) {
+        final Player player = Player.getPlayer(id);
+        return player.getCurrentPosition();
+    }
+
+    public Set<String> nextVertices(final String vertex) {
+        return field.getNextVertices(vertex);
+    }
+
+    public boolean move(final String playerName, final String vertexName) {
+        final Player player = Player.getPlayer(playerName);
+        player.setCurrentPosition(vertexName);
+        LOGGER.info("Now player %s in %s", playerName, vertexName);
+        return true;
+    }
+
+    String finishVertex() {
+        return finishVertex;
+    }
+}
 
 }
