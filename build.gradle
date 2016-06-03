@@ -1,5 +1,5 @@
 version = '0.1'
-description = 'an educational aibase game'
+description = 'an educational ai game'
 
 //apply plugin: 'idea'
 
