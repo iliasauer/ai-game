@@ -9,10 +9,10 @@ import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainer
 import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.elements.Player;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
-import ru.ifmo.kot.tools.Commands;
+import ru.ifmo.kot.tools.Command;
 import ru.ifmo.kot.tools.EmbeddedLogger;
 import ru.ifmo.kot.tools.Messenger;
-import ru.ifmo.kot.tools.Response;
+import ru.ifmo.kot.tools.ResponseStatus;
 
 import javax.websocket.EncodeException;
 import javax.websocket.OnClose;
@@ -24,6 +24,7 @@ import javax.websocket.server.ServerContainer;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -80,7 +81,6 @@ public class GameServer {
             clients.add(client);
             final String clientId = client.getId();
             turnMap.put(clientId, Boolean.FALSE);
-
             LOGGER.info("The player has successfully joined");
             if (clients.size() == ServerConstants.MAX_NUM_OF_CLIENTS) {
                 LOGGER.info("It has enough players joined. The game initialization is started.");
@@ -94,10 +94,6 @@ public class GameServer {
                 LOGGER.error("Failed to close the session");
             }
         }
-    }
-
-    static void nameInvite() {
-        INVITE_EXECUTOR.submit(SendInviteTask.nameInviteTask());
     }
 
     @OnClose
@@ -121,16 +117,16 @@ public class GameServer {
 //        }
         final Object[] args = message.getArgs();
         switch (message.getCommand()) {
-            case Commands.WEIGHT:
+            case WEIGHT:
                 weightResponse(args);
                 break;
-            case Commands.NAME:
+            case NAME:
                 nameResponse(session, args);
                 break;
-            case Commands.NEXT_VERTICES:
+            case NEXT_VERTICES:
                 nextVertices(args);
                 break;
-            case Commands.MOVE:
+            case MOVE:
 //                if (finishFlag) {
 //                    System.exit(0);
 //                }
@@ -141,7 +137,7 @@ public class GameServer {
 //                    System.exit(0);
 //                } else {
 ////                    GAME.move(message.getParticipant(), nextVertexName);
-//                    sendMessage(Commands.MOVE, Response.OK);
+//                    sendMessage(Commands.MOVE, ResponseStatus.OK);
 //                }
                 break;
             default:
@@ -172,28 +168,34 @@ public class GameServer {
     }
 
     private static void sendMessage(final Session session,
-                                    final String command,
+                                    final Command command,
+                                    final ResponseStatus status,
                                     final Object... args) {
-        sendMessage(session, new Messenger.Message(command, args));
+        sendMessage(session, new Messenger.Message(command, status, args));
     }
 
-    private void sendMessage(final String command, final Object... args) {
-        sendMessage(new Messenger.Message(command, args));
+    private void sendMessage(final Command command, final ResponseStatus status, final Object...
+            args) {
+        sendMessage(new Messenger.Message(command, status, args));
     }
 
     private void weightResponse(final Object[] args) {
         final String vrtx1 = (String) args[0];
         final String vrtx2 = (String) args[1];
-        sendMessage(Commands.WEIGHT, GAME.weight(vrtx1, vrtx2));
+        sendMessage(Command.WEIGHT, ResponseStatus.OK, GAME.weight(vrtx1, vrtx2));
+    }
+
+    private void nameInvite() {
+        INVITE_EXECUTOR.submit(SendInviteTask.nameInviteTask());
     }
 
     private void nameResponse(final Session session, final Object[] args) {
         turnMap.put(session.getId(), Boolean.TRUE);
         final String name = (String) args[0];
         if (GAME.name(session, name)) {
-            sendMessage(session, Commands.NAME, Response.OK);
+            sendMessage(session, Command.NAME, ResponseStatus.OK);
         } else {
-            sendMessage(session, Commands.NAME, Response.FAIL, name);
+            sendMessage(session, Command.NAME, ResponseStatus.FAIL, name);
         }
     }
 
@@ -204,17 +206,17 @@ public class GameServer {
     private static class SendInviteTask implements Runnable {
 
         private static final ExecutorService WAITING_TASK_EXECUTOR = Executors.newSingleThreadExecutor();
-        private static final SendInviteTask NAME_INVITE_TASK = new SendInviteTask(Commands.NAME);
-        private static final SendInviteTask MOVE_INVITE_TASK = new SendInviteTask(Commands.MOVE);
+        private static final SendInviteTask NAME_INVITE_TASK = new SendInviteTask(Command.NAME);
+        private static final SendInviteTask MOVE_INVITE_TASK = new SendInviteTask(Command.MOVE);
         private static Map<String, WaitingClientTask> waitingTasks;
 
-        private final String commandType;
+        private final Command command;
 
-        SendInviteTask(final String commandType) {
+        SendInviteTask(final Command command) {
             if (waitingTasks == null) {
                 init();
             }
-            this.commandType = commandType;
+            this.command = command;
         }
 
         static void init() {
@@ -229,9 +231,9 @@ public class GameServer {
             IntStream.range(0, clients.size()).forEach(i -> {
                 final Session client = clients.get(i);
                 final String clientId = client.getId();
-                LOGGER.info("Send %s invite to player #%d", commandType, (i + 1));
+                LOGGER.info("Send %s invite to player #%d", command, (i + 1));
                 if (turnMap.get(clientId).equals(Boolean.FALSE)) {
-                    sendMessage(client, commandType, Response.INVITE);
+                    sendMessage(client, command, ResponseStatus.INVITE);
                     final Future<Boolean> future = WAITING_TASK_EXECUTOR.submit(new
                             WaitingClientTask(clientId));
                     try {
@@ -280,11 +282,13 @@ public class GameServer {
         final Set<String> nextVerticesSet = GAME.nextVertices(currentVertex);
         String[] nextVertices = new String[nextVerticesSet.size()];
         nextVerticesSet.toArray(nextVertices);
-        sendMessage(Commands.NEXT_VERTICES, nextVertices);
+        sendMessage(Command.NEXT_VERTICES, ResponseStatus.OK, nextVertices);
     }
 
     private static class Game {
 
+        private List<Player> players = new ArrayList<>();
+        private Set<String> names = new HashSet<>();
         private final Field field = new Field();
         private final String finishVertex = startVertices()[1];
 
@@ -301,9 +305,14 @@ public class GameServer {
         }
 
         private boolean name(final Session session, final String name) {
-            LOGGER.info("There is %s name for session %s", name, session.getId());
-
-            return true;
+            if (!names.contains(name)) {
+                names.add(name);
+                LOGGER.info("There is %s name for session %s", name, session.getId());
+                return true;
+            } else {
+                LOGGER.info("The %s name is already occupied", name);
+                return false;
+            }
         }
 
         public String whereIsCompetitor(String id) {

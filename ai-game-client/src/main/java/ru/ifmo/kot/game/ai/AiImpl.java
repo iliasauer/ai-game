@@ -1,5 +1,7 @@
 package ru.ifmo.kot.game.ai;
 
+import ru.ifmo.kot.game.aibase.AiBase;
+
 import java.util.List;
 import java.util.Random;
 

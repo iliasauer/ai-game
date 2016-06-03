@@ -2,11 +2,11 @@ package ru.ifmo.kot.game.client;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.ifmo.kot.game.ai.Ai;
+import ru.ifmo.kot.game.aibase.Ai;
 import ru.ifmo.kot.game.ai.AiImpl;
-import ru.ifmo.kot.tools.Commands;
+import ru.ifmo.kot.tools.Command;
 import ru.ifmo.kot.tools.Messenger;
-import ru.ifmo.kot.tools.Response;
+import ru.ifmo.kot.tools.ResponseStatus;
 
 import javax.websocket.ClientEndpoint;
 import javax.websocket.ContainerProvider;
@@ -20,11 +20,11 @@ import javax.websocket.Session;
 import javax.websocket.WebSocketContainer;
 import java.io.IOException;
 import java.net.URI;
-import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -74,40 +74,48 @@ public class GameClient {
 
     @OnMessage
     public void handleMessage(final Messenger.Message message, final Session session) {
-        final String command = message.getCommand();
+        final Command command = message.getCommand();
+        final Optional<ResponseStatus> optionalResponseStatus = message.getResponseStatus();
+        final ResponseStatus responseStatus;
+        if (optionalResponseStatus.isPresent()) {
+            responseStatus = optionalResponseStatus.get();
+        } else {
+            LOGGER.error("The wrong server message format");
+            throw new IllegalArgumentException();
+        }
         switch (command) {
-            case Commands.WEIGHT:
-                this.response = message.getArgs()[0];
+            case WEIGHT:
                 break;
-            case Commands.NAME:
-                this.response = message.getArgs()[0];
-                switch ((String) response) {
-                    case Response.INVITE:
-                        game.nameMe("Sapsan" + (new Random().nextInt(100) + 1));
+            case NAME:
+                switch (responseStatus) {
+                    case INVITE:
+                        game.nameMe();
                         break;
-                    case Response.OK:
+                    case OK:
                         LOGGER.info("Name is accepted. Let's play");
                         break;
-                    case Response.FAIL:
+                    case FAIL:
                         LOGGER.info("Name is not accepted. That's a crap");
+                        final String oldName = (String) message.getArgs()[0];
+                        game.nameMeAgain(oldName);
                 }
                 break;
-            case Commands.START_DATA:
+            case START_DATA:
                 final String startVertex = (String) message.getArgs()[0];
                 final String finishVertex = (String) message.getArgs()[1];
                 game.initStartVertices(startVertex, finishVertex);
                 game.knowNextVertices(game.currentVertex());
                 break;
-            case Commands.NEXT_VERTICES:
+            case NEXT_VERTICES:
                 final List<String> nextVertices = new ArrayList<>();
                 for (final Object vertex: message.getArgs()) {
                     nextVertices.add((String) vertex);
                 }
 //                game.move(nextVertices.get(USUAL_RANDOM.nextInt(nextVertices.size())));
                 break;
-            case Commands.MOVE:
+            case MOVE:
                 this.response = message.getArgs()[0];
-//                if (response.equals(Response.OK)) {
+//                if (response.equals(ResponseStatus.OK)) {
 //                    LOGGER.info("Ok. Now I should do a next move");
 //                }
                 game.knowNextVertices(game.currentVertex());
@@ -142,7 +150,7 @@ public class GameClient {
         return null;
     }
 
-    private Future<Object> sendMessage(final String command, final Object... args) {
+    private Future<Object> sendMessage(final Command command, final Object... args) {
         return sendMessage(new Messenger.Message(command, args));
     }
 
@@ -158,18 +166,24 @@ public class GameClient {
             LOGGER.info("I should go from %s to %s", startVertex, finishVertex);
         }
 
-        void nameMe(final String myName) {
-            sendMessage(Commands.NAME, myName);
-//            GameClient.this.name = myName;
-            LOGGER.info("I want my name was %s", myName);
+        void nameMe() {
+            final String name = ai.name();
+            sendMessage(Command.NAME, name);
+            LOGGER.info("I want my name was %s", name);
+        }
+
+        void nameMeAgain(final String oldName) {
+            final String newName = ai.name(oldName);
+            sendMessage(Command.NAME, newName);
+            LOGGER.info("Then I want my name was %s", newName);
         }
 
         void knowNextVertices() {
-            sendMessage(Commands.NEXT_VERTICES, startVertex);
+            sendMessage(Command.NEXT_VERTICES, startVertex);
         }
 
         void knowNextVertices(final String vertexName) {
-            sendMessage(Commands.NEXT_VERTICES, vertexName);
+            sendMessage(Command.NEXT_VERTICES, vertexName);
         }
 
         String currentVertex() {
@@ -177,7 +191,7 @@ public class GameClient {
         }
 
         void move() {
-            sendMessage(Commands.MOVE, ai.move());
+            sendMessage(Command.MOVE, ai.move());
         }
 
         @Override

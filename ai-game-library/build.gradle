@@ -1,5 +1,5 @@
 version = '0.1'
-description = 'an educational ai game - common library'
+description = 'an educational aibase game - common library'
 
 dependencies {
 

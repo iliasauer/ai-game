@@ -1,4 +1,4 @@
-package ru.ifmo.kot.game.ai;
+package ru.ifmo.kot.game.aibase;
 
 import ru.ifmo.kot.api.ServerApi;
 import ru.ifmo.kot.game.api.ServerApiImpl;
@@ -10,7 +10,7 @@ public abstract class AiBase implements Ai {
 
 	private final ServerApi api = new ServerApiImpl();
 
-	public ServerApi api() {
+	protected ServerApi api() {
 		return api;
 	}
 }

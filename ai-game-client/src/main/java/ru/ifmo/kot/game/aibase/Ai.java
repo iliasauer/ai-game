@@ -1,4 +1,4 @@
-package ru.ifmo.kot.game.ai;
+package ru.ifmo.kot.game.aibase;
 
 import java.text.MessageFormat;
 import java.util.Random;
@@ -19,10 +19,10 @@ public interface Ai {
 	}
 
 	default String name() {
-		return generateName();
+		return "Sapsan";
 	}
 
-	default String name(final String failStatus, final String missedParameter) {
+	default String name(final String missedParameter) {
 		String name = generateName();
 		while (name.equals(missedParameter)) {
 			name = generateName();
