@@ -1,5 +1,7 @@
 package ru.ifmo.kot.game.ai;
 
+import org.eclipse.jetty.server.Server;
+import ru.ifmo.kot.api.ServerApi;
 import ru.ifmo.kot.game.aibase.AiBase;
 
 import java.util.List;
@@ -11,6 +13,10 @@ import java.util.Random;
 public class AiImpl extends AiBase {
 
 	private static final Random USUAL_RANDOM = new Random();
+
+	public AiImpl(final ServerApi api) {
+		super(api);
+	}
 
 	@Override
 	public String move() {

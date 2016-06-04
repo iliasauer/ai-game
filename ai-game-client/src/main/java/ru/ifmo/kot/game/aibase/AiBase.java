@@ -8,7 +8,11 @@ import ru.ifmo.kot.game.api.ServerApiImpl;
  */
 public abstract class AiBase implements Ai {
 
-	private final ServerApi api = new ServerApiImpl();
+	private final ServerApi api;
+
+	public AiBase(final ServerApi api) {
+		this.api = api;
+	}
 
 	protected ServerApi api() {
 		return api;

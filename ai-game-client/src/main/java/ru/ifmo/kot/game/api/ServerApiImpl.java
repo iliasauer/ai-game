@@ -1,6 +1,7 @@
 package ru.ifmo.kot.game.api;
 
 import ru.ifmo.kot.api.ServerApi;
+import ru.ifmo.kot.game.client.GameClient;
 
 import java.util.List;
 
@@ -9,29 +10,36 @@ import java.util.List;
  */
 public class ServerApiImpl implements ServerApi {
 
+	private final GameClient.Game game;
+
+	public ServerApiImpl(final GameClient.Game game) {
+		this.game = game;
+	}
+
 	@Override
 	public String startVertex() {
-		return null;
+		return game.startVertex();
 	}
 
 	@Override
 	public String currentVertex() {
-		return null;
+		return game.currentVertex();
 	}
 
 	@Override
 	public String finishVertex() {
-		return null;
+		return game.finishVertex();
 	}
 
 	@Override
 	public List<String> nextVertices(final String vertex) {
-		return null;
+		return game.knowNextVertices(vertex);
 	}
 
 	@Override
 	public int weight(final String vertex1, final String vertex2) {
-		return 0;
+		return game.knowWeight
+				(vertex1, vertex2);
 	}
 
 	@Override

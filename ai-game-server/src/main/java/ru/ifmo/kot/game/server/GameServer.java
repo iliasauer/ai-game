@@ -35,6 +35,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -127,6 +128,7 @@ public class GameServer {
                 nextVertices(args);
                 break;
             case MOVE:
+                moveResponse(session, args);
 //                if (finishFlag) {
 //                    System.exit(0);
 //                }
@@ -174,8 +176,14 @@ public class GameServer {
         sendMessage(session, new Messenger.Message(command, status, args));
     }
 
-    private void sendMessage(final Command command, final ResponseStatus status, final Object...
-            args) {
+    private static void sendMessage(final Session session,
+                                    final Command command,
+                                    final Object... args) {
+        sendMessage(session, new Messenger.Message(command, args));
+    }
+
+    private void sendMessage(final Command command, final ResponseStatus status,
+                             final Object ... args) {
         sendMessage(new Messenger.Message(command, status, args));
     }
 
@@ -189,18 +197,36 @@ public class GameServer {
         INVITE_EXECUTOR.submit(SendInviteTask.nameInviteTask());
     }
 
-    private void nameResponse(final Session session, final Object[] args) {
-        turnMap.put(session.getId(), Boolean.TRUE);
+    private void moveInvite() {
+        INVITE_EXECUTOR.submit(SendInviteTask.moveInviteTask());
+    }
+
+    private void nameResponse(final Session client, final Object[] args) {
         final String name = (String) args[0];
-        if (GAME.name(session, name)) {
-            sendMessage(session, Command.NAME, ResponseStatus.OK);
+        if (GAME.name(client, name)) {
+            sendMessage(client, Command.NAME, ResponseStatus.OK);
+            turnMap.put(client.getId(), Boolean.TRUE);
+            sendMessage(client, Command.START_DATA, GAME.startVertex(), GAME.finishVertex());
         } else {
-            sendMessage(session, Command.NAME, ResponseStatus.FAIL, name);
+            sendMessage(client, Command.NAME, ResponseStatus.FAIL, name);
+            turnMap.put(client.getId(), Boolean.FALSE);
+        }
+        boolean commonReady = true;
+        for (boolean ready: turnMap.values()) {
+            commonReady = commonReady && ready;
+        }
+        if (commonReady) {
+            moveInvite();
         }
     }
 
-    private void moveResponse(final Object[] args) {
+    private void moveResponse(final Session client, final Object[] args) {
         final String nextVertexName = (String) args[0];
+        final Player player = GAME.players().get(client.getId());
+        player.setCurrentPosition(nextVertexName);
+        LOGGER.info("Now %s in %s", player.getName(), player.getCurrentPosition());
+        sendMessage(client, Command.NAME, ResponseStatus.OK);
+        turnMap.put(client.getId(), Boolean.TRUE);
     }
 
     private static class SendInviteTask implements Runnable {
@@ -237,9 +263,11 @@ public class GameServer {
                     final Future<Boolean> future = WAITING_TASK_EXECUTOR.submit(new
                             WaitingClientTask(clientId));
                     try {
-                        future.get();
+                        future.get(5, TimeUnit.SECONDS);
                     } catch (final InterruptedException | ExecutionException e) {
                         LOGGER.error("Internal server error");
+                    } catch (TimeoutException e) {
+                        LOGGER.error("Client does not respond");
                     }
                 }
             });
@@ -287,14 +315,15 @@ public class GameServer {
 
     private static class Game {
 
-        private List<Player> players = new ArrayList<>();
+        private Map<String, Player> players = new LinkedHashMap<>();
         private Set<String> names = new HashSet<>();
         private final Field field = new Field();
+        private final String startVertex = startVertices()[0];
         private final String finishVertex = startVertices()[1];
 
-        boolean addPlayer(final String playerName) {
-            return Player.addPlayer(playerName);
-        }
+//        boolean addPlayer(final String playerName) {
+//            return Player.addPlayer(playerName);
+//        }
 
         String[] startVertices() {
             return field.getStartVertices();
@@ -307,6 +336,7 @@ public class GameServer {
         private boolean name(final Session session, final String name) {
             if (!names.contains(name)) {
                 names.add(name);
+                players.put(session.getId(), new Player(name, startVertex));
                 LOGGER.info("There is %s name for session %s", name, session.getId());
                 return true;
             } else {
@@ -315,24 +345,33 @@ public class GameServer {
             }
         }
 
-        public String whereIsCompetitor(String id) {
-            final Player player = Player.getPlayer(id);
-            return player.getCurrentPosition();
-        }
+//        public String whereIsCompetitor(String id) {
+//            final Player player = Player.getPlayer(id);
+//            return player.getCurrentPosition();
+//        }
 
         public Set<String> nextVertices(final String vertex) {
             return field.getNextVertices(vertex);
         }
 
-        public boolean move(final String playerName, final String vertexName) {
-            final Player player = Player.getPlayer(playerName);
-            player.setCurrentPosition(vertexName);
-            LOGGER.info("Now player %s in %s", playerName, vertexName);
-            return true;
+//        public boolean move(final String playerName, final String vertexName) {
+//            final Player player = Player.getPlayer(playerName);
+//            player.setCurrentPosition(vertexName);
+//            LOGGER.info("Now player %s in %s", playerName, vertexName);
+//            return true;
+//        }
+
+
+        String startVertex() {
+            return startVertex;
         }
 
         String finishVertex() {
             return finishVertex;
+        }
+
+        public Map<String, Player> players() {
+            return players;
         }
     }
 
