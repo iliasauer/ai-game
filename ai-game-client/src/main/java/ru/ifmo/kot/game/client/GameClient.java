@@ -115,6 +115,7 @@ public class GameClient {
                 game.initStartVertices(startVertex, finishVertex);
                 break;
             case NEXT_VERTICES:
+                LOGGER.info("I am %s and I get next vertices response", Thread.currentThread().getName());
                 if (optionalResponseStatus.isPresent()) {
                     responseStatus = optionalResponseStatus.get();
                 } else {
@@ -210,6 +211,7 @@ public class GameClient {
 
         @Override
         public T call() throws Exception {
+            LOGGER.info("I am %s and I am inside callable", Thread.currentThread().getName());
             return sendMessage(true, command, args);
         }
     }
@@ -249,11 +251,12 @@ public class GameClient {
         @SuppressWarnings("unchecked")
         public List<String> knowNextVertices(final String vertexName) {
             try {
+                LOGGER.info("I am %s and I call Send Message Task", Thread.currentThread().getName());
                 return (List<String>) executor.submit(new SendMessageTask<>(Command
                         .NEXT_VERTICES, vertexName)).get(5, TimeUnit.SECONDS);
             } catch (final InterruptedException | ExecutionException e) {
                 e.printStackTrace();
-            } catch (TimeoutException e) {
+            } catch (final TimeoutException e) {
                 LOGGER.info("Can't get the response");
             }
             return null;

@@ -43,17 +43,7 @@ public class ServerApiImpl implements ServerApi {
 	}
 
 	@Override
-	public String whereIsCompetitor(final int index) {
-		return null;
-	}
-
-	@Override
-	public String whereIsCompetitor(final String id) {
-		return null;
-	}
-
-	@Override
-	public String whereIsCompetitor() {
+	public List<String> whereAreCompetitors() {
 		return null;
 	}
 }
