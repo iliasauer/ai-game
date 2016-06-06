@@ -163,58 +163,23 @@ public class GameClient {
     }
 
     @SuppressWarnings("unchecked")
-    private <T> T sendMessage(final boolean waitResponse, final Messenger.Message message) {
+    private void sendMessage(final Messenger.Message message) {
         if (serverSession.isOpen()) {
             try {
                 serverSession.getBasicRemote().sendObject(message);
             } catch (final IOException | EncodeException e) {
                 LOGGER.error("Failed to send message to the server");
             }
-            if (waitResponse) {
-                final ExecutorService executor = Executors.newSingleThreadExecutor();
-                final Future<T> future = executor.submit(() -> {
-                    while (this.response == null) {
-                        TimeUnit.MILLISECONDS.sleep(10);
-                    }
-                    final T response = (T) this.response;
-                    this.response = null;
-                    return response;
-                });
-                try {
-                    return future.get();
-                } catch (final InterruptedException | ExecutionException e) {
-                    LOGGER.error("Failed to get a message from the server");
-                }
-            }
         } else {
             LOGGER.error("Failed to send the message to the server");
         }
-        return null;
     }
 
 
-    private <T> T sendMessage(final boolean waitResponse, final Command command, final Object ...
-            args) {
-        return sendMessage(waitResponse, new Messenger.Message(command, args));
+    private void sendMessage(final Command command, final Object ... args) {
+        sendMessage(new Messenger.Message(command, args));
     }
 
-    private class SendMessageTask<T> implements Callable<T> {
-
-        private Object response;
-        private final Command command;
-        private final Object[] args;
-
-        SendMessageTask(Command command, Object ... args) {
-            this.command = command;
-            this.args = args;
-        }
-
-        @Override
-        public T call() throws Exception {
-            LOGGER.info("I am %s and I am inside callable", Thread.currentThread().getName());
-            return sendMessage(true, command, args);
-        }
-    }
 
     public class Game implements Runnable {
 
@@ -233,27 +198,26 @@ public class GameClient {
 
         void nameMe() {
             final String name = ai.name();
-            sendMessage(false, Command.NAME, name);
+            sendMessage(Command.NAME, name);
             LOGGER.info("I want my name was %s", name);
         }
 
         void nameMeAgain(final String oldName) {
             final String newName = ai.name(oldName);
-            sendMessage(false, Command.NAME, newName);
+            sendMessage(Command.NAME, newName);
             LOGGER.info("Then I want my name was %s", newName);
         }
 
         @SuppressWarnings("unchecked")
         public List<String> knowNextVertices() {
-            return (List<String>) sendMessage(true, Command.NEXT_VERTICES, startVertex);
+            return (List<String>) sendMessage(Command.NEXT_VERTICES, startVertex);
         }
 
         @SuppressWarnings("unchecked")
         public List<String> knowNextVertices(final String vertexName) {
             try {
                 LOGGER.info("I am %s and I call Send Message Task", Thread.currentThread().getName());
-                return (List<String>) executor.submit(new SendMessageTask<>(Command
-                        .NEXT_VERTICES, vertexName)).get(5, TimeUnit.SECONDS);
+                return (List<String>) executor.submit().get(5, TimeUnit.SECONDS);
             } catch (final InterruptedException | ExecutionException e) {
                 e.printStackTrace();
             } catch (final TimeoutException e) {
@@ -263,7 +227,7 @@ public class GameClient {
         }
 
         public int knowWeight(final String vertexName1, final String vertexName2) {
-            return (Integer) sendMessage(true, Command.WEIGHT, vertexName1, vertexName2);
+            return (Integer) sendMessage(Command.WEIGHT, vertexName1, vertexName2);
         }
 
         public String currentVertex() {
@@ -279,7 +243,7 @@ public class GameClient {
         }
 
         void move() {
-            sendMessage(false, Command.MOVE, ai.move());
+            sendMessage(Command.MOVE, ai.move());
         }
 
         void moveAgain(final String oldMove) {
