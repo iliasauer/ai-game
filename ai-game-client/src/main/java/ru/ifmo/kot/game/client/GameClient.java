@@ -8,6 +8,7 @@ import ru.ifmo.kot.game.api.ServerApiImpl;
 import ru.ifmo.kot.tools.Command;
 import ru.ifmo.kot.tools.Messenger;
 import ru.ifmo.kot.tools.RequestStatus;
+import ru.ifmo.kot.tools.SendMessageTask;
 
 import javax.websocket.ClientEndpoint;
 import javax.websocket.ContainerProvider;
@@ -22,7 +23,10 @@ import javax.websocket.WebSocketContainer;
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -42,7 +46,7 @@ public class GameClient {
     private static final Random USUAL_RANDOM = new Random();
     private static final Map<Session, String> SERVER_SESSIONS = new HashMap<>(2);
     private Session serverSession;
-    private Object response;
+    private Map<String, Object> responseMap = new LinkedHashMap<>();
     private Game game = new Game();
 
     public static void main(String[] args)
@@ -83,20 +87,19 @@ public class GameClient {
     @OnMessage
     public void handleMessage(final Messenger.Message message, final Session session) {
         final Command command = message.getCommand();
-        final Optional<RequestStatus> optionalResponseStatus = message.getRequestStatus();
-        final RequestStatus responseStatus;
+        final Optional<RequestStatus> optionalRequestStatus = message.getRequestStatus();
+        final RequestStatus requestStatus;
         switch (command) {
             case WEIGHT:
-                response = message.getArgs()[0];
                 break;
             case NAME:
-                if (optionalResponseStatus.isPresent()) {
-                    responseStatus = optionalResponseStatus.get();
+                if (optionalRequestStatus.isPresent()) {
+                    requestStatus = optionalRequestStatus.get();
                 } else {
                     LOGGER.error("The wrong server message format");
                     throw new IllegalArgumentException();
                 }
-                switch (responseStatus) {
+                switch (requestStatus) {
                     case INVITE:
                         game.nameMe();
                         break;
@@ -116,30 +119,29 @@ public class GameClient {
                 break;
             case NEXT_VERTICES:
                 LOGGER.info("I am %s and I get next vertices response", Thread.currentThread().getName());
-                if (optionalResponseStatus.isPresent()) {
-                    responseStatus = optionalResponseStatus.get();
+                if (optionalRequestStatus.isPresent()) {
+                    requestStatus = optionalRequestStatus.get();
                 } else {
                     LOGGER.error("The wrong server message format");
                     throw new IllegalArgumentException();
                 }
-                switch (responseStatus) {
+                switch (requestStatus) {
                     case OK:
                         final List<String> nextVertices = new ArrayList<>();
                         for (final Object vertex : message.getArgs()) {
                             nextVertices.add((String) vertex);
                         }
-                        response = nextVertices;
                         break;
                 }
                 break;
             case MOVE:
-                if (optionalResponseStatus.isPresent()) {
-                    responseStatus = optionalResponseStatus.get();
+                if (optionalRequestStatus.isPresent()) {
+                    requestStatus = optionalRequestStatus.get();
                 } else {
                     LOGGER.error("The wrong server message format");
                     throw new IllegalArgumentException();
                 }
-                switch (responseStatus) {
+                switch (requestStatus) {
                     case INVITE:
                         game.move();
                         break;
@@ -162,6 +164,15 @@ public class GameClient {
         LOGGER.debug("An error occurred");
     }
 
+    private SendMessageTask<?> getSendMessageTask(
+            final Command command, final Object... args) {
+        return new SendMessageTask<>(
+                Collections.singletonList(serverSession),
+                responseMap, command.name(),
+                session ->
+                        sendMessage(command, args));
+    }
+
     @SuppressWarnings("unchecked")
     private void sendMessage(final Messenger.Message message) {
         if (serverSession.isOpen()) {
@@ -176,7 +187,7 @@ public class GameClient {
     }
 
 
-    private void sendMessage(final Command command, final Object ... args) {
+    private void sendMessage(final Command command, final Object... args) {
         sendMessage(new Messenger.Message(command, args));
     }
 
@@ -210,24 +221,18 @@ public class GameClient {
 
         @SuppressWarnings("unchecked")
         public List<String> knowNextVertices() {
-            return (List<String>) sendMessage(Command.NEXT_VERTICES, startVertex);
+            return knowNextVertices(startVertex);
         }
 
         @SuppressWarnings("unchecked")
         public List<String> knowNextVertices(final String vertexName) {
-            try {
-                LOGGER.info("I am %s and I call Send Message Task", Thread.currentThread().getName());
-                return (List<String>) executor.submit().get(5, TimeUnit.SECONDS);
-            } catch (final InterruptedException | ExecutionException e) {
-                e.printStackTrace();
-            } catch (final TimeoutException e) {
-                LOGGER.info("Can't get the response");
-            }
-            return null;
+            executor.submit(getSendMessageTask(Command.NEXT_VERTICES, vertexName));
+            return (List<String>) responseMap.get(Command.NEXT_VERTICES.name());
         }
 
         public int knowWeight(final String vertexName1, final String vertexName2) {
-            return (Integer) sendMessage(Command.WEIGHT, vertexName1, vertexName2);
+            executor.submit(getSendMessageTask(Command.WEIGHT, vertexName1, vertexName2));
+            return (Integer) responseMap.get(Command.WEIGHT.name());
         }
 
         public String currentVertex() {
