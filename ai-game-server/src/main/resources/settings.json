@@ -2,7 +2,7 @@
   "server": {
     "port": 8080,
     "contextPath": "/gameserver",
-    "maxNumOfClients": 2
+    "numOfClients": 2
   },
   "elements": {
     "verticesFilePath": "vertices.json",

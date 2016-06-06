@@ -7,7 +7,7 @@ import ru.ifmo.kot.game.ai.AiImpl;
 import ru.ifmo.kot.game.api.ServerApiImpl;
 import ru.ifmo.kot.tools.Command;
 import ru.ifmo.kot.tools.Messenger;
-import ru.ifmo.kot.tools.ResponseStatus;
+import ru.ifmo.kot.tools.RequestStatus;
 
 import javax.websocket.ClientEndpoint;
 import javax.websocket.ContainerProvider;
@@ -83,8 +83,8 @@ public class GameClient {
     @OnMessage
     public void handleMessage(final Messenger.Message message, final Session session) {
         final Command command = message.getCommand();
-        final Optional<ResponseStatus> optionalResponseStatus = message.getResponseStatus();
-        final ResponseStatus responseStatus;
+        final Optional<RequestStatus> optionalResponseStatus = message.getRequestStatus();
+        final RequestStatus responseStatus;
         switch (command) {
             case WEIGHT:
                 response = message.getArgs()[0];

@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 public class Messenger {
 
     private static final String COMMAND_KEY = "command";
-    private static final String RESPONSE_KEY = "responseStatus";
+    private static final String RESPONSE_KEY = "requestStatus";
     private static final String ARGS_KEY = "args";
 
     public static class MessageEncoder
@@ -43,7 +43,7 @@ public class Messenger {
             }
             final JsonObjectBuilder objectBuilder = Json.createObjectBuilder()
                     .add(COMMAND_KEY, message.getCommand().name());
-            final Optional<ResponseStatus> optionalResponse = message.getResponseStatus();
+            final Optional<RequestStatus> optionalResponse = message.getRequestStatus();
             if (optionalResponse.isPresent()) {
                 objectBuilder.add(RESPONSE_KEY, optionalResponse.get().name());
             }
@@ -77,12 +77,12 @@ public class Messenger {
                 final Command command = Command.valueOf(jsonObject.getString(COMMAND_KEY));
                 final Optional<String> optionalStatusString =
                         Optional.ofNullable(jsonObject.getString(RESPONSE_KEY, null));
-                final Optional<ResponseStatus> optionalResponseStatus;
+                final Optional<RequestStatus> optionalRequestStatus;
                 if (optionalStatusString.isPresent()) {
-                    optionalResponseStatus =
-                            Optional.of(ResponseStatus.valueOf(optionalStatusString.get()));
+                    optionalRequestStatus =
+                            Optional.of(RequestStatus.valueOf(optionalStatusString.get()));
                 } else {
-                    optionalResponseStatus = Optional.empty();
+                    optionalRequestStatus = Optional.empty();
                 }
                 final List<JsonValue> argsList = jsonObject.getJsonArray(ARGS_KEY);
                 final List<Object> objectArgsList =
@@ -97,9 +97,9 @@ public class Messenger {
                         }, Collectors.toList()));
                 final Object[] objectArgs = new Object[objectArgsList.size()];
                 objectArgsList.toArray(objectArgs);
-                if (optionalResponseStatus.isPresent()) {
-                    final ResponseStatus responseStatus = optionalResponseStatus.get();
-                    message = new Message(command, responseStatus, objectArgs);
+                if (optionalRequestStatus.isPresent()) {
+                    final RequestStatus requestStatus = optionalRequestStatus.get();
+                    message = new Message(command, requestStatus, objectArgs);
                 } else {
                     message = new Message(command, objectArgs);
                 }
@@ -120,18 +120,18 @@ public class Messenger {
     public static class Message {
 
         private final Command command;
-        private final ResponseStatus responseStatus;
+        private final RequestStatus requestStatus;
         private final Object[] args;
 
-        public Message(final Command command, final ResponseStatus responseStatus, final Object... args) {
+        public Message(final Command command, final RequestStatus requestStatus, final Object... args) {
             this.command = command;
-            this.responseStatus = responseStatus;
+            this.requestStatus = requestStatus;
             this.args = args;
         }
 
         public Message(final Command command, final Object... args) {
             this.command = command;
-            this.responseStatus = null;
+            this.requestStatus = null;
             this.args = args;
         }
 
@@ -139,8 +139,8 @@ public class Messenger {
             return command;
         }
 
-        public Optional<ResponseStatus> getResponseStatus() {
-            return Optional.ofNullable(responseStatus);
+        public Optional<RequestStatus> getRequestStatus() {
+            return Optional.ofNullable(requestStatus);
         }
 
         public Object[] getArgs() {

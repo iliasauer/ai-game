@@ -8,9 +8,9 @@ interface ServerConstants {
     String SETTINGS_KEY = "server";
     String PORT_KEY = "port";
     String CONTEXT_PATH_KEY = "contextPath";
-    String MAX_NUM_OF_CLIENTS_KEY = "maxNumOfClients";
+    String NUM_OF_CLIENTS_KEY = "numOfClients";
     JsonObject SETTINGS = Engine.getSettings().getJsonObject(SETTINGS_KEY);
     int PORT = SETTINGS.getInt(PORT_KEY);
     String CONTEXT_PATH = SETTINGS.getString(CONTEXT_PATH_KEY);
-    int MAX_NUM_OF_CLIENTS = SETTINGS.getInt(MAX_NUM_OF_CLIENTS_KEY);
+    int NUM_OF_CLIENTS = SETTINGS.getInt(NUM_OF_CLIENTS_KEY);
 }
