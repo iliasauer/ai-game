@@ -27,9 +27,9 @@ public class AiImpl extends AiBase {
 		final String startVertex = api().startVertex();
 		final String currentVertex = api().currentVertex();
 		final String finishVertex = api().finishVertex();
-		LOGGER.info("I am %s and I call api for next vertices", Thread.currentThread().getName());
 		final List<String> nextVertices = api().nextVertices(currentVertex);
 		final int weight = api().weight(currentVertex, finishVertex);
+		LOGGER.info("Next vertex 1 = %s", nextVertices.get(0));
 		return "Moscow";
 	}
 

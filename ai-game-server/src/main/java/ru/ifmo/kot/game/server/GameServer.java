@@ -123,21 +123,8 @@ public class GameServer {
                 break;
             case MOVE:
                 moveResponse(session, args);
-                //                if (finishFlag) {
-                //                    System.exit(0);
-                //                }
-                //
-                //                if (nextVertexName.equals(GAME.finishVertex())) {
-                ////                    LOGGER.info("The GAME finished. Player %s won!", message.getParticipant());
-                //                    finishFlag = true;
-                //                    System.exit(0);
-                //                } else {
-                ////                    GAME.move(message.getParticipant(), nextVertexName);
-                //                    sendMessage(Commands.MOVE, ResponseStatus.OK);
-                //                }
                 break;
             default:
-                //                LOGGER.error("The %s command: %s", message.getParticipant(), Commands.UNRECOGNIZABLE);
         }
     }
 
@@ -155,7 +142,7 @@ public class GameServer {
         if (localClient.isOpen()) { // todo check the need
             try {
                 localClient.getBasicRemote().sendObject(message);
-            } catch (IOException | EncodeException e) {
+            } catch (final IOException | EncodeException e) {
                 LOGGER.error("Failed to send a message to the client");
             }
         } else {
@@ -215,7 +202,7 @@ public class GameServer {
         final Player player = GAME.players().get(client.getId());
         player.setCurrentPosition(nextVertexName);
         LOGGER.info("Now %s in %s", player.getName(), player.getCurrentPosition());
-        sendMessage(client, Command.NAME, RequestStatus.OK);
+        sendMessage(client, Command.MOVE, RequestStatus.OK);
         turnMap.put(client.getId(), null);
     }
 
@@ -224,7 +211,7 @@ public class GameServer {
         return new SendMessageTask<>(clients, turnMap, null,
                 session -> {
                     sendMessage(session, command, RequestStatus.INVITE);
-                    LOGGER.info("Sent %s invite to %s", command, session.getId());
+                    LOGGER.info("Sent %s invite to %s", command, GAME.getName(session.getId()));
                 });
     }
 
@@ -240,10 +227,15 @@ public class GameServer {
     private static class Game {
 
         private Map<String, Player> players = new LinkedHashMap<>();
-        private Set<String> names = new HashSet<>();
+        private Map<String, String> names = new LinkedHashMap<>();
         private final Field field = new Field();
         private final String startVertex = startVertices()[0];
         private final String finishVertex = startVertices()[1];
+
+        public String getName(final String sessionId) {
+            return names.getOrDefault(sessionId, sessionId);
+        }
+
         String[] startVertices() {
             return field.getStartVertices();
         }
@@ -253,8 +245,8 @@ public class GameServer {
         }
 
         private boolean name(final Session session, final String name) {
-            if (! names.contains(name)) {
-                names.add(name);
+            if (!names.containsValue(name)) {
+                names.put(session.getId(), name);
                 players.put(session.getId(), new Player(name, startVertex));
                 LOGGER.info("There is %s name for session %s", name, session.getId());
                 return true;

@@ -37,14 +37,12 @@ public class ServerApiImpl implements ServerApi {
 
 	@Override
 	public List<String> nextVertices(final String vertex) {
-		LOGGER.info("Server API: %s", Thread.currentThread().getName());
 		return game.knowNextVertices(vertex);
 	}
 
 	@Override
 	public int weight(final String vertex1, final String vertex2) {
-		return game.knowWeight
-				(vertex1, vertex2);
+		return game.knowWeight(vertex1, vertex2);
 	}
 
 	@Override

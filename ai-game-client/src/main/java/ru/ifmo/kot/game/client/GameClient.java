@@ -91,8 +91,6 @@ public class GameClient {
 		final RequestStatus requestStatus;
 		switch(command) {
 			case WEIGHT:
-				LOGGER.info(
-					"Weight response is handled by %s thread", Thread.currentThread().getName());
 				if(optionalRequestStatus.isPresent()) {
 					requestStatus = optionalRequestStatus.get();
 				} else {
@@ -132,8 +130,6 @@ public class GameClient {
 				game.initStartVertices(startVertex, finishVertex);
 				break;
 			case NEXT_VERTICES:
-				LOGGER.info(
-					"Next vertices response is handled by %s thread", Thread.currentThread().getName());
 				if(optionalRequestStatus.isPresent()) {
 					requestStatus = optionalRequestStatus.get();
 				} else {
@@ -159,7 +155,6 @@ public class GameClient {
 				}
 				switch(requestStatus) {
 					case INVITE:
-						LOGGER.info("Move invite is handled by %s thread", Thread.currentThread().getName());
 						game.move();
 						break;
 					case OK:
