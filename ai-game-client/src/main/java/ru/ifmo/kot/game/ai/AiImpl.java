@@ -9,6 +9,7 @@ import ru.ifmo.kot.game.client.GameClient;
 
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
 /**
  Created on 29.05.16.
@@ -29,8 +30,7 @@ public class AiImpl extends AiBase {
 		final String finishVertex = api().finishVertex();
 		final List<String> nextVertices = api().nextVertices(currentVertex);
 		final int weight = api().weight(currentVertex, finishVertex);
-		LOGGER.info("Next vertex 1 = %s", nextVertices.get(0));
-		return "Moscow";
+		return nextVertices.get(0);
 	}
 
 }

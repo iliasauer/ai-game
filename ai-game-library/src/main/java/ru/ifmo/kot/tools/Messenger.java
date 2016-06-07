@@ -9,6 +9,7 @@ import javax.websocket.EndpointConfig;
 import java.io.StringReader;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -28,6 +29,7 @@ public class Messenger {
         public void init(final EndpointConfig config) {
         }
 
+        @SuppressWarnings("unchecked")
         @Override
         public String encode(final Message message)
                 throws EncodeException {
@@ -39,6 +41,14 @@ public class Messenger {
                 } else if (arg instanceof String) {
                     final String castedArg = (String) arg;
                     argsArrayBuilder.add(castedArg);
+                } else if (arg instanceof List) {
+                    final List<String> castedArg = (List<String>) arg;
+                    argsArrayBuilder.add(listAsJsonArray(castedArg));
+                } else if (arg instanceof Map) {
+                    final Map<String, String> castedArg = (Map<String, String>) arg;
+                    argsArrayBuilder.add(mapAsJsonObj(castedArg));
+                } else {
+                    throw new IllegalArgumentException("The type is not supported by encoder");
                 }
             }
             final JsonObjectBuilder objectBuilder = Json.createObjectBuilder()
@@ -49,6 +59,18 @@ public class Messenger {
             }
             return
                     objectBuilder.add(ARGS_KEY, argsArrayBuilder.build()).build().toString();
+        }
+
+        private JsonArray listAsJsonArray (final List<String> stringList) {
+            final JsonArrayBuilder argsArrayBuilder = Json.createArrayBuilder();
+            stringList.forEach(argsArrayBuilder:: add);
+            return argsArrayBuilder.build();
+        }
+
+        private JsonObject mapAsJsonObj (final Map<String, String> stringMap) {
+            final JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
+            stringMap.forEach(jsonObjectBuilder:: add);
+            return jsonObjectBuilder.build();
         }
 
         @Override
@@ -92,6 +114,12 @@ public class Messenger {
                             }
                             if (arg.getValueType().equals(JsonValue.ValueType.NUMBER)) {
                                 return ((JsonNumber) arg).intValue();
+                            }
+                            if (arg.getValueType().equals(JsonValue.ValueType.ARRAY)) {
+                                return ((JsonArray) arg).getValuesAs(JsonString.class);
+                            }
+                            if (arg.getValueType().equals(JsonValue.ValueType.OBJECT)) {
+                                return ((JsonObject) arg).get
                             }
                             return null;
                         }, Collectors.toList()));

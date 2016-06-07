@@ -31,6 +31,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
+import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -90,20 +91,6 @@ public class GameClient {
 		final Optional<RequestStatus> optionalRequestStatus = message.getRequestStatus();
 		final RequestStatus requestStatus;
 		switch(command) {
-			case WEIGHT:
-				if(optionalRequestStatus.isPresent()) {
-					requestStatus = optionalRequestStatus.get();
-				} else {
-					LOGGER.error("The wrong server message format");
-					throw new IllegalArgumentException();
-				}
-				switch(requestStatus) {
-					case OK:
-						final int weight = (Integer) message.getArgs()[0];
-						responseMap.put(Command.WEIGHT.name(), weight);
-						break;
-				}
-				break;
 			case NAME:
 				if(optionalRequestStatus.isPresent()) {
 					requestStatus = optionalRequestStatus.get();
@@ -129,23 +116,6 @@ public class GameClient {
 				final String finishVertex = (String) message.getArgs()[1];
 				game.initStartVertices(startVertex, finishVertex);
 				break;
-			case NEXT_VERTICES:
-				if(optionalRequestStatus.isPresent()) {
-					requestStatus = optionalRequestStatus.get();
-				} else {
-					LOGGER.error("The wrong server message format");
-					throw new IllegalArgumentException();
-				}
-				switch(requestStatus) {
-					case OK:
-						final List<String> nextVertices = new ArrayList<>();
-						for(final Object vertex : message.getArgs()) {
-							nextVertices.add((String) vertex);
-						}
-						responseMap.put(Command.NEXT_VERTICES.name(), nextVertices);
-						break;
-				}
-				break;
 			case MOVE:
 				if(optionalRequestStatus.isPresent()) {
 					requestStatus = optionalRequestStatus.get();
@@ -166,8 +136,34 @@ public class GameClient {
 						game.moveAgain(move);
 				}
 				break;
+			case NEXT_VERTICES:
+				if(optionalRequestStatus.isPresent()) {
+					requestStatus = optionalRequestStatus.get();
+				} else {
+					LOGGER.error("The wrong server message format");
+					throw new IllegalArgumentException();
+				}
+				switch(requestStatus) {
+					case OK:
+						responseMap.put(Command.NEXT_VERTICES.name(), message.getArgs()[0]);
+						break;
+				}
+				break;
+			case WEIGHT:
+				if(optionalRequestStatus.isPresent()) {
+					requestStatus = optionalRequestStatus.get();
+				} else {
+					LOGGER.error("The wrong server message format");
+					throw new IllegalArgumentException();
+				}
+				switch(requestStatus) {
+					case OK:
+						final int weight = (Integer) message.getArgs()[0];
+						responseMap.put(Command.WEIGHT.name(), weight);
+						break;
+				}
+				break;
 			default:
-				//                LOGGER.info("The %s command response:", message.getParticipant(), Commands.UNRECOGNIZABLE);
 		}
 	}
 

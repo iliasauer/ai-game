@@ -63,5 +63,14 @@ public class Field {
         return gameModel.nextVertices(vertexName);
     }
 
+    public boolean doesVertexExist(final String vertexName) {
+        return gameModel.contains(vertexName);
+    }
+
+    public boolean doesEdgeExist(final String vertexName1, final String vertexName2) {
+        return doesVertexExist(vertexName1) && doesVertexExist(vertexName2) &&
+            gameModel.getWeight(vertexName1, vertexName2) > 0;
+    }
+
 }
 

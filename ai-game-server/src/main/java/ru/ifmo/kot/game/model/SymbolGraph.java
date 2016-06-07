@@ -36,11 +36,11 @@ public class SymbolGraph {
 		graph = new UndirectedWeightedGraph(verticesNames.size());
 	}
 
-	private boolean contains(final String vertexName) {
+	public boolean contains(final String vertexName) {
 		return verticesNames.contains(vertexName);
 	}
 
-	public int index(final String vertexName) {
+	private int index(final String vertexName) {
 		return vertexIndices.get(vertexName);
 	}
 
@@ -88,11 +88,7 @@ public class SymbolGraph {
 //	}
 
 	public int getWeight(final String vertexName1, final String vertexName2) {
-		if (contains(vertexName1) && contains(vertexName2)) {
-			return graph.getWeight(index(vertexName1), index(vertexName2));
-		} else {
-			return -1;
-		}
+		return graph.getWeight(index(vertexName1), index(vertexName2));
 	}
 
 	public boolean putEdge(final String vertexName1, final String vertexName2, final int weight) {
@@ -191,7 +187,7 @@ public class SymbolGraph {
 			return target;
 		}
 
-		public int getWeight() {
+		int getWeight() {
 			return weight;
 		}
 	}

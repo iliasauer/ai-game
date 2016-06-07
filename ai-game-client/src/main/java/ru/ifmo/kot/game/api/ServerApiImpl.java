@@ -6,6 +6,8 @@ import ru.ifmo.kot.api.ServerApi;
 import ru.ifmo.kot.game.client.GameClient;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  Created on 25.05.16.
@@ -46,7 +48,7 @@ public class ServerApiImpl implements ServerApi {
 	}
 
 	@Override
-	public List<String> whereAreCompetitors() {
+	public Map<String, String> whereAreCompetitors() {
 		return null;
 	}
 }
