@@ -42,224 +42,249 @@ import java.util.concurrent.TimeoutException;
 @ClientEndpoint(encoders = {Messenger.MessageEncoder.class}, decoders = {Messenger.MessageDecoder.class})
 public class GameClient {
 
-    private static final Logger LOGGER = LogManager.getFormatterLogger(GameClient.class);
-    private static final Random USUAL_RANDOM = new Random();
-    private static final Map<Session, String> SERVER_SESSIONS = new HashMap<>(2);
-    private Session serverSession;
-    private Map<String, Object> responseMap = new LinkedHashMap<>();
-    private Game game = new Game();
+	private static final Logger LOGGER = LogManager.getFormatterLogger(GameClient.class);
+	private static final Random USUAL_RANDOM = new Random();
+	private static final Map<Session, String> SERVER_SESSIONS = new HashMap<>(2);
+	private Session serverSession;
+	private Map<String, Object> responseMap = new LinkedHashMap<>();
+	private Game game = new Game();
 
-    public static void main(String[] args)
-            throws InterruptedException {
-        final WebSocketContainer webSocketContainer = ContainerProvider.getWebSocketContainer();
-        webSocketContainer.setDefaultMaxSessionIdleTimeout(TimeUnit.MINUTES.toMillis(2));
-        try {
-            webSocketContainer.connectToServer(GameClient.class,
-                    URI.create(ClientConstants.SERVER_URL)
-            ); // todo check is it the same serverSession?
-            TimeUnit.SECONDS.sleep(30);
-        } catch (DeploymentException | IOException e) {
-            LOGGER.error("Failed to connect to the server");
-        }
-    }
+	public static void main(String[] args)
+	throws InterruptedException {
+		final WebSocketContainer webSocketContainer = ContainerProvider.getWebSocketContainer();
+		webSocketContainer.setDefaultMaxSessionIdleTimeout(TimeUnit.MINUTES.toMillis(2));
+		try {
+			webSocketContainer.connectToServer(GameClient.class,
+				URI.create(ClientConstants.SERVER_URL)
+			); // todo check is it the same serverSession?
+			TimeUnit.SECONDS.sleep(30);
+		} catch(DeploymentException | IOException e) {
+			LOGGER.error("Failed to connect to the server");
+		}
+	}
 
-    public Game game() {
-        return game;
-    }
+	public Game game() {
+		return game;
+	}
 
-    @OnOpen
-    public void addServerSession(final Session session) {
-        this.serverSession = session;
-        try {
-            final ExecutorService executor = Executors.newSingleThreadExecutor();
-            executor.submit(game);
-            LOGGER.info("I have joined the game");
-        } catch (final Exception e) {
-            LOGGER.error("Failed to greet the server");
-        }
-    }
+	@OnOpen
+	public void addServerSession(final Session session) {
+		this.serverSession = session;
+		try {
+			final ExecutorService executor = Executors.newSingleThreadExecutor();
+			executor.submit(game);
+			LOGGER.info("I have joined the game");
+		} catch(final Exception e) {
+			LOGGER.error("Failed to greet the server");
+		}
+	}
 
-    @OnClose
-    public void handleClose(final Session session) {
-        LOGGER.debug("The connection was closed");
-    }
+	@OnClose
+	public void handleClose(final Session session) {
+		LOGGER.debug("The connection was closed");
+	}
 
-    @OnMessage
-    public void handleMessage(final Messenger.Message message, final Session session) {
-        final Command command = message.getCommand();
-        final Optional<RequestStatus> optionalRequestStatus = message.getRequestStatus();
-        final RequestStatus requestStatus;
-        switch (command) {
-            case WEIGHT:
-                break;
-            case NAME:
-                if (optionalRequestStatus.isPresent()) {
-                    requestStatus = optionalRequestStatus.get();
-                } else {
-                    LOGGER.error("The wrong server message format");
-                    throw new IllegalArgumentException();
-                }
-                switch (requestStatus) {
-                    case INVITE:
-                        game.nameMe();
-                        break;
-                    case OK:
-                        LOGGER.info("Name is accepted. Let's play");
-                        break;
-                    case FAIL:
-                        LOGGER.info("Name is not accepted. That's a crap");
-                        final String oldName = (String) message.getArgs()[0];
-                        game.nameMeAgain(oldName);
-                }
-                break;
-            case START_DATA:
-                final String startVertex = (String) message.getArgs()[0];
-                final String finishVertex = (String) message.getArgs()[1];
-                game.initStartVertices(startVertex, finishVertex);
-                break;
-            case NEXT_VERTICES:
-                LOGGER.info("I am %s and I get next vertices response", Thread.currentThread().getName());
-                if (optionalRequestStatus.isPresent()) {
-                    requestStatus = optionalRequestStatus.get();
-                } else {
-                    LOGGER.error("The wrong server message format");
-                    throw new IllegalArgumentException();
-                }
-                switch (requestStatus) {
-                    case OK:
-                        final List<String> nextVertices = new ArrayList<>();
-                        for (final Object vertex : message.getArgs()) {
-                            nextVertices.add((String) vertex);
-                        }
-                        break;
-                }
-                break;
-            case MOVE:
-                if (optionalRequestStatus.isPresent()) {
-                    requestStatus = optionalRequestStatus.get();
-                } else {
-                    LOGGER.error("The wrong server message format");
-                    throw new IllegalArgumentException();
-                }
-                switch (requestStatus) {
-                    case INVITE:
-                        game.move();
-                        break;
-                    case OK:
-                        LOGGER.info("I think it was a good move");
-                        break;
-                    case FAIL:
-                        LOGGER.info("Move is not accepted. That's a crap");
-                        final String move = (String) message.getArgs()[0];
-                        game.moveAgain(move);
-                }
-                break;
-            default:
-//                LOGGER.info("The %s command response:", message.getParticipant(), Commands.UNRECOGNIZABLE);
-        }
-    }
+	@OnMessage
+	public void handleMessage(final Messenger.Message message, final Session session) {
+		final Command command = message.getCommand();
+		final Optional<RequestStatus> optionalRequestStatus = message.getRequestStatus();
+		final RequestStatus requestStatus;
+		switch(command) {
+			case WEIGHT:
+				LOGGER.info(
+					"Weight response is handled by %s thread", Thread.currentThread().getName());
+				if(optionalRequestStatus.isPresent()) {
+					requestStatus = optionalRequestStatus.get();
+				} else {
+					LOGGER.error("The wrong server message format");
+					throw new IllegalArgumentException();
+				}
+				switch(requestStatus) {
+					case OK:
+						final int weight = (Integer) message.getArgs()[0];
+						responseMap.put(Command.WEIGHT.name(), weight);
+						break;
+				}
+				break;
+			case NAME:
+				if(optionalRequestStatus.isPresent()) {
+					requestStatus = optionalRequestStatus.get();
+				} else {
+					LOGGER.error("The wrong server message format");
+					throw new IllegalArgumentException();
+				}
+				switch(requestStatus) {
+					case INVITE:
+						game.nameMe();
+						break;
+					case OK:
+						LOGGER.info("Name is accepted. Let's play");
+						break;
+					case FAIL:
+						LOGGER.info("Name is not accepted. That's a crap");
+						final String oldName = (String) message.getArgs()[0];
+						game.nameMeAgain(oldName);
+				}
+				break;
+			case START_DATA:
+				final String startVertex = (String) message.getArgs()[0];
+				final String finishVertex = (String) message.getArgs()[1];
+				game.initStartVertices(startVertex, finishVertex);
+				break;
+			case NEXT_VERTICES:
+				LOGGER.info(
+					"Next vertices response is handled by %s thread", Thread.currentThread().getName());
+				if(optionalRequestStatus.isPresent()) {
+					requestStatus = optionalRequestStatus.get();
+				} else {
+					LOGGER.error("The wrong server message format");
+					throw new IllegalArgumentException();
+				}
+				switch(requestStatus) {
+					case OK:
+						final List<String> nextVertices = new ArrayList<>();
+						for(final Object vertex : message.getArgs()) {
+							nextVertices.add((String) vertex);
+						}
+						responseMap.put(Command.NEXT_VERTICES.name(), nextVertices);
+						break;
+				}
+				break;
+			case MOVE:
+				if(optionalRequestStatus.isPresent()) {
+					requestStatus = optionalRequestStatus.get();
+				} else {
+					LOGGER.error("The wrong server message format");
+					throw new IllegalArgumentException();
+				}
+				switch(requestStatus) {
+					case INVITE:
+						LOGGER.info("Move invite is handled by %s thread", Thread.currentThread().getName());
+						game.move();
+						break;
+					case OK:
+						LOGGER.info("I think it was a good move");
+						break;
+					case FAIL:
+						LOGGER.info("Move is not accepted. That's a crap");
+						final String move = (String) message.getArgs()[0];
+						game.moveAgain(move);
+				}
+				break;
+			default:
+				//                LOGGER.info("The %s command response:", message.getParticipant(), Commands.UNRECOGNIZABLE);
+		}
+	}
 
-    @OnError
-    public void handleError(final Session session, final Throwable error) {
-        LOGGER.debug("An error occurred");
-    }
+	@OnError
+	public void handleError(final Session session, final Throwable error) {
+		LOGGER.debug("An error occurred", error);
+	}
 
-    private SendMessageTask<?> getSendMessageTask(
-            final Command command, final Object... args) {
-        return new SendMessageTask<>(
-                Collections.singletonList(serverSession),
-                responseMap, command.name(),
-                session ->
-                        sendMessage(command, args));
-    }
+	private SendMessageTask<?> getSendMessageTask(
+		final Command command, final Object... args
+	) {
+		return new SendMessageTask<>(Collections.singletonList(serverSession), responseMap,
+			command.name(), session -> sendMessage(command, args)
+		);
+	}
 
-    @SuppressWarnings("unchecked")
-    private void sendMessage(final Messenger.Message message) {
-        if (serverSession.isOpen()) {
-            try {
-                serverSession.getBasicRemote().sendObject(message);
-            } catch (final IOException | EncodeException e) {
-                LOGGER.error("Failed to send message to the server");
-            }
-        } else {
-            LOGGER.error("Failed to send the message to the server");
-        }
-    }
+	@SuppressWarnings("unchecked")
+	private void sendMessage(final Messenger.Message message) {
+		if(serverSession.isOpen()) {
+			serverSession.getAsyncRemote().sendObject(message);
+		} else {
+			LOGGER.error("Failed to send the message to the server");
+		}
+	}
 
+	private void sendMessage(final Command command, final Object... args) {
+		sendMessage(new Messenger.Message(command, args));
+	}
 
-    private void sendMessage(final Command command, final Object... args) {
-        sendMessage(new Messenger.Message(command, args));
-    }
+	public class Game
+		implements Runnable {
 
+		private final ExecutorService executor = Executors.newSingleThreadExecutor();
+		private final Ai ai = new AiImpl(new ServerApiImpl(GameClient.Game.this));
+		private String startVertex;
+		private String currentVertex;
+		private String finishVertex;
 
-    public class Game implements Runnable {
+		void initStartVertices(final String startVertex, final String finishVertex) {
+			this.startVertex = startVertex;
+			this.currentVertex = startVertex;
+			this.finishVertex = finishVertex;
+			LOGGER.info("I should go from %s to %s", startVertex, finishVertex);
+		}
 
-        private final ExecutorService executor = Executors.newSingleThreadExecutor();
-        private final Ai ai = new AiImpl(new ServerApiImpl(GameClient.Game.this));
-        private String startVertex;
-        private String currentVertex;
-        private String finishVertex;
+		void nameMe() {
+			final String name = ai.name();
+			sendMessage(Command.NAME, name);
+			LOGGER.info("I want my name was %s", name);
+		}
 
-        void initStartVertices(final String startVertex, final String finishVertex) {
-            this.startVertex = startVertex;
-            this.currentVertex = startVertex;
-            this.finishVertex = finishVertex;
-            LOGGER.info("I should go from %s to %s", startVertex, finishVertex);
-        }
+		void nameMeAgain(final String oldName) {
+			final String newName = ai.name(oldName);
+			sendMessage(Command.NAME, newName);
+			LOGGER.info("Then I want my name was %s", newName);
+		}
 
-        void nameMe() {
-            final String name = ai.name();
-            sendMessage(Command.NAME, name);
-            LOGGER.info("I want my name was %s", name);
-        }
+		@SuppressWarnings("unchecked")
+		public List<String> knowNextVertices() {
+			return knowNextVertices(startVertex);
+		}
 
-        void nameMeAgain(final String oldName) {
-            final String newName = ai.name(oldName);
-            sendMessage(Command.NAME, newName);
-            LOGGER.info("Then I want my name was %s", newName);
-        }
+		@SuppressWarnings("unchecked")
+		public List<String> knowNextVertices(final String vertexName) {
+			final Future<Void> future =
+				executor.submit(getSendMessageTask(Command.NEXT_VERTICES, vertexName));
+			LOGGER.info("Send NEXT_VERTICES request");
+			try {
+				future.get();
+			} catch(final InterruptedException | ExecutionException e) {
+				LOGGER.error("Internal server error");
+			}
+			return (List<String>) responseMap.get(Command.NEXT_VERTICES.name());
+		}
 
-        @SuppressWarnings("unchecked")
-        public List<String> knowNextVertices() {
-            return knowNextVertices(startVertex);
-        }
+		public int knowWeight(final String vertexName1, final String vertexName2) {
+			final Future<Void> future =
+				executor.submit(getSendMessageTask(Command.WEIGHT, vertexName1, vertexName2));
+			LOGGER.info("Send WEIGHT request");
+			try {
+				future.get();
+			} catch(final InterruptedException | ExecutionException e) {
+				LOGGER.error("Internal server error");
+			}
+			return (Integer) responseMap.get(Command.WEIGHT.name());
+		}
 
-        @SuppressWarnings("unchecked")
-        public List<String> knowNextVertices(final String vertexName) {
-            executor.submit(getSendMessageTask(Command.NEXT_VERTICES, vertexName));
-            return (List<String>) responseMap.get(Command.NEXT_VERTICES.name());
-        }
+		public String currentVertex() {
+			return currentVertex;
+		}
 
-        public int knowWeight(final String vertexName1, final String vertexName2) {
-            executor.submit(getSendMessageTask(Command.WEIGHT, vertexName1, vertexName2));
-            return (Integer) responseMap.get(Command.WEIGHT.name());
-        }
+		public String startVertex() {
+			return startVertex;
+		}
 
-        public String currentVertex() {
-            return currentVertex;
-        }
+		public String finishVertex() {
+			return finishVertex;
+		}
 
-        public String startVertex() {
-            return startVertex;
-        }
+		void move() {
+			Executors.newSingleThreadExecutor().submit(() -> {
+				final String s = ai.move();
+				sendMessage(Command.MOVE, s);
+			});
+		}
 
-        public String finishVertex() {
-            return finishVertex;
-        }
+		void moveAgain(final String oldMove) {
+		}
 
-        void move() {
-            sendMessage(Command.MOVE, ai.move());
-        }
-
-        void moveAgain(final String oldMove) {
-
-        }
-
-        @Override
-        public void run() {
-//            nameMe(name);
-        }
-
-    }
-
+		@Override
+		public void run() {
+			//            nameMe(name);
+		}
+	}
 }

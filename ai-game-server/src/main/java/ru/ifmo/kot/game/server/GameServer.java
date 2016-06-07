@@ -30,13 +30,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-import java.util.stream.IntStream;
 
 import static ru.ifmo.kot.game.server.ServerConstants.CONTEXT_PATH;
 import static ru.ifmo.kot.game.server.ServerConstants.NUM_OF_CLIENTS;
@@ -227,7 +222,10 @@ public class GameServer {
 
     private static SendMessageTask<Void> getSendMessageTask(final Command command) {
         return new SendMessageTask<>(clients, turnMap, null,
-                session -> sendMessage(session, command, RequestStatus.INVITE));
+                session -> {
+                    sendMessage(session, command, RequestStatus.INVITE);
+                    LOGGER.info("Sent %s invite to %s", command, session.getId());
+                });
     }
 
     @SuppressWarnings("ConfusingArgumentToVarargsMethod")

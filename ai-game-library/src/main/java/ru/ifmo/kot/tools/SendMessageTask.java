@@ -7,22 +7,21 @@ import javax.websocket.Session;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
-import java.util.function.BiConsumer;
 import java.util.function.Consumer;
-import java.util.function.IntConsumer;
 import java.util.stream.IntStream;
 
 /**
  * Created on 05.06.16.
  */
 public class SendMessageTask<T>
-        implements Runnable {
+        implements Callable<Void> {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(SendMessageTask.class);
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -40,7 +39,7 @@ public class SendMessageTask<T>
     }
 
     @Override
-    public void run() {
+    public Void call() {
         IntStream.range(0, addressees.size()).forEach(i -> {
             final Session address = addressees.get(i);
             final String tempMapKey;
@@ -52,7 +51,7 @@ public class SendMessageTask<T>
             statusMap.remove(tempMapKey);
             LOGGER.info("Send some to #%d participator", (i + 1));
             final Future<Void> future = executor.submit(
-                    new WaitingForResponseTask<T>(tempMapKey, statusMap::containsValue));
+                    new WaitingForResponseTask<T>(tempMapKey, statusMap::containsKey));
             messageSending.accept(address);
             try {
                 future.get(20, TimeUnit.SECONDS);
@@ -63,5 +62,6 @@ public class SendMessageTask<T>
             }
 
         });
+        return null;
     }
 }

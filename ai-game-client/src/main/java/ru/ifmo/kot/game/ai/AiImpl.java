@@ -24,10 +24,13 @@ public class AiImpl extends AiBase {
 
 	@Override
 	public String move() {
+		final String startVertex = api().startVertex();
 		final String currentVertex = api().currentVertex();
+		final String finishVertex = api().finishVertex();
 		LOGGER.info("I am %s and I call api for next vertices", Thread.currentThread().getName());
 		final List<String> nextVertices = api().nextVertices(currentVertex);
-		return nextVertices.get(USUAL_RANDOM.nextInt(nextVertices.size()));
+		final int weight = api().weight(currentVertex, finishVertex);
+		return "Moscow";
 	}
 
 }

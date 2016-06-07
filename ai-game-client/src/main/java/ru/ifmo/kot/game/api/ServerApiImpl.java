@@ -1,5 +1,7 @@
 package ru.ifmo.kot.game.api;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.api.ServerApi;
 import ru.ifmo.kot.game.client.GameClient;
 
@@ -9,6 +11,8 @@ import java.util.List;
  Created on 25.05.16.
  */
 public class ServerApiImpl implements ServerApi {
+
+	private static final Logger LOGGER = LogManager.getFormatterLogger(ServerApiImpl.class);
 
 	private final GameClient.Game game;
 
@@ -33,6 +37,7 @@ public class ServerApiImpl implements ServerApi {
 
 	@Override
 	public List<String> nextVertices(final String vertex) {
+		LOGGER.info("Server API: %s", Thread.currentThread().getName());
 		return game.knowNextVertices(vertex);
 	}
 
