@@ -1,6 +1,7 @@
-package ru.ifmo.kot.tools;
+package ru.ifmo.kot.protocol;
 
 import javax.json.*;
+import javax.json.stream.JsonParser;
 import javax.websocket.DecodeException;
 import javax.websocket.Decoder;
 import javax.websocket.EncodeException;
@@ -53,9 +54,9 @@ public class Messenger {
             }
             final JsonObjectBuilder objectBuilder = Json.createObjectBuilder()
                     .add(COMMAND_KEY, message.getCommand().name());
-            final Optional<RequestStatus> optionalResponse = message.getRequestStatus();
-            if (optionalResponse.isPresent()) {
-                objectBuilder.add(RESPONSE_KEY, optionalResponse.get().name());
+            final Optional<RequestStatus> optionalRequest = message.getRequestStatus();
+            if (optionalRequest.isPresent()) {
+                objectBuilder.add(RESPONSE_KEY, optionalRequest.get().name());
             }
             return
                     objectBuilder.add(ARGS_KEY, argsArrayBuilder.build()).build().toString();
@@ -91,38 +92,42 @@ public class Messenger {
         @Override
         public Message decode(final String inputString)
                 throws DecodeException {
+           return decodeByDefault(inputString);
+        }
+
+        private Message decodeByDefault(final String inputString) {
             final Message message;
             try (
-                    final JsonReader reader = readerFactory.createReader(new StringReader(inputString))
+                final JsonReader reader = readerFactory.createReader(new StringReader(inputString))
             ) {
                 final JsonObject jsonObject = reader.readObject();
                 final Command command = Command.valueOf(jsonObject.getString(COMMAND_KEY));
                 final Optional<String> optionalStatusString =
-                        Optional.ofNullable(jsonObject.getString(RESPONSE_KEY, null));
+                    Optional.ofNullable(jsonObject.getString(RESPONSE_KEY, null));
                 final Optional<RequestStatus> optionalRequestStatus;
                 if (optionalStatusString.isPresent()) {
                     optionalRequestStatus =
-                            Optional.of(RequestStatus.valueOf(optionalStatusString.get()));
+                        Optional.of(RequestStatus.valueOf(optionalStatusString.get()));
                 } else {
                     optionalRequestStatus = Optional.empty();
                 }
                 final List<JsonValue> argsList = jsonObject.getJsonArray(ARGS_KEY);
                 final List<Object> objectArgsList =
-                        argsList.stream().collect(Collectors.mapping(arg -> {
-                            if (arg.getValueType().equals(JsonValue.ValueType.STRING)) {
-                                return ((JsonString) arg).getString();
-                            }
-                            if (arg.getValueType().equals(JsonValue.ValueType.NUMBER)) {
-                                return ((JsonNumber) arg).intValue();
-                            }
-                            if (arg.getValueType().equals(JsonValue.ValueType.ARRAY)) {
-                                return ((JsonArray) arg).getValuesAs(JsonString.class);
-                            }
-                            if (arg.getValueType().equals(JsonValue.ValueType.OBJECT)) {
-                                return ((JsonObject) arg).get
-                            }
-                            return null;
-                        }, Collectors.toList()));
+                    argsList.stream().collect(Collectors.mapping(arg -> {
+                        if (arg.getValueType().equals(JsonValue.ValueType.STRING)) {
+                            return ((JsonString) arg).getString();
+                        }
+                        if (arg.getValueType().equals(JsonValue.ValueType.NUMBER)) {
+                            return ((JsonNumber) arg).intValue();
+                        }
+                        if (arg.getValueType().equals(JsonValue.ValueType.ARRAY)) {
+                            return ((JsonArray) arg).getValuesAs(JsonString.class);
+                        }
+                        if (arg.getValueType().equals(JsonValue.ValueType.OBJECT)) {
+                            return ((JsonObject) arg)
+                        }
+                        return null;
+                    }, Collectors.toList()));
                 final Object[] objectArgs = new Object[objectArgsList.size()];
                 objectArgsList.toArray(objectArgs);
                 if (optionalRequestStatus.isPresent()) {
@@ -135,6 +140,17 @@ public class Messenger {
             return message;
         }
 
+        private Message decodeAsStream(final String inputString) {
+            final Message message;
+            try(
+            final JsonParser parser = Json.createParser(new StringReader(inputString));
+            ) {
+                while(parser.hasNext()) {
+                    parser.next();
+                }
+            }
+        }
+
         @Override
         public boolean willDecode(final String s) {
             return true;
@@ -144,22 +160,32 @@ public class Messenger {
         public void destroy() {
         }
     }
-
+    
     public static class Message {
 
         private final Command command;
         private final RequestStatus requestStatus;
+        private final ResponseStatus responseStatus;
         private final Object[] args;
 
         public Message(final Command command, final RequestStatus requestStatus, final Object... args) {
             this.command = command;
             this.requestStatus = requestStatus;
+            this.responseStatus = null;
+            this.args = args;
+        }
+
+        public Message(final Command command, final ResponseStatus responseStatus, final Object... args) {
+            this.command = command;
+            this.requestStatus = null;
+            this.responseStatus = responseStatus;
             this.args = args;
         }
 
         public Message(final Command command, final Object... args) {
             this.command = command;
             this.requestStatus = null;
+            this.responseStatus = null;
             this.args = args;
         }
 
@@ -169,6 +195,10 @@ public class Messenger {
 
         public Optional<RequestStatus> getRequestStatus() {
             return Optional.ofNullable(requestStatus);
+        }
+
+        public Optional<ResponseStatus> getResponseStatus() {
+            return Optional.ofNullable(responseStatus);
         }
 
         public Object[] getArgs() {

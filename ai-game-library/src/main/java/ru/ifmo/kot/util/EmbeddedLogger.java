@@ -1,7 +1,8 @@
-package ru.ifmo.kot.tools;
+package ru.ifmo.kot.util;
 
 import org.eclipse.jetty.util.log.Logger;
 
+@SuppressWarnings("FieldCanBeLocal")
 public class EmbeddedLogger implements Logger {
 
     private final String name = "EmbeddedLogger";

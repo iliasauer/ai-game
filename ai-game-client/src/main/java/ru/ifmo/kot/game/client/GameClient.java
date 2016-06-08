@@ -5,15 +5,14 @@ import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.aibase.Ai;
 import ru.ifmo.kot.game.ai.AiImpl;
 import ru.ifmo.kot.game.api.ServerApiImpl;
-import ru.ifmo.kot.tools.Command;
-import ru.ifmo.kot.tools.Messenger;
-import ru.ifmo.kot.tools.RequestStatus;
-import ru.ifmo.kot.tools.SendMessageTask;
+import ru.ifmo.kot.protocol.Command;
+import ru.ifmo.kot.protocol.Messenger;
+import ru.ifmo.kot.protocol.RequestStatus;
+import ru.ifmo.kot.api.SendMessageTask;
 
 import javax.websocket.ClientEndpoint;
 import javax.websocket.ContainerProvider;
 import javax.websocket.DeploymentException;
-import javax.websocket.EncodeException;
 import javax.websocket.OnClose;
 import javax.websocket.OnError;
 import javax.websocket.OnMessage;
@@ -22,8 +21,6 @@ import javax.websocket.Session;
 import javax.websocket.WebSocketContainer;
 import java.io.IOException;
 import java.net.URI;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -31,14 +28,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
-import java.util.Set;
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
 
 @ClientEndpoint(encoders = {Messenger.MessageEncoder.class}, decoders = {Messenger.MessageDecoder.class})
 public class GameClient {

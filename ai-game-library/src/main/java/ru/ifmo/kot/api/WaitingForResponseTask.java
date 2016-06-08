@@ -1,9 +1,8 @@
-package ru.ifmo.kot.tools;
+package ru.ifmo.kot.api;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Predicate;

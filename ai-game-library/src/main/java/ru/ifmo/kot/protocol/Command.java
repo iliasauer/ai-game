@@ -1,4 +1,4 @@
-package ru.ifmo.kot.tools;
+package ru.ifmo.kot.protocol;
 
 public enum Command {
     NAME, START_DATA,

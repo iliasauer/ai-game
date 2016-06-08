@@ -16,7 +16,7 @@
         <Root level="ERROR">
             <AppenderRef ref="Console"/>
         </Root>
-        <logger name="ru.ifmo.kot.tools" level="DEBUG" additivity="false">
+        <logger name="ru.ifmo.kot.protocol" level="DEBUG" additivity="false">
             <AppenderRef ref="Console"/>
         </logger>
     </Loggers>

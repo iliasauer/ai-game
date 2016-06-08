@@ -1,4 +1,4 @@
-package ru.ifmo.kot.tools;
+package ru.ifmo.kot.settings;
 
 import com.sun.istack.internal.Nullable;
 import org.apache.logging.log4j.LogManager;

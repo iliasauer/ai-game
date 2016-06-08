@@ -3,7 +3,7 @@ package ru.ifmo.kot.game.elements;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.model.SymbolGraph;
-import ru.ifmo.kot.tools.JsonFileReader;
+import ru.ifmo.kot.settings.JsonFileReader;
 
 import javax.json.Json;
 import javax.json.JsonArray;

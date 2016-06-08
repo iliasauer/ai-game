@@ -9,11 +9,11 @@ import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainer
 import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.elements.Player;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
-import ru.ifmo.kot.tools.Command;
-import ru.ifmo.kot.tools.EmbeddedLogger;
-import ru.ifmo.kot.tools.Messenger;
-import ru.ifmo.kot.tools.RequestStatus;
-import ru.ifmo.kot.tools.SendMessageTask;
+import ru.ifmo.kot.protocol.Command;
+import ru.ifmo.kot.util.EmbeddedLogger;
+import ru.ifmo.kot.protocol.Messenger;
+import ru.ifmo.kot.protocol.RequestStatus;
+import ru.ifmo.kot.api.SendMessageTask;
 
 import javax.websocket.EncodeException;
 import javax.websocket.OnClose;
