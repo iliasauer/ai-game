@@ -10,6 +10,7 @@ import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.elements.Player;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
 import ru.ifmo.kot.protocol.Command;
+import ru.ifmo.kot.protocol.ResponseStatus;
 import ru.ifmo.kot.util.EmbeddedLogger;
 import ru.ifmo.kot.protocol.Messenger;
 import ru.ifmo.kot.protocol.RequestStatus;
@@ -169,6 +170,12 @@ public class GameServer {
 		sendMessage(new Messenger.Message(command, status, args));
 	}
 
+	private void sendMessage(
+		final Command command, final ResponseStatus status, final Object... args
+	) {
+		sendMessage(new Messenger.Message(command, status, args));
+	}
+
 	private static SendMessageTask<Void> getSendMessageTask(final Command command) {
 		return new SendMessageTask<>(clients, turnMap, null, session -> {
 			sendMessage(session, command, RequestStatus.INVITE);
@@ -187,11 +194,11 @@ public class GameServer {
 	private void nameResponse(final Session client, final String name) {
 		final String clientId = client.getId();
 		if(GAME.name(clientId, name)) {
-			sendMessage(client, Command.NAME, RequestStatus.OK);
+			sendMessage(client, Command.NAME, ResponseStatus.OK);
 			turnMap.put(clientId, null);
 			sendMessage(client, Command.START_DATA, GAME.startVertex(), GAME.finishVertex());
 		} else {
-			sendMessage(client, Command.NAME, RequestStatus.FAIL, name);
+			sendMessage(client, Command.NAME, ResponseStatus.FAIL, name);
 		}
 		if(turnMap.size() == NUM_OF_CLIENTS) {
 			moveInvite();
@@ -200,10 +207,10 @@ public class GameServer {
 
 	private void moveResponse(final Session client, final String nextVertexName) {
 		if(GAME.move(client.getId(), nextVertexName)) {
-			sendMessage(client, Command.MOVE, RequestStatus.OK);
+			sendMessage(client, Command.MOVE, ResponseStatus.OK);
 			turnMap.put(client.getId(), null);
 		} else {
-			sendMessage(client, Command.MOVE, RequestStatus.FAIL, nextVertexName);
+			sendMessage(client, Command.MOVE, ResponseStatus.FAIL, nextVertexName);
 		}
 		if(turnMap.size() == NUM_OF_CLIENTS) {
 			moveInvite();
@@ -218,9 +225,9 @@ public class GameServer {
 			final Set<String> nextVerticesSet = nextVerticesOptionalSet.get();
 			String[] nextVertices = new String[nextVerticesSet.size()];
 			nextVerticesSet.toArray(nextVertices);
-			sendMessage(Command.NEXT_VERTICES, RequestStatus.OK, nextVerticesOptionalSet.get());
+			sendMessage(Command.NEXT_VERTICES, ResponseStatus.OK, nextVerticesOptionalSet.get());
 		} else {
-			sendMessage(Command.NEXT_VERTICES, RequestStatus.FAIL, currentVertex);
+			sendMessage(Command.NEXT_VERTICES, ResponseStatus.FAIL, currentVertex);
 		}
 	}
 
@@ -228,19 +235,19 @@ public class GameServer {
 	private void weightResponse(final String vrtx1, final String vrtx2) {
 		final Optional<Integer> optionalWeight = Optional.of(GAME.weight(vrtx1, vrtx2));
 		if(optionalWeight.isPresent()) {
-			sendMessage(Command.WEIGHT, RequestStatus.OK, optionalWeight.get());
+			sendMessage(Command.WEIGHT, ResponseStatus.OK, optionalWeight.get());
 		} else {
-			sendMessage(Command.WEIGHT, RequestStatus.FAIL, vrtx1, vrtx2);
+			sendMessage(Command.WEIGHT, ResponseStatus.FAIL, vrtx1, vrtx2);
 		}
 	}
 
 	private void competitorsPositionsResponse() {
-		sendMessage(Command.COMPETITORS_POSITIONS, RequestStatus.OK, GAME.competitorsPositions());
+		sendMessage(Command.COMPETITORS_POSITIONS, ResponseStatus.OK, GAME.competitorsPositions());
 	}
 
 	private void unrecognizableResponse(final Command command) {
 		LOGGER.error("The command is not supported by the server");
-		sendMessage(Command.UNRECOGNIZABLE, RequestStatus.FAIL, command.name());
+		sendMessage(Command.UNRECOGNIZABLE, ResponseStatus.FAIL, command.name());
 	}
 
 	private static class Game {
