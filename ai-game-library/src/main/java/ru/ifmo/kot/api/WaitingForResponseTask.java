@@ -10,7 +10,7 @@ import java.util.function.Predicate;
 /**
  * Created on 05.06.16.
  */
-public class WaitingForResponseTask<T> implements Callable<Void> {
+public class WaitingForResponseTask implements Callable<Void> {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(WaitingForResponseTask.class);
     private final String mapKey;

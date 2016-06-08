@@ -51,7 +51,7 @@ public class SendMessageTask<T>
             statusMap.remove(tempMapKey);
             LOGGER.info("Send some to #%d participator", (i + 1));
             final Future<Void> future = executor.submit(
-                    new WaitingForResponseTask<T>(tempMapKey, statusMap::containsKey));
+                    new WaitingForResponseTask(tempMapKey, statusMap::containsKey));
             messageSending.accept(address);
             try {
                 future.get(20, TimeUnit.SECONDS);

@@ -6,15 +6,16 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
+import ru.ifmo.kot.api.ServerSendMessageTask;
 import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.elements.Player;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
+import ru.ifmo.kot.protocol.Action;
 import ru.ifmo.kot.protocol.Command;
-import ru.ifmo.kot.protocol.ResponseStatus;
-import ru.ifmo.kot.util.EmbeddedLogger;
 import ru.ifmo.kot.protocol.Messenger;
 import ru.ifmo.kot.protocol.RequestStatus;
-import ru.ifmo.kot.api.SendMessageTask;
+import ru.ifmo.kot.protocol.ResponseStatus;
+import ru.ifmo.kot.util.EmbeddedLogger;
 
 import javax.websocket.EncodeException;
 import javax.websocket.OnClose;
@@ -32,8 +33,12 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.function.BiPredicate;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import static ru.ifmo.kot.game.server.ServerConstants.CONTEXT_PATH;
@@ -50,7 +55,8 @@ public class GameServer {
 	private static final Game GAME = new Game();
 	private static final ExecutorService INVITE_EXECUTOR = Executors.newSingleThreadExecutor();
 	private static final List<Session> clients = new ArrayList<>();
-	private static Map<String, Void> turnMap = new LinkedHashMap<>();
+	private static ConcurrentMap<String, Boolean> turnMap = new ConcurrentHashMap<>(2);
+	private static volatile int turnCounter = 0;
 	private Session localClient;
 
 	public static void main(String[] args) {
@@ -100,32 +106,104 @@ public class GameServer {
 
 	@SuppressWarnings("UnusedParameters")
 	@OnError
-	public void handleClientError(final Session session, final Throwable error) {
-		LOGGER.error("An error occurred with %s", GAME.getName(session.getId()));
-		removeClient(session);
+	public void handleClientError(final Session client, final Throwable error) {
+		LOGGER.error("An error occurred with %s", GAME.getClientName(client));
+		LOGGER.error(error);
+		removeClient(client);
 	}
 
 	@OnMessage
-	public void handleMessage(final Messenger.Message message, final Session session) {
+	public void handleMessage(final Messenger.Message message, final Session client) {
 		final Object[] args = message.getArgs();
-		switch(message.getCommand()) {
+		final Command command = message.getCommand();
+		switch(command) {
 			case NAME:
-				nameResponse(session, (String) args[0]); // name
+				handleAiCommand(command, client, (String) args[0], GAME::name,
+					() -> sendStartData(client)
+				);
 				break;
 			case MOVE:
-				moveResponse(session, (String) args[0]); // vertex
+				handleAiCommand(command, client, (String) args[0], GAME::move,
+					() -> {}
+				);
 				break;
 			case WEIGHT:
-				weightResponse((String) args[0], (String) args[1]); // vertex1, vertex2
+				handleApiCommand(command, args,
+					(params) -> {
+						final String vrtx1 = (String) params[0];
+						final String vrtx2 = (String) params[1];
+						return GAME.weight(vrtx1, vrtx2);
+					});
 				break;
 			case NEXT_VERTICES:
-				nextVerticesResponse((String) args[0]); // vertex
+				handleApiCommand(command, args,
+					(params) -> {
+						final String vrtx = (String) params[0];
+						return GAME.nextVertices(vrtx);
+					});
 				break;
 			case COMPETITORS_POSITIONS:
-				competitorsPositionsResponse();
+				handleApiCommand(command, args,
+					(params) -> GAME.competitorsPositions()
+				);
 				break;
 			default:
-				unrecognizableResponse(message.getCommand());
+		}
+	}
+
+	private void handleAiCommand(final Command command, final Session client, final String arg,
+		final BiPredicate<String, String> check, final Action okAction) {
+		final String clientId = client.getId();
+		if (check.test(clientId, arg)) {
+			if (turnMap.containsKey(clientId)) {
+				if (turnMap.get(clientId).equals(Boolean.TRUE)) {
+					LOGGER.info("Your game works incorrectly 1. Fix it please :)");
+				} else {
+					LOGGER.info("%s #%d of %s  is accepted at the second attempt", command.name(), turnCounter, GAME.getClientName(client));
+				}
+			} else {
+				LOGGER.info("%s #%d of %s  is accepted at the first attempt", command.name(), turnCounter, GAME.getClientName(client));
+			}
+			turnMap.put(clientId, Boolean.TRUE);
+			sendOkMessage(client, command);
+			okAction.execute();
+		} else {
+			if (turnMap.containsKey(clientId)) {
+				if (turnMap.get(clientId).equals(Boolean.TRUE)) {
+					LOGGER.info("Your game works incorrectly 2. Fix it please :)");
+				} else {
+					LOGGER.info("The %s #%d second attempt of %s is failed. He passes the move", command.name(), turnCounter, GAME.getClientName(client));
+					turnMap.put(clientId, Boolean.TRUE);
+				}
+			} else {
+				LOGGER.info("The %s #%d first attempt of %s is failed. Try again", command.name(), turnCounter, GAME.getClientName(client));
+				turnMap.put(clientId, Boolean.FALSE);
+				sendFailMessage(client, command, arg);
+			}
+		}
+		if(checkTurnMap()) {
+			turnCounter++;
+			turnMap.clear();
+			moveInvite();
+		}
+	}
+
+	private boolean checkTurnMap() {
+		return turnMap.values().stream().filter(value -> value.equals(Boolean.TRUE)).count() == NUM_OF_CLIENTS;
+	}
+
+	private <T> void handleApiCommand(final Command command, final Object[] args,
+		final Function<Object[], T> apiMethod) {
+		handleApiRequest(command, args, apiMethod);
+	}
+
+	private <T> void handleApiRequest(final Command command, final Object[] args,
+		final Function<Object[],T> apiMethod) {
+		final Optional<T> opt = Optional.of(apiMethod.apply(args));
+		if (opt.isPresent()) {
+			sendMessage(command, ResponseStatus.OK, opt.get());
+		} else {
+			sendMessage(command, ResponseStatus.FAIL, args);
 		}
 	}
 
@@ -134,7 +212,7 @@ public class GameServer {
 			try {
 				session.getBasicRemote().sendObject(message);
 			} catch(final IOException | EncodeException e) {
-				LOGGER.error("Failed to send a message to the client");
+				LOGGER.error("Failed to send the message to the client");
 			}
 		}
 	}
@@ -144,7 +222,7 @@ public class GameServer {
 			try {
 				localClient.getBasicRemote().sendObject(message);
 			} catch(final IOException | EncodeException e) {
-				LOGGER.error("Failed to send a message to the client");
+				LOGGER.error("Failed to send the message to the client");
 			}
 		} else {
 			removeClient(localClient);
@@ -159,15 +237,16 @@ public class GameServer {
 	}
 
 	private static void sendMessage(
+		final Session session, final Command command, final ResponseStatus status,
+		final Object... args
+	) {
+		sendMessage(session, new Messenger.Message(command, status, args));
+	}
+
+	private static void sendMessage(
 		final Session session, final Command command, final Object... args
 	) {
 		sendMessage(session, new Messenger.Message(command, args));
-	}
-
-	private void sendMessage(
-		final Command command, final RequestStatus status, final Object... args
-	) {
-		sendMessage(new Messenger.Message(command, status, args));
 	}
 
 	private void sendMessage(
@@ -176,10 +255,10 @@ public class GameServer {
 		sendMessage(new Messenger.Message(command, status, args));
 	}
 
-	private static SendMessageTask<Void> getSendMessageTask(final Command command) {
-		return new SendMessageTask<>(clients, turnMap, null, session -> {
-			sendMessage(session, command, RequestStatus.INVITE);
-			LOGGER.info("Sent %s invite to %s", command, GAME.getName(session.getId()));
+	private static ServerSendMessageTask getSendMessageTask(final Command command) {
+		return new ServerSendMessageTask(clients, turnMap, client -> {
+			sendMessage(client, command, RequestStatus.INVITE);
+			LOGGER.info("Sent %s invite to %s", command, GAME.getClientName(client));
 		});
 	}
 
@@ -191,64 +270,18 @@ public class GameServer {
 		INVITE_EXECUTOR.submit(getSendMessageTask(Command.MOVE));
 	}
 
-	private void nameResponse(final Session client, final String name) {
-		final String clientId = client.getId();
-		if(GAME.name(clientId, name)) {
-			sendMessage(client, Command.NAME, ResponseStatus.OK);
-			turnMap.put(clientId, null);
-			sendMessage(client, Command.START_DATA, GAME.startVertex(), GAME.finishVertex());
-		} else {
-			sendMessage(client, Command.NAME, ResponseStatus.FAIL, name);
-		}
-		if(turnMap.size() == NUM_OF_CLIENTS) {
-			moveInvite();
-		}
+	private void sendStartData(final Session client) {
+		sendMessage(client, Command.START_DATA, GAME.startVertex(), GAME.finishVertex());
 	}
 
-	private void moveResponse(final Session client, final String nextVertexName) {
-		if(GAME.move(client.getId(), nextVertexName)) {
-			sendMessage(client, Command.MOVE, ResponseStatus.OK);
-			turnMap.put(client.getId(), null);
-		} else {
-			sendMessage(client, Command.MOVE, ResponseStatus.FAIL, nextVertexName);
-		}
-		if(turnMap.size() == NUM_OF_CLIENTS) {
-			moveInvite();
-		}
+	private void sendOkMessage(final Session client, final Command command) {
+		sendMessage(client, command, ResponseStatus.OK);
 	}
 
-	@SuppressWarnings("ConfusingArgumentToVarargsMethod")
-	private void nextVerticesResponse(final String currentVertex) {
-		final Optional<Set<String>> nextVerticesOptionalSet =
-			Optional.of(GAME.nextVertices(currentVertex));
-		if(nextVerticesOptionalSet.isPresent()) {
-			final Set<String> nextVerticesSet = nextVerticesOptionalSet.get();
-			String[] nextVertices = new String[nextVerticesSet.size()];
-			nextVerticesSet.toArray(nextVertices);
-			sendMessage(Command.NEXT_VERTICES, ResponseStatus.OK, nextVerticesOptionalSet.get());
-		} else {
-			sendMessage(Command.NEXT_VERTICES, ResponseStatus.FAIL, currentVertex);
-		}
+	private void sendFailMessage(final Session client, final Command command, final String missedArg) {
+		sendMessage(client, command, ResponseStatus.FAIL, missedArg);
 	}
 
-	@SuppressWarnings("ConstantConditions")
-	private void weightResponse(final String vrtx1, final String vrtx2) {
-		final Optional<Integer> optionalWeight = Optional.of(GAME.weight(vrtx1, vrtx2));
-		if(optionalWeight.isPresent()) {
-			sendMessage(Command.WEIGHT, ResponseStatus.OK, optionalWeight.get());
-		} else {
-			sendMessage(Command.WEIGHT, ResponseStatus.FAIL, vrtx1, vrtx2);
-		}
-	}
-
-	private void competitorsPositionsResponse() {
-		sendMessage(Command.COMPETITORS_POSITIONS, ResponseStatus.OK, GAME.competitorsPositions());
-	}
-
-	private void unrecognizableResponse(final Command command) {
-		LOGGER.error("The command is not supported by the server");
-		sendMessage(Command.UNRECOGNIZABLE, ResponseStatus.FAIL, command.name());
-	}
 
 	private static class Game {
 
@@ -257,7 +290,8 @@ public class GameServer {
 		private final String startVertex = startVertices()[0];
 		private final String finishVertex = startVertices()[1];
 
-		String getName(final String sessionId) {
+		String getClientName(final Session client) {
+			final String sessionId = client.getId();
 			final Player player = players.get(sessionId);
 			if(!Objects.isNull(player)) {
 				return player.getName();

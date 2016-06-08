@@ -5,10 +5,12 @@ import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.aibase.Ai;
 import ru.ifmo.kot.game.ai.AiImpl;
 import ru.ifmo.kot.game.api.ServerApiImpl;
+import ru.ifmo.kot.protocol.Action;
 import ru.ifmo.kot.protocol.Command;
 import ru.ifmo.kot.protocol.Messenger;
 import ru.ifmo.kot.protocol.RequestStatus;
 import ru.ifmo.kot.api.SendMessageTask;
+import ru.ifmo.kot.protocol.ResponseStatus;
 
 import javax.websocket.ClientEndpoint;
 import javax.websocket.ContainerProvider;
@@ -33,13 +35,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
 
 @ClientEndpoint(encoders = {Messenger.MessageEncoder.class}, decoders = {Messenger.MessageDecoder.class})
 public class GameClient {
 
 	private static final Logger LOGGER = LogManager.getFormatterLogger(GameClient.class);
 	private static final Random USUAL_RANDOM = new Random();
-	private static final Map<Session, String> SERVER_SESSIONS = new HashMap<>(2);
 	private Session serverSession;
 	private Map<String, Object> responseMap = new LinkedHashMap<>();
 	private Game game = new Game();
@@ -51,8 +53,8 @@ public class GameClient {
 		try {
 			webSocketContainer.connectToServer(GameClient.class,
 				URI.create(ClientConstants.SERVER_URL)
-			); // todo check is it the same serverSession?
-			TimeUnit.SECONDS.sleep(30);
+			);
+			TimeUnit.SECONDS.sleep(30); // todo temp decision
 		} catch(DeploymentException | IOException e) {
 			LOGGER.error("Failed to connect to the server");
 		}
@@ -66,8 +68,8 @@ public class GameClient {
 	public void addServerSession(final Session session) {
 		this.serverSession = session;
 		try {
-			final ExecutorService executor = Executors.newSingleThreadExecutor();
-			executor.submit(game);
+//			final ExecutorService executor = Executors.newSingleThreadExecutor();
+//			executor.submit(game);
 			LOGGER.info("I have joined the game");
 		} catch(final Exception e) {
 			LOGGER.error("Failed to greet the server");
@@ -80,84 +82,109 @@ public class GameClient {
 	}
 
 	@OnMessage
-	public void handleMessage(final Messenger.Message message, final Session session) {
+	public void handleMessage(final Messenger.Message message) {
 		final Command command = message.getCommand();
-		final Optional<RequestStatus> optionalRequestStatus = message.getRequestStatus();
-		final RequestStatus requestStatus;
 		switch(command) {
 			case NAME:
-				if(optionalRequestStatus.isPresent()) {
-					requestStatus = optionalRequestStatus.get();
-				} else {
-					LOGGER.error("The wrong server message format");
-					throw new IllegalArgumentException();
-				}
-				switch(requestStatus) {
-					case INVITE:
-						game.nameMe();
-						break;
-					case OK:
-						LOGGER.info("Name is accepted. Let's play");
-						break;
-					case FAIL:
-						LOGGER.info("Name is not accepted. That's a crap");
-						final String oldName = (String) message.getArgs()[0];
-						game.nameMeAgain(oldName);
-				}
+				handleAiCommand(
+					message,
+					game::nameMe,
+					game::nameMeAgain
+				);
 				break;
 			case START_DATA:
-				final String startVertex = (String) message.getArgs()[0];
-				final String finishVertex = (String) message.getArgs()[1];
-				game.initStartVertices(startVertex, finishVertex);
+				handleServiceCommand(
+					() -> {
+						LOGGER.info("Got start data invite from server");
+						final String startVertex = (String) message.getArgs()[0];
+						final String finishVertex = (String) message.getArgs()[1];
+						game.initStartVertices(startVertex, finishVertex);
+					}
+				);
 				break;
 			case MOVE:
-				if(optionalRequestStatus.isPresent()) {
-					requestStatus = optionalRequestStatus.get();
-				} else {
-					LOGGER.error("The wrong server message format");
-					throw new IllegalArgumentException();
-				}
-				switch(requestStatus) {
-					case INVITE:
-						game.move();
-						break;
-					case OK:
-						LOGGER.info("I think it was a good move");
-						break;
-					case FAIL:
-						LOGGER.info("Move is not accepted. That's a crap");
-						final String move = (String) message.getArgs()[0];
-						game.moveAgain(move);
-				}
+				handleAiCommand(
+					message,
+					game::move,
+					game::moveAgain
+				);
 				break;
 			case NEXT_VERTICES:
-				if(optionalRequestStatus.isPresent()) {
-					requestStatus = optionalRequestStatus.get();
-				} else {
-					LOGGER.error("The wrong server message format");
-					throw new IllegalArgumentException();
-				}
-				switch(requestStatus) {
-					case OK:
-						responseMap.put(Command.NEXT_VERTICES.name(), message.getArgs()[0]);
-						break;
-				}
-				break;
 			case WEIGHT:
-				if(optionalRequestStatus.isPresent()) {
-					requestStatus = optionalRequestStatus.get();
-				} else {
-					LOGGER.error("The wrong server message format");
-					throw new IllegalArgumentException();
-				}
-				switch(requestStatus) {
-					case OK:
-						final int weight = (Integer) message.getArgs()[0];
-						responseMap.put(Command.WEIGHT.name(), weight);
-						break;
-				}
+			case COMPETITORS_POSITIONS:
+				handleApiCommand(message);
 				break;
 			default:
+
+		}
+	}
+
+	private void handleApiCommand(final Messenger.Message message) {
+		final Optional<ResponseStatus> optRespStatus = message.getResponseStatus();
+		if (optRespStatus.isPresent()) {
+			final Object answer =  message.getArgs()[0];
+			handleApiResponse(message.getCommand().name(), optRespStatus.get(), answer);
+		}
+	}
+
+	private void handleAiCommand(final Messenger.Message message, final Action aiFirstAttemptAction,
+		final Consumer<String> aiSecondAttemptAction) {
+		final Optional<RequestStatus> optReqStatus = message.getRequestStatus();
+		final Optional<ResponseStatus> optRespStatus = message.getResponseStatus();
+		final String commandName = message.getCommand().name();
+		if (optReqStatus.isPresent()) {
+			handleRequest(optReqStatus.get(), () -> {
+				LOGGER.info("Got %s invite from server", commandName);
+				aiFirstAttemptAction.execute();
+			});
+			return;
+		}
+		if (optRespStatus.isPresent()) {
+			handleResponse(optRespStatus.get(),
+				() -> LOGGER.info("The %s is accepted. Let's continue", commandName),
+				() -> {
+					LOGGER.info("The %s is not accepted. Try again", commandName);
+					final String failCommandParam = (String) message.getArgs()[0];
+					aiSecondAttemptAction.accept(failCommandParam);
+				});
+		}
+	}
+
+	private void handleApiResponse(final String commandName,
+		final ResponseStatus responseStatus, final Object answer) {
+		handleResponse(responseStatus,
+			() -> LOGGER.info("The %s request is successful", commandName),
+			() -> LOGGER.info("The %s request is failed", commandName));
+		responseMap.put(commandName, answer);
+	}
+
+
+	private void handleServiceCommand(final Action defaultAction) {
+		handleRequest(defaultAction);
+	}
+
+	private void handleRequest(final Action defaultAction) {
+		defaultAction.execute();
+	}
+
+	private void handleRequest(final RequestStatus requestStatus,
+		final Action inviteActon) {
+		switch(requestStatus) {
+			case INVITE:
+				inviteActon.execute();
+				break;
+		}
+	}
+
+	private void handleResponse(final ResponseStatus responseStatus,
+		final Action okAction, final Action failAction) {
+		switch(responseStatus) {
+			case OK:
+				okAction.execute();
+				break;
+			case FAIL:
+				failAction.execute();
+				break;
 		}
 	}
 
@@ -187,8 +214,7 @@ public class GameClient {
 		sendMessage(new Messenger.Message(command, args));
 	}
 
-	public class Game
-		implements Runnable {
+	public class Game {
 
 		private final ExecutorService executor = Executors.newSingleThreadExecutor();
 		private final Ai ai = new AiImpl(new ServerApiImpl(GameClient.Game.this));
@@ -215,9 +241,18 @@ public class GameClient {
 			LOGGER.info("Then I want my name was %s", newName);
 		}
 
-		@SuppressWarnings("unchecked")
-		public List<String> knowNextVertices() {
-			return knowNextVertices(startVertex);
+		void move() {
+			Executors.newSingleThreadExecutor().submit(() -> {
+				final String s = ai.move();
+				sendMessage(Command.MOVE, s);
+			});
+		}
+
+		void moveAgain(final String oldMove) {
+			Executors.newSingleThreadExecutor().submit(() -> {
+				final String s = ai.move();
+				sendMessage(Command.MOVE, s);
+			});
 		}
 
 		@SuppressWarnings("unchecked")
@@ -257,19 +292,5 @@ public class GameClient {
 			return finishVertex;
 		}
 
-		void move() {
-			Executors.newSingleThreadExecutor().submit(() -> {
-				final String s = ai.move();
-				sendMessage(Command.MOVE, s);
-			});
-		}
-
-		void moveAgain(final String oldMove) {
-		}
-
-		@Override
-		public void run() {
-			//            nameMe(name);
-		}
 	}
 }

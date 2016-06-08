@@ -14,7 +14,7 @@ public interface Ai {
 
 	String move();
 
-	default String move(final String failStatus, final String missedParameter) {
+	default String move(final String missedParameter) {
 		return move();
 	}
 
