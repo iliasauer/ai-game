@@ -44,7 +44,7 @@ class SendMessageTask<T> implements Callable<Void> {
             statusMap.remove(mapKey);
             LOGGER.info("Send some to the server");
             final Future<Void> future = executor.submit(
-                    new WaitingForResponseTask(mapKey, statusMap::containsKey));
+                    new WaitingForResponseTask(() -> statusMap.containsKey(mapKey)));
             messageSending.accept(address);
             try {
                 future.get(20, TimeUnit.SECONDS);
