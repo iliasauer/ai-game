@@ -30,7 +30,8 @@ public class SymbolGraph {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(SymbolGraph.class);
     private static final double COEFFICIENT_OF_EDGE_CONTENT_NUMBER = 0.5;
-    private static final double THRESHOLD_OF_OBSTACLE = 0.6;
+    private static final double THRESHOLD_OF_OBSTACLE = 0.3
+        ;
     private static final double THRESHOLD_OF_BENEFIT = 0.3;
     private static final Random USUAL_RANDOM = new Random();
     private static final BinaryRandom BINARY_RANDOM =
