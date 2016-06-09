@@ -6,6 +6,7 @@ public enum Command {
     NAME,
     START_DATA,
     MOVE,
+    CURRENT_VERTEX,
     NEXT_VERTICES,
     WEIGHT,
     COMPETITORS_POSITIONS,

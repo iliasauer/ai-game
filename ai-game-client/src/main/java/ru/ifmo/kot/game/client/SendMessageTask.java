@@ -1,12 +1,12 @@
-package ru.ifmo.kot.api;
+package ru.ifmo.kot.game.client;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.ifmo.kot.api.WaitingForResponseTask;
 
 import javax.websocket.Session;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -20,8 +20,7 @@ import java.util.stream.IntStream;
 /**
  * Created on 05.06.16.
  */
-public class SendMessageTask<T>
-        implements Callable<Void> {
+class SendMessageTask<T> implements Callable<Void> {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(SendMessageTask.class);
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -30,8 +29,8 @@ public class SendMessageTask<T>
     private final List<Session> addressees;
     private final Consumer<Session> messageSending;
 
-    public SendMessageTask(final List<Session> addressees, final Map<String, T> statusMap,
-                           final String mapKey, final Consumer<Session> messageSending) {
+    SendMessageTask(final List<Session> addressees, final Map<String, T> statusMap,
+                    final String mapKey, final Consumer<Session> messageSending) {
         this.statusMap = statusMap;
         this.mapKey = mapKey;
         this.addressees = addressees;
@@ -42,16 +41,10 @@ public class SendMessageTask<T>
     public Void call() {
         IntStream.range(0, addressees.size()).forEach(i -> {
             final Session address = addressees.get(i);
-            final String tempMapKey;
-            if (Objects.isNull(mapKey)) {
-                tempMapKey = address.getId();
-            } else {
-                tempMapKey = mapKey;
-            }
-            statusMap.remove(tempMapKey);
-            LOGGER.info("Send some to #%d participator", (i + 1));
+            statusMap.remove(mapKey);
+            LOGGER.info("Send some to the server");
             final Future<Void> future = executor.submit(
-                    new WaitingForResponseTask(tempMapKey, statusMap::containsKey));
+                    new WaitingForResponseTask(mapKey, statusMap::containsKey));
             messageSending.accept(address);
             try {
                 future.get(20, TimeUnit.SECONDS);

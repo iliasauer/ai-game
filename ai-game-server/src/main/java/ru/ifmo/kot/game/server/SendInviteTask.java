@@ -1,7 +1,8 @@
-package ru.ifmo.kot.api;
+package ru.ifmo.kot.game.server;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.ifmo.kot.api.WaitingForResponseTask;
 import ru.ifmo.kot.protocol.ResponseStatus;
 
 import javax.websocket.Session;
@@ -14,21 +15,20 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.function.Consumer;
-import java.util.function.Predicate;
 import java.util.stream.IntStream;
 
 /**
  * Created on 08.06.16.
  */
-public class ServerSendMessageTask implements Runnable {
+class SendInviteTask implements Runnable {
 
-    private static final Logger LOGGER = LogManager.getFormatterLogger(ServerSendMessageTask.class);
+    private static final Logger LOGGER = LogManager.getFormatterLogger(SendInviteTask.class);
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
     private final ConcurrentMap<String, ResponseStatus> statusMap;
     private final List<Session> addressees;
     private final Consumer<Session> messageSending;
 
-    public ServerSendMessageTask(final List<Session> addressees, final ConcurrentMap<String, ResponseStatus>
+    SendInviteTask(final List<Session> addressees, final ConcurrentMap<String, ResponseStatus>
             statusMap, final Consumer<Session> messageSending) {
         this.statusMap = statusMap;
         this.addressees = addressees;

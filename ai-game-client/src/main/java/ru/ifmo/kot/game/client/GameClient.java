@@ -9,7 +9,6 @@ import ru.ifmo.kot.protocol.function.Action;
 import ru.ifmo.kot.protocol.Command;
 import ru.ifmo.kot.protocol.Messenger;
 import ru.ifmo.kot.protocol.RequestStatus;
-import ru.ifmo.kot.api.SendMessageTask;
 import ru.ifmo.kot.protocol.ResponseStatus;
 
 import javax.websocket.ClientEndpoint;
@@ -108,6 +107,7 @@ public class GameClient {
                         game::moveAgain
                 );
                 break;
+            case CURRENT_VERTEX:
             case NEXT_VERTICES:
             case WEIGHT:
             case COMPETITORS_POSITIONS:
@@ -307,7 +307,14 @@ public class GameClient {
         }
 
         public String currentVertex() {
-            return currentVertex;
+            final Future<Void> future =
+                    executor.submit(getSendMessageTask(Command.CURRENT_VERTEX));
+            try {
+                future.get();
+            } catch (final InterruptedException | ExecutionException e) {
+                LOGGER.error("Internal server error");
+            }
+            return (String) responseMap.get(Command.CURRENT_VERTEX.name());
         }
 
         public String startVertex() {

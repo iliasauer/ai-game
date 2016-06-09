@@ -6,10 +6,8 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
-import ru.ifmo.kot.api.ServerSendMessageTask;
 import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.elements.Player;
-import ru.ifmo.kot.game.server.function.ConditionAction;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
 import ru.ifmo.kot.protocol.function.Action;
 import ru.ifmo.kot.protocol.Command;
@@ -44,7 +42,6 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import static ru.ifmo.kot.game.server.ServerConstants.CONTEXT_PATH;
-import static ru.ifmo.kot.game.server.ServerConstants.NUM_OF_CLIENTS;
 import static ru.ifmo.kot.game.server.ServerConstants.PORT;
 
 @ServerEndpoint(
@@ -137,19 +134,24 @@ public class GameServer {
                         () -> {}
                 );
                 break;
-            case WEIGHT:
+            case CURRENT_VERTEX:
                 handleApiCommand(command, args,
-                        (params) -> {
-                            final String vrtx1 = (String) params[0];
-                            final String vrtx2 = (String) params[1];
-                            return GAME.weight(vrtx1, vrtx2);
-                        });
+                        (params) -> GAME.currentVertex(client.getId())
+                        );
                 break;
             case NEXT_VERTICES:
                 handleApiCommand(command, args,
                         (params) -> {
                             final String vrtx = (String) params[0];
                             return GAME.nextVertices(vrtx);
+                        });
+                break;
+            case WEIGHT:
+                handleApiCommand(command, args,
+                        (params) -> {
+                            final String vrtx1 = (String) params[0];
+                            final String vrtx2 = (String) params[1];
+                            return GAME.weight(vrtx1, vrtx2);
                         });
                 break;
             case COMPETITORS_POSITIONS:
@@ -274,8 +276,8 @@ public class GameServer {
         sendMessage(new Messenger.Message(command, status, args));
     }
 
-    private static ServerSendMessageTask getSendMessageTask(final Command command) {
-        return new ServerSendMessageTask(clients, turnMap, client -> {
+    private static SendInviteTask getSendMessageTask(final Command command) {
+        return new SendInviteTask(clients, turnMap, client -> {
             sendMessage(client, command, RequestStatus.INVITE);
             LOGGER.info("Sent %s invite to %s", command, GAME.getClientName(client));
         });
@@ -357,6 +359,10 @@ public class GameServer {
                 LOGGER.info("The vertex %s does not exist", nextVertex);
             }
             return false;
+        }
+
+        String currentVertex(final String clientId) {
+            return players.get(clientId).getCurrentPosition();
         }
 
         Set<String> nextVertices(final String vertex) {

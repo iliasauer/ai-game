@@ -24,7 +24,7 @@ public class WaitingForResponseTask implements Callable<Void> {
     public Void call() {
         while (valueChecker.negate().test(mapKey)) {
             try {
-                TimeUnit.MILLISECONDS.sleep(1L);
+                TimeUnit.NANOSECONDS.sleep(10L);
             } catch (final InterruptedException e) {
                 LOGGER.error("Internal server error");
             }
