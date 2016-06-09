@@ -4,7 +4,7 @@ import ru.ifmo.kot.game.Engine;
 
 import javax.json.JsonObject;
 
-public interface ModelConstants {
+interface ModelConstants {
 
     String SETTINGS_KEY = "model";
     String COEFFICIENT_OF_EDGE_CONTENT_NUMBER_KEY = "contentCoefficient";

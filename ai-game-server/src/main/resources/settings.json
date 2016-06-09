@@ -7,11 +7,13 @@
   "elements": {
     "verticesFilePath": "vertices.json",
     "numberOfLives": 3,
-    "turnPoints": 100
+    "turnPoints": 100,
+    "obstacleMaxFactor": 1.3,
+    "benefitMaxFactor": 4.0
   },
   "model": {
-    "contentCoefficient": 0.5,
-    "obstacleThreshold": 0.6,
+    "contentCoefficient": 0.7,
+    "obstacleThreshold": 0.5,
     "benefitThreshold": 0.3
   }
 }

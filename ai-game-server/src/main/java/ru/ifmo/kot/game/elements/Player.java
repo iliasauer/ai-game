@@ -2,19 +2,22 @@ package ru.ifmo.kot.game.elements;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.ifmo.kot.game.util.RandomUtil;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 import java.util.Set;
 import java.util.function.Consumer;
-import java.util.function.Function;;import static ru.ifmo.kot.game.elements.ElementsConstants.TURN_POINTS;
+import java.util.function.Function;;import static ru.ifmo.kot.game.elements.ElementsConstants.BENEFIT_MAX_FACTOR;
+import static ru.ifmo.kot.game.elements.ElementsConstants.TURN_POINTS;
 
 public class Player {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(Player.class);
-
+    private static final int MIN_ACCELERATION_FACTOR = 2;
     private int numberOfLives = ElementsConstants.PLAYERS_LIVES_NUMBER;
     private final String name;
     private String currentPosition;
@@ -54,8 +57,11 @@ public class Player {
         }
     }
 
-    public void setTempAcceleration(final int tempAcceleration) {
-        this.tempAcceleration = tempAcceleration;
+    public void enableTempAcceleration() {
+        final double accelerationFactor =
+                MIN_ACCELERATION_FACTOR + RandomUtil.nextDouble(MIN_ACCELERATION_FACTOR,
+                        BENEFIT_MAX_FACTOR);
+        this.tempAcceleration = (int) (TURN_POINTS * accelerationFactor);
     }
 
     public int getSpeed() {
