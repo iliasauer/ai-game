@@ -10,6 +10,8 @@ public enum Command {
     NEXT_VERTICES,
     WEIGHT,
     COMPETITORS_POSITIONS,
+    LOSE,
+    WIN,
     UNRECOGNIZABLE;
 
     public static boolean contains(final String name) {

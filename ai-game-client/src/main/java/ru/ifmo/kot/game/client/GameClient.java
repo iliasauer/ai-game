@@ -112,9 +112,20 @@ public class GameClient {
             case COMPETITORS_POSITIONS:
                 handleApiCommand(message);
                 break;
+            case WIN:
+                handleEndCommand("I won! Hurrah!");
+                break;
+            case LOSE:
+                handleEndCommand("I lost.");
+                break;
             default:
 
         }
+    }
+
+    private void handleEndCommand(final String finalMessageString, Object... params) {
+        LOGGER.info(finalMessageString, params);
+        System.exit(0);
     }
 
     private void handleApiCommand(final Messenger.Message message) {
@@ -262,11 +273,11 @@ public class GameClient {
 
         void move() {
             Executors.newSingleThreadExecutor().submit(() -> {
-                try {
-                    TimeUnit.SECONDS.sleep(1);
-                } catch (InterruptedException e) {
-                    LOGGER.error("The internal error");
-                }
+//                try {
+//                    TimeUnit.SECONDS.sleep(1);
+//                } catch (InterruptedException e) {
+//                    LOGGER.error("The internal error");
+//                }
                 final String s = ai.move();
                 sendMessage(Command.MOVE, s);
             });

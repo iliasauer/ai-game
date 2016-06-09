@@ -165,6 +165,7 @@ public class GameServer {
                 turnMap.put(clientId, ResponseStatus.OK);
                 LOGGER.info("%s of %s is accepted", commandName, clientName);
                 sendOkMessage(client, command);
+                GAME.checkWinEvent();
                 onOkAction.execute();
             } else {
                 onFalseAction.execute();
@@ -261,10 +262,12 @@ public class GameServer {
     }
 
     private static SendInvitesTask getSendMessageTask(final Command command) {
-        return new SendInvitesTask(GAME.turnMap(), client -> {
+        return new SendInvitesTask(GAME.turnMap(),
+            client -> {
             sendMessage(client, command, RequestStatus.INVITE);
             LOGGER.info("Sent %s invite to %s", command, GAME.getClientName(client));
-        }, clients);
+            },
+            clients);
     }
 
     private static Future<Void> nameInvite() {
@@ -383,6 +386,7 @@ public class GameServer {
                     turnMap.put(clientId, ResponseStatus.PASS);
                 }
             });
+            checkWinEvent();
         }
 
         boolean move(final String clientId, final String nextVertex) {
@@ -400,6 +404,22 @@ public class GameServer {
                 LOGGER.info("The vertex %s does not exist", nextVertex);
             }
             return false;
+        }
+
+        void checkWinEvent() {
+            clients.forEach(client -> {
+                final String clientId = client.getId();
+                if (players.containsKey(clientId)) {
+                    final Player player = players.get(clientId);
+                    if(player.getCurrentPosition().equals(finishVertex)) {
+                        LOGGER.info("The player %s won! Congratulations!", player.getName());
+                        sendMessage(client, Command.WIN);
+                        clients.stream().filter((session) -> !client.equals(session)).forEach(
+                            session -> sendMessage(session, Command.LOSE));
+                        System.exit(0);
+                    }
+                }
+            });
         }
 
         String currentVertex(final String clientId) {
