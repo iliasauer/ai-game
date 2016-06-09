@@ -208,6 +208,7 @@ public class GameServer {
 
     private void nextTurn() {
         toNextTurn();
+        LOGGER.info("TURN #%d", getTurnNumber());
         try {
             turnFuture.get(2, TimeUnit.SECONDS);
         } catch(final InterruptedException | ExecutionException e) {
@@ -218,6 +219,7 @@ public class GameServer {
         turnMap.clear();
         GAME.nextTurn();
         if (turnMap.values().stream().filter(status -> status.equals(ResponseStatus.PASS)).count() == NUM_OF_CLIENTS) {
+            LOGGER.info("BOTH PASS");
             nextTurn();
         } else {
             turnFuture = moveInvite();
@@ -306,7 +308,6 @@ public class GameServer {
     }
 
     private static Future<Void> moveInvite() {
-        LOGGER.info("TURN #%d", getTurnNumber());
         return INVITE_EXECUTOR.submit(getSendMessageTask(Command.MOVE));
     }
 
@@ -362,7 +363,6 @@ public class GameServer {
         }
 
         void nextTurn() {
-//            toNextTurn();
             players.forEach((clientId, player) -> {
                 final boolean reached = player.getCloseToExpectedPosition();
                 if(!reached) {

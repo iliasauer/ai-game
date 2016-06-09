@@ -80,8 +80,6 @@ class SendInviteTask implements Callable<Void> {
                 } catch (final TimeoutException e) {
                     LOGGER.error("The player %s does not respond", addressId);
                 }
-            } else {
-                LOGGER.info("The player %s should pass the turn", addressId);
             }
         });
         return null;

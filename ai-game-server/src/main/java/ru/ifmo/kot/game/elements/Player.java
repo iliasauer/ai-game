@@ -13,6 +13,7 @@ import java.util.function.Function;;
 
 public class Player {
 
+    private static final Logger LOGGER = LogManager.getFormatterLogger(Player.class);
     private static final int TURN_SPEED = 100;
 
     private int numberOfLives = 3;
@@ -29,6 +30,8 @@ public class Player {
     public void setExpectedPosition(final String expectedPosition, final int initDistance) {
         this.expectedPosition = expectedPosition;
         this.expectedPositionDistance = initDistance;
+        LOGGER.info("The player %s wants to go to %s", name, expectedPosition);
+        LOGGER.info("Left %d km", expectedPositionDistance);
     }
 
     public boolean getCloseToExpectedPosition() {
@@ -36,8 +39,12 @@ public class Player {
             this.expectedPositionDistance -= TURN_SPEED;
             if (expectedPositionDistance <= 0) {
                 currentPosition = expectedPosition;
-                return true;
+                expectedPosition = null;
+                LOGGER.info("The player %s arrived in", name, currentPosition);
+                return false;
             } else {
+                LOGGER.info("The player %s goes to %s", name, expectedPosition);
+                LOGGER.info("Left %d km", expectedPositionDistance);
                 return false;
             }
         } else {
