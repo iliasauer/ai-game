@@ -11,7 +11,7 @@ public interface Graph {
     boolean putEdge(final int srcVrtxIndx, final int dstVrtxIndx, final int weight);
     Set<Integer> nextVertices(final int vrtxIndx);
     boolean hasSpanningTree();
-
+    int maxWeight();
 
     String TYPE_KEY = "group";
     String CONTENT_KEY = "data";

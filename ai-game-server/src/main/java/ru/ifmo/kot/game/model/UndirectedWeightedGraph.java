@@ -89,6 +89,19 @@ class UndirectedWeightedGraph implements Graph {
     }
 
     @Override
+    public int maxWeight() {
+        int maxWeight = 0;
+        final Iterable<Edge> edges = edges();
+        for (final Edge edge: edges) {
+            final int weight = edge.weight();
+            if (weight > maxWeight) {
+                maxWeight = weight;
+            }
+        }
+        return maxWeight;
+    }
+
+    @Override
     public int getWeight(final int srcVrtxIndx, final int dstVrtxIndx) {
         final Map<Integer, Integer> nextVerticesWeights = adjacencyEdgeList.get(srcVrtxIndx);
         if (nextVerticesWeights.containsKey(dstVrtxIndx)) {

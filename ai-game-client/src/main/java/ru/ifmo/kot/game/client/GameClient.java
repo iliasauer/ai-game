@@ -32,6 +32,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 import java.util.function.Consumer;
 
 @ClientEndpoint(encoders = {Messenger.MessageEncoder.class}, decoders = {Messenger.MessageDecoder.class})
@@ -125,6 +126,11 @@ public class GameClient {
 
     private void handleEndCommand(final String finalMessageString, Object... params) {
         LOGGER.info(finalMessageString, params);
+        try {
+            serverSession.close();
+        } catch(final IOException e) {
+            LOGGER.error("Internal error");
+        }
         System.exit(0);
     }
 
@@ -296,9 +302,11 @@ public class GameClient {
                     executor.submit(getSendMessageTask(Command.NEXT_VERTICES, vertexName));
 //            LOGGER.info("Send NEXT_VERTICES request");
             try {
-                future.get();
+                future.get(20, TimeUnit.SECONDS);
             } catch (final InterruptedException | ExecutionException e) {
-                LOGGER.error("Internal server error");
+                LOGGER.error("Internal error");
+            } catch(TimeoutException e) {
+                LOGGER.error("Timeout error");
             }
             return (List<String>) responseMap.get(Command.NEXT_VERTICES.name());
         }
@@ -308,9 +316,11 @@ public class GameClient {
                     executor.submit(getSendMessageTask(Command.WEIGHT, vertexName1, vertexName2));
 //            LOGGER.info("Send WEIGHT request"); todo temp
             try {
-                future.get();
+                future.get(20, TimeUnit.SECONDS);
             } catch (final InterruptedException | ExecutionException e) {
                 LOGGER.error("Internal server error");
+            } catch(TimeoutException e) {
+                LOGGER.error("Timeout error");
             }
             return (Integer) responseMap.get(Command.WEIGHT.name());
         }
@@ -319,9 +329,11 @@ public class GameClient {
             final Future<Void> future =
                     executor.submit(getSendMessageTask(Command.CURRENT_VERTEX));
             try {
-                future.get();
+                future.get(20, TimeUnit.SECONDS);
             } catch (final InterruptedException | ExecutionException e) {
                 LOGGER.error("Internal server error");
+            } catch(TimeoutException e) {
+                LOGGER.error("Timeout error");
             }
             return (String) responseMap.get(Command.CURRENT_VERTEX.name());
         }

@@ -21,6 +21,7 @@ public class Player {
     private String currentPosition;
     private String expectedPosition = null;
     private int expectedPositionDistance = 0;
+    private int tempAcceleration = 0;
 
     public Player(final String name, final String startPosition) {
         this.name = name;
@@ -37,7 +38,8 @@ public class Player {
 
     public boolean getCloseToExpectedPosition() {
         if (Objects.nonNull(expectedPosition)) {
-            this.expectedPositionDistance -= TURN_SPEED;
+            this.expectedPositionDistance -= (TURN_SPEED + tempAcceleration);
+            tempAcceleration = 0;
             if (expectedPositionDistance <= 0) {
                 currentPosition = expectedPosition;
                 expectedPosition = null;
@@ -53,6 +55,13 @@ public class Player {
         }
     }
 
+    public void setTempAcceleration(final int tempAcceleration) {
+        this.tempAcceleration = tempAcceleration;
+    }
+
+    public int getSpeed() {
+        return TURN_SPEED;
+    }
 
     public String getCurrentPosition() {
         return currentPosition;

@@ -19,8 +19,6 @@ import java.util.function.Consumer;
  */
 public abstract class SendMessageTask<T> implements Callable<Void> {
 
-    private static final Logger LOGGER = LogManager.getFormatterLogger(SendMessageTask.class);
-
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
     private final Map<String, T> statusMap;
     private final Consumer<Session> messageSender;
@@ -32,16 +30,11 @@ public abstract class SendMessageTask<T> implements Callable<Void> {
     }
 
     protected void send(final Session address,
-        final WaitingForResponseTask waitingTask) {
+        final WaitingForResponseTask waitingTask)
+    throws InterruptedException, ExecutionException, TimeoutException {
         final Future<Void> waiter = executor.submit(waitingTask);
         messageSender.accept(address);
-        try {
-            waiter.get(20, TimeUnit.SECONDS);
-        } catch(final InterruptedException | ExecutionException e) {
-            LOGGER.error("Internal server error");
-        } catch(final TimeoutException e) {
-            LOGGER.error("The addressee %s does not respond", address.getId());
-        }
+        waiter.get(20, TimeUnit.SECONDS);
     }
 
     protected Map<String, T> statusMap() {

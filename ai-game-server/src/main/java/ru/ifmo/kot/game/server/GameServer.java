@@ -8,12 +8,14 @@ import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
 import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.elements.Player;
+import ru.ifmo.kot.game.model.EdgeContent;
+import ru.ifmo.kot.game.model.SymbolGraph;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
-import ru.ifmo.kot.protocol.function.Action;
 import ru.ifmo.kot.protocol.Command;
 import ru.ifmo.kot.protocol.Messenger;
 import ru.ifmo.kot.protocol.RequestStatus;
 import ru.ifmo.kot.protocol.ResponseStatus;
+import ru.ifmo.kot.protocol.function.Action;
 import ru.ifmo.kot.util.EmbeddedLogger;
 
 import javax.websocket.EncodeException;
@@ -46,7 +48,6 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import static ru.ifmo.kot.game.server.ServerConstants.CONTEXT_PATH;
-import static ru.ifmo.kot.game.server.ServerConstants.NUM_OF_CLIENTS;
 import static ru.ifmo.kot.game.server.ServerConstants.PORT;
 
 @ServerEndpoint(
@@ -76,7 +77,7 @@ public class GameServer {
             server.start();
             LOGGER.info("The game server is started and waiting for players.");
             server.join();
-        } catch(Throwable e) {
+        } catch(final Throwable e) {
             LOGGER.info("The game server cannot be started.");
         }
     }
@@ -102,8 +103,9 @@ public class GameServer {
     }
 
     @OnClose
-    public void removeClient(final Session session) {
-        LOGGER.debug("The client session %s was removed successfully", session.getId());
+    public void removeClient(final Session client) {
+        clients.remove(client);
+        LOGGER.debug("The player session %s was removed successfully", GAME.getClientName(client));
     }
 
     @SuppressWarnings("UnusedParameters")
@@ -153,7 +155,7 @@ public class GameServer {
 
     private void handleAiCommand(
         final Command command, final Session client, final String arg,
-        final BiPredicate<String, String> commandAction, final Action onOkAction
+        final BiPredicate<Session, String> commandAction, final Action onOkAction
     ) {
         final String clientId = client.getId();
         final String clientName = GAME.getClientName(client);
@@ -161,7 +163,7 @@ public class GameServer {
         final ConcurrentMap<String, ResponseStatus> turnMap =
             GAME.turnMap();
         final Consumer<Action> commandReaction = (onFalseAction) -> {
-            if(commandAction.test(clientId, arg)) {
+            if(commandAction.test(client, arg)) {
                 turnMap.put(clientId, ResponseStatus.OK);
                 LOGGER.info("%s of %s is accepted", commandName, clientName);
                 sendOkMessage(client, command);
@@ -219,6 +221,7 @@ public class GameServer {
                 session.getBasicRemote().sendObject(message);
             } catch(final IOException | EncodeException e) {
                 LOGGER.error("Failed to send the message to the client");
+
             }
         }
     }
@@ -325,7 +328,7 @@ public class GameServer {
             }
             turnMap.clear();
             GAME.movePlayers();
-            if (turnMap.values().stream().filter(status -> status.equals(ResponseStatus.PASS)).count() == NUM_OF_CLIENTS) {
+            if (turnMap.values().stream().filter(status -> status.equals(ResponseStatus.PASS)).count() == clients.size()) {
                 LOGGER.info("BOTH PASS");
                 nextTurn();
             } else {
@@ -335,7 +338,7 @@ public class GameServer {
 
         private boolean checkTurnMap() {
             return turnMap.values().stream().filter((status) -> status.equals(ResponseStatus.OK) ||
-                status.equals(ResponseStatus.FAIL) || status.equals(ResponseStatus.PASS)).count() == 2;
+                status.equals(ResponseStatus.FAIL) || status.equals(ResponseStatus.PASS)).count() == clients.size();
         }
 
         String getClientName(final Session client) {
@@ -356,7 +359,8 @@ public class GameServer {
             return players.values().stream().anyMatch(player -> player.getName().equals(name));
         }
 
-        private boolean name(final String clientId, final String name) {
+        private boolean name(final Session client, final String name) {
+            final String clientId = client.getId();
             if(!isNameOccupied(name)) {
                 players.put(clientId, new Player(name, startVertex));
                 LOGGER.info("There is %s name for the client %s", name, clientId);
@@ -389,11 +393,43 @@ public class GameServer {
             checkWinEvent();
         }
 
-        boolean move(final String clientId, final String nextVertex) {
+        boolean move(final Session client, final String nextVertex) {
             if(field.doesVertexExist(nextVertex)) {
+                final String clientId = client.getId();
                 final Player player = players.get(clientId);
                 final String currentVertex = player.getCurrentPosition();
                 if(field.doesEdgeExist(currentVertex, nextVertex)) {
+                    final SymbolGraph gameModel = field.getGameModel();
+                    final String playerName = player.getName();
+                    final Optional<EdgeContent> optEdgeContent =
+                        Optional.ofNullable(gameModel.getEdgeContent(currentVertex, nextVertex));
+                    if (optEdgeContent.isPresent()) {
+                        final EdgeContent edgeContent = optEdgeContent.get();
+                        switch(edgeContent) {
+                            case BENEFIT:
+                                LOGGER.info("The player %s got a BENEFIT", playerName);
+                                player.setTempAcceleration(player.getSpeed() * 3);
+                                break;
+                            case OBSTACLE:
+                                LOGGER.info("The player %s stumbled upon OBSTACLE", playerName);
+                                final boolean isAlive = player.removeLife();
+
+                                if (!isAlive) {
+                                    LOGGER.info("The player %s is dead", playerName);
+                                    turnMap.put(clientId, ResponseStatus.END);
+                                    sendMessage(client, Command.LOSE);
+                                    clients.remove(client);
+                                    if (clients.isEmpty()) {
+                                        LOGGER.info("The game over");
+                                        System.exit(0);
+                                    }
+                                    return true;
+                                }
+                                final int weight = gameModel.getWeight(currentVertex, nextVertex);
+                                gameModel.putEdge(currentVertex, nextVertex, (int) (weight * 1.4));
+                                break;
+                        }
+                    }
                     player.setExpectedPosition(nextVertex, weight(currentVertex, nextVertex));
                     return true;
                 } else {
