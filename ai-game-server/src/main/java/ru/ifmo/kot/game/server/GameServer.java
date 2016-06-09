@@ -61,11 +61,11 @@ public class GameServer {
     private static volatile int turnCounter = 0;
     private Session localClient;
 
-    public static int getTurnNumber() {
+    private static int getTurnNumber() {
         return turnCounter;
     }
 
-    public static void toNextTurn() {
+    private static void toNextTurn() {
         turnCounter++;
     }
 
@@ -297,19 +297,6 @@ public class GameServer {
     private void sendOkMessage(final Session client, final Command command) {
         sendMessage(client, command, ResponseStatus.OK);
     }
-
-    private void sendNotAcceptedMessage(final Session client, final Command command, final String notAcceptedArg) {
-        sendMessage(client, command, ResponseStatus.NOT_ACCEPTED, notAcceptedArg);
-    }
-
-    private void sendFailMessage(final Session client, final Command command) {
-        sendMessage(client, command, ResponseStatus.FAIL);
-    }
-
-    private void sendPassMessage(final Session client, final Command command) {
-        sendMessage(client, command, ResponseStatus.PASS);
-    }
-
 
     private static class Game {
 

@@ -74,7 +74,7 @@ public class ServerSendMessageTask implements Runnable {
                 } catch (final InterruptedException | ExecutionException e) {
                     LOGGER.error("Internal server error");
                 } catch (final TimeoutException e) {
-                    LOGGER.error("The player #%d does not respond", (i + 1));
+                    LOGGER.error("The player %s does not respond", addressId);
                 }
             }
         });
