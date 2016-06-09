@@ -2,11 +2,11 @@ package ru.ifmo.kot.api;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.util.Supplier;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
-import java.util.function.Predicate;
+import java.util.function.BooleanSupplier;
+import java.util.function.Supplier;
 
 /**
  * Created on 05.06.16.
@@ -14,14 +14,14 @@ import java.util.function.Predicate;
 public class WaitingForResponseTask implements Callable<Void> {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(WaitingForResponseTask.class);
-    private final Supplier<Boolean> valueChecker;
+    private final BooleanSupplier valueChecker;
 
-    public WaitingForResponseTask(final Supplier<Boolean> valueChecker) {
+    public WaitingForResponseTask(final BooleanSupplier valueChecker) {
         this.valueChecker = valueChecker;
     }
 
     public Void call() {
-        while (!valueChecker.get()) {
+        while (!valueChecker.getAsBoolean()) {
             try {
                 TimeUnit.NANOSECONDS.sleep(10L);
             } catch (final InterruptedException e) {

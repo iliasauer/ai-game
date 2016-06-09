@@ -32,6 +32,7 @@ public class Player {
         this.expectedPositionDistance = initDistance;
         LOGGER.info("The player %s wants to go to %s", name, expectedPosition);
         LOGGER.info("Left %d km", expectedPositionDistance);
+        getCloseToExpectedPosition();
     }
 
     public boolean getCloseToExpectedPosition() {
@@ -40,7 +41,7 @@ public class Player {
             if (expectedPositionDistance <= 0) {
                 currentPosition = expectedPosition;
                 expectedPosition = null;
-                LOGGER.info("The player %s arrived in", name, currentPosition);
+                LOGGER.info("The player %s arrived in %s", name, currentPosition);
                 return false;
             } else {
                 LOGGER.info("The player %s goes to %s", name, expectedPosition);

@@ -59,18 +59,7 @@ public class GameServer {
     private static final Game GAME = new Game();
     private static final ExecutorService INVITE_EXECUTOR = Executors.newSingleThreadExecutor();
     private static final List<Session> clients = new ArrayList<>();
-    private static ConcurrentMap<String, ResponseStatus> turnMap = new ConcurrentHashMap<>(2);
-    private static volatile int turnCounter = 0;
-    private static Future<Void> turnFuture;
     private Session localClient;
-
-    private static int getTurnNumber() {
-        return turnCounter;
-    }
-
-    private static void toNextTurn() {
-        turnCounter++;
-    }
 
     public static void main(String[] args) {
         Log.setLog(new EmbeddedLogger());
@@ -100,7 +89,7 @@ public class GameServer {
             LOGGER.info("The player has successfully joined");
             if(clients.size() == ServerConstants.NUM_OF_CLIENTS) {
                 LOGGER.info("It has enough players joined. The game initialization is started.");
-                turnFuture = nameInvite();
+                GAME.setTurnFuture(nameInvite());
             }
         } else {
             try {
@@ -169,6 +158,8 @@ public class GameServer {
         final String clientId = client.getId();
         final String clientName = GAME.getClientName(client);
         final String commandName = command.name();
+        final ConcurrentMap<String, ResponseStatus> turnMap =
+            GAME.turnMap();
         final Consumer<Action> commandReaction = (onFalseAction) -> {
             if(commandAction.test(clientId, arg)) {
                 turnMap.put(clientId, ResponseStatus.OK);
@@ -201,34 +192,7 @@ public class GameServer {
                 sendMessage(client, command, ResponseStatus.NOT_ACCEPTED, arg);
             });
         }
-        if(checkTurnMap()) {
-            nextTurn();
-        }
-    }
-
-    private void nextTurn() {
-        toNextTurn();
-        LOGGER.info("TURN #%d", getTurnNumber());
-        try {
-            turnFuture.get(2, TimeUnit.SECONDS);
-        } catch(final InterruptedException | ExecutionException e) {
-            LOGGER.error("Internal server error");
-        } catch(final TimeoutException e) {
-            LOGGER.error("Turn waiting error");
-        }
-        turnMap.clear();
-        GAME.nextTurn();
-        if (turnMap.values().stream().filter(status -> status.equals(ResponseStatus.PASS)).count() == NUM_OF_CLIENTS) {
-            LOGGER.info("BOTH PASS");
-            nextTurn();
-        } else {
-            turnFuture = moveInvite();
-        }
-    }
-
-    private boolean checkTurnMap() {
-        return turnMap.values().stream().filter((status) -> status.equals(ResponseStatus.OK) ||
-            status.equals(ResponseStatus.FAIL) || status.equals(ResponseStatus.PASS)).count() == 2;
+        GAME.tryNextTurn();
     }
 
     private <T> void handleApiCommand(
@@ -296,11 +260,11 @@ public class GameServer {
         sendMessage(new Messenger.Message(command, status, args));
     }
 
-    private static SendInviteTask getSendMessageTask(final Command command) {
-        return new SendInviteTask(clients, turnMap, client -> {
+    private static SendInvitesTask getSendMessageTask(final Command command) {
+        return new SendInvitesTask(GAME.turnMap(), client -> {
             sendMessage(client, command, RequestStatus.INVITE);
             LOGGER.info("Sent %s invite to %s", command, GAME.getClientName(client));
-        });
+        }, clients);
     }
 
     private static Future<Void> nameInvite() {
@@ -320,10 +284,56 @@ public class GameServer {
     }
 
     private static class Game {
+        private ConcurrentMap<String, ResponseStatus> turnMap = new ConcurrentHashMap<>(2);
+        private volatile int turnCounter = 0;
+        private Future<Void> turnFuture;
         private Map<String, Player> players = new LinkedHashMap<>();
         private final Field field = new Field();
         private final String startVertex = startVertices()[0];
         private final String finishVertex = startVertices()[1];
+
+        private int getTurnNumber() {
+            return turnCounter;
+        }
+
+        private void toNextTurn() {
+            turnCounter++;
+        }
+
+        void setTurnFuture(final Future<Void> turnFuture) {
+            Game.this.turnFuture = turnFuture;
+        }
+
+        void tryNextTurn() {
+            if(checkTurnMap()) {
+                nextTurn();
+            }
+        }
+
+        private void nextTurn() {
+            toNextTurn();
+            LOGGER.info("TURN #%d", getTurnNumber());
+            try {
+                turnFuture.get(2, TimeUnit.SECONDS);
+            } catch(final InterruptedException | ExecutionException e) {
+                LOGGER.error("Internal server error");
+            } catch(final TimeoutException e) {
+                LOGGER.error("Turn waiting error");
+            }
+            turnMap.clear();
+            GAME.movePlayers();
+            if (turnMap.values().stream().filter(status -> status.equals(ResponseStatus.PASS)).count() == NUM_OF_CLIENTS) {
+                LOGGER.info("BOTH PASS");
+                nextTurn();
+            } else {
+                turnFuture = moveInvite();
+            }
+        }
+
+        private boolean checkTurnMap() {
+            return turnMap.values().stream().filter((status) -> status.equals(ResponseStatus.OK) ||
+                status.equals(ResponseStatus.FAIL) || status.equals(ResponseStatus.PASS)).count() == 2;
+        }
 
         String getClientName(final Session client) {
             final String sessionId = client.getId();
@@ -333,6 +343,10 @@ public class GameServer {
             } else {
                 return sessionId;
             }
+        }
+
+        ConcurrentMap<String, ResponseStatus> turnMap() {
+            return turnMap;
         }
 
         private boolean isNameOccupied(final String name) {
@@ -362,7 +376,7 @@ public class GameServer {
             return finishVertex;
         }
 
-        void nextTurn() {
+        void movePlayers() {
             players.forEach((clientId, player) -> {
                 final boolean reached = player.getCloseToExpectedPosition();
                 if(!reached) {
@@ -422,14 +436,5 @@ public class GameServer {
                 ));
         }
 
-//        @Override
-//        public void run() {
-//        }
-//
-//        private boolean checkTurnMap() {
-//            return turnMap.values().stream().filter((value) -> value.equals(ResponseStatus.OK) ||
-//                value.equals(ResponseStatus.FAIL) ||
-//                value.equals(ResponseStatus.PASS)).count() == 2;
-//        }
     }
 }

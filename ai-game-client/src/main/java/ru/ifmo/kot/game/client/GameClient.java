@@ -22,7 +22,6 @@ import javax.websocket.Session;
 import javax.websocket.WebSocketContainer;
 import java.io.IOException;
 import java.net.URI;
-import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -214,12 +213,11 @@ public class GameClient {
         LOGGER.debug("An error occurred", error);
     }
 
-    private SendMessageTask<?> getSendMessageTask(
+    private SendApiMessageTask<?> getSendMessageTask(
             final Command command, final Object... args
     ) {
-        return new SendMessageTask<>(Collections.singletonList(serverSession), responseMap,
-                command.name(), session -> sendMessage(command, args)
-        );
+        return new SendApiMessageTask<>(responseMap, session -> sendMessage(command, args),
+            serverSession, command.name());
     }
 
     @SuppressWarnings("unchecked")
