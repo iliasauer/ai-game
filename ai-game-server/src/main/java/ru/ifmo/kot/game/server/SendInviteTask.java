@@ -7,6 +7,7 @@ import ru.ifmo.kot.protocol.ResponseStatus;
 
 import javax.websocket.Session;
 import java.util.List;
+import java.util.concurrent.Callable;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -20,7 +21,7 @@ import java.util.stream.IntStream;
 /**
  * Created on 08.06.16.
  */
-class SendInviteTask implements Runnable {
+class SendInviteTask implements Callable<Void> {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(SendInviteTask.class);
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -44,30 +45,33 @@ class SendInviteTask implements Runnable {
         }
     }
 
+    private boolean checkFinish(final String mapKey) {
+        if (statusMap.containsKey(mapKey)) {
+            final ResponseStatus status = statusMap.get(mapKey);
+            switch (status) {
+                case OK:
+                case FAIL:
+                    return true;
+                case NOT_ACCEPTED:
+                    return false;
+                default:
+                    return false;
+            }
+        } else {
+            return false;
+        }
+    }
+
     @Override
-    public void run() {
-        IntStream.range(0, addressees.size()).forEach(i -> {
+    public Void call() {
+        final int numberOfAddresses = addressees.size();
+        IntStream.range(0, numberOfAddresses).forEach(i -> {
             final Session address = addressees.get(i);
             final String addressId = address.getId();
-            if (!checkPass(addressId)) {
+            if (! checkPass(addressId)) {
                 final Future<Void> future = executor.submit(
                         new WaitingForResponseTask(addressId,
-                                (key) -> {
-                                    if (statusMap.containsKey(key)) {
-                                        final ResponseStatus status = statusMap.get(key);
-                                        switch (status) {
-                                            case OK:
-                                            case FAIL:
-                                                return true;
-                                            case NOT_ACCEPTED:
-                                                return false;
-                                            default:
-                                                return false;
-                                        }
-                                    } else {
-                                        return false;
-                                    }
-                                }));
+                                this::checkFinish));
                 messageSending.accept(address);
                 try {
                     future.get(20, TimeUnit.SECONDS);
@@ -78,5 +82,6 @@ class SendInviteTask implements Runnable {
                 }
             }
         });
+        return null;
     }
 }

@@ -34,8 +34,12 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 import java.util.function.BiPredicate;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -56,6 +60,7 @@ public class GameServer {
     private static final List<Session> clients = new ArrayList<>();
     private static ConcurrentMap<String, ResponseStatus> turnMap = new ConcurrentHashMap<>(2);
     private static volatile int turnCounter = 0;
+    private static Future<Void> turnFuture;
     private Session localClient;
 
     private static int getTurnNumber() {
@@ -94,7 +99,7 @@ public class GameServer {
             LOGGER.info("The player has successfully joined");
             if (clients.size() == ServerConstants.NUM_OF_CLIENTS) {
                 LOGGER.info("It has enough players joined. The game initialization is started.");
-                nameInvite();
+                turnFuture = nameInvite();
             }
         } else {
             try {
@@ -203,8 +208,15 @@ public class GameServer {
         }
         if (checkTurnMap()) {
             toNextTurn();
+            try {
+                turnFuture.get(2, TimeUnit.SECONDS);
+            } catch (final InterruptedException | ExecutionException e) {
+                LOGGER.error("Internal server error");
+            } catch (final TimeoutException e) {
+                LOGGER.error("Turn waiting error");
+            }
             turnMap.clear();
-            moveInvite();
+            turnFuture = moveInvite();
         }
     }
 
@@ -283,13 +295,13 @@ public class GameServer {
         });
     }
 
-    private void nameInvite() {
-        INVITE_EXECUTOR.submit(getSendMessageTask(Command.NAME));
+    private Future<Void> nameInvite() {
+        return INVITE_EXECUTOR.submit(getSendMessageTask(Command.NAME));
     }
 
-    private void moveInvite() {
+    private Future<Void> moveInvite() {
         LOGGER.info("MOVE #%d", getTurnNumber());
-        INVITE_EXECUTOR.submit(getSendMessageTask(Command.MOVE));
+        return INVITE_EXECUTOR.submit(getSendMessageTask(Command.MOVE));
     }
 
     private void sendStartData(final Session client) {
@@ -324,7 +336,7 @@ public class GameServer {
         private boolean name(final String clientId, final String name) {
             if (!isNameOccupied(name)) {
                 players.put(clientId, new Player(name, startVertex));
-                LOGGER.info("There is %s name for session %s", name, clientId);
+                LOGGER.info("There is %s name for the client %s", name, clientId);
                 return true;
             } else {
                 LOGGER.info("The %s name is already occupied", name);
@@ -376,7 +388,7 @@ public class GameServer {
         Integer weight(final String vrtx1, final String vrtx2) {
             if (field.doesVertexExist(vrtx1)) {
                 if (field.doesVertexExist(vrtx2)) {
-                    if (! field.doesEdgeExist(vrtx1, vrtx2)) {
+                    if (!field.doesEdgeExist(vrtx1, vrtx2)) {
 //                        LOGGER.info("There is no edge between vertices %s and %s", vrtx1, vrtx2);
                     }
                     return field.getGameModel().getWeight(vrtx1, vrtx2);
