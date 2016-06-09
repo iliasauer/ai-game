@@ -5,5 +5,7 @@ package ru.ifmo.kot.protocol;
  */
 public enum ResponseStatus {
 	OK,
-	FAIL
+	FAIL,
+	NOT_ACCEPTED,
+	PASS
 }

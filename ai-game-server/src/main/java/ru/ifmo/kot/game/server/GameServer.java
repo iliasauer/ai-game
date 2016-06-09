@@ -9,8 +9,9 @@ import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainer
 import ru.ifmo.kot.api.ServerSendMessageTask;
 import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.elements.Player;
+import ru.ifmo.kot.game.server.function.ConditionAction;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
-import ru.ifmo.kot.protocol.Action;
+import ru.ifmo.kot.protocol.function.Action;
 import ru.ifmo.kot.protocol.Command;
 import ru.ifmo.kot.protocol.Messenger;
 import ru.ifmo.kot.protocol.RequestStatus;
@@ -38,6 +39,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.function.BiPredicate;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -46,334 +48,360 @@ import static ru.ifmo.kot.game.server.ServerConstants.NUM_OF_CLIENTS;
 import static ru.ifmo.kot.game.server.ServerConstants.PORT;
 
 @ServerEndpoint(
-	value = "/game",
-	encoders = {Messenger.MessageEncoder.class},
-	decoders = {Messenger.MessageDecoder.class})
+        value = "/game",
+        encoders = {Messenger.MessageEncoder.class},
+        decoders = {Messenger.MessageDecoder.class})
 public class GameServer {
 
-	private static final Logger LOGGER = LogManager.getFormatterLogger(GameServer.class);
-	private static final Game GAME = new Game();
-	private static final ExecutorService INVITE_EXECUTOR = Executors.newSingleThreadExecutor();
-	private static final List<Session> clients = new ArrayList<>();
-	private static ConcurrentMap<String, Boolean> turnMap = new ConcurrentHashMap<>(2);
-	private static volatile int turnCounter = 0;
-	private Session localClient;
+    private static final Logger LOGGER = LogManager.getFormatterLogger(GameServer.class);
+    private static final Game GAME = new Game();
+    private static final ExecutorService INVITE_EXECUTOR = Executors.newSingleThreadExecutor();
+    private static final List<Session> clients = new ArrayList<>();
+    private static ConcurrentMap<String, ResponseStatus> turnMap = new ConcurrentHashMap<>(2);
+    private static volatile int turnCounter = 0;
+    private Session localClient;
 
-	public static void main(String[] args) {
-		Log.setLog(new EmbeddedLogger());
-		final Server server = new Server(PORT);
-		try {
-			ServletContextHandler context =
-				new ServletContextHandler(ServletContextHandler.SESSIONS);
-			context.setContextPath(CONTEXT_PATH);
-			server.setHandler(context);
-			final ServerContainer container =
-				WebSocketServerContainerInitializer.configureContext(context);
-			container.addEndpoint(GameServer.class);
-			container.addEndpoint(VisualizationEndpoint.class);
-			server.start();
-			LOGGER.info("The game server is started and waiting for players.");
-			server.join();
-		} catch(Throwable e) {
-			LOGGER.info("The game server cannot be started.");
-		}
-	}
+    public static int getTurnNumber() {
+        return turnCounter;
+    }
 
-	@OnOpen
-	public void addClient(final Session client) {
-		this.localClient = client;
-		if(clients.size() < ServerConstants.NUM_OF_CLIENTS) {
-			clients.add(client);
-			LOGGER.info("The player has successfully joined");
-			if(clients.size() == ServerConstants.NUM_OF_CLIENTS) {
-				LOGGER.info("It has enough players joined. The game initialization is started.");
-				nameInvite();
-			}
-		} else {
-			try {
-				client.close();
-				LOGGER.info("It has enough players joined");
-			} catch(final IOException e) {
-				LOGGER.error("Failed to close the session");
-			}
-		}
-	}
+    public static void toNextTurn() {
+        turnCounter++;
+    }
 
-	@OnClose
-	public void removeClient(final Session session) {
-		LOGGER.debug("The client session %s was removed successfully", session.getId());
-	}
+    public static void main(String[] args) {
+        Log.setLog(new EmbeddedLogger());
+        final Server server = new Server(PORT);
+        try {
+            ServletContextHandler context =
+                    new ServletContextHandler(ServletContextHandler.SESSIONS);
+            context.setContextPath(CONTEXT_PATH);
+            server.setHandler(context);
+            final ServerContainer container =
+                    WebSocketServerContainerInitializer.configureContext(context);
+            container.addEndpoint(GameServer.class);
+            container.addEndpoint(VisualizationEndpoint.class);
+            server.start();
+            LOGGER.info("The game server is started and waiting for players.");
+            server.join();
+        } catch (Throwable e) {
+            LOGGER.info("The game server cannot be started.");
+        }
+    }
 
-	@SuppressWarnings("UnusedParameters")
-	@OnError
-	public void handleClientError(final Session client, final Throwable error) {
-		LOGGER.error("An error occurred with %s", GAME.getClientName(client));
-		LOGGER.error(error);
-		removeClient(client);
-	}
+    @OnOpen
+    public void addClient(final Session client) {
+        this.localClient = client;
+        if (clients.size() < ServerConstants.NUM_OF_CLIENTS) {
+            clients.add(client);
+            LOGGER.info("The player has successfully joined");
+            if (clients.size() == ServerConstants.NUM_OF_CLIENTS) {
+                LOGGER.info("It has enough players joined. The game initialization is started.");
+                nameInvite();
+            }
+        } else {
+            try {
+                client.close();
+                LOGGER.info("It has enough players joined");
+            } catch (final IOException e) {
+                LOGGER.error("Failed to close the session");
+            }
+        }
+    }
 
-	@OnMessage
-	public void handleMessage(final Messenger.Message message, final Session client) {
-		final Object[] args = message.getArgs();
-		final Command command = message.getCommand();
-		switch(command) {
-			case NAME:
-				handleAiCommand(command, client, (String) args[0], GAME::name,
-					() -> sendStartData(client)
-				);
-				break;
-			case MOVE:
-				handleAiCommand(command, client, (String) args[0], GAME::move,
-					() -> {}
-				);
-				break;
-			case WEIGHT:
-				handleApiCommand(command, args,
-					(params) -> {
-						final String vrtx1 = (String) params[0];
-						final String vrtx2 = (String) params[1];
-						return GAME.weight(vrtx1, vrtx2);
-					});
-				break;
-			case NEXT_VERTICES:
-				handleApiCommand(command, args,
-					(params) -> {
-						final String vrtx = (String) params[0];
-						return GAME.nextVertices(vrtx);
-					});
-				break;
-			case COMPETITORS_POSITIONS:
-				handleApiCommand(command, args,
-					(params) -> GAME.competitorsPositions()
-				);
-				break;
-			default:
-		}
-	}
+    @OnClose
+    public void removeClient(final Session session) {
+        LOGGER.debug("The client session %s was removed successfully", session.getId());
+    }
 
-	private void handleAiCommand(final Command command, final Session client, final String arg,
-		final BiPredicate<String, String> check, final Action okAction) {
-		final String clientId = client.getId();
-		if (check.test(clientId, arg)) {
-			if (turnMap.containsKey(clientId)) {
-				if (turnMap.get(clientId).equals(Boolean.TRUE)) {
-					LOGGER.info("Your game works incorrectly 1. Fix it please :)");
-				} else {
-					LOGGER.info("%s #%d of %s  is accepted at the second attempt", command.name(), turnCounter, GAME.getClientName(client));
-				}
-			} else {
-				LOGGER.info("%s #%d of %s  is accepted at the first attempt", command.name(), turnCounter, GAME.getClientName(client));
-			}
-			turnMap.put(clientId, Boolean.TRUE);
-			sendOkMessage(client, command);
-			okAction.execute();
-		} else {
-			if (turnMap.containsKey(clientId)) {
-				if (turnMap.get(clientId).equals(Boolean.TRUE)) {
-					LOGGER.info("Your game works incorrectly 2. Fix it please :)");
-				} else {
-					LOGGER.info("The %s #%d second attempt of %s is failed. He passes the move", command.name(), turnCounter, GAME.getClientName(client));
-					turnMap.put(clientId, Boolean.TRUE);
-				}
-			} else {
-				LOGGER.info("The %s #%d first attempt of %s is failed. Try again", command.name(), turnCounter, GAME.getClientName(client));
-				turnMap.put(clientId, Boolean.FALSE);
-				sendFailMessage(client, command, arg);
-			}
-		}
-		if(checkTurnMap()) {
-			turnCounter++;
-			turnMap.clear();
-			moveInvite();
-		}
-	}
+    @SuppressWarnings("UnusedParameters")
+    @OnError
+    public void handleClientError(final Session client, final Throwable error) {
+        LOGGER.error("An error occurred with %s", GAME.getClientName(client));
+        LOGGER.error(error);
+        removeClient(client);
+    }
 
-	private boolean checkTurnMap() {
-		return turnMap.values().stream().filter(value -> value.equals(Boolean.TRUE)).count() == NUM_OF_CLIENTS;
-	}
+    @OnMessage
+    public void handleMessage(final Messenger.Message message, final Session client) {
+        final Object[] args = message.getArgs();
+        final Command command = message.getCommand();
+        switch (command) {
+            case NAME:
+                handleAiCommand(command, client, (String) args[0], GAME::name,
+                        () -> sendStartData(client)
+                );
+                break;
+            case MOVE:
+                handleAiCommand(command, client, (String) args[0], GAME::move,
+                        () -> {}
+                );
+                break;
+            case WEIGHT:
+                handleApiCommand(command, args,
+                        (params) -> {
+                            final String vrtx1 = (String) params[0];
+                            final String vrtx2 = (String) params[1];
+                            return GAME.weight(vrtx1, vrtx2);
+                        });
+                break;
+            case NEXT_VERTICES:
+                handleApiCommand(command, args,
+                        (params) -> {
+                            final String vrtx = (String) params[0];
+                            return GAME.nextVertices(vrtx);
+                        });
+                break;
+            case COMPETITORS_POSITIONS:
+                handleApiCommand(command, args,
+                        (params) -> GAME.competitorsPositions()
+                );
+                break;
+            default:
+        }
+    }
 
-	private <T> void handleApiCommand(final Command command, final Object[] args,
-		final Function<Object[], T> apiMethod) {
-		handleApiRequest(command, args, apiMethod);
-	}
+    private void handleAiCommand(final Command command, final Session client, final String arg,
+                                 final BiPredicate<String, String> commandAction, final Action onOkAction) {
+        final String clientId = client.getId();
+        final String clientName = GAME.getClientName(client);
+        final String commandName = command.name();
+        final Consumer<Action> commandReaction = (onFalseAction) -> {
+            if (commandAction.test(clientId, arg)) {
+                turnMap.put(clientId, ResponseStatus.OK);
+                LOGGER.info("%s of %s is accepted", commandName, clientName);
+                sendOkMessage(client, command);
+                onOkAction.execute();
+            } else {
+                onFalseAction.execute();
+            }
+        };
+        if (turnMap.containsKey(clientId)) {
+            final ResponseStatus status = turnMap.get(clientId);
+            switch (status) {
+                case PASS:
+                    break;
+                case NOT_ACCEPTED:
+                    commandReaction.accept(() -> {
+                        turnMap.put(clientId, ResponseStatus.FAIL);
+                        LOGGER.info("%s of %s is failed", commandName, clientName);
+                        sendMessage(client, command, ResponseStatus.FAIL, arg);
+                    });
+                    break;
+                default:
+                    LOGGER.error("Invalid action");
+            }
+        } else {
+            commandReaction.accept(() -> {
+                turnMap.put(clientId, ResponseStatus.NOT_ACCEPTED);
+                LOGGER.info("%s of %s is not accepted. Wait for a second attempt", commandName,
+                        clientName);
+                sendMessage(client, command, ResponseStatus.NOT_ACCEPTED, arg);
+            });
+        }
+        if (checkTurnMap()) {
+            toNextTurn();
+            turnMap.clear();
+            moveInvite();
+        }
+    }
 
-	private <T> void handleApiRequest(final Command command, final Object[] args,
-		final Function<Object[],T> apiMethod) {
-		final Optional<T> opt = Optional.of(apiMethod.apply(args));
-		if (opt.isPresent()) {
-			sendMessage(command, ResponseStatus.OK, opt.get());
-		} else {
-			sendMessage(command, ResponseStatus.FAIL, args);
-		}
-	}
+    private boolean checkTurnMap() {
+        return turnMap.values().stream().filter((value) -> value.equals(ResponseStatus.OK) ||
+                value.equals(ResponseStatus.FAIL)).count() == 2;
+    }
 
-	private static void sendMessage(final Session session, final Messenger.Message message) {
-		if(session.isOpen()) {
-			try {
-				session.getBasicRemote().sendObject(message);
-			} catch(final IOException | EncodeException e) {
-				LOGGER.error("Failed to send the message to the client");
-			}
-		}
-	}
+    private <T> void handleApiCommand(final Command command, final Object[] args,
+                                      final Function<Object[], T> apiMethod) {
+        handleApiRequest(command, args, apiMethod);
+    }
 
-	private void sendMessage(final Messenger.Message message) {
-		if(localClient.isOpen()) { // todo check the need
-			try {
-				localClient.getBasicRemote().sendObject(message);
-			} catch(final IOException | EncodeException e) {
-				LOGGER.error("Failed to send the message to the client");
-			}
-		} else {
-			removeClient(localClient);
-		}
-	}
+    private <T> void handleApiRequest(final Command command, final Object[] args,
+                                      final Function<Object[], T> apiMethod) {
+        final Optional<T> opt = Optional.of(apiMethod.apply(args));
+        if (opt.isPresent()) {
+            sendMessage(command, ResponseStatus.OK, opt.get());
+        } else {
+            sendMessage(command, ResponseStatus.FAIL, args);
+        }
+    }
 
-	private static void sendMessage(
-		final Session session, final Command command, final RequestStatus status,
-		final Object... args
-	) {
-		sendMessage(session, new Messenger.Message(command, status, args));
-	}
+    private static void sendMessage(final Session session, final Messenger.Message message) {
+        if (session.isOpen()) {
+            try {
+                session.getBasicRemote().sendObject(message);
+            } catch (final IOException | EncodeException e) {
+                LOGGER.error("Failed to send the message to the client");
+            }
+        }
+    }
 
-	private static void sendMessage(
-		final Session session, final Command command, final ResponseStatus status,
-		final Object... args
-	) {
-		sendMessage(session, new Messenger.Message(command, status, args));
-	}
+    private void sendMessage(final Messenger.Message message) {
+        if (localClient.isOpen()) { // todo check the need
+            try {
+                localClient.getBasicRemote().sendObject(message);
+            } catch (final IOException | EncodeException e) {
+                LOGGER.error("Failed to send the message to the client");
+            }
+        } else {
+            removeClient(localClient);
+        }
+    }
 
-	private static void sendMessage(
-		final Session session, final Command command, final Object... args
-	) {
-		sendMessage(session, new Messenger.Message(command, args));
-	}
+    private static void sendMessage(
+            final Session session, final Command command, final RequestStatus status,
+            final Object... args
+    ) {
+        sendMessage(session, new Messenger.Message(command, status, args));
+    }
 
-	private void sendMessage(
-		final Command command, final ResponseStatus status, final Object... args
-	) {
-		sendMessage(new Messenger.Message(command, status, args));
-	}
+    private static void sendMessage(
+            final Session session, final Command command, final ResponseStatus status,
+            final Object... args
+    ) {
+        sendMessage(session, new Messenger.Message(command, status, args));
+    }
 
-	private static ServerSendMessageTask getSendMessageTask(final Command command) {
-		return new ServerSendMessageTask(clients, turnMap, client -> {
-			sendMessage(client, command, RequestStatus.INVITE);
-			LOGGER.info("Sent %s invite to %s", command, GAME.getClientName(client));
-		});
-	}
+    private static void sendMessage(
+            final Session session, final Command command, final Object... args
+    ) {
+        sendMessage(session, new Messenger.Message(command, args));
+    }
 
-	private void nameInvite() {
-		INVITE_EXECUTOR.submit(getSendMessageTask(Command.NAME));
-	}
+    private void sendMessage(
+            final Command command, final ResponseStatus status, final Object... args
+    ) {
+        sendMessage(new Messenger.Message(command, status, args));
+    }
 
-	private void moveInvite() {
-		INVITE_EXECUTOR.submit(getSendMessageTask(Command.MOVE));
-	}
+    private static ServerSendMessageTask getSendMessageTask(final Command command) {
+        return new ServerSendMessageTask(clients, turnMap, client -> {
+            sendMessage(client, command, RequestStatus.INVITE);
+            LOGGER.info("Sent %s invite to %s", command, GAME.getClientName(client));
+        });
+    }
 
-	private void sendStartData(final Session client) {
-		sendMessage(client, Command.START_DATA, GAME.startVertex(), GAME.finishVertex());
-	}
+    private void nameInvite() {
+        INVITE_EXECUTOR.submit(getSendMessageTask(Command.NAME));
+    }
 
-	private void sendOkMessage(final Session client, final Command command) {
-		sendMessage(client, command, ResponseStatus.OK);
-	}
+    private void moveInvite() {
+        LOGGER.info("MOVE #%d", getTurnNumber());
+        INVITE_EXECUTOR.submit(getSendMessageTask(Command.MOVE));
+    }
 
-	private void sendFailMessage(final Session client, final Command command, final String missedArg) {
-		sendMessage(client, command, ResponseStatus.FAIL, missedArg);
-	}
+    private void sendStartData(final Session client) {
+        sendMessage(client, Command.START_DATA, GAME.startVertex(), GAME.finishVertex());
+    }
+
+    private void sendOkMessage(final Session client, final Command command) {
+        sendMessage(client, command, ResponseStatus.OK);
+    }
+
+    private void sendNotAcceptedMessage(final Session client, final Command command, final String notAcceptedArg) {
+        sendMessage(client, command, ResponseStatus.NOT_ACCEPTED, notAcceptedArg);
+    }
+
+    private void sendFailMessage(final Session client, final Command command) {
+        sendMessage(client, command, ResponseStatus.FAIL);
+    }
+
+    private void sendPassMessage(final Session client, final Command command) {
+        sendMessage(client, command, ResponseStatus.PASS);
+    }
 
 
-	private static class Game {
+    private static class Game {
 
-		private Map<String, Player> players = new LinkedHashMap<>();
-		private final Field field = new Field();
-		private final String startVertex = startVertices()[0];
-		private final String finishVertex = startVertices()[1];
+        private Map<String, Player> players = new LinkedHashMap<>();
+        private final Field field = new Field();
+        private final String startVertex = startVertices()[0];
+        private final String finishVertex = startVertices()[1];
 
-		String getClientName(final Session client) {
-			final String sessionId = client.getId();
-			final Player player = players.get(sessionId);
-			if(!Objects.isNull(player)) {
-				return player.getName();
-			} else {
-				return sessionId;
-			}
-		}
+        String getClientName(final Session client) {
+            final String sessionId = client.getId();
+            final Player player = players.get(sessionId);
+            if (! Objects.isNull(player)) {
+                return player.getName();
+            } else {
+                return sessionId;
+            }
+        }
 
-		private boolean isNameOccupied(final String name) {
-			return players.values().stream().anyMatch(player -> player.getName().equals(name));
-		}
+        private boolean isNameOccupied(final String name) {
+            return players.values().stream().anyMatch(player -> player.getName().equals(name));
+        }
 
-		private boolean name(final String clientId, final String name) {
-			if(!isNameOccupied(name)) {
-				players.put(clientId, new Player(name, startVertex));
-				LOGGER.info("There is %s name for session %s", name, clientId);
-				return true;
-			} else {
-				LOGGER.info("The %s name is already occupied", name);
-				return false;
-			}
-		}
+        private boolean name(final String clientId, final String name) {
+            if (!isNameOccupied(name)) {
+                players.put(clientId, new Player(name, startVertex));
+                LOGGER.info("There is %s name for session %s", name, clientId);
+                return true;
+            } else {
+                LOGGER.info("The %s name is already occupied", name);
+                return false;
+            }
+        }
 
-		String[] startVertices() {
-			return field.getStartVertices();
-		}
+        String[] startVertices() {
+            return field.getStartVertices();
+        }
 
-		String startVertex() {
-			return startVertex;
-		}
+        String startVertex() {
+            return startVertex;
+        }
 
-		String finishVertex() {
-			return finishVertex;
-		}
+        String finishVertex() {
+            return finishVertex;
+        }
 
-		boolean move(final String clientId, final String nextVertex) {
-			if(field.doesVertexExist(nextVertex)) {
-				final Player player = players.get(clientId);
-				final String currentVertex = player.getCurrentPosition();
-				if(field.doesEdgeExist(currentVertex, nextVertex)) {
-					player.setCurrentPosition(nextVertex);
-					return true;
-				} else {
-					LOGGER.info(
-						"There is no edge between vertices %s and %s", currentVertex, nextVertex);
-				}
-			} else {
-				LOGGER.info("The vertex %s does not exist", nextVertex);
-			}
-			return false;
-		}
+        boolean move(final String clientId, final String nextVertex) {
+            if (field.doesVertexExist(nextVertex)) {
+                final Player player = players.get(clientId);
+                final String currentVertex = player.getCurrentPosition();
+                if (field.doesEdgeExist(currentVertex, nextVertex)) {
+                    player.setCurrentPosition(nextVertex);
+                    return true;
+                } else {
+//                    LOGGER.info("There is no edge between vertices %s and %s", currentVertex,
+// nextVertex); todo temp commenting
+                }
+            } else {
+                LOGGER.info("The vertex %s does not exist", nextVertex);
+            }
+            return false;
+        }
 
-		Set<String> nextVertices(final String vertex) {
-			if(field.doesVertexExist(vertex)) {
-				return field.getNextVertices(vertex);
-			} else {
-				return null;
-			}
-		}
+        Set<String> nextVertices(final String vertex) {
+            if (field.doesVertexExist(vertex)) {
+                return field.getNextVertices(vertex);
+            } else {
+                return null;
+            }
+        }
 
-		Integer weight(final String vrtx1, final String vrtx2) {
-			if(field.doesVertexExist(vrtx1)) {
-				if(field.doesVertexExist(vrtx2)) {
-					if(!field.doesEdgeExist(vrtx1, vrtx2)) {
-						LOGGER.info("There is no edge between vertices %s and %s", vrtx1, vrtx2);
-					}
-					return field.getGameModel().getWeight(vrtx1, vrtx2);
-				}
-			}
-			return null;
-		}
+        Integer weight(final String vrtx1, final String vrtx2) {
+            if (field.doesVertexExist(vrtx1)) {
+                if (field.doesVertexExist(vrtx2)) {
+                    if (! field.doesEdgeExist(vrtx1, vrtx2)) {
+//                        LOGGER.info("There is no edge between vertices %s and %s", vrtx1, vrtx2);
+                    }
+                    return field.getGameModel().getWeight(vrtx1, vrtx2);
+                }
+            }
+            return null;
+        }
 
-		Map<String, String> competitorsPositions() {
-			return players.values().stream()
-				.collect(Collectors.toMap(
-					Player:: getName,
-					Player:: getCurrentPosition,
-					(position1, position2) -> {
-						LOGGER.error("The player position's collision");
-						return "collision";
-					}
-				));
-		}
-	}
+        Map<String, String> competitorsPositions() {
+            return players.values().stream()
+                    .collect(Collectors.toMap(
+                            Player::getName,
+                            Player::getCurrentPosition,
+                            (position1, position2) -> {
+                                LOGGER.error("The player position's collision");
+                                return "collision";
+                            }
+                    ));
+        }
+    }
 }
