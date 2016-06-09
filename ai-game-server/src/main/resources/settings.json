@@ -8,5 +8,10 @@
     "verticesFilePath": "vertices.json",
     "numberOfLives": 3,
     "turnPoints": 100
+  },
+  "model": {
+    "contentCoefficient": 0.5,
+    "obstacleThreshold": 0.6,
+    "benefitThreshold": 0.3
   }
 }

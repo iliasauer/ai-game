@@ -9,14 +9,13 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 import java.util.function.Consumer;
-import java.util.function.Function;;
+import java.util.function.Function;;import static ru.ifmo.kot.game.elements.ElementsConstants.TURN_POINTS;
 
 public class Player {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(Player.class);
-    private static final int TURN_SPEED = 100;
 
-    private int numberOfLives = 3;
+    private int numberOfLives = ElementsConstants.PLAYERS_LIVES_NUMBER;
     private final String name;
     private String currentPosition;
     private String expectedPosition = null;
@@ -38,7 +37,7 @@ public class Player {
 
     public boolean getCloseToExpectedPosition() {
         if (Objects.nonNull(expectedPosition)) {
-            this.expectedPositionDistance -= (TURN_SPEED + tempAcceleration);
+            this.expectedPositionDistance -= (TURN_POINTS + tempAcceleration);
             tempAcceleration = 0;
             if (expectedPositionDistance <= 0) {
                 currentPosition = expectedPosition;
@@ -60,7 +59,7 @@ public class Player {
     }
 
     public int getSpeed() {
-        return TURN_SPEED;
+        return TURN_POINTS;
     }
 
     public String getCurrentPosition() {
