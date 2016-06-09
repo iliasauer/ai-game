@@ -6,6 +6,7 @@
   },
   "elements": {
     "verticesFilePath": "vertices.json",
-    "numberOfLives": 3
+    "numberOfLives": 3,
+    "turnPoints": 100
   }
 }

@@ -131,7 +131,8 @@ public class GameServer {
         switch (command) {
             case NAME:
                 handleAiCommand(command, client, (String) args[0], GAME::name,
-                        () -> sendStartData(client)
+                        () -> sendStartData(client),
+                        GAME::run
                 );
                 break;
             case MOVE:
@@ -169,7 +170,17 @@ public class GameServer {
     }
 
     private void handleAiCommand(final Command command, final Session client, final String arg,
-                                 final BiPredicate<String, String> commandAction, final Action onOkAction) {
+                                 final BiPredicate<String, String> commandAction, final Action
+                                         onOkAction, final Action startAction) {
+        handleAiCommand(command, client, arg, commandAction, onOkAction);
+        if (checkTurnMap()) {
+            startAction.execute();
+        }
+    }
+
+    private void handleAiCommand(final Command command, final Session client, final String arg,
+                                 final BiPredicate<String, String> commandAction, final Action
+                                         onOkAction) {
         final String clientId = client.getId();
         final String clientName = GAME.getClientName(client);
         final String commandName = command.name();
@@ -187,6 +198,7 @@ public class GameServer {
             final ResponseStatus status = turnMap.get(clientId);
             switch (status) {
                 case PASS:
+                    LOGGER.info("%s of %s is passed", commandName, clientName);
                     break;
                 case NOT_ACCEPTED:
                     commandReaction.accept(() -> {
@@ -206,22 +218,23 @@ public class GameServer {
                 sendMessage(client, command, ResponseStatus.NOT_ACCEPTED, arg);
             });
         }
-        if (checkTurnMap()) {
-            toNextTurn();
-            try {
-                turnFuture.get(2, TimeUnit.SECONDS);
-            } catch (final InterruptedException | ExecutionException e) {
-                LOGGER.error("Internal server error");
-            } catch (final TimeoutException e) {
-                LOGGER.error("Turn waiting error");
-            }
-            turnMap.clear();
-            turnFuture = moveInvite();
-        }
+//        if (checkTurnMap()) {
+//            try {
+//                turnFuture.get(2, TimeUnit.SECONDS);
+//            } catch (final InterruptedException | ExecutionException e) {
+//                LOGGER.error("Internal server error");
+//            } catch (final TimeoutException e) {
+//                LOGGER.error("Turn waiting error");
+//            }
+//            turnMap.clear();
+//            GAME.nextTurn();
+//            turnFuture = moveInvite();
+//        }
     }
 
     private boolean checkTurnMap() {
-        return turnMap.values().stream().filter((value) -> value.equals(ResponseStatus.OK) ||
+        return turnMap.values().stream().filter((value) ->
+                value.equals(ResponseStatus.OK) ||
                 value.equals(ResponseStatus.FAIL)).count() == 2;
     }
 
@@ -295,11 +308,11 @@ public class GameServer {
         });
     }
 
-    private Future<Void> nameInvite() {
+    private static Future<Void> nameInvite() {
         return INVITE_EXECUTOR.submit(getSendMessageTask(Command.NAME));
     }
 
-    private Future<Void> moveInvite() {
+    private static Future<Void> moveInvite() {
         LOGGER.info("MOVE #%d", getTurnNumber());
         return INVITE_EXECUTOR.submit(getSendMessageTask(Command.MOVE));
     }
@@ -312,7 +325,7 @@ public class GameServer {
         sendMessage(client, command, ResponseStatus.OK);
     }
 
-    private static class Game {
+    private static class Game implements Runnable {
 
         private Map<String, Player> players = new LinkedHashMap<>();
         private final Field field = new Field();
@@ -356,12 +369,22 @@ public class GameServer {
             return finishVertex;
         }
 
+        void nextTurn() {
+            toNextTurn();
+            players.forEach((clientId, player) -> {
+                final boolean reached = player.getCloseToExpectedPosition();
+                if (!reached) {
+                    turnMap.put(clientId, ResponseStatus.PASS);
+                }
+            });
+        }
+
         boolean move(final String clientId, final String nextVertex) {
             if (field.doesVertexExist(nextVertex)) {
                 final Player player = players.get(clientId);
                 final String currentVertex = player.getCurrentPosition();
                 if (field.doesEdgeExist(currentVertex, nextVertex)) {
-                    player.setCurrentPosition(nextVertex);
+                    player.setExpectedPosition(nextVertex, weight(currentVertex, nextVertex));
                     return true;
                 } else {
 //                    LOGGER.info("There is no edge between vertices %s and %s", currentVertex,
@@ -407,6 +430,40 @@ public class GameServer {
                                 return "collision";
                             }
                     ));
+        }
+
+        @Override
+        public void run() {
+            while(true) {
+                try {
+                    moveInvite().get(2, TimeUnit.SECONDS);
+                } catch (final InterruptedException | ExecutionException e) {
+                    LOGGER.error("Internal server error");
+                } catch (final TimeoutException e) {
+                    LOGGER.error("Turn waiting error");
+                }
+                turnMap.clear();
+                GAME.nextTurn();
+            }
+//            if (checkTurnMap()) {
+//                try {
+//                    turnFuture.get(2, TimeUnit.SECONDS);
+//                } catch (final InterruptedException | ExecutionException e) {
+//                    LOGGER.error("Internal server error");
+//                } catch (final TimeoutException e) {
+//                    LOGGER.error("Turn waiting error");
+//                }
+//                turnMap.clear();
+//                GAME.nextTurn();
+//                turnFuture = moveInvite();
+//            }
+        }
+
+        private boolean checkTurnMap() {
+            return turnMap.values().stream().filter((value) ->
+                    value.equals(ResponseStatus.OK) ||
+                            value.equals(ResponseStatus.FAIL) ||
+                            value.equals(ResponseStatus.PASS)).count() == 2;
         }
     }
 }
