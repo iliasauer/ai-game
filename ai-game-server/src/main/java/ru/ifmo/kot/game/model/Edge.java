@@ -2,9 +2,10 @@ package ru.ifmo.kot.game.model;
 
 import java.text.MessageFormat;
 
+@SuppressWarnings("WeakerAccess")
 public class Edge implements Comparable<Edge> {
 
-    static final String STRING_PATTERN = "{0} - {1}: {2}";
+    private static final String STRING_PATTERN = "{0} - {1}: {2}";
 
     private final int srcVrtxIndx;
     private final int dstVrtxIndx;
