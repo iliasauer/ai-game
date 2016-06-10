@@ -322,11 +322,8 @@ public class GameServer {
             LOGGER.info("TURN #%d", getTurnNumber());
             try {
                 turnFuture.get(2, TimeUnit.SECONDS);
-            } catch(final ConcurrentModificationException e) {
-//                LOGGER.error("temporary pass error");         todo fix it
-            }
-              catch(final InterruptedException | ExecutionException e) {
-                LOGGER.error("Internal server error");
+            } catch(final ConcurrentModificationException | InterruptedException | ExecutionException ignored) {
+//              todo fix it
             } catch(final TimeoutException e) {
                 LOGGER.error("Turn waiting error");
             }
@@ -334,7 +331,7 @@ public class GameServer {
             movePlayers();
             if (turnMap.values().stream().filter(status ->
                     status.equals(ResponseStatus.PASS)).count() == clients.size()) {
-                LOGGER.info("BOTH PASS");
+                LOGGER.debug("BOTH PASS");
                 nextTurn();
             } else {
                 turnFuture = moveInvite();
@@ -407,7 +404,7 @@ public class GameServer {
                     final SymbolGraph gameModel = field.getGameModel();
                     final String playerName = player.getName();
                     final Optional<EdgeContent> optEdgeContent =
-                            Optional.ofNullable(gameModel.getEdgeContent(currentVertex, nextVertex));
+                            Optional.ofNullable(gameModel.takeEdgeContent(currentVertex, nextVertex));
                     if (optEdgeContent.isPresent()) {
                         final EdgeContent edgeContent = optEdgeContent.get();
                         switch (edgeContent) {

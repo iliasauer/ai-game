@@ -78,6 +78,11 @@ public class Player {
 
     public boolean removeLife() {
         numberOfLives--;
-        return numberOfLives > 0;
+        if (numberOfLives > 0) {
+            return true;
+        } else {
+            currentPosition = null;
+            return false;
+        }
     }
 }
