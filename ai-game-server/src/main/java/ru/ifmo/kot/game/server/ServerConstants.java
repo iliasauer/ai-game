@@ -13,4 +13,5 @@ interface ServerConstants {
     int PORT = SETTINGS.getInt(PORT_KEY);
     String CONTEXT_PATH = SETTINGS.getString(CONTEXT_PATH_KEY);
     int NUM_OF_CLIENTS = SETTINGS.getInt(NUM_OF_CLIENTS_KEY);
+
 }

@@ -25,14 +25,13 @@ import static ru.ifmo.kot.game.model.Graph.TARGET_KEY;
 import static ru.ifmo.kot.game.model.Graph.TYPE_KEY;
 import static ru.ifmo.kot.game.model.Graph.VERTEX;
 import static ru.ifmo.kot.game.model.Graph.WEIGHT_KEY;
+import static ru.ifmo.kot.game.model.ModelConstants.COEFFICIENT_OF_EDGE_CONTENT_NUMBER;
+import static ru.ifmo.kot.game.model.ModelConstants.THRESHOLD_OF_BENEFIT;
+import static ru.ifmo.kot.game.model.ModelConstants.THRESHOLD_OF_OBSTACLE;
 
 public class SymbolGraph {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(SymbolGraph.class);
-    private static final double COEFFICIENT_OF_EDGE_CONTENT_NUMBER = 0.5;
-    private static final double THRESHOLD_OF_OBSTACLE = 0.3
-        ;
-    private static final double THRESHOLD_OF_BENEFIT = 0.3;
     private static final Random USUAL_RANDOM = new Random();
     private static final BinaryRandom BINARY_RANDOM =
         new BinaryRandom(COEFFICIENT_OF_EDGE_CONTENT_NUMBER);

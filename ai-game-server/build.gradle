@@ -3,8 +3,6 @@ description = 'an educational ai game - server side'
 
 dependencies {
     compile 'org.eclipse.jetty:jetty-server:9.3.9.M1'
-    compile 'org.eclipse.jetty:jetty-servlet:9.3.9.M1'
-    compile 'org.eclipse.jetty:jetty-servlets:9.3.9.M1'
 
     compile 'org.eclipse.jetty.websocket:javax-websocket-server-impl:9.3.9.M1'
 

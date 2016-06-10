@@ -3,6 +3,7 @@ package ru.ifmo.kot.game.elements;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.model.SymbolGraph;
+import ru.ifmo.kot.game.util.RandomUtil;
 import ru.ifmo.kot.settings.JsonFileReader;
 
 import javax.json.Json;
@@ -10,6 +11,7 @@ import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonString;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -18,7 +20,7 @@ import static ru.ifmo.kot.game.elements.ElementsConstants.*;
 public class Field {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(Field.class);
-
+    private static final double MIN_WEIGHT_FACTOR = 1.1;
     private SymbolGraph gameModel;
     private static String[] startVertices;
 
@@ -70,6 +72,12 @@ public class Field {
     public boolean doesEdgeExist(final String vertexName1, final String vertexName2) {
         return doesVertexExist(vertexName1) && doesVertexExist(vertexName2) &&
             gameModel.getWeight(vertexName1, vertexName2) > 0;
+    }
+
+    public void changeWeight(final String vertexName1, final String vertexName2) {
+        final int weight = gameModel.getWeight(vertexName1, vertexName2);
+        gameModel.putEdge(vertexName1, vertexName2, (int) (weight *
+                RandomUtil.nextDouble(MIN_WEIGHT_FACTOR, OBSTACLE_MAX_FACTOR)));
     }
 
 }

@@ -4,7 +4,7 @@ import ru.ifmo.kot.game.Engine;
 
 import javax.json.JsonObject;
 
-public interface ClientConstants {
+interface ClientConstants {
     String SETTINGS_KEY = "client";
     String SERVER_URL_KEY = "serverUrl";
     JsonObject SETTINGS = Engine.getSettings().getJsonObject(SETTINGS_KEY);
