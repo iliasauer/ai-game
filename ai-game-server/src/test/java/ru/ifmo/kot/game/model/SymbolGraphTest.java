@@ -34,7 +34,7 @@ public class SymbolGraphTest {
             throw new IllegalArgumentException();
         }
         if(verticesNum == 0) {
-            return new int[0][0][0]; //todo implement
+            return new int[0][0][0];
         }
         final int numSqrt = ((int) (sqrt(verticesNum))) + 3;
         final int rowsNum = Math.max(2, numSqrt - 1);
