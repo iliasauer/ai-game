@@ -28,7 +28,7 @@ public class Edge implements Comparable<Edge> {
         if (vrtxIndx == dstVrtxIndx) {
             return srcVrtxIndx;
         }
-        return -1; //todo maybe replace with Exception
+        return -1;
     }
 
     public int otherVertexIndex() {
