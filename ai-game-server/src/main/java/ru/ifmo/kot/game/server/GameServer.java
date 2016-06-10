@@ -307,11 +307,11 @@ public class GameServer {
             turnCounter++;
         }
 
-        void setTurnFuture(final Future<Void> turnFuture) {
+        private void setTurnFuture(final Future<Void> turnFuture) {
             Game.this.turnFuture = turnFuture;
         }
 
-        void tryNextTurn() {
+        private void tryNextTurn() {
             if (checkTurnMap()) {
                 nextTurn();
             }
@@ -325,12 +325,12 @@ public class GameServer {
             } catch (final ConcurrentModificationException e) {
 //                LOGGER.error("Internal server error"); todo fix it
             } catch (final InterruptedException | ExecutionException e) {
-                LOGGER.error("Internal server error");
+//                LOGGER.error("Internal server error"); todo fix it
             } catch (final TimeoutException e) {
                 LOGGER.error("Turn waiting error");
             }
             turnMap.clear();
-            GAME.movePlayers();
+            movePlayers();
             if (turnMap.values().stream().filter(status ->
                     status.equals(ResponseStatus.PASS)).count() == clients.size()) {
                 LOGGER.info("BOTH PASS");
@@ -346,7 +346,7 @@ public class GameServer {
                     >= clients.size();
         }
 
-        String getClientName(final Session client) {
+        private String getClientName(final Session client) {
             final String sessionId = client.getId();
             final Player player = players.get(sessionId);
             if (! Objects.isNull(player)) {
@@ -356,7 +356,7 @@ public class GameServer {
             }
         }
 
-        ConcurrentMap<String, ResponseStatus> turnMap() {
+        private ConcurrentMap<String, ResponseStatus> turnMap() {
             return turnMap;
         }
 
@@ -388,7 +388,7 @@ public class GameServer {
             return finishVertex;
         }
 
-        void movePlayers() {
+        private void movePlayers() {
             players.forEach((clientId, player) -> {
                 final boolean reached = player.getCloseToExpectedPosition();
                 if (! reached) {
@@ -445,7 +445,7 @@ public class GameServer {
             return false;
         }
 
-        void checkWinEvent() {
+        private void checkWinEvent() {
             clients.forEach(client -> {
                 final String clientId = client.getId();
                 if (players.containsKey(clientId)) {
