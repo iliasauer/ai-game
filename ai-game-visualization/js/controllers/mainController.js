@@ -54,7 +54,7 @@ define([
             // Promise.all([graphP, styleP]).then(initCy);
             initCy(graphP, styleP);
 
-            function initCy(expJson, styleJson) {
+            function initCy(expJson, styleArr) {
                 var loading = document.getElementById('loading');
                 // var expJson = then[0];
                 // var styleJson = then[1];
@@ -65,7 +65,7 @@ define([
                 var cy = window.cy = cytoscape({
                     container: document.getElementById('cy'),
                     layout: {name: 'preset'},
-                    style: styleJson,
+                    style: styleArr,
                     elements: elements,
                     motionBlur: true,
                     selectionType: 'single',

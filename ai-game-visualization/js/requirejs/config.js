@@ -6,10 +6,5 @@ requirejs.config({
         'jquery': 'libs/jquery',
         'jqueryQtip': 'libs/jquery-qtip',
         'text': 'libs/text'
-    },
-    map: {
-        // 'ChartScatter': {
-        //     'Chart': 'ChartCore'
-        // }
     }
 });

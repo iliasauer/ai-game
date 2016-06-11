@@ -50336,66 +50336,105 @@ define([], function () {
     };
 
     const FIELD_STYLE =
-        'node {' +
-        'background-color: white;' +
-        'border-color: black;content: data(station_name);' +
-        'width: 20;' +
-        'height: 20;' +
-        'min-zoomed-font-size: 12;' +
-        'color: #fff;' +
-        'font-size: 16;' +
-        '}' +
-        'node:selected,node.start,node.end {' +
-        'height: 60;' +
-        'width: 60;' +
-        'min-zoomed-font-size: 0;' +
-        'font-size: 48;' +
-        'border-color: #000;' +
-        'border-width: 10px;' +
-        'text-outline-color: #000;' +
-        'text-outline-width: 10px;' +
-        'z-index: 9999;' +
-        '}' +
-        'node.start,node.end {' +
-        'background-color: #FC4C4C;' +
-        'color: #FC4C4C;' +
-        '}' +
-        'edge {' +
-        'min-zoomed-font-size: 12;' +
-        'font-size: 8;' +
-        'color: #fff;' +
-        'content: data(line_name);' +
-        'line-color: green;' +
-        'width: 20;' +
-        'curve-style: haystack;' +
-        'haystack-radius: 0;' +
-        'opacity: 0.5;' +
-        '}' +
-        'edge[company_type = 0] {' +
-        'line-color: #00FFFF;' +
-        '}' +
-        'edge[company_type = 1] {' +
-        'line-color: #00FF33;' +
-        '}' +
-        'edge[company_type = 2] {' +
-        'line-color: white;' +
-        '}' +
-        'edge[company_type = 3] {' +
-        'line-color: red;' +
-        '}' +
-        'core {' +
-        'active-bg-color: #fff;' +
-        'active-bg-opacity: 0.333;' +
-        '}' +
-        'edge.not-path {' +
-        'opacity: 0.1;' +
-        '}' +
-        'node.not-path {' +
-        'opacity: 0.333;' +
-        '}' +
-        'edge.path {' +
-        'opacity: 0.666;' +
-        '}';
+	    [
+		    {
+			    "selector" : "node",
+			    "style": {
+				    "background-color": "white",
+				    "border-color": "black",
+				    "content": "data(station_name)",
+				    "width":20,
+				    "height":20,
+				    "min-zoomed-font-size": 12,
+				    "color": "#fff",
+				    "font-size": 16
+			    }
+		    },
+		    {
+			    "selector": "node:selected,node.start,node.end",
+			    "style": {
+				    "width":60,
+				    "height":60,
+				    "min-zoomed-font-size": 0,
+				    "font-size": 48,
+				    "border-color": "#000",
+				    "border-width": "10px",
+				    "text-outline-color": "#000",
+				    "text-outline-width": "10px",
+				    "z-index": 9999
+			    }
+		    },
+		    {
+			    "selector": "node.start,node.end",
+			    "style": {
+				    "background-color": "#FC4C4C",
+				    "color": "#FC4C4C"
+			    }
+		    },
+		    {
+			    "selector": "edge",
+			    "style": {
+				    "min-zoomed-font-size": 12,
+				    "font-size": 8,
+				    "color": "#fff",
+				    "content": "data(line_name)",
+				    "line-color": "green",
+				    "width": 20,
+				    "curve-style": "haystack",
+				    "haystack-radius": 0,
+				    "opacity": 0.5
+			    }
+		    },
+		    {
+			    "selector": "edge[company_type = 0]",
+			    "style": {
+				    "line-color": "#00FFFF"
+			    }
+		    },
+		    {
+			    "selector": "edge[company_type = 1]",
+			    "style": {
+				    "line-color": "#00FF33"
+			    }
+		    },
+		    {
+			    "selector": "edge[company_type = 2]",
+			    "style": {
+				    "line-color": "white"
+			    }
+		    },
+		    {
+			    "selector": "edge[company_type = 3]",
+			    "style": {
+				    "line-color": "red"
+			    }
+		    },
+		    {
+			    "selector": "core",
+			    "style": {
+				    "active-bg-color": "#fff",
+				    "active-bg-opacity": 0.333
+			    }
+		    },
+		    {
+			    "selector": "edge.not-path",
+			    "style": {
+				    "opacity": 0.1
+			    }
+		    },
+		    {
+			    "selector": "node.not-path",
+			    "style": {
+				    "opacity": 0.333
+			    }
+		    },
+		    {
+			    "selector": "edge.path",
+			    "style": {
+				    "opacity": 0.666
+			    }
+		    }
+	    ];
 
     return {
         FIELD_CONTENT: FIELD_CONTENT,
