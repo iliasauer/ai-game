@@ -80,40 +80,40 @@ define([
             function mendData() {
                 // because the source data doesn't connect nodes properly, use the cytoscape api to mend it:
 
-                cy.startBatch();
+                cy.startBatch(); //starts batching manually (an manipulation of elements without triggering style calculations or multiple redraw)
 
                 // put nodes in bins based on name
-                var nodes = cy.nodes();
-                var bin = {};
-                var metanames = [];
+                var nodes = cy.nodes(); // get nodes in the graph matching the specified selector (all nodes if no selector)
+                var bin = {}; // Map<String, List<?>> where key = name, value = List of nodes
+                var metanames = []; // names that are repeated
                 for (var i = 0; i < nodes.length; i++) {
                     var node = nodes[i];
                     var name = node.data('station_name');
-                    var nbin = bin[name] = bin[name] || [];
+                    var nbin = bin[name] = bin[name] || []; // reference to List of nodes
 
-                    nbin.push(node);
+                    nbin.push(node); // several nodes with the same name ??? yes
 
                     if (nbin.length === 2) {
-                        metanames.push(name);
+                        metanames.push(name); // if at least 2 nodes with the same name then add them to metanames list
                     }
                 }
 
                 // connect all nodes together with walking edges
                 for (var i = 0; i < metanames.length; i++) {
                     var name = metanames[i];
-                    var nbin = bin[name];
+                    var nbin = bin[name]; // list of nodes with the same name
 
                     for (var j = 0; j < nbin.length; j++) {
                         for (var k = j + 1; k < nbin.length; k++) {
-                            var nj = nbin[j];
-                            var nk = nbin[k];
+                            var nj = nbin[j]; // the node
+                            var nk = nbin[k]; // the next node
 
-                            cy.add({
+                            cy.add({ // add an edge between the node an the next node
                                 group: 'edges',
                                 data: {
                                     source: nj.id(),
                                     target: nk.id(),
-                                    is_walking: true
+                                    is_walking: true // some custom property
                                 }
                             });
 
@@ -125,7 +125,7 @@ define([
 
                 }
 
-                cy.endBatch(); //.autolock( true );
+                cy.endBatch(); //.autolock( true ); ends batching manually
             }
 
             var start, end;
