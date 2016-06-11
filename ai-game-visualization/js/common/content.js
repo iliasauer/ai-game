@@ -5,22 +5,7 @@ define([], function () {
 		    "nodes": [{
 			    "data": {
 				    "id": "8220",
-				    "station_name": "京成高砂",
-				    "close_ymd": "",
-				    "lon": 139.866875,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 8220,
-				    "station_g_cd": 2300110,
-				    "add": "東京都葛飾区高砂五丁目28-1",
-				    "line_cd": 99340,
-				    "open_ymd": "",
-				    "name": "9934001",
-				    "pref_name": "東京都",
-				    "shared_name": "9934001",
-				    "lat": 35.750932,
-				    "y": -357509.32,
-				    "x": 1398668.75
+				    "station_name": "京成高砂"
 			    },
 			    "position": {
 				    "x": 1398668.75,
@@ -29,22 +14,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8221",
-				    "station_name": "新柴又",
-				    "close_ymd": "",
-				    "lon": 139.879376,
-				    "post": "125-0052",
-				    "e_status": 0,
-				    "SUID": 8221,
-				    "station_g_cd": 9934002,
-				    "add": "葛飾区柴又５-７-１",
-				    "line_cd": 99340,
-				    "open_ymd": "",
-				    "name": "9934002",
-				    "pref_name": "東京都",
-				    "shared_name": "9934002",
-				    "lat": 35.75101,
-				    "y": -357510.10000000003,
-				    "x": 1398793.76
+				    "station_name": "新柴又"
 			    },
 			    "position": {
 				    "x": 1398793.76,
@@ -53,22 +23,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5901",
-				    "station_name": "日本橋",
-				    "close_ymd": "",
-				    "lon": 139.773516,
-				    "post": "103-0027",
-				    "e_status": 0,
-				    "SUID": 5901,
-				    "station_g_cd": 2800109,
-				    "add": "中央区日本橋１丁目",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800109",
-				    "pref_name": "東京都",
-				    "shared_name": "2800109",
-				    "lat": 35.682078000000004,
-				    "y": -356820.78,
-				    "x": 1397735.16
+				    "station_name": "日本橋"
 			    },
 			    "position": {
 				    "x": 1397735.16,
@@ -77,22 +32,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5902",
-				    "station_name": "京橋",
-				    "close_ymd": "",
-				    "lon": 139.770126,
-				    "post": "104-0031",
-				    "e_status": 0,
-				    "SUID": 5902,
-				    "station_g_cd": 2800110,
-				    "add": "中央区京橋２-２-１０",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800110",
-				    "pref_name": "東京都",
-				    "shared_name": "2800110",
-				    "lat": 35.676856,
-				    "y": -356768.56,
-				    "x": 1397701.26
+				    "station_name": "京橋"
 			    },
 			    "position": {
 				    "x": 1397701.26,
@@ -101,22 +41,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5903",
-				    "station_name": "銀座",
-				    "close_ymd": "",
-				    "lon": 139.76396499999998,
-				    "post": "104-0061",
-				    "e_status": 0,
-				    "SUID": 5903,
-				    "station_g_cd": 2800111,
-				    "add": "中央区銀座４-１-２",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800111",
-				    "pref_name": "東京都",
-				    "shared_name": "2800111",
-				    "lat": 35.671989,
-				    "y": -356719.89,
-				    "x": 1397639.65
+				    "station_name": "銀座"
 			    },
 			    "position": {
 				    "x": 1397639.65,
@@ -125,22 +50,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5904",
-				    "station_name": "新橋",
-				    "close_ymd": "",
-				    "lon": 139.758432,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5904,
-				    "station_g_cd": 1130102,
-				    "add": "東京都港区新橋二丁目17-5",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800112",
-				    "pref_name": "東京都",
-				    "shared_name": "2800112",
-				    "lat": 35.667434,
-				    "y": -356674.34,
-				    "x": 1397584.32
+				    "station_name": "新橋"
 			    },
 			    "position": {
 				    "x": 1397584.32,
@@ -149,22 +59,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5905",
-				    "station_name": "虎ノ門",
-				    "close_ymd": "",
-				    "lon": 139.749832,
-				    "post": "105-0001",
-				    "e_status": 0,
-				    "SUID": 5905,
-				    "station_g_cd": 2800113,
-				    "add": "港区虎ノ門１-１-２１",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800113",
-				    "pref_name": "東京都",
-				    "shared_name": "2800113",
-				    "lat": 35.670235999999996,
-				    "y": -356702.3599999999,
-				    "x": 1397498.32
+				    "station_name": "虎ノ門"
 			    },
 			    "position": {
 				    "x": 1397498.32,
@@ -173,22 +68,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5906",
-				    "station_name": "溜池山王",
-				    "close_ymd": "",
-				    "lon": 139.741419,
-				    "post": "100-0014",
-				    "e_status": 0,
-				    "SUID": 5906,
-				    "station_g_cd": 2800114,
-				    "add": "千代田区永田町２-１１-１",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800114",
-				    "pref_name": "東京都",
-				    "shared_name": "2800114",
-				    "lat": 35.673621000000004,
-				    "y": -356736.21,
-				    "x": 1397414.1900000002
+				    "station_name": "溜池山王"
 			    },
 			    "position": {
 				    "x": 1397414.1900000002,
@@ -197,22 +77,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5907",
-				    "station_name": "赤坂見附",
-				    "close_ymd": "",
-				    "lon": 139.737047,
-				    "post": "107-0052",
-				    "e_status": 0,
-				    "SUID": 5907,
-				    "station_g_cd": 2800115,
-				    "add": "港区赤坂３-１-６",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800115",
-				    "pref_name": "東京都",
-				    "shared_name": "2800115",
-				    "lat": 35.677021,
-				    "y": -356770.21,
-				    "x": 1397370.47
+				    "station_name": "赤坂見附"
 			    },
 			    "position": {
 				    "x": 1397370.47,
@@ -221,22 +86,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5908",
-				    "station_name": "青山一丁目",
-				    "close_ymd": "",
-				    "lon": 139.72415900000001,
-				    "post": "107-0062",
-				    "e_status": 0,
-				    "SUID": 5908,
-				    "station_g_cd": 2800116,
-				    "add": "港区南青山１-１-１９",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800116",
-				    "pref_name": "東京都",
-				    "shared_name": "2800116",
-				    "lat": 35.672765000000005,
-				    "y": -356727.6500000001,
-				    "x": 1397241.59
+				    "station_name": "青山一丁目"
 			    },
 			    "position": {
 				    "x": 1397241.59,
@@ -245,22 +95,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5893",
-				    "station_name": "浅草",
-				    "close_ymd": "",
-				    "lon": 139.79759199999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5893,
-				    "station_g_cd": 2100201,
-				    "add": "東京都台東区",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800101",
-				    "pref_name": "東京都",
-				    "shared_name": "2800101",
-				    "lat": 35.710733000000005,
-				    "y": -357107.3300000001,
-				    "x": 1397975.9199999997
+				    "station_name": "浅草"
 			    },
 			    "position": {
 				    "x": 1397975.9199999997,
@@ -269,22 +104,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5894",
-				    "station_name": "田原町",
-				    "close_ymd": "",
-				    "lon": 139.790897,
-				    "post": "111-0035",
-				    "e_status": 0,
-				    "SUID": 5894,
-				    "station_g_cd": 2800102,
-				    "add": "台東区西浅草１-１-１８",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800102",
-				    "pref_name": "東京都",
-				    "shared_name": "2800102",
-				    "lat": 35.709897,
-				    "y": -357098.97,
-				    "x": 1397908.97
+				    "station_name": "田原町"
 			    },
 			    "position": {
 				    "x": 1397908.97,
@@ -293,22 +113,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5895",
-				    "station_name": "稲荷町",
-				    "close_ymd": "",
-				    "lon": 139.782593,
-				    "post": "110-0015",
-				    "e_status": 0,
-				    "SUID": 5895,
-				    "station_g_cd": 2800103,
-				    "add": "台東区東上野３-３３-１１",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800103",
-				    "pref_name": "東京都",
-				    "shared_name": "2800103",
-				    "lat": 35.711273,
-				    "y": -357112.73,
-				    "x": 1397825.93
+				    "station_name": "稲荷町"
 			    },
 			    "position": {
 				    "x": 1397825.93,
@@ -317,22 +122,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5896",
-				    "station_name": "上野",
-				    "close_ymd": "",
-				    "lon": 139.777122,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5896,
-				    "station_g_cd": 1130220,
-				    "add": "東京都台東区東上野三丁目19-6",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800104",
-				    "pref_name": "東京都",
-				    "shared_name": "2800104",
-				    "lat": 35.711482000000004,
-				    "y": -357114.82000000007,
-				    "x": 1397771.22
+				    "station_name": "上野"
 			    },
 			    "position": {
 				    "x": 1397771.22,
@@ -341,22 +131,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5897",
-				    "station_name": "上野広小路",
-				    "close_ymd": "",
-				    "lon": 139.772877,
-				    "post": "110-0005",
-				    "e_status": 0,
-				    "SUID": 5897,
-				    "station_g_cd": 1130221,
-				    "add": "台東区上野３-２９-３",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800105",
-				    "pref_name": "東京都",
-				    "shared_name": "2800105",
-				    "lat": 35.707679999999996,
-				    "y": -357076.8,
-				    "x": 1397728.77
+				    "station_name": "上野広小路"
 			    },
 			    "position": {
 				    "x": 1397728.77,
@@ -365,22 +140,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5898",
-				    "station_name": "末広町",
-				    "close_ymd": "",
-				    "lon": 139.77171299999998,
-				    "post": "101-0021",
-				    "e_status": 0,
-				    "SUID": 5898,
-				    "station_g_cd": 2800106,
-				    "add": "千代田区外神田４-７-３",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800106",
-				    "pref_name": "東京都",
-				    "shared_name": "2800106",
-				    "lat": 35.702971999999995,
-				    "y": -357029.72,
-				    "x": 1397717.1299999997
+				    "station_name": "末広町"
 			    },
 			    "position": {
 				    "x": 1397717.1299999997,
@@ -389,22 +149,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5899",
-				    "station_name": "神田",
-				    "close_ymd": "",
-				    "lon": 139.770899,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5899,
-				    "station_g_cd": 1130223,
-				    "add": "東京都千代田区神田須田町一丁目16",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800107",
-				    "pref_name": "東京都",
-				    "shared_name": "2800107",
-				    "lat": 35.693587,
-				    "y": -356935.87,
-				    "x": 1397708.9899999998
+				    "station_name": "神田"
 			    },
 			    "position": {
 				    "x": 1397708.9899999998,
@@ -413,22 +158,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5900",
-				    "station_name": "三越前",
-				    "close_ymd": "",
-				    "lon": 139.773594,
-				    "post": "103-0022",
-				    "e_status": 0,
-				    "SUID": 5900,
-				    "station_g_cd": 1131402,
-				    "add": "中央区日本橋室町１-８-１",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800108",
-				    "pref_name": "東京都",
-				    "shared_name": "2800108",
-				    "lat": 35.687101,
-				    "y": -356871.01,
-				    "x": 1397735.94
+				    "station_name": "三越前"
 			    },
 			    "position": {
 				    "x": 1397735.94,
@@ -437,22 +167,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5871",
-				    "station_name": "羽田空港国際線ターミナル",
-				    "close_ymd": "",
-				    "lon": 139.768968,
-				    "post": "144-0041",
-				    "e_status": 0,
-				    "SUID": 5871,
-				    "station_g_cd": 2700207,
-				    "add": "東京都大田区羽田空港二丁目6番5号",
-				    "line_cd": 27002,
-				    "open_ymd": "2010-10-21",
-				    "name": "2700207",
-				    "pref_name": "東京都",
-				    "shared_name": "2700207",
-				    "lat": 35.544676,
-				    "y": -355446.76,
-				    "x": 1397689.68
+				    "station_name": "羽田空港国際線ターミナル"
 			    },
 			    "position": {
 				    "x": 1397689.68,
@@ -461,22 +176,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5872",
-				    "station_name": "羽田空港",
-				    "close_ymd": "",
-				    "lon": 139.785962,
-				    "post": "144-0041",
-				    "e_status": 0,
-				    "SUID": 5872,
-				    "station_g_cd": 2700206,
-				    "add": "大田区羽田空港３-３-４",
-				    "line_cd": 27002,
-				    "open_ymd": "",
-				    "name": "2700206",
-				    "pref_name": "東京都",
-				    "shared_name": "2700206",
-				    "lat": 35.549809,
-				    "y": -355498.09,
-				    "x": 1397859.62
+				    "station_name": "羽田空港"
 			    },
 			    "position": {
 				    "x": 1397859.62,
@@ -485,22 +185,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5869",
-				    "station_name": "穴守稲荷",
-				    "close_ymd": "",
-				    "lon": 139.746669,
-				    "post": "144-0043",
-				    "e_status": 0,
-				    "SUID": 5869,
-				    "station_g_cd": 2700204,
-				    "add": "大田区羽田４-６-１１",
-				    "line_cd": 27002,
-				    "open_ymd": "",
-				    "name": "2700204",
-				    "pref_name": "東京都",
-				    "shared_name": "2700204",
-				    "lat": 35.550326,
-				    "y": -355503.26,
-				    "x": 1397466.69
+				    "station_name": "穴守稲荷"
 			    },
 			    "position": {
 				    "x": 1397466.69,
@@ -509,22 +194,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5870",
-				    "station_name": "天空橋",
-				    "close_ymd": "",
-				    "lon": 139.75423,
-				    "post": "144-0041",
-				    "e_status": 0,
-				    "SUID": 5870,
-				    "station_g_cd": 2700205,
-				    "add": "大田区羽田空港１-１-２",
-				    "line_cd": 27002,
-				    "open_ymd": "",
-				    "name": "2700205",
-				    "pref_name": "東京都",
-				    "shared_name": "2700205",
-				    "lat": 35.548908000000004,
-				    "y": -355489.08,
-				    "x": 1397542.3
+				    "station_name": "天空橋"
 			    },
 			    "position": {
 				    "x": 1397542.3,
@@ -533,22 +203,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5867",
-				    "station_name": "糀谷",
-				    "close_ymd": "",
-				    "lon": 139.72961999999998,
-				    "post": "144-0034",
-				    "e_status": 0,
-				    "SUID": 5867,
-				    "station_g_cd": 2700202,
-				    "add": "大田区西糀谷４-１３-１７",
-				    "line_cd": 27002,
-				    "open_ymd": "",
-				    "name": "2700202",
-				    "pref_name": "東京都",
-				    "shared_name": "2700202",
-				    "lat": 35.5545,
-				    "y": -355545.0,
-				    "x": 1397296.1999999997
+				    "station_name": "糀谷"
 			    },
 			    "position": {
 				    "x": 1397296.1999999997,
@@ -557,22 +212,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5868",
-				    "station_name": "大鳥居",
-				    "close_ymd": "",
-				    "lon": 139.73935600000002,
-				    "post": "144-0034",
-				    "e_status": 0,
-				    "SUID": 5868,
-				    "station_g_cd": 2700203,
-				    "add": "大田区西糀谷３-３７-１８",
-				    "line_cd": 27002,
-				    "open_ymd": "",
-				    "name": "2700203",
-				    "pref_name": "東京都",
-				    "shared_name": "2700203",
-				    "lat": 35.552531,
-				    "y": -355525.31,
-				    "x": 1397393.56
+				    "station_name": "大鳥居"
 			    },
 			    "position": {
 				    "x": 1397393.56,
@@ -581,22 +221,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5866",
-				    "station_name": "京急蒲田",
-				    "close_ymd": "",
-				    "lon": 139.723681,
-				    "post": "144-0052",
-				    "e_status": 0,
-				    "SUID": 5866,
-				    "station_g_cd": 2700112,
-				    "add": "大田区蒲田４-５０-１０",
-				    "line_cd": 27002,
-				    "open_ymd": "",
-				    "name": "2700201",
-				    "pref_name": "東京都",
-				    "shared_name": "2700201",
-				    "lat": 35.560796,
-				    "y": -355607.96,
-				    "x": 1397236.81
+				    "station_name": "京急蒲田"
 			    },
 			    "position": {
 				    "x": 1397236.81,
@@ -605,22 +230,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5826",
-				    "station_name": "梅屋敷",
-				    "close_ymd": "",
-				    "lon": 139.728266,
-				    "post": "144-0052",
-				    "e_status": 0,
-				    "SUID": 5826,
-				    "station_g_cd": 2700111,
-				    "add": "大田区蒲田２-２８-１",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700111",
-				    "pref_name": "東京都",
-				    "shared_name": "2700111",
-				    "lat": 35.566873,
-				    "y": -355668.73000000004,
-				    "x": 1397282.66
+				    "station_name": "梅屋敷"
 			    },
 			    "position": {
 				    "x": 1397282.66,
@@ -629,22 +239,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5825",
-				    "station_name": "大森町",
-				    "close_ymd": "",
-				    "lon": 139.732027,
-				    "post": "143-0015",
-				    "e_status": 0,
-				    "SUID": 5825,
-				    "station_g_cd": 2700110,
-				    "add": "大田区大森西３-２４-７",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700110",
-				    "pref_name": "東京都",
-				    "shared_name": "2700110",
-				    "lat": 35.572431,
-				    "y": -355724.31,
-				    "x": 1397320.2699999998
+				    "station_name": "大森町"
 			    },
 			    "position": {
 				    "x": 1397320.2699999998,
@@ -653,22 +248,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5828",
-				    "station_name": "雑色",
-				    "close_ymd": "",
-				    "lon": 139.715005,
-				    "post": "144-0055",
-				    "e_status": 0,
-				    "SUID": 5828,
-				    "station_g_cd": 2700113,
-				    "add": "大田区仲六郷２-４２-１",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700113",
-				    "pref_name": "東京都",
-				    "shared_name": "2700113",
-				    "lat": 35.549725,
-				    "y": -355497.25,
-				    "x": 1397150.0499999998
+				    "station_name": "雑色"
 			    },
 			    "position": {
 				    "x": 1397150.0499999998,
@@ -677,22 +257,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5827",
-				    "station_name": "京急蒲田",
-				    "close_ymd": "",
-				    "lon": 139.723681,
-				    "post": "144-0052",
-				    "e_status": 0,
-				    "SUID": 5827,
-				    "station_g_cd": 2700112,
-				    "add": "大田区蒲田４-５０-１０",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700112",
-				    "pref_name": "東京都",
-				    "shared_name": "2700112",
-				    "lat": 35.560796,
-				    "y": -355607.96,
-				    "x": 1397236.81
+				    "station_name": "京急蒲田"
 			    },
 			    "position": {
 				    "x": 1397236.81,
@@ -701,22 +266,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5822",
-				    "station_name": "立会川",
-				    "close_ymd": "",
-				    "lon": 139.738886,
-				    "post": "140-0011",
-				    "e_status": 0,
-				    "SUID": 5822,
-				    "station_g_cd": 2700107,
-				    "add": "品川区東大井２-２３-１",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700107",
-				    "pref_name": "東京都",
-				    "shared_name": "2700107",
-				    "lat": 35.598489,
-				    "y": -355984.89,
-				    "x": 1397388.86
+				    "station_name": "立会川"
 			    },
 			    "position": {
 				    "x": 1397388.86,
@@ -725,22 +275,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5821",
-				    "station_name": "鮫洲",
-				    "close_ymd": "",
-				    "lon": 139.742227,
-				    "post": "140-0011",
-				    "e_status": 0,
-				    "SUID": 5821,
-				    "station_g_cd": 2700106,
-				    "add": "品川区東大井１-２-２０",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700106",
-				    "pref_name": "東京都",
-				    "shared_name": "2700106",
-				    "lat": 35.604977000000005,
-				    "y": -356049.7700000001,
-				    "x": 1397422.2700000003
+				    "station_name": "鮫洲"
 			    },
 			    "position": {
 				    "x": 1397422.2700000003,
@@ -749,22 +284,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5824",
-				    "station_name": "平和島",
-				    "close_ymd": "",
-				    "lon": 139.73491,
-				    "post": "143-0016",
-				    "e_status": 0,
-				    "SUID": 5824,
-				    "station_g_cd": 2700109,
-				    "add": "大田区大森北６-１３-１１",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700109",
-				    "pref_name": "東京都",
-				    "shared_name": "2700109",
-				    "lat": 35.57868,
-				    "y": -355786.8,
-				    "x": 1397349.1
+				    "station_name": "平和島"
 			    },
 			    "position": {
 				    "x": 1397349.1,
@@ -773,22 +293,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5823",
-				    "station_name": "大森海岸",
-				    "close_ymd": "",
-				    "lon": 139.73543999999998,
-				    "post": "140-0013",
-				    "e_status": 0,
-				    "SUID": 5823,
-				    "station_g_cd": 2700108,
-				    "add": "品川区南大井３-３２-１",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700108",
-				    "pref_name": "東京都",
-				    "shared_name": "2700108",
-				    "lat": 35.587576,
-				    "y": -355875.76,
-				    "x": 1397354.4
+				    "station_name": "大森海岸"
 			    },
 			    "position": {
 				    "x": 1397354.4,
@@ -797,22 +302,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5818",
-				    "station_name": "北品川",
-				    "close_ymd": "",
-				    "lon": 139.739191,
-				    "post": "140-0001",
-				    "e_status": 0,
-				    "SUID": 5818,
-				    "station_g_cd": 2700103,
-				    "add": "品川区北品川１-１-４",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700103",
-				    "pref_name": "東京都",
-				    "shared_name": "2700103",
-				    "lat": 35.622458,
-				    "y": -356224.58,
-				    "x": 1397391.9100000001
+				    "station_name": "北品川"
 			    },
 			    "position": {
 				    "x": 1397391.9100000001,
@@ -821,22 +311,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5817",
-				    "station_name": "品川",
-				    "close_ymd": "",
-				    "lon": 139.73809,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5817,
-				    "station_g_cd": 1130103,
-				    "add": "東京都港区高輪三丁目26-26",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700102",
-				    "pref_name": "東京都",
-				    "shared_name": "2700102",
-				    "lat": 35.628284,
-				    "y": -356282.84,
-				    "x": 1397380.9
+				    "station_name": "品川"
 			    },
 			    "position": {
 				    "x": 1397380.9,
@@ -845,22 +320,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5820",
-				    "station_name": "青物横丁",
-				    "close_ymd": "",
-				    "lon": 139.74295800000002,
-				    "post": "140-0004",
-				    "e_status": 0,
-				    "SUID": 5820,
-				    "station_g_cd": 2700105,
-				    "add": "品川区南品川３-１-２０",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700105",
-				    "pref_name": "東京都",
-				    "shared_name": "2700105",
-				    "lat": 35.609351000000004,
-				    "y": -356093.51,
-				    "x": 1397429.58
+				    "station_name": "青物横丁"
 			    },
 			    "position": {
 				    "x": 1397429.58,
@@ -869,22 +329,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5819",
-				    "station_name": "新馬場",
-				    "close_ymd": "",
-				    "lon": 139.741366,
-				    "post": "140-0001",
-				    "e_status": 0,
-				    "SUID": 5819,
-				    "station_g_cd": 2700104,
-				    "add": "品川区北品川２-１８-１",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700104",
-				    "pref_name": "東京都",
-				    "shared_name": "2700104",
-				    "lat": 35.61762,
-				    "y": -356176.2,
-				    "x": 1397413.66
+				    "station_name": "新馬場"
 			    },
 			    "position": {
 				    "x": 1397413.66,
@@ -893,22 +338,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5816",
-				    "station_name": "泉岳寺",
-				    "close_ymd": "",
-				    "lon": 139.74002,
-				    "post": "108-0074",
-				    "e_status": 0,
-				    "SUID": 5816,
-				    "station_g_cd": 2700101,
-				    "add": "港区高輪２-１６-３４",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700101",
-				    "pref_name": "東京都",
-				    "shared_name": "2700101",
-				    "lat": 35.638692,
-				    "y": -356386.92,
-				    "x": 1397400.2
+				    "station_name": "泉岳寺"
 			    },
 			    "position": {
 				    "x": 1397400.2,
@@ -917,22 +347,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5829",
-				    "station_name": "六郷土手",
-				    "close_ymd": "",
-				    "lon": 139.7076,
-				    "post": "144-0055",
-				    "e_status": 0,
-				    "SUID": 5829,
-				    "station_g_cd": 2700114,
-				    "add": "大田区仲六郷４-２７-１１",
-				    "line_cd": 27001,
-				    "open_ymd": "",
-				    "name": "2700114",
-				    "pref_name": "東京都",
-				    "shared_name": "2700114",
-				    "lat": 35.540577,
-				    "y": -355405.77,
-				    "x": 1397076.0000000002
+				    "station_name": "六郷土手"
 			    },
 			    "position": {
 				    "x": 1397076.0000000002,
@@ -941,22 +356,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5796",
-				    "station_name": "多摩川",
-				    "close_ymd": "",
-				    "lon": 139.668723,
-				    "post": "145-0071",
-				    "e_status": 0,
-				    "SUID": 5796,
-				    "station_g_cd": 2600109,
-				    "add": "大田区田園調布１-５３-８",
-				    "line_cd": 26006,
-				    "open_ymd": "",
-				    "name": "2600601",
-				    "pref_name": "東京都",
-				    "shared_name": "2600601",
-				    "lat": 35.589591,
-				    "y": -355895.91,
-				    "x": 1396687.23
+				    "station_name": "多摩川"
 			    },
 			    "position": {
 				    "x": 1396687.23,
@@ -965,22 +365,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5795",
-				    "station_name": "蒲田",
-				    "close_ymd": "",
-				    "lon": 139.714626,
-				    "post": "144-0052",
-				    "e_status": 0,
-				    "SUID": 5795,
-				    "station_g_cd": 1133230,
-				    "add": "大田区蒲田５丁目",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600515",
-				    "pref_name": "東京都",
-				    "shared_name": "2600515",
-				    "lat": 35.561766999999996,
-				    "y": -355617.67,
-				    "x": 1397146.26
+				    "station_name": "蒲田"
 			    },
 			    "position": {
 				    "x": 1397146.26,
@@ -989,22 +374,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5794",
-				    "station_name": "蓮沼",
-				    "close_ymd": "",
-				    "lon": 139.708544,
-				    "post": "144-0051",
-				    "e_status": 0,
-				    "SUID": 5794,
-				    "station_g_cd": 2600514,
-				    "add": "大田区西蒲田７-１７-１",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600514",
-				    "pref_name": "東京都",
-				    "shared_name": "2600514",
-				    "lat": 35.564173,
-				    "y": -355641.73,
-				    "x": 1397085.44
+				    "station_name": "蓮沼"
 			    },
 			    "position": {
 				    "x": 1397085.44,
@@ -1013,22 +383,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5793",
-				    "station_name": "池上",
-				    "close_ymd": "",
-				    "lon": 139.702822,
-				    "post": "146-0082",
-				    "e_status": 0,
-				    "SUID": 5793,
-				    "station_g_cd": 2600513,
-				    "add": "大田区池上６-３-１０",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600513",
-				    "pref_name": "東京都",
-				    "shared_name": "2600513",
-				    "lat": 35.572025,
-				    "y": -355720.24999999994,
-				    "x": 1397028.22
+				    "station_name": "池上"
 			    },
 			    "position": {
 				    "x": 1397028.22,
@@ -1037,22 +392,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5792",
-				    "station_name": "千鳥町",
-				    "close_ymd": "",
-				    "lon": 139.69142,
-				    "post": "146-0083",
-				    "e_status": 0,
-				    "SUID": 5792,
-				    "station_g_cd": 2600512,
-				    "add": "大田区千鳥１-２０-１",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600512",
-				    "pref_name": "東京都",
-				    "shared_name": "2600512",
-				    "lat": 35.572983,
-				    "y": -355729.83,
-				    "x": 1396914.2
+				    "station_name": "千鳥町"
 			    },
 			    "position": {
 				    "x": 1396914.2,
@@ -1061,22 +401,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5791",
-				    "station_name": "久が原",
-				    "close_ymd": "",
-				    "lon": 139.685678,
-				    "post": "146-0084",
-				    "e_status": 0,
-				    "SUID": 5791,
-				    "station_g_cd": 2600511,
-				    "add": "大田区南久が原２-６-１０",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600511",
-				    "pref_name": "東京都",
-				    "shared_name": "2600511",
-				    "lat": 35.579499,
-				    "y": -355794.99,
-				    "x": 1396856.78
+				    "station_name": "久が原"
 			    },
 			    "position": {
 				    "x": 1396856.78,
@@ -1085,22 +410,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5790",
-				    "station_name": "御嶽山",
-				    "close_ymd": "",
-				    "lon": 139.682473,
-				    "post": "145-0073",
-				    "e_status": 0,
-				    "SUID": 5790,
-				    "station_g_cd": 2600510,
-				    "add": "大田区北嶺町３２-１７",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600510",
-				    "pref_name": "東京都",
-				    "shared_name": "2600510",
-				    "lat": 35.585236,
-				    "y": -355852.36000000004,
-				    "x": 1396824.73
+				    "station_name": "御嶽山"
 			    },
 			    "position": {
 				    "x": 1396824.73,
@@ -1109,22 +419,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5789",
-				    "station_name": "雪が谷大塚",
-				    "close_ymd": "",
-				    "lon": 139.681083,
-				    "post": "145-0066",
-				    "e_status": 0,
-				    "SUID": 5789,
-				    "station_g_cd": 2600509,
-				    "add": "大田区南雪谷２-２-１６",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600509",
-				    "pref_name": "東京都",
-				    "shared_name": "2600509",
-				    "lat": 35.592038,
-				    "y": -355920.38,
-				    "x": 1396810.83
+				    "station_name": "雪が谷大塚"
 			    },
 			    "position": {
 				    "x": 1396810.83,
@@ -1133,22 +428,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5788",
-				    "station_name": "石川台",
-				    "close_ymd": "",
-				    "lon": 139.68506299999999,
-				    "post": "145-0065",
-				    "e_status": 0,
-				    "SUID": 5788,
-				    "station_g_cd": 2600508,
-				    "add": "大田区東雪谷２-２３-１",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600508",
-				    "pref_name": "東京都",
-				    "shared_name": "2600508",
-				    "lat": 35.596888,
-				    "y": -355968.88,
-				    "x": 1396850.63
+				    "station_name": "石川台"
 			    },
 			    "position": {
 				    "x": 1396850.63,
@@ -1157,22 +437,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5787",
-				    "station_name": "洗足池",
-				    "close_ymd": "",
-				    "lon": 139.690896,
-				    "post": "145-0065",
-				    "e_status": 0,
-				    "SUID": 5787,
-				    "station_g_cd": 2600507,
-				    "add": "大田区東雪谷１-１-６",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600507",
-				    "pref_name": "東京都",
-				    "shared_name": "2600507",
-				    "lat": 35.599647999999995,
-				    "y": -355996.4799999999,
-				    "x": 1396908.9600000002
+				    "station_name": "洗足池"
 			    },
 			    "position": {
 				    "x": 1396908.9600000002,
@@ -1181,22 +446,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5786",
-				    "station_name": "長原",
-				    "close_ymd": "",
-				    "lon": 139.697881,
-				    "post": "145-0064",
-				    "e_status": 0,
-				    "SUID": 5786,
-				    "station_g_cd": 2600506,
-				    "add": "大田区上池台１-１０-１０",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600506",
-				    "pref_name": "東京都",
-				    "shared_name": "2600506",
-				    "lat": 35.60219,
-				    "y": -356021.9,
-				    "x": 1396978.81
+				    "station_name": "長原"
 			    },
 			    "position": {
 				    "x": 1396978.81,
@@ -1205,22 +455,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5785",
-				    "station_name": "旗の台",
-				    "close_ymd": "",
-				    "lon": 139.70228600000002,
-				    "post": "142-0064",
-				    "e_status": 0,
-				    "SUID": 5785,
-				    "station_g_cd": 2600406,
-				    "add": "品川区旗の台２-１３-１",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600505",
-				    "pref_name": "東京都",
-				    "shared_name": "2600505",
-				    "lat": 35.604923,
-				    "y": -356049.23,
-				    "x": 1397022.86
+				    "station_name": "旗の台"
 			    },
 			    "position": {
 				    "x": 1397022.86,
@@ -1229,22 +464,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5784",
-				    "station_name": "荏原中延",
-				    "close_ymd": "",
-				    "lon": 139.712196,
-				    "post": "142-0053",
-				    "e_status": 0,
-				    "SUID": 5784,
-				    "station_g_cd": 2600504,
-				    "add": "品川区中延２-８-１",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600504",
-				    "pref_name": "東京都",
-				    "shared_name": "2600504",
-				    "lat": 35.610056,
-				    "y": -356100.56,
-				    "x": 1397121.96
+				    "station_name": "荏原中延"
 			    },
 			    "position": {
 				    "x": 1397121.96,
@@ -1253,22 +473,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5783",
-				    "station_name": "戸越銀座",
-				    "close_ymd": "",
-				    "lon": 139.714862,
-				    "post": "142-0051",
-				    "e_status": 0,
-				    "SUID": 5783,
-				    "station_g_cd": 2600503,
-				    "add": "品川区平塚２-１６-１",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600503",
-				    "pref_name": "東京都",
-				    "shared_name": "2600503",
-				    "lat": 35.615928000000004,
-				    "y": -356159.28,
-				    "x": 1397148.62
+				    "station_name": "戸越銀座"
 			    },
 			    "position": {
 				    "x": 1397148.62,
@@ -1277,22 +482,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5782",
-				    "station_name": "大崎広小路",
-				    "close_ymd": "",
-				    "lon": 139.72233899999998,
-				    "post": "141-0032",
-				    "e_status": 0,
-				    "SUID": 5782,
-				    "station_g_cd": 2600502,
-				    "add": "品川区大崎４-１-１",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600502",
-				    "pref_name": "東京都",
-				    "shared_name": "2600502",
-				    "lat": 35.622244,
-				    "y": -356222.44,
-				    "x": 1397223.3899999997
+				    "station_name": "大崎広小路"
 			    },
 			    "position": {
 				    "x": 1397223.3899999997,
@@ -1301,22 +491,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5781",
-				    "station_name": "五反田",
-				    "close_ymd": "",
-				    "lon": 139.724175,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5781,
-				    "station_g_cd": 1130202,
-				    "add": "東京都品川区東五反田二丁目1-1",
-				    "line_cd": 26005,
-				    "open_ymd": "",
-				    "name": "2600501",
-				    "pref_name": "東京都",
-				    "shared_name": "2600501",
-				    "lat": 35.625262,
-				    "y": -356252.62,
-				    "x": 1397241.75
+				    "station_name": "五反田"
 			    },
 			    "position": {
 				    "x": 1397241.75,
@@ -1325,22 +500,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5811",
-				    "station_name": "松原",
-				    "close_ymd": "",
-				    "lon": 139.642,
-				    "post": "156-0043",
-				    "e_status": 0,
-				    "SUID": 5811,
-				    "station_g_cd": 2600709,
-				    "add": "世田谷区松原４-１０-８",
-				    "line_cd": 26007,
-				    "open_ymd": "",
-				    "name": "2600709",
-				    "pref_name": "東京都",
-				    "shared_name": "2600709",
-				    "lat": 35.660047999999996,
-				    "y": -356600.48,
-				    "x": 1396420.0
+				    "station_name": "松原"
 			    },
 			    "position": {
 				    "x": 1396420.0,
@@ -1349,22 +509,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5812",
-				    "station_name": "下高井戸",
-				    "close_ymd": "",
-				    "lon": 139.641372,
-				    "post": "156-0043",
-				    "e_status": 0,
-				    "SUID": 5812,
-				    "station_g_cd": 2400107,
-				    "add": "世田谷区松原３-２９-１７",
-				    "line_cd": 26007,
-				    "open_ymd": "",
-				    "name": "2600710",
-				    "pref_name": "東京都",
-				    "shared_name": "2600710",
-				    "lat": 35.66615,
-				    "y": -356661.5,
-				    "x": 1396413.72
+				    "station_name": "下高井戸"
 			    },
 			    "position": {
 				    "x": 1396413.72,
@@ -1373,22 +518,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5809",
-				    "station_name": "宮の坂",
-				    "close_ymd": "",
-				    "lon": 139.64494,
-				    "post": "156-0051",
-				    "e_status": 0,
-				    "SUID": 5809,
-				    "station_g_cd": 2600707,
-				    "add": "世田谷区宮坂１-２４-７",
-				    "line_cd": 26007,
-				    "open_ymd": "",
-				    "name": "2600707",
-				    "pref_name": "東京都",
-				    "shared_name": "2600707",
-				    "lat": 35.647508,
-				    "y": -356475.08,
-				    "x": 1396449.4
+				    "station_name": "宮の坂"
 			    },
 			    "position": {
 				    "x": 1396449.4,
@@ -1397,22 +527,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5810",
-				    "station_name": "山下",
-				    "close_ymd": "",
-				    "lon": 139.646509,
-				    "post": "154-0021",
-				    "e_status": 0,
-				    "SUID": 5810,
-				    "station_g_cd": 2500110,
-				    "add": "世田谷区豪徳寺１-４４-５",
-				    "line_cd": 26007,
-				    "open_ymd": "",
-				    "name": "2600708",
-				    "pref_name": "東京都",
-				    "shared_name": "2600708",
-				    "lat": 35.653844,
-				    "y": -356538.44,
-				    "x": 1396465.09
+				    "station_name": "山下"
 			    },
 			    "position": {
 				    "x": 1396465.09,
@@ -1421,22 +536,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5807",
-				    "station_name": "世田谷",
-				    "close_ymd": "",
-				    "lon": 139.650945,
-				    "post": "154-0017",
-				    "e_status": 0,
-				    "SUID": 5807,
-				    "station_g_cd": 2600705,
-				    "add": "世田谷区世田谷４-９-６",
-				    "line_cd": 26007,
-				    "open_ymd": "",
-				    "name": "2600705",
-				    "pref_name": "東京都",
-				    "shared_name": "2600705",
-				    "lat": 35.643564000000005,
-				    "y": -356435.6400000001,
-				    "x": 1396509.4500000002
+				    "station_name": "世田谷"
 			    },
 			    "position": {
 				    "x": 1396509.4500000002,
@@ -1445,22 +545,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5808",
-				    "station_name": "上町",
-				    "close_ymd": "",
-				    "lon": 139.646276,
-				    "post": "154-0017",
-				    "e_status": 0,
-				    "SUID": 5808,
-				    "station_g_cd": 2600706,
-				    "add": "世田谷区世田谷３-４-３",
-				    "line_cd": 26007,
-				    "open_ymd": "",
-				    "name": "2600706",
-				    "pref_name": "東京都",
-				    "shared_name": "2600706",
-				    "lat": 35.643656,
-				    "y": -356436.56,
-				    "x": 1396462.76
+				    "station_name": "上町"
 			    },
 			    "position": {
 				    "x": 1396462.76,
@@ -1469,22 +554,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5805",
-				    "station_name": "若林",
-				    "close_ymd": "",
-				    "lon": 139.65991100000002,
-				    "post": "154-0023",
-				    "e_status": 0,
-				    "SUID": 5805,
-				    "station_g_cd": 2600703,
-				    "add": "世田谷区若林４-３-１５",
-				    "line_cd": 26007,
-				    "open_ymd": "",
-				    "name": "2600703",
-				    "pref_name": "東京都",
-				    "shared_name": "2600703",
-				    "lat": 35.645933,
-				    "y": -356459.33,
-				    "x": 1396599.1100000003
+				    "station_name": "若林"
 			    },
 			    "position": {
 				    "x": 1396599.1100000003,
@@ -1493,22 +563,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5806",
-				    "station_name": "松陰神社前",
-				    "close_ymd": "",
-				    "lon": 139.655211,
-				    "post": "154-0023",
-				    "e_status": 0,
-				    "SUID": 5806,
-				    "station_g_cd": 2600704,
-				    "add": "世田谷区若林４-２１-１６",
-				    "line_cd": 26007,
-				    "open_ymd": "",
-				    "name": "2600704",
-				    "pref_name": "東京都",
-				    "shared_name": "2600704",
-				    "lat": 35.643947,
-				    "y": -356439.47,
-				    "x": 1396552.11
+				    "station_name": "松陰神社前"
 			    },
 			    "position": {
 				    "x": 1396552.11,
@@ -1517,22 +572,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5803",
-				    "station_name": "三軒茶屋",
-				    "close_ymd": "",
-				    "lon": 139.670156,
-				    "post": "154-0004",
-				    "e_status": 0,
-				    "SUID": 5803,
-				    "station_g_cd": 2600303,
-				    "add": "世田谷区太子堂４-２１-１",
-				    "line_cd": 26007,
-				    "open_ymd": "",
-				    "name": "2600701",
-				    "pref_name": "東京都",
-				    "shared_name": "2600701",
-				    "lat": 35.643716,
-				    "y": -356437.16,
-				    "x": 1396701.5599999998
+				    "station_name": "三軒茶屋"
 			    },
 			    "position": {
 				    "x": 1396701.5599999998,
@@ -1541,22 +581,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5804",
-				    "station_name": "西太子堂",
-				    "close_ymd": "",
-				    "lon": 139.666382,
-				    "post": "154-0004",
-				    "e_status": 0,
-				    "SUID": 5804,
-				    "station_g_cd": 2600702,
-				    "add": "世田谷区太子堂４-１０-３",
-				    "line_cd": 26007,
-				    "open_ymd": "",
-				    "name": "2600702",
-				    "pref_name": "東京都",
-				    "shared_name": "2600702",
-				    "lat": 35.644545,
-				    "y": -356445.45,
-				    "x": 1396663.82
+				    "station_name": "西太子堂"
 			    },
 			    "position": {
 				    "x": 1396663.82,
@@ -1565,22 +590,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5801",
-				    "station_name": "矢口渡",
-				    "close_ymd": "",
-				    "lon": 139.700389,
-				    "post": "146-0095",
-				    "e_status": 0,
-				    "SUID": 5801,
-				    "station_g_cd": 2600606,
-				    "add": "大田区多摩川１-２０-１５",
-				    "line_cd": 26006,
-				    "open_ymd": "",
-				    "name": "2600606",
-				    "pref_name": "東京都",
-				    "shared_name": "2600606",
-				    "lat": 35.562462,
-				    "y": -355624.61999999994,
-				    "x": 1397003.89
+				    "station_name": "矢口渡"
 			    },
 			    "position": {
 				    "x": 1397003.89,
@@ -1589,22 +599,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5802",
-				    "station_name": "蒲田",
-				    "close_ymd": "",
-				    "lon": 139.714626,
-				    "post": "144-0052",
-				    "e_status": 0,
-				    "SUID": 5802,
-				    "station_g_cd": 1133230,
-				    "add": "大田区蒲田５丁目",
-				    "line_cd": 26006,
-				    "open_ymd": "",
-				    "name": "2600607",
-				    "pref_name": "東京都",
-				    "shared_name": "2600607",
-				    "lat": 35.561766999999996,
-				    "y": -355617.67,
-				    "x": 1397146.26
+				    "station_name": "蒲田"
 			    },
 			    "position": {
 				    "x": 1397146.26,
@@ -1613,22 +608,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5799",
-				    "station_name": "下丸子",
-				    "close_ymd": "",
-				    "lon": 139.685576,
-				    "post": "146-0092",
-				    "e_status": 0,
-				    "SUID": 5799,
-				    "station_g_cd": 2600604,
-				    "add": "大田区下丸子３-７-１",
-				    "line_cd": 26006,
-				    "open_ymd": "",
-				    "name": "2600604",
-				    "pref_name": "東京都",
-				    "shared_name": "2600604",
-				    "lat": 35.571397,
-				    "y": -355713.97,
-				    "x": 1396855.76
+				    "station_name": "下丸子"
 			    },
 			    "position": {
 				    "x": 1396855.76,
@@ -1637,22 +617,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5800",
-				    "station_name": "武蔵新田",
-				    "close_ymd": "",
-				    "lon": 139.692506,
-				    "post": "146-0093",
-				    "e_status": 0,
-				    "SUID": 5800,
-				    "station_g_cd": 2600605,
-				    "add": "大田区矢口１-１８-１",
-				    "line_cd": 26006,
-				    "open_ymd": "",
-				    "name": "2600605",
-				    "pref_name": "東京都",
-				    "shared_name": "2600605",
-				    "lat": 35.567806,
-				    "y": -355678.06,
-				    "x": 1396925.06
+				    "station_name": "武蔵新田"
 			    },
 			    "position": {
 				    "x": 1396925.06,
@@ -1661,22 +626,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5797",
-				    "station_name": "沼部",
-				    "close_ymd": "",
-				    "lon": 139.67326,
-				    "post": "145-0072",
-				    "e_status": 0,
-				    "SUID": 5797,
-				    "station_g_cd": 2600602,
-				    "add": "大田区田園調布本町２８-１",
-				    "line_cd": 26006,
-				    "open_ymd": "",
-				    "name": "2600602",
-				    "pref_name": "東京都",
-				    "shared_name": "2600602",
-				    "lat": 35.582526,
-				    "y": -355825.26,
-				    "x": 1396732.6
+				    "station_name": "沼部"
 			    },
 			    "position": {
 				    "x": 1396732.6,
@@ -1685,22 +635,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5798",
-				    "station_name": "鵜の木",
-				    "close_ymd": "",
-				    "lon": 139.680554,
-				    "post": "146-0091",
-				    "e_status": 0,
-				    "SUID": 5798,
-				    "station_g_cd": 2600603,
-				    "add": "大田区鵜の木２-４-１",
-				    "line_cd": 26006,
-				    "open_ymd": "",
-				    "name": "2600603",
-				    "pref_name": "東京都",
-				    "shared_name": "2600603",
-				    "lat": 35.575452,
-				    "y": -355754.51999999996,
-				    "x": 1396805.54
+				    "station_name": "鵜の木"
 			    },
 			    "position": {
 				    "x": 1396805.54,
@@ -1709,22 +644,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8157",
-				    "station_name": "立川北",
-				    "close_ymd": "",
-				    "lon": 139.41253999999998,
-				    "post": "190-0012",
-				    "e_status": 0,
-				    "SUID": 8157,
-				    "station_g_cd": 9933412,
-				    "add": "立川市曙町２-４",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933412",
-				    "pref_name": "東京都",
-				    "shared_name": "9933412",
-				    "lat": 35.699502,
-				    "y": -356995.02,
-				    "x": 1394125.3999999997
+				    "station_name": "立川北"
 			    },
 			    "position": {
 				    "x": 1394125.3999999997,
@@ -1733,22 +653,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8158",
-				    "station_name": "高松",
-				    "close_ymd": "",
-				    "lon": 139.413242,
-				    "post": "190-0011",
-				    "e_status": 0,
-				    "SUID": 8158,
-				    "station_g_cd": 9933413,
-				    "add": "立川市高松町１-１００",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933413",
-				    "pref_name": "東京都",
-				    "shared_name": "9933413",
-				    "lat": 35.710158,
-				    "y": -357101.58,
-				    "x": 1394132.42
+				    "station_name": "高松"
 			    },
 			    "position": {
 				    "x": 1394132.42,
@@ -1757,22 +662,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8159",
-				    "station_name": "立飛",
-				    "close_ymd": "",
-				    "lon": 139.41738700000002,
-				    "post": "190-0015",
-				    "e_status": 0,
-				    "SUID": 8159,
-				    "station_g_cd": 9933414,
-				    "add": "立川市泉町９３５",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933414",
-				    "pref_name": "東京都",
-				    "shared_name": "9933414",
-				    "lat": 35.714717,
-				    "y": -357147.17,
-				    "x": 1394173.87
+				    "station_name": "立飛"
 			    },
 			    "position": {
 				    "x": 1394173.87,
@@ -1781,22 +671,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8160",
-				    "station_name": "泉体育館",
-				    "close_ymd": "",
-				    "lon": 139.419525,
-				    "post": "190-0015",
-				    "e_status": 0,
-				    "SUID": 8160,
-				    "station_g_cd": 9933415,
-				    "add": "立川市泉町８４１",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933415",
-				    "pref_name": "東京都",
-				    "shared_name": "9933415",
-				    "lat": 35.718775,
-				    "y": -357187.75,
-				    "x": 1394195.25
+				    "station_name": "泉体育館"
 			    },
 			    "position": {
 				    "x": 1394195.25,
@@ -1805,22 +680,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8161",
-				    "station_name": "砂川七番",
-				    "close_ymd": "",
-				    "lon": 139.418097,
-				    "post": "190-0002",
-				    "e_status": 0,
-				    "SUID": 8161,
-				    "station_g_cd": 9933416,
-				    "add": "立川市幸町５-１",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933416",
-				    "pref_name": "東京都",
-				    "shared_name": "9933416",
-				    "lat": 35.723319000000004,
-				    "y": -357233.19000000006,
-				    "x": 1394180.97
+				    "station_name": "砂川七番"
 			    },
 			    "position": {
 				    "x": 1394180.97,
@@ -1829,22 +689,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8162",
-				    "station_name": "玉川上水",
-				    "close_ymd": "",
-				    "lon": 139.417866,
-				    "post": "190-0002",
-				    "e_status": 0,
-				    "SUID": 8162,
-				    "station_g_cd": 2200805,
-				    "add": "立川市幸町６-３６-１",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933417",
-				    "pref_name": "東京都",
-				    "shared_name": "9933417",
-				    "lat": 35.73223,
-				    "y": -357322.3,
-				    "x": 1394178.6600000001
+				    "station_name": "玉川上水"
 			    },
 			    "position": {
 				    "x": 1394178.6600000001,
@@ -1853,22 +698,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8163",
-				    "station_name": "桜街道",
-				    "close_ymd": "",
-				    "lon": 139.416653,
-				    "post": "207-0023",
-				    "e_status": 0,
-				    "SUID": 8163,
-				    "station_g_cd": 9933418,
-				    "add": "東大和市上北台３-４７０",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933418",
-				    "pref_name": "東京都",
-				    "shared_name": "9933418",
-				    "lat": 35.739000000000004,
-				    "y": -357390.00000000006,
-				    "x": 1394166.53
+				    "station_name": "桜街道"
 			    },
 			    "position": {
 				    "x": 1394166.53,
@@ -1877,22 +707,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8164",
-				    "station_name": "上北台",
-				    "close_ymd": "",
-				    "lon": 139.415822,
-				    "post": "207-0023",
-				    "e_status": 0,
-				    "SUID": 8164,
-				    "station_g_cd": 9933419,
-				    "add": "東大和市上北台１-７４２",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933419",
-				    "pref_name": "東京都",
-				    "shared_name": "9933419",
-				    "lat": 35.745824,
-				    "y": -357458.24,
-				    "x": 1394158.22
+				    "station_name": "上北台"
 			    },
 			    "position": {
 				    "x": 1394158.22,
@@ -1901,22 +716,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8149",
-				    "station_name": "中央大学・明星大学",
-				    "close_ymd": "",
-				    "lon": 139.408672,
-				    "post": "192-0351",
-				    "e_status": 0,
-				    "SUID": 8149,
-				    "station_g_cd": 9933404,
-				    "add": "八王子市東中野７４２",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933404",
-				    "pref_name": "東京都",
-				    "shared_name": "9933404",
-				    "lat": 35.64197,
-				    "y": -356419.7,
-				    "x": 1394086.72
+				    "station_name": "中央大学・明星大学"
 			    },
 			    "position": {
 				    "x": 1394086.72,
@@ -1925,22 +725,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5758",
-				    "station_name": "つくし野",
-				    "close_ymd": "",
-				    "lon": 139.485139,
-				    "post": "194-0001",
-				    "e_status": 0,
-				    "SUID": 5758,
-				    "station_g_cd": 2600323,
-				    "add": "町田市つくし野４-１",
-				    "line_cd": 26003,
-				    "open_ymd": "",
-				    "name": "2600323",
-				    "pref_name": "東京都",
-				    "shared_name": "2600323",
-				    "lat": 35.527559000000004,
-				    "y": -355275.59,
-				    "x": 1394851.3900000001
+				    "station_name": "つくし野"
 			    },
 			    "position": {
 				    "x": 1394851.3900000001,
@@ -1949,22 +734,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8150",
-				    "station_name": "多摩動物公園",
-				    "close_ymd": "",
-				    "lon": 139.403672,
-				    "post": "191-0042",
-				    "e_status": 0,
-				    "SUID": 8150,
-				    "station_g_cd": 2400502,
-				    "add": "日野市程久保３-３６-３９",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933405",
-				    "pref_name": "東京都",
-				    "shared_name": "9933405",
-				    "lat": 35.648666,
-				    "y": -356486.66,
-				    "x": 1394036.72
+				    "station_name": "多摩動物公園"
 			    },
 			    "position": {
 				    "x": 1394036.72,
@@ -1973,22 +743,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5759",
-				    "station_name": "すずかけ台",
-				    "close_ymd": "",
-				    "lon": 139.481684,
-				    "post": "194-0001",
-				    "e_status": 0,
-				    "SUID": 5759,
-				    "station_g_cd": 2600324,
-				    "add": "町田市つくし野３-１",
-				    "line_cd": 26003,
-				    "open_ymd": "",
-				    "name": "2600324",
-				    "pref_name": "東京都",
-				    "shared_name": "2600324",
-				    "lat": 35.517094,
-				    "y": -355170.94,
-				    "x": 1394816.84
+				    "station_name": "すずかけ台"
 			    },
 			    "position": {
 				    "x": 1394816.84,
@@ -1997,22 +752,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8151",
-				    "station_name": "程久保",
-				    "close_ymd": "",
-				    "lon": 139.410698,
-				    "post": "191-0042",
-				    "e_status": 0,
-				    "SUID": 8151,
-				    "station_g_cd": 9933406,
-				    "add": "日野市程久保８-１",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933406",
-				    "pref_name": "東京都",
-				    "shared_name": "9933406",
-				    "lat": 35.655093,
-				    "y": -356550.93,
-				    "x": 1394106.98
+				    "station_name": "程久保"
 			    },
 			    "position": {
 				    "x": 1394106.98,
@@ -2021,22 +761,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5760",
-				    "station_name": "南町田",
-				    "close_ymd": "",
-				    "lon": 139.470318,
-				    "post": "194-0004",
-				    "e_status": 0,
-				    "SUID": 5760,
-				    "station_g_cd": 2600325,
-				    "add": "町田市鶴間３-３-２",
-				    "line_cd": 26003,
-				    "open_ymd": "",
-				    "name": "2600325",
-				    "pref_name": "東京都",
-				    "shared_name": "2600325",
-				    "lat": 35.511502,
-				    "y": -355115.02,
-				    "x": 1394703.18
+				    "station_name": "南町田"
 			    },
 			    "position": {
 				    "x": 1394703.18,
@@ -2045,22 +770,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8152",
-				    "station_name": "高幡不動",
-				    "close_ymd": "",
-				    "lon": 139.415184,
-				    "post": "191-0031",
-				    "e_status": 0,
-				    "SUID": 8152,
-				    "station_g_cd": 2400129,
-				    "add": "日野市高幡１３９",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933407",
-				    "pref_name": "東京都",
-				    "shared_name": "9933407",
-				    "lat": 35.66148,
-				    "y": -356614.8,
-				    "x": 1394151.84
+				    "station_name": "高幡不動"
 			    },
 			    "position": {
 				    "x": 1394151.84,
@@ -2069,22 +779,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8153",
-				    "station_name": "万願寺",
-				    "close_ymd": "",
-				    "lon": 139.42007900000002,
-				    "post": "191-0022",
-				    "e_status": 0,
-				    "SUID": 8153,
-				    "station_g_cd": 9933408,
-				    "add": "日野市新井１２４",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933408",
-				    "pref_name": "東京都",
-				    "shared_name": "9933408",
-				    "lat": 35.671248999999996,
-				    "y": -356712.48999999993,
-				    "x": 1394200.7900000003
+				    "station_name": "万願寺"
 			    },
 			    "position": {
 				    "x": 1394200.7900000003,
@@ -2093,22 +788,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8154",
-				    "station_name": "甲州街道",
-				    "close_ymd": "",
-				    "lon": 139.409191,
-				    "post": "191-0012",
-				    "e_status": 0,
-				    "SUID": 8154,
-				    "station_g_cd": 9933409,
-				    "add": "日野市日野１０３０",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933409",
-				    "pref_name": "東京都",
-				    "shared_name": "9933409",
-				    "lat": 35.678262,
-				    "y": -356782.61999999994,
-				    "x": 1394091.91
+				    "station_name": "甲州街道"
 			    },
 			    "position": {
 				    "x": 1394091.91,
@@ -2117,22 +797,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5763",
-				    "station_name": "大井町",
-				    "close_ymd": "",
-				    "lon": 139.735025,
-				    "post": "140-0014",
-				    "e_status": 0,
-				    "SUID": 5763,
-				    "station_g_cd": 1133228,
-				    "add": "品川区大井１丁目",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600401",
-				    "pref_name": "東京都",
-				    "shared_name": "2600401",
-				    "lat": 35.607535,
-				    "y": -356075.35,
-				    "x": 1397350.25
+				    "station_name": "大井町"
 			    },
 			    "position": {
 				    "x": 1397350.25,
@@ -2141,22 +806,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8155",
-				    "station_name": "柴崎体育館",
-				    "close_ymd": "",
-				    "lon": 139.409191,
-				    "post": "190-0023",
-				    "e_status": 0,
-				    "SUID": 8155,
-				    "station_g_cd": 9933410,
-				    "add": "立川市柴崎町６-１０７",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933410",
-				    "pref_name": "東京都",
-				    "shared_name": "9933410",
-				    "lat": 35.689475,
-				    "y": -356894.75,
-				    "x": 1394091.91
+				    "station_name": "柴崎体育館"
 			    },
 			    "position": {
 				    "x": 1394091.91,
@@ -2165,22 +815,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8156",
-				    "station_name": "立川南",
-				    "close_ymd": "",
-				    "lon": 139.412546,
-				    "post": "190-0023",
-				    "e_status": 0,
-				    "SUID": 8156,
-				    "station_g_cd": 9933411,
-				    "add": "立川市柴崎町３-７",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933411",
-				    "pref_name": "東京都",
-				    "shared_name": "9933411",
-				    "lat": 35.696077,
-				    "y": -356960.77,
-				    "x": 1394125.46
+				    "station_name": "立川南"
 			    },
 			    "position": {
 				    "x": 1394125.46,
@@ -2189,22 +824,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5764",
-				    "station_name": "下神明",
-				    "close_ymd": "",
-				    "lon": 139.726256,
-				    "post": "141-0033",
-				    "e_status": 0,
-				    "SUID": 5764,
-				    "station_g_cd": 2600402,
-				    "add": "品川区西品川１-２９-６",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600402",
-				    "pref_name": "東京都",
-				    "shared_name": "2600402",
-				    "lat": 35.608703999999996,
-				    "y": -356087.04,
-				    "x": 1397262.56
+				    "station_name": "下神明"
 			    },
 			    "position": {
 				    "x": 1397262.56,
@@ -2213,22 +833,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5766",
-				    "station_name": "中延",
-				    "close_ymd": "",
-				    "lon": 139.712526,
-				    "post": "142-0053",
-				    "e_status": 0,
-				    "SUID": 5766,
-				    "station_g_cd": 2600404,
-				    "add": "品川区中延４-５-５",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600404",
-				    "pref_name": "東京都",
-				    "shared_name": "2600404",
-				    "lat": 35.605709999999995,
-				    "y": -356057.1,
-				    "x": 1397125.26
+				    "station_name": "中延"
 			    },
 			    "position": {
 				    "x": 1397125.26,
@@ -2237,22 +842,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5765",
-				    "station_name": "戸越公園",
-				    "close_ymd": "",
-				    "lon": 139.718159,
-				    "post": "142-0041",
-				    "e_status": 0,
-				    "SUID": 5765,
-				    "station_g_cd": 2600403,
-				    "add": "品川区戸越５-１０-１５",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600403",
-				    "pref_name": "東京都",
-				    "shared_name": "2600403",
-				    "lat": 35.608856,
-				    "y": -356088.56000000006,
-				    "x": 1397181.59
+				    "station_name": "戸越公園"
 			    },
 			    "position": {
 				    "x": 1397181.59,
@@ -2261,22 +851,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8176",
-				    "station_name": "天王洲アイル",
-				    "close_ymd": "",
-				    "lon": 139.750675,
-				    "post": "140-0002",
-				    "e_status": 0,
-				    "SUID": 8176,
-				    "station_g_cd": 9933602,
-				    "add": "品川区東品川２-５-１９",
-				    "line_cd": 99336,
-				    "open_ymd": "",
-				    "name": "9933602",
-				    "pref_name": "東京都",
-				    "shared_name": "9933602",
-				    "lat": 35.622908,
-				    "y": -356229.08,
-				    "x": 1397506.75
+				    "station_name": "天王洲アイル"
 			    },
 			    "position": {
 				    "x": 1397506.75,
@@ -2285,22 +860,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5768",
-				    "station_name": "旗の台",
-				    "close_ymd": "",
-				    "lon": 139.70228600000002,
-				    "post": "142-0064",
-				    "e_status": 0,
-				    "SUID": 5768,
-				    "station_g_cd": 2600406,
-				    "add": "品川区旗の台２-１３-１",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600406",
-				    "pref_name": "東京都",
-				    "shared_name": "2600406",
-				    "lat": 35.604923,
-				    "y": -356049.23,
-				    "x": 1397022.86
+				    "station_name": "旗の台"
 			    },
 			    "position": {
 				    "x": 1397022.86,
@@ -2309,22 +869,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8175",
-				    "station_name": "浜松町",
-				    "close_ymd": "",
-				    "lon": 139.756747,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 8175,
-				    "station_g_cd": 1130227,
-				    "add": "東京都港区",
-				    "line_cd": 99336,
-				    "open_ymd": "",
-				    "name": "9933601",
-				    "pref_name": "東京都",
-				    "shared_name": "9933601",
-				    "lat": 35.655666,
-				    "y": -356556.66,
-				    "x": 1397567.47
+				    "station_name": "浜松町"
 			    },
 			    "position": {
 				    "x": 1397567.47,
@@ -2333,22 +878,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5767",
-				    "station_name": "荏原町",
-				    "close_ymd": "",
-				    "lon": 139.707571,
-				    "post": "142-0053",
-				    "e_status": 0,
-				    "SUID": 5767,
-				    "station_g_cd": 2600405,
-				    "add": "品川区中延５-２-１",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600405",
-				    "pref_name": "東京都",
-				    "shared_name": "2600405",
-				    "lat": 35.60382,
-				    "y": -356038.2,
-				    "x": 1397075.71
+				    "station_name": "荏原町"
 			    },
 			    "position": {
 				    "x": 1397075.71,
@@ -2357,22 +887,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8178",
-				    "station_name": "流通センター",
-				    "close_ymd": "",
-				    "lon": 139.748964,
-				    "post": "143-0006",
-				    "e_status": 0,
-				    "SUID": 8178,
-				    "station_g_cd": 9933604,
-				    "add": "大田区平和島６-１-２",
-				    "line_cd": 99336,
-				    "open_ymd": "",
-				    "name": "9933604",
-				    "pref_name": "東京都",
-				    "shared_name": "9933604",
-				    "lat": 35.58186,
-				    "y": -355818.6,
-				    "x": 1397489.64
+				    "station_name": "流通センター"
 			    },
 			    "position": {
 				    "x": 1397489.64,
@@ -2381,22 +896,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5770",
-				    "station_name": "大岡山",
-				    "close_ymd": "",
-				    "lon": 139.685909,
-				    "post": "145-0062",
-				    "e_status": 0,
-				    "SUID": 5770,
-				    "station_g_cd": 2600206,
-				    "add": "大田区北千束３-２７-１",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600408",
-				    "pref_name": "東京都",
-				    "shared_name": "2600408",
-				    "lat": 35.607456,
-				    "y": -356074.56,
-				    "x": 1396859.09
+				    "station_name": "大岡山"
 			    },
 			    "position": {
 				    "x": 1396859.09,
@@ -2405,22 +905,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8177",
-				    "station_name": "大井競馬場前",
-				    "close_ymd": "",
-				    "lon": 139.74708,
-				    "post": "140-0012",
-				    "e_status": 0,
-				    "SUID": 8177,
-				    "station_g_cd": 9933603,
-				    "add": "品川区勝島２-２-３５",
-				    "line_cd": 99336,
-				    "open_ymd": "",
-				    "name": "9933603",
-				    "pref_name": "東京都",
-				    "shared_name": "9933603",
-				    "lat": 35.595006,
-				    "y": -355950.06,
-				    "x": 1397470.8
+				    "station_name": "大井競馬場前"
 			    },
 			    "position": {
 				    "x": 1397470.8,
@@ -2429,22 +914,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5769",
-				    "station_name": "北千束",
-				    "close_ymd": "",
-				    "lon": 139.69330300000001,
-				    "post": "145-0062",
-				    "e_status": 0,
-				    "SUID": 5769,
-				    "station_g_cd": 2600407,
-				    "add": "大田区北千束２-１６-１",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600407",
-				    "pref_name": "東京都",
-				    "shared_name": "2600407",
-				    "lat": 35.606311,
-				    "y": -356063.11,
-				    "x": 1396933.0300000003
+				    "station_name": "北千束"
 			    },
 			    "position": {
 				    "x": 1396933.0300000003,
@@ -2453,22 +923,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8180",
-				    "station_name": "整備場",
-				    "close_ymd": "",
-				    "lon": 139.753366,
-				    "post": "144-0041",
-				    "e_status": 0,
-				    "SUID": 8180,
-				    "station_g_cd": 9933606,
-				    "add": "大田区羽田空港１-７-４",
-				    "line_cd": 99336,
-				    "open_ymd": "",
-				    "name": "9933606",
-				    "pref_name": "東京都",
-				    "shared_name": "9933606",
-				    "lat": 35.555125,
-				    "y": -355551.24999999994,
-				    "x": 1397533.66
+				    "station_name": "整備場"
 			    },
 			    "position": {
 				    "x": 1397533.66,
@@ -2477,22 +932,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5772",
-				    "station_name": "自由が丘",
-				    "close_ymd": "",
-				    "lon": 139.66866399999998,
-				    "post": "152-0035",
-				    "e_status": 0,
-				    "SUID": 5772,
-				    "station_g_cd": 2600107,
-				    "add": "目黒区自由が丘１-３０-１",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600410",
-				    "pref_name": "東京都",
-				    "shared_name": "2600410",
-				    "lat": 35.607224,
-				    "y": -356072.24000000005,
-				    "x": 1396686.64
+				    "station_name": "自由が丘"
 			    },
 			    "position": {
 				    "x": 1396686.64,
@@ -2501,22 +941,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8179",
-				    "station_name": "昭和島",
-				    "close_ymd": "",
-				    "lon": 139.74991799999998,
-				    "post": "143-0004",
-				    "e_status": 0,
-				    "SUID": 8179,
-				    "station_g_cd": 9933605,
-				    "add": "大田区昭和島２-２-１",
-				    "line_cd": 99336,
-				    "open_ymd": "",
-				    "name": "9933605",
-				    "pref_name": "東京都",
-				    "shared_name": "9933605",
-				    "lat": 35.570656,
-				    "y": -355706.56,
-				    "x": 1397499.1799999997
+				    "station_name": "昭和島"
 			    },
 			    "position": {
 				    "x": 1397499.1799999997,
@@ -2525,22 +950,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5771",
-				    "station_name": "緑が丘",
-				    "close_ymd": "",
-				    "lon": 139.679482,
-				    "post": "152-0034",
-				    "e_status": 0,
-				    "SUID": 5771,
-				    "station_g_cd": 2600409,
-				    "add": "目黒区緑が丘３-１-１２",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600409",
-				    "pref_name": "東京都",
-				    "shared_name": "2600409",
-				    "lat": 35.60638,
-				    "y": -356063.8,
-				    "x": 1396794.82
+				    "station_name": "緑が丘"
 			    },
 			    "position": {
 				    "x": 1396794.82,
@@ -2549,22 +959,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5774",
-				    "station_name": "尾山台",
-				    "close_ymd": "",
-				    "lon": 139.653862,
-				    "post": "158-0082",
-				    "e_status": 0,
-				    "SUID": 5774,
-				    "station_g_cd": 2600412,
-				    "add": "世田谷区等々力５-５-７",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600412",
-				    "pref_name": "東京都",
-				    "shared_name": "2600412",
-				    "lat": 35.606971,
-				    "y": -356069.71,
-				    "x": 1396538.62
+				    "station_name": "尾山台"
 			    },
 			    "position": {
 				    "x": 1396538.62,
@@ -2573,22 +968,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5773",
-				    "station_name": "九品仏",
-				    "close_ymd": "",
-				    "lon": 139.660992,
-				    "post": "158-0083",
-				    "e_status": 0,
-				    "SUID": 5773,
-				    "station_g_cd": 2600411,
-				    "add": "世田谷区奥沢７-２０-１",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600411",
-				    "pref_name": "東京都",
-				    "shared_name": "2600411",
-				    "lat": 35.60538,
-				    "y": -356053.8,
-				    "x": 1396609.92
+				    "station_name": "九品仏"
 			    },
 			    "position": {
 				    "x": 1396609.92,
@@ -2597,22 +977,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5776",
-				    "station_name": "上野毛",
-				    "close_ymd": "",
-				    "lon": 139.638917,
-				    "post": "158-0093",
-				    "e_status": 0,
-				    "SUID": 5776,
-				    "station_g_cd": 2600414,
-				    "add": "世田谷区上野毛１-２６-６",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600414",
-				    "pref_name": "東京都",
-				    "shared_name": "2600414",
-				    "lat": 35.611957000000004,
-				    "y": -356119.57000000007,
-				    "x": 1396389.17
+				    "station_name": "上野毛"
 			    },
 			    "position": {
 				    "x": 1396389.17,
@@ -2621,22 +986,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5775",
-				    "station_name": "等々力",
-				    "close_ymd": "",
-				    "lon": 139.64793799999998,
-				    "post": "158-0082",
-				    "e_status": 0,
-				    "SUID": 5775,
-				    "station_g_cd": 2600413,
-				    "add": "世田谷区等々力３-１-１",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600413",
-				    "pref_name": "東京都",
-				    "shared_name": "2600413",
-				    "lat": 35.608369,
-				    "y": -356083.69000000006,
-				    "x": 1396479.38
+				    "station_name": "等々力"
 			    },
 			    "position": {
 				    "x": 1396479.38,
@@ -2645,22 +995,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5777",
-				    "station_name": "二子玉川",
-				    "close_ymd": "",
-				    "lon": 139.626685,
-				    "post": "158-0094",
-				    "e_status": 0,
-				    "SUID": 5777,
-				    "station_g_cd": 2600307,
-				    "add": "世田谷区玉川２-２２-１３",
-				    "line_cd": 26004,
-				    "open_ymd": "",
-				    "name": "2600415",
-				    "pref_name": "東京都",
-				    "shared_name": "2600415",
-				    "lat": 35.611788,
-				    "y": -356117.87999999995,
-				    "x": 1396266.85
+				    "station_name": "二子玉川"
 			    },
 			    "position": {
 				    "x": 1396266.85,
@@ -2669,22 +1004,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8191",
-				    "station_name": "品川シーサイド",
-				    "close_ymd": "",
-				    "lon": 139.749549,
-				    "post": "140-0002",
-				    "e_status": 0,
-				    "SUID": 8191,
-				    "station_g_cd": 9933706,
-				    "add": "品川区東品川４-１２-２２",
-				    "line_cd": 99337,
-				    "open_ymd": "",
-				    "name": "9933706",
-				    "pref_name": "東京都",
-				    "shared_name": "9933706",
-				    "lat": 35.608523999999996,
-				    "y": -356085.23999999993,
-				    "x": 1397495.49
+				    "station_name": "品川シーサイド"
 			    },
 			    "position": {
 				    "x": 1397495.49,
@@ -2693,22 +1013,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8192",
-				    "station_name": "大井町",
-				    "close_ymd": "",
-				    "lon": 139.735025,
-				    "post": "140-0014",
-				    "e_status": 0,
-				    "SUID": 8192,
-				    "station_g_cd": 1133228,
-				    "add": "品川区大井１丁目",
-				    "line_cd": 99337,
-				    "open_ymd": "",
-				    "name": "9933707",
-				    "pref_name": "東京都",
-				    "shared_name": "9933707",
-				    "lat": 35.607535,
-				    "y": -356075.35,
-				    "x": 1397350.25
+				    "station_name": "大井町"
 			    },
 			    "position": {
 				    "x": 1397350.25,
@@ -2717,22 +1022,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8189",
-				    "station_name": "東京テレポート",
-				    "close_ymd": "",
-				    "lon": 139.778896,
-				    "post": "135-0064",
-				    "e_status": 0,
-				    "SUID": 8189,
-				    "station_g_cd": 9933704,
-				    "add": "江東区青海１-２",
-				    "line_cd": 99337,
-				    "open_ymd": "",
-				    "name": "9933704",
-				    "pref_name": "東京都",
-				    "shared_name": "9933704",
-				    "lat": 35.62753,
-				    "y": -356275.3,
-				    "x": 1397788.96
+				    "station_name": "東京テレポート"
 			    },
 			    "position": {
 				    "x": 1397788.96,
@@ -2741,22 +1031,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8190",
-				    "station_name": "天王洲アイル",
-				    "close_ymd": "",
-				    "lon": 139.750793,
-				    "post": "140-0002",
-				    "e_status": 0,
-				    "SUID": 8190,
-				    "station_g_cd": 9933602,
-				    "add": "品川区東品川２-５-１９",
-				    "line_cd": 99337,
-				    "open_ymd": "",
-				    "name": "9933705",
-				    "pref_name": "東京都",
-				    "shared_name": "9933705",
-				    "lat": 35.620562,
-				    "y": -356205.62,
-				    "x": 1397507.93
+				    "station_name": "天王洲アイル"
 			    },
 			    "position": {
 				    "x": 1397507.93,
@@ -2765,22 +1040,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5723",
-				    "station_name": "目黒",
-				    "close_ymd": "",
-				    "lon": 139.7155,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5723,
-				    "station_g_cd": 1130203,
-				    "add": "東京都品川区上大崎四丁目2-1",
-				    "line_cd": 26002,
-				    "open_ymd": "",
-				    "name": "2600201",
-				    "pref_name": "東京都",
-				    "shared_name": "2600201",
-				    "lat": 35.633272,
-				    "y": -356332.72,
-				    "x": 1397155.0
+				    "station_name": "目黒"
 			    },
 			    "position": {
 				    "x": 1397155.0,
@@ -2789,22 +1049,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5724",
-				    "station_name": "不動前",
-				    "close_ymd": "",
-				    "lon": 139.71469,
-				    "post": "141-0031",
-				    "e_status": 0,
-				    "SUID": 5724,
-				    "station_g_cd": 2600202,
-				    "add": "品川区西五反田５-１２-１",
-				    "line_cd": 26002,
-				    "open_ymd": "",
-				    "name": "2600202",
-				    "pref_name": "東京都",
-				    "shared_name": "2600202",
-				    "lat": 35.626526,
-				    "y": -356265.26,
-				    "x": 1397146.9
+				    "station_name": "不動前"
 			    },
 			    "position": {
 				    "x": 1397146.9,
@@ -2813,22 +1058,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8193",
-				    "station_name": "大崎",
-				    "close_ymd": "",
-				    "lon": 139.72843899999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 8193,
-				    "station_g_cd": 1130201,
-				    "add": "東京都品川区大崎一丁目21-4",
-				    "line_cd": 99337,
-				    "open_ymd": "",
-				    "name": "9933708",
-				    "pref_name": "東京都",
-				    "shared_name": "9933708",
-				    "lat": 35.619772,
-				    "y": -356197.72,
-				    "x": 1397284.39
+				    "station_name": "大崎"
 			    },
 			    "position": {
 				    "x": 1397284.39,
@@ -2837,22 +1067,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5727",
-				    "station_name": "洗足",
-				    "close_ymd": "",
-				    "lon": 139.694367,
-				    "post": "152-0012",
-				    "e_status": 0,
-				    "SUID": 5727,
-				    "station_g_cd": 2600205,
-				    "add": "目黒区洗足２-２１-１",
-				    "line_cd": 26002,
-				    "open_ymd": "",
-				    "name": "2600205",
-				    "pref_name": "東京都",
-				    "shared_name": "2600205",
-				    "lat": 35.61043,
-				    "y": -356104.3,
-				    "x": 1396943.67
+				    "station_name": "洗足"
 			    },
 			    "position": {
 				    "x": 1396943.67,
@@ -2861,22 +1076,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8183",
-				    "station_name": "新整備場",
-				    "close_ymd": "",
-				    "lon": 139.786777,
-				    "post": "144-0041",
-				    "e_status": 0,
-				    "SUID": 8183,
-				    "station_g_cd": 9933608,
-				    "add": "大田区羽田空港３-５-１",
-				    "line_cd": 99336,
-				    "open_ymd": "",
-				    "name": "9933608",
-				    "pref_name": "東京都",
-				    "shared_name": "9933608",
-				    "lat": 35.542773,
-				    "y": -355427.73,
-				    "x": 1397867.77
+				    "station_name": "新整備場"
 			    },
 			    "position": {
 				    "x": 1397867.77,
@@ -2885,22 +1085,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5728",
-				    "station_name": "大岡山",
-				    "close_ymd": "",
-				    "lon": 139.685909,
-				    "post": "145-0062",
-				    "e_status": 0,
-				    "SUID": 5728,
-				    "station_g_cd": 2600206,
-				    "add": "大田区北千束３-２７-１",
-				    "line_cd": 26002,
-				    "open_ymd": "",
-				    "name": "2600206",
-				    "pref_name": "東京都",
-				    "shared_name": "2600206",
-				    "lat": 35.607456,
-				    "y": -356074.56,
-				    "x": 1396859.09
+				    "station_name": "大岡山"
 			    },
 			    "position": {
 				    "x": 1396859.09,
@@ -2909,22 +1094,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8184",
-				    "station_name": "羽田空港第１ビル",
-				    "close_ymd": "",
-				    "lon": 139.784653,
-				    "post": "144-0041",
-				    "e_status": 0,
-				    "SUID": 8184,
-				    "station_g_cd": 2700206,
-				    "add": "大田区羽田空港３-３-２",
-				    "line_cd": 99336,
-				    "open_ymd": "",
-				    "name": "9933609",
-				    "pref_name": "東京都",
-				    "shared_name": "9933609",
-				    "lat": 35.549163,
-				    "y": -355491.63,
-				    "x": 1397846.53
+				    "station_name": "羽田空港第１ビル"
 			    },
 			    "position": {
 				    "x": 1397846.53,
@@ -2933,22 +1103,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5725",
-				    "station_name": "武蔵小山",
-				    "close_ymd": "",
-				    "lon": 139.704524,
-				    "post": "142-0062",
-				    "e_status": 0,
-				    "SUID": 5725,
-				    "station_g_cd": 2600203,
-				    "add": "品川区小山３-４-８",
-				    "line_cd": 26002,
-				    "open_ymd": "",
-				    "name": "2600203",
-				    "pref_name": "東京都",
-				    "shared_name": "2600203",
-				    "lat": 35.620538,
-				    "y": -356205.38,
-				    "x": 1397045.24
+				    "station_name": "武蔵小山"
 			    },
 			    "position": {
 				    "x": 1397045.24,
@@ -2957,22 +1112,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8181",
-				    "station_name": "天空橋",
-				    "close_ymd": "",
-				    "lon": 139.75423,
-				    "post": "144-0041",
-				    "e_status": 0,
-				    "SUID": 8181,
-				    "station_g_cd": 2700205,
-				    "add": "大田区羽田空港１-１-２",
-				    "line_cd": 99336,
-				    "open_ymd": "",
-				    "name": "9933607",
-				    "pref_name": "東京都",
-				    "shared_name": "9933607",
-				    "lat": 35.548908000000004,
-				    "y": -355489.08,
-				    "x": 1397542.3
+				    "station_name": "天空橋"
 			    },
 			    "position": {
 				    "x": 1397542.3,
@@ -2981,22 +1121,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5726",
-				    "station_name": "西小山",
-				    "close_ymd": "",
-				    "lon": 139.698694,
-				    "post": "142-0062",
-				    "e_status": 0,
-				    "SUID": 5726,
-				    "station_g_cd": 2600204,
-				    "add": "品川区小山６-３-１０",
-				    "line_cd": 26002,
-				    "open_ymd": "",
-				    "name": "2600204",
-				    "pref_name": "東京都",
-				    "shared_name": "2600204",
-				    "lat": 35.615455,
-				    "y": -356154.55,
-				    "x": 1396986.94
+				    "station_name": "西小山"
 			    },
 			    "position": {
 				    "x": 1396986.94,
@@ -3005,22 +1130,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8182",
-				    "station_name": "羽田空港国際線ビル",
-				    "close_ymd": "",
-				    "lon": 139.768206,
-				    "post": "144-0041",
-				    "e_status": 0,
-				    "SUID": 8182,
-				    "station_g_cd": 2700207,
-				    "add": "東京都大田区羽田空港二丁目6-5",
-				    "line_cd": 99336,
-				    "open_ymd": "2010-10-21",
-				    "name": "9933611",
-				    "pref_name": "東京都",
-				    "shared_name": "9933611",
-				    "lat": 35.544169000000004,
-				    "y": -355441.69000000006,
-				    "x": 1397682.0599999998
+				    "station_name": "羽田空港国際線ビル"
 			    },
 			    "position": {
 				    "x": 1397682.0599999998,
@@ -3029,22 +1139,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5731",
-				    "station_name": "多摩川",
-				    "close_ymd": "",
-				    "lon": 139.668723,
-				    "post": "145-0071",
-				    "e_status": 0,
-				    "SUID": 5731,
-				    "station_g_cd": 2600109,
-				    "add": "大田区田園調布１-５３-８",
-				    "line_cd": 26002,
-				    "open_ymd": "",
-				    "name": "2600209",
-				    "pref_name": "東京都",
-				    "shared_name": "2600209",
-				    "lat": 35.589591,
-				    "y": -355895.91,
-				    "x": 1396687.23
+				    "station_name": "多摩川"
 			    },
 			    "position": {
 				    "x": 1396687.23,
@@ -3053,22 +1148,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8187",
-				    "station_name": "東雲",
-				    "close_ymd": "",
-				    "lon": 139.804395,
-				    "post": "135-0062",
-				    "e_status": 0,
-				    "SUID": 8187,
-				    "station_g_cd": 9933702,
-				    "add": "江東区東雲２-８-１０",
-				    "line_cd": 99337,
-				    "open_ymd": "",
-				    "name": "9933702",
-				    "pref_name": "東京都",
-				    "shared_name": "9933702",
-				    "lat": 35.640987,
-				    "y": -356409.87000000005,
-				    "x": 1398043.95
+				    "station_name": "東雲"
 			    },
 			    "position": {
 				    "x": 1398043.95,
@@ -3077,22 +1157,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8188",
-				    "station_name": "国際展示場",
-				    "close_ymd": "",
-				    "lon": 139.791617,
-				    "post": "135-0063",
-				    "e_status": 0,
-				    "SUID": 8188,
-				    "station_g_cd": 9933703,
-				    "add": "江東区有明２-５-２５",
-				    "line_cd": 99337,
-				    "open_ymd": "",
-				    "name": "9933703",
-				    "pref_name": "東京都",
-				    "shared_name": "9933703",
-				    "lat": 35.634409999999995,
-				    "y": -356344.1,
-				    "x": 1397916.17
+				    "station_name": "国際展示場"
 			    },
 			    "position": {
 				    "x": 1397916.17,
@@ -3101,22 +1166,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5729",
-				    "station_name": "奥沢",
-				    "close_ymd": "",
-				    "lon": 139.672355,
-				    "post": "158-0083",
-				    "e_status": 0,
-				    "SUID": 5729,
-				    "station_g_cd": 2600207,
-				    "add": "世田谷区奥沢３-４７-１７",
-				    "line_cd": 26002,
-				    "open_ymd": "",
-				    "name": "2600207",
-				    "pref_name": "東京都",
-				    "shared_name": "2600207",
-				    "lat": 35.603947,
-				    "y": -356039.47,
-				    "x": 1396723.55
+				    "station_name": "奥沢"
 			    },
 			    "position": {
 				    "x": 1396723.55,
@@ -3125,22 +1175,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8185",
-				    "station_name": "羽田空港第２ビル",
-				    "close_ymd": "",
-				    "lon": 139.787979,
-				    "post": "144-0041",
-				    "e_status": 0,
-				    "SUID": 8185,
-				    "station_g_cd": 2700206,
-				    "add": "大田区羽田空港３-４-２",
-				    "line_cd": 99336,
-				    "open_ymd": "",
-				    "name": "9933610",
-				    "pref_name": "東京都",
-				    "shared_name": "9933610",
-				    "lat": 35.550734000000006,
-				    "y": -355507.3400000001,
-				    "x": 1397879.79
+				    "station_name": "羽田空港第２ビル"
 			    },
 			    "position": {
 				    "x": 1397879.79,
@@ -3149,22 +1184,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5730",
-				    "station_name": "田園調布",
-				    "close_ymd": "",
-				    "lon": 139.667356,
-				    "post": "145-0071",
-				    "e_status": 0,
-				    "SUID": 5730,
-				    "station_g_cd": 2600108,
-				    "add": "大田区田園調布３-２５-１８",
-				    "line_cd": 26002,
-				    "open_ymd": "",
-				    "name": "2600208",
-				    "pref_name": "東京都",
-				    "shared_name": "2600208",
-				    "lat": 35.596815,
-				    "y": -355968.15,
-				    "x": 1396673.56
+				    "station_name": "田園調布"
 			    },
 			    "position": {
 				    "x": 1396673.56,
@@ -3173,22 +1193,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8186",
-				    "station_name": "新木場",
-				    "close_ymd": "",
-				    "lon": 139.827402,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 8186,
-				    "station_g_cd": 1132605,
-				    "add": "東京都江東区新木場一丁目6",
-				    "line_cd": 99337,
-				    "open_ymd": "",
-				    "name": "9933701",
-				    "pref_name": "東京都",
-				    "shared_name": "9933701",
-				    "lat": 35.646172,
-				    "y": -356461.72,
-				    "x": 1398274.02
+				    "station_name": "新木場"
 			    },
 			    "position": {
 				    "x": 1398274.02,
@@ -3197,22 +1202,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5736",
-				    "station_name": "渋谷",
-				    "close_ymd": "",
-				    "lon": 139.702148,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5736,
-				    "station_g_cd": 1130205,
-				    "add": "東京都渋谷区道玄坂二丁目1-1",
-				    "line_cd": 26003,
-				    "open_ymd": "",
-				    "name": "2600301",
-				    "pref_name": "東京都",
-				    "shared_name": "2600301",
-				    "lat": 35.65802,
-				    "y": -356580.2,
-				    "x": 1397021.48
+				    "station_name": "渋谷"
 			    },
 			    "position": {
 				    "x": 1397021.48,
@@ -3221,22 +1211,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5740",
-				    "station_name": "桜新町",
-				    "close_ymd": "",
-				    "lon": 139.644779,
-				    "post": "154-0015",
-				    "e_status": 0,
-				    "SUID": 5740,
-				    "station_g_cd": 2600305,
-				    "add": "世田谷区桜新町２-８",
-				    "line_cd": 26003,
-				    "open_ymd": "",
-				    "name": "2600305",
-				    "pref_name": "東京都",
-				    "shared_name": "2600305",
-				    "lat": 35.631665999999996,
-				    "y": -356316.66,
-				    "x": 1396447.79
+				    "station_name": "桜新町"
 			    },
 			    "position": {
 				    "x": 1396447.79,
@@ -3245,22 +1220,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5739",
-				    "station_name": "駒沢大学",
-				    "close_ymd": "",
-				    "lon": 139.661702,
-				    "post": "154-0011",
-				    "e_status": 0,
-				    "SUID": 5739,
-				    "station_g_cd": 2600304,
-				    "add": "世田谷区上馬４-３",
-				    "line_cd": 26003,
-				    "open_ymd": "",
-				    "name": "2600304",
-				    "pref_name": "東京都",
-				    "shared_name": "2600304",
-				    "lat": 35.633471,
-				    "y": -356334.71,
-				    "x": 1396617.02
+				    "station_name": "駒沢大学"
 			    },
 			    "position": {
 				    "x": 1396617.02,
@@ -3269,22 +1229,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5738",
-				    "station_name": "三軒茶屋",
-				    "close_ymd": "",
-				    "lon": 139.670156,
-				    "post": "154-0004",
-				    "e_status": 0,
-				    "SUID": 5738,
-				    "station_g_cd": 2600303,
-				    "add": "世田谷区太子堂４-２１-１",
-				    "line_cd": 26003,
-				    "open_ymd": "",
-				    "name": "2600303",
-				    "pref_name": "東京都",
-				    "shared_name": "2600303",
-				    "lat": 35.643716,
-				    "y": -356437.16,
-				    "x": 1396701.5599999998
+				    "station_name": "三軒茶屋"
 			    },
 			    "position": {
 				    "x": 1396701.5599999998,
@@ -3293,22 +1238,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5737",
-				    "station_name": "池尻大橋",
-				    "close_ymd": "",
-				    "lon": 139.684319,
-				    "post": "154-0001",
-				    "e_status": 0,
-				    "SUID": 5737,
-				    "station_g_cd": 2600302,
-				    "add": "世田谷区池尻３-２",
-				    "line_cd": 26003,
-				    "open_ymd": "",
-				    "name": "2600302",
-				    "pref_name": "東京都",
-				    "shared_name": "2600302",
-				    "lat": 35.650603000000004,
-				    "y": -356506.03,
-				    "x": 1396843.19
+				    "station_name": "池尻大橋"
 			    },
 			    "position": {
 				    "x": 1396843.19,
@@ -3317,22 +1247,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5742",
-				    "station_name": "二子玉川",
-				    "close_ymd": "",
-				    "lon": 139.626685,
-				    "post": "158-0094",
-				    "e_status": 0,
-				    "SUID": 5742,
-				    "station_g_cd": 2600307,
-				    "add": "世田谷区玉川２-２２-１３",
-				    "line_cd": 26003,
-				    "open_ymd": "",
-				    "name": "2600307",
-				    "pref_name": "東京都",
-				    "shared_name": "2600307",
-				    "lat": 35.611788,
-				    "y": -356117.87999999995,
-				    "x": 1396266.85
+				    "station_name": "二子玉川"
 			    },
 			    "position": {
 				    "x": 1396266.85,
@@ -3341,22 +1256,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5741",
-				    "station_name": "用賀",
-				    "close_ymd": "",
-				    "lon": 139.633928,
-				    "post": "158-0097",
-				    "e_status": 0,
-				    "SUID": 5741,
-				    "station_g_cd": 2600306,
-				    "add": "世田谷区用賀２-３９",
-				    "line_cd": 26003,
-				    "open_ymd": "",
-				    "name": "2600306",
-				    "pref_name": "東京都",
-				    "shared_name": "2600306",
-				    "lat": 35.626436,
-				    "y": -356264.36,
-				    "x": 1396339.28
+				    "station_name": "用賀"
 			    },
 			    "position": {
 				    "x": 1396339.28,
@@ -3365,22 +1265,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5699",
-				    "station_name": "小田急永山",
-				    "close_ymd": "",
-				    "lon": 139.44794299999998,
-				    "post": "206-0025",
-				    "e_status": 0,
-				    "SUID": 5699,
-				    "station_g_cd": 2400207,
-				    "add": "多摩市永山１丁目",
-				    "line_cd": 25003,
-				    "open_ymd": "",
-				    "name": "2500306",
-				    "pref_name": "東京都",
-				    "shared_name": "2500306",
-				    "lat": 35.629971999999995,
-				    "y": -356299.72,
-				    "x": 1394479.4299999997
+				    "station_name": "小田急永山"
 			    },
 			    "position": {
 				    "x": 1394479.4299999997,
@@ -3389,22 +1274,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5700",
-				    "station_name": "小田急多摩センター",
-				    "close_ymd": "",
-				    "lon": 139.424298,
-				    "post": "206-0033",
-				    "e_status": 0,
-				    "SUID": 5700,
-				    "station_g_cd": 2400208,
-				    "add": "多摩市落合１丁目",
-				    "line_cd": 25003,
-				    "open_ymd": "",
-				    "name": "2500307",
-				    "pref_name": "東京都",
-				    "shared_name": "2500307",
-				    "lat": 35.624902,
-				    "y": -356249.01999999996,
-				    "x": 1394242.98
+				    "station_name": "小田急多摩センター"
 			    },
 			    "position": {
 				    "x": 1394242.98,
@@ -3413,22 +1283,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5706",
-				    "station_name": "学芸大学",
-				    "close_ymd": "",
-				    "lon": 139.68522,
-				    "post": "152-0004",
-				    "e_status": 0,
-				    "SUID": 5706,
-				    "station_g_cd": 2600105,
-				    "add": "目黒区鷹番３-２-１",
-				    "line_cd": 26001,
-				    "open_ymd": "",
-				    "name": "2600105",
-				    "pref_name": "東京都",
-				    "shared_name": "2600105",
-				    "lat": 35.628786,
-				    "y": -356287.86,
-				    "x": 1396852.2
+				    "station_name": "学芸大学"
 			    },
 			    "position": {
 				    "x": 1396852.2,
@@ -3437,22 +1292,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5705",
-				    "station_name": "祐天寺",
-				    "close_ymd": "",
-				    "lon": 139.69075800000002,
-				    "post": "153-0052",
-				    "e_status": 0,
-				    "SUID": 5705,
-				    "station_g_cd": 2600104,
-				    "add": "目黒区祐天寺２-１３-３",
-				    "line_cd": 26001,
-				    "open_ymd": "",
-				    "name": "2600104",
-				    "pref_name": "東京都",
-				    "shared_name": "2600104",
-				    "lat": 35.637163,
-				    "y": -356371.63,
-				    "x": 1396907.58
+				    "station_name": "祐天寺"
 			    },
 			    "position": {
 				    "x": 1396907.58,
@@ -3461,22 +1301,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5708",
-				    "station_name": "自由が丘",
-				    "close_ymd": "",
-				    "lon": 139.66866399999998,
-				    "post": "152-0035",
-				    "e_status": 0,
-				    "SUID": 5708,
-				    "station_g_cd": 2600107,
-				    "add": "目黒区自由が丘１-３０-１",
-				    "line_cd": 26001,
-				    "open_ymd": "",
-				    "name": "2600107",
-				    "pref_name": "東京都",
-				    "shared_name": "2600107",
-				    "lat": 35.607224,
-				    "y": -356072.24000000005,
-				    "x": 1396686.64
+				    "station_name": "自由が丘"
 			    },
 			    "position": {
 				    "x": 1396686.64,
@@ -3485,22 +1310,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5707",
-				    "station_name": "都立大学",
-				    "close_ymd": "",
-				    "lon": 139.676393,
-				    "post": "152-0031",
-				    "e_status": 0,
-				    "SUID": 5707,
-				    "station_g_cd": 2600106,
-				    "add": "目黒区中根１-５-１",
-				    "line_cd": 26001,
-				    "open_ymd": "",
-				    "name": "2600106",
-				    "pref_name": "東京都",
-				    "shared_name": "2600106",
-				    "lat": 35.617835,
-				    "y": -356178.35,
-				    "x": 1396763.93
+				    "station_name": "都立大学"
 			    },
 			    "position": {
 				    "x": 1396763.93,
@@ -3509,22 +1319,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5702",
-				    "station_name": "渋谷",
-				    "close_ymd": "",
-				    "lon": 139.702417,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 5702,
-				    "station_g_cd": 1130205,
-				    "add": "東京都渋谷区渋谷二丁目24-1",
-				    "line_cd": 26001,
-				    "open_ymd": "",
-				    "name": "2600101",
-				    "pref_name": "東京都",
-				    "shared_name": "2600101",
-				    "lat": 35.659545,
-				    "y": -356595.45,
-				    "x": 1397024.17
+				    "station_name": "渋谷"
 			    },
 			    "position": {
 				    "x": 1397024.17,
@@ -3533,22 +1328,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5701",
-				    "station_name": "唐木田",
-				    "close_ymd": "",
-				    "lon": 139.411622,
-				    "post": "206-0033",
-				    "e_status": 0,
-				    "SUID": 5701,
-				    "station_g_cd": 2500308,
-				    "add": "多摩市落合",
-				    "line_cd": 25003,
-				    "open_ymd": "",
-				    "name": "2500308",
-				    "pref_name": "東京都",
-				    "shared_name": "2500308",
-				    "lat": 35.616671999999994,
-				    "y": -356166.7199999999,
-				    "x": 1394116.22
+				    "station_name": "唐木田"
 			    },
 			    "position": {
 				    "x": 1394116.22,
@@ -3557,22 +1337,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5704",
-				    "station_name": "中目黒",
-				    "close_ymd": "",
-				    "lon": 139.698621,
-				    "post": "153-0051",
-				    "e_status": 0,
-				    "SUID": 5704,
-				    "station_g_cd": 2600103,
-				    "add": "目黒区上目黒３-４-１",
-				    "line_cd": 26001,
-				    "open_ymd": "",
-				    "name": "2600103",
-				    "pref_name": "東京都",
-				    "shared_name": "2600103",
-				    "lat": 35.643854,
-				    "y": -356438.54,
-				    "x": 1396986.21
+				    "station_name": "中目黒"
 			    },
 			    "position": {
 				    "x": 1396986.21,
@@ -3581,22 +1346,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5703",
-				    "station_name": "代官山",
-				    "close_ymd": "",
-				    "lon": 139.703284,
-				    "post": "150-0034",
-				    "e_status": 0,
-				    "SUID": 5703,
-				    "station_g_cd": 2600102,
-				    "add": "渋谷区代官山町１９-４",
-				    "line_cd": 26001,
-				    "open_ymd": "",
-				    "name": "2600102",
-				    "pref_name": "東京都",
-				    "shared_name": "2600102",
-				    "lat": 35.648193,
-				    "y": -356481.93,
-				    "x": 1397032.8399999999
+				    "station_name": "代官山"
 			    },
 			    "position": {
 				    "x": 1397032.8399999999,
@@ -3605,22 +1355,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5710",
-				    "station_name": "多摩川",
-				    "close_ymd": "",
-				    "lon": 139.668723,
-				    "post": "145-0071",
-				    "e_status": 0,
-				    "SUID": 5710,
-				    "station_g_cd": 2600109,
-				    "add": "大田区田園調布１-５３-８",
-				    "line_cd": 26001,
-				    "open_ymd": "",
-				    "name": "2600109",
-				    "pref_name": "東京都",
-				    "shared_name": "2600109",
-				    "lat": 35.589591,
-				    "y": -355895.91,
-				    "x": 1396687.23
+				    "station_name": "多摩川"
 			    },
 			    "position": {
 				    "x": 1396687.23,
@@ -3629,22 +1364,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5709",
-				    "station_name": "田園調布",
-				    "close_ymd": "",
-				    "lon": 139.667356,
-				    "post": "145-0071",
-				    "e_status": 0,
-				    "SUID": 5709,
-				    "station_g_cd": 2600108,
-				    "add": "大田区田園調布３-２５-１８",
-				    "line_cd": 26001,
-				    "open_ymd": "",
-				    "name": "2600108",
-				    "pref_name": "東京都",
-				    "shared_name": "2600108",
-				    "lat": 35.596815,
-				    "y": -355968.15,
-				    "x": 1396673.56
+				    "station_name": "田園調布"
 			    },
 			    "position": {
 				    "x": 1396673.56,
@@ -3653,22 +1373,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5655",
-				    "station_name": "玉川学園前",
-				    "close_ymd": "",
-				    "lon": 139.46338799999998,
-				    "post": "194-0041",
-				    "e_status": 0,
-				    "SUID": 5655,
-				    "station_g_cd": 2500126,
-				    "add": "町田市玉川学園２丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500126",
-				    "pref_name": "東京都",
-				    "shared_name": "2500126",
-				    "lat": 35.563486,
-				    "y": -355634.86,
-				    "x": 1394633.88
+				    "station_name": "玉川学園前"
 			    },
 			    "position": {
 				    "x": 1394633.88,
@@ -3677,22 +1382,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5656",
-				    "station_name": "町田",
-				    "close_ymd": "",
-				    "lon": 139.44523600000002,
-				    "post": "194-0013",
-				    "e_status": 0,
-				    "SUID": 5656,
-				    "station_g_cd": 1130611,
-				    "add": "町田市原町田１丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500127",
-				    "pref_name": "東京都",
-				    "shared_name": "2500127",
-				    "lat": 35.544222,
-				    "y": -355442.22,
-				    "x": 1394452.3600000003
+				    "station_name": "町田"
 			    },
 			    "position": {
 				    "x": 1394452.3600000003,
@@ -3701,22 +1391,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5654",
-				    "station_name": "鶴川",
-				    "close_ymd": "",
-				    "lon": 139.481759,
-				    "post": "195-0053",
-				    "e_status": 0,
-				    "SUID": 5654,
-				    "station_g_cd": 2500125,
-				    "add": "町田市能ケ谷町",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500125",
-				    "pref_name": "東京都",
-				    "shared_name": "2500125",
-				    "lat": 35.583077,
-				    "y": -355830.77,
-				    "x": 1394817.59
+				    "station_name": "鶴川"
 			    },
 			    "position": {
 				    "x": 1394817.59,
@@ -3725,22 +1400,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8148",
-				    "station_name": "大塚・帝京大学",
-				    "close_ymd": "",
-				    "lon": 139.416461,
-				    "post": "192-0352",
-				    "e_status": 0,
-				    "SUID": 8148,
-				    "station_g_cd": 9933403,
-				    "add": "八王子市大塚１４７３",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933403",
-				    "pref_name": "東京都",
-				    "shared_name": "9933403",
-				    "lat": 35.636878,
-				    "y": -356368.78,
-				    "x": 1394164.6099999999
+				    "station_name": "大塚・帝京大学"
 			    },
 			    "position": {
 				    "x": 1394164.6099999999,
@@ -3749,22 +1409,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8147",
-				    "station_name": "松が谷",
-				    "close_ymd": "",
-				    "lon": 139.422201,
-				    "post": "192-0354",
-				    "e_status": 0,
-				    "SUID": 8147,
-				    "station_g_cd": 9933402,
-				    "add": "八王子市松が谷４０",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933402",
-				    "pref_name": "東京都",
-				    "shared_name": "9933402",
-				    "lat": 35.63169,
-				    "y": -356316.89999999997,
-				    "x": 1394222.01
+				    "station_name": "松が谷"
 			    },
 			    "position": {
 				    "x": 1394222.01,
@@ -3773,22 +1418,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "8146",
-				    "station_name": "多摩センター",
-				    "close_ymd": "",
-				    "lon": 139.422782,
-				    "post": "206-0033",
-				    "e_status": 0,
-				    "SUID": 8146,
-				    "station_g_cd": 2400208,
-				    "add": "多摩市落合１-４８-１",
-				    "line_cd": 99334,
-				    "open_ymd": "",
-				    "name": "9933401",
-				    "pref_name": "東京都",
-				    "shared_name": "9933401",
-				    "lat": 35.623723999999996,
-				    "y": -356237.23999999993,
-				    "x": 1394227.82
+				    "station_name": "多摩センター"
 			    },
 			    "position": {
 				    "x": 1394227.82,
@@ -3797,22 +1427,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7783",
-				    "station_name": "新御徒町",
-				    "close_ymd": "",
-				    "lon": 139.781958,
-				    "post": "111-0041",
-				    "e_status": 0,
-				    "SUID": 7783,
-				    "station_g_cd": 9930111,
-				    "add": "台東区元浅草１-５-２",
-				    "line_cd": 99309,
-				    "open_ymd": "",
-				    "name": "9930902",
-				    "pref_name": "東京都",
-				    "shared_name": "9930902",
-				    "lat": 35.707045,
-				    "y": -357070.45,
-				    "x": 1397819.58
+				    "station_name": "新御徒町"
 			    },
 			    "position": {
 				    "x": 1397819.58,
@@ -3821,22 +1436,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7784",
-				    "station_name": "浅草",
-				    "close_ymd": "",
-				    "lon": 139.792389,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7784,
-				    "station_g_cd": 9930903,
-				    "add": "東京都台東区",
-				    "line_cd": 99309,
-				    "open_ymd": "",
-				    "name": "9930903",
-				    "pref_name": "東京都",
-				    "shared_name": "9930903",
-				    "lat": 35.713817,
-				    "y": -357138.17,
-				    "x": 1397923.89
+				    "station_name": "浅草"
 			    },
 			    "position": {
 				    "x": 1397923.89,
@@ -3845,22 +1445,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7782",
-				    "station_name": "秋葉原",
-				    "close_ymd": "",
-				    "lon": 139.774273,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7782,
-				    "station_g_cd": 1130222,
-				    "add": "東京都千代田区",
-				    "line_cd": 99309,
-				    "open_ymd": "",
-				    "name": "9930901",
-				    "pref_name": "東京都",
-				    "shared_name": "9930901",
-				    "lat": 35.698889,
-				    "y": -356988.89,
-				    "x": 1397742.73
+				    "station_name": "秋葉原"
 			    },
 			    "position": {
 				    "x": 1397742.73,
@@ -3869,22 +1454,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7787",
-				    "station_name": "青井",
-				    "close_ymd": "",
-				    "lon": 139.82038,
-				    "post": "120-0012",
-				    "e_status": 0,
-				    "SUID": 7787,
-				    "station_g_cd": 9930906,
-				    "add": "足立区青井三丁目",
-				    "line_cd": 99309,
-				    "open_ymd": "",
-				    "name": "9930906",
-				    "pref_name": "東京都",
-				    "shared_name": "9930906",
-				    "lat": 35.771782,
-				    "y": -357717.82,
-				    "x": 1398203.8
+				    "station_name": "青井"
 			    },
 			    "position": {
 				    "x": 1398203.8,
@@ -3893,22 +1463,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7788",
-				    "station_name": "六町",
-				    "close_ymd": "",
-				    "lon": 139.82181599999998,
-				    "post": "121-0073",
-				    "e_status": 0,
-				    "SUID": 7788,
-				    "station_g_cd": 9930907,
-				    "add": "足立区六町四丁目",
-				    "line_cd": 99309,
-				    "open_ymd": "",
-				    "name": "9930907",
-				    "pref_name": "東京都",
-				    "shared_name": "9930907",
-				    "lat": 35.784963,
-				    "y": -357849.63,
-				    "x": 1398218.16
+				    "station_name": "六町"
 			    },
 			    "position": {
 				    "x": 1398218.16,
@@ -3917,22 +1472,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7785",
-				    "station_name": "南千住",
-				    "close_ymd": "",
-				    "lon": 139.79878300000001,
-				    "post": "116-0003",
-				    "e_status": 0,
-				    "SUID": 7785,
-				    "station_g_cd": 1132004,
-				    "add": "荒川区南千住４丁目",
-				    "line_cd": 99309,
-				    "open_ymd": "",
-				    "name": "9930904",
-				    "pref_name": "東京都",
-				    "shared_name": "9930904",
-				    "lat": 35.732413,
-				    "y": -357324.13,
-				    "x": 1397987.83
+				    "station_name": "南千住"
 			    },
 			    "position": {
 				    "x": 1397987.83,
@@ -3941,22 +1481,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7786",
-				    "station_name": "北千住",
-				    "close_ymd": "",
-				    "lon": 139.805092,
-				    "post": "120-0026",
-				    "e_status": 0,
-				    "SUID": 7786,
-				    "station_g_cd": 1132005,
-				    "add": "足立区千住旭町",
-				    "line_cd": 99309,
-				    "open_ymd": "",
-				    "name": "9930905",
-				    "pref_name": "東京都",
-				    "shared_name": "9930905",
-				    "lat": 35.74949,
-				    "y": -357494.9,
-				    "x": 1398050.92
+				    "station_name": "北千住"
 			    },
 			    "position": {
 				    "x": 1398050.92,
@@ -3965,22 +1490,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7813",
-				    "station_name": "お台場海浜公園",
-				    "close_ymd": "",
-				    "lon": 139.778607,
-				    "post": "135-0091",
-				    "e_status": 0,
-				    "SUID": 7813,
-				    "station_g_cd": 9931106,
-				    "add": "港区台場２-３",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931106",
-				    "pref_name": "東京都",
-				    "shared_name": "9931106",
-				    "lat": 35.629813,
-				    "y": -356298.13,
-				    "x": 1397786.0699999998
+				    "station_name": "お台場海浜公園"
 			    },
 			    "position": {
 				    "x": 1397786.0699999998,
@@ -3989,22 +1499,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7814",
-				    "station_name": "台場",
-				    "close_ymd": "",
-				    "lon": 139.771435,
-				    "post": "135-0091",
-				    "e_status": 0,
-				    "SUID": 7814,
-				    "station_g_cd": 9931107,
-				    "add": "港区台場２-６",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931107",
-				    "pref_name": "東京都",
-				    "shared_name": "9931107",
-				    "lat": 35.625908,
-				    "y": -356259.08,
-				    "x": 1397714.3499999999
+				    "station_name": "台場"
 			    },
 			    "position": {
 				    "x": 1397714.3499999999,
@@ -4013,22 +1508,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7815",
-				    "station_name": "船の科学館",
-				    "close_ymd": "",
-				    "lon": 139.773157,
-				    "post": "135-0064",
-				    "e_status": 0,
-				    "SUID": 7815,
-				    "station_g_cd": 9931108,
-				    "add": "江東区青海１",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931108",
-				    "pref_name": "東京都",
-				    "shared_name": "9931108",
-				    "lat": 35.621462,
-				    "y": -356214.62,
-				    "x": 1397731.57
+				    "station_name": "船の科学館"
 			    },
 			    "position": {
 				    "x": 1397731.57,
@@ -4037,22 +1517,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7816",
-				    "station_name": "テレコムセンター",
-				    "close_ymd": "",
-				    "lon": 139.779327,
-				    "post": "135-0064",
-				    "e_status": 0,
-				    "SUID": 7816,
-				    "station_g_cd": 9931109,
-				    "add": "江東区青海２-２９",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931109",
-				    "pref_name": "東京都",
-				    "shared_name": "9931109",
-				    "lat": 35.617593,
-				    "y": -356175.93,
-				    "x": 1397793.27
+				    "station_name": "テレコムセンター"
 			    },
 			    "position": {
 				    "x": 1397793.27,
@@ -4061,22 +1526,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7817",
-				    "station_name": "青海",
-				    "close_ymd": "",
-				    "lon": 139.781132,
-				    "post": "135-0064",
-				    "e_status": 0,
-				    "SUID": 7817,
-				    "station_g_cd": 9931110,
-				    "add": "江東区青海１",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931110",
-				    "pref_name": "東京都",
-				    "shared_name": "9931110",
-				    "lat": 35.62467,
-				    "y": -356246.7,
-				    "x": 1397811.32
+				    "station_name": "青海"
 			    },
 			    "position": {
 				    "x": 1397811.32,
@@ -4085,22 +1535,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7818",
-				    "station_name": "国際展示場正門",
-				    "close_ymd": "",
-				    "lon": 139.791228,
-				    "post": "135-0063",
-				    "e_status": 0,
-				    "SUID": 7818,
-				    "station_g_cd": 9931111,
-				    "add": "江東区有明３-１",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931111",
-				    "pref_name": "東京都",
-				    "shared_name": "9931111",
-				    "lat": 35.630158,
-				    "y": -356301.58,
-				    "x": 1397912.2799999998
+				    "station_name": "国際展示場正門"
 			    },
 			    "position": {
 				    "x": 1397912.2799999998,
@@ -4109,22 +1544,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7819",
-				    "station_name": "有明",
-				    "close_ymd": "",
-				    "lon": 139.79326899999998,
-				    "post": "135-0063",
-				    "e_status": 0,
-				    "SUID": 7819,
-				    "station_g_cd": 9931112,
-				    "add": "江東区有明２-５",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931112",
-				    "pref_name": "東京都",
-				    "shared_name": "9931112",
-				    "lat": 35.634596,
-				    "y": -356345.96,
-				    "x": 1397932.6899999997
+				    "station_name": "有明"
 			    },
 			    "position": {
 				    "x": 1397932.6899999997,
@@ -4133,22 +1553,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7820",
-				    "station_name": "有明テニスの森",
-				    "close_ymd": "",
-				    "lon": 139.78888,
-				    "post": "135-0063",
-				    "e_status": 0,
-				    "SUID": 7820,
-				    "station_g_cd": 9931113,
-				    "add": "江東区有明１丁目",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931113",
-				    "pref_name": "東京都",
-				    "shared_name": "9931113",
-				    "lat": 35.639964,
-				    "y": -356399.64,
-				    "x": 1397888.8
+				    "station_name": "有明テニスの森"
 			    },
 			    "position": {
 				    "x": 1397888.8,
@@ -4157,22 +1562,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7821",
-				    "station_name": "市場前",
-				    "close_ymd": "",
-				    "lon": 139.78564,
-				    "post": "135-0061",
-				    "e_status": 0,
-				    "SUID": 7821,
-				    "station_g_cd": 9931114,
-				    "add": "江東区豊洲６丁目",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931114",
-				    "pref_name": "東京都",
-				    "shared_name": "9931114",
-				    "lat": 35.645684,
-				    "y": -356456.84,
-				    "x": 1397856.4
+				    "station_name": "市場前"
 			    },
 			    "position": {
 				    "x": 1397856.4,
@@ -4181,22 +1571,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7822",
-				    "station_name": "新豊洲",
-				    "close_ymd": "",
-				    "lon": 139.789996,
-				    "post": "135-0061",
-				    "e_status": 0,
-				    "SUID": 7822,
-				    "station_g_cd": 9931115,
-				    "add": "江東区豊洲６丁目",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931115",
-				    "pref_name": "東京都",
-				    "shared_name": "9931115",
-				    "lat": 35.648718,
-				    "y": -356487.18000000005,
-				    "x": 1397899.96
+				    "station_name": "新豊洲"
 			    },
 			    "position": {
 				    "x": 1397899.96,
@@ -4205,22 +1580,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7823",
-				    "station_name": "豊洲",
-				    "close_ymd": "",
-				    "lon": 139.795414,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7823,
-				    "station_g_cd": 2800622,
-				    "add": "東京都江東区豊洲",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931116",
-				    "pref_name": "東京都",
-				    "shared_name": "9931116",
-				    "lat": 35.653791999999996,
-				    "y": -356537.92,
-				    "x": 1397954.14
+				    "station_name": "豊洲"
 			    },
 			    "position": {
 				    "x": 1397954.14,
@@ -4229,22 +1589,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7808",
-				    "station_name": "新橋",
-				    "close_ymd": "",
-				    "lon": 139.75964399999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7808,
-				    "station_g_cd": 1130102,
-				    "add": "東京都港区東新橋一丁目5-13",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931101",
-				    "pref_name": "東京都",
-				    "shared_name": "9931101",
-				    "lat": 35.665503,
-				    "y": -356655.03,
-				    "x": 1397596.4399999997
+				    "station_name": "新橋"
 			    },
 			    "position": {
 				    "x": 1397596.4399999997,
@@ -4253,22 +1598,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7810",
-				    "station_name": "竹芝",
-				    "close_ymd": "",
-				    "lon": 139.76203700000002,
-				    "post": "105-0022",
-				    "e_status": 0,
-				    "SUID": 7810,
-				    "station_g_cd": 9931103,
-				    "add": "港区海岸１-１３-１０",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931103",
-				    "pref_name": "東京都",
-				    "shared_name": "9931103",
-				    "lat": 35.654099,
-				    "y": -356540.99000000005,
-				    "x": 1397620.37
+				    "station_name": "竹芝"
 			    },
 			    "position": {
 				    "x": 1397620.37,
@@ -4277,22 +1607,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7809",
-				    "station_name": "汐留",
-				    "close_ymd": "",
-				    "lon": 139.759985,
-				    "post": "105-0021",
-				    "e_status": 0,
-				    "SUID": 7809,
-				    "station_g_cd": 9930120,
-				    "add": "港区東新橋１丁目５",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931102",
-				    "pref_name": "東京都",
-				    "shared_name": "9931102",
-				    "lat": 35.662871,
-				    "y": -356628.71,
-				    "x": 1397599.85
+				    "station_name": "汐留"
 			    },
 			    "position": {
 				    "x": 1397599.85,
@@ -4301,22 +1616,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7812",
-				    "station_name": "芝浦ふ頭",
-				    "close_ymd": "",
-				    "lon": 139.757852,
-				    "post": "108-0022",
-				    "e_status": 0,
-				    "SUID": 7812,
-				    "station_g_cd": 9931105,
-				    "add": "港区海岸３-２２-１２",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931105",
-				    "pref_name": "東京都",
-				    "shared_name": "9931105",
-				    "lat": 35.641773,
-				    "y": -356417.73,
-				    "x": 1397578.5200000003
+				    "station_name": "芝浦ふ頭"
 			    },
 			    "position": {
 				    "x": 1397578.5200000003,
@@ -4325,22 +1625,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7811",
-				    "station_name": "日の出",
-				    "close_ymd": "",
-				    "lon": 139.75906,
-				    "post": "105-0022",
-				    "e_status": 0,
-				    "SUID": 7811,
-				    "station_g_cd": 9931104,
-				    "add": "港区海岸２-７-６８",
-				    "line_cd": 99311,
-				    "open_ymd": "",
-				    "name": "9931104",
-				    "pref_name": "東京都",
-				    "shared_name": "9931104",
-				    "lat": 35.649136,
-				    "y": -356491.36,
-				    "x": 1397590.6
+				    "station_name": "日の出"
 			    },
 			    "position": {
 				    "x": 1397590.6,
@@ -4349,22 +1634,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7723",
-				    "station_name": "舎人",
-				    "close_ymd": "",
-				    "lon": 139.770108,
-				    "post": "121-0831",
-				    "e_status": 0,
-				    "SUID": 7723,
-				    "station_g_cd": 9934212,
-				    "add": "足立区舎人１-１６-１５",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934212",
-				    "pref_name": "東京都",
-				    "shared_name": "9934212",
-				    "lat": 35.8057,
-				    "y": -358057.0,
-				    "x": 1397701.0799999998
+				    "station_name": "舎人"
 			    },
 			    "position": {
 				    "x": 1397701.0799999998,
@@ -4373,22 +1643,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7724",
-				    "station_name": "見沼代親水公園",
-				    "close_ymd": "",
-				    "lon": 139.77071899999999,
-				    "post": "121-0831",
-				    "e_status": 0,
-				    "SUID": 7724,
-				    "station_g_cd": 9934213,
-				    "add": "足立区舎人２-２１-１３",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934213",
-				    "pref_name": "東京都",
-				    "shared_name": "9934213",
-				    "lat": 35.814544,
-				    "y": -358145.44,
-				    "x": 1397707.19
+				    "station_name": "見沼代親水公園"
 			    },
 			    "position": {
 				    "x": 1397707.19,
@@ -4397,22 +1652,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7721",
-				    "station_name": "谷在家",
-				    "close_ymd": "",
-				    "lon": 139.770043,
-				    "post": "123-0863",
-				    "e_status": 0,
-				    "SUID": 7721,
-				    "station_g_cd": 9934210,
-				    "add": "足立区谷在家３-２０-２３",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934210",
-				    "pref_name": "東京都",
-				    "shared_name": "9934210",
-				    "lat": 35.788774,
-				    "y": -357887.74,
-				    "x": 1397700.43
+				    "station_name": "谷在家"
 			    },
 			    "position": {
 				    "x": 1397700.43,
@@ -4421,22 +1661,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7722",
-				    "station_name": "舎人公園",
-				    "close_ymd": "",
-				    "lon": 139.770183,
-				    "post": "121-0837",
-				    "e_status": 0,
-				    "SUID": 7722,
-				    "station_g_cd": 9934211,
-				    "add": "足立区舎人公園１-１０",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934211",
-				    "pref_name": "東京都",
-				    "shared_name": "9934211",
-				    "lat": 35.79623,
-				    "y": -357962.3,
-				    "x": 1397701.83
+				    "station_name": "舎人公園"
 			    },
 			    "position": {
 				    "x": 1397701.83,
@@ -4445,22 +1670,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7719",
-				    "station_name": "江北",
-				    "close_ymd": "",
-				    "lon": 139.770306,
-				    "post": "123-0872",
-				    "e_status": 0,
-				    "SUID": 7719,
-				    "station_g_cd": 9934208,
-				    "add": "足立区江北４-３０-２７",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934208",
-				    "pref_name": "東京都",
-				    "shared_name": "9934208",
-				    "lat": 35.774021000000005,
-				    "y": -357740.21,
-				    "x": 1397703.06
+				    "station_name": "江北"
 			    },
 			    "position": {
 				    "x": 1397703.06,
@@ -4469,22 +1679,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7720",
-				    "station_name": "西新井大師西",
-				    "close_ymd": "",
-				    "lon": 139.770094,
-				    "post": "123-0872",
-				    "e_status": 0,
-				    "SUID": 7720,
-				    "station_g_cd": 9934209,
-				    "add": "足立区江北６-３０-２３",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934209",
-				    "pref_name": "東京都",
-				    "shared_name": "9934209",
-				    "lat": 35.781504999999996,
-				    "y": -357815.04999999993,
-				    "x": 1397700.94
+				    "station_name": "西新井大師西"
 			    },
 			    "position": {
 				    "x": 1397700.94,
@@ -4493,22 +1688,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7717",
-				    "station_name": "扇大橋",
-				    "close_ymd": "",
-				    "lon": 139.77080800000002,
-				    "post": "123-0873",
-				    "e_status": 0,
-				    "SUID": 7717,
-				    "station_g_cd": 9934206,
-				    "add": "足立区扇２-２５-７",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934206",
-				    "pref_name": "東京都",
-				    "shared_name": "9934206",
-				    "lat": 35.763897,
-				    "y": -357638.97,
-				    "x": 1397708.08
+				    "station_name": "扇大橋"
 			    },
 			    "position": {
 				    "x": 1397708.08,
@@ -4517,22 +1697,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7718",
-				    "station_name": "高野",
-				    "close_ymd": "",
-				    "lon": 139.770679,
-				    "post": "123-0873",
-				    "e_status": 0,
-				    "SUID": 7718,
-				    "station_g_cd": 9934207,
-				    "add": "足立区扇２-４５-１",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934207",
-				    "pref_name": "東京都",
-				    "shared_name": "9934207",
-				    "lat": 35.768359000000004,
-				    "y": -357683.59,
-				    "x": 1397706.79
+				    "station_name": "高野"
 			    },
 			    "position": {
 				    "x": 1397706.79,
@@ -4541,22 +1706,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7708",
-				    "station_name": "鬼子母神前",
-				    "close_ymd": "",
-				    "lon": 139.714916,
-				    "post": "171-0032",
-				    "e_status": 0,
-				    "SUID": 7708,
-				    "station_g_cd": 2801010,
-				    "add": "豊島区雑司が谷２",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930527",
-				    "pref_name": "東京都",
-				    "shared_name": "9930527",
-				    "lat": 35.720403000000005,
-				    "y": -357204.03,
-				    "x": 1397149.16
+				    "station_name": "鬼子母神前"
 			    },
 			    "position": {
 				    "x": 1397149.16,
@@ -4565,22 +1715,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7707",
-				    "station_name": "都電雑司ヶ谷",
-				    "close_ymd": "",
-				    "lon": 139.718006,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7707,
-				    "station_g_cd": 9930526,
-				    "add": "東京都豊島区南池袋",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930526",
-				    "pref_name": "東京都",
-				    "shared_name": "9930526",
-				    "lat": 35.724261,
-				    "y": -357242.61,
-				    "x": 1397180.06
+				    "station_name": "都電雑司ヶ谷"
 			    },
 			    "position": {
 				    "x": 1397180.06,
@@ -4589,22 +1724,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7706",
-				    "station_name": "東池袋四丁目",
-				    "close_ymd": "",
-				    "lon": 139.720012,
-				    "post": "170-0013",
-				    "e_status": 0,
-				    "SUID": 7706,
-				    "station_g_cd": 2800610,
-				    "add": "豊島区東池袋５",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930525",
-				    "pref_name": "東京都",
-				    "shared_name": "9930525",
-				    "lat": 35.72528,
-				    "y": -357252.8,
-				    "x": 1397200.1199999999
+				    "station_name": "東池袋四丁目"
 			    },
 			    "position": {
 				    "x": 1397200.1199999999,
@@ -4613,22 +1733,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7705",
-				    "station_name": "向原",
-				    "close_ymd": "",
-				    "lon": 139.724894,
-				    "post": "170-0005",
-				    "e_status": 0,
-				    "SUID": 7705,
-				    "station_g_cd": 9930524,
-				    "add": "豊島区南大塚３",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930524",
-				    "pref_name": "東京都",
-				    "shared_name": "9930524",
-				    "lat": 35.728938,
-				    "y": -357289.38,
-				    "x": 1397248.9400000002
+				    "station_name": "向原"
 			    },
 			    "position": {
 				    "x": 1397248.9400000002,
@@ -4637,22 +1742,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7704",
-				    "station_name": "大塚駅前",
-				    "close_ymd": "",
-				    "lon": 139.729593,
-				    "post": "170-0005",
-				    "e_status": 0,
-				    "SUID": 7704,
-				    "station_g_cd": 1130213,
-				    "add": "豊島区南大塚３",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930523",
-				    "pref_name": "東京都",
-				    "shared_name": "9930523",
-				    "lat": 35.732082,
-				    "y": -357320.82,
-				    "x": 1397295.93
+				    "station_name": "大塚駅前"
 			    },
 			    "position": {
 				    "x": 1397295.93,
@@ -4661,22 +1751,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7703",
-				    "station_name": "巣鴨新田",
-				    "close_ymd": "",
-				    "lon": 139.727769,
-				    "post": "170-0001",
-				    "e_status": 0,
-				    "SUID": 7703,
-				    "station_g_cd": 9930522,
-				    "add": "豊島区西巣鴨１",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930522",
-				    "pref_name": "東京都",
-				    "shared_name": "9930522",
-				    "lat": 35.735488000000004,
-				    "y": -357354.88000000006,
-				    "x": 1397277.69
+				    "station_name": "巣鴨新田"
 			    },
 			    "position": {
 				    "x": 1397277.69,
@@ -4685,22 +1760,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6078",
-				    "station_name": "渋谷",
-				    "close_ymd": "",
-				    "lon": 139.702417,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6078,
-				    "station_g_cd": 1130205,
-				    "add": "東京都渋谷区道玄坂二丁目1-1",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801016",
-				    "pref_name": "東京都",
-				    "shared_name": "2801016",
-				    "lat": 35.659545,
-				    "y": -356595.45,
-				    "x": 1397024.17
+				    "station_name": "渋谷"
 			    },
 			    "position": {
 				    "x": 1397024.17,
@@ -4709,22 +1769,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7702",
-				    "station_name": "庚申塚",
-				    "close_ymd": "",
-				    "lon": 139.72974299999998,
-				    "post": "170-0001",
-				    "e_status": 0,
-				    "SUID": 7702,
-				    "station_g_cd": 9930521,
-				    "add": "豊島区西巣鴨３",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930521",
-				    "pref_name": "東京都",
-				    "shared_name": "9930521",
-				    "lat": 35.739563000000004,
-				    "y": -357395.63000000006,
-				    "x": 1397297.43
+				    "station_name": "庚申塚"
 			    },
 			    "position": {
 				    "x": 1397297.43,
@@ -4733,22 +1778,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6077",
-				    "station_name": "明治神宮前〈原宿〉",
-				    "close_ymd": "",
-				    "lon": 139.705367,
-				    "post": "150-0001",
-				    "e_status": 0,
-				    "SUID": 6077,
-				    "station_g_cd": 1130206,
-				    "add": "渋谷区神宮前１丁目",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801015",
-				    "pref_name": "東京都",
-				    "shared_name": "2801015",
-				    "lat": 35.668496999999995,
-				    "y": -356684.97,
-				    "x": 1397053.67
+				    "station_name": "明治神宮前〈原宿〉"
 			    },
 			    "position": {
 				    "x": 1397053.67,
@@ -4757,22 +1787,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7701",
-				    "station_name": "新庚申塚",
-				    "close_ymd": "",
-				    "lon": 139.730451,
-				    "post": "170-0001",
-				    "e_status": 0,
-				    "SUID": 7701,
-				    "station_g_cd": 9930520,
-				    "add": "豊島区西巣鴨４",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930520",
-				    "pref_name": "東京都",
-				    "shared_name": "9930520",
-				    "lat": 35.741347999999995,
-				    "y": -357413.4799999999,
-				    "x": 1397304.5099999998
+				    "station_name": "新庚申塚"
 			    },
 			    "position": {
 				    "x": 1397304.5099999998,
@@ -4781,22 +1796,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7716",
-				    "station_name": "足立小台",
-				    "close_ymd": "",
-				    "lon": 139.77038100000001,
-				    "post": "120-0046",
-				    "e_status": 0,
-				    "SUID": 7716,
-				    "station_g_cd": 9934205,
-				    "add": "足立区小台１-２０-１",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934205",
-				    "pref_name": "東京都",
-				    "shared_name": "9934205",
-				    "lat": 35.754658,
-				    "y": -357546.58,
-				    "x": 1397703.81
+				    "station_name": "足立小台"
 			    },
 			    "position": {
 				    "x": 1397703.81,
@@ -4805,22 +1805,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6076",
-				    "station_name": "北参道",
-				    "close_ymd": "",
-				    "lon": 139.705453,
-				    "post": "151-0051",
-				    "e_status": 0,
-				    "SUID": 6076,
-				    "station_g_cd": 2801014,
-				    "add": "渋谷区千駄ヶ谷４丁目",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801014",
-				    "pref_name": "東京都",
-				    "shared_name": "2801014",
-				    "lat": 35.678459000000004,
-				    "y": -356784.59,
-				    "x": 1397054.53
+				    "station_name": "北参道"
 			    },
 			    "position": {
 				    "x": 1397054.53,
@@ -4829,22 +1814,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6075",
-				    "station_name": "新宿三丁目",
-				    "close_ymd": "",
-				    "lon": 139.704828,
-				    "post": "160-0022",
-				    "e_status": 0,
-				    "SUID": 6075,
-				    "station_g_cd": 2800217,
-				    "add": "新宿区新宿３-１４-１",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801013",
-				    "pref_name": "東京都",
-				    "shared_name": "2801013",
-				    "lat": 35.690853000000004,
-				    "y": -356908.53,
-				    "x": 1397048.28
+				    "station_name": "新宿三丁目"
 			    },
 			    "position": {
 				    "x": 1397048.28,
@@ -4853,22 +1823,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7715",
-				    "station_name": "熊野前",
-				    "close_ymd": "",
-				    "lon": 139.76969499999998,
-				    "post": "116-0012",
-				    "e_status": 0,
-				    "SUID": 7715,
-				    "station_g_cd": 9930509,
-				    "add": "荒川区東尾久５",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934204",
-				    "pref_name": "東京都",
-				    "shared_name": "9934204",
-				    "lat": 35.748971999999995,
-				    "y": -357489.72,
-				    "x": 1397696.95
+				    "station_name": "熊野前"
 			    },
 			    "position": {
 				    "x": 1397696.95,
@@ -4877,22 +1832,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6074",
-				    "station_name": "東新宿",
-				    "close_ymd": "",
-				    "lon": 139.707593,
-				    "post": "160-0022",
-				    "e_status": 0,
-				    "SUID": 6074,
-				    "station_g_cd": 2801012,
-				    "add": "新宿区新宿７-２７-３",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801012",
-				    "pref_name": "東京都",
-				    "shared_name": "2801012",
-				    "lat": 35.698915,
-				    "y": -356989.15,
-				    "x": 1397075.93
+				    "station_name": "東新宿"
 			    },
 			    "position": {
 				    "x": 1397075.93,
@@ -4901,22 +1841,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7714",
-				    "station_name": "赤土小学校前",
-				    "close_ymd": "",
-				    "lon": 139.76898899999998,
-				    "post": "116-0012",
-				    "e_status": 0,
-				    "SUID": 7714,
-				    "station_g_cd": 9934203,
-				    "add": "荒川区東尾久４-７-７",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934203",
-				    "pref_name": "東京都",
-				    "shared_name": "9934203",
-				    "lat": 35.742453999999995,
-				    "y": -357424.54,
-				    "x": 1397689.8899999997
+				    "station_name": "赤土小学校前"
 			    },
 			    "position": {
 				    "x": 1397689.8899999997,
@@ -4925,22 +1850,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6073",
-				    "station_name": "西早稲田",
-				    "close_ymd": "",
-				    "lon": 139.709101,
-				    "post": "162-0051",
-				    "e_status": 0,
-				    "SUID": 6073,
-				    "station_g_cd": 2801011,
-				    "add": "新宿区西早稲田二丁目",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801011",
-				    "pref_name": "東京都",
-				    "shared_name": "2801011",
-				    "lat": 35.708242,
-				    "y": -357082.42,
-				    "x": 1397091.01
+				    "station_name": "西早稲田"
 			    },
 			    "position": {
 				    "x": 1397091.01,
@@ -4949,22 +1859,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7713",
-				    "station_name": "西日暮里",
-				    "close_ymd": "",
-				    "lon": 139.76685700000002,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7713,
-				    "station_g_cd": 1130217,
-				    "add": "東京都荒川区西日暮里五丁目31-7",
-				    "line_cd": 99342,
-				    "open_ymd": "",
-				    "name": "9934202",
-				    "pref_name": "東京都",
-				    "shared_name": "9934202",
-				    "lat": 35.731953999999995,
-				    "y": -357319.5399999999,
-				    "x": 1397668.57
+				    "station_name": "西日暮里"
 			    },
 			    "position": {
 				    "x": 1397668.57,
@@ -4973,22 +1868,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6072",
-				    "station_name": "雑司が谷",
-				    "close_ymd": "",
-				    "lon": 139.714795,
-				    "post": "171-0032",
-				    "e_status": 0,
-				    "SUID": 6072,
-				    "station_g_cd": 2801010,
-				    "add": "豊島区雑司が谷二丁目",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801010",
-				    "pref_name": "東京都",
-				    "shared_name": "2801010",
-				    "lat": 35.720233,
-				    "y": -357202.33,
-				    "x": 1397147.9500000002
+				    "station_name": "雑司が谷"
 			    },
 			    "position": {
 				    "x": 1397147.9500000002,
@@ -4997,22 +1877,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7712",
-				    "station_name": "日暮里",
-				    "close_ymd": "",
-				    "lon": 139.771287,
-				    "post": "116-0013",
-				    "e_status": 0,
-				    "SUID": 7712,
-				    "station_g_cd": 1130218,
-				    "add": "東京都荒川区西日暮里二丁目19-1",
-				    "line_cd": 99342,
-				    "open_ymd": "1905-04-01",
-				    "name": "9934201",
-				    "pref_name": "東京都",
-				    "shared_name": "9934201",
-				    "lat": 35.727908,
-				    "y": -357279.08,
-				    "x": 1397712.87
+				    "station_name": "日暮里"
 			    },
 			    "position": {
 				    "x": 1397712.87,
@@ -5021,22 +1886,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6071",
-				    "station_name": "池袋",
-				    "close_ymd": "",
-				    "lon": 139.708291,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6071,
-				    "station_g_cd": 1130212,
-				    "add": "東京都豊島区",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801009",
-				    "pref_name": "東京都",
-				    "shared_name": "2801009",
-				    "lat": 35.731464,
-				    "y": -357314.64,
-				    "x": 1397082.91
+				    "station_name": "池袋"
 			    },
 			    "position": {
 				    "x": 1397082.91,
@@ -5045,22 +1895,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7711",
-				    "station_name": "早稲田",
-				    "close_ymd": "",
-				    "lon": 139.718928,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7711,
-				    "station_g_cd": 9930530,
-				    "add": "東京都新宿区",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930530",
-				    "pref_name": "東京都",
-				    "shared_name": "9930530",
-				    "lat": 35.711847999999996,
-				    "y": -357118.48,
-				    "x": 1397189.28
+				    "station_name": "早稲田"
 			    },
 			    "position": {
 				    "x": 1397189.28,
@@ -5069,22 +1904,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6070",
-				    "station_name": "要町",
-				    "close_ymd": "",
-				    "lon": 139.698715,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6070,
-				    "station_g_cd": 2800608,
-				    "add": "東京都豊島区要町一丁目1-10",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801008",
-				    "pref_name": "東京都",
-				    "shared_name": "2801008",
-				    "lat": 35.73323,
-				    "y": -357332.3,
-				    "x": 1396987.15
+				    "station_name": "要町"
 			    },
 			    "position": {
 				    "x": 1396987.15,
@@ -5093,22 +1913,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7710",
-				    "station_name": "面影橋",
-				    "close_ymd": "",
-				    "lon": 139.714444,
-				    "post": "169-0051",
-				    "e_status": 0,
-				    "SUID": 7710,
-				    "station_g_cd": 9930529,
-				    "add": "新宿区西早稲田３",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930529",
-				    "pref_name": "東京都",
-				    "shared_name": "9930529",
-				    "lat": 35.712981,
-				    "y": -357129.81,
-				    "x": 1397144.44
+				    "station_name": "面影橋"
 			    },
 			    "position": {
 				    "x": 1397144.44,
@@ -5117,22 +1922,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6069",
-				    "station_name": "千川",
-				    "close_ymd": "",
-				    "lon": 139.689271,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6069,
-				    "station_g_cd": 2800607,
-				    "add": "東京都豊島区要町三丁目10-7",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801007",
-				    "pref_name": "東京都",
-				    "shared_name": "2801007",
-				    "lat": 35.738229,
-				    "y": -357382.29,
-				    "x": 1396892.71
+				    "station_name": "千川"
 			    },
 			    "position": {
 				    "x": 1396892.71,
@@ -5141,22 +1931,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7709",
-				    "station_name": "学習院下",
-				    "close_ymd": "",
-				    "lon": 139.71247,
-				    "post": "171-0033",
-				    "e_status": 0,
-				    "SUID": 7709,
-				    "station_g_cd": 9930528,
-				    "add": "豊島区高田２",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930528",
-				    "pref_name": "東京都",
-				    "shared_name": "9930528",
-				    "lat": 35.716248,
-				    "y": -357162.48,
-				    "x": 1397124.7
+				    "station_name": "学習院下"
 			    },
 			    "position": {
 				    "x": 1397124.7,
@@ -5165,22 +1940,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6065",
-				    "station_name": "地下鉄赤塚",
-				    "close_ymd": "",
-				    "lon": 139.644021,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6065,
-				    "station_g_cd": 2100109,
-				    "add": "東京都練馬区北町八丁目37-16",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801003",
-				    "pref_name": "東京都",
-				    "shared_name": "2801003",
-				    "lat": 35.769939,
-				    "y": -357699.39,
-				    "x": 1396440.2100000002
+				    "station_name": "地下鉄赤塚"
 			    },
 			    "position": {
 				    "x": 1396440.2100000002,
@@ -5189,22 +1949,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6066",
-				    "station_name": "平和台",
-				    "close_ymd": "",
-				    "lon": 139.653762,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6066,
-				    "station_g_cd": 2800604,
-				    "add": "東京都練馬区早宮2-17-48",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801004",
-				    "pref_name": "東京都",
-				    "shared_name": "2801004",
-				    "lat": 35.757863,
-				    "y": -357578.63,
-				    "x": 1396537.62
+				    "station_name": "平和台"
 			    },
 			    "position": {
 				    "x": 1396537.62,
@@ -5213,22 +1958,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6067",
-				    "station_name": "氷川台",
-				    "close_ymd": "",
-				    "lon": 139.66556699999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6067,
-				    "station_g_cd": 2800605,
-				    "add": "東京都練馬区氷川台三丁目38-18",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801005",
-				    "pref_name": "東京都",
-				    "shared_name": "2801005",
-				    "lat": 35.74955,
-				    "y": -357495.5,
-				    "x": 1396655.67
+				    "station_name": "氷川台"
 			    },
 			    "position": {
 				    "x": 1396655.67,
@@ -5237,22 +1967,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6068",
-				    "station_name": "小竹向原",
-				    "close_ymd": "",
-				    "lon": 139.678572,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6068,
-				    "station_g_cd": 2200301,
-				    "add": "東京都練馬区小竹町二丁目16-15",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801006",
-				    "pref_name": "東京都",
-				    "shared_name": "2801006",
-				    "lat": 35.743803,
-				    "y": -357438.02999999997,
-				    "x": 1396785.72
+				    "station_name": "小竹向原"
 			    },
 			    "position": {
 				    "x": 1396785.72,
@@ -5261,22 +1976,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6061",
-				    "station_name": "白金台",
-				    "close_ymd": "",
-				    "lon": 139.726133,
-				    "post": "108-0071",
-				    "e_status": 0,
-				    "SUID": 6061,
-				    "station_g_cd": 2800918,
-				    "add": "港区白金台３-２",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800918",
-				    "pref_name": "東京都",
-				    "shared_name": "2800918",
-				    "lat": 35.637917,
-				    "y": -356379.17000000004,
-				    "x": 1397261.33
+				    "station_name": "白金台"
 			    },
 			    "position": {
 				    "x": 1397261.33,
@@ -5285,22 +1985,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6062",
-				    "station_name": "目黒",
-				    "close_ymd": "",
-				    "lon": 139.7155,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6062,
-				    "station_g_cd": 1130203,
-				    "add": "東京都品川区上大崎四丁目2-1",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800919",
-				    "pref_name": "東京都",
-				    "shared_name": "2800919",
-				    "lat": 35.633272,
-				    "y": -356332.72,
-				    "x": 1397155.0
+				    "station_name": "目黒"
 			    },
 			    "position": {
 				    "x": 1397155.0,
@@ -5309,22 +1994,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6064",
-				    "station_name": "地下鉄成増",
-				    "close_ymd": "",
-				    "lon": 139.631497,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6064,
-				    "station_g_cd": 2100110,
-				    "add": "東京都板橋区成増二丁目11-3",
-				    "line_cd": 28010,
-				    "open_ymd": "",
-				    "name": "2801002",
-				    "pref_name": "東京都",
-				    "shared_name": "2801002",
-				    "lat": 35.776557000000004,
-				    "y": -357765.57000000007,
-				    "x": 1396314.97
+				    "station_name": "地下鉄成増"
 			    },
 			    "position": {
 				    "x": 1396314.97,
@@ -5333,22 +2003,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6057",
-				    "station_name": "溜池山王",
-				    "close_ymd": "",
-				    "lon": 139.741419,
-				    "post": "100-0014",
-				    "e_status": 0,
-				    "SUID": 6057,
-				    "station_g_cd": 2800114,
-				    "add": "千代田区永田町２-１１-１",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800914",
-				    "pref_name": "東京都",
-				    "shared_name": "2800914",
-				    "lat": 35.673621000000004,
-				    "y": -356736.21,
-				    "x": 1397414.1900000002
+				    "station_name": "溜池山王"
 			    },
 			    "position": {
 				    "x": 1397414.1900000002,
@@ -5357,22 +2012,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6058",
-				    "station_name": "六本木一丁目",
-				    "close_ymd": "",
-				    "lon": 139.739,
-				    "post": "106-0032",
-				    "e_status": 0,
-				    "SUID": 6058,
-				    "station_g_cd": 2800915,
-				    "add": "港区六本木１-４-１",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800915",
-				    "pref_name": "東京都",
-				    "shared_name": "2800915",
-				    "lat": 35.665595,
-				    "y": -356655.95,
-				    "x": 1397390.0
+				    "station_name": "六本木一丁目"
 			    },
 			    "position": {
 				    "x": 1397390.0,
@@ -5381,22 +2021,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6059",
-				    "station_name": "麻布十番",
-				    "close_ymd": "",
-				    "lon": 139.737051,
-				    "post": "106-0045",
-				    "e_status": 0,
-				    "SUID": 6059,
-				    "station_g_cd": 2800916,
-				    "add": "港区麻布十番４-４-９",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800916",
-				    "pref_name": "東京都",
-				    "shared_name": "2800916",
-				    "lat": 35.654682,
-				    "y": -356546.82,
-				    "x": 1397370.51
+				    "station_name": "麻布十番"
 			    },
 			    "position": {
 				    "x": 1397370.51,
@@ -5405,22 +2030,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6060",
-				    "station_name": "白金高輪",
-				    "close_ymd": "",
-				    "lon": 139.734104,
-				    "post": "108-0074",
-				    "e_status": 0,
-				    "SUID": 6060,
-				    "station_g_cd": 2800917,
-				    "add": "港区高輪１-３-２０",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800917",
-				    "pref_name": "東京都",
-				    "shared_name": "2800917",
-				    "lat": 35.642903000000004,
-				    "y": -356429.03,
-				    "x": 1397341.04
+				    "station_name": "白金高輪"
 			    },
 			    "position": {
 				    "x": 1397341.04,
@@ -5429,22 +2039,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6053",
-				    "station_name": "飯田橋",
-				    "close_ymd": "",
-				    "lon": 139.74366899999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6053,
-				    "station_g_cd": 1131205,
-				    "add": "東京都新宿区神楽坂一丁目13",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800910",
-				    "pref_name": "東京都",
-				    "shared_name": "2800910",
-				    "lat": 35.701934,
-				    "y": -357019.34,
-				    "x": 1397436.69
+				    "station_name": "飯田橋"
 			    },
 			    "position": {
 				    "x": 1397436.69,
@@ -5453,22 +2048,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6054",
-				    "station_name": "市ケ谷",
-				    "close_ymd": "",
-				    "lon": 139.736642,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6054,
-				    "station_g_cd": 1131206,
-				    "add": "東京都千代田区五番町2-1",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800911",
-				    "pref_name": "東京都",
-				    "shared_name": "2800911",
-				    "lat": 35.691295000000004,
-				    "y": -356912.95,
-				    "x": 1397366.42
+				    "station_name": "市ケ谷"
 			    },
 			    "position": {
 				    "x": 1397366.42,
@@ -5477,22 +2057,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6055",
-				    "station_name": "四ツ谷",
-				    "close_ymd": "",
-				    "lon": 139.72955,
-				    "post": "160-0004",
-				    "e_status": 0,
-				    "SUID": 6055,
-				    "station_g_cd": 1131102,
-				    "add": "新宿区四谷１丁目",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800912",
-				    "pref_name": "東京都",
-				    "shared_name": "2800912",
-				    "lat": 35.686032,
-				    "y": -356860.31999999995,
-				    "x": 1397295.5
+				    "station_name": "四ツ谷"
 			    },
 			    "position": {
 				    "x": 1397295.5,
@@ -5501,22 +2066,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6056",
-				    "station_name": "永田町",
-				    "close_ymd": "",
-				    "lon": 139.740258,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6056,
-				    "station_g_cd": 2800115,
-				    "add": "東京都千代田区永田町一丁目11-28",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800913",
-				    "pref_name": "東京都",
-				    "shared_name": "2800913",
-				    "lat": 35.678757,
-				    "y": -356787.56999999995,
-				    "x": 1397402.58
+				    "station_name": "永田町"
 			    },
 			    "position": {
 				    "x": 1397402.58,
@@ -5525,22 +2075,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7760",
-				    "station_name": "赤羽岩淵",
-				    "close_ymd": "",
-				    "lon": 139.722103,
-				    "post": "115-0045",
-				    "e_status": 0,
-				    "SUID": 7760,
-				    "station_g_cd": 2800901,
-				    "add": "北区赤羽１-５２-８",
-				    "line_cd": 99307,
-				    "open_ymd": "",
-				    "name": "9930701",
-				    "pref_name": "東京都",
-				    "shared_name": "9930701",
-				    "lat": 35.783417,
-				    "y": -357834.17,
-				    "x": 1397221.03
+				    "station_name": "赤羽岩淵"
 			    },
 			    "position": {
 				    "x": 1397221.03,
@@ -5549,22 +2084,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6050",
-				    "station_name": "本駒込",
-				    "close_ymd": "",
-				    "lon": 139.753828,
-				    "post": "113-0023",
-				    "e_status": 0,
-				    "SUID": 6050,
-				    "station_g_cd": 2800907,
-				    "add": "文京区向丘２-３７-１",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800907",
-				    "pref_name": "東京都",
-				    "shared_name": "2800907",
-				    "lat": 35.724154999999996,
-				    "y": -357241.55,
-				    "x": 1397538.28
+				    "station_name": "本駒込"
 			    },
 			    "position": {
 				    "x": 1397538.28,
@@ -5573,22 +2093,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6049",
-				    "station_name": "駒込",
-				    "close_ymd": "",
-				    "lon": 139.746442,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6049,
-				    "station_g_cd": 1130215,
-				    "add": "東京都豊島区駒込二丁目",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800906",
-				    "pref_name": "東京都",
-				    "shared_name": "2800906",
-				    "lat": 35.736959000000006,
-				    "y": -357369.5900000001,
-				    "x": 1397464.42
+				    "station_name": "駒込"
 			    },
 			    "position": {
 				    "x": 1397464.42,
@@ -5597,22 +2102,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6052",
-				    "station_name": "後楽園",
-				    "close_ymd": "",
-				    "lon": 139.75186399999998,
-				    "post": "112-0003",
-				    "e_status": 0,
-				    "SUID": 6052,
-				    "station_g_cd": 2800204,
-				    "add": "文京区春日１-２-３",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800909",
-				    "pref_name": "東京都",
-				    "shared_name": "2800909",
-				    "lat": 35.707898,
-				    "y": -357078.98,
-				    "x": 1397518.64
+				    "station_name": "後楽園"
 			    },
 			    "position": {
 				    "x": 1397518.64,
@@ -5621,22 +2111,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6051",
-				    "station_name": "東大前",
-				    "close_ymd": "",
-				    "lon": 139.758025,
-				    "post": "113-0023",
-				    "e_status": 0,
-				    "SUID": 6051,
-				    "station_g_cd": 2800908,
-				    "add": "文京区向丘１-１９-２",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800908",
-				    "pref_name": "東京都",
-				    "shared_name": "2800908",
-				    "lat": 35.717633,
-				    "y": -357176.33,
-				    "x": 1397580.25
+				    "station_name": "東大前"
 			    },
 			    "position": {
 				    "x": 1397580.25,
@@ -5645,22 +2120,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6046",
-				    "station_name": "王子神谷",
-				    "close_ymd": "",
-				    "lon": 139.73593300000002,
-				    "post": "114-0002",
-				    "e_status": 0,
-				    "SUID": 6046,
-				    "station_g_cd": 2800903,
-				    "add": "北区王子５-２-１１",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800903",
-				    "pref_name": "東京都",
-				    "shared_name": "2800903",
-				    "lat": 35.765172,
-				    "y": -357651.72,
-				    "x": 1397359.33
+				    "station_name": "王子神谷"
 			    },
 			    "position": {
 				    "x": 1397359.33,
@@ -5669,22 +2129,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6045",
-				    "station_name": "志茂",
-				    "close_ymd": "",
-				    "lon": 139.732599,
-				    "post": "115-0042",
-				    "e_status": 0,
-				    "SUID": 6045,
-				    "station_g_cd": 2800902,
-				    "add": "北区志茂２-１-１８",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800902",
-				    "pref_name": "東京都",
-				    "shared_name": "2800902",
-				    "lat": 35.777947999999995,
-				    "y": -357779.4799999999,
-				    "x": 1397325.99
+				    "station_name": "志茂"
 			    },
 			    "position": {
 				    "x": 1397325.99,
@@ -5693,22 +2138,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6048",
-				    "station_name": "西ケ原",
-				    "close_ymd": "",
-				    "lon": 139.742322,
-				    "post": "114-0024",
-				    "e_status": 0,
-				    "SUID": 6048,
-				    "station_g_cd": 2800905,
-				    "add": "東京都北区西ヶ原二丁目3-8",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800905",
-				    "pref_name": "東京都",
-				    "shared_name": "2800905",
-				    "lat": 35.746008,
-				    "y": -357460.08,
-				    "x": 1397423.22
+				    "station_name": "西ケ原"
 			    },
 			    "position": {
 				    "x": 1397423.22,
@@ -5717,22 +2147,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6047",
-				    "station_name": "王子",
-				    "close_ymd": "",
-				    "lon": 139.737618,
-				    "post": "114-0002",
-				    "e_status": 0,
-				    "SUID": 6047,
-				    "station_g_cd": 1133212,
-				    "add": "北区王子１丁目",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800904",
-				    "pref_name": "東京都",
-				    "shared_name": "2800904",
-				    "lat": 35.753966,
-				    "y": -357539.66,
-				    "x": 1397376.18
+				    "station_name": "王子"
 			    },
 			    "position": {
 				    "x": 1397376.18,
@@ -5741,22 +2156,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6042",
-				    "station_name": "錦糸町",
-				    "close_ymd": "",
-				    "lon": 139.814941,
-				    "post": "130-0022",
-				    "e_status": 0,
-				    "SUID": 6042,
-				    "station_g_cd": 1131322,
-				    "add": "墨田区江東橋３丁目",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800812",
-				    "pref_name": "東京都",
-				    "shared_name": "2800812",
-				    "lat": 35.697578,
-				    "y": -356975.78,
-				    "x": 1398149.4100000001
+				    "station_name": "錦糸町"
 			    },
 			    "position": {
 				    "x": 1398149.4100000001,
@@ -5765,22 +2165,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6041",
-				    "station_name": "住吉",
-				    "close_ymd": "",
-				    "lon": 139.815681,
-				    "post": "135-0002",
-				    "e_status": 0,
-				    "SUID": 6041,
-				    "station_g_cd": 2800814,
-				    "add": "江東区住吉２-２３-１２",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800814",
-				    "pref_name": "東京都",
-				    "shared_name": "2800814",
-				    "lat": 35.689073,
-				    "y": -356890.73,
-				    "x": 1398156.81
+				    "station_name": "住吉"
 			    },
 			    "position": {
 				    "x": 1398156.81,
@@ -5789,22 +2174,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6044",
-				    "station_name": "赤羽岩淵",
-				    "close_ymd": "",
-				    "lon": 139.722103,
-				    "post": "115-0045",
-				    "e_status": 0,
-				    "SUID": 6044,
-				    "station_g_cd": 2800901,
-				    "add": "北区赤羽１-５２-８",
-				    "line_cd": 28009,
-				    "open_ymd": "",
-				    "name": "2800901",
-				    "pref_name": "東京都",
-				    "shared_name": "2800901",
-				    "lat": 35.783417,
-				    "y": -357834.17,
-				    "x": 1397221.03
+				    "station_name": "赤羽岩淵"
 			    },
 			    "position": {
 				    "x": 1397221.03,
@@ -5813,22 +2183,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6043",
-				    "station_name": "押上〈スカイツリー前〉",
-				    "close_ymd": "",
-				    "lon": 139.812935,
-				    "post": "131-0045",
-				    "e_status": 0,
-				    "SUID": 6043,
-				    "station_g_cd": 2100203,
-				    "add": "墨田区押上一丁目",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800813",
-				    "pref_name": "東京都",
-				    "shared_name": "2800813",
-				    "lat": 35.710702000000005,
-				    "y": -357107.0200000001,
-				    "x": 1398129.35
+				    "station_name": "押上〈スカイツリー前〉"
 			    },
 			    "position": {
 				    "x": 1398129.35,
@@ -5837,22 +2192,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6038",
-				    "station_name": "三越前",
-				    "close_ymd": "",
-				    "lon": 139.773147,
-				    "post": "103-0022",
-				    "e_status": 0,
-				    "SUID": 6038,
-				    "station_g_cd": 1131402,
-				    "add": "中央区日本橋室町１-８-１",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800809",
-				    "pref_name": "東京都",
-				    "shared_name": "2800809",
-				    "lat": 35.684908,
-				    "y": -356849.08,
-				    "x": 1397731.47
+				    "station_name": "三越前"
 			    },
 			    "position": {
 				    "x": 1397731.47,
@@ -5861,22 +2201,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6037",
-				    "station_name": "大手町",
-				    "close_ymd": "",
-				    "lon": 139.764107,
-				    "post": "100-0004",
-				    "e_status": 0,
-				    "SUID": 6037,
-				    "station_g_cd": 2800208,
-				    "add": "千代田区大手町１丁目",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800808",
-				    "pref_name": "東京都",
-				    "shared_name": "2800808",
-				    "lat": 35.686859999999996,
-				    "y": -356868.6,
-				    "x": 1397641.07
+				    "station_name": "大手町"
 			    },
 			    "position": {
 				    "x": 1397641.07,
@@ -5885,22 +2210,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6040",
-				    "station_name": "清澄白河",
-				    "close_ymd": "",
-				    "lon": 139.798851,
-				    "post": "135-0021",
-				    "e_status": 0,
-				    "SUID": 6040,
-				    "station_g_cd": 2800811,
-				    "add": "江東区白河１-７-１４",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800811",
-				    "pref_name": "東京都",
-				    "shared_name": "2800811",
-				    "lat": 35.682105,
-				    "y": -356821.05,
-				    "x": 1397988.5100000002
+				    "station_name": "清澄白河"
 			    },
 			    "position": {
 				    "x": 1397988.5100000002,
@@ -5909,22 +2219,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6039",
-				    "station_name": "水天宮前",
-				    "close_ymd": "",
-				    "lon": 139.785377,
-				    "post": "103-0014",
-				    "e_status": 0,
-				    "SUID": 6039,
-				    "station_g_cd": 2800810,
-				    "add": "中央区日本橋蛎殻町２-１-１",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800810",
-				    "pref_name": "東京都",
-				    "shared_name": "2800810",
-				    "lat": 35.682683000000004,
-				    "y": -356826.83,
-				    "x": 1397853.77
+				    "station_name": "水天宮前"
 			    },
 			    "position": {
 				    "x": 1397853.77,
@@ -5933,22 +2228,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6024",
-				    "station_name": "月島",
-				    "close_ymd": "",
-				    "lon": 139.784233,
-				    "post": "104-0052",
-				    "e_status": 0,
-				    "SUID": 6024,
-				    "station_g_cd": 2800621,
-				    "add": "東京都中央区月島一丁目3-9",
-				    "line_cd": 28006,
-				    "open_ymd": "1988-06-08",
-				    "name": "2800621",
-				    "pref_name": "東京都",
-				    "shared_name": "2800621",
-				    "lat": 35.664871000000005,
-				    "y": -356648.7100000001,
-				    "x": 1397842.33
+				    "station_name": "月島"
 			    },
 			    "position": {
 				    "x": 1397842.33,
@@ -5957,22 +2237,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6023",
-				    "station_name": "新富町",
-				    "close_ymd": "",
-				    "lon": 139.77371100000002,
-				    "post": "104-0045",
-				    "e_status": 0,
-				    "SUID": 6023,
-				    "station_g_cd": 2800620,
-				    "add": "東京都中央区築地一丁目1-1",
-				    "line_cd": 28006,
-				    "open_ymd": "1980-03-27",
-				    "name": "2800620",
-				    "pref_name": "東京都",
-				    "shared_name": "2800620",
-				    "lat": 35.670462,
-				    "y": -356704.62,
-				    "x": 1397737.11
+				    "station_name": "新富町"
 			    },
 			    "position": {
 				    "x": 1397737.11,
@@ -5981,22 +2246,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6022",
-				    "station_name": "銀座一丁目",
-				    "close_ymd": "",
-				    "lon": 139.767045,
-				    "post": "104-0061",
-				    "e_status": 0,
-				    "SUID": 6022,
-				    "station_g_cd": 2800619,
-				    "add": "東京都中央区銀座一丁目7-12",
-				    "line_cd": 28006,
-				    "open_ymd": "1974-10-30",
-				    "name": "2800619",
-				    "pref_name": "東京都",
-				    "shared_name": "2800619",
-				    "lat": 35.67435,
-				    "y": -356743.49999999994,
-				    "x": 1397670.45
+				    "station_name": "銀座一丁目"
 			    },
 			    "position": {
 				    "x": 1397670.45,
@@ -6005,22 +2255,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6021",
-				    "station_name": "有楽町",
-				    "close_ymd": "",
-				    "lon": 139.763265,
-				    "post": "100-0006",
-				    "e_status": 0,
-				    "SUID": 6021,
-				    "station_g_cd": 1130225,
-				    "add": "東京都千代田区有楽町一丁目11-1",
-				    "line_cd": 28006,
-				    "open_ymd": "1974-10-30",
-				    "name": "2800618",
-				    "pref_name": "東京都",
-				    "shared_name": "2800618",
-				    "lat": 35.675714,
-				    "y": -356757.14,
-				    "x": 1397632.65
+				    "station_name": "有楽町"
 			    },
 			    "position": {
 				    "x": 1397632.65,
@@ -6029,22 +2264,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6028",
-				    "station_name": "新線池袋",
-				    "close_ymd": "2008-06-14",
-				    "lon": 139.710388,
-				    "post": "171-0021",
-				    "e_status": 2,
-				    "SUID": 6028,
-				    "station_g_cd": 1130212,
-				    "add": "東京都豊島区西池袋",
-				    "line_cd": 28007,
-				    "open_ymd": "1994-12-07",
-				    "name": "2800701",
-				    "pref_name": "東京都",
-				    "shared_name": "2800701",
-				    "lat": 35.730645,
-				    "y": -357306.45,
-				    "x": 1397103.88
+				    "station_name": "新線池袋"
 			    },
 			    "position": {
 				    "x": 1397103.88,
@@ -6053,22 +2273,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6027",
-				    "station_name": "新木場",
-				    "close_ymd": "",
-				    "lon": 139.826254,
-				    "post": "136-0082",
-				    "e_status": 0,
-				    "SUID": 6027,
-				    "station_g_cd": 1132605,
-				    "add": "東京都江東区新木場一丁目6",
-				    "line_cd": 28006,
-				    "open_ymd": "1988-06-08",
-				    "name": "2800624",
-				    "pref_name": "東京都",
-				    "shared_name": "2800624",
-				    "lat": 35.645832,
-				    "y": -356458.32,
-				    "x": 1398262.54
+				    "station_name": "新木場"
 			    },
 			    "position": {
 				    "x": 1398262.54,
@@ -6077,22 +2282,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6026",
-				    "station_name": "辰巳",
-				    "close_ymd": "",
-				    "lon": 139.81052,
-				    "post": "135-0053",
-				    "e_status": 0,
-				    "SUID": 6026,
-				    "station_g_cd": 2800623,
-				    "add": "東京都江東区辰巳一丁目1-44",
-				    "line_cd": 28006,
-				    "open_ymd": "1988-06-08",
-				    "name": "2800623",
-				    "pref_name": "東京都",
-				    "shared_name": "2800623",
-				    "lat": 35.645576,
-				    "y": -356455.76,
-				    "x": 1398105.2
+				    "station_name": "辰巳"
 			    },
 			    "position": {
 				    "x": 1398105.2,
@@ -6101,22 +2291,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6025",
-				    "station_name": "豊洲",
-				    "close_ymd": "",
-				    "lon": 139.79621,
-				    "post": "135-0061",
-				    "e_status": 0,
-				    "SUID": 6025,
-				    "station_g_cd": 2800622,
-				    "add": "東京都江東区豊洲四丁目1-1",
-				    "line_cd": 28006,
-				    "open_ymd": "1988-06-08",
-				    "name": "2800622",
-				    "pref_name": "東京都",
-				    "shared_name": "2800622",
-				    "lat": 35.654908,
-				    "y": -356549.08,
-				    "x": 1397962.1
+				    "station_name": "豊洲"
 			    },
 			    "position": {
 				    "x": 1397962.1,
@@ -6125,22 +2300,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6032",
-				    "station_name": "青山一丁目",
-				    "close_ymd": "",
-				    "lon": 139.72415900000001,
-				    "post": "107-0062",
-				    "e_status": 0,
-				    "SUID": 6032,
-				    "station_g_cd": 2800116,
-				    "add": "港区南青山１-１-１９",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800803",
-				    "pref_name": "東京都",
-				    "shared_name": "2800803",
-				    "lat": 35.672765000000005,
-				    "y": -356727.6500000001,
-				    "x": 1397241.59
+				    "station_name": "青山一丁目"
 			    },
 			    "position": {
 				    "x": 1397241.59,
@@ -6149,22 +2309,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6031",
-				    "station_name": "表参道",
-				    "close_ymd": "",
-				    "lon": 139.712314,
-				    "post": "107-0061",
-				    "e_status": 0,
-				    "SUID": 6031,
-				    "station_g_cd": 2800118,
-				    "add": "港区北青山３丁目",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800802",
-				    "pref_name": "東京都",
-				    "shared_name": "2800802",
-				    "lat": 35.665246999999994,
-				    "y": -356652.4699999999,
-				    "x": 1397123.14
+				    "station_name": "表参道"
 			    },
 			    "position": {
 				    "x": 1397123.14,
@@ -6173,22 +2318,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6030",
-				    "station_name": "渋谷",
-				    "close_ymd": "",
-				    "lon": 139.701,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6030,
-				    "station_g_cd": 1130205,
-				    "add": "東京都渋谷区道玄坂二丁目1-1",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800801",
-				    "pref_name": "東京都",
-				    "shared_name": "2800801",
-				    "lat": 35.659065999999996,
-				    "y": -356590.66,
-				    "x": 1397010.0
+				    "station_name": "渋谷"
 			    },
 			    "position": {
 				    "x": 1397010.0,
@@ -6197,22 +2327,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6029",
-				    "station_name": "小竹向原",
-				    "close_ymd": "",
-				    "lon": 139.678572,
-				    "post": "176-0004",
-				    "e_status": 2,
-				    "SUID": 6029,
-				    "station_g_cd": 2200301,
-				    "add": "東京都練馬区小竹町二丁目16-15",
-				    "line_cd": 28007,
-				    "open_ymd": "1983-06-24",
-				    "name": "2800702",
-				    "pref_name": "東京都",
-				    "shared_name": "2800702",
-				    "lat": 35.743803,
-				    "y": -357438.02999999997,
-				    "x": 1396785.72
+				    "station_name": "小竹向原"
 			    },
 			    "position": {
 				    "x": 1396785.72,
@@ -6221,22 +2336,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6036",
-				    "station_name": "神保町",
-				    "close_ymd": "",
-				    "lon": 139.757606,
-				    "post": "101-0051",
-				    "e_status": 0,
-				    "SUID": 6036,
-				    "station_g_cd": 2800807,
-				    "add": "千代田区神田神保町２-２",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800807",
-				    "pref_name": "東京都",
-				    "shared_name": "2800807",
-				    "lat": 35.695966,
-				    "y": -356959.66,
-				    "x": 1397576.06
+				    "station_name": "神保町"
 			    },
 			    "position": {
 				    "x": 1397576.06,
@@ -6245,22 +2345,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6035",
-				    "station_name": "九段下",
-				    "close_ymd": "",
-				    "lon": 139.751948,
-				    "post": "102-0074",
-				    "e_status": 0,
-				    "SUID": 6035,
-				    "station_g_cd": 2800407,
-				    "add": "千代田区九段南１-６-１",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800806",
-				    "pref_name": "東京都",
-				    "shared_name": "2800806",
-				    "lat": 35.695589,
-				    "y": -356955.88999999996,
-				    "x": 1397519.48
+				    "station_name": "九段下"
 			    },
 			    "position": {
 				    "x": 1397519.48,
@@ -6269,22 +2354,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6034",
-				    "station_name": "半蔵門",
-				    "close_ymd": "",
-				    "lon": 139.74163000000001,
-				    "post": "102-0083",
-				    "e_status": 0,
-				    "SUID": 6034,
-				    "station_g_cd": 2800805,
-				    "add": "千代田区麹町１-６",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800805",
-				    "pref_name": "東京都",
-				    "shared_name": "2800805",
-				    "lat": 35.685703000000004,
-				    "y": -356857.03,
-				    "x": 1397416.3
+				    "station_name": "半蔵門"
 			    },
 			    "position": {
 				    "x": 1397416.3,
@@ -6293,22 +2363,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6033",
-				    "station_name": "永田町",
-				    "close_ymd": "",
-				    "lon": 139.740258,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 6033,
-				    "station_g_cd": 2800115,
-				    "add": "東京都千代田区永田町一丁目11-29",
-				    "line_cd": 28008,
-				    "open_ymd": "",
-				    "name": "2800804",
-				    "pref_name": "東京都",
-				    "shared_name": "2800804",
-				    "lat": 35.678757,
-				    "y": -356787.56999999995,
-				    "x": 1397402.58
+				    "station_name": "永田町"
 			    },
 			    "position": {
 				    "x": 1397402.58,
@@ -6317,22 +2372,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6007",
-				    "station_name": "平和台",
-				    "close_ymd": "",
-				    "lon": 139.653762,
-				    "post": "179-0085",
-				    "e_status": 0,
-				    "SUID": 6007,
-				    "station_g_cd": 2800604,
-				    "add": "東京都練馬区早宮2-17-48",
-				    "line_cd": 28006,
-				    "open_ymd": "1983-06-24",
-				    "name": "2800604",
-				    "pref_name": "東京都",
-				    "shared_name": "2800604",
-				    "lat": 35.757863,
-				    "y": -357578.63,
-				    "x": 1396537.62
+				    "station_name": "平和台"
 			    },
 			    "position": {
 				    "x": 1396537.62,
@@ -6341,22 +2381,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6008",
-				    "station_name": "氷川台",
-				    "close_ymd": "",
-				    "lon": 139.66556699999998,
-				    "post": "179-0084",
-				    "e_status": 0,
-				    "SUID": 6008,
-				    "station_g_cd": 2800605,
-				    "add": "東京都練馬区氷川台三丁目38-18",
-				    "line_cd": 28006,
-				    "open_ymd": "1983-06-24",
-				    "name": "2800605",
-				    "pref_name": "東京都",
-				    "shared_name": "2800605",
-				    "lat": 35.74955,
-				    "y": -357495.5,
-				    "x": 1396655.67
+				    "station_name": "氷川台"
 			    },
 			    "position": {
 				    "x": 1396655.67,
@@ -6365,22 +2390,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6005",
-				    "station_name": "地下鉄成増",
-				    "close_ymd": "",
-				    "lon": 139.631497,
-				    "post": "175-0094",
-				    "e_status": 0,
-				    "SUID": 6005,
-				    "station_g_cd": 2100110,
-				    "add": "東京都板橋区成増二丁目11-3",
-				    "line_cd": 28006,
-				    "open_ymd": "1983-06-24",
-				    "name": "2800602",
-				    "pref_name": "東京都",
-				    "shared_name": "2800602",
-				    "lat": 35.776557000000004,
-				    "y": -357765.57000000007,
-				    "x": 1396314.97
+				    "station_name": "地下鉄成増"
 			    },
 			    "position": {
 				    "x": 1396314.97,
@@ -6389,22 +2399,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6006",
-				    "station_name": "地下鉄赤塚",
-				    "close_ymd": "",
-				    "lon": 139.644021,
-				    "post": "179-0081",
-				    "e_status": 0,
-				    "SUID": 6006,
-				    "station_g_cd": 2100109,
-				    "add": "東京都練馬区北町八丁目37-16",
-				    "line_cd": 28006,
-				    "open_ymd": "1983-06-24",
-				    "name": "2800603",
-				    "pref_name": "東京都",
-				    "shared_name": "2800603",
-				    "lat": 35.769939,
-				    "y": -357699.39,
-				    "x": 1396440.2100000002
+				    "station_name": "地下鉄赤塚"
 			    },
 			    "position": {
 				    "x": 1396440.2100000002,
@@ -6413,22 +2408,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6011",
-				    "station_name": "要町",
-				    "close_ymd": "",
-				    "lon": 139.698715,
-				    "post": "171-0043",
-				    "e_status": 0,
-				    "SUID": 6011,
-				    "station_g_cd": 2800608,
-				    "add": "東京都豊島区要町一丁目1-10",
-				    "line_cd": 28006,
-				    "open_ymd": "1983-06-24",
-				    "name": "2800608",
-				    "pref_name": "東京都",
-				    "shared_name": "2800608",
-				    "lat": 35.73323,
-				    "y": -357332.3,
-				    "x": 1396987.15
+				    "station_name": "要町"
 			    },
 			    "position": {
 				    "x": 1396987.15,
@@ -6437,22 +2417,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6012",
-				    "station_name": "池袋",
-				    "close_ymd": "",
-				    "lon": 139.71008799999998,
-				    "post": "171-0021",
-				    "e_status": 0,
-				    "SUID": 6012,
-				    "station_g_cd": 1130212,
-				    "add": "東京都豊島区西池袋三丁目28-14",
-				    "line_cd": 28006,
-				    "open_ymd": "1954-01-20",
-				    "name": "2800609",
-				    "pref_name": "東京都",
-				    "shared_name": "2800609",
-				    "lat": 35.729565,
-				    "y": -357295.65,
-				    "x": 1397100.88
+				    "station_name": "池袋"
 			    },
 			    "position": {
 				    "x": 1397100.88,
@@ -6461,22 +2426,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6009",
-				    "station_name": "小竹向原",
-				    "close_ymd": "",
-				    "lon": 139.678572,
-				    "post": "176-0004",
-				    "e_status": 0,
-				    "SUID": 6009,
-				    "station_g_cd": 2200301,
-				    "add": "東京都練馬区小竹町二丁目16-15",
-				    "line_cd": 28006,
-				    "open_ymd": "1983-06-24",
-				    "name": "2800606",
-				    "pref_name": "東京都",
-				    "shared_name": "2800606",
-				    "lat": 35.743803,
-				    "y": -357438.02999999997,
-				    "x": 1396785.72
+				    "station_name": "小竹向原"
 			    },
 			    "position": {
 				    "x": 1396785.72,
@@ -6485,22 +2435,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6010",
-				    "station_name": "千川",
-				    "close_ymd": "",
-				    "lon": 139.689271,
-				    "post": "171-0043",
-				    "e_status": 0,
-				    "SUID": 6010,
-				    "station_g_cd": 2800607,
-				    "add": "東京都豊島区要町三丁目10-7",
-				    "line_cd": 28006,
-				    "open_ymd": "1983-06-24",
-				    "name": "2800607",
-				    "pref_name": "東京都",
-				    "shared_name": "2800607",
-				    "lat": 35.738229,
-				    "y": -357382.29,
-				    "x": 1396892.71
+				    "station_name": "千川"
 			    },
 			    "position": {
 				    "x": 1396892.71,
@@ -6509,22 +2444,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6015",
-				    "station_name": "江戸川橋",
-				    "close_ymd": "",
-				    "lon": 139.73353799999998,
-				    "post": "112-0014",
-				    "e_status": 0,
-				    "SUID": 6015,
-				    "station_g_cd": 2800612,
-				    "add": "東京都文京区関口一丁目19-6",
-				    "line_cd": 28006,
-				    "open_ymd": "1974-10-30",
-				    "name": "2800612",
-				    "pref_name": "東京都",
-				    "shared_name": "2800612",
-				    "lat": 35.709495000000004,
-				    "y": -357094.95,
-				    "x": 1397335.38
+				    "station_name": "江戸川橋"
 			    },
 			    "position": {
 				    "x": 1397335.38,
@@ -6533,22 +2453,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6016",
-				    "station_name": "飯田橋",
-				    "close_ymd": "",
-				    "lon": 139.74366899999998,
-				    "post": "162-0825",
-				    "e_status": 0,
-				    "SUID": 6016,
-				    "station_g_cd": 1131205,
-				    "add": "東京都新宿区神楽坂一丁目13",
-				    "line_cd": 28006,
-				    "open_ymd": "1964-12-23",
-				    "name": "2800613",
-				    "pref_name": "東京都",
-				    "shared_name": "2800613",
-				    "lat": 35.701934,
-				    "y": -357019.34,
-				    "x": 1397436.69
+				    "station_name": "飯田橋"
 			    },
 			    "position": {
 				    "x": 1397436.69,
@@ -6557,22 +2462,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6013",
-				    "station_name": "東池袋",
-				    "close_ymd": "",
-				    "lon": 139.719546,
-				    "post": "170-0013",
-				    "e_status": 0,
-				    "SUID": 6013,
-				    "station_g_cd": 2800610,
-				    "add": "東京都豊島区東池袋四丁目4-4",
-				    "line_cd": 28006,
-				    "open_ymd": "1974-10-30",
-				    "name": "2800610",
-				    "pref_name": "東京都",
-				    "shared_name": "2800610",
-				    "lat": 35.725732,
-				    "y": -357257.32,
-				    "x": 1397195.4600000002
+				    "station_name": "東池袋"
 			    },
 			    "position": {
 				    "x": 1397195.4600000002,
@@ -6581,22 +2471,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6014",
-				    "station_name": "護国寺",
-				    "close_ymd": "",
-				    "lon": 139.72754,
-				    "post": "112-0012",
-				    "e_status": 0,
-				    "SUID": 6014,
-				    "station_g_cd": 2800611,
-				    "add": "東京都文京区大塚五丁目40-8",
-				    "line_cd": 28006,
-				    "open_ymd": "1974-10-30",
-				    "name": "2800611",
-				    "pref_name": "東京都",
-				    "shared_name": "2800611",
-				    "lat": 35.719044,
-				    "y": -357190.43999999994,
-				    "x": 1397275.4000000001
+				    "station_name": "護国寺"
 			    },
 			    "position": {
 				    "x": 1397275.4000000001,
@@ -6605,22 +2480,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6019",
-				    "station_name": "永田町",
-				    "close_ymd": "",
-				    "lon": 139.740258,
-				    "post": "100-0014",
-				    "e_status": 0,
-				    "SUID": 6019,
-				    "station_g_cd": 2800115,
-				    "add": "東京都千代田区永田町一丁目11-28",
-				    "line_cd": 28006,
-				    "open_ymd": "1974-10-30",
-				    "name": "2800616",
-				    "pref_name": "東京都",
-				    "shared_name": "2800616",
-				    "lat": 35.678757,
-				    "y": -356787.56999999995,
-				    "x": 1397402.58
+				    "station_name": "永田町"
 			    },
 			    "position": {
 				    "x": 1397402.58,
@@ -6629,22 +2489,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6020",
-				    "station_name": "桜田門",
-				    "close_ymd": "",
-				    "lon": 139.75149,
-				    "post": "100-0013",
-				    "e_status": 0,
-				    "SUID": 6020,
-				    "station_g_cd": 2800617,
-				    "add": "東京都千代田区霞が関二丁目1-1",
-				    "line_cd": 28006,
-				    "open_ymd": "1974-10-30",
-				    "name": "2800617",
-				    "pref_name": "東京都",
-				    "shared_name": "2800617",
-				    "lat": 35.677405,
-				    "y": -356774.05,
-				    "x": 1397514.9
+				    "station_name": "桜田門"
 			    },
 			    "position": {
 				    "x": 1397514.9,
@@ -6653,22 +2498,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6017",
-				    "station_name": "市ケ谷",
-				    "close_ymd": "",
-				    "lon": 139.73647,
-				    "post": "162-0843",
-				    "e_status": 0,
-				    "SUID": 6017,
-				    "station_g_cd": 1131206,
-				    "add": "東京都新宿区市谷田町一丁目1",
-				    "line_cd": 28006,
-				    "open_ymd": "1974-10-30",
-				    "name": "2800614",
-				    "pref_name": "東京都",
-				    "shared_name": "2800614",
-				    "lat": 35.691958,
-				    "y": -356919.58,
-				    "x": 1397364.7
+				    "station_name": "市ケ谷"
 			    },
 			    "position": {
 				    "x": 1397364.7,
@@ -6677,22 +2507,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6018",
-				    "station_name": "麹町",
-				    "close_ymd": "",
-				    "lon": 139.73761299999998,
-				    "post": "102-0083",
-				    "e_status": 0,
-				    "SUID": 6018,
-				    "station_g_cd": 2800615,
-				    "add": "東京都千代田区麹町三丁目2",
-				    "line_cd": 28006,
-				    "open_ymd": "1974-10-30",
-				    "name": "2800615",
-				    "pref_name": "東京都",
-				    "shared_name": "2800615",
-				    "lat": 35.684006,
-				    "y": -356840.05999999994,
-				    "x": 1397376.13
+				    "station_name": "麹町"
 			    },
 			    "position": {
 				    "x": 1397376.13,
@@ -6701,22 +2516,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5990",
-				    "station_name": "根津",
-				    "close_ymd": "",
-				    "lon": 139.765655,
-				    "post": "113-0031",
-				    "e_status": 0,
-				    "SUID": 5990,
-				    "station_g_cd": 2800507,
-				    "add": "文京区根津１丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800507",
-				    "pref_name": "東京都",
-				    "shared_name": "2800507",
-				    "lat": 35.7174,
-				    "y": -357174.0,
-				    "x": 1397656.55
+				    "station_name": "根津"
 			    },
 			    "position": {
 				    "x": 1397656.55,
@@ -6725,22 +2525,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5989",
-				    "station_name": "千駄木",
-				    "close_ymd": "",
-				    "lon": 139.763243,
-				    "post": "113-0022",
-				    "e_status": 0,
-				    "SUID": 5989,
-				    "station_g_cd": 2800506,
-				    "add": "文京区千駄木２丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800506",
-				    "pref_name": "東京都",
-				    "shared_name": "2800506",
-				    "lat": 35.725549,
-				    "y": -357255.49,
-				    "x": 1397632.43
+				    "station_name": "千駄木"
 			    },
 			    "position": {
 				    "x": 1397632.43,
@@ -6749,22 +2534,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5992",
-				    "station_name": "新御茶ノ水",
-				    "close_ymd": "",
-				    "lon": 139.76601399999998,
-				    "post": "101-0062",
-				    "e_status": 0,
-				    "SUID": 5992,
-				    "station_g_cd": 1131203,
-				    "add": "千代田区神田駿河台３丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800509",
-				    "pref_name": "東京都",
-				    "shared_name": "2800509",
-				    "lat": 35.698071999999996,
-				    "y": -356980.72,
-				    "x": 1397660.14
+				    "station_name": "新御茶ノ水"
 			    },
 			    "position": {
 				    "x": 1397660.14,
@@ -6773,22 +2543,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5991",
-				    "station_name": "湯島",
-				    "close_ymd": "",
-				    "lon": 139.769916,
-				    "post": "113-0034",
-				    "e_status": 0,
-				    "SUID": 5991,
-				    "station_g_cd": 2800508,
-				    "add": "文京区湯島３丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800508",
-				    "pref_name": "東京都",
-				    "shared_name": "2800508",
-				    "lat": 35.708242999999996,
-				    "y": -357082.42999999993,
-				    "x": 1397699.16
+				    "station_name": "湯島"
 			    },
 			    "position": {
 				    "x": 1397699.16,
@@ -6797,22 +2552,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5994",
-				    "station_name": "二重橋前",
-				    "close_ymd": "",
-				    "lon": 139.761948,
-				    "post": "100-0005",
-				    "e_status": 0,
-				    "SUID": 5994,
-				    "station_g_cd": 2800511,
-				    "add": "千代田区丸の内２丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800511",
-				    "pref_name": "東京都",
-				    "shared_name": "2800511",
-				    "lat": 35.681071,
-				    "y": -356810.71,
-				    "x": 1397619.48
+				    "station_name": "二重橋前"
 			    },
 			    "position": {
 				    "x": 1397619.48,
@@ -6821,22 +2561,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5993",
-				    "station_name": "大手町",
-				    "close_ymd": "",
-				    "lon": 139.763399,
-				    "post": "100-0004",
-				    "e_status": 0,
-				    "SUID": 5993,
-				    "station_g_cd": 2800208,
-				    "add": "千代田区大手町１丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800510",
-				    "pref_name": "東京都",
-				    "shared_name": "2800510",
-				    "lat": 35.686153999999995,
-				    "y": -356861.5399999999,
-				    "x": 1397633.99
+				    "station_name": "大手町"
 			    },
 			    "position": {
 				    "x": 1397633.99,
@@ -6845,22 +2570,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5996",
-				    "station_name": "霞ケ関",
-				    "close_ymd": "",
-				    "lon": 139.750899,
-				    "post": "100-0013",
-				    "e_status": 0,
-				    "SUID": 5996,
-				    "station_g_cd": 2800211,
-				    "add": "千代田区霞が関２丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800513",
-				    "pref_name": "東京都",
-				    "shared_name": "2800513",
-				    "lat": 35.673838,
-				    "y": -356738.38000000006,
-				    "x": 1397508.99
+				    "station_name": "霞ケ関"
 			    },
 			    "position": {
 				    "x": 1397508.99,
@@ -6869,22 +2579,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5995",
-				    "station_name": "日比谷",
-				    "close_ymd": "",
-				    "lon": 139.758732,
-				    "post": "100-0006",
-				    "e_status": 0,
-				    "SUID": 5995,
-				    "station_g_cd": 2800315,
-				    "add": "千代田区有楽町１丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800512",
-				    "pref_name": "東京都",
-				    "shared_name": "2800512",
-				    "lat": 35.674240999999995,
-				    "y": -356742.41,
-				    "x": 1397587.32
+				    "station_name": "日比谷"
 			    },
 			    "position": {
 				    "x": 1397587.32,
@@ -6893,22 +2588,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5998",
-				    "station_name": "赤坂",
-				    "close_ymd": "",
-				    "lon": 139.738348,
-				    "post": "107-0052",
-				    "e_status": 0,
-				    "SUID": 5998,
-				    "station_g_cd": 2800515,
-				    "add": "港区赤坂５丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800515",
-				    "pref_name": "東京都",
-				    "shared_name": "2800515",
-				    "lat": 35.67323,
-				    "y": -356732.3,
-				    "x": 1397383.48
+				    "station_name": "赤坂"
 			    },
 			    "position": {
 				    "x": 1397383.48,
@@ -6917,22 +2597,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5997",
-				    "station_name": "国会議事堂前",
-				    "close_ymd": "",
-				    "lon": 139.745219,
-				    "post": "100-0014",
-				    "e_status": 0,
-				    "SUID": 5997,
-				    "station_g_cd": 2800212,
-				    "add": "千代田区永田町１丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800514",
-				    "pref_name": "東京都",
-				    "shared_name": "2800514",
-				    "lat": 35.67393,
-				    "y": -356739.3,
-				    "x": 1397452.19
+				    "station_name": "国会議事堂前"
 			    },
 			    "position": {
 				    "x": 1397452.19,
@@ -6941,22 +2606,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6000",
-				    "station_name": "表参道",
-				    "close_ymd": "",
-				    "lon": 139.712314,
-				    "post": "107-0061",
-				    "e_status": 0,
-				    "SUID": 6000,
-				    "station_g_cd": 2800118,
-				    "add": "港区北青山３丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800517",
-				    "pref_name": "東京都",
-				    "shared_name": "2800517",
-				    "lat": 35.665246999999994,
-				    "y": -356652.4699999999,
-				    "x": 1397123.14
+				    "station_name": "表参道"
 			    },
 			    "position": {
 				    "x": 1397123.14,
@@ -6965,22 +2615,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5999",
-				    "station_name": "乃木坂",
-				    "close_ymd": "",
-				    "lon": 139.726215,
-				    "post": "107-0062",
-				    "e_status": 0,
-				    "SUID": 5999,
-				    "station_g_cd": 2800516,
-				    "add": "港区南青山１丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800516",
-				    "pref_name": "東京都",
-				    "shared_name": "2800516",
-				    "lat": 35.666571999999995,
-				    "y": -356665.72,
-				    "x": 1397262.15
+				    "station_name": "乃木坂"
 			    },
 			    "position": {
 				    "x": 1397262.15,
@@ -6989,22 +2624,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6002",
-				    "station_name": "代々木公園",
-				    "close_ymd": "",
-				    "lon": 139.689099,
-				    "post": "151-0063",
-				    "e_status": 0,
-				    "SUID": 6002,
-				    "station_g_cd": 2500104,
-				    "add": "渋谷区富ケ谷１丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800519",
-				    "pref_name": "東京都",
-				    "shared_name": "2800519",
-				    "lat": 35.669187,
-				    "y": -356691.87,
-				    "x": 1396890.99
+				    "station_name": "代々木公園"
 			    },
 			    "position": {
 				    "x": 1396890.99,
@@ -7013,22 +2633,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6001",
-				    "station_name": "明治神宮前〈原宿〉",
-				    "close_ymd": "",
-				    "lon": 139.703995,
-				    "post": "150-0001",
-				    "e_status": 0,
-				    "SUID": 6001,
-				    "station_g_cd": 1130206,
-				    "add": "渋谷区神宮前１丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800518",
-				    "pref_name": "東京都",
-				    "shared_name": "2800518",
-				    "lat": 35.669071,
-				    "y": -356690.71,
-				    "x": 1397039.95
+				    "station_name": "明治神宮前〈原宿〉"
 			    },
 			    "position": {
 				    "x": 1397039.95,
@@ -7037,22 +2642,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "6003",
-				    "station_name": "代々木上原",
-				    "close_ymd": "",
-				    "lon": 139.680153,
-				    "post": "151-0066",
-				    "e_status": 0,
-				    "SUID": 6003,
-				    "station_g_cd": 2500105,
-				    "add": "渋谷区西原３丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800520",
-				    "pref_name": "東京都",
-				    "shared_name": "2800520",
-				    "lat": 35.669159,
-				    "y": -356691.59,
-				    "x": 1396801.5299999998
+				    "station_name": "代々木上原"
 			    },
 			    "position": {
 				    "x": 1396801.5299999998,
@@ -7061,22 +2651,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5973",
-				    "station_name": "木場",
-				    "close_ymd": "",
-				    "lon": 139.807042,
-				    "post": "135-0042",
-				    "e_status": 0,
-				    "SUID": 5973,
-				    "station_g_cd": 2800413,
-				    "add": "江東区木場５-５-１",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800413",
-				    "pref_name": "東京都",
-				    "shared_name": "2800413",
-				    "lat": 35.669351,
-				    "y": -356693.51,
-				    "x": 1398070.42
+				    "station_name": "木場"
 			    },
 			    "position": {
 				    "x": 1398070.42,
@@ -7085,22 +2660,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5974",
-				    "station_name": "東陽町",
-				    "close_ymd": "",
-				    "lon": 139.817596,
-				    "post": "135-0016",
-				    "e_status": 0,
-				    "SUID": 5974,
-				    "station_g_cd": 2800414,
-				    "add": "江東区東陽４-２-１",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800414",
-				    "pref_name": "東京都",
-				    "shared_name": "2800414",
-				    "lat": 35.669629,
-				    "y": -356696.29,
-				    "x": 1398175.9600000002
+				    "station_name": "東陽町"
 			    },
 			    "position": {
 				    "x": 1398175.9600000002,
@@ -7109,22 +2669,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5975",
-				    "station_name": "南砂町",
-				    "close_ymd": "",
-				    "lon": 139.83065,
-				    "post": "136-0076",
-				    "e_status": 0,
-				    "SUID": 5975,
-				    "station_g_cd": 2800415,
-				    "add": "江東区南砂３-１１-８５",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800415",
-				    "pref_name": "東京都",
-				    "shared_name": "2800415",
-				    "lat": 35.668796,
-				    "y": -356687.96,
-				    "x": 1398306.5
+				    "station_name": "南砂町"
 			    },
 			    "position": {
 				    "x": 1398306.5,
@@ -7133,22 +2678,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5976",
-				    "station_name": "西葛西",
-				    "close_ymd": "",
-				    "lon": 139.859259,
-				    "post": "134-0088",
-				    "e_status": 0,
-				    "SUID": 5976,
-				    "station_g_cd": 2800416,
-				    "add": "江戸川区西葛西６-１４-１",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800416",
-				    "pref_name": "東京都",
-				    "shared_name": "2800416",
-				    "lat": 35.664631,
-				    "y": -356646.31,
-				    "x": 1398592.59
+				    "station_name": "西葛西"
 			    },
 			    "position": {
 				    "x": 1398592.59,
@@ -7157,22 +2687,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5977",
-				    "station_name": "葛西",
-				    "close_ymd": "",
-				    "lon": 139.872458,
-				    "post": "134-0083",
-				    "e_status": 0,
-				    "SUID": 5977,
-				    "station_g_cd": 2800417,
-				    "add": "江戸川区中葛西５-４３-１１",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800417",
-				    "pref_name": "東京都",
-				    "shared_name": "2800417",
-				    "lat": 35.663554,
-				    "y": -356635.54,
-				    "x": 1398724.5799999998
+				    "station_name": "葛西"
 			    },
 			    "position": {
 				    "x": 1398724.5799999998,
@@ -7181,22 +2696,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5984",
-				    "station_name": "北綾瀬",
-				    "close_ymd": "",
-				    "lon": 139.83203500000002,
-				    "post": "120-0006",
-				    "e_status": 0,
-				    "SUID": 5984,
-				    "station_g_cd": 2800501,
-				    "add": "足立区谷中２丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800501",
-				    "pref_name": "東京都",
-				    "shared_name": "2800501",
-				    "lat": 35.777117,
-				    "y": -357771.17,
-				    "x": 1398320.35
+				    "station_name": "北綾瀬"
 			    },
 			    "position": {
 				    "x": 1398320.35,
@@ -7205,22 +2705,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5985",
-				    "station_name": "綾瀬",
-				    "close_ymd": "",
-				    "lon": 139.825019,
-				    "post": "120-0005",
-				    "e_status": 0,
-				    "SUID": 5985,
-				    "station_g_cd": 1132006,
-				    "add": "足立区綾瀬３丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800502",
-				    "pref_name": "東京都",
-				    "shared_name": "2800502",
-				    "lat": 35.762221999999994,
-				    "y": -357622.2199999999,
-				    "x": 1398250.19
+				    "station_name": "綾瀬"
 			    },
 			    "position": {
 				    "x": 1398250.19,
@@ -7229,22 +2714,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5986",
-				    "station_name": "北千住",
-				    "close_ymd": "",
-				    "lon": 139.804276,
-				    "post": "120-0026",
-				    "e_status": 0,
-				    "SUID": 5986,
-				    "station_g_cd": 1132005,
-				    "add": "足立区千住旭町",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800503",
-				    "pref_name": "東京都",
-				    "shared_name": "2800503",
-				    "lat": 35.748915999999994,
-				    "y": -357489.1599999999,
-				    "x": 1398042.7599999998
+				    "station_name": "北千住"
 			    },
 			    "position": {
 				    "x": 1398042.7599999998,
@@ -7253,22 +2723,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5987",
-				    "station_name": "町屋",
-				    "close_ymd": "",
-				    "lon": 139.780501,
-				    "post": "116-0001",
-				    "e_status": 0,
-				    "SUID": 5987,
-				    "station_g_cd": 2300104,
-				    "add": "荒川区町屋１丁目",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800504",
-				    "pref_name": "東京都",
-				    "shared_name": "2800504",
-				    "lat": 35.742733,
-				    "y": -357427.33,
-				    "x": 1397805.0099999998
+				    "station_name": "町屋"
 			    },
 			    "position": {
 				    "x": 1397805.0099999998,
@@ -7277,22 +2732,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5988",
-				    "station_name": "西日暮里",
-				    "close_ymd": "",
-				    "lon": 139.766511,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5988,
-				    "station_g_cd": 1130217,
-				    "add": "東京都荒川区西日暮里五丁目14-1",
-				    "line_cd": 28005,
-				    "open_ymd": "",
-				    "name": "2800505",
-				    "pref_name": "東京都",
-				    "shared_name": "2800505",
-				    "lat": 35.732257000000004,
-				    "y": -357322.57000000007,
-				    "x": 1397665.11
+				    "station_name": "西日暮里"
 			    },
 			    "position": {
 				    "x": 1397665.11,
@@ -7301,22 +2741,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5964",
-				    "station_name": "早稲田",
-				    "close_ymd": "",
-				    "lon": 139.721319,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5964,
-				    "station_g_cd": 2800404,
-				    "add": "東京都新宿区",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800404",
-				    "pref_name": "東京都",
-				    "shared_name": "2800404",
-				    "lat": 35.705723,
-				    "y": -357057.23,
-				    "x": 1397213.19
+				    "station_name": "早稲田"
 			    },
 			    "position": {
 				    "x": 1397213.19,
@@ -7325,22 +2750,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5963",
-				    "station_name": "高田馬場",
-				    "close_ymd": "",
-				    "lon": 139.704745,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5963,
-				    "station_g_cd": 1130210,
-				    "add": "東京都新宿区高田馬場一丁目35-1",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800403",
-				    "pref_name": "東京都",
-				    "shared_name": "2800403",
-				    "lat": 35.713338,
-				    "y": -357133.38,
-				    "x": 1397047.45
+				    "station_name": "高田馬場"
 			    },
 			    "position": {
 				    "x": 1397047.45,
@@ -7349,22 +2759,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5962",
-				    "station_name": "落合",
-				    "close_ymd": "",
-				    "lon": 139.687284,
-				    "post": "161-0034",
-				    "e_status": 0,
-				    "SUID": 5962,
-				    "station_g_cd": 2800402,
-				    "add": "新宿区上落合２-１３-７",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800402",
-				    "pref_name": "東京都",
-				    "shared_name": "2800402",
-				    "lat": 35.710976,
-				    "y": -357109.76,
-				    "x": 1396872.84
+				    "station_name": "落合"
 			    },
 			    "position": {
 				    "x": 1396872.84,
@@ -7373,22 +2768,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5961",
-				    "station_name": "中野",
-				    "close_ymd": "",
-				    "lon": 139.66583500000002,
-				    "post": "164-0001",
-				    "e_status": 0,
-				    "SUID": 5961,
-				    "station_g_cd": 1131214,
-				    "add": "中野区中野５丁目",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800401",
-				    "pref_name": "東京都",
-				    "shared_name": "2800401",
-				    "lat": 35.705765,
-				    "y": -357057.65,
-				    "x": 1396658.35
+				    "station_name": "中野"
 			    },
 			    "position": {
 				    "x": 1396658.35,
@@ -7397,22 +2777,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5960",
-				    "station_name": "中目黒",
-				    "close_ymd": "",
-				    "lon": 139.698621,
-				    "post": "153-0051",
-				    "e_status": 0,
-				    "SUID": 5960,
-				    "station_g_cd": 2600103,
-				    "add": "目黒区上目黒３-４-１",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800321",
-				    "pref_name": "東京都",
-				    "shared_name": "2800321",
-				    "lat": 35.643854,
-				    "y": -356438.54,
-				    "x": 1396986.21
+				    "station_name": "中目黒"
 			    },
 			    "position": {
 				    "x": 1396986.21,
@@ -7421,22 +2786,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5959",
-				    "station_name": "恵比寿",
-				    "close_ymd": "",
-				    "lon": 139.70898799999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5959,
-				    "station_g_cd": 1130204,
-				    "add": "東京都渋谷区恵比寿南一丁目5-5",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800320",
-				    "pref_name": "東京都",
-				    "shared_name": "2800320",
-				    "lat": 35.647332,
-				    "y": -356473.32,
-				    "x": 1397089.8799999997
+				    "station_name": "恵比寿"
 			    },
 			    "position": {
 				    "x": 1397089.8799999997,
@@ -7445,22 +2795,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5958",
-				    "station_name": "広尾",
-				    "close_ymd": "",
-				    "lon": 139.722202,
-				    "post": "106-0047",
-				    "e_status": 0,
-				    "SUID": 5958,
-				    "station_g_cd": 2800319,
-				    "add": "港区南麻布５-１０-２８",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800319",
-				    "pref_name": "東京都",
-				    "shared_name": "2800319",
-				    "lat": 35.652279,
-				    "y": -356522.79,
-				    "x": 1397222.02
+				    "station_name": "広尾"
 			    },
 			    "position": {
 				    "x": 1397222.02,
@@ -7469,22 +2804,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5957",
-				    "station_name": "六本木",
-				    "close_ymd": "",
-				    "lon": 139.73144299999998,
-				    "post": "106-0032",
-				    "e_status": 0,
-				    "SUID": 5957,
-				    "station_g_cd": 2800318,
-				    "add": "港区六本木６-１-２５",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800318",
-				    "pref_name": "東京都",
-				    "shared_name": "2800318",
-				    "lat": 35.662836,
-				    "y": -356628.36,
-				    "x": 1397314.43
+				    "station_name": "六本木"
 			    },
 			    "position": {
 				    "x": 1397314.43,
@@ -7493,22 +2813,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5972",
-				    "station_name": "門前仲町",
-				    "close_ymd": "",
-				    "lon": 139.796209,
-				    "post": "135-0048",
-				    "e_status": 0,
-				    "SUID": 5972,
-				    "station_g_cd": 2800412,
-				    "add": "江東区門前仲町１丁目",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800412",
-				    "pref_name": "東京都",
-				    "shared_name": "2800412",
-				    "lat": 35.671851000000004,
-				    "y": -356718.51,
-				    "x": 1397962.09
+				    "station_name": "門前仲町"
 			    },
 			    "position": {
 				    "x": 1397962.09,
@@ -7517,22 +2822,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5971",
-				    "station_name": "茅場町",
-				    "close_ymd": "",
-				    "lon": 139.78000500000002,
-				    "post": "103-0025",
-				    "e_status": 0,
-				    "SUID": 5971,
-				    "station_g_cd": 2800310,
-				    "add": "中央区日本橋茅場町１-４-６",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800411",
-				    "pref_name": "東京都",
-				    "shared_name": "2800411",
-				    "lat": 35.679752,
-				    "y": -356797.52,
-				    "x": 1397800.0500000003
+				    "station_name": "茅場町"
 			    },
 			    "position": {
 				    "x": 1397800.0500000003,
@@ -7541,22 +2831,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5970",
-				    "station_name": "日本橋",
-				    "close_ymd": "",
-				    "lon": 139.773516,
-				    "post": "103-0027",
-				    "e_status": 0,
-				    "SUID": 5970,
-				    "station_g_cd": 2800109,
-				    "add": "中央区日本橋１丁目",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800410",
-				    "pref_name": "東京都",
-				    "shared_name": "2800410",
-				    "lat": 35.682078000000004,
-				    "y": -356820.78,
-				    "x": 1397735.16
+				    "station_name": "日本橋"
 			    },
 			    "position": {
 				    "x": 1397735.16,
@@ -7565,22 +2840,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5969",
-				    "station_name": "大手町",
-				    "close_ymd": "",
-				    "lon": 139.766086,
-				    "post": "100-0004",
-				    "e_status": 0,
-				    "SUID": 5969,
-				    "station_g_cd": 2800208,
-				    "add": "千代田区大手町１丁目",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800409",
-				    "pref_name": "東京都",
-				    "shared_name": "2800409",
-				    "lat": 35.684801,
-				    "y": -356848.01,
-				    "x": 1397660.86
+				    "station_name": "大手町"
 			    },
 			    "position": {
 				    "x": 1397660.86,
@@ -7589,22 +2849,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5968",
-				    "station_name": "竹橋",
-				    "close_ymd": "",
-				    "lon": 139.75681699999998,
-				    "post": "100-0003",
-				    "e_status": 0,
-				    "SUID": 5968,
-				    "station_g_cd": 2800408,
-				    "add": "千代田区一ツ橋１-１-１",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800408",
-				    "pref_name": "東京都",
-				    "shared_name": "2800408",
-				    "lat": 35.690661999999996,
-				    "y": -356906.61999999994,
-				    "x": 1397568.17
+				    "station_name": "竹橋"
 			    },
 			    "position": {
 				    "x": 1397568.17,
@@ -7613,22 +2858,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5967",
-				    "station_name": "九段下",
-				    "close_ymd": "",
-				    "lon": 139.751948,
-				    "post": "102-0074",
-				    "e_status": 0,
-				    "SUID": 5967,
-				    "station_g_cd": 2800407,
-				    "add": "千代田区九段南１-６-１",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800407",
-				    "pref_name": "東京都",
-				    "shared_name": "2800407",
-				    "lat": 35.695589,
-				    "y": -356955.88999999996,
-				    "x": 1397519.48
+				    "station_name": "九段下"
 			    },
 			    "position": {
 				    "x": 1397519.48,
@@ -7637,22 +2867,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5966",
-				    "station_name": "飯田橋",
-				    "close_ymd": "",
-				    "lon": 139.74598600000002,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5966,
-				    "station_g_cd": 1131205,
-				    "add": "東京都千代田区飯田橋四丁目10-3",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800406",
-				    "pref_name": "東京都",
-				    "shared_name": "2800406",
-				    "lat": 35.701725,
-				    "y": -357017.25000000006,
-				    "x": 1397459.86
+				    "station_name": "飯田橋"
 			    },
 			    "position": {
 				    "x": 1397459.86,
@@ -7661,22 +2876,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5965",
-				    "station_name": "神楽坂",
-				    "close_ymd": "",
-				    "lon": 139.734546,
-				    "post": "162-0805",
-				    "e_status": 0,
-				    "SUID": 5965,
-				    "station_g_cd": 2800405,
-				    "add": "新宿区矢来町１１２",
-				    "line_cd": 28004,
-				    "open_ymd": "",
-				    "name": "2800405",
-				    "pref_name": "東京都",
-				    "shared_name": "2800405",
-				    "lat": 35.703790000000005,
-				    "y": -357037.9,
-				    "x": 1397345.46
+				    "station_name": "神楽坂"
 			    },
 			    "position": {
 				    "x": 1397345.46,
@@ -7685,22 +2885,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5947",
-				    "station_name": "小伝馬町",
-				    "close_ymd": "",
-				    "lon": 139.778433,
-				    "post": "103-0001",
-				    "e_status": 0,
-				    "SUID": 5947,
-				    "station_g_cd": 2800308,
-				    "add": "中央区日本橋小伝馬町１１-１",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800308",
-				    "pref_name": "東京都",
-				    "shared_name": "2800308",
-				    "lat": 35.690737,
-				    "y": -356907.37,
-				    "x": 1397784.33
+				    "station_name": "小伝馬町"
 			    },
 			    "position": {
 				    "x": 1397784.33,
@@ -7709,22 +2894,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5948",
-				    "station_name": "人形町",
-				    "close_ymd": "",
-				    "lon": 139.782285,
-				    "post": "103-0013",
-				    "e_status": 0,
-				    "SUID": 5948,
-				    "station_g_cd": 2800309,
-				    "add": "中央区日本橋人形町２-６-５",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800309",
-				    "pref_name": "東京都",
-				    "shared_name": "2800309",
-				    "lat": 35.686307,
-				    "y": -356863.07,
-				    "x": 1397822.85
+				    "station_name": "人形町"
 			    },
 			    "position": {
 				    "x": 1397822.85,
@@ -7733,22 +2903,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5945",
-				    "station_name": "仲御徒町",
-				    "close_ymd": "",
-				    "lon": 139.77613799999997,
-				    "post": "110-0005",
-				    "e_status": 0,
-				    "SUID": 5945,
-				    "station_g_cd": 1130221,
-				    "add": "台東区上野５-２４-１２",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800306",
-				    "pref_name": "東京都",
-				    "shared_name": "2800306",
-				    "lat": 35.706649,
-				    "y": -357066.49,
-				    "x": 1397761.3799999997
+				    "station_name": "仲御徒町"
 			    },
 			    "position": {
 				    "x": 1397761.3799999997,
@@ -7757,22 +2912,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5946",
-				    "station_name": "秋葉原",
-				    "close_ymd": "",
-				    "lon": 139.775459,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5946,
-				    "station_g_cd": 1130222,
-				    "add": "東京都千代田区神田佐久間町一丁目21",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800307",
-				    "pref_name": "東京都",
-				    "shared_name": "2800307",
-				    "lat": 35.698161999999996,
-				    "y": -356981.61999999994,
-				    "x": 1397754.59
+				    "station_name": "秋葉原"
 			    },
 			    "position": {
 				    "x": 1397754.59,
@@ -7781,22 +2921,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5943",
-				    "station_name": "入谷",
-				    "close_ymd": "",
-				    "lon": 139.783924,
-				    "post": "110-0013",
-				    "e_status": 0,
-				    "SUID": 5943,
-				    "station_g_cd": 2800304,
-				    "add": "台東区入谷１-６-４",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800304",
-				    "pref_name": "東京都",
-				    "shared_name": "2800304",
-				    "lat": 35.719862,
-				    "y": -357198.62,
-				    "x": 1397839.2400000002
+				    "station_name": "入谷"
 			    },
 			    "position": {
 				    "x": 1397839.2400000002,
@@ -7805,22 +2930,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5944",
-				    "station_name": "上野",
-				    "close_ymd": "",
-				    "lon": 139.777122,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5944,
-				    "station_g_cd": 1130220,
-				    "add": "東京都台東区東上野三丁目19-6",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800305",
-				    "pref_name": "東京都",
-				    "shared_name": "2800305",
-				    "lat": 35.711482000000004,
-				    "y": -357114.82000000007,
-				    "x": 1397771.22
+				    "station_name": "上野"
 			    },
 			    "position": {
 				    "x": 1397771.22,
@@ -7829,22 +2939,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5941",
-				    "station_name": "南千住",
-				    "close_ymd": "",
-				    "lon": 139.799273,
-				    "post": "116-0003",
-				    "e_status": 0,
-				    "SUID": 5941,
-				    "station_g_cd": 1132004,
-				    "add": "荒川区南千住４丁目",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800302",
-				    "pref_name": "東京都",
-				    "shared_name": "2800302",
-				    "lat": 35.733398,
-				    "y": -357333.98000000004,
-				    "x": 1397992.73
+				    "station_name": "南千住"
 			    },
 			    "position": {
 				    "x": 1397992.73,
@@ -7853,22 +2948,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5942",
-				    "station_name": "三ノ輪",
-				    "close_ymd": "",
-				    "lon": 139.79148500000002,
-				    "post": "110-0011",
-				    "e_status": 0,
-				    "SUID": 5942,
-				    "station_g_cd": 2800303,
-				    "add": "台東区三ノ輪２-１４-７",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800303",
-				    "pref_name": "東京都",
-				    "shared_name": "2800303",
-				    "lat": 35.729623,
-				    "y": -357296.23,
-				    "x": 1397914.8500000003
+				    "station_name": "三ノ輪"
 			    },
 			    "position": {
 				    "x": 1397914.8500000003,
@@ -7877,22 +2957,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5955",
-				    "station_name": "霞ケ関",
-				    "close_ymd": "",
-				    "lon": 139.750899,
-				    "post": "100-0013",
-				    "e_status": 0,
-				    "SUID": 5955,
-				    "station_g_cd": 2800211,
-				    "add": "千代田区霞が関２丁目",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800316",
-				    "pref_name": "東京都",
-				    "shared_name": "2800316",
-				    "lat": 35.673838,
-				    "y": -356738.38000000006,
-				    "x": 1397508.99
+				    "station_name": "霞ケ関"
 			    },
 			    "position": {
 				    "x": 1397508.99,
@@ -7901,22 +2966,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5956",
-				    "station_name": "神谷町",
-				    "close_ymd": "",
-				    "lon": 139.745069,
-				    "post": "105-0001",
-				    "e_status": 0,
-				    "SUID": 5956,
-				    "station_g_cd": 2800317,
-				    "add": "港区虎ノ門５-１２-１１",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800317",
-				    "pref_name": "東京都",
-				    "shared_name": "2800317",
-				    "lat": 35.662978,
-				    "y": -356629.78,
-				    "x": 1397450.69
+				    "station_name": "神谷町"
 			    },
 			    "position": {
 				    "x": 1397450.69,
@@ -7925,22 +2975,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5953",
-				    "station_name": "銀座",
-				    "close_ymd": "",
-				    "lon": 139.76396499999998,
-				    "post": "104-0061",
-				    "e_status": 0,
-				    "SUID": 5953,
-				    "station_g_cd": 2800111,
-				    "add": "中央区銀座４-１-２",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800314",
-				    "pref_name": "東京都",
-				    "shared_name": "2800314",
-				    "lat": 35.671989,
-				    "y": -356719.89,
-				    "x": 1397639.65
+				    "station_name": "銀座"
 			    },
 			    "position": {
 				    "x": 1397639.65,
@@ -7949,22 +2984,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5954",
-				    "station_name": "日比谷",
-				    "close_ymd": "",
-				    "lon": 139.76017,
-				    "post": "100-0006",
-				    "e_status": 0,
-				    "SUID": 5954,
-				    "station_g_cd": 2800315,
-				    "add": "千代田区有楽町１丁目",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800315",
-				    "pref_name": "東京都",
-				    "shared_name": "2800315",
-				    "lat": 35.67459,
-				    "y": -356745.9,
-				    "x": 1397601.7
+				    "station_name": "日比谷"
 			    },
 			    "position": {
 				    "x": 1397601.7,
@@ -7973,22 +2993,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5951",
-				    "station_name": "築地",
-				    "close_ymd": "",
-				    "lon": 139.772603,
-				    "post": "104-0045",
-				    "e_status": 0,
-				    "SUID": 5951,
-				    "station_g_cd": 2800312,
-				    "add": "中央区築地３-１５-１",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800312",
-				    "pref_name": "東京都",
-				    "shared_name": "2800312",
-				    "lat": 35.668115,
-				    "y": -356681.15,
-				    "x": 1397726.03
+				    "station_name": "築地"
 			    },
 			    "position": {
 				    "x": 1397726.03,
@@ -7997,22 +3002,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5952",
-				    "station_name": "東銀座",
-				    "close_ymd": "",
-				    "lon": 139.767253,
-				    "post": "104-0061",
-				    "e_status": 0,
-				    "SUID": 5952,
-				    "station_g_cd": 2800313,
-				    "add": "中央区銀座４-１２-１５",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800313",
-				    "pref_name": "東京都",
-				    "shared_name": "2800313",
-				    "lat": 35.669464000000005,
-				    "y": -356694.6400000001,
-				    "x": 1397672.53
+				    "station_name": "東銀座"
 			    },
 			    "position": {
 				    "x": 1397672.53,
@@ -8021,22 +3011,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5949",
-				    "station_name": "茅場町",
-				    "close_ymd": "",
-				    "lon": 139.78000500000002,
-				    "post": "103-0025",
-				    "e_status": 0,
-				    "SUID": 5949,
-				    "station_g_cd": 2800310,
-				    "add": "中央区日本橋茅場町１-４-６",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800310",
-				    "pref_name": "東京都",
-				    "shared_name": "2800310",
-				    "lat": 35.679752,
-				    "y": -356797.52,
-				    "x": 1397800.0500000003
+				    "station_name": "茅場町"
 			    },
 			    "position": {
 				    "x": 1397800.0500000003,
@@ -8045,22 +3020,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5950",
-				    "station_name": "八丁堀",
-				    "close_ymd": "",
-				    "lon": 139.776982,
-				    "post": "104-0032",
-				    "e_status": 0,
-				    "SUID": 5950,
-				    "station_g_cd": 1132602,
-				    "add": "中央区八丁堀３丁目",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800311",
-				    "pref_name": "東京都",
-				    "shared_name": "2800311",
-				    "lat": 35.674851000000004,
-				    "y": -356748.51000000007,
-				    "x": 1397769.82
+				    "station_name": "八丁堀"
 			    },
 			    "position": {
 				    "x": 1397769.82,
@@ -8069,22 +3029,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5930",
-				    "station_name": "西新宿",
-				    "close_ymd": "",
-				    "lon": 139.692778,
-				    "post": "160-0023",
-				    "e_status": 0,
-				    "SUID": 5930,
-				    "station_g_cd": 2800219,
-				    "add": "新宿区西新宿６-７-５１",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800219",
-				    "pref_name": "東京都",
-				    "shared_name": "2800219",
-				    "lat": 35.694297999999996,
-				    "y": -356942.98,
-				    "x": 1396927.78
+				    "station_name": "西新宿"
 			    },
 			    "position": {
 				    "x": 1396927.78,
@@ -8093,22 +3038,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5929",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.700711,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 5929,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区西新宿一丁目 西口地下街1号",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800218",
-				    "pref_name": "東京都",
-				    "shared_name": "2800218",
-				    "lat": 35.69235,
-				    "y": -356923.5,
-				    "x": 1397007.11
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1397007.11,
@@ -8117,22 +3047,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5932",
-				    "station_name": "新中野",
-				    "close_ymd": "",
-				    "lon": 139.66903,
-				    "post": "164-0011",
-				    "e_status": 0,
-				    "SUID": 5932,
-				    "station_g_cd": 2800221,
-				    "add": "中野区中央４-２-１５",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800221",
-				    "pref_name": "東京都",
-				    "shared_name": "2800221",
-				    "lat": 35.697491,
-				    "y": -356974.91,
-				    "x": 1396690.2999999998
+				    "station_name": "新中野"
 			    },
 			    "position": {
 				    "x": 1396690.2999999998,
@@ -8141,22 +3056,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5931",
-				    "station_name": "中野坂上",
-				    "close_ymd": "",
-				    "lon": 139.68291000000002,
-				    "post": "164-0011",
-				    "e_status": 0,
-				    "SUID": 5931,
-				    "station_g_cd": 2800220,
-				    "add": "中野区中央２-１-２",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800220",
-				    "pref_name": "東京都",
-				    "shared_name": "2800220",
-				    "lat": 35.69792,
-				    "y": -356979.2,
-				    "x": 1396829.1000000003
+				    "station_name": "中野坂上"
 			    },
 			    "position": {
 				    "x": 1396829.1000000003,
@@ -8165,22 +3065,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5926",
-				    "station_name": "四谷三丁目",
-				    "close_ymd": "",
-				    "lon": 139.720103,
-				    "post": "160-0004",
-				    "e_status": 0,
-				    "SUID": 5926,
-				    "station_g_cd": 2800215,
-				    "add": "新宿区四谷３-８",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800215",
-				    "pref_name": "東京都",
-				    "shared_name": "2800215",
-				    "lat": 35.687958,
-				    "y": -356879.58,
-				    "x": 1397201.03
+				    "station_name": "四谷三丁目"
 			    },
 			    "position": {
 				    "x": 1397201.03,
@@ -8189,22 +3074,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5925",
-				    "station_name": "四ツ谷",
-				    "close_ymd": "",
-				    "lon": 139.729947,
-				    "post": "160-0004",
-				    "e_status": 0,
-				    "SUID": 5925,
-				    "station_g_cd": 1131102,
-				    "add": "新宿区四谷１丁目",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800214",
-				    "pref_name": "東京都",
-				    "shared_name": "2800214",
-				    "lat": 35.684585999999996,
-				    "y": -356845.86,
-				    "x": 1397299.4700000002
+				    "station_name": "四ツ谷"
 			    },
 			    "position": {
 				    "x": 1397299.4700000002,
@@ -8213,22 +3083,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5928",
-				    "station_name": "新宿三丁目",
-				    "close_ymd": "",
-				    "lon": 139.704895,
-				    "post": "160-0022",
-				    "e_status": 0,
-				    "SUID": 5928,
-				    "station_g_cd": 2800217,
-				    "add": "新宿区新宿３-１４-１",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800217",
-				    "pref_name": "東京都",
-				    "shared_name": "2800217",
-				    "lat": 35.690847,
-				    "y": -356908.47,
-				    "x": 1397048.95
+				    "station_name": "新宿三丁目"
 			    },
 			    "position": {
 				    "x": 1397048.95,
@@ -8237,22 +3092,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5927",
-				    "station_name": "新宿御苑前",
-				    "close_ymd": "",
-				    "lon": 139.71069,
-				    "post": "160-0022",
-				    "e_status": 0,
-				    "SUID": 5927,
-				    "station_g_cd": 2800216,
-				    "add": "新宿区新宿１-８-１",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800216",
-				    "pref_name": "東京都",
-				    "shared_name": "2800216",
-				    "lat": 35.688588,
-				    "y": -356885.88,
-				    "x": 1397106.9
+				    "station_name": "新宿御苑前"
 			    },
 			    "position": {
 				    "x": 1397106.9,
@@ -8261,22 +3101,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5938",
-				    "station_name": "中野富士見町",
-				    "close_ymd": "",
-				    "lon": 139.666933,
-				    "post": "164-0013",
-				    "e_status": 0,
-				    "SUID": 5938,
-				    "station_g_cd": 2800227,
-				    "add": "中野区弥生町５-２４-４",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800227",
-				    "pref_name": "東京都",
-				    "shared_name": "2800227",
-				    "lat": 35.690514,
-				    "y": -356905.14,
-				    "x": 1396669.33
+				    "station_name": "中野富士見町"
 			    },
 			    "position": {
 				    "x": 1396669.33,
@@ -8285,22 +3110,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5937",
-				    "station_name": "荻窪",
-				    "close_ymd": "",
-				    "lon": 139.620116,
-				    "post": "167-0043",
-				    "e_status": 0,
-				    "SUID": 5937,
-				    "station_g_cd": 1131217,
-				    "add": "杉並区上荻１丁目",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800225",
-				    "pref_name": "東京都",
-				    "shared_name": "2800225",
-				    "lat": 35.704304,
-				    "y": -357043.04,
-				    "x": 1396201.16
+				    "station_name": "荻窪"
 			    },
 			    "position": {
 				    "x": 1396201.16,
@@ -8309,22 +3119,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5940",
-				    "station_name": "北千住",
-				    "close_ymd": "",
-				    "lon": 139.804276,
-				    "post": "120-0026",
-				    "e_status": 0,
-				    "SUID": 5940,
-				    "station_g_cd": 1132005,
-				    "add": "足立区千住旭町",
-				    "line_cd": 28003,
-				    "open_ymd": "",
-				    "name": "2800301",
-				    "pref_name": "東京都",
-				    "shared_name": "2800301",
-				    "lat": 35.748915999999994,
-				    "y": -357489.1599999999,
-				    "x": 1398042.7599999998
+				    "station_name": "北千住"
 			    },
 			    "position": {
 				    "x": 1398042.7599999998,
@@ -8333,22 +3128,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5939",
-				    "station_name": "方南町",
-				    "close_ymd": "",
-				    "lon": 139.656498,
-				    "post": "166-0013",
-				    "e_status": 0,
-				    "SUID": 5939,
-				    "station_g_cd": 2800228,
-				    "add": "杉並区堀ノ内１-１-１",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800228",
-				    "pref_name": "東京都",
-				    "shared_name": "2800228",
-				    "lat": 35.683496000000005,
-				    "y": -356834.9600000001,
-				    "x": 1396564.98
+				    "station_name": "方南町"
 			    },
 			    "position": {
 				    "x": 1396564.98,
@@ -8357,22 +3137,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5934",
-				    "station_name": "東高円寺",
-				    "close_ymd": "",
-				    "lon": 139.657822,
-				    "post": "166-0012",
-				    "e_status": 0,
-				    "SUID": 5934,
-				    "station_g_cd": 2800222,
-				    "add": "杉並区和田３-５５-４２",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800222",
-				    "pref_name": "東京都",
-				    "shared_name": "2800222",
-				    "lat": 35.697802,
-				    "y": -356978.02,
-				    "x": 1396578.2200000002
+				    "station_name": "東高円寺"
 			    },
 			    "position": {
 				    "x": 1396578.2200000002,
@@ -8381,22 +3146,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5933",
-				    "station_name": "中野新橋",
-				    "close_ymd": "",
-				    "lon": 139.67399699999999,
-				    "post": "164-0013",
-				    "e_status": 0,
-				    "SUID": 5933,
-				    "station_g_cd": 2800226,
-				    "add": "中野区弥生町２-２６-８",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800226",
-				    "pref_name": "東京都",
-				    "shared_name": "2800226",
-				    "lat": 35.692122999999995,
-				    "y": -356921.2299999999,
-				    "x": 1396739.97
+				    "station_name": "中野新橋"
 			    },
 			    "position": {
 				    "x": 1396739.97,
@@ -8405,22 +3155,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5936",
-				    "station_name": "南阿佐ケ谷",
-				    "close_ymd": "",
-				    "lon": 139.63576,
-				    "post": "166-0004",
-				    "e_status": 0,
-				    "SUID": 5936,
-				    "station_g_cd": 2800224,
-				    "add": "杉並区阿佐谷南１-１５-７",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800224",
-				    "pref_name": "東京都",
-				    "shared_name": "2800224",
-				    "lat": 35.699624,
-				    "y": -356996.24,
-				    "x": 1396357.6
+				    "station_name": "南阿佐ケ谷"
 			    },
 			    "position": {
 				    "x": 1396357.6,
@@ -8429,22 +3164,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5935",
-				    "station_name": "新高円寺",
-				    "close_ymd": "",
-				    "lon": 139.648068,
-				    "post": "166-0003",
-				    "e_status": 0,
-				    "SUID": 5935,
-				    "station_g_cd": 2800223,
-				    "add": "杉並区高円寺南２-２０-１",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800223",
-				    "pref_name": "東京都",
-				    "shared_name": "2800223",
-				    "lat": 35.697984999999996,
-				    "y": -356979.85,
-				    "x": 1396480.68
+				    "station_name": "新高円寺"
 			    },
 			    "position": {
 				    "x": 1396480.68,
@@ -8453,22 +3173,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5913",
-				    "station_name": "新大塚",
-				    "close_ymd": "",
-				    "lon": 139.729971,
-				    "post": "112-0012",
-				    "e_status": 0,
-				    "SUID": 5913,
-				    "station_g_cd": 2800202,
-				    "add": "文京区大塚４-５１-５",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800202",
-				    "pref_name": "東京都",
-				    "shared_name": "2800202",
-				    "lat": 35.72569,
-				    "y": -357256.9,
-				    "x": 1397299.71
+				    "station_name": "新大塚"
 			    },
 			    "position": {
 				    "x": 1397299.71,
@@ -8477,22 +3182,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5914",
-				    "station_name": "茗荷谷",
-				    "close_ymd": "",
-				    "lon": 139.737184,
-				    "post": "112-0006",
-				    "e_status": 0,
-				    "SUID": 5914,
-				    "station_g_cd": 2800203,
-				    "add": "文京区小日向４-６-１５",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800203",
-				    "pref_name": "東京都",
-				    "shared_name": "2800203",
-				    "lat": 35.716989,
-				    "y": -357169.88999999996,
-				    "x": 1397371.84
+				    "station_name": "茗荷谷"
 			    },
 			    "position": {
 				    "x": 1397371.84,
@@ -8501,22 +3191,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5915",
-				    "station_name": "後楽園",
-				    "close_ymd": "",
-				    "lon": 139.75186399999998,
-				    "post": "112-0003",
-				    "e_status": 0,
-				    "SUID": 5915,
-				    "station_g_cd": 2800204,
-				    "add": "文京区春日１-２-３",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800204",
-				    "pref_name": "東京都",
-				    "shared_name": "2800204",
-				    "lat": 35.707898,
-				    "y": -357078.98,
-				    "x": 1397518.64
+				    "station_name": "後楽園"
 			    },
 			    "position": {
 				    "x": 1397518.64,
@@ -8525,22 +3200,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5916",
-				    "station_name": "本郷三丁目",
-				    "close_ymd": "",
-				    "lon": 139.75991399999998,
-				    "post": "113-0033",
-				    "e_status": 0,
-				    "SUID": 5916,
-				    "station_g_cd": 2800205,
-				    "add": "文京区本郷２-３９-１",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800205",
-				    "pref_name": "東京都",
-				    "shared_name": "2800205",
-				    "lat": 35.706671,
-				    "y": -357066.71,
-				    "x": 1397599.14
+				    "station_name": "本郷三丁目"
 			    },
 			    "position": {
 				    "x": 1397599.14,
@@ -8549,22 +3209,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5909",
-				    "station_name": "外苑前",
-				    "close_ymd": "",
-				    "lon": 139.717857,
-				    "post": "107-0061",
-				    "e_status": 0,
-				    "SUID": 5909,
-				    "station_g_cd": 2800117,
-				    "add": "港区北青山２-７-１６",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800117",
-				    "pref_name": "東京都",
-				    "shared_name": "2800117",
-				    "lat": 35.670527,
-				    "y": -356705.27,
-				    "x": 1397178.57
+				    "station_name": "外苑前"
 			    },
 			    "position": {
 				    "x": 1397178.57,
@@ -8573,22 +3218,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5910",
-				    "station_name": "表参道",
-				    "close_ymd": "",
-				    "lon": 139.712314,
-				    "post": "107-0061",
-				    "e_status": 0,
-				    "SUID": 5910,
-				    "station_g_cd": 2800118,
-				    "add": "港区北青山３丁目",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800118",
-				    "pref_name": "東京都",
-				    "shared_name": "2800118",
-				    "lat": 35.665246999999994,
-				    "y": -356652.4699999999,
-				    "x": 1397123.14
+				    "station_name": "表参道"
 			    },
 			    "position": {
 				    "x": 1397123.14,
@@ -8597,22 +3227,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5911",
-				    "station_name": "渋谷",
-				    "close_ymd": "",
-				    "lon": 139.701,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5911,
-				    "station_g_cd": 1130205,
-				    "add": "東京都渋谷区道玄坂一丁目1-1",
-				    "line_cd": 28001,
-				    "open_ymd": "",
-				    "name": "2800119",
-				    "pref_name": "東京都",
-				    "shared_name": "2800119",
-				    "lat": 35.659065999999996,
-				    "y": -356590.66,
-				    "x": 1397010.0
+				    "station_name": "渋谷"
 			    },
 			    "position": {
 				    "x": 1397010.0,
@@ -8621,22 +3236,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5912",
-				    "station_name": "池袋",
-				    "close_ymd": "",
-				    "lon": 139.71108600000002,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5912,
-				    "station_g_cd": 1130212,
-				    "add": "東京都豊島区",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800201",
-				    "pref_name": "東京都",
-				    "shared_name": "2800201",
-				    "lat": 35.730256,
-				    "y": -357302.56,
-				    "x": 1397110.8600000003
+				    "station_name": "池袋"
 			    },
 			    "position": {
 				    "x": 1397110.8600000003,
@@ -8645,22 +3245,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5921",
-				    "station_name": "銀座",
-				    "close_ymd": "",
-				    "lon": 139.76396499999998,
-				    "post": "104-0061",
-				    "e_status": 0,
-				    "SUID": 5921,
-				    "station_g_cd": 2800111,
-				    "add": "中央区銀座４-１-２",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800210",
-				    "pref_name": "東京都",
-				    "shared_name": "2800210",
-				    "lat": 35.671989,
-				    "y": -356719.89,
-				    "x": 1397639.65
+				    "station_name": "銀座"
 			    },
 			    "position": {
 				    "x": 1397639.65,
@@ -8669,22 +3254,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5922",
-				    "station_name": "霞ケ関",
-				    "close_ymd": "",
-				    "lon": 139.750899,
-				    "post": "100-0013",
-				    "e_status": 0,
-				    "SUID": 5922,
-				    "station_g_cd": 2800211,
-				    "add": "千代田区霞が関２丁目",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800211",
-				    "pref_name": "東京都",
-				    "shared_name": "2800211",
-				    "lat": 35.673838,
-				    "y": -356738.38000000006,
-				    "x": 1397508.99
+				    "station_name": "霞ケ関"
 			    },
 			    "position": {
 				    "x": 1397508.99,
@@ -8693,22 +3263,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5923",
-				    "station_name": "国会議事堂前",
-				    "close_ymd": "",
-				    "lon": 139.745219,
-				    "post": "100-0014",
-				    "e_status": 0,
-				    "SUID": 5923,
-				    "station_g_cd": 2800212,
-				    "add": "千代田区永田町１丁目",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800212",
-				    "pref_name": "東京都",
-				    "shared_name": "2800212",
-				    "lat": 35.67393,
-				    "y": -356739.3,
-				    "x": 1397452.19
+				    "station_name": "国会議事堂前"
 			    },
 			    "position": {
 				    "x": 1397452.19,
@@ -8717,22 +3272,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5924",
-				    "station_name": "赤坂見附",
-				    "close_ymd": "",
-				    "lon": 139.737047,
-				    "post": "107-0052",
-				    "e_status": 0,
-				    "SUID": 5924,
-				    "station_g_cd": 2800115,
-				    "add": "港区赤坂３-１-６",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800213",
-				    "pref_name": "東京都",
-				    "shared_name": "2800213",
-				    "lat": 35.677021,
-				    "y": -356770.21,
-				    "x": 1397370.47
+				    "station_name": "赤坂見附"
 			    },
 			    "position": {
 				    "x": 1397370.47,
@@ -8741,22 +3281,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5917",
-				    "station_name": "御茶ノ水",
-				    "close_ymd": "",
-				    "lon": 139.763952,
-				    "post": "101-0062",
-				    "e_status": 0,
-				    "SUID": 5917,
-				    "station_g_cd": 1131203,
-				    "add": "千代田区神田駿河台２丁目",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800206",
-				    "pref_name": "東京都",
-				    "shared_name": "2800206",
-				    "lat": 35.700614,
-				    "y": -357006.14,
-				    "x": 1397639.5199999998
+				    "station_name": "御茶ノ水"
 			    },
 			    "position": {
 				    "x": 1397639.5199999998,
@@ -8765,22 +3290,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5918",
-				    "station_name": "淡路町",
-				    "close_ymd": "",
-				    "lon": 139.767575,
-				    "post": "101-0063",
-				    "e_status": 0,
-				    "SUID": 5918,
-				    "station_g_cd": 2800207,
-				    "add": "千代田区神田淡路町１-２",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800207",
-				    "pref_name": "東京都",
-				    "shared_name": "2800207",
-				    "lat": 35.695434000000006,
-				    "y": -356954.3400000001,
-				    "x": 1397675.75
+				    "station_name": "淡路町"
 			    },
 			    "position": {
 				    "x": 1397675.75,
@@ -8789,22 +3299,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5919",
-				    "station_name": "大手町",
-				    "close_ymd": "",
-				    "lon": 139.7662,
-				    "post": "100-0004",
-				    "e_status": 0,
-				    "SUID": 5919,
-				    "station_g_cd": 2800208,
-				    "add": "千代田区大手町１丁目",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800208",
-				    "pref_name": "東京都",
-				    "shared_name": "2800208",
-				    "lat": 35.686564000000004,
-				    "y": -356865.64,
-				    "x": 1397662.0
+				    "station_name": "大手町"
 			    },
 			    "position": {
 				    "x": 1397662.0,
@@ -8813,22 +3308,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5920",
-				    "station_name": "東京",
-				    "close_ymd": "",
-				    "lon": 139.764708,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5920,
-				    "station_g_cd": 1130101,
-				    "add": "東京都千代田区丸の内一丁目",
-				    "line_cd": 28002,
-				    "open_ymd": "",
-				    "name": "2800209",
-				    "pref_name": "東京都",
-				    "shared_name": "2800209",
-				    "lat": 35.681753,
-				    "y": -356817.53,
-				    "x": 1397647.08
+				    "station_name": "東京"
 			    },
 			    "position": {
 				    "x": 1397647.08,
@@ -8837,22 +3317,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3103",
-				    "station_name": "赤羽",
-				    "close_ymd": "",
-				    "lon": 139.72092800000001,
-				    "post": "115-0045",
-				    "e_status": 0,
-				    "SUID": 3103,
-				    "station_g_cd": 1131903,
-				    "add": "北区赤羽１丁目",
-				    "line_cd": 11321,
-				    "open_ymd": "",
-				    "name": "1132108",
-				    "pref_name": "東京都",
-				    "shared_name": "1132108",
-				    "lat": 35.778026000000004,
-				    "y": -357780.26000000007,
-				    "x": 1397209.2800000003
+				    "station_name": "赤羽"
 			    },
 			    "position": {
 				    "x": 1397209.2800000003,
@@ -8861,22 +3326,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3104",
-				    "station_name": "北赤羽",
-				    "close_ymd": "",
-				    "lon": 139.70569,
-				    "post": "115-0052",
-				    "e_status": 0,
-				    "SUID": 3104,
-				    "station_g_cd": 1132109,
-				    "add": "北区赤羽北２丁目",
-				    "line_cd": 11321,
-				    "open_ymd": "",
-				    "name": "1132109",
-				    "pref_name": "東京都",
-				    "shared_name": "1132109",
-				    "lat": 35.787007,
-				    "y": -357870.07,
-				    "x": 1397056.9000000001
+				    "station_name": "北赤羽"
 			    },
 			    "position": {
 				    "x": 1397056.9000000001,
@@ -8885,22 +3335,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3101",
-				    "station_name": "板橋",
-				    "close_ymd": "",
-				    "lon": 139.719507,
-				    "post": "173-0004",
-				    "e_status": 0,
-				    "SUID": 3101,
-				    "station_g_cd": 1132106,
-				    "add": "板橋区板橋１丁目",
-				    "line_cd": 11321,
-				    "open_ymd": "",
-				    "name": "1132106",
-				    "pref_name": "東京都",
-				    "shared_name": "1132106",
-				    "lat": 35.745435,
-				    "y": -357454.35,
-				    "x": 1397195.0699999998
+				    "station_name": "板橋"
 			    },
 			    "position": {
 				    "x": 1397195.0699999998,
@@ -8909,22 +3344,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3102",
-				    "station_name": "十条",
-				    "close_ymd": "",
-				    "lon": 139.72223300000002,
-				    "post": "114-0034",
-				    "e_status": 0,
-				    "SUID": 3102,
-				    "station_g_cd": 1132107,
-				    "add": "北区上十条１丁目",
-				    "line_cd": 11321,
-				    "open_ymd": "",
-				    "name": "1132107",
-				    "pref_name": "東京都",
-				    "shared_name": "1132107",
-				    "lat": 35.760321000000005,
-				    "y": -357603.21,
-				    "x": 1397222.33
+				    "station_name": "十条"
 			    },
 			    "position": {
 				    "x": 1397222.33,
@@ -8933,22 +3353,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3105",
-				    "station_name": "浮間舟渡",
-				    "close_ymd": "",
-				    "lon": 139.691341,
-				    "post": "115-0051",
-				    "e_status": 0,
-				    "SUID": 3105,
-				    "station_g_cd": 1132110,
-				    "add": "北区浮間４丁目",
-				    "line_cd": 11321,
-				    "open_ymd": "",
-				    "name": "1132110",
-				    "pref_name": "東京都",
-				    "shared_name": "1132110",
-				    "lat": 35.791209,
-				    "y": -357912.09,
-				    "x": 1396913.41
+				    "station_name": "浮間舟渡"
 			    },
 			    "position": {
 				    "x": 1396913.41,
@@ -8957,22 +3362,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3096",
-				    "station_name": "大崎",
-				    "close_ymd": "",
-				    "lon": 139.72843899999998,
-				    "post": "141-0032",
-				    "e_status": 0,
-				    "SUID": 3096,
-				    "station_g_cd": 1130201,
-				    "add": "東京都品川区大崎一丁目21-4",
-				    "line_cd": 11321,
-				    "open_ymd": "",
-				    "name": "1132101",
-				    "pref_name": "東京都",
-				    "shared_name": "1132101",
-				    "lat": 35.619772,
-				    "y": -356197.72,
-				    "x": 1397284.39
+				    "station_name": "大崎"
 			    },
 			    "position": {
 				    "x": 1397284.39,
@@ -8981,22 +3371,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3099",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.70046399999998,
-				    "post": "160-0022",
-				    "e_status": 0,
-				    "SUID": 3099,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区新宿三丁目38-1",
-				    "line_cd": 11321,
-				    "open_ymd": "",
-				    "name": "1132104",
-				    "pref_name": "東京都",
-				    "shared_name": "1132104",
-				    "lat": 35.689729,
-				    "y": -356897.29,
-				    "x": 1397004.64
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1397004.64,
@@ -9005,22 +3380,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5300",
-				    "station_name": "曳舟",
-				    "close_ymd": "",
-				    "lon": 139.81663400000002,
-				    "post": "131-0032",
-				    "e_status": 0,
-				    "SUID": 5300,
-				    "station_g_cd": 2100204,
-				    "add": "墨田区東向島２丁目",
-				    "line_cd": 21005,
-				    "open_ymd": "",
-				    "name": "2100501",
-				    "pref_name": "東京都",
-				    "shared_name": "2100501",
-				    "lat": 35.718418,
-				    "y": -357184.18,
-				    "x": 1398166.3400000003
+				    "station_name": "曳舟"
 			    },
 			    "position": {
 				    "x": 1398166.3400000003,
@@ -9029,22 +3389,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3100",
-				    "station_name": "池袋",
-				    "close_ymd": "",
-				    "lon": 139.71108600000002,
-				    "post": "170-0000",
-				    "e_status": 0,
-				    "SUID": 3100,
-				    "station_g_cd": 1130212,
-				    "add": "東京都豊島区",
-				    "line_cd": 11321,
-				    "open_ymd": "",
-				    "name": "1132105",
-				    "pref_name": "東京都",
-				    "shared_name": "1132105",
-				    "lat": 35.730256,
-				    "y": -357302.56,
-				    "x": 1397110.8600000003
+				    "station_name": "池袋"
 			    },
 			    "position": {
 				    "x": 1397110.8600000003,
@@ -9053,22 +3398,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3097",
-				    "station_name": "恵比寿",
-				    "close_ymd": "",
-				    "lon": 139.71007,
-				    "post": "151-0022",
-				    "e_status": 0,
-				    "SUID": 3097,
-				    "station_g_cd": 1130204,
-				    "add": "東京都渋谷区恵比寿南一丁目5-5",
-				    "line_cd": 11321,
-				    "open_ymd": "",
-				    "name": "1132102",
-				    "pref_name": "東京都",
-				    "shared_name": "1132102",
-				    "lat": 35.646685,
-				    "y": -356466.85,
-				    "x": 1397100.7
+				    "station_name": "恵比寿"
 			    },
 			    "position": {
 				    "x": 1397100.7,
@@ -9077,22 +3407,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3098",
-				    "station_name": "渋谷",
-				    "close_ymd": "",
-				    "lon": 139.701238,
-				    "post": "150-0043",
-				    "e_status": 0,
-				    "SUID": 3098,
-				    "station_g_cd": 1130205,
-				    "add": "東京都渋谷区道玄坂一丁目1-1",
-				    "line_cd": 11321,
-				    "open_ymd": "",
-				    "name": "1132103",
-				    "pref_name": "東京都",
-				    "shared_name": "1132103",
-				    "lat": 35.658871000000005,
-				    "y": -356588.71,
-				    "x": 1397012.38
+				    "station_name": "渋谷"
 			    },
 			    "position": {
 				    "x": 1397012.38,
@@ -9101,22 +3416,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5302",
-				    "station_name": "東あずま",
-				    "close_ymd": "",
-				    "lon": 139.831883,
-				    "post": "131-0043",
-				    "e_status": 0,
-				    "SUID": 5302,
-				    "station_g_cd": 2100503,
-				    "add": "墨田区立花４-２３-８",
-				    "line_cd": 21005,
-				    "open_ymd": "",
-				    "name": "2100503",
-				    "pref_name": "東京都",
-				    "shared_name": "2100503",
-				    "lat": 35.707066999999995,
-				    "y": -357070.6699999999,
-				    "x": 1398318.83
+				    "station_name": "東あずま"
 			    },
 			    "position": {
 				    "x": 1398318.83,
@@ -9125,22 +3425,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5301",
-				    "station_name": "小村井",
-				    "close_ymd": "",
-				    "lon": 139.827595,
-				    "post": "131-0044",
-				    "e_status": 0,
-				    "SUID": 5301,
-				    "station_g_cd": 2100502,
-				    "add": "墨田区文花２-２０-１",
-				    "line_cd": 21005,
-				    "open_ymd": "",
-				    "name": "2100502",
-				    "pref_name": "東京都",
-				    "shared_name": "2100502",
-				    "lat": 35.710316,
-				    "y": -357103.16,
-				    "x": 1398275.95
+				    "station_name": "小村井"
 			    },
 			    "position": {
 				    "x": 1398275.95,
@@ -9149,22 +3434,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5304",
-				    "station_name": "亀戸",
-				    "close_ymd": "",
-				    "lon": 139.826791,
-				    "post": "136-0071",
-				    "e_status": 0,
-				    "SUID": 5304,
-				    "station_g_cd": 1131323,
-				    "add": "江東区亀戸５丁目",
-				    "line_cd": 21005,
-				    "open_ymd": "",
-				    "name": "2100505",
-				    "pref_name": "東京都",
-				    "shared_name": "2100505",
-				    "lat": 35.697708,
-				    "y": -356977.07999999996,
-				    "x": 1398267.91
+				    "station_name": "亀戸"
 			    },
 			    "position": {
 				    "x": 1398267.91,
@@ -9173,22 +3443,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5303",
-				    "station_name": "亀戸水神",
-				    "close_ymd": "",
-				    "lon": 139.83342199999998,
-				    "post": "136-0071",
-				    "e_status": 0,
-				    "SUID": 5303,
-				    "station_g_cd": 2100504,
-				    "add": "江東区亀戸８-５-１",
-				    "line_cd": 21005,
-				    "open_ymd": "",
-				    "name": "2100504",
-				    "pref_name": "東京都",
-				    "shared_name": "2100504",
-				    "lat": 35.699976,
-				    "y": -356999.76,
-				    "x": 1398334.2199999997
+				    "station_name": "亀戸水神"
 			    },
 			    "position": {
 				    "x": 1398334.2199999997,
@@ -9197,22 +3452,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5306",
-				    "station_name": "大師前",
-				    "close_ymd": "",
-				    "lon": 139.781647,
-				    "post": "123-0841",
-				    "e_status": 0,
-				    "SUID": 5306,
-				    "station_g_cd": 2100602,
-				    "add": "足立区西新井１-３-１",
-				    "line_cd": 21006,
-				    "open_ymd": "",
-				    "name": "2100602",
-				    "pref_name": "東京都",
-				    "shared_name": "2100602",
-				    "lat": 35.778989,
-				    "y": -357789.89,
-				    "x": 1397816.47
+				    "station_name": "大師前"
 			    },
 			    "position": {
 				    "x": 1397816.47,
@@ -9221,22 +3461,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5305",
-				    "station_name": "西新井",
-				    "close_ymd": "",
-				    "lon": 139.790372,
-				    "post": "123-0843",
-				    "e_status": 0,
-				    "SUID": 5305,
-				    "station_g_cd": 2100213,
-				    "add": "足立区西新井栄町２丁目",
-				    "line_cd": 21006,
-				    "open_ymd": "",
-				    "name": "2100601",
-				    "pref_name": "東京都",
-				    "shared_name": "2100601",
-				    "lat": 35.777322999999996,
-				    "y": -357773.23,
-				    "x": 1397903.72
+				    "station_name": "西新井"
 			    },
 			    "position": {
 				    "x": 1397903.72,
@@ -9245,22 +3470,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3126",
-				    "station_name": "上野",
-				    "close_ymd": "",
-				    "lon": 139.777043,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3126,
-				    "station_g_cd": 1130220,
-				    "add": "東京都台東区上野七丁目1-1",
-				    "line_cd": 11323,
-				    "open_ymd": "",
-				    "name": "1132301",
-				    "pref_name": "東京都",
-				    "shared_name": "1132301",
-				    "lat": 35.71379,
-				    "y": -357137.9,
-				    "x": 1397770.43
+				    "station_name": "上野"
 			    },
 			    "position": {
 				    "x": 1397770.43,
@@ -9269,22 +3479,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3127",
-				    "station_name": "尾久",
-				    "close_ymd": "",
-				    "lon": 139.753846,
-				    "post": "114-0011",
-				    "e_status": 0,
-				    "SUID": 3127,
-				    "station_g_cd": 1131902,
-				    "add": "北区昭和町１丁目",
-				    "line_cd": 11323,
-				    "open_ymd": "",
-				    "name": "1132302",
-				    "pref_name": "東京都",
-				    "shared_name": "1132302",
-				    "lat": 35.746829999999996,
-				    "y": -357468.29999999993,
-				    "x": 1397538.4600000002
+				    "station_name": "尾久"
 			    },
 			    "position": {
 				    "x": 1397538.4600000002,
@@ -9293,22 +3488,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3128",
-				    "station_name": "赤羽",
-				    "close_ymd": "",
-				    "lon": 139.72092800000001,
-				    "post": "115-0045",
-				    "e_status": 0,
-				    "SUID": 3128,
-				    "station_g_cd": 1131903,
-				    "add": "北区赤羽１丁目",
-				    "line_cd": 11323,
-				    "open_ymd": "",
-				    "name": "1132303",
-				    "pref_name": "東京都",
-				    "shared_name": "1132303",
-				    "lat": 35.778026000000004,
-				    "y": -357780.26000000007,
-				    "x": 1397209.2800000003
+				    "station_name": "赤羽"
 			    },
 			    "position": {
 				    "x": 1397209.2800000003,
@@ -9317,22 +3497,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5363",
-				    "station_name": "椎名町",
-				    "close_ymd": "",
-				    "lon": 139.69436299999998,
-				    "post": "171-0051",
-				    "e_status": 0,
-				    "SUID": 5363,
-				    "station_g_cd": 2200102,
-				    "add": "豊島区長崎１-１-２２",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200102",
-				    "pref_name": "東京都",
-				    "shared_name": "2200102",
-				    "lat": 35.726572,
-				    "y": -357265.72,
-				    "x": 1396943.63
+				    "station_name": "椎名町"
 			    },
 			    "position": {
 				    "x": 1396943.63,
@@ -9341,22 +3506,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5364",
-				    "station_name": "東長崎",
-				    "close_ymd": "",
-				    "lon": 139.683294,
-				    "post": "171-0051",
-				    "e_status": 0,
-				    "SUID": 5364,
-				    "station_g_cd": 2200103,
-				    "add": "豊島区長崎５-１-１",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200103",
-				    "pref_name": "東京都",
-				    "shared_name": "2200103",
-				    "lat": 35.73003,
-				    "y": -357300.3,
-				    "x": 1396832.94
+				    "station_name": "東長崎"
 			    },
 			    "position": {
 				    "x": 1396832.94,
@@ -9365,22 +3515,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5362",
-				    "station_name": "池袋",
-				    "close_ymd": "",
-				    "lon": 139.711461,
-				    "post": "171-0022",
-				    "e_status": 0,
-				    "SUID": 5362,
-				    "station_g_cd": 1130212,
-				    "add": "東京都豊島区南池袋一丁目28-2",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200101",
-				    "pref_name": "東京都",
-				    "shared_name": "2200101",
-				    "lat": 35.72913,
-				    "y": -357291.3,
-				    "x": 1397114.61
+				    "station_name": "池袋"
 			    },
 			    "position": {
 				    "x": 1397114.61,
@@ -9389,22 +3524,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5370",
-				    "station_name": "練馬高野台",
-				    "close_ymd": "",
-				    "lon": 139.616749,
-				    "post": "177-0033",
-				    "e_status": 0,
-				    "SUID": 5370,
-				    "station_g_cd": 2200109,
-				    "add": "練馬区高野台１-７-２７",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200109",
-				    "pref_name": "東京都",
-				    "shared_name": "2200109",
-				    "lat": 35.740621999999995,
-				    "y": -357406.22,
-				    "x": 1396167.49
+				    "station_name": "練馬高野台"
 			    },
 			    "position": {
 				    "x": 1396167.49,
@@ -9413,22 +3533,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5369",
-				    "station_name": "富士見台",
-				    "close_ymd": "",
-				    "lon": 139.62968999999998,
-				    "post": "176-0021",
-				    "e_status": 0,
-				    "SUID": 5369,
-				    "station_g_cd": 2200108,
-				    "add": "練馬区貫井３-７-４",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200108",
-				    "pref_name": "東京都",
-				    "shared_name": "2200108",
-				    "lat": 35.735867,
-				    "y": -357358.67,
-				    "x": 1396296.9
+				    "station_name": "富士見台"
 			    },
 			    "position": {
 				    "x": 1396296.9,
@@ -9437,22 +3542,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5372",
-				    "station_name": "大泉学園",
-				    "close_ymd": "",
-				    "lon": 139.586732,
-				    "post": "178-0063",
-				    "e_status": 0,
-				    "SUID": 5372,
-				    "station_g_cd": 2200111,
-				    "add": "練馬区東大泉１-２９-７",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200111",
-				    "pref_name": "東京都",
-				    "shared_name": "2200111",
-				    "lat": 35.749406,
-				    "y": -357494.06,
-				    "x": 1395867.32
+				    "station_name": "大泉学園"
 			    },
 			    "position": {
 				    "x": 1395867.32,
@@ -9461,22 +3551,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5371",
-				    "station_name": "石神井公園",
-				    "close_ymd": "",
-				    "lon": 139.60698100000002,
-				    "post": "177-0041",
-				    "e_status": 0,
-				    "SUID": 5371,
-				    "station_g_cd": 2200110,
-				    "add": "練馬区石神井町３-２３-１０",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200110",
-				    "pref_name": "東京都",
-				    "shared_name": "2200110",
-				    "lat": 35.743563,
-				    "y": -357435.63,
-				    "x": 1396069.8100000003
+				    "station_name": "石神井公園"
 			    },
 			    "position": {
 				    "x": 1396069.8100000003,
@@ -9485,22 +3560,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3214",
-				    "station_name": "葛西臨海公園",
-				    "close_ymd": "",
-				    "lon": 139.861529,
-				    "post": "134-0086",
-				    "e_status": 0,
-				    "SUID": 3214,
-				    "station_g_cd": 1132606,
-				    "add": "江戸川区臨海町６丁目",
-				    "line_cd": 11326,
-				    "open_ymd": "",
-				    "name": "1132606",
-				    "pref_name": "東京都",
-				    "shared_name": "1132606",
-				    "lat": 35.644391999999996,
-				    "y": -356443.92,
-				    "x": 1398615.2899999998
+				    "station_name": "葛西臨海公園"
 			    },
 			    "position": {
 				    "x": 1398615.2899999998,
@@ -9509,22 +3569,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5366",
-				    "station_name": "桜台",
-				    "close_ymd": "",
-				    "lon": 139.662602,
-				    "post": "176-0002",
-				    "e_status": 0,
-				    "SUID": 5366,
-				    "station_g_cd": 2200105,
-				    "add": "練馬区桜台１-５-１",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200105",
-				    "pref_name": "東京都",
-				    "shared_name": "2200105",
-				    "lat": 35.738797,
-				    "y": -357387.97,
-				    "x": 1396626.02
+				    "station_name": "桜台"
 			    },
 			    "position": {
 				    "x": 1396626.02,
@@ -9533,22 +3578,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3213",
-				    "station_name": "新木場",
-				    "close_ymd": "",
-				    "lon": 139.827402,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3213,
-				    "station_g_cd": 1132605,
-				    "add": "東京都江東区新木場一丁目5",
-				    "line_cd": 11326,
-				    "open_ymd": "",
-				    "name": "1132605",
-				    "pref_name": "東京都",
-				    "shared_name": "1132605",
-				    "lat": 35.646172,
-				    "y": -356461.72,
-				    "x": 1398274.02
+				    "station_name": "新木場"
 			    },
 			    "position": {
 				    "x": 1398274.02,
@@ -9557,22 +3587,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5365",
-				    "station_name": "江古田",
-				    "close_ymd": "",
-				    "lon": 139.672814,
-				    "post": "176-0005",
-				    "e_status": 0,
-				    "SUID": 5365,
-				    "station_g_cd": 2200104,
-				    "add": "練馬区旭丘１-７８-７",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200104",
-				    "pref_name": "東京都",
-				    "shared_name": "2200104",
-				    "lat": 35.737557,
-				    "y": -357375.57,
-				    "x": 1396728.14
+				    "station_name": "江古田"
 			    },
 			    "position": {
 				    "x": 1396728.14,
@@ -9581,22 +3596,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5368",
-				    "station_name": "中村橋",
-				    "close_ymd": "",
-				    "lon": 139.63745600000001,
-				    "post": "176-0023",
-				    "e_status": 0,
-				    "SUID": 5368,
-				    "station_g_cd": 2200107,
-				    "add": "練馬区中村北４-２-１",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200107",
-				    "pref_name": "東京都",
-				    "shared_name": "2200107",
-				    "lat": 35.736767,
-				    "y": -357367.67,
-				    "x": 1396374.56
+				    "station_name": "中村橋"
 			    },
 			    "position": {
 				    "x": 1396374.56,
@@ -9605,22 +3605,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5367",
-				    "station_name": "練馬",
-				    "close_ymd": "",
-				    "lon": 139.654368,
-				    "post": "176-0001",
-				    "e_status": 0,
-				    "SUID": 5367,
-				    "station_g_cd": 2200106,
-				    "add": "練馬区練馬１-３-５",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200106",
-				    "pref_name": "東京都",
-				    "shared_name": "2200106",
-				    "lat": 35.737893,
-				    "y": -357378.93,
-				    "x": 1396543.6800000002
+				    "station_name": "練馬"
 			    },
 			    "position": {
 				    "x": 1396543.6800000002,
@@ -9629,22 +3614,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3210",
-				    "station_name": "八丁堀",
-				    "close_ymd": "",
-				    "lon": 139.777705,
-				    "post": "104-0032",
-				    "e_status": 0,
-				    "SUID": 3210,
-				    "station_g_cd": 1132602,
-				    "add": "中央区八丁堀３丁目",
-				    "line_cd": 11326,
-				    "open_ymd": "",
-				    "name": "1132602",
-				    "pref_name": "東京都",
-				    "shared_name": "1132602",
-				    "lat": 35.674617,
-				    "y": -356746.17,
-				    "x": 1397777.05
+				    "station_name": "八丁堀"
 			    },
 			    "position": {
 				    "x": 1397777.05,
@@ -9653,22 +3623,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3209",
-				    "station_name": "東京",
-				    "close_ymd": "",
-				    "lon": 139.76610300000002,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 3209,
-				    "station_g_cd": 1130101,
-				    "add": "東京都千代田区丸の内一丁目",
-				    "line_cd": 11326,
-				    "open_ymd": "",
-				    "name": "1132601",
-				    "pref_name": "東京都",
-				    "shared_name": "1132601",
-				    "lat": 35.681391,
-				    "y": -356813.91,
-				    "x": 1397661.0300000003
+				    "station_name": "東京"
 			    },
 			    "position": {
 				    "x": 1397661.0300000003,
@@ -9677,22 +3632,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5377",
-				    "station_name": "秋津",
-				    "close_ymd": "",
-				    "lon": 139.49653899999998,
-				    "post": "189-0001",
-				    "e_status": 0,
-				    "SUID": 5377,
-				    "station_g_cd": 2200116,
-				    "add": "東村山市秋津町５-７-８",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200116",
-				    "pref_name": "東京都",
-				    "shared_name": "2200116",
-				    "lat": 35.778614000000005,
-				    "y": -357786.1400000001,
-				    "x": 1394965.39
+				    "station_name": "秋津"
 			    },
 			    "position": {
 				    "x": 1394965.39,
@@ -9701,22 +3641,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3212",
-				    "station_name": "潮見",
-				    "close_ymd": "",
-				    "lon": 139.817341,
-				    "post": "135-0052",
-				    "e_status": 0,
-				    "SUID": 3212,
-				    "station_g_cd": 1132604,
-				    "add": "江東区潮見２丁目",
-				    "line_cd": 11326,
-				    "open_ymd": "",
-				    "name": "1132604",
-				    "pref_name": "東京都",
-				    "shared_name": "1132604",
-				    "lat": 35.658702000000005,
-				    "y": -356587.0200000001,
-				    "x": 1398173.41
+				    "station_name": "潮見"
 			    },
 			    "position": {
 				    "x": 1398173.41,
@@ -9725,22 +3650,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3211",
-				    "station_name": "越中島",
-				    "close_ymd": "",
-				    "lon": 139.792713,
-				    "post": "135-0044",
-				    "e_status": 0,
-				    "SUID": 3211,
-				    "station_g_cd": 1132603,
-				    "add": "江東区越中島２丁目",
-				    "line_cd": 11326,
-				    "open_ymd": "",
-				    "name": "1132603",
-				    "pref_name": "東京都",
-				    "shared_name": "1132603",
-				    "lat": 35.667946,
-				    "y": -356679.46,
-				    "x": 1397927.13
+				    "station_name": "越中島"
 			    },
 			    "position": {
 				    "x": 1397927.13,
@@ -9749,22 +3659,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5374",
-				    "station_name": "ひばりヶ丘",
-				    "close_ymd": "",
-				    "lon": 139.545852,
-				    "post": "202-0005",
-				    "e_status": 0,
-				    "SUID": 5374,
-				    "station_g_cd": 2200113,
-				    "add": "東京都西東京市住吉町三丁目",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200113",
-				    "pref_name": "東京都",
-				    "shared_name": "2200113",
-				    "lat": 35.751484999999995,
-				    "y": -357514.85,
-				    "x": 1395458.52
+				    "station_name": "ひばりヶ丘"
 			    },
 			    "position": {
 				    "x": 1395458.52,
@@ -9773,22 +3668,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5373",
-				    "station_name": "保谷",
-				    "close_ymd": "",
-				    "lon": 139.567753,
-				    "post": "202-0012",
-				    "e_status": 0,
-				    "SUID": 5373,
-				    "station_g_cd": 2200112,
-				    "add": "西東京市東町３-１４-３０",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200112",
-				    "pref_name": "東京都",
-				    "shared_name": "2200112",
-				    "lat": 35.748222,
-				    "y": -357482.22,
-				    "x": 1395677.53
+				    "station_name": "保谷"
 			    },
 			    "position": {
 				    "x": 1395677.53,
@@ -9797,22 +3677,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5376",
-				    "station_name": "清瀬",
-				    "close_ymd": "",
-				    "lon": 139.519917,
-				    "post": "204-0021",
-				    "e_status": 0,
-				    "SUID": 5376,
-				    "station_g_cd": 2200115,
-				    "add": "清瀬市元町１-２-４",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200115",
-				    "pref_name": "東京都",
-				    "shared_name": "2200115",
-				    "lat": 35.772221,
-				    "y": -357722.21,
-				    "x": 1395199.17
+				    "station_name": "清瀬"
 			    },
 			    "position": {
 				    "x": 1395199.17,
@@ -9821,22 +3686,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5375",
-				    "station_name": "東久留米",
-				    "close_ymd": "",
-				    "lon": 139.533739,
-				    "post": "203-0014",
-				    "e_status": 0,
-				    "SUID": 5375,
-				    "station_g_cd": 2200114,
-				    "add": "東久留米市東本町１-８",
-				    "line_cd": 22001,
-				    "open_ymd": "",
-				    "name": "2200114",
-				    "pref_name": "東京都",
-				    "shared_name": "2200114",
-				    "lat": 35.760445000000004,
-				    "y": -357604.45000000007,
-				    "x": 1395337.39
+				    "station_name": "東久留米"
 			    },
 			    "position": {
 				    "x": 1395337.39,
@@ -9845,22 +3695,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7607",
-				    "station_name": "中井",
-				    "close_ymd": "",
-				    "lon": 139.68635600000002,
-				    "post": "161-0032",
-				    "e_status": 0,
-				    "SUID": 7607,
-				    "station_g_cd": 2200704,
-				    "add": "新宿区中落合１-１９-１",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930132",
-				    "pref_name": "東京都",
-				    "shared_name": "9930132",
-				    "lat": 35.714034999999996,
-				    "y": -357140.35,
-				    "x": 1396863.5600000003
+				    "station_name": "中井"
 			    },
 			    "position": {
 				    "x": 1396863.5600000003,
@@ -9869,22 +3704,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5151",
-				    "station_name": "ときわ台",
-				    "close_ymd": "",
-				    "lon": 139.68901499999998,
-				    "post": "174-0071",
-				    "e_status": 0,
-				    "SUID": 5151,
-				    "station_g_cd": 2100106,
-				    "add": "板橋区常盤台１-４３-１",
-				    "line_cd": 21001,
-				    "open_ymd": "",
-				    "name": "2100106",
-				    "pref_name": "東京都",
-				    "shared_name": "2100106",
-				    "lat": 35.758771,
-				    "y": -357587.71,
-				    "x": 1396890.15
+				    "station_name": "ときわ台"
 			    },
 			    "position": {
 				    "x": 1396890.15,
@@ -9893,22 +3713,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7608",
-				    "station_name": "落合南長崎",
-				    "close_ymd": "",
-				    "lon": 139.683303,
-				    "post": "161-0031",
-				    "e_status": 0,
-				    "SUID": 7608,
-				    "station_g_cd": 9930133,
-				    "add": "新宿区西落合３-１-１８",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930133",
-				    "pref_name": "東京都",
-				    "shared_name": "9930133",
-				    "lat": 35.723608,
-				    "y": -357236.07999999996,
-				    "x": 1396833.03
+				    "station_name": "落合南長崎"
 			    },
 			    "position": {
 				    "x": 1396833.03,
@@ -9917,22 +3722,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5152",
-				    "station_name": "上板橋",
-				    "close_ymd": "",
-				    "lon": 139.67641,
-				    "post": "174-0076",
-				    "e_status": 0,
-				    "SUID": 5152,
-				    "station_g_cd": 2100107,
-				    "add": "板橋区上板橋２-３６-７",
-				    "line_cd": 21001,
-				    "open_ymd": "",
-				    "name": "2100107",
-				    "pref_name": "東京都",
-				    "shared_name": "2100107",
-				    "lat": 35.763596,
-				    "y": -357635.96,
-				    "x": 1396764.1
+				    "station_name": "上板橋"
 			    },
 			    "position": {
 				    "x": 1396764.1,
@@ -9941,22 +3731,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7605",
-				    "station_name": "中野坂上",
-				    "close_ymd": "",
-				    "lon": 139.682279,
-				    "post": "164-0011",
-				    "e_status": 0,
-				    "SUID": 7605,
-				    "station_g_cd": 2800220,
-				    "add": "中野区中央２-１-２",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930130",
-				    "pref_name": "東京都",
-				    "shared_name": "9930130",
-				    "lat": 35.69709,
-				    "y": -356970.9,
-				    "x": 1396822.79
+				    "station_name": "中野坂上"
 			    },
 			    "position": {
 				    "x": 1396822.79,
@@ -9965,22 +3740,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5149",
-				    "station_name": "大山",
-				    "close_ymd": "",
-				    "lon": 139.702589,
-				    "post": "173-0023",
-				    "e_status": 0,
-				    "SUID": 5149,
-				    "station_g_cd": 2100104,
-				    "add": "板橋区大山町４-１",
-				    "line_cd": 21001,
-				    "open_ymd": "",
-				    "name": "2100104",
-				    "pref_name": "東京都",
-				    "shared_name": "2100104",
-				    "lat": 35.748398,
-				    "y": -357483.98000000004,
-				    "x": 1397025.89
+				    "station_name": "大山"
 			    },
 			    "position": {
 				    "x": 1397025.89,
@@ -9989,22 +3749,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7606",
-				    "station_name": "東中野",
-				    "close_ymd": "",
-				    "lon": 139.682987,
-				    "post": "164-0003",
-				    "e_status": 0,
-				    "SUID": 7606,
-				    "station_g_cd": 1131213,
-				    "add": "中野区東中野４丁目",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930131",
-				    "pref_name": "東京都",
-				    "shared_name": "9930131",
-				    "lat": 35.706891,
-				    "y": -357068.91,
-				    "x": 1396829.8699999999
+				    "station_name": "東中野"
 			    },
 			    "position": {
 				    "x": 1396829.8699999999,
@@ -10013,22 +3758,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5150",
-				    "station_name": "中板橋",
-				    "close_ymd": "",
-				    "lon": 139.694628,
-				    "post": "173-0021",
-				    "e_status": 0,
-				    "SUID": 5150,
-				    "station_g_cd": 2100105,
-				    "add": "板橋区弥生町３３-１",
-				    "line_cd": 21001,
-				    "open_ymd": "",
-				    "name": "2100105",
-				    "pref_name": "東京都",
-				    "shared_name": "2100105",
-				    "lat": 35.756214,
-				    "y": -357562.14,
-				    "x": 1396946.28
+				    "station_name": "中板橋"
 			    },
 			    "position": {
 				    "x": 1396946.28,
@@ -10037,22 +3767,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7611",
-				    "station_name": "豊島園",
-				    "close_ymd": "",
-				    "lon": 139.64911,
-				    "post": "176-0001",
-				    "e_status": 0,
-				    "SUID": 7611,
-				    "station_g_cd": 2200402,
-				    "add": "練馬区練馬４-１６-５",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930136",
-				    "pref_name": "東京都",
-				    "shared_name": "9930136",
-				    "lat": 35.742067,
-				    "y": -357420.67,
-				    "x": 1396491.1
+				    "station_name": "豊島園"
 			    },
 			    "position": {
 				    "x": 1396491.1,
@@ -10061,22 +3776,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5155",
-				    "station_name": "成増",
-				    "close_ymd": "",
-				    "lon": 139.632708,
-				    "post": "175-0094",
-				    "e_status": 0,
-				    "SUID": 5155,
-				    "station_g_cd": 2100110,
-				    "add": "板橋区成増２-１３-１",
-				    "line_cd": 21001,
-				    "open_ymd": "",
-				    "name": "2100110",
-				    "pref_name": "東京都",
-				    "shared_name": "2100110",
-				    "lat": 35.777722999999995,
-				    "y": -357777.2299999999,
-				    "x": 1396327.08
+				    "station_name": "成増"
 			    },
 			    "position": {
 				    "x": 1396327.08,
@@ -10085,22 +3785,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7612",
-				    "station_name": "練馬春日町",
-				    "close_ymd": "",
-				    "lon": 139.64023600000002,
-				    "post": "179-0074",
-				    "e_status": 0,
-				    "SUID": 7612,
-				    "station_g_cd": 9930137,
-				    "add": "練馬区春日町３-２９-２５",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930137",
-				    "pref_name": "東京都",
-				    "shared_name": "9930137",
-				    "lat": 35.751452,
-				    "y": -357514.52,
-				    "x": 1396402.36
+				    "station_name": "練馬春日町"
 			    },
 			    "position": {
 				    "x": 1396402.36,
@@ -10109,22 +3794,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7609",
-				    "station_name": "新江古田",
-				    "close_ymd": "",
-				    "lon": 139.67065300000002,
-				    "post": "165-0023",
-				    "e_status": 0,
-				    "SUID": 7609,
-				    "station_g_cd": 9930134,
-				    "add": "中野区江原町２-２９-１３",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930134",
-				    "pref_name": "東京都",
-				    "shared_name": "9930134",
-				    "lat": 35.732538,
-				    "y": -357325.38,
-				    "x": 1396706.5300000003
+				    "station_name": "新江古田"
 			    },
 			    "position": {
 				    "x": 1396706.5300000003,
@@ -10133,22 +3803,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5153",
-				    "station_name": "東武練馬",
-				    "close_ymd": "",
-				    "lon": 139.66196399999998,
-				    "post": "175-0083",
-				    "e_status": 0,
-				    "SUID": 5153,
-				    "station_g_cd": 2100108,
-				    "add": "板橋区徳丸２-２-１４",
-				    "line_cd": 21001,
-				    "open_ymd": "",
-				    "name": "2100108",
-				    "pref_name": "東京都",
-				    "shared_name": "2100108",
-				    "lat": 35.768698,
-				    "y": -357686.98,
-				    "x": 1396619.64
+				    "station_name": "東武練馬"
 			    },
 			    "position": {
 				    "x": 1396619.64,
@@ -10157,22 +3812,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7610",
-				    "station_name": "練馬",
-				    "close_ymd": "",
-				    "lon": 139.65476999999998,
-				    "post": "176-0001",
-				    "e_status": 0,
-				    "SUID": 7610,
-				    "station_g_cd": 2200106,
-				    "add": "練馬区練馬１-３-５",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930135",
-				    "pref_name": "東京都",
-				    "shared_name": "9930135",
-				    "lat": 35.737404,
-				    "y": -357374.04,
-				    "x": 1396547.7
+				    "station_name": "練馬"
 			    },
 			    "position": {
 				    "x": 1396547.7,
@@ -10181,22 +3821,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5154",
-				    "station_name": "下赤塚",
-				    "close_ymd": "",
-				    "lon": 139.644482,
-				    "post": "175-0093",
-				    "e_status": 0,
-				    "SUID": 5154,
-				    "station_g_cd": 2100109,
-				    "add": "板橋区赤塚新町１-２３-１",
-				    "line_cd": 21001,
-				    "open_ymd": "",
-				    "name": "2100109",
-				    "pref_name": "東京都",
-				    "shared_name": "2100109",
-				    "lat": 35.770558,
-				    "y": -357705.58,
-				    "x": 1396444.82
+				    "station_name": "下赤塚"
 			    },
 			    "position": {
 				    "x": 1396444.82,
@@ -10205,22 +3830,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7615",
-				    "station_name": "馬込",
-				    "close_ymd": "",
-				    "lon": 139.711772,
-				    "post": "143-0021",
-				    "e_status": 0,
-				    "SUID": 7615,
-				    "station_g_cd": 9930202,
-				    "add": "大田区北馬込２-３１-９",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930202",
-				    "pref_name": "東京都",
-				    "shared_name": "9930202",
-				    "lat": 35.596435,
-				    "y": -355964.35,
-				    "x": 1397117.72
+				    "station_name": "馬込"
 			    },
 			    "position": {
 				    "x": 1397117.72,
@@ -10229,22 +3839,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7616",
-				    "station_name": "中延",
-				    "close_ymd": "",
-				    "lon": 139.713736,
-				    "post": "142-0053",
-				    "e_status": 0,
-				    "SUID": 7616,
-				    "station_g_cd": 2600404,
-				    "add": "品川区中延４-５-５",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930203",
-				    "pref_name": "東京都",
-				    "shared_name": "9930203",
-				    "lat": 35.605769,
-				    "y": -356057.69,
-				    "x": 1397137.36
+				    "station_name": "中延"
 			    },
 			    "position": {
 				    "x": 1397137.36,
@@ -10253,22 +3848,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7613",
-				    "station_name": "光が丘",
-				    "close_ymd": "",
-				    "lon": 139.628603,
-				    "post": "179-0072",
-				    "e_status": 0,
-				    "SUID": 7613,
-				    "station_g_cd": 9930138,
-				    "add": "練馬区光が丘２-９-５",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930138",
-				    "pref_name": "東京都",
-				    "shared_name": "9930138",
-				    "lat": 35.758526,
-				    "y": -357585.26,
-				    "x": 1396286.03
+				    "station_name": "光が丘"
 			    },
 			    "position": {
 				    "x": 1396286.03,
@@ -10277,22 +3857,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7614",
-				    "station_name": "西馬込",
-				    "close_ymd": "",
-				    "lon": 139.705942,
-				    "post": "143-0026",
-				    "e_status": 0,
-				    "SUID": 7614,
-				    "station_g_cd": 9930201,
-				    "add": "大田区西馬込２-１-６",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930201",
-				    "pref_name": "東京都",
-				    "shared_name": "9930201",
-				    "lat": 35.586859000000004,
-				    "y": -355868.59,
-				    "x": 1397059.42
+				    "station_name": "西馬込"
 			    },
 			    "position": {
 				    "x": 1397059.42,
@@ -10301,22 +3866,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5147",
-				    "station_name": "北池袋",
-				    "close_ymd": "",
-				    "lon": 139.716749,
-				    "post": "170-0011",
-				    "e_status": 0,
-				    "SUID": 5147,
-				    "station_g_cd": 2100102,
-				    "add": "豊島区池袋本町１-３６-６",
-				    "line_cd": 21001,
-				    "open_ymd": "",
-				    "name": "2100102",
-				    "pref_name": "東京都",
-				    "shared_name": "2100102",
-				    "lat": 35.741283,
-				    "y": -357412.83,
-				    "x": 1397167.49
+				    "station_name": "北池袋"
 			    },
 			    "position": {
 				    "x": 1397167.49,
@@ -10325,22 +3875,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7619",
-				    "station_name": "高輪台",
-				    "close_ymd": "",
-				    "lon": 139.73030500000002,
-				    "post": "108-0071",
-				    "e_status": 0,
-				    "SUID": 7619,
-				    "station_g_cd": 9930206,
-				    "add": "港区白金台２-２６-７",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930206",
-				    "pref_name": "東京都",
-				    "shared_name": "9930206",
-				    "lat": 35.631679,
-				    "y": -356316.79,
-				    "x": 1397303.05
+				    "station_name": "高輪台"
 			    },
 			    "position": {
 				    "x": 1397303.05,
@@ -10349,22 +3884,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7620",
-				    "station_name": "泉岳寺",
-				    "close_ymd": "",
-				    "lon": 139.74002,
-				    "post": "108-0074",
-				    "e_status": 0,
-				    "SUID": 7620,
-				    "station_g_cd": 2700101,
-				    "add": "港区高輪２-１６-３４",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930207",
-				    "pref_name": "東京都",
-				    "shared_name": "9930207",
-				    "lat": 35.638692,
-				    "y": -356386.92,
-				    "x": 1397400.2
+				    "station_name": "泉岳寺"
 			    },
 			    "position": {
 				    "x": 1397400.2,
@@ -10373,22 +3893,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5148",
-				    "station_name": "下板橋",
-				    "close_ymd": "",
-				    "lon": 139.714785,
-				    "post": "170-0011",
-				    "e_status": 0,
-				    "SUID": 5148,
-				    "station_g_cd": 2100103,
-				    "add": "豊島区池袋本町４-４３-１１",
-				    "line_cd": 21001,
-				    "open_ymd": "",
-				    "name": "2100103",
-				    "pref_name": "東京都",
-				    "shared_name": "2100103",
-				    "lat": 35.745721,
-				    "y": -357457.21,
-				    "x": 1397147.85
+				    "station_name": "下板橋"
 			    },
 			    "position": {
 				    "x": 1397147.85,
@@ -10397,22 +3902,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7617",
-				    "station_name": "戸越",
-				    "close_ymd": "",
-				    "lon": 139.716495,
-				    "post": "142-0041",
-				    "e_status": 0,
-				    "SUID": 7617,
-				    "station_g_cd": 2600503,
-				    "add": "品川区戸越３-４-１７",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930204",
-				    "pref_name": "東京都",
-				    "shared_name": "9930204",
-				    "lat": 35.614633000000005,
-				    "y": -356146.3300000001,
-				    "x": 1397164.9500000002
+				    "station_name": "戸越"
 			    },
 			    "position": {
 				    "x": 1397164.9500000002,
@@ -10421,22 +3911,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5146",
-				    "station_name": "池袋",
-				    "close_ymd": "",
-				    "lon": 139.710678,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5146,
-				    "station_g_cd": 1130212,
-				    "add": "東京都豊島区",
-				    "line_cd": 21001,
-				    "open_ymd": "",
-				    "name": "2100101",
-				    "pref_name": "東京都",
-				    "shared_name": "2100101",
-				    "lat": 35.730924,
-				    "y": -357309.24,
-				    "x": 1397106.78
+				    "station_name": "池袋"
 			    },
 			    "position": {
 				    "x": 1397106.78,
@@ -10445,22 +3920,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7618",
-				    "station_name": "五反田",
-				    "close_ymd": "",
-				    "lon": 139.724175,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7618,
-				    "station_g_cd": 1130202,
-				    "add": "東京都品川区東五反田一丁目26-14",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930205",
-				    "pref_name": "東京都",
-				    "shared_name": "9930205",
-				    "lat": 35.627102,
-				    "y": -356271.02,
-				    "x": 1397241.75
+				    "station_name": "五反田"
 			    },
 			    "position": {
 				    "x": 1397241.75,
@@ -10469,22 +3929,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7624",
-				    "station_name": "東銀座",
-				    "close_ymd": "",
-				    "lon": 139.767253,
-				    "post": "104-0061",
-				    "e_status": 0,
-				    "SUID": 7624,
-				    "station_g_cd": 2800313,
-				    "add": "中央区銀座４-１２-１５",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930211",
-				    "pref_name": "東京都",
-				    "shared_name": "9930211",
-				    "lat": 35.669464000000005,
-				    "y": -356694.6400000001,
-				    "x": 1397672.53
+				    "station_name": "東銀座"
 			    },
 			    "position": {
 				    "x": 1397672.53,
@@ -10493,22 +3938,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7623",
-				    "station_name": "新橋",
-				    "close_ymd": "",
-				    "lon": 139.759451,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7623,
-				    "station_g_cd": 1130102,
-				    "add": "東京都港区新橋二丁目21-1",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930210",
-				    "pref_name": "東京都",
-				    "shared_name": "9930210",
-				    "lat": 35.665577,
-				    "y": -356655.77,
-				    "x": 1397594.5100000002
+				    "station_name": "新橋"
 			    },
 			    "position": {
 				    "x": 1397594.5100000002,
@@ -10517,22 +3947,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7622",
-				    "station_name": "大門",
-				    "close_ymd": "",
-				    "lon": 139.75466,
-				    "post": "105-0013",
-				    "e_status": 0,
-				    "SUID": 7622,
-				    "station_g_cd": 9930121,
-				    "add": "港区浜松町１-２７-１２",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930209",
-				    "pref_name": "東京都",
-				    "shared_name": "9930209",
-				    "lat": 35.656785,
-				    "y": -356567.85,
-				    "x": 1397546.6
+				    "station_name": "大門"
 			    },
 			    "position": {
 				    "x": 1397546.6,
@@ -10541,22 +3956,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7621",
-				    "station_name": "三田",
-				    "close_ymd": "",
-				    "lon": 139.748775,
-				    "post": "108-0014",
-				    "e_status": 0,
-				    "SUID": 7621,
-				    "station_g_cd": 9930208,
-				    "add": "港区芝５-３４-１０",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930208",
-				    "pref_name": "東京都",
-				    "shared_name": "9930208",
-				    "lat": 35.648179999999996,
-				    "y": -356481.8,
-				    "x": 1397487.75
+				    "station_name": "三田"
 			    },
 			    "position": {
 				    "x": 1397487.75,
@@ -10565,22 +3965,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7628",
-				    "station_name": "東日本橋",
-				    "close_ymd": "",
-				    "lon": 139.784821,
-				    "post": "103-0004",
-				    "e_status": 0,
-				    "SUID": 7628,
-				    "station_g_cd": 1131403,
-				    "add": "中央区東日本橋３-１１-８",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930215",
-				    "pref_name": "東京都",
-				    "shared_name": "9930215",
-				    "lat": 35.692126,
-				    "y": -356921.26,
-				    "x": 1397848.21
+				    "station_name": "東日本橋"
 			    },
 			    "position": {
 				    "x": 1397848.21,
@@ -10589,22 +3974,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7627",
-				    "station_name": "人形町",
-				    "close_ymd": "",
-				    "lon": 139.782285,
-				    "post": "103-0013",
-				    "e_status": 0,
-				    "SUID": 7627,
-				    "station_g_cd": 2800309,
-				    "add": "中央区日本橋人形町２-６-５",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930214",
-				    "pref_name": "東京都",
-				    "shared_name": "9930214",
-				    "lat": 35.686307,
-				    "y": -356863.07,
-				    "x": 1397822.85
+				    "station_name": "人形町"
 			    },
 			    "position": {
 				    "x": 1397822.85,
@@ -10613,22 +3983,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7626",
-				    "station_name": "日本橋",
-				    "close_ymd": "",
-				    "lon": 139.775721,
-				    "post": "103-0027",
-				    "e_status": 0,
-				    "SUID": 7626,
-				    "station_g_cd": 2800109,
-				    "add": "中央区日本橋１丁目",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930213",
-				    "pref_name": "東京都",
-				    "shared_name": "9930213",
-				    "lat": 35.681688,
-				    "y": -356816.88,
-				    "x": 1397757.21
+				    "station_name": "日本橋"
 			    },
 			    "position": {
 				    "x": 1397757.21,
@@ -10637,22 +3992,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7625",
-				    "station_name": "宝町",
-				    "close_ymd": "",
-				    "lon": 139.77176699999998,
-				    "post": "104-0031",
-				    "e_status": 0,
-				    "SUID": 7625,
-				    "station_g_cd": 2800110,
-				    "add": "中央区京橋２-１３-１１",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930212",
-				    "pref_name": "東京都",
-				    "shared_name": "9930212",
-				    "lat": 35.675461,
-				    "y": -356754.61,
-				    "x": 1397717.67
+				    "station_name": "宝町"
 			    },
 			    "position": {
 				    "x": 1397717.67,
@@ -10661,22 +4001,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7632",
-				    "station_name": "本所吾妻橋",
-				    "close_ymd": "",
-				    "lon": 139.804624,
-				    "post": "130-0001",
-				    "e_status": 0,
-				    "SUID": 7632,
-				    "station_g_cd": 9930219,
-				    "add": "墨田区吾妻橋３-７-１６",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930219",
-				    "pref_name": "東京都",
-				    "shared_name": "9930219",
-				    "lat": 35.70858,
-				    "y": -357085.8,
-				    "x": 1398046.24
+				    "station_name": "本所吾妻橋"
 			    },
 			    "position": {
 				    "x": 1398046.24,
@@ -10685,22 +4010,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7631",
-				    "station_name": "浅草",
-				    "close_ymd": "",
-				    "lon": 139.79697,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7631,
-				    "station_g_cd": 2100201,
-				    "add": "東京都台東区",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930218",
-				    "pref_name": "東京都",
-				    "shared_name": "9930218",
-				    "lat": 35.709461,
-				    "y": -357094.61,
-				    "x": 1397969.7
+				    "station_name": "浅草"
 			    },
 			    "position": {
 				    "x": 1397969.7,
@@ -10709,22 +4019,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7630",
-				    "station_name": "蔵前",
-				    "close_ymd": "",
-				    "lon": 139.790931,
-				    "post": "111-0051",
-				    "e_status": 0,
-				    "SUID": 7630,
-				    "station_g_cd": 9930112,
-				    "add": "台東区蔵前２-３-１",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930217",
-				    "pref_name": "東京都",
-				    "shared_name": "9930217",
-				    "lat": 35.703236,
-				    "y": -357032.36,
-				    "x": 1397909.31
+				    "station_name": "蔵前"
 			    },
 			    "position": {
 				    "x": 1397909.31,
@@ -10733,22 +4028,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7629",
-				    "station_name": "浅草橋",
-				    "close_ymd": "",
-				    "lon": 139.786305,
-				    "post": "111-0053",
-				    "e_status": 0,
-				    "SUID": 7629,
-				    "station_g_cd": 1131320,
-				    "add": "台東区浅草橋１丁目",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930216",
-				    "pref_name": "東京都",
-				    "shared_name": "9930216",
-				    "lat": 35.697451,
-				    "y": -356974.51,
-				    "x": 1397863.05
+				    "station_name": "浅草橋"
 			    },
 			    "position": {
 				    "x": 1397863.05,
@@ -10757,22 +4037,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7636",
-				    "station_name": "白金高輪",
-				    "close_ymd": "",
-				    "lon": 139.734104,
-				    "post": "108-0074",
-				    "e_status": 0,
-				    "SUID": 7636,
-				    "station_g_cd": 2800917,
-				    "add": "港区高輪１-３-２０",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930303",
-				    "pref_name": "東京都",
-				    "shared_name": "9930303",
-				    "lat": 35.642903000000004,
-				    "y": -356429.03,
-				    "x": 1397341.04
+				    "station_name": "白金高輪"
 			    },
 			    "position": {
 				    "x": 1397341.04,
@@ -10781,22 +4046,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7635",
-				    "station_name": "白金台",
-				    "close_ymd": "",
-				    "lon": 139.726133,
-				    "post": "108-0071",
-				    "e_status": 0,
-				    "SUID": 7635,
-				    "station_g_cd": 2800918,
-				    "add": "港区白金台３-２",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930302",
-				    "pref_name": "東京都",
-				    "shared_name": "9930302",
-				    "lat": 35.637917,
-				    "y": -356379.17000000004,
-				    "x": 1397261.33
+				    "station_name": "白金台"
 			    },
 			    "position": {
 				    "x": 1397261.33,
@@ -10805,22 +4055,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7634",
-				    "station_name": "目黒",
-				    "close_ymd": "",
-				    "lon": 139.7155,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7634,
-				    "station_g_cd": 1130203,
-				    "add": "東京都品川区上大崎四丁目2-1",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930301",
-				    "pref_name": "東京都",
-				    "shared_name": "9930301",
-				    "lat": 35.633272,
-				    "y": -356332.72,
-				    "x": 1397155.0
+				    "station_name": "目黒"
 			    },
 			    "position": {
 				    "x": 1397155.0,
@@ -10829,22 +4064,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7633",
-				    "station_name": "押上（スカイツリー前）",
-				    "close_ymd": "",
-				    "lon": 139.812935,
-				    "post": "131-0045",
-				    "e_status": 0,
-				    "SUID": 7633,
-				    "station_g_cd": 2100203,
-				    "add": "墨田区押上一丁目",
-				    "line_cd": 99302,
-				    "open_ymd": "",
-				    "name": "9930220",
-				    "pref_name": "東京都",
-				    "shared_name": "9930220",
-				    "lat": 35.710702000000005,
-				    "y": -357107.0200000001,
-				    "x": 1398129.35
+				    "station_name": "押上（スカイツリー前）"
 			    },
 			    "position": {
 				    "x": 1398129.35,
@@ -10853,22 +4073,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3270",
-				    "station_name": "高尾",
-				    "close_ymd": "",
-				    "lon": 139.282288,
-				    "post": "193-0844",
-				    "e_status": 0,
-				    "SUID": 3270,
-				    "station_g_cd": 1131112,
-				    "add": "八王子市高尾町",
-				    "line_cd": 11328,
-				    "open_ymd": "",
-				    "name": "1132815",
-				    "pref_name": "東京都",
-				    "shared_name": "1132815",
-				    "lat": 35.642026,
-				    "y": -356420.26,
-				    "x": 1392822.88
+				    "station_name": "高尾"
 			    },
 			    "position": {
 				    "x": 1392822.88,
@@ -10877,22 +4082,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3271",
-				    "station_name": "八王子",
-				    "close_ymd": "",
-				    "lon": 139.338998,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 3271,
-				    "station_g_cd": 1130620,
-				    "add": "東京都八王子市旭町1-1",
-				    "line_cd": 11328,
-				    "open_ymd": "1889-08-11",
-				    "name": "1132816",
-				    "pref_name": "東京都",
-				    "shared_name": "1132816",
-				    "lat": 35.655555,
-				    "y": -356555.55,
-				    "x": 1393389.98
+				    "station_name": "八王子"
 			    },
 			    "position": {
 				    "x": 1393389.98,
@@ -10901,22 +4091,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3272",
-				    "station_name": "立川",
-				    "close_ymd": "",
-				    "lon": 139.413704,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 3272,
-				    "station_g_cd": 1130325,
-				    "add": "東京都立川市曙町二丁目1-1",
-				    "line_cd": 11328,
-				    "open_ymd": "1889-04-11",
-				    "name": "1132817",
-				    "pref_name": "東京都",
-				    "shared_name": "1132817",
-				    "lat": 35.698202,
-				    "y": -356982.02,
-				    "x": 1394137.04
+				    "station_name": "立川"
 			    },
 			    "position": {
 				    "x": 1394137.04,
@@ -10925,22 +4100,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7576",
-				    "station_name": "都庁前",
-				    "close_ymd": "",
-				    "lon": 139.69257,
-				    "post": "160-0023",
-				    "e_status": 0,
-				    "SUID": 7576,
-				    "station_g_cd": 9930101,
-				    "add": "新宿区西新宿２-８-１",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930101",
-				    "pref_name": "東京都",
-				    "shared_name": "9930101",
-				    "lat": 35.690551,
-				    "y": -356905.51,
-				    "x": 1396925.7
+				    "station_name": "都庁前"
 			    },
 			    "position": {
 				    "x": 1396925.7,
@@ -10949,22 +4109,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5184",
-				    "station_name": "浅草",
-				    "close_ymd": "",
-				    "lon": 139.798214,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5184,
-				    "station_g_cd": 2100201,
-				    "add": "東京都台東区",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100201",
-				    "pref_name": "東京都",
-				    "shared_name": "2100201",
-				    "lat": 35.711883,
-				    "y": -357118.83,
-				    "x": 1397982.1400000001
+				    "station_name": "浅草"
 			    },
 			    "position": {
 				    "x": 1397982.1400000001,
@@ -10973,22 +4118,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3273",
-				    "station_name": "国分寺",
-				    "close_ymd": "",
-				    "lon": 139.480841,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 3273,
-				    "station_g_cd": 1131106,
-				    "add": "東京都国分寺市本町二丁目",
-				    "line_cd": 11328,
-				    "open_ymd": "1889-04-11",
-				    "name": "1132818",
-				    "pref_name": "東京都",
-				    "shared_name": "1132818",
-				    "lat": 35.700123,
-				    "y": -357001.23,
-				    "x": 1394808.41
+				    "station_name": "国分寺"
 			    },
 			    "position": {
 				    "x": 1394808.41,
@@ -10997,22 +4127,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7577",
-				    "station_name": "西新宿五丁目",
-				    "close_ymd": "",
-				    "lon": 139.684304,
-				    "post": "160-0023",
-				    "e_status": 0,
-				    "SUID": 7577,
-				    "station_g_cd": 9930129,
-				    "add": "新宿区西新宿５-２５-９",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930129",
-				    "pref_name": "東京都",
-				    "shared_name": "9930129",
-				    "lat": 35.689797999999996,
-				    "y": -356897.98,
-				    "x": 1396843.04
+				    "station_name": "西新宿五丁目"
 			    },
 			    "position": {
 				    "x": 1396843.04,
@@ -11021,22 +4136,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5185",
-				    "station_name": "とうきょうスカイツリー",
-				    "close_ymd": "",
-				    "lon": 139.809332,
-				    "post": "131-0045",
-				    "e_status": 0,
-				    "SUID": 5185,
-				    "station_g_cd": 2100202,
-				    "add": "墨田区押上１丁目",
-				    "line_cd": 21002,
-				    "open_ymd": "1902-04-01",
-				    "name": "2100202",
-				    "pref_name": "東京都",
-				    "shared_name": "2100202",
-				    "lat": 35.71043,
-				    "y": -357104.30000000005,
-				    "x": 1398093.32
+				    "station_name": "とうきょうスカイツリー"
 			    },
 			    "position": {
 				    "x": 1398093.32,
@@ -11045,22 +4145,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3274",
-				    "station_name": "三鷹",
-				    "close_ymd": "",
-				    "lon": 139.560325,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 3274,
-				    "station_g_cd": 1131105,
-				    "add": "東京都三鷹市下連雀三丁目46-1",
-				    "line_cd": 11328,
-				    "open_ymd": "1930-06-25",
-				    "name": "1132819",
-				    "pref_name": "東京都",
-				    "shared_name": "1132819",
-				    "lat": 35.702683,
-				    "y": -357026.83,
-				    "x": 1395603.25
+				    "station_name": "三鷹"
 			    },
 			    "position": {
 				    "x": 1395603.25,
@@ -11069,22 +4154,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7578",
-				    "station_name": "新宿西口",
-				    "close_ymd": "",
-				    "lon": 139.69915500000002,
-				    "post": "160-0023",
-				    "e_status": 0,
-				    "SUID": 7578,
-				    "station_g_cd": 9930102,
-				    "add": "新宿区西新宿１-３-１７",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930102",
-				    "pref_name": "東京都",
-				    "shared_name": "9930102",
-				    "lat": 35.693315000000005,
-				    "y": -356933.1500000001,
-				    "x": 1396991.5500000003
+				    "station_name": "新宿西口"
 			    },
 			    "position": {
 				    "x": 1396991.5500000003,
@@ -11093,22 +4163,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5186",
-				    "station_name": "押上〈スカイツリー前〉",
-				    "close_ymd": "",
-				    "lon": 139.812935,
-				    "post": "131-0045",
-				    "e_status": 0,
-				    "SUID": 5186,
-				    "station_g_cd": 2100203,
-				    "add": "墨田区押上一丁目",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100203",
-				    "pref_name": "東京都",
-				    "shared_name": "2100203",
-				    "lat": 35.710702000000005,
-				    "y": -357107.0200000001,
-				    "x": 1398129.35
+				    "station_name": "押上〈スカイツリー前〉"
 			    },
 			    "position": {
 				    "x": 1398129.35,
@@ -11117,22 +4172,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3275",
-				    "station_name": "吉祥寺",
-				    "close_ymd": "",
-				    "lon": 139.57976499999998,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 3275,
-				    "station_g_cd": 1131104,
-				    "add": "東京都武蔵野市吉祥寺南町",
-				    "line_cd": 11328,
-				    "open_ymd": "1899-12-30",
-				    "name": "1132820",
-				    "pref_name": "東京都",
-				    "shared_name": "1132820",
-				    "lat": 35.703119,
-				    "y": -357031.19,
-				    "x": 1395797.65
+				    "station_name": "吉祥寺"
 			    },
 			    "position": {
 				    "x": 1395797.65,
@@ -11141,22 +4181,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7579",
-				    "station_name": "東新宿",
-				    "close_ymd": "",
-				    "lon": 139.707549,
-				    "post": "160-0022",
-				    "e_status": 0,
-				    "SUID": 7579,
-				    "station_g_cd": 2801012,
-				    "add": "新宿区新宿７-２７-３",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930103",
-				    "pref_name": "東京都",
-				    "shared_name": "9930103",
-				    "lat": 35.69792,
-				    "y": -356979.2,
-				    "x": 1397075.49
+				    "station_name": "東新宿"
 			    },
 			    "position": {
 				    "x": 1397075.49,
@@ -11165,22 +4190,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5187",
-				    "station_name": "曳舟",
-				    "close_ymd": "",
-				    "lon": 139.81663400000002,
-				    "post": "131-0032",
-				    "e_status": 0,
-				    "SUID": 5187,
-				    "station_g_cd": 2100204,
-				    "add": "墨田区東向島２丁目",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100204",
-				    "pref_name": "東京都",
-				    "shared_name": "2100204",
-				    "lat": 35.718418,
-				    "y": -357184.18,
-				    "x": 1398166.3400000003
+				    "station_name": "曳舟"
 			    },
 			    "position": {
 				    "x": 1398166.3400000003,
@@ -11189,22 +4199,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5188",
-				    "station_name": "東向島",
-				    "close_ymd": "",
-				    "lon": 139.819306,
-				    "post": "131-0032",
-				    "e_status": 0,
-				    "SUID": 5188,
-				    "station_g_cd": 2100205,
-				    "add": "墨田区東向島４丁目",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100205",
-				    "pref_name": "東京都",
-				    "shared_name": "2100205",
-				    "lat": 35.724323999999996,
-				    "y": -357243.23999999993,
-				    "x": 1398193.06
+				    "station_name": "東向島"
 			    },
 			    "position": {
 				    "x": 1398193.06,
@@ -11213,22 +4208,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7580",
-				    "station_name": "若松河田",
-				    "close_ymd": "",
-				    "lon": 139.718184,
-				    "post": "162-0054",
-				    "e_status": 0,
-				    "SUID": 7580,
-				    "station_g_cd": 9930104,
-				    "add": "新宿区河田町１０-１０",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930104",
-				    "pref_name": "東京都",
-				    "shared_name": "9930104",
-				    "lat": 35.699218,
-				    "y": -356992.18,
-				    "x": 1397181.84
+				    "station_name": "若松河田"
 			    },
 			    "position": {
 				    "x": 1397181.84,
@@ -11237,22 +4217,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7581",
-				    "station_name": "牛込柳町",
-				    "close_ymd": "",
-				    "lon": 139.725027,
-				    "post": "162-0053",
-				    "e_status": 0,
-				    "SUID": 7581,
-				    "station_g_cd": 9930105,
-				    "add": "新宿区原町２-３２",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930105",
-				    "pref_name": "東京都",
-				    "shared_name": "9930105",
-				    "lat": 35.699518,
-				    "y": -356995.18,
-				    "x": 1397250.27
+				    "station_name": "牛込柳町"
 			    },
 			    "position": {
 				    "x": 1397250.27,
@@ -11261,22 +4226,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7582",
-				    "station_name": "牛込神楽坂",
-				    "close_ymd": "",
-				    "lon": 139.735802,
-				    "post": "162-0833",
-				    "e_status": 0,
-				    "SUID": 7582,
-				    "station_g_cd": 9930106,
-				    "add": "新宿区箪笥町１５",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930106",
-				    "pref_name": "東京都",
-				    "shared_name": "9930106",
-				    "lat": 35.700851,
-				    "y": -357008.51,
-				    "x": 1397358.02
+				    "station_name": "牛込神楽坂"
 			    },
 			    "position": {
 				    "x": 1397358.02,
@@ -11285,22 +4235,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7583",
-				    "station_name": "飯田橋",
-				    "close_ymd": "",
-				    "lon": 139.744999,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7583,
-				    "station_g_cd": 1131205,
-				    "add": "東京都文京区後楽一丁目9-5",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930107",
-				    "pref_name": "東京都",
-				    "shared_name": "9930107",
-				    "lat": 35.702927,
-				    "y": -357029.27,
-				    "x": 1397449.99
+				    "station_name": "飯田橋"
 			    },
 			    "position": {
 				    "x": 1397449.99,
@@ -11309,22 +4244,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7584",
-				    "station_name": "春日",
-				    "close_ymd": "",
-				    "lon": 139.75325,
-				    "post": "112-0003",
-				    "e_status": 0,
-				    "SUID": 7584,
-				    "station_g_cd": 9930108,
-				    "add": "文京区春日１-１６-１７",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930108",
-				    "pref_name": "東京都",
-				    "shared_name": "9930108",
-				    "lat": 35.709598,
-				    "y": -357095.98,
-				    "x": 1397532.5
+				    "station_name": "春日"
 			    },
 			    "position": {
 				    "x": 1397532.5,
@@ -11333,22 +4253,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7585",
-				    "station_name": "本郷三丁目",
-				    "close_ymd": "",
-				    "lon": 139.760095,
-				    "post": "113-0033",
-				    "e_status": 0,
-				    "SUID": 7585,
-				    "station_g_cd": 2800205,
-				    "add": "文京区本郷２-３９-１",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930109",
-				    "pref_name": "東京都",
-				    "shared_name": "9930109",
-				    "lat": 35.707462,
-				    "y": -357074.62,
-				    "x": 1397600.95
+				    "station_name": "本郷三丁目"
 			    },
 			    "position": {
 				    "x": 1397600.95,
@@ -11357,22 +4262,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7586",
-				    "station_name": "上野御徒町",
-				    "close_ymd": "",
-				    "lon": 139.77433200000002,
-				    "post": "110-0005",
-				    "e_status": 0,
-				    "SUID": 7586,
-				    "station_g_cd": 1130221,
-				    "add": "台東区上野５-２６-６",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930110",
-				    "pref_name": "東京都",
-				    "shared_name": "9930110",
-				    "lat": 35.707893,
-				    "y": -357078.93,
-				    "x": 1397743.32
+				    "station_name": "上野御徒町"
 			    },
 			    "position": {
 				    "x": 1397743.32,
@@ -11381,22 +4271,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7587",
-				    "station_name": "新御徒町",
-				    "close_ymd": "",
-				    "lon": 139.781958,
-				    "post": "111-0041",
-				    "e_status": 0,
-				    "SUID": 7587,
-				    "station_g_cd": 9930111,
-				    "add": "台東区元浅草１-５-２",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930111",
-				    "pref_name": "東京都",
-				    "shared_name": "9930111",
-				    "lat": 35.707045,
-				    "y": -357070.45,
-				    "x": 1397819.58
+				    "station_name": "新御徒町"
 			    },
 			    "position": {
 				    "x": 1397819.58,
@@ -11405,22 +4280,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7588",
-				    "station_name": "蔵前",
-				    "close_ymd": "",
-				    "lon": 139.790931,
-				    "post": "111-0051",
-				    "e_status": 0,
-				    "SUID": 7588,
-				    "station_g_cd": 9930112,
-				    "add": "台東区蔵前２-３-１",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930112",
-				    "pref_name": "東京都",
-				    "shared_name": "9930112",
-				    "lat": 35.703236,
-				    "y": -357032.36,
-				    "x": 1397909.31
+				    "station_name": "蔵前"
 			    },
 			    "position": {
 				    "x": 1397909.31,
@@ -11429,22 +4289,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7590",
-				    "station_name": "森下",
-				    "close_ymd": "",
-				    "lon": 139.797042,
-				    "post": "135-0004",
-				    "e_status": 0,
-				    "SUID": 7590,
-				    "station_g_cd": 9930114,
-				    "add": "江東区森下２-１７-１７",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930114",
-				    "pref_name": "東京都",
-				    "shared_name": "9930114",
-				    "lat": 35.68796,
-				    "y": -356879.6,
-				    "x": 1397970.4200000002
+				    "station_name": "森下"
 			    },
 			    "position": {
 				    "x": 1397970.4200000002,
@@ -11453,22 +4298,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5197",
-				    "station_name": "竹ノ塚",
-				    "close_ymd": "",
-				    "lon": 139.790788,
-				    "post": "121-0813",
-				    "e_status": 0,
-				    "SUID": 5197,
-				    "station_g_cd": 2100214,
-				    "add": "足立区竹の塚６丁目",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100214",
-				    "pref_name": "東京都",
-				    "shared_name": "2100214",
-				    "lat": 35.794368,
-				    "y": -357943.68,
-				    "x": 1397907.88
+				    "station_name": "竹ノ塚"
 			    },
 			    "position": {
 				    "x": 1397907.88,
@@ -11477,22 +4307,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7589",
-				    "station_name": "両国",
-				    "close_ymd": "",
-				    "lon": 139.79742099999999,
-				    "post": "130-0015",
-				    "e_status": 0,
-				    "SUID": 7589,
-				    "station_g_cd": 1131321,
-				    "add": "墨田区横網１丁目",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930113",
-				    "pref_name": "東京都",
-				    "shared_name": "9930113",
-				    "lat": 35.696881,
-				    "y": -356968.81,
-				    "x": 1397974.21
+				    "station_name": "両国"
 			    },
 			    "position": {
 				    "x": 1397974.21,
@@ -11501,22 +4316,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7592",
-				    "station_name": "門前仲町",
-				    "close_ymd": "",
-				    "lon": 139.796209,
-				    "post": "135-0048",
-				    "e_status": 0,
-				    "SUID": 7592,
-				    "station_g_cd": 2800412,
-				    "add": "江東区門前仲町１丁目",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930116",
-				    "pref_name": "東京都",
-				    "shared_name": "9930116",
-				    "lat": 35.671851000000004,
-				    "y": -356718.51,
-				    "x": 1397962.09
+				    "station_name": "門前仲町"
 			    },
 			    "position": {
 				    "x": 1397962.09,
@@ -11525,22 +4325,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7591",
-				    "station_name": "清澄白河",
-				    "close_ymd": "",
-				    "lon": 139.798851,
-				    "post": "135-0021",
-				    "e_status": 0,
-				    "SUID": 7591,
-				    "station_g_cd": 2800811,
-				    "add": "江東区白河１-７-１４",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930115",
-				    "pref_name": "東京都",
-				    "shared_name": "9930115",
-				    "lat": 35.682105,
-				    "y": -356821.05,
-				    "x": 1397988.5100000002
+				    "station_name": "清澄白河"
 			    },
 			    "position": {
 				    "x": 1397988.5100000002,
@@ -11549,22 +4334,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7594",
-				    "station_name": "勝どき",
-				    "close_ymd": "",
-				    "lon": 139.776442,
-				    "post": "104-0054",
-				    "e_status": 0,
-				    "SUID": 7594,
-				    "station_g_cd": 9930118,
-				    "add": "中央区勝どき２-１０-１５",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930118",
-				    "pref_name": "東京都",
-				    "shared_name": "9930118",
-				    "lat": 35.658507,
-				    "y": -356585.07,
-				    "x": 1397764.42
+				    "station_name": "勝どき"
 			    },
 			    "position": {
 				    "x": 1397764.42,
@@ -11573,22 +4343,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7593",
-				    "station_name": "月島",
-				    "close_ymd": "",
-				    "lon": 139.784233,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7593,
-				    "station_g_cd": 2800621,
-				    "add": "東京都中央区月島一丁目3-9",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930117",
-				    "pref_name": "東京都",
-				    "shared_name": "9930117",
-				    "lat": 35.664871000000005,
-				    "y": -356648.7100000001,
-				    "x": 1397842.33
+				    "station_name": "月島"
 			    },
 			    "position": {
 				    "x": 1397842.33,
@@ -11597,22 +4352,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3260",
-				    "station_name": "池袋",
-				    "close_ymd": "",
-				    "lon": 139.71108600000002,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3260,
-				    "station_g_cd": 1130212,
-				    "add": "東京都豊島区",
-				    "line_cd": 11328,
-				    "open_ymd": "",
-				    "name": "1132805",
-				    "pref_name": "東京都",
-				    "shared_name": "1132805",
-				    "lat": 35.730256,
-				    "y": -357302.56,
-				    "x": 1397110.8600000003
+				    "station_name": "池袋"
 			    },
 			    "position": {
 				    "x": 1397110.8600000003,
@@ -11621,22 +4361,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7596",
-				    "station_name": "汐留",
-				    "close_ymd": "",
-				    "lon": 139.760642,
-				    "post": "105-0021",
-				    "e_status": 0,
-				    "SUID": 7596,
-				    "station_g_cd": 9930120,
-				    "add": "港区東新橋１丁目５",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930120",
-				    "pref_name": "東京都",
-				    "shared_name": "9930120",
-				    "lat": 35.663703000000005,
-				    "y": -356637.03,
-				    "x": 1397606.42
+				    "station_name": "汐留"
 			    },
 			    "position": {
 				    "x": 1397606.42,
@@ -11645,22 +4370,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7595",
-				    "station_name": "築地市場",
-				    "close_ymd": "",
-				    "lon": 139.76691499999998,
-				    "post": "104-0045",
-				    "e_status": 0,
-				    "SUID": 7595,
-				    "station_g_cd": 9930119,
-				    "add": "中央区築地５-１-２",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930119",
-				    "pref_name": "東京都",
-				    "shared_name": "9930119",
-				    "lat": 35.664895,
-				    "y": -356648.95,
-				    "x": 1397669.15
+				    "station_name": "築地市場"
 			    },
 			    "position": {
 				    "x": 1397669.15,
@@ -11669,22 +4379,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5190",
-				    "station_name": "堀切",
-				    "close_ymd": "",
-				    "lon": 139.817727,
-				    "post": "120-0023",
-				    "e_status": 0,
-				    "SUID": 5190,
-				    "station_g_cd": 2100207,
-				    "add": "足立区千住曙町",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100207",
-				    "pref_name": "東京都",
-				    "shared_name": "2100207",
-				    "lat": 35.742977,
-				    "y": -357429.77,
-				    "x": 1398177.27
+				    "station_name": "堀切"
 			    },
 			    "position": {
 				    "x": 1398177.27,
@@ -11693,22 +4388,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3262",
-				    "station_name": "渋谷",
-				    "close_ymd": "",
-				    "lon": 139.701238,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3262,
-				    "station_g_cd": 1130205,
-				    "add": "東京都渋谷区道玄坂一丁目1-1",
-				    "line_cd": 11328,
-				    "open_ymd": "",
-				    "name": "1132807",
-				    "pref_name": "東京都",
-				    "shared_name": "1132807",
-				    "lat": 35.658871000000005,
-				    "y": -356588.71,
-				    "x": 1397012.38
+				    "station_name": "渋谷"
 			    },
 			    "position": {
 				    "x": 1397012.38,
@@ -11717,22 +4397,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7598",
-				    "station_name": "赤羽橋",
-				    "close_ymd": "",
-				    "lon": 139.743642,
-				    "post": "106-0044",
-				    "e_status": 0,
-				    "SUID": 7598,
-				    "station_g_cd": 9930122,
-				    "add": "港区東麻布１-２８-１３",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930122",
-				    "pref_name": "東京都",
-				    "shared_name": "9930122",
-				    "lat": 35.655007,
-				    "y": -356550.06999999995,
-				    "x": 1397436.42
+				    "station_name": "赤羽橋"
 			    },
 			    "position": {
 				    "x": 1397436.42,
@@ -11741,22 +4406,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5189",
-				    "station_name": "鐘ヶ淵",
-				    "close_ymd": "",
-				    "lon": 139.820344,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5189,
-				    "station_g_cd": 2100206,
-				    "add": "東京都墨田区墨田5丁目",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100206",
-				    "pref_name": "東京都",
-				    "shared_name": "2100206",
-				    "lat": 35.733712,
-				    "y": -357337.12,
-				    "x": 1398203.44
+				    "station_name": "鐘ヶ淵"
 			    },
 			    "position": {
 				    "x": 1398203.44,
@@ -11765,22 +4415,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3261",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.70046399999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3261,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区新宿三丁目38-1",
-				    "line_cd": 11328,
-				    "open_ymd": "",
-				    "name": "1132806",
-				    "pref_name": "東京都",
-				    "shared_name": "1132806",
-				    "lat": 35.689729,
-				    "y": -356897.29,
-				    "x": 1397004.64
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1397004.64,
@@ -11789,22 +4424,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7597",
-				    "station_name": "大門",
-				    "close_ymd": "",
-				    "lon": 139.75466,
-				    "post": "105-0013",
-				    "e_status": 0,
-				    "SUID": 7597,
-				    "station_g_cd": 9930121,
-				    "add": "港区浜松町１-２７-１２",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930121",
-				    "pref_name": "東京都",
-				    "shared_name": "9930121",
-				    "lat": 35.656785,
-				    "y": -356567.85,
-				    "x": 1397546.6
+				    "station_name": "大門"
 			    },
 			    "position": {
 				    "x": 1397546.6,
@@ -11813,22 +4433,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5192",
-				    "station_name": "北千住",
-				    "close_ymd": "",
-				    "lon": 139.805564,
-				    "post": "120-0026",
-				    "e_status": 0,
-				    "SUID": 5192,
-				    "station_g_cd": 1132005,
-				    "add": "足立区千住旭町",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100209",
-				    "pref_name": "東京都",
-				    "shared_name": "2100209",
-				    "lat": 35.749891,
-				    "y": -357498.91,
-				    "x": 1398055.6400000001
+				    "station_name": "北千住"
 			    },
 			    "position": {
 				    "x": 1398055.6400000001,
@@ -11837,22 +4442,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3264",
-				    "station_name": "東京",
-				    "close_ymd": "",
-				    "lon": 139.76610300000002,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3264,
-				    "station_g_cd": 1130101,
-				    "add": "東京都千代田区丸の内一丁目",
-				    "line_cd": 11328,
-				    "open_ymd": "",
-				    "name": "1132809",
-				    "pref_name": "東京都",
-				    "shared_name": "1132809",
-				    "lat": 35.681391,
-				    "y": -356813.91,
-				    "x": 1397661.0300000003
+				    "station_name": "東京"
 			    },
 			    "position": {
 				    "x": 1397661.0300000003,
@@ -11861,22 +4451,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7600",
-				    "station_name": "六本木",
-				    "close_ymd": "",
-				    "lon": 139.73156699999998,
-				    "post": "106-0032",
-				    "e_status": 0,
-				    "SUID": 7600,
-				    "station_g_cd": 2800318,
-				    "add": "港区六本木６-１-２５",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930124",
-				    "pref_name": "東京都",
-				    "shared_name": "9930124",
-				    "lat": 35.663921,
-				    "y": -356639.21,
-				    "x": 1397315.67
+				    "station_name": "六本木"
 			    },
 			    "position": {
 				    "x": 1397315.67,
@@ -11885,22 +4460,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5191",
-				    "station_name": "牛田",
-				    "close_ymd": "",
-				    "lon": 139.811816,
-				    "post": "120-0023",
-				    "e_status": 0,
-				    "SUID": 5191,
-				    "station_g_cd": 2100208,
-				    "add": "足立区千住曙町",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100208",
-				    "pref_name": "東京都",
-				    "shared_name": "2100208",
-				    "lat": 35.744555,
-				    "y": -357445.55,
-				    "x": 1398118.16
+				    "station_name": "牛田"
 			    },
 			    "position": {
 				    "x": 1398118.16,
@@ -11909,22 +4469,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3263",
-				    "station_name": "品川",
-				    "close_ymd": "",
-				    "lon": 139.738999,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3263,
-				    "station_g_cd": 1130103,
-				    "add": "東京都港区高輪三丁目26-26",
-				    "line_cd": 11328,
-				    "open_ymd": "",
-				    "name": "1132808",
-				    "pref_name": "東京都",
-				    "shared_name": "1132808",
-				    "lat": 35.62876,
-				    "y": -356287.6,
-				    "x": 1397389.99
+				    "station_name": "品川"
 			    },
 			    "position": {
 				    "x": 1397389.99,
@@ -11933,22 +4478,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7599",
-				    "station_name": "麻布十番",
-				    "close_ymd": "",
-				    "lon": 139.73611599999998,
-				    "post": "106-0045",
-				    "e_status": 0,
-				    "SUID": 7599,
-				    "station_g_cd": 2800916,
-				    "add": "港区麻布十番４-４-９",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930123",
-				    "pref_name": "東京都",
-				    "shared_name": "9930123",
-				    "lat": 35.656503,
-				    "y": -356565.03,
-				    "x": 1397361.16
+				    "station_name": "麻布十番"
 			    },
 			    "position": {
 				    "x": 1397361.16,
@@ -11957,22 +4487,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5194",
-				    "station_name": "五反野",
-				    "close_ymd": "",
-				    "lon": 139.809643,
-				    "post": "120-0015",
-				    "e_status": 0,
-				    "SUID": 5194,
-				    "station_g_cd": 2100211,
-				    "add": "足立区足立３丁目",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100211",
-				    "pref_name": "東京都",
-				    "shared_name": "2100211",
-				    "lat": 35.765852,
-				    "y": -357658.52,
-				    "x": 1398096.43
+				    "station_name": "五反野"
 			    },
 			    "position": {
 				    "x": 1398096.43,
@@ -11981,22 +4496,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7602",
-				    "station_name": "国立競技場",
-				    "close_ymd": "",
-				    "lon": 139.714932,
-				    "post": "160-0013",
-				    "e_status": 0,
-				    "SUID": 7602,
-				    "station_g_cd": 9930126,
-				    "add": "新宿区霞ケ丘町１０-３",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930126",
-				    "pref_name": "東京都",
-				    "shared_name": "9930126",
-				    "lat": 35.679831,
-				    "y": -356798.31,
-				    "x": 1397149.32
+				    "station_name": "国立競技場"
 			    },
 			    "position": {
 				    "x": 1397149.32,
@@ -12005,22 +4505,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5193",
-				    "station_name": "小菅",
-				    "close_ymd": "",
-				    "lon": 139.812935,
-				    "post": "120-0015",
-				    "e_status": 0,
-				    "SUID": 5193,
-				    "station_g_cd": 2100210,
-				    "add": "足立区足立２丁目",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100210",
-				    "pref_name": "東京都",
-				    "shared_name": "2100210",
-				    "lat": 35.759039,
-				    "y": -357590.39,
-				    "x": 1398129.35
+				    "station_name": "小菅"
 			    },
 			    "position": {
 				    "x": 1398129.35,
@@ -12029,22 +4514,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7601",
-				    "station_name": "青山一丁目",
-				    "close_ymd": "",
-				    "lon": 139.72396,
-				    "post": "107-0062",
-				    "e_status": 0,
-				    "SUID": 7601,
-				    "station_g_cd": 2800116,
-				    "add": "港区南青山１-１-１９",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930125",
-				    "pref_name": "東京都",
-				    "shared_name": "9930125",
-				    "lat": 35.672928999999996,
-				    "y": -356729.29,
-				    "x": 1397239.6
+				    "station_name": "青山一丁目"
 			    },
 			    "position": {
 				    "x": 1397239.6,
@@ -12053,22 +4523,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5196",
-				    "station_name": "西新井",
-				    "close_ymd": "",
-				    "lon": 139.790372,
-				    "post": "123-0843",
-				    "e_status": 0,
-				    "SUID": 5196,
-				    "station_g_cd": 2100213,
-				    "add": "足立区西新井栄町２丁目",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100213",
-				    "pref_name": "東京都",
-				    "shared_name": "2100213",
-				    "lat": 35.777322999999996,
-				    "y": -357773.23,
-				    "x": 1397903.72
+				    "station_name": "西新井"
 			    },
 			    "position": {
 				    "x": 1397903.72,
@@ -12077,22 +4532,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7604",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.698812,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7604,
-				    "station_g_cd": 1130208,
-				    "add": "東京都渋谷区代々木二丁目1-1",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930128",
-				    "pref_name": "東京都",
-				    "shared_name": "9930128",
-				    "lat": 35.68869,
-				    "y": -356886.9,
-				    "x": 1396988.12
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1396988.12,
@@ -12101,22 +4541,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5195",
-				    "station_name": "梅島",
-				    "close_ymd": "",
-				    "lon": 139.797916,
-				    "post": "123-0851",
-				    "e_status": 0,
-				    "SUID": 5195,
-				    "station_g_cd": 2100212,
-				    "add": "足立区梅田７丁目",
-				    "line_cd": 21002,
-				    "open_ymd": "",
-				    "name": "2100212",
-				    "pref_name": "東京都",
-				    "shared_name": "2100212",
-				    "lat": 35.772437,
-				    "y": -357724.36999999994,
-				    "x": 1397979.16
+				    "station_name": "梅島"
 			    },
 			    "position": {
 				    "x": 1397979.16,
@@ -12125,22 +4550,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7603",
-				    "station_name": "代々木",
-				    "close_ymd": "",
-				    "lon": 139.701666,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7603,
-				    "station_g_cd": 1130207,
-				    "add": "東京都渋谷区代々木一丁目35-5",
-				    "line_cd": 99301,
-				    "open_ymd": "",
-				    "name": "9930127",
-				    "pref_name": "東京都",
-				    "shared_name": "9930127",
-				    "lat": 35.683218,
-				    "y": -356832.18,
-				    "x": 1397016.66
+				    "station_name": "代々木"
 			    },
 			    "position": {
 				    "x": 1397016.66,
@@ -12149,22 +4559,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7675",
-				    "station_name": "大島",
-				    "close_ymd": "",
-				    "lon": 139.83565,
-				    "post": "136-0072",
-				    "e_status": 0,
-				    "SUID": 7675,
-				    "station_g_cd": 9930415,
-				    "add": "江東区大島５-１０-８",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930415",
-				    "pref_name": "東京都",
-				    "shared_name": "9930415",
-				    "lat": 35.689904999999996,
-				    "y": -356899.05,
-				    "x": 1398356.4999999998
+				    "station_name": "大島"
 			    },
 			    "position": {
 				    "x": 1398356.4999999998,
@@ -12173,22 +4568,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7676",
-				    "station_name": "東大島",
-				    "close_ymd": "",
-				    "lon": 139.84596299999998,
-				    "post": "136-0072",
-				    "e_status": 0,
-				    "SUID": 7676,
-				    "station_g_cd": 9930416,
-				    "add": "江東区大島９-３-１４",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930416",
-				    "pref_name": "東京都",
-				    "shared_name": "9930416",
-				    "lat": 35.690355,
-				    "y": -356903.55,
-				    "x": 1398459.63
+				    "station_name": "東大島"
 			    },
 			    "position": {
 				    "x": 1398459.63,
@@ -12197,22 +4577,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7673",
-				    "station_name": "住吉",
-				    "close_ymd": "",
-				    "lon": 139.815681,
-				    "post": "135-0002",
-				    "e_status": 0,
-				    "SUID": 7673,
-				    "station_g_cd": 2800814,
-				    "add": "江東区住吉２-２３-１２",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930413",
-				    "pref_name": "東京都",
-				    "shared_name": "9930413",
-				    "lat": 35.689073,
-				    "y": -356890.73,
-				    "x": 1398156.81
+				    "station_name": "住吉"
 			    },
 			    "position": {
 				    "x": 1398156.81,
@@ -12221,22 +4586,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7674",
-				    "station_name": "西大島",
-				    "close_ymd": "",
-				    "lon": 139.826206,
-				    "post": "136-0072",
-				    "e_status": 0,
-				    "SUID": 7674,
-				    "station_g_cd": 9930414,
-				    "add": "江東区大島２-４１-１９",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930414",
-				    "pref_name": "東京都",
-				    "shared_name": "9930414",
-				    "lat": 35.689349,
-				    "y": -356893.49,
-				    "x": 1398262.06
+				    "station_name": "西大島"
 			    },
 			    "position": {
 				    "x": 1398262.06,
@@ -12245,22 +4595,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7671",
-				    "station_name": "森下",
-				    "close_ymd": "",
-				    "lon": 139.797042,
-				    "post": "135-0004",
-				    "e_status": 0,
-				    "SUID": 7671,
-				    "station_g_cd": 9930114,
-				    "add": "江東区森下２-１７-１７",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930411",
-				    "pref_name": "東京都",
-				    "shared_name": "9930411",
-				    "lat": 35.68796,
-				    "y": -356879.6,
-				    "x": 1397970.4200000002
+				    "station_name": "森下"
 			    },
 			    "position": {
 				    "x": 1397970.4200000002,
@@ -12269,22 +4604,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7672",
-				    "station_name": "菊川",
-				    "close_ymd": "",
-				    "lon": 139.806016,
-				    "post": "130-0024",
-				    "e_status": 0,
-				    "SUID": 7672,
-				    "station_g_cd": 9930412,
-				    "add": "墨田区菊川３-１６-２",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930412",
-				    "pref_name": "東京都",
-				    "shared_name": "9930412",
-				    "lat": 35.688379,
-				    "y": -356883.79,
-				    "x": 1398060.16
+				    "station_name": "菊川"
 			    },
 			    "position": {
 				    "x": 1398060.16,
@@ -12293,22 +4613,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7669",
-				    "station_name": "馬喰横山",
-				    "close_ymd": "",
-				    "lon": 139.782768,
-				    "post": "103-0003",
-				    "e_status": 0,
-				    "SUID": 7669,
-				    "station_g_cd": 1131403,
-				    "add": "中央区日本橋横山町４-１３",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930409",
-				    "pref_name": "東京都",
-				    "shared_name": "9930409",
-				    "lat": 35.69212,
-				    "y": -356921.2,
-				    "x": 1397827.68
+				    "station_name": "馬喰横山"
 			    },
 			    "position": {
 				    "x": 1397827.68,
@@ -12317,22 +4622,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7670",
-				    "station_name": "浜町",
-				    "close_ymd": "",
-				    "lon": 139.788154,
-				    "post": "103-0007",
-				    "e_status": 0,
-				    "SUID": 7670,
-				    "station_g_cd": 9930410,
-				    "add": "中央区日本橋浜町２-５９-３",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930410",
-				    "pref_name": "東京都",
-				    "shared_name": "9930410",
-				    "lat": 35.688516,
-				    "y": -356885.16,
-				    "x": 1397881.5399999998
+				    "station_name": "浜町"
 			    },
 			    "position": {
 				    "x": 1397881.5399999998,
@@ -12341,22 +4631,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3315",
-				    "station_name": "田端",
-				    "close_ymd": "",
-				    "lon": 139.76122900000001,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3315,
-				    "station_g_cd": 1130216,
-				    "add": "東京都北区東田端一丁目17-1",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133214",
-				    "pref_name": "東京都",
-				    "shared_name": "1133214",
-				    "lat": 35.737781,
-				    "y": -357377.81,
-				    "x": 1397612.29
+				    "station_name": "田端"
 			    },
 			    "position": {
 				    "x": 1397612.29,
@@ -12365,22 +4640,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7683",
-				    "station_name": "荒川一中前",
-				    "close_ymd": "",
-				    "lon": 139.788988,
-				    "post": "116-0003",
-				    "e_status": 0,
-				    "SUID": 7683,
-				    "station_g_cd": 9930502,
-				    "add": "荒川区南千住１-１",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930502",
-				    "pref_name": "東京都",
-				    "shared_name": "9930502",
-				    "lat": 35.733659,
-				    "y": -357336.59,
-				    "x": 1397889.88
+				    "station_name": "荒川一中前"
 			    },
 			    "position": {
 				    "x": 1397889.88,
@@ -12389,22 +4649,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3316",
-				    "station_name": "西日暮里",
-				    "close_ymd": "",
-				    "lon": 139.76685700000002,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3316,
-				    "station_g_cd": 1130217,
-				    "add": "東京都荒川区西日暮里五丁目22-1",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133215",
-				    "pref_name": "東京都",
-				    "shared_name": "1133215",
-				    "lat": 35.731953999999995,
-				    "y": -357319.5399999999,
-				    "x": 1397668.57
+				    "station_name": "西日暮里"
 			    },
 			    "position": {
 				    "x": 1397668.57,
@@ -12413,22 +4658,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7684",
-				    "station_name": "荒川区役所前",
-				    "close_ymd": "",
-				    "lon": 139.78645600000002,
-				    "post": "116-0002",
-				    "e_status": 0,
-				    "SUID": 7684,
-				    "station_g_cd": 9930503,
-				    "add": "荒川区荒川１",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930503",
-				    "pref_name": "東京都",
-				    "shared_name": "9930503",
-				    "lat": 35.73493,
-				    "y": -357349.3,
-				    "x": 1397864.56
+				    "station_name": "荒川区役所前"
 			    },
 			    "position": {
 				    "x": 1397864.56,
@@ -12437,22 +4667,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3313",
-				    "station_name": "王子",
-				    "close_ymd": "",
-				    "lon": 139.73809,
-				    "post": "114-0002",
-				    "e_status": 0,
-				    "SUID": 3313,
-				    "station_g_cd": 1133212,
-				    "add": "北区王子１丁目",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133212",
-				    "pref_name": "東京都",
-				    "shared_name": "1133212",
-				    "lat": 35.752538,
-				    "y": -357525.38,
-				    "x": 1397380.9
+				    "station_name": "王子"
 			    },
 			    "position": {
 				    "x": 1397380.9,
@@ -12461,22 +4676,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3314",
-				    "station_name": "上中里",
-				    "close_ymd": "",
-				    "lon": 139.745769,
-				    "post": "114-0016",
-				    "e_status": 0,
-				    "SUID": 3314,
-				    "station_g_cd": 1133213,
-				    "add": "北区上中里１丁目",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133213",
-				    "pref_name": "東京都",
-				    "shared_name": "1133213",
-				    "lat": 35.747279999999996,
-				    "y": -357472.8,
-				    "x": 1397457.69
+				    "station_name": "上中里"
 			    },
 			    "position": {
 				    "x": 1397457.69,
@@ -12485,22 +4685,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7682",
-				    "station_name": "三ノ輪橋",
-				    "close_ymd": "",
-				    "lon": 139.791412,
-				    "post": "116-0003",
-				    "e_status": 0,
-				    "SUID": 7682,
-				    "station_g_cd": 9930501,
-				    "add": "荒川区南千住１",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930501",
-				    "pref_name": "東京都",
-				    "shared_name": "9930501",
-				    "lat": 35.732248,
-				    "y": -357322.48,
-				    "x": 1397914.12
+				    "station_name": "三ノ輪橋"
 			    },
 			    "position": {
 				    "x": 1397914.12,
@@ -12509,22 +4694,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3311",
-				    "station_name": "赤羽",
-				    "close_ymd": "",
-				    "lon": 139.72092800000001,
-				    "post": "115-0045",
-				    "e_status": 0,
-				    "SUID": 3311,
-				    "station_g_cd": 1131903,
-				    "add": "北区赤羽１丁目",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133210",
-				    "pref_name": "東京都",
-				    "shared_name": "1133210",
-				    "lat": 35.778026000000004,
-				    "y": -357780.26000000007,
-				    "x": 1397209.2800000003
+				    "station_name": "赤羽"
 			    },
 			    "position": {
 				    "x": 1397209.2800000003,
@@ -12533,22 +4703,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7679",
-				    "station_name": "瑞江",
-				    "close_ymd": "",
-				    "lon": 139.89761000000001,
-				    "post": "132-0011",
-				    "e_status": 0,
-				    "SUID": 7679,
-				    "station_g_cd": 9930419,
-				    "add": "江戸川区瑞江２-２-１",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930419",
-				    "pref_name": "東京都",
-				    "shared_name": "9930419",
-				    "lat": 35.693318,
-				    "y": -356933.18,
-				    "x": 1398976.1
+				    "station_name": "瑞江"
 			    },
 			    "position": {
 				    "x": 1398976.1,
@@ -12557,22 +4712,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3312",
-				    "station_name": "東十条",
-				    "close_ymd": "",
-				    "lon": 139.72685800000002,
-				    "post": "114-0001",
-				    "e_status": 0,
-				    "SUID": 3312,
-				    "station_g_cd": 1133211,
-				    "add": "北区東十条３丁目",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133211",
-				    "pref_name": "東京都",
-				    "shared_name": "1133211",
-				    "lat": 35.763803,
-				    "y": -357638.03,
-				    "x": 1397268.5800000003
+				    "station_name": "東十条"
 			    },
 			    "position": {
 				    "x": 1397268.5800000003,
@@ -12581,22 +4721,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7680",
-				    "station_name": "篠崎",
-				    "close_ymd": "",
-				    "lon": 139.903698,
-				    "post": "133-0061",
-				    "e_status": 0,
-				    "SUID": 7680,
-				    "station_g_cd": 9930420,
-				    "add": "江戸川区篠崎町７-２７-１",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930420",
-				    "pref_name": "東京都",
-				    "shared_name": "9930420",
-				    "lat": 35.706016999999996,
-				    "y": -357060.17,
-				    "x": 1399036.98
+				    "station_name": "篠崎"
 			    },
 			    "position": {
 				    "x": 1399036.98,
@@ -12605,22 +4730,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7677",
-				    "station_name": "船堀",
-				    "close_ymd": "",
-				    "lon": 139.864258,
-				    "post": "134-0091",
-				    "e_status": 0,
-				    "SUID": 7677,
-				    "station_g_cd": 9930417,
-				    "add": "江戸川区船堀３-６-１",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930417",
-				    "pref_name": "東京都",
-				    "shared_name": "9930417",
-				    "lat": 35.683795,
-				    "y": -356837.95,
-				    "x": 1398642.58
+				    "station_name": "船堀"
 			    },
 			    "position": {
 				    "x": 1398642.58,
@@ -12629,22 +4739,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7678",
-				    "station_name": "一之江",
-				    "close_ymd": "",
-				    "lon": 139.882934,
-				    "post": "134-0003",
-				    "e_status": 0,
-				    "SUID": 7678,
-				    "station_g_cd": 9930418,
-				    "add": "江戸川区春江町４-２",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930418",
-				    "pref_name": "東京都",
-				    "shared_name": "9930418",
-				    "lat": 35.686054999999996,
-				    "y": -356860.55,
-				    "x": 1398829.34
+				    "station_name": "一之江"
 			    },
 			    "position": {
 				    "x": 1398829.34,
@@ -12653,22 +4748,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7692",
-				    "station_name": "小台",
-				    "close_ymd": "",
-				    "lon": 139.761779,
-				    "post": "116-0011",
-				    "e_status": 0,
-				    "SUID": 7692,
-				    "station_g_cd": 9930511,
-				    "add": "荒川区西尾久５",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930511",
-				    "pref_name": "東京都",
-				    "shared_name": "9930511",
-				    "lat": 35.750578999999995,
-				    "y": -357505.7899999999,
-				    "x": 1397617.7899999998
+				    "station_name": "小台"
 			    },
 			    "position": {
 				    "x": 1397617.7899999998,
@@ -12677,22 +4757,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7691",
-				    "station_name": "宮ノ前",
-				    "close_ymd": "",
-				    "lon": 139.76495500000001,
-				    "post": "116-0012",
-				    "e_status": 0,
-				    "SUID": 7691,
-				    "station_g_cd": 9930510,
-				    "add": "荒川区東尾久５",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930510",
-				    "pref_name": "東京都",
-				    "shared_name": "9930510",
-				    "lat": 35.750135,
-				    "y": -357501.35,
-				    "x": 1397649.55
+				    "station_name": "宮ノ前"
 			    },
 			    "position": {
 				    "x": 1397649.55,
@@ -12701,22 +4766,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7690",
-				    "station_name": "熊野前",
-				    "close_ymd": "",
-				    "lon": 139.769204,
-				    "post": "116-0012",
-				    "e_status": 0,
-				    "SUID": 7690,
-				    "station_g_cd": 9930509,
-				    "add": "荒川区東尾久５",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930509",
-				    "pref_name": "東京都",
-				    "shared_name": "9930509",
-				    "lat": 35.749212,
-				    "y": -357492.12,
-				    "x": 1397692.04
+				    "station_name": "熊野前"
 			    },
 			    "position": {
 				    "x": 1397692.04,
@@ -12725,22 +4775,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7689",
-				    "station_name": "東尾久三丁目",
-				    "close_ymd": "",
-				    "lon": 139.77438600000002,
-				    "post": "116-0012",
-				    "e_status": 0,
-				    "SUID": 7689,
-				    "station_g_cd": 9930508,
-				    "add": "荒川区東尾久３",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930508",
-				    "pref_name": "東京都",
-				    "shared_name": "9930508",
-				    "lat": 35.745398,
-				    "y": -357453.98000000004,
-				    "x": 1397743.86
+				    "station_name": "東尾久三丁目"
 			    },
 			    "position": {
 				    "x": 1397743.86,
@@ -12749,22 +4784,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7688",
-				    "station_name": "町屋二丁目",
-				    "close_ymd": "",
-				    "lon": 139.776625,
-				    "post": "116-0002",
-				    "e_status": 0,
-				    "SUID": 7688,
-				    "station_g_cd": 9930507,
-				    "add": "荒川区荒川６",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930507",
-				    "pref_name": "東京都",
-				    "shared_name": "9930507",
-				    "lat": 35.743837,
-				    "y": -357438.37,
-				    "x": 1397766.25
+				    "station_name": "町屋二丁目"
 			    },
 			    "position": {
 				    "x": 1397766.25,
@@ -12773,22 +4793,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7687",
-				    "station_name": "町屋駅前",
-				    "close_ymd": "",
-				    "lon": 139.781145,
-				    "post": "116-0002",
-				    "e_status": 0,
-				    "SUID": 7687,
-				    "station_g_cd": 2300104,
-				    "add": "荒川区荒川７",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930506",
-				    "pref_name": "東京都",
-				    "shared_name": "9930506",
-				    "lat": 35.74275,
-				    "y": -357427.5,
-				    "x": 1397811.4500000002
+				    "station_name": "町屋駅前"
 			    },
 			    "position": {
 				    "x": 1397811.4500000002,
@@ -12797,22 +4802,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7686",
-				    "station_name": "荒川七丁目",
-				    "close_ymd": "",
-				    "lon": 139.78417,
-				    "post": "116-0002",
-				    "e_status": 0,
-				    "SUID": 7686,
-				    "station_g_cd": 9930505,
-				    "add": "荒川区荒川７",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930505",
-				    "pref_name": "東京都",
-				    "shared_name": "9930505",
-				    "lat": 35.741975,
-				    "y": -357419.74999999994,
-				    "x": 1397841.7
+				    "station_name": "荒川七丁目"
 			    },
 			    "position": {
 				    "x": 1397841.7,
@@ -12821,22 +4811,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7685",
-				    "station_name": "荒川二丁目",
-				    "close_ymd": "",
-				    "lon": 139.784696,
-				    "post": "116-0002",
-				    "e_status": 0,
-				    "SUID": 7685,
-				    "station_g_cd": 9930504,
-				    "add": "荒川区荒川２",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930504",
-				    "pref_name": "東京都",
-				    "shared_name": "9930504",
-				    "lat": 35.738623,
-				    "y": -357386.23,
-				    "x": 1397846.96
+				    "station_name": "荒川二丁目"
 			    },
 			    "position": {
 				    "x": 1397846.96,
@@ -12845,22 +4820,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7700",
-				    "station_name": "西ヶ原四丁目",
-				    "close_ymd": "",
-				    "lon": 139.732779,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7700,
-				    "station_g_cd": 9930519,
-				    "add": "東京都北区西ヶ原四丁目",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930519",
-				    "pref_name": "東京都",
-				    "shared_name": "9930519",
-				    "lat": 35.744501,
-				    "y": -357445.01,
-				    "x": 1397327.79
+				    "station_name": "西ヶ原四丁目"
 			    },
 			    "position": {
 				    "x": 1397327.79,
@@ -12869,22 +4829,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7699",
-				    "station_name": "滝野川一丁目",
-				    "close_ymd": "",
-				    "lon": 139.735376,
-				    "post": "114-0023",
-				    "e_status": 0,
-				    "SUID": 7699,
-				    "station_g_cd": 9930518,
-				    "add": "北区滝野川１",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930518",
-				    "pref_name": "東京都",
-				    "shared_name": "9930518",
-				    "lat": 35.747374,
-				    "y": -357473.74,
-				    "x": 1397353.76
+				    "station_name": "滝野川一丁目"
 			    },
 			    "position": {
 				    "x": 1397353.76,
@@ -12893,22 +4838,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7698",
-				    "station_name": "飛鳥山",
-				    "close_ymd": "",
-				    "lon": 139.737382,
-				    "post": "114-0023",
-				    "e_status": 0,
-				    "SUID": 7698,
-				    "station_g_cd": 9930517,
-				    "add": "北区滝野川１",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930517",
-				    "pref_name": "東京都",
-				    "shared_name": "9930517",
-				    "lat": 35.750248,
-				    "y": -357502.48,
-				    "x": 1397373.82
+				    "station_name": "飛鳥山"
 			    },
 			    "position": {
 				    "x": 1397373.82,
@@ -12917,22 +4847,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7697",
-				    "station_name": "王子駅前",
-				    "close_ymd": "",
-				    "lon": 139.737661,
-				    "post": "114-0002",
-				    "e_status": 0,
-				    "SUID": 7697,
-				    "station_g_cd": 1133212,
-				    "add": "北区王子１",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930516",
-				    "pref_name": "東京都",
-				    "shared_name": "9930516",
-				    "lat": 35.753199,
-				    "y": -357531.99000000005,
-				    "x": 1397376.61
+				    "station_name": "王子駅前"
 			    },
 			    "position": {
 				    "x": 1397376.61,
@@ -12941,22 +4856,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7696",
-				    "station_name": "栄町",
-				    "close_ymd": "",
-				    "lon": 139.742124,
-				    "post": "114-0005",
-				    "e_status": 0,
-				    "SUID": 7696,
-				    "station_g_cd": 9930515,
-				    "add": "北区栄町",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930515",
-				    "pref_name": "東京都",
-				    "shared_name": "9930515",
-				    "lat": 35.750909,
-				    "y": -357509.09,
-				    "x": 1397421.24
+				    "station_name": "栄町"
 			    },
 			    "position": {
 				    "x": 1397421.24,
@@ -12965,22 +4865,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7695",
-				    "station_name": "梶原",
-				    "close_ymd": "",
-				    "lon": 139.747403,
-				    "post": "114-0004",
-				    "e_status": 0,
-				    "SUID": 7695,
-				    "station_g_cd": 9930514,
-				    "add": "北区堀船３",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930514",
-				    "pref_name": "東京都",
-				    "shared_name": "9930514",
-				    "lat": 35.751162,
-				    "y": -357511.62,
-				    "x": 1397474.03
+				    "station_name": "梶原"
 			    },
 			    "position": {
 				    "x": 1397474.03,
@@ -12989,22 +4874,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7694",
-				    "station_name": "荒川車庫前",
-				    "close_ymd": "",
-				    "lon": 139.752617,
-				    "post": "116-0011",
-				    "e_status": 0,
-				    "SUID": 7694,
-				    "station_g_cd": 9930513,
-				    "add": "荒川区西尾久７",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930513",
-				    "pref_name": "東京都",
-				    "shared_name": "9930513",
-				    "lat": 35.750909,
-				    "y": -357509.09,
-				    "x": 1397526.17
+				    "station_name": "荒川車庫前"
 			    },
 			    "position": {
 				    "x": 1397526.17,
@@ -13013,22 +4883,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7693",
-				    "station_name": "荒川遊園地前",
-				    "close_ymd": "",
-				    "lon": 139.757767,
-				    "post": "116-0011",
-				    "e_status": 0,
-				    "SUID": 7693,
-				    "station_g_cd": 9930512,
-				    "add": "荒川区西尾久５",
-				    "line_cd": 99305,
-				    "open_ymd": "",
-				    "name": "9930512",
-				    "pref_name": "東京都",
-				    "shared_name": "9930512",
-				    "lat": 35.750744,
-				    "y": -357507.44,
-				    "x": 1397577.67
+				    "station_name": "荒川遊園地前"
 			    },
 			    "position": {
 				    "x": 1397577.67,
@@ -13037,22 +4892,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7641",
-				    "station_name": "日比谷",
-				    "close_ymd": "",
-				    "lon": 139.759998,
-				    "post": "100-0006",
-				    "e_status": 0,
-				    "SUID": 7641,
-				    "station_g_cd": 2800315,
-				    "add": "千代田区有楽町１丁目",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930308",
-				    "pref_name": "東京都",
-				    "shared_name": "9930308",
-				    "lat": 35.676035999999996,
-				    "y": -356760.36,
-				    "x": 1397599.98
+				    "station_name": "日比谷"
 			    },
 			    "position": {
 				    "x": 1397599.98,
@@ -13061,22 +4901,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7642",
-				    "station_name": "大手町",
-				    "close_ymd": "",
-				    "lon": 139.762959,
-				    "post": "100-0004",
-				    "e_status": 0,
-				    "SUID": 7642,
-				    "station_g_cd": 2800208,
-				    "add": "千代田区大手町１丁目",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930309",
-				    "pref_name": "東京都",
-				    "shared_name": "9930309",
-				    "lat": 35.684855999999996,
-				    "y": -356848.55999999994,
-				    "x": 1397629.5899999999
+				    "station_name": "大手町"
 			    },
 			    "position": {
 				    "x": 1397629.5899999999,
@@ -13085,22 +4910,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3339",
-				    "station_name": "赤羽",
-				    "close_ymd": "",
-				    "lon": 139.72092800000001,
-				    "post": "115-0045",
-				    "e_status": 0,
-				    "SUID": 3339,
-				    "station_g_cd": 1131903,
-				    "add": "北区赤羽１丁目",
-				    "line_cd": 11333,
-				    "open_ymd": "",
-				    "name": "1133302",
-				    "pref_name": "東京都",
-				    "shared_name": "1133302",
-				    "lat": 35.778026000000004,
-				    "y": -357780.26000000007,
-				    "x": 1397209.2800000003
+				    "station_name": "赤羽"
 			    },
 			    "position": {
 				    "x": 1397209.2800000003,
@@ -13109,22 +4919,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7643",
-				    "station_name": "神保町",
-				    "close_ymd": "",
-				    "lon": 139.75812,
-				    "post": "101-0051",
-				    "e_status": 0,
-				    "SUID": 7643,
-				    "station_g_cd": 2800807,
-				    "add": "千代田区神田神保町２-２",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930310",
-				    "pref_name": "東京都",
-				    "shared_name": "9930310",
-				    "lat": 35.695492,
-				    "y": -356954.92000000004,
-				    "x": 1397581.2
+				    "station_name": "神保町"
 			    },
 			    "position": {
 				    "x": 1397581.2,
@@ -13133,22 +4928,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3340",
-				    "station_name": "池袋",
-				    "close_ymd": "",
-				    "lon": 139.71108600000002,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3340,
-				    "station_g_cd": 1130212,
-				    "add": "東京都豊島区",
-				    "line_cd": 11333,
-				    "open_ymd": "",
-				    "name": "1133303",
-				    "pref_name": "東京都",
-				    "shared_name": "1133303",
-				    "lat": 35.730256,
-				    "y": -357302.56,
-				    "x": 1397110.8600000003
+				    "station_name": "池袋"
 			    },
 			    "position": {
 				    "x": 1397110.8600000003,
@@ -13157,22 +4937,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7644",
-				    "station_name": "水道橋",
-				    "close_ymd": "",
-				    "lon": 139.75516000000002,
-				    "post": "101-0061",
-				    "e_status": 0,
-				    "SUID": 7644,
-				    "station_g_cd": 1131204,
-				    "add": "千代田区三崎町２丁目",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930311",
-				    "pref_name": "東京都",
-				    "shared_name": "9930311",
-				    "lat": 35.703398,
-				    "y": -357033.98,
-				    "x": 1397551.6
+				    "station_name": "水道橋"
 			    },
 			    "position": {
 				    "x": 1397551.6,
@@ -13181,22 +4946,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7637",
-				    "station_name": "三田",
-				    "close_ymd": "",
-				    "lon": 139.748775,
-				    "post": "108-0014",
-				    "e_status": 0,
-				    "SUID": 7637,
-				    "station_g_cd": 9930208,
-				    "add": "港区芝５-３４-１０",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930304",
-				    "pref_name": "東京都",
-				    "shared_name": "9930304",
-				    "lat": 35.648179999999996,
-				    "y": -356481.8,
-				    "x": 1397487.75
+				    "station_name": "三田"
 			    },
 			    "position": {
 				    "x": 1397487.75,
@@ -13205,22 +4955,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7638",
-				    "station_name": "芝公園",
-				    "close_ymd": "",
-				    "lon": 139.749824,
-				    "post": "105-0011",
-				    "e_status": 0,
-				    "SUID": 7638,
-				    "station_g_cd": 9930305,
-				    "add": "港区芝公園４-８-１４",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930305",
-				    "pref_name": "東京都",
-				    "shared_name": "9930305",
-				    "lat": 35.654074,
-				    "y": -356540.74,
-				    "x": 1397498.24
+				    "station_name": "芝公園"
 			    },
 			    "position": {
 				    "x": 1397498.24,
@@ -13229,22 +4964,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7639",
-				    "station_name": "御成門",
-				    "close_ymd": "",
-				    "lon": 139.75153500000002,
-				    "post": "105-0003",
-				    "e_status": 0,
-				    "SUID": 7639,
-				    "station_g_cd": 9930306,
-				    "add": "港区西新橋３-２４-６",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930306",
-				    "pref_name": "東京都",
-				    "shared_name": "9930306",
-				    "lat": 35.661215000000006,
-				    "y": -356612.1500000001,
-				    "x": 1397515.35
+				    "station_name": "御成門"
 			    },
 			    "position": {
 				    "x": 1397515.35,
@@ -13253,22 +4973,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7640",
-				    "station_name": "内幸町",
-				    "close_ymd": "",
-				    "lon": 139.75561000000002,
-				    "post": "100-0011",
-				    "e_status": 0,
-				    "SUID": 7640,
-				    "station_g_cd": 9930307,
-				    "add": "千代田区内幸町２-２-３",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930307",
-				    "pref_name": "東京都",
-				    "shared_name": "9930307",
-				    "lat": 35.66975,
-				    "y": -356697.5,
-				    "x": 1397556.1
+				    "station_name": "内幸町"
 			    },
 			    "position": {
 				    "x": 1397556.1,
@@ -13277,22 +4982,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3345",
-				    "station_name": "西大井",
-				    "close_ymd": "",
-				    "lon": 139.721729,
-				    "post": "140-0015",
-				    "e_status": 0,
-				    "SUID": 3345,
-				    "station_g_cd": 1130804,
-				    "add": "品川区西大井１丁目",
-				    "line_cd": 11333,
-				    "open_ymd": "",
-				    "name": "1133308",
-				    "pref_name": "東京都",
-				    "shared_name": "1133308",
-				    "lat": 35.601616,
-				    "y": -356016.16,
-				    "x": 1397217.29
+				    "station_name": "西大井"
 			    },
 			    "position": {
 				    "x": 1397217.29,
@@ -13301,22 +4991,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7649",
-				    "station_name": "西巣鴨",
-				    "close_ymd": "",
-				    "lon": 139.728712,
-				    "post": "170-0001",
-				    "e_status": 0,
-				    "SUID": 7649,
-				    "station_g_cd": 9930316,
-				    "add": "豊島区西巣鴨３-２５-１３",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930316",
-				    "pref_name": "東京都",
-				    "shared_name": "9930316",
-				    "lat": 35.743508,
-				    "y": -357435.07999999996,
-				    "x": 1397287.12
+				    "station_name": "西巣鴨"
 			    },
 			    "position": {
 				    "x": 1397287.12,
@@ -13325,22 +5000,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7650",
-				    "station_name": "新板橋",
-				    "close_ymd": "",
-				    "lon": 139.720101,
-				    "post": "173-0004",
-				    "e_status": 0,
-				    "SUID": 7650,
-				    "station_g_cd": 9930317,
-				    "add": "板橋区板橋１-５３-１７",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930317",
-				    "pref_name": "東京都",
-				    "shared_name": "9930317",
-				    "lat": 35.748785,
-				    "y": -357487.85,
-				    "x": 1397201.01
+				    "station_name": "新板橋"
 			    },
 			    "position": {
 				    "x": 1397201.01,
@@ -13349,22 +5009,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7651",
-				    "station_name": "板橋区役所前",
-				    "close_ymd": "",
-				    "lon": 139.710102,
-				    "post": "173-0004",
-				    "e_status": 0,
-				    "SUID": 7651,
-				    "station_g_cd": 9930318,
-				    "add": "板橋区板橋２-６６-１７",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930318",
-				    "pref_name": "東京都",
-				    "shared_name": "9930318",
-				    "lat": 35.751284000000005,
-				    "y": -357512.84,
-				    "x": 1397101.02
+				    "station_name": "板橋区役所前"
 			    },
 			    "position": {
 				    "x": 1397101.02,
@@ -13373,22 +5018,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7652",
-				    "station_name": "板橋本町",
-				    "close_ymd": "",
-				    "lon": 139.705535,
-				    "post": "173-0012",
-				    "e_status": 0,
-				    "SUID": 7652,
-				    "station_g_cd": 9930319,
-				    "add": "板橋区大和町１７-１",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930319",
-				    "pref_name": "東京都",
-				    "shared_name": "9930319",
-				    "lat": 35.761339,
-				    "y": -357613.39,
-				    "x": 1397055.3499999999
+				    "station_name": "板橋本町"
 			    },
 			    "position": {
 				    "x": 1397055.3499999999,
@@ -13397,22 +5027,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3341",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.70046399999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3341,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区新宿三丁目38-1",
-				    "line_cd": 11333,
-				    "open_ymd": "",
-				    "name": "1133304",
-				    "pref_name": "東京都",
-				    "shared_name": "1133304",
-				    "lat": 35.689729,
-				    "y": -356897.29,
-				    "x": 1397004.64
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1397004.64,
@@ -13421,22 +5036,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7645",
-				    "station_name": "春日",
-				    "close_ymd": "",
-				    "lon": 139.75325,
-				    "post": "112-0003",
-				    "e_status": 0,
-				    "SUID": 7645,
-				    "station_g_cd": 9930108,
-				    "add": "文京区春日１-１６-１７",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930312",
-				    "pref_name": "東京都",
-				    "shared_name": "9930312",
-				    "lat": 35.709598,
-				    "y": -357095.98,
-				    "x": 1397532.5
+				    "station_name": "春日"
 			    },
 			    "position": {
 				    "x": 1397532.5,
@@ -13445,22 +5045,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3342",
-				    "station_name": "渋谷",
-				    "close_ymd": "",
-				    "lon": 139.701238,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3342,
-				    "station_g_cd": 1130205,
-				    "add": "東京都渋谷区道玄坂一丁目1-1",
-				    "line_cd": 11333,
-				    "open_ymd": "",
-				    "name": "1133305",
-				    "pref_name": "東京都",
-				    "shared_name": "1133305",
-				    "lat": 35.658871000000005,
-				    "y": -356588.71,
-				    "x": 1397012.38
+				    "station_name": "渋谷"
 			    },
 			    "position": {
 				    "x": 1397012.38,
@@ -13469,22 +5054,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7646",
-				    "station_name": "白山",
-				    "close_ymd": "",
-				    "lon": 139.752136,
-				    "post": "112-0001",
-				    "e_status": 0,
-				    "SUID": 7646,
-				    "station_g_cd": 9930313,
-				    "add": "文京区白山５-３６-１０",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930313",
-				    "pref_name": "東京都",
-				    "shared_name": "9930313",
-				    "lat": 35.721408000000004,
-				    "y": -357214.08,
-				    "x": 1397521.36
+				    "station_name": "白山"
 			    },
 			    "position": {
 				    "x": 1397521.36,
@@ -13493,22 +5063,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3343",
-				    "station_name": "恵比寿",
-				    "close_ymd": "",
-				    "lon": 139.71007,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3343,
-				    "station_g_cd": 1130204,
-				    "add": "東京都渋谷区恵比寿南一丁目5-5",
-				    "line_cd": 11333,
-				    "open_ymd": "",
-				    "name": "1133306",
-				    "pref_name": "東京都",
-				    "shared_name": "1133306",
-				    "lat": 35.646685,
-				    "y": -356466.85,
-				    "x": 1397100.7
+				    "station_name": "恵比寿"
 			    },
 			    "position": {
 				    "x": 1397100.7,
@@ -13517,22 +5072,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7647",
-				    "station_name": "千石",
-				    "close_ymd": "",
-				    "lon": 139.744792,
-				    "post": "112-0011",
-				    "e_status": 0,
-				    "SUID": 7647,
-				    "station_g_cd": 9930314,
-				    "add": "文京区千石１-２９-１３",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930314",
-				    "pref_name": "東京都",
-				    "shared_name": "9930314",
-				    "lat": 35.727957,
-				    "y": -357279.57,
-				    "x": 1397447.92
+				    "station_name": "千石"
 			    },
 			    "position": {
 				    "x": 1397447.92,
@@ -13541,22 +5081,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3344",
-				    "station_name": "大崎",
-				    "close_ymd": "",
-				    "lon": 139.72843899999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3344,
-				    "station_g_cd": 1130201,
-				    "add": "東京都品川区大崎一丁目21-4",
-				    "line_cd": 11333,
-				    "open_ymd": "",
-				    "name": "1133307",
-				    "pref_name": "東京都",
-				    "shared_name": "1133307",
-				    "lat": 35.619772,
-				    "y": -356197.72,
-				    "x": 1397284.39
+				    "station_name": "大崎"
 			    },
 			    "position": {
 				    "x": 1397284.39,
@@ -13565,22 +5090,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7648",
-				    "station_name": "巣鴨",
-				    "close_ymd": "",
-				    "lon": 139.738519,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7648,
-				    "station_g_cd": 1130214,
-				    "add": "東京都豊島区巣鴨",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930315",
-				    "pref_name": "東京都",
-				    "shared_name": "9930315",
-				    "lat": 35.733502,
-				    "y": -357335.02,
-				    "x": 1397385.19
+				    "station_name": "巣鴨"
 			    },
 			    "position": {
 				    "x": 1397385.19,
@@ -13589,22 +5099,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3322",
-				    "station_name": "神田",
-				    "close_ymd": "",
-				    "lon": 139.77064099999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3322,
-				    "station_g_cd": 1130223,
-				    "add": "東京都千代田区鍛冶町二丁目13-1",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133221",
-				    "pref_name": "東京都",
-				    "shared_name": "1133221",
-				    "lat": 35.691173,
-				    "y": -356911.73,
-				    "x": 1397706.41
+				    "station_name": "神田"
 			    },
 			    "position": {
 				    "x": 1397706.41,
@@ -13613,22 +5108,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7658",
-				    "station_name": "高島平",
-				    "close_ymd": "",
-				    "lon": 139.661216,
-				    "post": "175-0082",
-				    "e_status": 0,
-				    "SUID": 7658,
-				    "station_g_cd": 9930325,
-				    "add": "板橋区高島平８-２-１",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930325",
-				    "pref_name": "東京都",
-				    "shared_name": "9930325",
-				    "lat": 35.789056,
-				    "y": -357890.56,
-				    "x": 1396612.16
+				    "station_name": "高島平"
 			    },
 			    "position": {
 				    "x": 1396612.16,
@@ -13637,22 +5117,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3321",
-				    "station_name": "秋葉原",
-				    "close_ymd": "",
-				    "lon": 139.77328799999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3321,
-				    "station_g_cd": 1130222,
-				    "add": "東京都千代田区外神田一丁目17-6",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133220",
-				    "pref_name": "東京都",
-				    "shared_name": "1133220",
-				    "lat": 35.698619,
-				    "y": -356986.19,
-				    "x": 1397732.88
+				    "station_name": "秋葉原"
 			    },
 			    "position": {
 				    "x": 1397732.88,
@@ -13661,22 +5126,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7657",
-				    "station_name": "西台",
-				    "close_ymd": "",
-				    "lon": 139.673971,
-				    "post": "175-0082",
-				    "e_status": 0,
-				    "SUID": 7657,
-				    "station_g_cd": 9930324,
-				    "add": "板橋区高島平９-１-１",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930324",
-				    "pref_name": "東京都",
-				    "shared_name": "9930324",
-				    "lat": 35.78699,
-				    "y": -357869.9,
-				    "x": 1396739.71
+				    "station_name": "西台"
 			    },
 			    "position": {
 				    "x": 1396739.71,
@@ -13685,22 +5135,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3324",
-				    "station_name": "有楽町",
-				    "close_ymd": "",
-				    "lon": 139.76380600000002,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3324,
-				    "station_g_cd": 1130225,
-				    "add": "東京都千代田区有楽町二丁目9-17",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133223",
-				    "pref_name": "東京都",
-				    "shared_name": "1133223",
-				    "lat": 35.675441,
-				    "y": -356754.41,
-				    "x": 1397638.06
+				    "station_name": "有楽町"
 			    },
 			    "position": {
 				    "x": 1397638.06,
@@ -13709,22 +5144,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7660",
-				    "station_name": "西高島平",
-				    "close_ymd": "",
-				    "lon": 139.64594,
-				    "post": "175-0082",
-				    "e_status": 0,
-				    "SUID": 7660,
-				    "station_g_cd": 9930327,
-				    "add": "板橋区高島平６-１",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930327",
-				    "pref_name": "東京都",
-				    "shared_name": "9930327",
-				    "lat": 35.791833000000004,
-				    "y": -357918.33,
-				    "x": 1396459.4
+				    "station_name": "西高島平"
 			    },
 			    "position": {
 				    "x": 1396459.4,
@@ -13733,22 +5153,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3323",
-				    "station_name": "東京",
-				    "close_ymd": "",
-				    "lon": 139.76610300000002,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3323,
-				    "station_g_cd": 1130101,
-				    "add": "東京都千代田区丸の内一丁目",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133222",
-				    "pref_name": "東京都",
-				    "shared_name": "1133222",
-				    "lat": 35.681391,
-				    "y": -356813.91,
-				    "x": 1397661.0300000003
+				    "station_name": "東京"
 			    },
 			    "position": {
 				    "x": 1397661.0300000003,
@@ -13757,22 +5162,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7659",
-				    "station_name": "新高島平",
-				    "close_ymd": "",
-				    "lon": 139.654275,
-				    "post": "175-0082",
-				    "e_status": 0,
-				    "SUID": 7659,
-				    "station_g_cd": 9930326,
-				    "add": "板橋区高島平７-１",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930326",
-				    "pref_name": "東京都",
-				    "shared_name": "9930326",
-				    "lat": 35.790189,
-				    "y": -357901.88999999996,
-				    "x": 1396542.7500000002
+				    "station_name": "新高島平"
 			    },
 			    "position": {
 				    "x": 1396542.7500000002,
@@ -13781,22 +5171,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3318",
-				    "station_name": "鶯谷",
-				    "close_ymd": "",
-				    "lon": 139.77801499999998,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3318,
-				    "station_g_cd": 1130219,
-				    "add": "東京都台東区根岸一丁目4-1",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133217",
-				    "pref_name": "東京都",
-				    "shared_name": "1133217",
-				    "lat": 35.721484000000004,
-				    "y": -357214.84,
-				    "x": 1397780.15
+				    "station_name": "鶯谷"
 			    },
 			    "position": {
 				    "x": 1397780.15,
@@ -13805,22 +5180,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7654",
-				    "station_name": "志村坂上",
-				    "close_ymd": "",
-				    "lon": 139.69538,
-				    "post": "174-0056",
-				    "e_status": 0,
-				    "SUID": 7654,
-				    "station_g_cd": 9930321,
-				    "add": "板橋区志村１-１４-１３",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930321",
-				    "pref_name": "東京都",
-				    "shared_name": "9930321",
-				    "lat": 35.775725,
-				    "y": -357757.25,
-				    "x": 1396953.8
+				    "station_name": "志村坂上"
 			    },
 			    "position": {
 				    "x": 1396953.8,
@@ -13829,22 +5189,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3317",
-				    "station_name": "日暮里",
-				    "close_ymd": "",
-				    "lon": 139.771287,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3317,
-				    "station_g_cd": 1130218,
-				    "add": "東京都荒川区西日暮里二丁目",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133216",
-				    "pref_name": "東京都",
-				    "shared_name": "1133216",
-				    "lat": 35.727908,
-				    "y": -357279.08,
-				    "x": 1397712.87
+				    "station_name": "日暮里"
 			    },
 			    "position": {
 				    "x": 1397712.87,
@@ -13853,22 +5198,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7653",
-				    "station_name": "本蓮沼",
-				    "close_ymd": "",
-				    "lon": 139.702324,
-				    "post": "174-0052",
-				    "e_status": 0,
-				    "SUID": 7653,
-				    "station_g_cd": 9930320,
-				    "add": "板橋区蓮沼町１９-８",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930320",
-				    "pref_name": "東京都",
-				    "shared_name": "9930320",
-				    "lat": 35.768782,
-				    "y": -357687.82,
-				    "x": 1397023.24
+				    "station_name": "本蓮沼"
 			    },
 			    "position": {
 				    "x": 1397023.24,
@@ -13877,22 +5207,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3320",
-				    "station_name": "御徒町",
-				    "close_ymd": "",
-				    "lon": 139.774727,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3320,
-				    "station_g_cd": 1130221,
-				    "add": "東京都台東区上野五丁目27",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133219",
-				    "pref_name": "東京都",
-				    "shared_name": "1133219",
-				    "lat": 35.707282,
-				    "y": -357072.82,
-				    "x": 1397747.27
+				    "station_name": "御徒町"
 			    },
 			    "position": {
 				    "x": 1397747.27,
@@ -13901,22 +5216,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7656",
-				    "station_name": "蓮根",
-				    "close_ymd": "",
-				    "lon": 139.678993,
-				    "post": "174-0046",
-				    "e_status": 0,
-				    "SUID": 7656,
-				    "station_g_cd": 9930323,
-				    "add": "板橋区蓮根２-３１-３０",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930323",
-				    "pref_name": "東京都",
-				    "shared_name": "9930323",
-				    "lat": 35.784335,
-				    "y": -357843.35,
-				    "x": 1396789.93
+				    "station_name": "蓮根"
 			    },
 			    "position": {
 				    "x": 1396789.93,
@@ -13925,22 +5225,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3319",
-				    "station_name": "上野",
-				    "close_ymd": "",
-				    "lon": 139.777043,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3319,
-				    "station_g_cd": 1130220,
-				    "add": "東京都台東区上野七丁目1-1",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133218",
-				    "pref_name": "東京都",
-				    "shared_name": "1133218",
-				    "lat": 35.71379,
-				    "y": -357137.9,
-				    "x": 1397770.43
+				    "station_name": "上野"
 			    },
 			    "position": {
 				    "x": 1397770.43,
@@ -13949,22 +5234,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7655",
-				    "station_name": "志村三丁目",
-				    "close_ymd": "",
-				    "lon": 139.68593700000002,
-				    "post": "174-0056",
-				    "e_status": 0,
-				    "SUID": 7655,
-				    "station_g_cd": 9930322,
-				    "add": "板橋区志村３-２３-１",
-				    "line_cd": 99303,
-				    "open_ymd": "",
-				    "name": "9930322",
-				    "pref_name": "東京都",
-				    "shared_name": "9930322",
-				    "lat": 35.777390999999994,
-				    "y": -357773.9099999999,
-				    "x": 1396859.3700000003
+				    "station_name": "志村三丁目"
 			    },
 			    "position": {
 				    "x": 1396859.3700000003,
@@ -13973,22 +5243,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3330",
-				    "station_name": "大森",
-				    "close_ymd": "",
-				    "lon": 139.728079,
-				    "post": "143-0016",
-				    "e_status": 0,
-				    "SUID": 3330,
-				    "station_g_cd": 1133229,
-				    "add": "大田区大森北１丁目",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133229",
-				    "pref_name": "東京都",
-				    "shared_name": "1133229",
-				    "lat": 35.588903,
-				    "y": -355889.03,
-				    "x": 1397280.79
+				    "station_name": "大森"
 			    },
 			    "position": {
 				    "x": 1397280.79,
@@ -13997,22 +5252,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7666",
-				    "station_name": "神保町",
-				    "close_ymd": "",
-				    "lon": 139.757606,
-				    "post": "101-0051",
-				    "e_status": 0,
-				    "SUID": 7666,
-				    "station_g_cd": 2800807,
-				    "add": "千代田区神田神保町２-２",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930406",
-				    "pref_name": "東京都",
-				    "shared_name": "9930406",
-				    "lat": 35.695966,
-				    "y": -356959.66,
-				    "x": 1397576.06
+				    "station_name": "神保町"
 			    },
 			    "position": {
 				    "x": 1397576.06,
@@ -14021,22 +5261,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3329",
-				    "station_name": "大井町",
-				    "close_ymd": "",
-				    "lon": 139.73485,
-				    "post": "140-0014",
-				    "e_status": 0,
-				    "SUID": 3329,
-				    "station_g_cd": 1133228,
-				    "add": "品川区大井１丁目",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133228",
-				    "pref_name": "東京都",
-				    "shared_name": "1133228",
-				    "lat": 35.606257,
-				    "y": -356062.57,
-				    "x": 1397348.5
+				    "station_name": "大井町"
 			    },
 			    "position": {
 				    "x": 1397348.5,
@@ -14045,22 +5270,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7665",
-				    "station_name": "九段下",
-				    "close_ymd": "",
-				    "lon": 139.751948,
-				    "post": "102-0074",
-				    "e_status": 0,
-				    "SUID": 7665,
-				    "station_g_cd": 2800407,
-				    "add": "千代田区九段南１-６-１",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930405",
-				    "pref_name": "東京都",
-				    "shared_name": "9930405",
-				    "lat": 35.695589,
-				    "y": -356955.88999999996,
-				    "x": 1397519.48
+				    "station_name": "九段下"
 			    },
 			    "position": {
 				    "x": 1397519.48,
@@ -14069,22 +5279,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7668",
-				    "station_name": "岩本町",
-				    "close_ymd": "",
-				    "lon": 139.77586599999998,
-				    "post": "101-0033",
-				    "e_status": 0,
-				    "SUID": 7668,
-				    "station_g_cd": 9930408,
-				    "add": "千代田区神田岩本町１",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930408",
-				    "pref_name": "東京都",
-				    "shared_name": "9930408",
-				    "lat": 35.695534,
-				    "y": -356955.34,
-				    "x": 1397758.6599999997
+				    "station_name": "岩本町"
 			    },
 			    "position": {
 				    "x": 1397758.6599999997,
@@ -14093,22 +5288,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3331",
-				    "station_name": "蒲田",
-				    "close_ymd": "",
-				    "lon": 139.716032,
-				    "post": "144-0052",
-				    "e_status": 0,
-				    "SUID": 3331,
-				    "station_g_cd": 1133230,
-				    "add": "大田区蒲田５丁目",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133230",
-				    "pref_name": "東京都",
-				    "shared_name": "1133230",
-				    "lat": 35.562517,
-				    "y": -355625.17,
-				    "x": 1397160.32
+				    "station_name": "蒲田"
 			    },
 			    "position": {
 				    "x": 1397160.32,
@@ -14117,22 +5297,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7667",
-				    "station_name": "小川町",
-				    "close_ymd": "",
-				    "lon": 139.767551,
-				    "post": "101-0052",
-				    "e_status": 0,
-				    "SUID": 7667,
-				    "station_g_cd": 2800207,
-				    "add": "千代田区神田小川町１-６",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930407",
-				    "pref_name": "東京都",
-				    "shared_name": "9930407",
-				    "lat": 35.695487,
-				    "y": -356954.87,
-				    "x": 1397675.51
+				    "station_name": "小川町"
 			    },
 			    "position": {
 				    "x": 1397675.51,
@@ -14141,22 +5306,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3326",
-				    "station_name": "浜松町",
-				    "close_ymd": "",
-				    "lon": 139.757135,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3326,
-				    "station_g_cd": 1130227,
-				    "add": "東京都港区海岸一丁目3-1",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133225",
-				    "pref_name": "東京都",
-				    "shared_name": "1133225",
-				    "lat": 35.655390999999995,
-				    "y": -356553.9099999999,
-				    "x": 1397571.35
+				    "station_name": "浜松町"
 			    },
 			    "position": {
 				    "x": 1397571.35,
@@ -14165,22 +5315,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7662",
-				    "station_name": "新宿三丁目",
-				    "close_ymd": "",
-				    "lon": 139.706271,
-				    "post": "160-0022",
-				    "e_status": 0,
-				    "SUID": 7662,
-				    "station_g_cd": 2800217,
-				    "add": "新宿区新宿３-１４-１",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930402",
-				    "pref_name": "東京都",
-				    "shared_name": "9930402",
-				    "lat": 35.690616,
-				    "y": -356906.16,
-				    "x": 1397062.71
+				    "station_name": "新宿三丁目"
 			    },
 			    "position": {
 				    "x": 1397062.71,
@@ -14189,22 +5324,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3325",
-				    "station_name": "新橋",
-				    "close_ymd": "",
-				    "lon": 139.758587,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3325,
-				    "station_g_cd": 1130102,
-				    "add": "東京都港区新橋二丁目17",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133224",
-				    "pref_name": "東京都",
-				    "shared_name": "1133224",
-				    "lat": 35.666195,
-				    "y": -356661.95,
-				    "x": 1397585.87
+				    "station_name": "新橋"
 			    },
 			    "position": {
 				    "x": 1397585.87,
@@ -14213,22 +5333,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7661",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.698812,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 7661,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区西新宿一丁目18",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930401",
-				    "pref_name": "東京都",
-				    "shared_name": "9930401",
-				    "lat": 35.68869,
-				    "y": -356886.9,
-				    "x": 1396988.12
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1396988.12,
@@ -14237,22 +5342,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3328",
-				    "station_name": "品川",
-				    "close_ymd": "",
-				    "lon": 139.738999,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3328,
-				    "station_g_cd": 1130103,
-				    "add": "東京都港区高輪三丁目26-26",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133227",
-				    "pref_name": "東京都",
-				    "shared_name": "1133227",
-				    "lat": 35.62876,
-				    "y": -356287.6,
-				    "x": 1397389.99
+				    "station_name": "品川"
 			    },
 			    "position": {
 				    "x": 1397389.99,
@@ -14261,22 +5351,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7664",
-				    "station_name": "市ヶ谷",
-				    "close_ymd": "",
-				    "lon": 139.735794,
-				    "post": "162-0843",
-				    "e_status": 0,
-				    "SUID": 7664,
-				    "station_g_cd": 1131206,
-				    "add": "東京都新宿区市谷田町一丁目1",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930404",
-				    "pref_name": "東京都",
-				    "shared_name": "9930404",
-				    "lat": 35.692594,
-				    "y": -356925.94,
-				    "x": 1397357.94
+				    "station_name": "市ヶ谷"
 			    },
 			    "position": {
 				    "x": 1397357.94,
@@ -14285,22 +5360,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3327",
-				    "station_name": "田町",
-				    "close_ymd": "",
-				    "lon": 139.747575,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 3327,
-				    "station_g_cd": 1130228,
-				    "add": "東京都港区芝五丁目33-36",
-				    "line_cd": 11332,
-				    "open_ymd": "",
-				    "name": "1133226",
-				    "pref_name": "東京都",
-				    "shared_name": "1133226",
-				    "lat": 35.645736,
-				    "y": -356457.36,
-				    "x": 1397475.7500000002
+				    "station_name": "田町"
 			    },
 			    "position": {
 				    "x": 1397475.7500000002,
@@ -14309,22 +5369,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "7663",
-				    "station_name": "曙橋",
-				    "close_ymd": "",
-				    "lon": 139.722881,
-				    "post": "162-0065",
-				    "e_status": 0,
-				    "SUID": 7663,
-				    "station_g_cd": 9930403,
-				    "add": "新宿区住吉町７-１",
-				    "line_cd": 99304,
-				    "open_ymd": "",
-				    "name": "9930403",
-				    "pref_name": "東京都",
-				    "shared_name": "9930403",
-				    "lat": 35.692402,
-				    "y": -356924.02,
-				    "x": 1397228.81
+				    "station_name": "曙橋"
 			    },
 			    "position": {
 				    "x": 1397228.81,
@@ -14333,22 +5378,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5541",
-				    "station_name": "京成上野",
-				    "close_ymd": "",
-				    "lon": 139.773571,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 5541,
-				    "station_g_cd": 2300101,
-				    "add": "東京都台東区上野公園1-60",
-				    "line_cd": 23006,
-				    "open_ymd": "1933-12-10",
-				    "name": "2300601",
-				    "pref_name": "東京都",
-				    "shared_name": "2300601",
-				    "lat": 35.711232,
-				    "y": -357112.32,
-				    "x": 1397735.71
+				    "station_name": "京成上野"
 			    },
 			    "position": {
 				    "x": 1397735.71,
@@ -14357,22 +5387,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5542",
-				    "station_name": "日暮里",
-				    "close_ymd": "",
-				    "lon": 139.771287,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 5542,
-				    "station_g_cd": 1130218,
-				    "add": "東京都荒川区西日暮里二丁目19-1",
-				    "line_cd": 23006,
-				    "open_ymd": "1931-12-19",
-				    "name": "2300602",
-				    "pref_name": "東京都",
-				    "shared_name": "2300602",
-				    "lat": 35.727908,
-				    "y": -357279.08,
-				    "x": 1397712.87
+				    "station_name": "日暮里"
 			    },
 			    "position": {
 				    "x": 1397712.87,
@@ -14381,22 +5396,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5543",
-				    "station_name": "青砥",
-				    "close_ymd": "",
-				    "lon": 139.856292,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 5543,
-				    "station_g_cd": 2300109,
-				    "add": "東京都葛飾区青戸三丁目36番1号",
-				    "line_cd": 23006,
-				    "open_ymd": "1928-11-01",
-				    "name": "2300603",
-				    "pref_name": "東京都",
-				    "shared_name": "2300603",
-				    "lat": 35.745883,
-				    "y": -357458.83,
-				    "x": 1398562.92
+				    "station_name": "青砥"
 			    },
 			    "position": {
 				    "x": 1398562.92,
@@ -14405,22 +5405,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5544",
-				    "station_name": "京成高砂",
-				    "close_ymd": "",
-				    "lon": 139.866875,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 5544,
-				    "station_g_cd": 2300110,
-				    "add": "東京都葛飾区高砂五丁目28-1",
-				    "line_cd": 23006,
-				    "open_ymd": "",
-				    "name": "2300604",
-				    "pref_name": "東京都",
-				    "shared_name": "2300604",
-				    "lat": 35.750932,
-				    "y": -357509.32,
-				    "x": 1398668.75
+				    "station_name": "京成高砂"
 			    },
 			    "position": {
 				    "x": 1398668.75,
@@ -14429,22 +5414,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5552",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.69918700000002,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5552,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区西新宿一丁目1-4",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400101",
-				    "pref_name": "東京都",
-				    "shared_name": "2400101",
-				    "lat": 35.690163,
-				    "y": -356901.63,
-				    "x": 1396991.8700000003
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1396991.8700000003,
@@ -14453,22 +5423,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5553",
-				    "station_name": "初台",
-				    "close_ymd": "",
-				    "lon": 139.686354,
-				    "post": "151-0061",
-				    "e_status": 0,
-				    "SUID": 5553,
-				    "station_g_cd": 2400102,
-				    "add": "渋谷区初台１-５３-７",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400102",
-				    "pref_name": "東京都",
-				    "shared_name": "2400102",
-				    "lat": 35.68123,
-				    "y": -356812.3,
-				    "x": 1396863.54
+				    "station_name": "初台"
 			    },
 			    "position": {
 				    "x": 1396863.54,
@@ -14477,22 +5432,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5554",
-				    "station_name": "幡ヶ谷",
-				    "close_ymd": "",
-				    "lon": 139.676183,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5554,
-				    "station_g_cd": 2400103,
-				    "add": "東京都渋谷区幡ヶ谷一丁目",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400103",
-				    "pref_name": "東京都",
-				    "shared_name": "2400103",
-				    "lat": 35.677061,
-				    "y": -356770.61000000004,
-				    "x": 1396761.83
+				    "station_name": "幡ヶ谷"
 			    },
 			    "position": {
 				    "x": 1396761.83,
@@ -14501,22 +5441,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5555",
-				    "station_name": "笹塚",
-				    "close_ymd": "",
-				    "lon": 139.667251,
-				    "post": "151-0073",
-				    "e_status": 0,
-				    "SUID": 5555,
-				    "station_g_cd": 2400104,
-				    "add": "渋谷区笹塚１-５６-７",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400104",
-				    "pref_name": "東京都",
-				    "shared_name": "2400104",
-				    "lat": 35.673758,
-				    "y": -356737.58,
-				    "x": 1396672.51
+				    "station_name": "笹塚"
 			    },
 			    "position": {
 				    "x": 1396672.51,
@@ -14525,22 +5450,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5556",
-				    "station_name": "代田橋",
-				    "close_ymd": "",
-				    "lon": 139.659413,
-				    "post": "156-0041",
-				    "e_status": 0,
-				    "SUID": 5556,
-				    "station_g_cd": 2400105,
-				    "add": "世田谷区大原２-１８-９",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400105",
-				    "pref_name": "東京都",
-				    "shared_name": "2400105",
-				    "lat": 35.671092,
-				    "y": -356710.92000000004,
-				    "x": 1396594.1300000001
+				    "station_name": "代田橋"
 			    },
 			    "position": {
 				    "x": 1396594.1300000001,
@@ -14549,22 +5459,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5575",
-				    "station_name": "府中",
-				    "close_ymd": "",
-				    "lon": 139.4799,
-				    "post": "183-0023",
-				    "e_status": 0,
-				    "SUID": 5575,
-				    "station_g_cd": 2400124,
-				    "add": "府中市宮町１-１-１０",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400124",
-				    "pref_name": "東京都",
-				    "shared_name": "2400124",
-				    "lat": 35.672245000000004,
-				    "y": -356722.45,
-				    "x": 1394798.9999999998
+				    "station_name": "府中"
 			    },
 			    "position": {
 				    "x": 1394798.9999999998,
@@ -14573,22 +5468,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5576",
-				    "station_name": "分倍河原",
-				    "close_ymd": "",
-				    "lon": 139.468798,
-				    "post": "183-0021",
-				    "e_status": 0,
-				    "SUID": 5576,
-				    "station_g_cd": 1130321,
-				    "add": "府中市片町２丁目",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400125",
-				    "pref_name": "東京都",
-				    "shared_name": "2400125",
-				    "lat": 35.668493,
-				    "y": -356684.93,
-				    "x": 1394687.98
+				    "station_name": "分倍河原"
 			    },
 			    "position": {
 				    "x": 1394687.98,
@@ -14597,22 +5477,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5573",
-				    "station_name": "多磨霊園",
-				    "close_ymd": "",
-				    "lon": 139.502615,
-				    "post": "183-0015",
-				    "e_status": 0,
-				    "SUID": 5573,
-				    "station_g_cd": 2400122,
-				    "add": "府中市清水が丘３-２６-１１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400122",
-				    "pref_name": "東京都",
-				    "shared_name": "2400122",
-				    "lat": 35.666197,
-				    "y": -356661.97,
-				    "x": 1395026.15
+				    "station_name": "多磨霊園"
 			    },
 			    "position": {
 				    "x": 1395026.15,
@@ -14621,22 +5486,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5574",
-				    "station_name": "東府中",
-				    "close_ymd": "",
-				    "lon": 139.495257,
-				    "post": "183-0015",
-				    "e_status": 0,
-				    "SUID": 5574,
-				    "station_g_cd": 2400123,
-				    "add": "府中市清水が丘１-８-３",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400123",
-				    "pref_name": "東京都",
-				    "shared_name": "2400123",
-				    "lat": 35.668766,
-				    "y": -356687.66,
-				    "x": 1394952.57
+				    "station_name": "東府中"
 			    },
 			    "position": {
 				    "x": 1394952.57,
@@ -14645,22 +5495,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5579",
-				    "station_name": "百草園",
-				    "close_ymd": "",
-				    "lon": 139.431285,
-				    "post": "191-0033",
-				    "e_status": 0,
-				    "SUID": 5579,
-				    "station_g_cd": 2400128,
-				    "add": "日野市百草２０９",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400128",
-				    "pref_name": "東京都",
-				    "shared_name": "2400128",
-				    "lat": 35.657362,
-				    "y": -356573.62,
-				    "x": 1394312.85
+				    "station_name": "百草園"
 			    },
 			    "position": {
 				    "x": 1394312.85,
@@ -14669,22 +5504,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5580",
-				    "station_name": "高幡不動",
-				    "close_ymd": "",
-				    "lon": 139.41295300000002,
-				    "post": "191-0031",
-				    "e_status": 0,
-				    "SUID": 5580,
-				    "station_g_cd": 2400129,
-				    "add": "日野市高幡１３９",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400129",
-				    "pref_name": "東京都",
-				    "shared_name": "2400129",
-				    "lat": 35.662361,
-				    "y": -356623.61,
-				    "x": 1394129.5300000003
+				    "station_name": "高幡不動"
 			    },
 			    "position": {
 				    "x": 1394129.5300000003,
@@ -14693,22 +5513,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5577",
-				    "station_name": "中河原",
-				    "close_ymd": "",
-				    "lon": 139.457602,
-				    "post": "183-0034",
-				    "e_status": 0,
-				    "SUID": 5577,
-				    "station_g_cd": 2400126,
-				    "add": "府中市住吉町２-１-１６",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400126",
-				    "pref_name": "東京都",
-				    "shared_name": "2400126",
-				    "lat": 35.659549,
-				    "y": -356595.49,
-				    "x": 1394576.02
+				    "station_name": "中河原"
 			    },
 			    "position": {
 				    "x": 1394576.02,
@@ -14717,22 +5522,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5578",
-				    "station_name": "聖蹟桜ヶ丘",
-				    "close_ymd": "",
-				    "lon": 139.446979,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5578,
-				    "station_g_cd": 2400127,
-				    "add": "東京都多摩市関戸一丁目10-10",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400127",
-				    "pref_name": "東京都",
-				    "shared_name": "2400127",
-				    "lat": 35.650814000000004,
-				    "y": -356508.14,
-				    "x": 1394469.79
+				    "station_name": "聖蹟桜ヶ丘"
 			    },
 			    "position": {
 				    "x": 1394469.79,
@@ -14741,22 +5531,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5583",
-				    "station_name": "長沼",
-				    "close_ymd": "",
-				    "lon": 139.365849,
-				    "post": "192-0907",
-				    "e_status": 0,
-				    "SUID": 5583,
-				    "station_g_cd": 2400132,
-				    "add": "八王子市長沼町７００",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400132",
-				    "pref_name": "東京都",
-				    "shared_name": "2400132",
-				    "lat": 35.642788,
-				    "y": -356427.88,
-				    "x": 1393658.49
+				    "station_name": "長沼"
 			    },
 			    "position": {
 				    "x": 1393658.49,
@@ -14765,22 +5540,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5584",
-				    "station_name": "北野",
-				    "close_ymd": "",
-				    "lon": 139.354489,
-				    "post": "192-0911",
-				    "e_status": 0,
-				    "SUID": 5584,
-				    "station_g_cd": 2400133,
-				    "add": "八王子市打越町３３５-１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400133",
-				    "pref_name": "東京都",
-				    "shared_name": "2400133",
-				    "lat": 35.644479,
-				    "y": -356444.79,
-				    "x": 1393544.89
+				    "station_name": "北野"
 			    },
 			    "position": {
 				    "x": 1393544.89,
@@ -14789,22 +5549,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5581",
-				    "station_name": "南平",
-				    "close_ymd": "",
-				    "lon": 139.392008,
-				    "post": "191-0041",
-				    "e_status": 0,
-				    "SUID": 5581,
-				    "station_g_cd": 2400130,
-				    "add": "日野市南平６-９-３１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400130",
-				    "pref_name": "東京都",
-				    "shared_name": "2400130",
-				    "lat": 35.654559000000006,
-				    "y": -356545.5900000001,
-				    "x": 1393920.08
+				    "station_name": "南平"
 			    },
 			    "position": {
 				    "x": 1393920.08,
@@ -14813,22 +5558,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5582",
-				    "station_name": "平山城址公園",
-				    "close_ymd": "",
-				    "lon": 139.379926,
-				    "post": "191-0043",
-				    "e_status": 0,
-				    "SUID": 5582,
-				    "station_g_cd": 2400131,
-				    "add": "日野市平山５-１８-１０",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400131",
-				    "pref_name": "東京都",
-				    "shared_name": "2400131",
-				    "lat": 35.647371,
-				    "y": -356473.71,
-				    "x": 1393799.26
+				    "station_name": "平山城址公園"
 			    },
 			    "position": {
 				    "x": 1393799.26,
@@ -14837,22 +5567,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5587",
-				    "station_name": "京王多摩川",
-				    "close_ymd": "",
-				    "lon": 139.536606,
-				    "post": "182-0025",
-				    "e_status": 0,
-				    "SUID": 5587,
-				    "station_g_cd": 2400202,
-				    "add": "調布市多摩川４-４０-１",
-				    "line_cd": 24002,
-				    "open_ymd": "",
-				    "name": "2400202",
-				    "pref_name": "東京都",
-				    "shared_name": "2400202",
-				    "lat": 35.644498999999996,
-				    "y": -356444.99,
-				    "x": 1395366.06
+				    "station_name": "京王多摩川"
 			    },
 			    "position": {
 				    "x": 1395366.06,
@@ -14861,22 +5576,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5585",
-				    "station_name": "京王八王子",
-				    "close_ymd": "",
-				    "lon": 139.343851,
-				    "post": "192-0046",
-				    "e_status": 0,
-				    "SUID": 5585,
-				    "station_g_cd": 2400134,
-				    "add": "八王子市明神町３-２７-１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400134",
-				    "pref_name": "東京都",
-				    "shared_name": "2400134",
-				    "lat": 35.657416,
-				    "y": -356574.16,
-				    "x": 1393438.51
+				    "station_name": "京王八王子"
 			    },
 			    "position": {
 				    "x": 1393438.51,
@@ -14885,22 +5585,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5586",
-				    "station_name": "調布",
-				    "close_ymd": "",
-				    "lon": 139.54398799999998,
-				    "post": "182-0024",
-				    "e_status": 0,
-				    "SUID": 5586,
-				    "station_g_cd": 2400118,
-				    "add": "調布市布田４-３２-１",
-				    "line_cd": 24002,
-				    "open_ymd": "",
-				    "name": "2400201",
-				    "pref_name": "東京都",
-				    "shared_name": "2400201",
-				    "lat": 35.652181,
-				    "y": -356521.81,
-				    "x": 1395439.88
+				    "station_name": "調布"
 			    },
 			    "position": {
 				    "x": 1395439.88,
@@ -14909,22 +5594,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5560",
-				    "station_name": "上北沢",
-				    "close_ymd": "",
-				    "lon": 139.62329,
-				    "post": "156-0057",
-				    "e_status": 0,
-				    "SUID": 5560,
-				    "station_g_cd": 2400109,
-				    "add": "世田谷区上北沢４-１４-３",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400109",
-				    "pref_name": "東京都",
-				    "shared_name": "2400109",
-				    "lat": 35.668857,
-				    "y": -356688.57,
-				    "x": 1396232.9
+				    "station_name": "上北沢"
 			    },
 			    "position": {
 				    "x": 1396232.9,
@@ -14933,22 +5603,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5559",
-				    "station_name": "桜上水",
-				    "close_ymd": "",
-				    "lon": 139.63128999999998,
-				    "post": "156-0045",
-				    "e_status": 0,
-				    "SUID": 5559,
-				    "station_g_cd": 2400108,
-				    "add": "世田谷区桜上水５-２９-５２",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400108",
-				    "pref_name": "東京都",
-				    "shared_name": "2400108",
-				    "lat": 35.66768,
-				    "y": -356676.8,
-				    "x": 1396312.8999999997
+				    "station_name": "桜上水"
 			    },
 			    "position": {
 				    "x": 1396312.8999999997,
@@ -14957,22 +5612,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5558",
-				    "station_name": "下高井戸",
-				    "close_ymd": "",
-				    "lon": 139.641372,
-				    "post": "156-0043",
-				    "e_status": 0,
-				    "SUID": 5558,
-				    "station_g_cd": 2400107,
-				    "add": "世田谷区松原３-２９-１７",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400107",
-				    "pref_name": "東京都",
-				    "shared_name": "2400107",
-				    "lat": 35.66615,
-				    "y": -356661.5,
-				    "x": 1396413.72
+				    "station_name": "下高井戸"
 			    },
 			    "position": {
 				    "x": 1396413.72,
@@ -14981,22 +5621,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5557",
-				    "station_name": "明大前",
-				    "close_ymd": "",
-				    "lon": 139.650352,
-				    "post": "156-0043",
-				    "e_status": 0,
-				    "SUID": 5557,
-				    "station_g_cd": 2400106,
-				    "add": "世田谷区松原２-４５-１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400106",
-				    "pref_name": "東京都",
-				    "shared_name": "2400106",
-				    "lat": 35.668758000000004,
-				    "y": -356687.58,
-				    "x": 1396503.52
+				    "station_name": "明大前"
 			    },
 			    "position": {
 				    "x": 1396503.52,
@@ -15005,22 +5630,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5564",
-				    "station_name": "仙川",
-				    "close_ymd": "",
-				    "lon": 139.584908,
-				    "post": "182-0002",
-				    "e_status": 0,
-				    "SUID": 5564,
-				    "station_g_cd": 2400113,
-				    "add": "調布市仙川町１-４３",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400113",
-				    "pref_name": "東京都",
-				    "shared_name": "2400113",
-				    "lat": 35.662257000000004,
-				    "y": -356622.57000000007,
-				    "x": 1395849.08
+				    "station_name": "仙川"
 			    },
 			    "position": {
 				    "x": 1395849.08,
@@ -15029,22 +5639,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5563",
-				    "station_name": "千歳烏山",
-				    "close_ymd": "",
-				    "lon": 139.60067,
-				    "post": "157-0062",
-				    "e_status": 0,
-				    "SUID": 5563,
-				    "station_g_cd": 2400112,
-				    "add": "世田谷区南烏山６-１-１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400112",
-				    "pref_name": "東京都",
-				    "shared_name": "2400112",
-				    "lat": 35.667921,
-				    "y": -356679.21,
-				    "x": 1396006.7000000002
+				    "station_name": "千歳烏山"
 			    },
 			    "position": {
 				    "x": 1396006.7000000002,
@@ -15053,22 +5648,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5562",
-				    "station_name": "芦花公園",
-				    "close_ymd": "",
-				    "lon": 139.608247,
-				    "post": "157-0062",
-				    "e_status": 0,
-				    "SUID": 5562,
-				    "station_g_cd": 2400111,
-				    "add": "世田谷区南烏山３-１-１６",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400111",
-				    "pref_name": "東京都",
-				    "shared_name": "2400111",
-				    "lat": 35.670479,
-				    "y": -356704.79,
-				    "x": 1396082.47
+				    "station_name": "芦花公園"
 			    },
 			    "position": {
 				    "x": 1396082.47,
@@ -15077,22 +5657,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5561",
-				    "station_name": "八幡山",
-				    "close_ymd": "",
-				    "lon": 139.614927,
-				    "post": "168-0074",
-				    "e_status": 0,
-				    "SUID": 5561,
-				    "station_g_cd": 2400110,
-				    "add": "杉並区上高井戸１-１-１１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400110",
-				    "pref_name": "東京都",
-				    "shared_name": "2400110",
-				    "lat": 35.669982,
-				    "y": -356699.81999999995,
-				    "x": 1396149.27
+				    "station_name": "八幡山"
 			    },
 			    "position": {
 				    "x": 1396149.27,
@@ -15101,22 +5666,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5568",
-				    "station_name": "布田",
-				    "close_ymd": "",
-				    "lon": 139.551557,
-				    "post": "182-0022",
-				    "e_status": 0,
-				    "SUID": 5568,
-				    "station_g_cd": 2400117,
-				    "add": "調布市国領町５-６７-１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400117",
-				    "pref_name": "東京都",
-				    "shared_name": "2400117",
-				    "lat": 35.649904,
-				    "y": -356499.04,
-				    "x": 1395515.57
+				    "station_name": "布田"
 			    },
 			    "position": {
 				    "x": 1395515.57,
@@ -15125,22 +5675,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5567",
-				    "station_name": "国領",
-				    "close_ymd": "",
-				    "lon": 139.55803600000002,
-				    "post": "182-0022",
-				    "e_status": 0,
-				    "SUID": 5567,
-				    "station_g_cd": 2400116,
-				    "add": "調布市国領町３-１８-１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400116",
-				    "pref_name": "東京都",
-				    "shared_name": "2400116",
-				    "lat": 35.650087,
-				    "y": -356500.87,
-				    "x": 1395580.36
+				    "station_name": "国領"
 			    },
 			    "position": {
 				    "x": 1395580.36,
@@ -15149,22 +5684,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5566",
-				    "station_name": "柴崎",
-				    "close_ymd": "",
-				    "lon": 139.56658000000002,
-				    "post": "182-0007",
-				    "e_status": 0,
-				    "SUID": 5566,
-				    "station_g_cd": 2400115,
-				    "add": "調布市菊野台２-６７-１１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400115",
-				    "pref_name": "東京都",
-				    "shared_name": "2400115",
-				    "lat": 35.653997,
-				    "y": -356539.97,
-				    "x": 1395665.8
+				    "station_name": "柴崎"
 			    },
 			    "position": {
 				    "x": 1395665.8,
@@ -15173,22 +5693,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5565",
-				    "station_name": "つつじヶ丘",
-				    "close_ymd": "",
-				    "lon": 139.575103,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5565,
-				    "station_g_cd": 2400114,
-				    "add": "東京都調布市西つつじヶ丘三丁目35-1",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400114",
-				    "pref_name": "東京都",
-				    "shared_name": "2400114",
-				    "lat": 35.657936,
-				    "y": -356579.36,
-				    "x": 1395751.03
+				    "station_name": "つつじヶ丘"
 			    },
 			    "position": {
 				    "x": 1395751.03,
@@ -15197,22 +5702,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5572",
-				    "station_name": "武蔵野台",
-				    "close_ymd": "",
-				    "lon": 139.51128899999998,
-				    "post": "183-0011",
-				    "e_status": 0,
-				    "SUID": 5572,
-				    "station_g_cd": 2400121,
-				    "add": "府中市白糸台４-１８-４",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400121",
-				    "pref_name": "東京都",
-				    "shared_name": "2400121",
-				    "lat": 35.664159000000005,
-				    "y": -356641.59,
-				    "x": 1395112.8899999997
+				    "station_name": "武蔵野台"
 			    },
 			    "position": {
 				    "x": 1395112.8899999997,
@@ -15221,22 +5711,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5571",
-				    "station_name": "飛田給",
-				    "close_ymd": "",
-				    "lon": 139.523666,
-				    "post": "182-0036",
-				    "e_status": 0,
-				    "SUID": 5571,
-				    "station_g_cd": 2400120,
-				    "add": "調布市飛田給１-４２-１１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400120",
-				    "pref_name": "東京都",
-				    "shared_name": "2400120",
-				    "lat": 35.660121000000004,
-				    "y": -356601.21,
-				    "x": 1395236.66
+				    "station_name": "飛田給"
 			    },
 			    "position": {
 				    "x": 1395236.66,
@@ -15245,22 +5720,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5570",
-				    "station_name": "西調布",
-				    "close_ymd": "",
-				    "lon": 139.529822,
-				    "post": "182-0035",
-				    "e_status": 0,
-				    "SUID": 5570,
-				    "station_g_cd": 2400119,
-				    "add": "調布市上石原１-２５-１７",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400119",
-				    "pref_name": "東京都",
-				    "shared_name": "2400119",
-				    "lat": 35.657169,
-				    "y": -356571.69000000006,
-				    "x": 1395298.22
+				    "station_name": "西調布"
 			    },
 			    "position": {
 				    "x": 1395298.22,
@@ -15269,22 +5729,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5569",
-				    "station_name": "調布",
-				    "close_ymd": "",
-				    "lon": 139.54398799999998,
-				    "post": "182-0024",
-				    "e_status": 0,
-				    "SUID": 5569,
-				    "station_g_cd": 2400118,
-				    "add": "調布市布田４-３２-１",
-				    "line_cd": 24001,
-				    "open_ymd": "",
-				    "name": "2400118",
-				    "pref_name": "東京都",
-				    "shared_name": "2400118",
-				    "lat": 35.652181,
-				    "y": -356521.81,
-				    "x": 1395439.88
+				    "station_name": "調布"
 			    },
 			    "position": {
 				    "x": 1395439.88,
@@ -15293,22 +5738,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5609",
-				    "station_name": "渋谷",
-				    "close_ymd": "",
-				    "lon": 139.700872,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 5609,
-				    "station_g_cd": 1130205,
-				    "add": "東京都渋谷区道玄坂一丁目4-1",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400601",
-				    "pref_name": "東京都",
-				    "shared_name": "2400601",
-				    "lat": 35.6587,
-				    "y": -356587.00000000006,
-				    "x": 1397008.72
+				    "station_name": "渋谷"
 			    },
 			    "position": {
 				    "x": 1397008.72,
@@ -15317,22 +5747,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5610",
-				    "station_name": "神泉",
-				    "close_ymd": "",
-				    "lon": 139.693579,
-				    "post": "150-0045",
-				    "e_status": 0,
-				    "SUID": 5610,
-				    "station_g_cd": 2400602,
-				    "add": "渋谷区神泉町４-６",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400602",
-				    "pref_name": "東京都",
-				    "shared_name": "2400602",
-				    "lat": 35.657244,
-				    "y": -356572.44,
-				    "x": 1396935.79
+				    "station_name": "神泉"
 			    },
 			    "position": {
 				    "x": 1396935.79,
@@ -15341,22 +5756,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5611",
-				    "station_name": "駒場東大前",
-				    "close_ymd": "",
-				    "lon": 139.68430800000002,
-				    "post": "153-0041",
-				    "e_status": 0,
-				    "SUID": 5611,
-				    "station_g_cd": 2400603,
-				    "add": "目黒区駒場３-９-１",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400603",
-				    "pref_name": "東京都",
-				    "shared_name": "2400603",
-				    "lat": 35.65868,
-				    "y": -356586.8,
-				    "x": 1396843.08
+				    "station_name": "駒場東大前"
 			    },
 			    "position": {
 				    "x": 1396843.08,
@@ -15365,22 +5765,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5612",
-				    "station_name": "池ノ上",
-				    "close_ymd": "",
-				    "lon": 139.67344,
-				    "post": "155-0032",
-				    "e_status": 0,
-				    "SUID": 5612,
-				    "station_g_cd": 2400104,
-				    "add": "世田谷区代沢２-４３-８",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400604",
-				    "pref_name": "東京都",
-				    "shared_name": "2400604",
-				    "lat": 35.660402000000005,
-				    "y": -356604.0200000001,
-				    "x": 1396734.4
+				    "station_name": "池ノ上"
 			    },
 			    "position": {
 				    "x": 1396734.4,
@@ -15389,22 +5774,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5605",
-				    "station_name": "東府中",
-				    "close_ymd": "",
-				    "lon": 139.495257,
-				    "post": "183-0015",
-				    "e_status": 0,
-				    "SUID": 5605,
-				    "station_g_cd": 2400123,
-				    "add": "府中市清水が丘１-８-３",
-				    "line_cd": 24004,
-				    "open_ymd": "",
-				    "name": "2400401",
-				    "pref_name": "東京都",
-				    "shared_name": "2400401",
-				    "lat": 35.668766,
-				    "y": -356687.66,
-				    "x": 1394952.57
+				    "station_name": "東府中"
 			    },
 			    "position": {
 				    "x": 1394952.57,
@@ -15413,22 +5783,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5606",
-				    "station_name": "府中競馬正門前",
-				    "close_ymd": "",
-				    "lon": 139.485019,
-				    "post": "183-0016",
-				    "e_status": 0,
-				    "SUID": 5606,
-				    "station_g_cd": 2400402,
-				    "add": "府中市八幡町１-１８",
-				    "line_cd": 24004,
-				    "open_ymd": "",
-				    "name": "2400402",
-				    "pref_name": "東京都",
-				    "shared_name": "2400402",
-				    "lat": 35.668288000000004,
-				    "y": -356682.88000000006,
-				    "x": 1394850.19
+				    "station_name": "府中競馬正門前"
 			    },
 			    "position": {
 				    "x": 1394850.19,
@@ -15437,22 +5792,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5607",
-				    "station_name": "高幡不動",
-				    "close_ymd": "",
-				    "lon": 139.41295300000002,
-				    "post": "191-0031",
-				    "e_status": 0,
-				    "SUID": 5607,
-				    "station_g_cd": 2400129,
-				    "add": "日野市高幡１３９",
-				    "line_cd": 24005,
-				    "open_ymd": "",
-				    "name": "2400501",
-				    "pref_name": "東京都",
-				    "shared_name": "2400501",
-				    "lat": 35.662361,
-				    "y": -356623.61,
-				    "x": 1394129.5300000003
+				    "station_name": "高幡不動"
 			    },
 			    "position": {
 				    "x": 1394129.5300000003,
@@ -15461,22 +5801,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5608",
-				    "station_name": "多摩動物公園",
-				    "close_ymd": "",
-				    "lon": 139.404627,
-				    "post": "191-0042",
-				    "e_status": 0,
-				    "SUID": 5608,
-				    "station_g_cd": 2400502,
-				    "add": "日野市程久保３-３６-３９",
-				    "line_cd": 24005,
-				    "open_ymd": "",
-				    "name": "2400502",
-				    "pref_name": "東京都",
-				    "shared_name": "2400502",
-				    "lat": 35.649215000000005,
-				    "y": -356492.15,
-				    "x": 1394046.27
+				    "station_name": "多摩動物公園"
 			    },
 			    "position": {
 				    "x": 1394046.27,
@@ -15485,22 +5810,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5617",
-				    "station_name": "永福町",
-				    "close_ymd": "",
-				    "lon": 139.64273300000002,
-				    "post": "168-0064",
-				    "e_status": 0,
-				    "SUID": 5617,
-				    "station_g_cd": 2400609,
-				    "add": "杉並区永福２-６０-３１",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400609",
-				    "pref_name": "東京都",
-				    "shared_name": "2400609",
-				    "lat": 35.67629,
-				    "y": -356762.9,
-				    "x": 1396427.3300000003
+				    "station_name": "永福町"
 			    },
 			    "position": {
 				    "x": 1396427.3300000003,
@@ -15509,22 +5819,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5618",
-				    "station_name": "西永福",
-				    "close_ymd": "",
-				    "lon": 139.634936,
-				    "post": "168-0064",
-				    "e_status": 0,
-				    "SUID": 5618,
-				    "station_g_cd": 2400610,
-				    "add": "杉並区永福３-３６-１",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400610",
-				    "pref_name": "東京都",
-				    "shared_name": "2400610",
-				    "lat": 35.678917999999996,
-				    "y": -356789.17999999993,
-				    "x": 1396349.36
+				    "station_name": "西永福"
 			    },
 			    "position": {
 				    "x": 1396349.36,
@@ -15533,22 +5828,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5619",
-				    "station_name": "浜田山",
-				    "close_ymd": "",
-				    "lon": 139.627528,
-				    "post": "168-0065",
-				    "e_status": 0,
-				    "SUID": 5619,
-				    "station_g_cd": 2400611,
-				    "add": "杉並区浜田山３-３１-２",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400611",
-				    "pref_name": "東京都",
-				    "shared_name": "2400611",
-				    "lat": 35.681603,
-				    "y": -356816.03,
-				    "x": 1396275.28
+				    "station_name": "浜田山"
 			    },
 			    "position": {
 				    "x": 1396275.28,
@@ -15557,22 +5837,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5620",
-				    "station_name": "高井戸",
-				    "close_ymd": "",
-				    "lon": 139.615115,
-				    "post": "168-0071",
-				    "e_status": 0,
-				    "SUID": 5620,
-				    "station_g_cd": 2400612,
-				    "add": "杉並区高井戸西２-１-２６",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400612",
-				    "pref_name": "東京都",
-				    "shared_name": "2400612",
-				    "lat": 35.683253,
-				    "y": -356832.53,
-				    "x": 1396151.1500000001
+				    "station_name": "高井戸"
 			    },
 			    "position": {
 				    "x": 1396151.1500000001,
@@ -15581,22 +5846,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5613",
-				    "station_name": "下北沢",
-				    "close_ymd": "",
-				    "lon": 139.66691,
-				    "post": "155-0031",
-				    "e_status": 0,
-				    "SUID": 5613,
-				    "station_g_cd": 2400605,
-				    "add": "世田谷区北沢２丁目",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400605",
-				    "pref_name": "東京都",
-				    "shared_name": "2400605",
-				    "lat": 35.661539000000005,
-				    "y": -356615.3900000001,
-				    "x": 1396669.1
+				    "station_name": "下北沢"
 			    },
 			    "position": {
 				    "x": 1396669.1,
@@ -15605,22 +5855,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5614",
-				    "station_name": "新代田",
-				    "close_ymd": "",
-				    "lon": 139.660524,
-				    "post": "155-0033",
-				    "e_status": 0,
-				    "SUID": 5614,
-				    "station_g_cd": 2400606,
-				    "add": "世田谷区代田５-３０-１８",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400606",
-				    "pref_name": "東京都",
-				    "shared_name": "2400606",
-				    "lat": 35.662593,
-				    "y": -356625.93,
-				    "x": 1396605.24
+				    "station_name": "新代田"
 			    },
 			    "position": {
 				    "x": 1396605.24,
@@ -15629,22 +5864,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5615",
-				    "station_name": "東松原",
-				    "close_ymd": "",
-				    "lon": 139.65553500000001,
-				    "post": "156-0043",
-				    "e_status": 0,
-				    "SUID": 5615,
-				    "station_g_cd": 2400607,
-				    "add": "世田谷区松原５-２-６",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400607",
-				    "pref_name": "東京都",
-				    "shared_name": "2400607",
-				    "lat": 35.662634000000004,
-				    "y": -356626.34,
-				    "x": 1396555.35
+				    "station_name": "東松原"
 			    },
 			    "position": {
 				    "x": 1396555.35,
@@ -15653,22 +5873,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5616",
-				    "station_name": "明大前",
-				    "close_ymd": "",
-				    "lon": 139.650352,
-				    "post": "156-0043",
-				    "e_status": 0,
-				    "SUID": 5616,
-				    "station_g_cd": 2400106,
-				    "add": "世田谷区松原２-４５-１",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400608",
-				    "pref_name": "東京都",
-				    "shared_name": "2400608",
-				    "lat": 35.668758000000004,
-				    "y": -356687.58,
-				    "x": 1396503.52
+				    "station_name": "明大前"
 			    },
 			    "position": {
 				    "x": 1396503.52,
@@ -15677,22 +5882,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5594",
-				    "station_name": "京王堀之内",
-				    "close_ymd": "",
-				    "lon": 139.40031399999998,
-				    "post": "192-0355",
-				    "e_status": 0,
-				    "SUID": 5594,
-				    "station_g_cd": 2400209,
-				    "add": "八王子市堀之内３-２４-４",
-				    "line_cd": 24002,
-				    "open_ymd": "",
-				    "name": "2400209",
-				    "pref_name": "東京都",
-				    "shared_name": "2400209",
-				    "lat": 35.624438,
-				    "y": -356244.38,
-				    "x": 1394003.14
+				    "station_name": "京王堀之内"
 			    },
 			    "position": {
 				    "x": 1394003.14,
@@ -15701,22 +5891,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5593",
-				    "station_name": "京王多摩センター",
-				    "close_ymd": "",
-				    "lon": 139.42401999999998,
-				    "post": "206-0033",
-				    "e_status": 0,
-				    "SUID": 5593,
-				    "station_g_cd": 2400208,
-				    "add": "多摩市落合１-１０-２",
-				    "line_cd": 24002,
-				    "open_ymd": "",
-				    "name": "2400208",
-				    "pref_name": "東京都",
-				    "shared_name": "2400208",
-				    "lat": 35.62518,
-				    "y": -356251.8,
-				    "x": 1394240.2
+				    "station_name": "京王多摩センター"
 			    },
 			    "position": {
 				    "x": 1394240.2,
@@ -15725,22 +5900,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5596",
-				    "station_name": "多摩境",
-				    "close_ymd": "",
-				    "lon": 139.36698700000002,
-				    "post": "194-0212",
-				    "e_status": 0,
-				    "SUID": 5596,
-				    "station_g_cd": 2400211,
-				    "add": "町田市小山町２７１８-１",
-				    "line_cd": 24002,
-				    "open_ymd": "",
-				    "name": "2400211",
-				    "pref_name": "東京都",
-				    "shared_name": "2400211",
-				    "lat": 35.601826,
-				    "y": -356018.26,
-				    "x": 1393669.8700000003
+				    "station_name": "多摩境"
 			    },
 			    "position": {
 				    "x": 1393669.8700000003,
@@ -15749,22 +5909,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5595",
-				    "station_name": "南大沢",
-				    "close_ymd": "",
-				    "lon": 139.3798,
-				    "post": "192-0364",
-				    "e_status": 0,
-				    "SUID": 5595,
-				    "station_g_cd": 2400210,
-				    "add": "八王子市南大沢２-１-６",
-				    "line_cd": 24002,
-				    "open_ymd": "",
-				    "name": "2400210",
-				    "pref_name": "東京都",
-				    "shared_name": "2400210",
-				    "lat": 35.6141,
-				    "y": -356141.0,
-				    "x": 1393798.0
+				    "station_name": "南大沢"
 			    },
 			    "position": {
 				    "x": 1393798.0,
@@ -15773,22 +5918,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5590",
-				    "station_name": "稲城",
-				    "close_ymd": "",
-				    "lon": 139.500398,
-				    "post": "206-0802",
-				    "e_status": 0,
-				    "SUID": 5590,
-				    "station_g_cd": 2400205,
-				    "add": "稲城市東長沼３１０８",
-				    "line_cd": 24002,
-				    "open_ymd": "",
-				    "name": "2400205",
-				    "pref_name": "東京都",
-				    "shared_name": "2400205",
-				    "lat": 35.636165999999996,
-				    "y": -356361.66,
-				    "x": 1395003.98
+				    "station_name": "稲城"
 			    },
 			    "position": {
 				    "x": 1395003.98,
@@ -15797,22 +5927,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5589",
-				    "station_name": "京王よみうりランド",
-				    "close_ymd": "",
-				    "lon": 139.517597,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5589,
-				    "station_g_cd": 2400204,
-				    "add": "東京都稲城市矢野口",
-				    "line_cd": 24002,
-				    "open_ymd": "",
-				    "name": "2400204",
-				    "pref_name": "東京都",
-				    "shared_name": "2400204",
-				    "lat": 35.632934000000006,
-				    "y": -356329.3400000001,
-				    "x": 1395175.97
+				    "station_name": "京王よみうりランド"
 			    },
 			    "position": {
 				    "x": 1395175.97,
@@ -15821,22 +5936,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5592",
-				    "station_name": "京王永山",
-				    "close_ymd": "",
-				    "lon": 139.448204,
-				    "post": "206-0025",
-				    "e_status": 0,
-				    "SUID": 5592,
-				    "station_g_cd": 2400207,
-				    "add": "多摩市永山１-１８-１",
-				    "line_cd": 24002,
-				    "open_ymd": "",
-				    "name": "2400207",
-				    "pref_name": "東京都",
-				    "shared_name": "2400207",
-				    "lat": 35.630102,
-				    "y": -356301.02,
-				    "x": 1394482.04
+				    "station_name": "京王永山"
 			    },
 			    "position": {
 				    "x": 1394482.04,
@@ -15845,22 +5945,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5602",
-				    "station_name": "狭間",
-				    "close_ymd": "",
-				    "lon": 139.293808,
-				    "post": "193-0834",
-				    "e_status": 0,
-				    "SUID": 5602,
-				    "station_g_cd": 2400305,
-				    "add": "八王子市東浅川町７７３",
-				    "line_cd": 24003,
-				    "open_ymd": "",
-				    "name": "2400305",
-				    "pref_name": "東京都",
-				    "shared_name": "2400305",
-				    "lat": 35.640637,
-				    "y": -356406.37,
-				    "x": 1392938.08
+				    "station_name": "狭間"
 			    },
 			    "position": {
 				    "x": 1392938.08,
@@ -15869,22 +5954,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5601",
-				    "station_name": "めじろ台",
-				    "close_ymd": "",
-				    "lon": 139.308446,
-				    "post": "193-0833",
-				    "e_status": 0,
-				    "SUID": 5601,
-				    "station_g_cd": 2400304,
-				    "add": "八王子市めじろ台１-１００-１",
-				    "line_cd": 24003,
-				    "open_ymd": "",
-				    "name": "2400304",
-				    "pref_name": "東京都",
-				    "shared_name": "2400304",
-				    "lat": 35.643601000000004,
-				    "y": -356436.01000000007,
-				    "x": 1393084.46
+				    "station_name": "めじろ台"
 			    },
 			    "position": {
 				    "x": 1393084.46,
@@ -15893,22 +5963,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5604",
-				    "station_name": "高尾山口",
-				    "close_ymd": "",
-				    "lon": 139.269856,
-				    "post": "193-0844",
-				    "e_status": 0,
-				    "SUID": 5604,
-				    "station_g_cd": 2400307,
-				    "add": "八王子市高尾町２２４１",
-				    "line_cd": 24003,
-				    "open_ymd": "",
-				    "name": "2400307",
-				    "pref_name": "東京都",
-				    "shared_name": "2400307",
-				    "lat": 35.632377000000005,
-				    "y": -356323.7700000001,
-				    "x": 1392698.56
+				    "station_name": "高尾山口"
 			    },
 			    "position": {
 				    "x": 1392698.56,
@@ -15917,22 +5972,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5603",
-				    "station_name": "高尾",
-				    "close_ymd": "",
-				    "lon": 139.281551,
-				    "post": "193-0844",
-				    "e_status": 0,
-				    "SUID": 5603,
-				    "station_g_cd": 1131112,
-				    "add": "八王子市高尾町",
-				    "line_cd": 24003,
-				    "open_ymd": "",
-				    "name": "2400306",
-				    "pref_name": "東京都",
-				    "shared_name": "2400306",
-				    "lat": 35.641645000000004,
-				    "y": -356416.45,
-				    "x": 1392815.51
+				    "station_name": "高尾"
 			    },
 			    "position": {
 				    "x": 1392815.51,
@@ -15941,22 +5981,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5598",
-				    "station_name": "北野",
-				    "close_ymd": "",
-				    "lon": 139.354489,
-				    "post": "192-0911",
-				    "e_status": 0,
-				    "SUID": 5598,
-				    "station_g_cd": 2400133,
-				    "add": "八王子市打越町３３５-１",
-				    "line_cd": 24003,
-				    "open_ymd": "",
-				    "name": "2400301",
-				    "pref_name": "東京都",
-				    "shared_name": "2400301",
-				    "lat": 35.644479,
-				    "y": -356444.79,
-				    "x": 1393544.89
+				    "station_name": "北野"
 			    },
 			    "position": {
 				    "x": 1393544.89,
@@ -15965,22 +5990,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5600",
-				    "station_name": "山田",
-				    "close_ymd": "",
-				    "lon": 139.32108200000002,
-				    "post": "193-0932",
-				    "e_status": 0,
-				    "SUID": 5600,
-				    "station_g_cd": 2400303,
-				    "add": "八王子市緑町４３４",
-				    "line_cd": 24003,
-				    "open_ymd": "",
-				    "name": "2400303",
-				    "pref_name": "東京都",
-				    "shared_name": "2400303",
-				    "lat": 35.644411,
-				    "y": -356444.11,
-				    "x": 1393210.8200000003
+				    "station_name": "山田"
 			    },
 			    "position": {
 				    "x": 1393210.8200000003,
@@ -15989,22 +5999,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5599",
-				    "station_name": "京王片倉",
-				    "close_ymd": "",
-				    "lon": 139.33703500000001,
-				    "post": "192-0914",
-				    "e_status": 0,
-				    "SUID": 5599,
-				    "station_g_cd": 2400302,
-				    "add": "八王子市片倉町３４-９",
-				    "line_cd": 24003,
-				    "open_ymd": "",
-				    "name": "2400302",
-				    "pref_name": "東京都",
-				    "shared_name": "2400302",
-				    "lat": 35.644343,
-				    "y": -356443.43,
-				    "x": 1393370.35
+				    "station_name": "京王片倉"
 			    },
 			    "position": {
 				    "x": 1393370.35,
@@ -16013,22 +6008,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5643",
-				    "station_name": "成城学園前",
-				    "close_ymd": "",
-				    "lon": 139.598958,
-				    "post": "157-0066",
-				    "e_status": 0,
-				    "SUID": 5643,
-				    "station_g_cd": 2500114,
-				    "add": "世田谷区成城６丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500114",
-				    "pref_name": "東京都",
-				    "shared_name": "2500114",
-				    "lat": 35.640114000000004,
-				    "y": -356401.14,
-				    "x": 1395989.58
+				    "station_name": "成城学園前"
 			    },
 			    "position": {
 				    "x": 1395989.58,
@@ -16037,22 +6017,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5644",
-				    "station_name": "喜多見",
-				    "close_ymd": "",
-				    "lon": 139.587445,
-				    "post": "157-0067",
-				    "e_status": 0,
-				    "SUID": 5644,
-				    "station_g_cd": 2500115,
-				    "add": "世田谷区喜多見９丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500115",
-				    "pref_name": "東京都",
-				    "shared_name": "2500115",
-				    "lat": 35.636697,
-				    "y": -356366.97,
-				    "x": 1395874.45
+				    "station_name": "喜多見"
 			    },
 			    "position": {
 				    "x": 1395874.45,
@@ -16061,22 +6026,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5641",
-				    "station_name": "千歳船橋",
-				    "close_ymd": "",
-				    "lon": 139.624544,
-				    "post": "156-0055",
-				    "e_status": 0,
-				    "SUID": 5641,
-				    "station_g_cd": 2500112,
-				    "add": "世田谷区船橋１丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500112",
-				    "pref_name": "東京都",
-				    "shared_name": "2500112",
-				    "lat": 35.647616,
-				    "y": -356476.16,
-				    "x": 1396245.44
+				    "station_name": "千歳船橋"
 			    },
 			    "position": {
 				    "x": 1396245.44,
@@ -16085,22 +6035,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5642",
-				    "station_name": "祖師ヶ谷大蔵",
-				    "close_ymd": "",
-				    "lon": 139.60965900000002,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5642,
-				    "station_g_cd": 2500113,
-				    "add": "東京都世田谷区祖師谷1丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500113",
-				    "pref_name": "東京都",
-				    "shared_name": "2500113",
-				    "lat": 35.643236,
-				    "y": -356432.36000000004,
-				    "x": 1396096.5900000003
+				    "station_name": "祖師ヶ谷大蔵"
 			    },
 			    "position": {
 				    "x": 1396096.5900000003,
@@ -16109,22 +6044,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5639",
-				    "station_name": "豪徳寺",
-				    "close_ymd": "",
-				    "lon": 139.647381,
-				    "post": "154-0021",
-				    "e_status": 0,
-				    "SUID": 5639,
-				    "station_g_cd": 2500110,
-				    "add": "世田谷区豪徳寺１丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500110",
-				    "pref_name": "東京都",
-				    "shared_name": "2500110",
-				    "lat": 35.653807,
-				    "y": -356538.07,
-				    "x": 1396473.81
+				    "station_name": "豪徳寺"
 			    },
 			    "position": {
 				    "x": 1396473.81,
@@ -16133,22 +6053,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5640",
-				    "station_name": "経堂",
-				    "close_ymd": "",
-				    "lon": 139.63599299999998,
-				    "post": "156-0052",
-				    "e_status": 0,
-				    "SUID": 5640,
-				    "station_g_cd": 2500111,
-				    "add": "世田谷区経堂１丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500111",
-				    "pref_name": "東京都",
-				    "shared_name": "2500111",
-				    "lat": 35.650991,
-				    "y": -356509.91,
-				    "x": 1396359.93
+				    "station_name": "経堂"
 			    },
 			    "position": {
 				    "x": 1396359.93,
@@ -16157,22 +6062,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5637",
-				    "station_name": "世田谷代田",
-				    "close_ymd": "",
-				    "lon": 139.66155700000002,
-				    "post": "155-0033",
-				    "e_status": 0,
-				    "SUID": 5637,
-				    "station_g_cd": 2500108,
-				    "add": "世田谷区代田２丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500108",
-				    "pref_name": "東京都",
-				    "shared_name": "2500108",
-				    "lat": 35.65834,
-				    "y": -356583.4,
-				    "x": 1396615.57
+				    "station_name": "世田谷代田"
 			    },
 			    "position": {
 				    "x": 1396615.57,
@@ -16181,22 +6071,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5638",
-				    "station_name": "梅ヶ丘",
-				    "close_ymd": "",
-				    "lon": 139.653628,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5638,
-				    "station_g_cd": 2500109,
-				    "add": "東京都世田谷区梅丘",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500109",
-				    "pref_name": "東京都",
-				    "shared_name": "2500109",
-				    "lat": 35.656024,
-				    "y": -356560.24000000005,
-				    "x": 1396536.28
+				    "station_name": "梅ヶ丘"
 			    },
 			    "position": {
 				    "x": 1396536.28,
@@ -16205,22 +6080,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5645",
-				    "station_name": "狛江",
-				    "close_ymd": "",
-				    "lon": 139.577127,
-				    "post": "201-0014",
-				    "e_status": 0,
-				    "SUID": 5645,
-				    "station_g_cd": 2500116,
-				    "add": "狛江市東和泉１丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500116",
-				    "pref_name": "東京都",
-				    "shared_name": "2500116",
-				    "lat": 35.632001,
-				    "y": -356320.01,
-				    "x": 1395771.2699999998
+				    "station_name": "狛江"
 			    },
 			    "position": {
 				    "x": 1395771.2699999998,
@@ -16229,22 +6089,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5646",
-				    "station_name": "和泉多摩川",
-				    "close_ymd": "",
-				    "lon": 139.573695,
-				    "post": "201-0014",
-				    "e_status": 0,
-				    "SUID": 5646,
-				    "station_g_cd": 2500117,
-				    "add": "狛江市東和泉４丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500117",
-				    "pref_name": "東京都",
-				    "shared_name": "2500117",
-				    "lat": 35.627349,
-				    "y": -356273.49000000005,
-				    "x": 1395736.95
+				    "station_name": "和泉多摩川"
 			    },
 			    "position": {
 				    "x": 1395736.95,
@@ -16253,22 +6098,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5628",
-				    "station_name": "幡ヶ谷",
-				    "close_ymd": "",
-				    "lon": 139.676183,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 5628,
-				    "station_g_cd": 2400103,
-				    "add": "東京都渋谷区幡ヶ谷一丁目",
-				    "line_cd": 24007,
-				    "open_ymd": "",
-				    "name": "2400703",
-				    "pref_name": "東京都",
-				    "shared_name": "2400703",
-				    "lat": 35.677061,
-				    "y": -356770.61000000004,
-				    "x": 1396761.83
+				    "station_name": "幡ヶ谷"
 			    },
 			    "position": {
 				    "x": 1396761.83,
@@ -16277,22 +6107,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5627",
-				    "station_name": "初台",
-				    "close_ymd": "",
-				    "lon": 139.686354,
-				    "post": "151-0061",
-				    "e_status": 0,
-				    "SUID": 5627,
-				    "station_g_cd": 2400102,
-				    "add": "渋谷区初台１-５３-７",
-				    "line_cd": 24007,
-				    "open_ymd": "",
-				    "name": "2400702",
-				    "pref_name": "東京都",
-				    "shared_name": "2400702",
-				    "lat": 35.68123,
-				    "y": -356812.3,
-				    "x": 1396863.54
+				    "station_name": "初台"
 			    },
 			    "position": {
 				    "x": 1396863.54,
@@ -16301,22 +6116,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5626",
-				    "station_name": "新線新宿",
-				    "close_ymd": "",
-				    "lon": 139.698812,
-				    "post": "-",
-				    "e_status": 0,
-				    "SUID": 5626,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区西新宿一丁目18",
-				    "line_cd": 24007,
-				    "open_ymd": "",
-				    "name": "2400701",
-				    "pref_name": "東京都",
-				    "shared_name": "2400701",
-				    "lat": 35.68869,
-				    "y": -356886.9,
-				    "x": 1396988.12
+				    "station_name": "新線新宿"
 			    },
 			    "position": {
 				    "x": 1396988.12,
@@ -16325,22 +6125,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5625",
-				    "station_name": "吉祥寺",
-				    "close_ymd": "",
-				    "lon": 139.580306,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5625,
-				    "station_g_cd": 1131104,
-				    "add": "東京都武蔵野市吉祥寺南町",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400617",
-				    "pref_name": "東京都",
-				    "shared_name": "2400617",
-				    "lat": 35.702290999999995,
-				    "y": -357022.91,
-				    "x": 1395803.06
+				    "station_name": "吉祥寺"
 			    },
 			    "position": {
 				    "x": 1395803.06,
@@ -16349,22 +6134,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5624",
-				    "station_name": "井の頭公園",
-				    "close_ymd": "",
-				    "lon": 139.583112,
-				    "post": "181-0001",
-				    "e_status": 0,
-				    "SUID": 5624,
-				    "station_g_cd": 2400616,
-				    "add": "三鷹市井の頭３-３５-１２",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400616",
-				    "pref_name": "東京都",
-				    "shared_name": "2400616",
-				    "lat": 35.697303999999995,
-				    "y": -356973.04,
-				    "x": 1395831.12
+				    "station_name": "井の頭公園"
 			    },
 			    "position": {
 				    "x": 1395831.12,
@@ -16373,22 +6143,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5623",
-				    "station_name": "三鷹台",
-				    "close_ymd": "",
-				    "lon": 139.58929799999999,
-				    "post": "181-0001",
-				    "e_status": 0,
-				    "SUID": 5623,
-				    "station_g_cd": 2400615,
-				    "add": "三鷹市井の頭１-３２-１",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400615",
-				    "pref_name": "東京都",
-				    "shared_name": "2400615",
-				    "lat": 35.692046000000005,
-				    "y": -356920.46,
-				    "x": 1395892.9799999997
+				    "station_name": "三鷹台"
 			    },
 			    "position": {
 				    "x": 1395892.9799999997,
@@ -16397,22 +6152,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5622",
-				    "station_name": "久我山",
-				    "close_ymd": "",
-				    "lon": 139.599211,
-				    "post": "168-0082",
-				    "e_status": 0,
-				    "SUID": 5622,
-				    "station_g_cd": 2400614,
-				    "add": "杉並区久我山４-１-１１",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400614",
-				    "pref_name": "東京都",
-				    "shared_name": "2400614",
-				    "lat": 35.688138,
-				    "y": -356881.38,
-				    "x": 1395992.1099999999
+				    "station_name": "久我山"
 			    },
 			    "position": {
 				    "x": 1395992.1099999999,
@@ -16421,22 +6161,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5621",
-				    "station_name": "富士見ヶ丘",
-				    "close_ymd": "",
-				    "lon": 139.607072,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5621,
-				    "station_g_cd": 2400613,
-				    "add": "東京都杉並区久我山五丁目1番25号",
-				    "line_cd": 24006,
-				    "open_ymd": "",
-				    "name": "2400613",
-				    "pref_name": "東京都",
-				    "shared_name": "2400613",
-				    "lat": 35.684805,
-				    "y": -356848.05,
-				    "x": 1396070.72
+				    "station_name": "富士見ヶ丘"
 			    },
 			    "position": {
 				    "x": 1396070.72,
@@ -16445,22 +6170,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5636",
-				    "station_name": "下北沢",
-				    "close_ymd": "",
-				    "lon": 139.66751599999998,
-				    "post": "155-0031",
-				    "e_status": 0,
-				    "SUID": 5636,
-				    "station_g_cd": 2400605,
-				    "add": "世田谷区北沢２丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500107",
-				    "pref_name": "東京都",
-				    "shared_name": "2500107",
-				    "lat": 35.661654999999996,
-				    "y": -356616.55,
-				    "x": 1396675.1599999997
+				    "station_name": "下北沢"
 			    },
 			    "position": {
 				    "x": 1396675.1599999997,
@@ -16469,22 +6179,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5635",
-				    "station_name": "東北沢",
-				    "close_ymd": "",
-				    "lon": 139.673014,
-				    "post": "155-0031",
-				    "e_status": 0,
-				    "SUID": 5635,
-				    "station_g_cd": 2500106,
-				    "add": "世田谷区北沢３丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500106",
-				    "pref_name": "東京都",
-				    "shared_name": "2500106",
-				    "lat": 35.665378999999994,
-				    "y": -356653.7899999999,
-				    "x": 1396730.14
+				    "station_name": "東北沢"
 			    },
 			    "position": {
 				    "x": 1396730.14,
@@ -16493,22 +6188,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5634",
-				    "station_name": "代々木上原",
-				    "close_ymd": "",
-				    "lon": 139.680153,
-				    "post": "151-0066",
-				    "e_status": 0,
-				    "SUID": 5634,
-				    "station_g_cd": 2500105,
-				    "add": "渋谷区西原３丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500105",
-				    "pref_name": "東京都",
-				    "shared_name": "2500105",
-				    "lat": 35.669159,
-				    "y": -356691.59,
-				    "x": 1396801.5299999998
+				    "station_name": "代々木上原"
 			    },
 			    "position": {
 				    "x": 1396801.5299999998,
@@ -16517,22 +6197,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5633",
-				    "station_name": "代々木八幡",
-				    "close_ymd": "",
-				    "lon": 139.68891299999999,
-				    "post": "151-0053",
-				    "e_status": 0,
-				    "SUID": 5633,
-				    "station_g_cd": 2500104,
-				    "add": "渋谷区代々木５丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500104",
-				    "pref_name": "東京都",
-				    "shared_name": "2500104",
-				    "lat": 35.669715000000004,
-				    "y": -356697.15,
-				    "x": 1396889.13
+				    "station_name": "代々木八幡"
 			    },
 			    "position": {
 				    "x": 1396889.13,
@@ -16541,22 +6206,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5632",
-				    "station_name": "参宮橋",
-				    "close_ymd": "",
-				    "lon": 139.693568,
-				    "post": "151-0053",
-				    "e_status": 0,
-				    "SUID": 5632,
-				    "station_g_cd": 2500103,
-				    "add": "渋谷区代々木４丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500103",
-				    "pref_name": "東京都",
-				    "shared_name": "2500103",
-				    "lat": 35.678585999999996,
-				    "y": -356785.86,
-				    "x": 1396935.68
+				    "station_name": "参宮橋"
 			    },
 			    "position": {
 				    "x": 1396935.68,
@@ -16565,22 +6215,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5631",
-				    "station_name": "南新宿",
-				    "close_ymd": "",
-				    "lon": 139.69867,
-				    "post": "151-0053",
-				    "e_status": 0,
-				    "SUID": 5631,
-				    "station_g_cd": 2500102,
-				    "add": "渋谷区代々木２丁目",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500102",
-				    "pref_name": "東京都",
-				    "shared_name": "2500102",
-				    "lat": 35.683483,
-				    "y": -356834.83,
-				    "x": 1396986.7
+				    "station_name": "南新宿"
 			    },
 			    "position": {
 				    "x": 1396986.7,
@@ -16589,22 +6224,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5630",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.699574,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5630,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区西新宿一丁目1-3",
-				    "line_cd": 25001,
-				    "open_ymd": "",
-				    "name": "2500101",
-				    "pref_name": "東京都",
-				    "shared_name": "2500101",
-				    "lat": 35.691435,
-				    "y": -356914.35,
-				    "x": 1396995.7400000002
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1396995.7400000002,
@@ -16613,22 +6233,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5629",
-				    "station_name": "笹塚",
-				    "close_ymd": "",
-				    "lon": 139.667251,
-				    "post": "151-0073",
-				    "e_status": 0,
-				    "SUID": 5629,
-				    "station_g_cd": 2400104,
-				    "add": "渋谷区笹塚１-５６-７",
-				    "line_cd": 24007,
-				    "open_ymd": "",
-				    "name": "2400704",
-				    "pref_name": "東京都",
-				    "shared_name": "2400704",
-				    "lat": 35.673758,
-				    "y": -356737.58,
-				    "x": 1396672.51
+				    "station_name": "笹塚"
 			    },
 			    "position": {
 				    "x": 1396672.51,
@@ -16637,22 +6242,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5422",
-				    "station_name": "都立家政",
-				    "close_ymd": "",
-				    "lon": 139.644839,
-				    "post": "165-0032",
-				    "e_status": 0,
-				    "SUID": 5422,
-				    "station_g_cd": 2200708,
-				    "add": "中野区鷺宮１-１６-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200708",
-				    "pref_name": "東京都",
-				    "shared_name": "2200708",
-				    "lat": 35.722313,
-				    "y": -357223.13,
-				    "x": 1396448.39
+				    "station_name": "都立家政"
 			    },
 			    "position": {
 				    "x": 1396448.39,
@@ -16661,22 +6251,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5421",
-				    "station_name": "野方",
-				    "close_ymd": "",
-				    "lon": 139.652733,
-				    "post": "165-0027",
-				    "e_status": 0,
-				    "SUID": 5421,
-				    "station_g_cd": 2200707,
-				    "add": "中野区野方６-３-３",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200707",
-				    "pref_name": "東京都",
-				    "shared_name": "2200707",
-				    "lat": 35.719658,
-				    "y": -357196.58,
-				    "x": 1396527.33
+				    "station_name": "野方"
 			    },
 			    "position": {
 				    "x": 1396527.33,
@@ -16685,22 +6260,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5424",
-				    "station_name": "下井草",
-				    "close_ymd": "",
-				    "lon": 139.624688,
-				    "post": "167-0022",
-				    "e_status": 0,
-				    "SUID": 5424,
-				    "station_g_cd": 2200710,
-				    "add": "杉並区下井草２-４４-１０",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200710",
-				    "pref_name": "東京都",
-				    "shared_name": "2200710",
-				    "lat": 35.723852,
-				    "y": -357238.52,
-				    "x": 1396246.88
+				    "station_name": "下井草"
 			    },
 			    "position": {
 				    "x": 1396246.88,
@@ -16709,22 +6269,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5423",
-				    "station_name": "鷺ノ宮",
-				    "close_ymd": "",
-				    "lon": 139.63891999999998,
-				    "post": "165-0032",
-				    "e_status": 0,
-				    "SUID": 5423,
-				    "station_g_cd": 2200709,
-				    "add": "中野区鷺宮３-１５-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200709",
-				    "pref_name": "東京都",
-				    "shared_name": "2200709",
-				    "lat": 35.722605,
-				    "y": -357226.05,
-				    "x": 1396389.2
+				    "station_name": "鷺ノ宮"
 			    },
 			    "position": {
 				    "x": 1396389.2,
@@ -16733,22 +6278,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5426",
-				    "station_name": "上井草",
-				    "close_ymd": "",
-				    "lon": 139.602937,
-				    "post": "167-0023",
-				    "e_status": 0,
-				    "SUID": 5426,
-				    "station_g_cd": 2200712,
-				    "add": "杉並区上井草３-３２-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200712",
-				    "pref_name": "東京都",
-				    "shared_name": "2200712",
-				    "lat": 35.725326,
-				    "y": -357253.26,
-				    "x": 1396029.3699999999
+				    "station_name": "上井草"
 			    },
 			    "position": {
 				    "x": 1396029.3699999999,
@@ -16757,22 +6287,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5425",
-				    "station_name": "井荻",
-				    "close_ymd": "",
-				    "lon": 139.615303,
-				    "post": "167-0022",
-				    "e_status": 0,
-				    "SUID": 5425,
-				    "station_g_cd": 2200711,
-				    "add": "杉並区下井草５-２３-１５",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200711",
-				    "pref_name": "東京都",
-				    "shared_name": "2200711",
-				    "lat": 35.72469,
-				    "y": -357246.9,
-				    "x": 1396153.03
+				    "station_name": "井荻"
 			    },
 			    "position": {
 				    "x": 1396153.03,
@@ -16781,22 +6296,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5428",
-				    "station_name": "武蔵関",
-				    "close_ymd": "",
-				    "lon": 139.576417,
-				    "post": "177-0051",
-				    "e_status": 0,
-				    "SUID": 5428,
-				    "station_g_cd": 2200714,
-				    "add": "練馬区関町北２-２９-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200714",
-				    "pref_name": "東京都",
-				    "shared_name": "2200714",
-				    "lat": 35.7276,
-				    "y": -357276.0,
-				    "x": 1395764.17
+				    "station_name": "武蔵関"
 			    },
 			    "position": {
 				    "x": 1395764.17,
@@ -16805,22 +6305,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5427",
-				    "station_name": "上石神井",
-				    "close_ymd": "",
-				    "lon": 139.592266,
-				    "post": "177-0044",
-				    "e_status": 0,
-				    "SUID": 5427,
-				    "station_g_cd": 2200713,
-				    "add": "練馬区上石神井１-２-４５",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200713",
-				    "pref_name": "東京都",
-				    "shared_name": "2200713",
-				    "lat": 35.726189,
-				    "y": -357261.88999999996,
-				    "x": 1395922.66
+				    "station_name": "上石神井"
 			    },
 			    "position": {
 				    "x": 1395922.66,
@@ -16829,22 +6314,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5416",
-				    "station_name": "高田馬場",
-				    "close_ymd": "",
-				    "lon": 139.703715,
-				    "post": "169-0075",
-				    "e_status": 0,
-				    "SUID": 5416,
-				    "station_g_cd": 1130210,
-				    "add": "東京都新宿区高田馬場一丁目35-2",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200702",
-				    "pref_name": "東京都",
-				    "shared_name": "2200702",
-				    "lat": 35.712677,
-				    "y": -357126.77,
-				    "x": 1397037.15
+				    "station_name": "高田馬場"
 			    },
 			    "position": {
 				    "x": 1397037.15,
@@ -16853,22 +6323,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5415",
-				    "station_name": "西武新宿",
-				    "close_ymd": "",
-				    "lon": 139.7,
-				    "post": "160-0021",
-				    "e_status": 0,
-				    "SUID": 5415,
-				    "station_g_cd": 2200701,
-				    "add": "新宿区歌舞伎町１-３０-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200701",
-				    "pref_name": "東京都",
-				    "shared_name": "2200701",
-				    "lat": 35.696253999999996,
-				    "y": -356962.54,
-				    "x": 1397000.0
+				    "station_name": "西武新宿"
 			    },
 			    "position": {
 				    "x": 1397000.0,
@@ -16877,22 +6332,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5418",
-				    "station_name": "中井",
-				    "close_ymd": "",
-				    "lon": 139.68696699999998,
-				    "post": "161-0032",
-				    "e_status": 0,
-				    "SUID": 5418,
-				    "station_g_cd": 2200704,
-				    "add": "新宿区中落合１-１９-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200704",
-				    "pref_name": "東京都",
-				    "shared_name": "2200704",
-				    "lat": 35.715106,
-				    "y": -357151.06,
-				    "x": 1396869.67
+				    "station_name": "中井"
 			    },
 			    "position": {
 				    "x": 1396869.67,
@@ -16901,22 +6341,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5417",
-				    "station_name": "下落合",
-				    "close_ymd": "",
-				    "lon": 139.695391,
-				    "post": "161-0033",
-				    "e_status": 0,
-				    "SUID": 5417,
-				    "station_g_cd": 2200703,
-				    "add": "新宿区下落合１-１６-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200703",
-				    "pref_name": "東京都",
-				    "shared_name": "2200703",
-				    "lat": 35.715846,
-				    "y": -357158.45999999996,
-				    "x": 1396953.91
+				    "station_name": "下落合"
 			    },
 			    "position": {
 				    "x": 1396953.91,
@@ -16925,22 +6350,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5420",
-				    "station_name": "沼袋",
-				    "close_ymd": "",
-				    "lon": 139.663841,
-				    "post": "165-0025",
-				    "e_status": 0,
-				    "SUID": 5420,
-				    "station_g_cd": 2200706,
-				    "add": "中野区沼袋１-３５-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200706",
-				    "pref_name": "東京都",
-				    "shared_name": "2200706",
-				    "lat": 35.719458,
-				    "y": -357194.58,
-				    "x": 1396638.41
+				    "station_name": "沼袋"
 			    },
 			    "position": {
 				    "x": 1396638.41,
@@ -16949,22 +6359,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5419",
-				    "station_name": "新井薬師前",
-				    "close_ymd": "",
-				    "lon": 139.672582,
-				    "post": "164-0002",
-				    "e_status": 0,
-				    "SUID": 5419,
-				    "station_g_cd": 2200705,
-				    "add": "中野区上高田５-４３-２０",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200705",
-				    "pref_name": "東京都",
-				    "shared_name": "2200705",
-				    "lat": 35.715778,
-				    "y": -357157.78,
-				    "x": 1396725.82
+				    "station_name": "新井薬師前"
 			    },
 			    "position": {
 				    "x": 1396725.82,
@@ -16973,22 +6368,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5405",
-				    "station_name": "新桜台",
-				    "close_ymd": "",
-				    "lon": 139.6683,
-				    "post": "176-0002",
-				    "e_status": 0,
-				    "SUID": 5405,
-				    "station_g_cd": 2200302,
-				    "add": "練馬区桜台１-２８-１１",
-				    "line_cd": 22003,
-				    "open_ymd": "",
-				    "name": "2200302",
-				    "pref_name": "東京都",
-				    "shared_name": "2200302",
-				    "lat": 35.74077,
-				    "y": -357407.69999999995,
-				    "x": 1396682.9999999998
+				    "station_name": "新桜台"
 			    },
 			    "position": {
 				    "x": 1396682.9999999998,
@@ -16997,22 +6377,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5406",
-				    "station_name": "練馬",
-				    "close_ymd": "",
-				    "lon": 139.654368,
-				    "post": "176-0001",
-				    "e_status": 0,
-				    "SUID": 5406,
-				    "station_g_cd": 2200106,
-				    "add": "練馬区練馬１-３-５",
-				    "line_cd": 22003,
-				    "open_ymd": "",
-				    "name": "2200303",
-				    "pref_name": "東京都",
-				    "shared_name": "2200303",
-				    "lat": 35.737893,
-				    "y": -357378.93,
-				    "x": 1396543.6800000002
+				    "station_name": "練馬"
 			    },
 			    "position": {
 				    "x": 1396543.6800000002,
@@ -17021,22 +6386,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5407",
-				    "station_name": "練馬",
-				    "close_ymd": "",
-				    "lon": 139.654368,
-				    "post": "176-0001",
-				    "e_status": 0,
-				    "SUID": 5407,
-				    "station_g_cd": 2200106,
-				    "add": "練馬区練馬１-３-５",
-				    "line_cd": 22004,
-				    "open_ymd": "",
-				    "name": "2200401",
-				    "pref_name": "東京都",
-				    "shared_name": "2200401",
-				    "lat": 35.737893,
-				    "y": -357378.93,
-				    "x": 1396543.6800000002
+				    "station_name": "練馬"
 			    },
 			    "position": {
 				    "x": 1396543.6800000002,
@@ -17045,22 +6395,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5408",
-				    "station_name": "豊島園",
-				    "close_ymd": "",
-				    "lon": 139.647979,
-				    "post": "176-0001",
-				    "e_status": 0,
-				    "SUID": 5408,
-				    "station_g_cd": 2200402,
-				    "add": "練馬区練馬４-１６-５",
-				    "line_cd": 22004,
-				    "open_ymd": "",
-				    "name": "2200402",
-				    "pref_name": "東京都",
-				    "shared_name": "2200402",
-				    "lat": 35.742053999999996,
-				    "y": -357420.54,
-				    "x": 1396479.79
+				    "station_name": "豊島園"
 			    },
 			    "position": {
 				    "x": 1396479.79,
@@ -17069,22 +6404,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5412",
-				    "station_name": "西武遊園地",
-				    "close_ymd": "",
-				    "lon": 139.442747,
-				    "post": "189-0026",
-				    "e_status": 0,
-				    "SUID": 5412,
-				    "station_g_cd": 2200601,
-				    "add": "東村山市多摩湖町３-１５-１８",
-				    "line_cd": 22006,
-				    "open_ymd": "",
-				    "name": "2200601",
-				    "pref_name": "東京都",
-				    "shared_name": "2200601",
-				    "lat": 35.765881,
-				    "y": -357658.81,
-				    "x": 1394427.47
+				    "station_name": "西武遊園地"
 			    },
 			    "position": {
 				    "x": 1394427.47,
@@ -17093,22 +6413,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5404",
-				    "station_name": "小竹向原",
-				    "close_ymd": "",
-				    "lon": 139.678572,
-				    "post": "176-0004",
-				    "e_status": 0,
-				    "SUID": 5404,
-				    "station_g_cd": 2200301,
-				    "add": "東京都練馬区小竹町二丁目16-15",
-				    "line_cd": 22003,
-				    "open_ymd": "",
-				    "name": "2200301",
-				    "pref_name": "東京都",
-				    "shared_name": "2200301",
-				    "lat": 35.743803,
-				    "y": -357438.02999999997,
-				    "x": 1396785.72
+				    "station_name": "小竹向原"
 			    },
 			    "position": {
 				    "x": 1396785.72,
@@ -17117,22 +6422,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5456",
-				    "station_name": "鷹の台",
-				    "close_ymd": "",
-				    "lon": 139.461155,
-				    "post": "187-0024",
-				    "e_status": 0,
-				    "SUID": 5456,
-				    "station_g_cd": 2201003,
-				    "add": "小平市たかの台４５-４",
-				    "line_cd": 22010,
-				    "open_ymd": "",
-				    "name": "2201003",
-				    "pref_name": "東京都",
-				    "shared_name": "2201003",
-				    "lat": 35.723096999999996,
-				    "y": -357230.97,
-				    "x": 1394611.5499999998
+				    "station_name": "鷹の台"
 			    },
 			    "position": {
 				    "x": 1394611.5499999998,
@@ -17141,22 +6431,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5455",
-				    "station_name": "恋ヶ窪",
-				    "close_ymd": "",
-				    "lon": 139.463944,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5455,
-				    "station_g_cd": 2201002,
-				    "add": "東京都国分寺市戸倉一丁目1-4",
-				    "line_cd": 22010,
-				    "open_ymd": "",
-				    "name": "2201002",
-				    "pref_name": "東京都",
-				    "shared_name": "2201002",
-				    "lat": 35.711385,
-				    "y": -357113.85,
-				    "x": 1394639.44
+				    "station_name": "恋ヶ窪"
 			    },
 			    "position": {
 				    "x": 1394639.44,
@@ -17165,22 +6440,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5454",
-				    "station_name": "国分寺",
-				    "close_ymd": "",
-				    "lon": 139.480841,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5454,
-				    "station_g_cd": 1131106,
-				    "add": "東京都国分寺市本町二丁目1-23",
-				    "line_cd": 22010,
-				    "open_ymd": "",
-				    "name": "2201001",
-				    "pref_name": "東京都",
-				    "shared_name": "2201001",
-				    "lat": 35.700123,
-				    "y": -357001.23,
-				    "x": 1394808.41
+				    "station_name": "国分寺"
 			    },
 			    "position": {
 				    "x": 1394808.41,
@@ -17189,22 +6449,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5453",
-				    "station_name": "西武園",
-				    "close_ymd": "",
-				    "lon": 139.448904,
-				    "post": "189-0026",
-				    "e_status": 0,
-				    "SUID": 5453,
-				    "station_g_cd": 2200902,
-				    "add": "東村山市多摩湖町４-２９-１",
-				    "line_cd": 22009,
-				    "open_ymd": "",
-				    "name": "2200902",
-				    "pref_name": "東京都",
-				    "shared_name": "2200902",
-				    "lat": 35.767684,
-				    "y": -357676.84,
-				    "x": 1394489.04
+				    "station_name": "西武園"
 			    },
 			    "position": {
 				    "x": 1394489.04,
@@ -17213,22 +6458,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5460",
-				    "station_name": "一橋学園",
-				    "close_ymd": "",
-				    "lon": 139.48003899999998,
-				    "post": "187-0045",
-				    "e_status": 0,
-				    "SUID": 5460,
-				    "station_g_cd": 2201102,
-				    "add": "小平市学園西町２-１-１",
-				    "line_cd": 22011,
-				    "open_ymd": "",
-				    "name": "2201102",
-				    "pref_name": "東京都",
-				    "shared_name": "2201102",
-				    "lat": 35.72217,
-				    "y": -357221.7,
-				    "x": 1394800.3899999997
+				    "station_name": "一橋学園"
 			    },
 			    "position": {
 				    "x": 1394800.3899999997,
@@ -17237,22 +6467,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5459",
-				    "station_name": "国分寺",
-				    "close_ymd": "",
-				    "lon": 139.479547,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5459,
-				    "station_g_cd": 1131106,
-				    "add": "東京都国分寺市本町二丁目1-23",
-				    "line_cd": 22011,
-				    "open_ymd": "",
-				    "name": "2201101",
-				    "pref_name": "東京都",
-				    "shared_name": "2201101",
-				    "lat": 35.700835999999995,
-				    "y": -357008.3599999999,
-				    "x": 1394795.47
+				    "station_name": "国分寺"
 			    },
 			    "position": {
 				    "x": 1394795.47,
@@ -17261,22 +6476,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5458",
-				    "station_name": "東村山",
-				    "close_ymd": "",
-				    "lon": 139.465839,
-				    "post": "189-0014",
-				    "e_status": 0,
-				    "SUID": 5458,
-				    "station_g_cd": 2200721,
-				    "add": "東村山市本町２-３-３２",
-				    "line_cd": 22010,
-				    "open_ymd": "",
-				    "name": "2201005",
-				    "pref_name": "東京都",
-				    "shared_name": "2201005",
-				    "lat": 35.760059999999996,
-				    "y": -357600.6,
-				    "x": 1394658.39
+				    "station_name": "東村山"
 			    },
 			    "position": {
 				    "x": 1394658.39,
@@ -17285,22 +6485,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5457",
-				    "station_name": "小川",
-				    "close_ymd": "",
-				    "lon": 139.463493,
-				    "post": "187-0031",
-				    "e_status": 0,
-				    "SUID": 5457,
-				    "station_g_cd": 2200803,
-				    "add": "小平市小川東町１-２０-１",
-				    "line_cd": 22010,
-				    "open_ymd": "",
-				    "name": "2201004",
-				    "pref_name": "東京都",
-				    "shared_name": "2201004",
-				    "lat": 35.737573,
-				    "y": -357375.73,
-				    "x": 1394634.93
+				    "station_name": "小川"
 			    },
 			    "position": {
 				    "x": 1394634.93,
@@ -17309,22 +6494,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5448",
-				    "station_name": "玉川上水",
-				    "close_ymd": "",
-				    "lon": 139.41843500000002,
-				    "post": "190-0002",
-				    "e_status": 0,
-				    "SUID": 5448,
-				    "station_g_cd": 2200805,
-				    "add": "立川市幸町６-３６-１",
-				    "line_cd": 22008,
-				    "open_ymd": "",
-				    "name": "2200805",
-				    "pref_name": "東京都",
-				    "shared_name": "2200805",
-				    "lat": 35.731751,
-				    "y": -357317.51,
-				    "x": 1394184.35
+				    "station_name": "玉川上水"
 			    },
 			    "position": {
 				    "x": 1394184.35,
@@ -17333,22 +6503,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5447",
-				    "station_name": "東大和市",
-				    "close_ymd": "",
-				    "lon": 139.434249,
-				    "post": "207-0022",
-				    "e_status": 0,
-				    "SUID": 5447,
-				    "station_g_cd": 2200804,
-				    "add": "東大和市桜が丘１-１４１５-１",
-				    "line_cd": 22008,
-				    "open_ymd": "",
-				    "name": "2200804",
-				    "pref_name": "東京都",
-				    "shared_name": "2200804",
-				    "lat": 35.732828999999995,
-				    "y": -357328.29,
-				    "x": 1394342.49
+				    "station_name": "東大和市"
 			    },
 			    "position": {
 				    "x": 1394342.49,
@@ -17357,22 +6512,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5446",
-				    "station_name": "小川",
-				    "close_ymd": "",
-				    "lon": 139.463493,
-				    "post": "187-0031",
-				    "e_status": 0,
-				    "SUID": 5446,
-				    "station_g_cd": 2200803,
-				    "add": "小平市小川東町１-２０-１",
-				    "line_cd": 22008,
-				    "open_ymd": "",
-				    "name": "2200803",
-				    "pref_name": "東京都",
-				    "shared_name": "2200803",
-				    "lat": 35.737573,
-				    "y": -357375.73,
-				    "x": 1394634.93
+				    "station_name": "小川"
 			    },
 			    "position": {
 				    "x": 1394634.93,
@@ -17381,22 +6521,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5445",
-				    "station_name": "萩山",
-				    "close_ymd": "",
-				    "lon": 139.476903,
-				    "post": "189-0012",
-				    "e_status": 0,
-				    "SUID": 5445,
-				    "station_g_cd": 2200802,
-				    "add": "東村山市萩山町２-１-１",
-				    "line_cd": 22008,
-				    "open_ymd": "",
-				    "name": "2200802",
-				    "pref_name": "東京都",
-				    "shared_name": "2200802",
-				    "lat": 35.740759000000004,
-				    "y": -357407.59,
-				    "x": 1394769.03
+				    "station_name": "萩山"
 			    },
 			    "position": {
 				    "x": 1394769.03,
@@ -17405,22 +6530,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5452",
-				    "station_name": "東村山",
-				    "close_ymd": "",
-				    "lon": 139.465839,
-				    "post": "189-0014",
-				    "e_status": 0,
-				    "SUID": 5452,
-				    "station_g_cd": 2200721,
-				    "add": "東村山市本町２-３-３２",
-				    "line_cd": 22009,
-				    "open_ymd": "",
-				    "name": "2200901",
-				    "pref_name": "東京都",
-				    "shared_name": "2200901",
-				    "lat": 35.760059999999996,
-				    "y": -357600.6,
-				    "x": 1394658.39
+				    "station_name": "東村山"
 			    },
 			    "position": {
 				    "x": 1394658.39,
@@ -17429,22 +6539,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5451",
-				    "station_name": "拝島",
-				    "close_ymd": "",
-				    "lon": 139.343468,
-				    "post": "196-0003",
-				    "e_status": 0,
-				    "SUID": 5451,
-				    "station_g_cd": 1131506,
-				    "add": "昭島市松原町４丁目",
-				    "line_cd": 22008,
-				    "open_ymd": "",
-				    "name": "2200808",
-				    "pref_name": "東京都",
-				    "shared_name": "2200808",
-				    "lat": 35.721278000000005,
-				    "y": -357212.78,
-				    "x": 1393434.68
+				    "station_name": "拝島"
 			    },
 			    "position": {
 				    "x": 1393434.68,
@@ -17453,22 +6548,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5450",
-				    "station_name": "西武立川",
-				    "close_ymd": "",
-				    "lon": 139.370124,
-				    "post": "190-0034",
-				    "e_status": 0,
-				    "SUID": 5450,
-				    "station_g_cd": 2200807,
-				    "add": "立川市西砂町１-２１-２",
-				    "line_cd": 22008,
-				    "open_ymd": "",
-				    "name": "2200807",
-				    "pref_name": "東京都",
-				    "shared_name": "2200807",
-				    "lat": 35.7262,
-				    "y": -357262.0,
-				    "x": 1393701.24
+				    "station_name": "西武立川"
 			    },
 			    "position": {
 				    "x": 1393701.24,
@@ -17477,22 +6557,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5449",
-				    "station_name": "武蔵砂川",
-				    "close_ymd": "",
-				    "lon": 139.392319,
-				    "post": "190-0032",
-				    "e_status": 0,
-				    "SUID": 5449,
-				    "station_g_cd": 2200806,
-				    "add": "立川市上砂町５-４４-４",
-				    "line_cd": 22008,
-				    "open_ymd": "",
-				    "name": "2200806",
-				    "pref_name": "東京都",
-				    "shared_name": "2200806",
-				    "lat": 35.728876,
-				    "y": -357288.76,
-				    "x": 1393923.19
+				    "station_name": "武蔵砂川"
 			    },
 			    "position": {
 				    "x": 1393923.19,
@@ -17501,22 +6566,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5444",
-				    "station_name": "小平",
-				    "close_ymd": "",
-				    "lon": 139.48849099999998,
-				    "post": "187-0041",
-				    "e_status": 0,
-				    "SUID": 5444,
-				    "station_g_cd": 2200719,
-				    "add": "小平市美園町１-３４-１",
-				    "line_cd": 22008,
-				    "open_ymd": "",
-				    "name": "2200801",
-				    "pref_name": "東京都",
-				    "shared_name": "2200801",
-				    "lat": 35.736963,
-				    "y": -357369.63,
-				    "x": 1394884.91
+				    "station_name": "小平"
 			    },
 			    "position": {
 				    "x": 1394884.91,
@@ -17525,22 +6575,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5431",
-				    "station_name": "田無",
-				    "close_ymd": "",
-				    "lon": 139.53925900000002,
-				    "post": "188-0011",
-				    "e_status": 0,
-				    "SUID": 5431,
-				    "station_g_cd": 2200717,
-				    "add": "西東京市田無町４-１-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200717",
-				    "pref_name": "東京都",
-				    "shared_name": "2200717",
-				    "lat": 35.727307,
-				    "y": -357273.07,
-				    "x": 1395392.59
+				    "station_name": "田無"
 			    },
 			    "position": {
 				    "x": 1395392.59,
@@ -17549,22 +6584,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5432",
-				    "station_name": "花小金井",
-				    "close_ymd": "",
-				    "lon": 139.513228,
-				    "post": "187-0002",
-				    "e_status": 0,
-				    "SUID": 5432,
-				    "station_g_cd": 2200718,
-				    "add": "小平市花小金井１-１０-５",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200718",
-				    "pref_name": "東京都",
-				    "shared_name": "2200718",
-				    "lat": 35.726129,
-				    "y": -357261.29,
-				    "x": 1395132.28
+				    "station_name": "花小金井"
 			    },
 			    "position": {
 				    "x": 1395132.28,
@@ -17573,22 +6593,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5429",
-				    "station_name": "東伏見",
-				    "close_ymd": "",
-				    "lon": 139.56352900000002,
-				    "post": "202-0021",
-				    "e_status": 0,
-				    "SUID": 5429,
-				    "station_g_cd": 2200715,
-				    "add": "西東京市東伏見２-５-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200715",
-				    "pref_name": "東京都",
-				    "shared_name": "2200715",
-				    "lat": 35.728761,
-				    "y": -357287.61,
-				    "x": 1395635.2900000003
+				    "station_name": "東伏見"
 			    },
 			    "position": {
 				    "x": 1395635.2900000003,
@@ -17597,22 +6602,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5430",
-				    "station_name": "西武柳沢",
-				    "close_ymd": "",
-				    "lon": 139.552477,
-				    "post": "202-0015",
-				    "e_status": 0,
-				    "SUID": 5430,
-				    "station_g_cd": 2200716,
-				    "add": "西東京市保谷町３-１１-２４",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200716",
-				    "pref_name": "東京都",
-				    "shared_name": "2200716",
-				    "lat": 35.728621000000004,
-				    "y": -357286.21,
-				    "x": 1395524.77
+				    "station_name": "西武柳沢"
 			    },
 			    "position": {
 				    "x": 1395524.77,
@@ -17621,22 +6611,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5435",
-				    "station_name": "東村山",
-				    "close_ymd": "",
-				    "lon": 139.465839,
-				    "post": "189-0014",
-				    "e_status": 0,
-				    "SUID": 5435,
-				    "station_g_cd": 2200721,
-				    "add": "東村山市本町２-３-３２",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200721",
-				    "pref_name": "東京都",
-				    "shared_name": "2200721",
-				    "lat": 35.760059999999996,
-				    "y": -357600.6,
-				    "x": 1394658.39
+				    "station_name": "東村山"
 			    },
 			    "position": {
 				    "x": 1394658.39,
@@ -17645,22 +6620,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5433",
-				    "station_name": "小平",
-				    "close_ymd": "",
-				    "lon": 139.48849099999998,
-				    "post": "187-0041",
-				    "e_status": 0,
-				    "SUID": 5433,
-				    "station_g_cd": 2200719,
-				    "add": "小平市美園町１-３４-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200719",
-				    "pref_name": "東京都",
-				    "shared_name": "2200719",
-				    "lat": 35.736963,
-				    "y": -357369.63,
-				    "x": 1394884.91
+				    "station_name": "小平"
 			    },
 			    "position": {
 				    "x": 1394884.91,
@@ -17669,22 +6629,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5434",
-				    "station_name": "久米川",
-				    "close_ymd": "",
-				    "lon": 139.472653,
-				    "post": "189-0013",
-				    "e_status": 0,
-				    "SUID": 5434,
-				    "station_g_cd": 2200720,
-				    "add": "東村山市栄町２-３-１",
-				    "line_cd": 22007,
-				    "open_ymd": "",
-				    "name": "2200720",
-				    "pref_name": "東京都",
-				    "shared_name": "2200720",
-				    "lat": 35.749575,
-				    "y": -357495.75,
-				    "x": 1394726.53
+				    "station_name": "久米川"
 			    },
 			    "position": {
 				    "x": 1394726.53,
@@ -17693,22 +6638,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5482",
-				    "station_name": "京成小岩",
-				    "close_ymd": "",
-				    "lon": 139.88371,
-				    "post": "133-0051",
-				    "e_status": 0,
-				    "SUID": 5482,
-				    "station_g_cd": 2300111,
-				    "add": "江戸川区北小岩２-１０-９",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300111",
-				    "pref_name": "東京都",
-				    "shared_name": "2300111",
-				    "lat": 35.742158,
-				    "y": -357421.58,
-				    "x": 1398837.1
+				    "station_name": "京成小岩"
 			    },
 			    "position": {
 				    "x": 1398837.1,
@@ -17717,22 +6647,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5481",
-				    "station_name": "京成高砂",
-				    "close_ymd": "",
-				    "lon": 139.866875,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5481,
-				    "station_g_cd": 2300110,
-				    "add": "東京都葛飾区高砂五丁目28-1",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300110",
-				    "pref_name": "東京都",
-				    "shared_name": "2300110",
-				    "lat": 35.750932,
-				    "y": -357509.32,
-				    "x": 1398668.75
+				    "station_name": "京成高砂"
 			    },
 			    "position": {
 				    "x": 1398668.75,
@@ -17741,22 +6656,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5483",
-				    "station_name": "江戸川",
-				    "close_ymd": "",
-				    "lon": 139.896226,
-				    "post": "133-0051",
-				    "e_status": 0,
-				    "SUID": 5483,
-				    "station_g_cd": 2300112,
-				    "add": "江戸川区北小岩３-２４-１５",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300112",
-				    "pref_name": "東京都",
-				    "shared_name": "2300112",
-				    "lat": 35.737722999999995,
-				    "y": -357377.23,
-				    "x": 1398962.2600000002
+				    "station_name": "江戸川"
 			    },
 			    "position": {
 				    "x": 1398962.2600000002,
@@ -17765,22 +6665,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5478",
-				    "station_name": "堀切菖蒲園",
-				    "close_ymd": "",
-				    "lon": 139.827545,
-				    "post": "124-0006",
-				    "e_status": 0,
-				    "SUID": 5478,
-				    "station_g_cd": 2300107,
-				    "add": "葛飾区堀切５-１-１",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300107",
-				    "pref_name": "東京都",
-				    "shared_name": "2300107",
-				    "lat": 35.747648999999996,
-				    "y": -357476.48999999993,
-				    "x": 1398275.45
+				    "station_name": "堀切菖蒲園"
 			    },
 			    "position": {
 				    "x": 1398275.45,
@@ -17789,22 +6674,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5477",
-				    "station_name": "京成関屋",
-				    "close_ymd": "",
-				    "lon": 139.81183000000001,
-				    "post": "120-0023",
-				    "e_status": 0,
-				    "SUID": 5477,
-				    "station_g_cd": 2100208,
-				    "add": "足立区千住曙町２-２",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300106",
-				    "pref_name": "東京都",
-				    "shared_name": "2300106",
-				    "lat": 35.744008,
-				    "y": -357440.08,
-				    "x": 1398118.3
+				    "station_name": "京成関屋"
 			    },
 			    "position": {
 				    "x": 1398118.3,
@@ -17813,22 +6683,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5480",
-				    "station_name": "青砥",
-				    "close_ymd": "",
-				    "lon": 139.856292,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5480,
-				    "station_g_cd": 2300109,
-				    "add": "東京都葛飾区青戸三丁目36番1号",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300109",
-				    "pref_name": "東京都",
-				    "shared_name": "2300109",
-				    "lat": 35.745883,
-				    "y": -357458.83,
-				    "x": 1398562.92
+				    "station_name": "青砥"
 			    },
 			    "position": {
 				    "x": 1398562.92,
@@ -17837,22 +6692,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5479",
-				    "station_name": "お花茶屋",
-				    "close_ymd": "",
-				    "lon": 139.83988,
-				    "post": "124-0005",
-				    "e_status": 0,
-				    "SUID": 5479,
-				    "station_g_cd": 2300108,
-				    "add": "葛飾区宝町２-３７-１",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300108",
-				    "pref_name": "東京都",
-				    "shared_name": "2300108",
-				    "lat": 35.747585,
-				    "y": -357475.85000000003,
-				    "x": 1398398.8
+				    "station_name": "お花茶屋"
 			    },
 			    "position": {
 				    "x": 1398398.8,
@@ -17861,22 +6701,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5473",
-				    "station_name": "日暮里",
-				    "close_ymd": "",
-				    "lon": 139.771287,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5473,
-				    "station_g_cd": 1130218,
-				    "add": "東京都荒川区西日暮里二丁目",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300102",
-				    "pref_name": "東京都",
-				    "shared_name": "2300102",
-				    "lat": 35.727908,
-				    "y": -357279.08,
-				    "x": 1397712.87
+				    "station_name": "日暮里"
 			    },
 			    "position": {
 				    "x": 1397712.87,
@@ -17885,22 +6710,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5474",
-				    "station_name": "新三河島",
-				    "close_ymd": "",
-				    "lon": 139.77383400000002,
-				    "post": "116-0013",
-				    "e_status": 0,
-				    "SUID": 5474,
-				    "station_g_cd": 2300103,
-				    "add": "荒川区西日暮里６-２-１",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300103",
-				    "pref_name": "東京都",
-				    "shared_name": "2300103",
-				    "lat": 35.737140000000004,
-				    "y": -357371.4,
-				    "x": 1397738.3400000003
+				    "station_name": "新三河島"
 			    },
 			    "position": {
 				    "x": 1397738.3400000003,
@@ -17909,22 +6719,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5475",
-				    "station_name": "町屋",
-				    "close_ymd": "",
-				    "lon": 139.781499,
-				    "post": "116-0001",
-				    "e_status": 0,
-				    "SUID": 5475,
-				    "station_g_cd": 2300104,
-				    "add": "荒川区町屋１丁目",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300104",
-				    "pref_name": "東京都",
-				    "shared_name": "2300104",
-				    "lat": 35.742354,
-				    "y": -357423.54,
-				    "x": 1397814.99
+				    "station_name": "町屋"
 			    },
 			    "position": {
 				    "x": 1397814.99,
@@ -17933,22 +6728,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5476",
-				    "station_name": "千住大橋",
-				    "close_ymd": "",
-				    "lon": 139.79693400000002,
-				    "post": "120-0038",
-				    "e_status": 0,
-				    "SUID": 5476,
-				    "station_g_cd": 2300105,
-				    "add": "足立区千住橋戸町１１-１",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300105",
-				    "pref_name": "東京都",
-				    "shared_name": "2300105",
-				    "lat": 35.74243,
-				    "y": -357424.3,
-				    "x": 1397969.3400000003
+				    "station_name": "千住大橋"
 			    },
 			    "position": {
 				    "x": 1397969.3400000003,
@@ -17957,22 +6737,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5469",
-				    "station_name": "白糸台",
-				    "close_ymd": "",
-				    "lon": 139.509862,
-				    "post": "183-0011",
-				    "e_status": 0,
-				    "SUID": 5469,
-				    "station_g_cd": 2201204,
-				    "add": "府中市白糸台２-７１-６",
-				    "line_cd": 22012,
-				    "open_ymd": "",
-				    "name": "2201204",
-				    "pref_name": "東京都",
-				    "shared_name": "2201204",
-				    "lat": 35.666517,
-				    "y": -356665.17,
-				    "x": 1395098.6199999999
+				    "station_name": "白糸台"
 			    },
 			    "position": {
 				    "x": 1395098.6199999999,
@@ -17981,22 +6746,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5470",
-				    "station_name": "競艇場前",
-				    "close_ymd": "",
-				    "lon": 139.499721,
-				    "post": "183-0013",
-				    "e_status": 0,
-				    "SUID": 5470,
-				    "station_g_cd": 2201205,
-				    "add": "府中市小柳町４-１０-１１",
-				    "line_cd": 22012,
-				    "open_ymd": "",
-				    "name": "2201205",
-				    "pref_name": "東京都",
-				    "shared_name": "2201205",
-				    "lat": 35.656232,
-				    "y": -356562.32,
-				    "x": 1394997.21
+				    "station_name": "競艇場前"
 			    },
 			    "position": {
 				    "x": 1394997.21,
@@ -18005,22 +6755,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5471",
-				    "station_name": "是政",
-				    "close_ymd": "",
-				    "lon": 139.48859199999998,
-				    "post": "183-0014",
-				    "e_status": 0,
-				    "SUID": 5471,
-				    "station_g_cd": 2201206,
-				    "add": "府中市是政５-８-２",
-				    "line_cd": 22012,
-				    "open_ymd": "",
-				    "name": "2201206",
-				    "pref_name": "東京都",
-				    "shared_name": "2201206",
-				    "lat": 35.656242,
-				    "y": -356562.42,
-				    "x": 1394885.92
+				    "station_name": "是政"
 			    },
 			    "position": {
 				    "x": 1394885.92,
@@ -18029,22 +6764,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5472",
-				    "station_name": "京成上野",
-				    "close_ymd": "",
-				    "lon": 139.773571,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5472,
-				    "station_g_cd": 2300101,
-				    "add": "東京都台東区上野公園1-60",
-				    "line_cd": 23001,
-				    "open_ymd": "",
-				    "name": "2300101",
-				    "pref_name": "東京都",
-				    "shared_name": "2300101",
-				    "lat": 35.711232,
-				    "y": -357112.32,
-				    "x": 1397735.71
+				    "station_name": "京成上野"
 			    },
 			    "position": {
 				    "x": 1397735.71,
@@ -18053,22 +6773,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5465",
-				    "station_name": "西武遊園地",
-				    "close_ymd": "",
-				    "lon": 139.442747,
-				    "post": "189-0026",
-				    "e_status": 0,
-				    "SUID": 5465,
-				    "station_g_cd": 2200601,
-				    "add": "東村山市多摩湖町３-１５-１８",
-				    "line_cd": 22011,
-				    "open_ymd": "",
-				    "name": "2201108",
-				    "pref_name": "東京都",
-				    "shared_name": "2201108",
-				    "lat": 35.765881,
-				    "y": -357658.81,
-				    "x": 1394427.47
+				    "station_name": "西武遊園地"
 			    },
 			    "position": {
 				    "x": 1394427.47,
@@ -18077,22 +6782,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5466",
-				    "station_name": "武蔵境",
-				    "close_ymd": "",
-				    "lon": 139.54340200000001,
-				    "post": "180-0022",
-				    "e_status": 0,
-				    "SUID": 5466,
-				    "station_g_cd": 1131221,
-				    "add": "武蔵野市境１丁目",
-				    "line_cd": 22012,
-				    "open_ymd": "",
-				    "name": "2201201",
-				    "pref_name": "東京都",
-				    "shared_name": "2201201",
-				    "lat": 35.702083,
-				    "y": -357020.83,
-				    "x": 1395434.0200000003
+				    "station_name": "武蔵境"
 			    },
 			    "position": {
 				    "x": 1395434.0200000003,
@@ -18101,22 +6791,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5467",
-				    "station_name": "新小金井",
-				    "close_ymd": "",
-				    "lon": 139.526603,
-				    "post": "184-0011",
-				    "e_status": 0,
-				    "SUID": 5467,
-				    "station_g_cd": 2201202,
-				    "add": "小金井市東町４-２４-１",
-				    "line_cd": 22012,
-				    "open_ymd": "",
-				    "name": "2201202",
-				    "pref_name": "東京都",
-				    "shared_name": "2201202",
-				    "lat": 35.695908,
-				    "y": -356959.08,
-				    "x": 1395266.03
+				    "station_name": "新小金井"
 			    },
 			    "position": {
 				    "x": 1395266.03,
@@ -18125,22 +6800,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5468",
-				    "station_name": "多磨",
-				    "close_ymd": "",
-				    "lon": 139.51713,
-				    "post": "183-0004",
-				    "e_status": 0,
-				    "SUID": 5468,
-				    "station_g_cd": 2201203,
-				    "add": "府中市紅葉丘３-４２-２",
-				    "line_cd": 22012,
-				    "open_ymd": "",
-				    "name": "2201203",
-				    "pref_name": "東京都",
-				    "shared_name": "2201203",
-				    "lat": 35.676821000000004,
-				    "y": -356768.21,
-				    "x": 1395171.3
+				    "station_name": "多磨"
 			    },
 			    "position": {
 				    "x": 1395171.3,
@@ -18149,22 +6809,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5461",
-				    "station_name": "青梅街道",
-				    "close_ymd": "",
-				    "lon": 139.476628,
-				    "post": "187-0032",
-				    "e_status": 0,
-				    "SUID": 5461,
-				    "station_g_cd": 2201103,
-				    "add": "小平市小川町２-１８４６",
-				    "line_cd": 22011,
-				    "open_ymd": "",
-				    "name": "2201103",
-				    "pref_name": "東京都",
-				    "shared_name": "2201103",
-				    "lat": 35.730979999999995,
-				    "y": -357309.79999999993,
-				    "x": 1394766.28
+				    "station_name": "青梅街道"
 			    },
 			    "position": {
 				    "x": 1394766.28,
@@ -18173,22 +6818,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5462",
-				    "station_name": "萩山",
-				    "close_ymd": "",
-				    "lon": 139.476903,
-				    "post": "189-0012",
-				    "e_status": 0,
-				    "SUID": 5462,
-				    "station_g_cd": 2200802,
-				    "add": "東村山市萩山町２-１-１",
-				    "line_cd": 22011,
-				    "open_ymd": "",
-				    "name": "2201105",
-				    "pref_name": "東京都",
-				    "shared_name": "2201105",
-				    "lat": 35.740759000000004,
-				    "y": -357407.59,
-				    "x": 1394769.03
+				    "station_name": "萩山"
 			    },
 			    "position": {
 				    "x": 1394769.03,
@@ -18197,22 +6827,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5463",
-				    "station_name": "八坂",
-				    "close_ymd": "",
-				    "lon": 139.467676,
-				    "post": "189-0013",
-				    "e_status": 0,
-				    "SUID": 5463,
-				    "station_g_cd": 2201106,
-				    "add": "東村山市栄町３-１８-１",
-				    "line_cd": 22011,
-				    "open_ymd": "",
-				    "name": "2201106",
-				    "pref_name": "東京都",
-				    "shared_name": "2201106",
-				    "lat": 35.744925,
-				    "y": -357449.25,
-				    "x": 1394676.76
+				    "station_name": "八坂"
 			    },
 			    "position": {
 				    "x": 1394676.76,
@@ -18221,22 +6836,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5464",
-				    "station_name": "武蔵大和",
-				    "close_ymd": "",
-				    "lon": 139.444008,
-				    "post": "189-0025",
-				    "e_status": 0,
-				    "SUID": 5464,
-				    "station_g_cd": 2201107,
-				    "add": "東村山市廻田町３-９-１９",
-				    "line_cd": 22011,
-				    "open_ymd": "",
-				    "name": "2201107",
-				    "pref_name": "東京都",
-				    "shared_name": "2201107",
-				    "lat": 35.756427,
-				    "y": -357564.27,
-				    "x": 1394440.08
+				    "station_name": "武蔵大和"
 			    },
 			    "position": {
 				    "x": 1394440.08,
@@ -18245,22 +6845,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5524",
-				    "station_name": "京成金町",
-				    "close_ymd": "",
-				    "lon": 139.87038700000002,
-				    "post": "125-0042",
-				    "e_status": 0,
-				    "SUID": 5524,
-				    "station_g_cd": 1132008,
-				    "add": "葛飾区金町５-３７-９",
-				    "line_cd": 23003,
-				    "open_ymd": "",
-				    "name": "2300303",
-				    "pref_name": "東京都",
-				    "shared_name": "2300303",
-				    "lat": 35.768471000000005,
-				    "y": -357684.7100000001,
-				    "x": 1398703.87
+				    "station_name": "京成金町"
 			    },
 			    "position": {
 				    "x": 1398703.87,
@@ -18269,22 +6854,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5523",
-				    "station_name": "柴又",
-				    "close_ymd": "",
-				    "lon": 139.87518799999998,
-				    "post": "125-0052",
-				    "e_status": 0,
-				    "SUID": 5523,
-				    "station_g_cd": 2300302,
-				    "add": "葛飾区柴又４-８-１４",
-				    "line_cd": 23003,
-				    "open_ymd": "",
-				    "name": "2300302",
-				    "pref_name": "東京都",
-				    "shared_name": "2300302",
-				    "lat": 35.756322999999995,
-				    "y": -357563.2299999999,
-				    "x": 1398751.88
+				    "station_name": "柴又"
 			    },
 			    "position": {
 				    "x": 1398751.88,
@@ -18293,22 +6863,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5522",
-				    "station_name": "京成高砂",
-				    "close_ymd": "",
-				    "lon": 139.866875,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5522,
-				    "station_g_cd": 2300110,
-				    "add": "東京都葛飾区高砂五丁目28-1",
-				    "line_cd": 23003,
-				    "open_ymd": "",
-				    "name": "2300301",
-				    "pref_name": "東京都",
-				    "shared_name": "2300301",
-				    "lat": 35.750932,
-				    "y": -357509.32,
-				    "x": 1398668.75
+				    "station_name": "京成高砂"
 			    },
 			    "position": {
 				    "x": 1398668.75,
@@ -18317,22 +6872,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5521",
-				    "station_name": "京成高砂",
-				    "close_ymd": "",
-				    "lon": 139.866875,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5521,
-				    "station_g_cd": 2300110,
-				    "add": "東京都葛飾区高砂五丁目28-1",
-				    "line_cd": 23002,
-				    "open_ymd": "",
-				    "name": "2300207",
-				    "pref_name": "東京都",
-				    "shared_name": "2300207",
-				    "lat": 35.750932,
-				    "y": -357509.32,
-				    "x": 1398668.75
+				    "station_name": "京成高砂"
 			    },
 			    "position": {
 				    "x": 1398668.75,
@@ -18341,22 +6881,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5520",
-				    "station_name": "青砥",
-				    "close_ymd": "",
-				    "lon": 139.856292,
-				    "post": "",
-				    "e_status": 0,
-				    "SUID": 5520,
-				    "station_g_cd": 2300109,
-				    "add": "東京都葛飾区青戸三丁目36番1号",
-				    "line_cd": 23002,
-				    "open_ymd": "",
-				    "name": "2300206",
-				    "pref_name": "東京都",
-				    "shared_name": "2300206",
-				    "lat": 35.745883,
-				    "y": -357458.83,
-				    "x": 1398562.92
+				    "station_name": "青砥"
 			    },
 			    "position": {
 				    "x": 1398562.92,
@@ -18365,22 +6890,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5519",
-				    "station_name": "京成立石",
-				    "close_ymd": "",
-				    "lon": 139.848558,
-				    "post": "124-0012",
-				    "e_status": 0,
-				    "SUID": 5519,
-				    "station_g_cd": 2300205,
-				    "add": "葛飾区立石４-２４-１",
-				    "line_cd": 23002,
-				    "open_ymd": "",
-				    "name": "2300205",
-				    "pref_name": "東京都",
-				    "shared_name": "2300205",
-				    "lat": 35.738281,
-				    "y": -357382.81,
-				    "x": 1398485.58
+				    "station_name": "京成立石"
 			    },
 			    "position": {
 				    "x": 1398485.58,
@@ -18389,22 +6899,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5518",
-				    "station_name": "四ツ木",
-				    "close_ymd": "",
-				    "lon": 139.834918,
-				    "post": "124-0011",
-				    "e_status": 0,
-				    "SUID": 5518,
-				    "station_g_cd": 2300204,
-				    "add": "葛飾区四つ木１-１-１",
-				    "line_cd": 23002,
-				    "open_ymd": "",
-				    "name": "2300204",
-				    "pref_name": "東京都",
-				    "shared_name": "2300204",
-				    "lat": 35.731962,
-				    "y": -357319.62000000005,
-				    "x": 1398349.18
+				    "station_name": "四ツ木"
 			    },
 			    "position": {
 				    "x": 1398349.18,
@@ -18413,22 +6908,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5517",
-				    "station_name": "八広",
-				    "close_ymd": "",
-				    "lon": 139.828738,
-				    "post": "131-0041",
-				    "e_status": 0,
-				    "SUID": 5517,
-				    "station_g_cd": 2300203,
-				    "add": "墨田区八広６-２５-２０",
-				    "line_cd": 23002,
-				    "open_ymd": "",
-				    "name": "2300203",
-				    "pref_name": "東京都",
-				    "shared_name": "2300203",
-				    "lat": 35.727687,
-				    "y": -357276.87000000005,
-				    "x": 1398287.38
+				    "station_name": "八広"
 			    },
 			    "position": {
 				    "x": 1398287.38,
@@ -18437,22 +6917,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5516",
-				    "station_name": "京成曳舟",
-				    "close_ymd": "",
-				    "lon": 139.82001200000002,
-				    "post": "131-0046",
-				    "e_status": 0,
-				    "SUID": 5516,
-				    "station_g_cd": 2300202,
-				    "add": "墨田区京島１-３９-１",
-				    "line_cd": 23002,
-				    "open_ymd": "",
-				    "name": "2300202",
-				    "pref_name": "東京都",
-				    "shared_name": "2300202",
-				    "lat": 35.718441,
-				    "y": -357184.41,
-				    "x": 1398200.12
+				    "station_name": "京成曳舟"
 			    },
 			    "position": {
 				    "x": 1398200.12,
@@ -18461,22 +6926,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "5515",
-				    "station_name": "押上（スカイツリー前）",
-				    "close_ymd": "",
-				    "lon": 139.812935,
-				    "post": "131-0045",
-				    "e_status": 0,
-				    "SUID": 5515,
-				    "station_g_cd": 2100203,
-				    "add": "墨田区押上一丁目",
-				    "line_cd": 23002,
-				    "open_ymd": "",
-				    "name": "2300201",
-				    "pref_name": "東京都",
-				    "shared_name": "2300201",
-				    "lat": 35.710702000000005,
-				    "y": -357107.0200000001,
-				    "x": 1398129.35
+				    "station_name": "押上（スカイツリー前）"
 			    },
 			    "position": {
 				    "x": 1398129.35,
@@ -18485,22 +6935,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2702",
-				    "station_name": "品川",
-				    "close_ymd": "",
-				    "lon": 139.738999,
-				    "post": "108-0074",
-				    "e_status": 0,
-				    "SUID": 2702,
-				    "station_g_cd": 1130103,
-				    "add": "東京都港区高輪三丁目26-26",
-				    "line_cd": 11302,
-				    "open_ymd": "1872-06-12",
-				    "name": "1130229",
-				    "pref_name": "東京都",
-				    "shared_name": "1130229",
-				    "lat": 35.62876,
-				    "y": -356287.6,
-				    "x": 1397389.99
+				    "station_name": "品川"
 			    },
 			    "position": {
 				    "x": 1397389.99,
@@ -18509,22 +6944,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2701",
-				    "station_name": "田町",
-				    "close_ymd": "",
-				    "lon": 139.747575,
-				    "post": "108-0014",
-				    "e_status": 0,
-				    "SUID": 2701,
-				    "station_g_cd": 1130228,
-				    "add": "東京都港区芝五丁目33-36",
-				    "line_cd": 11302,
-				    "open_ymd": "1906-12-16",
-				    "name": "1130228",
-				    "pref_name": "東京都",
-				    "shared_name": "1130228",
-				    "lat": 35.645736,
-				    "y": -356457.36,
-				    "x": 1397475.7500000002
+				    "station_name": "田町"
 			    },
 			    "position": {
 				    "x": 1397475.7500000002,
@@ -18533,22 +6953,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2694",
-				    "station_name": "御徒町",
-				    "close_ymd": "",
-				    "lon": 139.774727,
-				    "post": "110-0005",
-				    "e_status": 0,
-				    "SUID": 2694,
-				    "station_g_cd": 1130221,
-				    "add": "東京都台東区上野五丁目27",
-				    "line_cd": 11302,
-				    "open_ymd": "1925-11-01",
-				    "name": "1130221",
-				    "pref_name": "東京都",
-				    "shared_name": "1130221",
-				    "lat": 35.707282,
-				    "y": -357072.82,
-				    "x": 1397747.27
+				    "station_name": "御徒町"
 			    },
 			    "position": {
 				    "x": 1397747.27,
@@ -18557,22 +6962,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2693",
-				    "station_name": "上野",
-				    "close_ymd": "",
-				    "lon": 139.777043,
-				    "post": "110-0005",
-				    "e_status": 0,
-				    "SUID": 2693,
-				    "station_g_cd": 1130220,
-				    "add": "東京都台東区上野七丁目1-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1883-07-28",
-				    "name": "1130220",
-				    "pref_name": "東京都",
-				    "shared_name": "1130220",
-				    "lat": 35.71379,
-				    "y": -357137.9,
-				    "x": 1397770.43
+				    "station_name": "上野"
 			    },
 			    "position": {
 				    "x": 1397770.43,
@@ -18581,22 +6971,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2696",
-				    "station_name": "神田",
-				    "close_ymd": "",
-				    "lon": 139.77064099999998,
-				    "post": "101-0044",
-				    "e_status": 0,
-				    "SUID": 2696,
-				    "station_g_cd": 1130223,
-				    "add": "東京都千代田区鍛冶町二丁目13-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1919-03-01",
-				    "name": "1130223",
-				    "pref_name": "東京都",
-				    "shared_name": "1130223",
-				    "lat": 35.691173,
-				    "y": -356911.73,
-				    "x": 1397706.41
+				    "station_name": "神田"
 			    },
 			    "position": {
 				    "x": 1397706.41,
@@ -18605,22 +6980,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2695",
-				    "station_name": "秋葉原",
-				    "close_ymd": "",
-				    "lon": 139.77328799999998,
-				    "post": "101-0021",
-				    "e_status": 0,
-				    "SUID": 2695,
-				    "station_g_cd": 1130222,
-				    "add": "東京都千代田区外神田一丁目17",
-				    "line_cd": 11302,
-				    "open_ymd": "1890-11-01",
-				    "name": "1130222",
-				    "pref_name": "東京都",
-				    "shared_name": "1130222",
-				    "lat": 35.698619,
-				    "y": -356986.19,
-				    "x": 1397732.88
+				    "station_name": "秋葉原"
 			    },
 			    "position": {
 				    "x": 1397732.88,
@@ -18629,22 +6989,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2698",
-				    "station_name": "有楽町",
-				    "close_ymd": "",
-				    "lon": 139.76380600000002,
-				    "post": "100-0006",
-				    "e_status": 0,
-				    "SUID": 2698,
-				    "station_g_cd": 1130225,
-				    "add": "東京都千代田区有楽町二丁目9",
-				    "line_cd": 11302,
-				    "open_ymd": "1910-06-25",
-				    "name": "1130225",
-				    "pref_name": "東京都",
-				    "shared_name": "1130225",
-				    "lat": 35.675441,
-				    "y": -356754.41,
-				    "x": 1397638.06
+				    "station_name": "有楽町"
 			    },
 			    "position": {
 				    "x": 1397638.06,
@@ -18653,22 +6998,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2697",
-				    "station_name": "東京",
-				    "close_ymd": "",
-				    "lon": 139.76610300000002,
-				    "post": "100-0005",
-				    "e_status": 0,
-				    "SUID": 2697,
-				    "station_g_cd": 1130101,
-				    "add": "東京都千代田区丸の内一丁目9-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1914-12-20",
-				    "name": "1130224",
-				    "pref_name": "東京都",
-				    "shared_name": "1130224",
-				    "lat": 35.681391,
-				    "y": -356813.91,
-				    "x": 1397661.0300000003
+				    "station_name": "東京"
 			    },
 			    "position": {
 				    "x": 1397661.0300000003,
@@ -18677,22 +7007,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2700",
-				    "station_name": "浜松町",
-				    "close_ymd": "",
-				    "lon": 139.757135,
-				    "post": "105-0022",
-				    "e_status": 0,
-				    "SUID": 2700,
-				    "station_g_cd": 1130227,
-				    "add": "東京都港区海岸一丁目3-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1909-12-16",
-				    "name": "1130227",
-				    "pref_name": "東京都",
-				    "shared_name": "1130227",
-				    "lat": 35.655390999999995,
-				    "y": -356553.9099999999,
-				    "x": 1397571.35
+				    "station_name": "浜松町"
 			    },
 			    "position": {
 				    "x": 1397571.35,
@@ -18701,22 +7016,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2699",
-				    "station_name": "新橋",
-				    "close_ymd": "",
-				    "lon": 139.758587,
-				    "post": "105-0004",
-				    "e_status": 0,
-				    "SUID": 2699,
-				    "station_g_cd": 1130102,
-				    "add": "東京都港区新橋二丁目17",
-				    "line_cd": 11302,
-				    "open_ymd": "1909-12-16",
-				    "name": "1130226",
-				    "pref_name": "東京都",
-				    "shared_name": "1130226",
-				    "lat": 35.666195,
-				    "y": -356661.95,
-				    "x": 1397585.87
+				    "station_name": "新橋"
 			    },
 			    "position": {
 				    "x": 1397585.87,
@@ -18725,22 +7025,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2685",
-				    "station_name": "池袋",
-				    "close_ymd": "",
-				    "lon": 139.71108600000002,
-				    "post": "171-0022",
-				    "e_status": 0,
-				    "SUID": 2685,
-				    "station_g_cd": 1130212,
-				    "add": "東京都豊島区南池袋一丁目28-2",
-				    "line_cd": 11302,
-				    "open_ymd": "1903-04-01",
-				    "name": "1130212",
-				    "pref_name": "東京都",
-				    "shared_name": "1130212",
-				    "lat": 35.730256,
-				    "y": -357302.56,
-				    "x": 1397110.8600000003
+				    "station_name": "池袋"
 			    },
 			    "position": {
 				    "x": 1397110.8600000003,
@@ -18749,22 +7034,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2686",
-				    "station_name": "大塚",
-				    "close_ymd": "",
-				    "lon": 139.728584,
-				    "post": "170-0005",
-				    "e_status": 0,
-				    "SUID": 2686,
-				    "station_g_cd": 1130213,
-				    "add": "東京都豊島区南大塚三丁目33-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1903-04-01",
-				    "name": "1130213",
-				    "pref_name": "東京都",
-				    "shared_name": "1130213",
-				    "lat": 35.731412,
-				    "y": -357314.12,
-				    "x": 1397285.84
+				    "station_name": "大塚"
 			    },
 			    "position": {
 				    "x": 1397285.84,
@@ -18773,22 +7043,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2687",
-				    "station_name": "巣鴨",
-				    "close_ymd": "",
-				    "lon": 139.739303,
-				    "post": "170-0002",
-				    "e_status": 0,
-				    "SUID": 2687,
-				    "station_g_cd": 1130214,
-				    "add": "東京都豊島区巣鴨一丁目16-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1903-04-01",
-				    "name": "1130214",
-				    "pref_name": "東京都",
-				    "shared_name": "1130214",
-				    "lat": 35.733445,
-				    "y": -357334.45,
-				    "x": 1397393.03
+				    "station_name": "巣鴨"
 			    },
 			    "position": {
 				    "x": 1397393.03,
@@ -18797,22 +7052,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2688",
-				    "station_name": "駒込",
-				    "close_ymd": "",
-				    "lon": 139.748053,
-				    "post": "170-0003",
-				    "e_status": 0,
-				    "SUID": 2688,
-				    "station_g_cd": 1130215,
-				    "add": "東京都豊島区駒込二丁目1-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1910-11-15",
-				    "name": "1130215",
-				    "pref_name": "東京都",
-				    "shared_name": "1130215",
-				    "lat": 35.736825,
-				    "y": -357368.25000000006,
-				    "x": 1397480.53
+				    "station_name": "駒込"
 			    },
 			    "position": {
 				    "x": 1397480.53,
@@ -18821,22 +7061,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2689",
-				    "station_name": "田端",
-				    "close_ymd": "",
-				    "lon": 139.76122900000001,
-				    "post": "114-0013",
-				    "e_status": 0,
-				    "SUID": 2689,
-				    "station_g_cd": 1130216,
-				    "add": "東京都北区東田端一丁目17-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1896-04-01",
-				    "name": "1130216",
-				    "pref_name": "東京都",
-				    "shared_name": "1130216",
-				    "lat": 35.737781,
-				    "y": -357377.81,
-				    "x": 1397612.29
+				    "station_name": "田端"
 			    },
 			    "position": {
 				    "x": 1397612.29,
@@ -18845,22 +7070,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2690",
-				    "station_name": "西日暮里",
-				    "close_ymd": "",
-				    "lon": 139.76685700000002,
-				    "post": "116-0013",
-				    "e_status": 0,
-				    "SUID": 2690,
-				    "station_g_cd": 1130217,
-				    "add": "東京都荒川区西日暮里五丁目22-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1971-04-20",
-				    "name": "1130217",
-				    "pref_name": "東京都",
-				    "shared_name": "1130217",
-				    "lat": 35.731953999999995,
-				    "y": -357319.5399999999,
-				    "x": 1397668.57
+				    "station_name": "西日暮里"
 			    },
 			    "position": {
 				    "x": 1397668.57,
@@ -18869,22 +7079,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2691",
-				    "station_name": "日暮里",
-				    "close_ymd": "",
-				    "lon": 139.771287,
-				    "post": "116-0013",
-				    "e_status": 0,
-				    "SUID": 2691,
-				    "station_g_cd": 1130218,
-				    "add": "東京都荒川区西日暮里二丁目19-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1905-04-01",
-				    "name": "1130218",
-				    "pref_name": "東京都",
-				    "shared_name": "1130218",
-				    "lat": 35.727908,
-				    "y": -357279.08,
-				    "x": 1397712.87
+				    "station_name": "日暮里"
 			    },
 			    "position": {
 				    "x": 1397712.87,
@@ -18893,22 +7088,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2692",
-				    "station_name": "鶯谷",
-				    "close_ymd": "",
-				    "lon": 139.77801499999998,
-				    "post": "110-0003",
-				    "e_status": 0,
-				    "SUID": 2692,
-				    "station_g_cd": 1130219,
-				    "add": "東京都台東区根岸一丁目4-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1912-07-11",
-				    "name": "1130219",
-				    "pref_name": "東京都",
-				    "shared_name": "1130219",
-				    "lat": 35.721484000000004,
-				    "y": -357214.84,
-				    "x": 1397780.15
+				    "station_name": "鶯谷"
 			    },
 			    "position": {
 				    "x": 1397780.15,
@@ -18917,22 +7097,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2677",
-				    "station_name": "恵比寿",
-				    "close_ymd": "",
-				    "lon": 139.71007,
-				    "post": "150-0022",
-				    "e_status": 0,
-				    "SUID": 2677,
-				    "station_g_cd": 1130204,
-				    "add": "東京都渋谷区恵比寿南一丁目5-5",
-				    "line_cd": 11302,
-				    "open_ymd": "1901-02-25",
-				    "name": "1130204",
-				    "pref_name": "東京都",
-				    "shared_name": "1130204",
-				    "lat": 35.646685,
-				    "y": -356466.85,
-				    "x": 1397100.7
+				    "station_name": "恵比寿"
 			    },
 			    "position": {
 				    "x": 1397100.7,
@@ -18941,22 +7106,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2678",
-				    "station_name": "渋谷",
-				    "close_ymd": "",
-				    "lon": 139.701238,
-				    "post": "150-0043",
-				    "e_status": 0,
-				    "SUID": 2678,
-				    "station_g_cd": 1130205,
-				    "add": "東京都渋谷区道玄坂一丁目1-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1885-03-01",
-				    "name": "1130205",
-				    "pref_name": "東京都",
-				    "shared_name": "1130205",
-				    "lat": 35.658871000000005,
-				    "y": -356588.71,
-				    "x": 1397012.38
+				    "station_name": "渋谷"
 			    },
 			    "position": {
 				    "x": 1397012.38,
@@ -18965,22 +7115,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2679",
-				    "station_name": "原宿",
-				    "close_ymd": "",
-				    "lon": 139.70259199999998,
-				    "post": "150-0001",
-				    "e_status": 0,
-				    "SUID": 2679,
-				    "station_g_cd": 1130206,
-				    "add": "東京都渋谷区神宮前一丁目18",
-				    "line_cd": 11302,
-				    "open_ymd": "1906-10-30",
-				    "name": "1130206",
-				    "pref_name": "東京都",
-				    "shared_name": "1130206",
-				    "lat": 35.670646000000005,
-				    "y": -356706.46,
-				    "x": 1397025.92
+				    "station_name": "原宿"
 			    },
 			    "position": {
 				    "x": 1397025.92,
@@ -18989,22 +7124,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2680",
-				    "station_name": "代々木",
-				    "close_ymd": "",
-				    "lon": 139.702042,
-				    "post": "151-0053",
-				    "e_status": 0,
-				    "SUID": 2680,
-				    "station_g_cd": 1130207,
-				    "add": "東京都渋谷区代々木一丁目34-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1906-09-23",
-				    "name": "1130207",
-				    "pref_name": "東京都",
-				    "shared_name": "1130207",
-				    "lat": 35.683061,
-				    "y": -356830.61000000004,
-				    "x": 1397020.4200000002
+				    "station_name": "代々木"
 			    },
 			    "position": {
 				    "x": 1397020.4200000002,
@@ -19013,22 +7133,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2681",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.70046399999998,
-				    "post": "160-0022",
-				    "e_status": 0,
-				    "SUID": 2681,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区新宿三丁目38-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1885-03-01",
-				    "name": "1130208",
-				    "pref_name": "東京都",
-				    "shared_name": "1130208",
-				    "lat": 35.689729,
-				    "y": -356897.29,
-				    "x": 1397004.64
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1397004.64,
@@ -19037,22 +7142,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2682",
-				    "station_name": "新大久保",
-				    "close_ymd": "",
-				    "lon": 139.700261,
-				    "post": "169-0073",
-				    "e_status": 0,
-				    "SUID": 2682,
-				    "station_g_cd": 1130209,
-				    "add": "東京都新宿区百人町一丁目10-15",
-				    "line_cd": 11302,
-				    "open_ymd": "1914-11-15",
-				    "name": "1130209",
-				    "pref_name": "東京都",
-				    "shared_name": "1130209",
-				    "lat": 35.700875,
-				    "y": -357008.75000000006,
-				    "x": 1397002.61
+				    "station_name": "新大久保"
 			    },
 			    "position": {
 				    "x": 1397002.61,
@@ -19061,22 +7151,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2683",
-				    "station_name": "高田馬場",
-				    "close_ymd": "",
-				    "lon": 139.703715,
-				    "post": "169-0075",
-				    "e_status": 0,
-				    "SUID": 2683,
-				    "station_g_cd": 1130210,
-				    "add": "東京都新宿区高田馬場一丁目35-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1910-09-15",
-				    "name": "1130210",
-				    "pref_name": "東京都",
-				    "shared_name": "1130210",
-				    "lat": 35.712677,
-				    "y": -357126.77,
-				    "x": 1397037.15
+				    "station_name": "高田馬場"
 			    },
 			    "position": {
 				    "x": 1397037.15,
@@ -19085,22 +7160,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2684",
-				    "station_name": "目白",
-				    "close_ymd": "",
-				    "lon": 139.706228,
-				    "post": "171-0031",
-				    "e_status": 0,
-				    "SUID": 2684,
-				    "station_g_cd": 1130211,
-				    "add": "東京都豊島区目白三丁目3-1",
-				    "line_cd": 11302,
-				    "open_ymd": "1885-03-16",
-				    "name": "1130211",
-				    "pref_name": "東京都",
-				    "shared_name": "1130211",
-				    "lat": 35.720476,
-				    "y": -357204.75999999995,
-				    "x": 1397062.28
+				    "station_name": "目白"
 			    },
 			    "position": {
 				    "x": 1397062.28,
@@ -19109,22 +7169,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2676",
-				    "station_name": "目黒",
-				    "close_ymd": "",
-				    "lon": 139.715775,
-				    "post": "141-0021",
-				    "e_status": 0,
-				    "SUID": 2676,
-				    "station_g_cd": 1130203,
-				    "add": "東京都品川区上大崎二丁目16-9",
-				    "line_cd": 11302,
-				    "open_ymd": "1885-03-16",
-				    "name": "1130203",
-				    "pref_name": "東京都",
-				    "shared_name": "1130203",
-				    "lat": 35.633922999999996,
-				    "y": -356339.23,
-				    "x": 1397157.75
+				    "station_name": "目黒"
 			    },
 			    "position": {
 				    "x": 1397157.75,
@@ -19133,22 +7178,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2675",
-				    "station_name": "五反田",
-				    "close_ymd": "",
-				    "lon": 139.72382199999998,
-				    "post": "141-0022",
-				    "e_status": 0,
-				    "SUID": 2675,
-				    "station_g_cd": 1130202,
-				    "add": "東京都品川区東五反田一丁目26",
-				    "line_cd": 11302,
-				    "open_ymd": "1911-10-15",
-				    "name": "1130202",
-				    "pref_name": "東京都",
-				    "shared_name": "1130202",
-				    "lat": 35.625974,
-				    "y": -356259.74,
-				    "x": 1397238.2199999997
+				    "station_name": "五反田"
 			    },
 			    "position": {
 				    "x": 1397238.2199999997,
@@ -19157,22 +7187,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2674",
-				    "station_name": "大崎",
-				    "close_ymd": "",
-				    "lon": 139.72843899999998,
-				    "post": "141-0032",
-				    "e_status": 0,
-				    "SUID": 2674,
-				    "station_g_cd": 1130201,
-				    "add": "東京都品川区大崎一丁目21-4",
-				    "line_cd": 11302,
-				    "open_ymd": "1901-02-25",
-				    "name": "1130201",
-				    "pref_name": "東京都",
-				    "shared_name": "1130201",
-				    "lat": 35.619772,
-				    "y": -356197.72,
-				    "x": 1397284.39
+				    "station_name": "大崎"
 			    },
 			    "position": {
 				    "x": 1397284.39,
@@ -19181,22 +7196,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2655",
-				    "station_name": "品川",
-				    "close_ymd": "",
-				    "lon": 139.738999,
-				    "post": "108-0074",
-				    "e_status": 0,
-				    "SUID": 2655,
-				    "station_g_cd": 1130103,
-				    "add": "東京都港区高輪三丁目26-27",
-				    "line_cd": 11301,
-				    "open_ymd": "",
-				    "name": "1130103",
-				    "pref_name": "東京都",
-				    "shared_name": "1130103",
-				    "lat": 35.62876,
-				    "y": -356287.6,
-				    "x": 1397389.99
+				    "station_name": "品川"
 			    },
 			    "position": {
 				    "x": 1397389.99,
@@ -19205,22 +7205,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2653",
-				    "station_name": "東京",
-				    "close_ymd": "",
-				    "lon": 139.76610300000002,
-				    "post": "100-0005",
-				    "e_status": 0,
-				    "SUID": 2653,
-				    "station_g_cd": 1130101,
-				    "add": "東京都千代田区丸の内一丁目",
-				    "line_cd": 11301,
-				    "open_ymd": "",
-				    "name": "1130101",
-				    "pref_name": "東京都",
-				    "shared_name": "1130101",
-				    "lat": 35.681391,
-				    "y": -356813.91,
-				    "x": 1397661.0300000003
+				    "station_name": "東京"
 			    },
 			    "position": {
 				    "x": 1397661.0300000003,
@@ -19229,22 +7214,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2654",
-				    "station_name": "新橋",
-				    "close_ymd": "",
-				    "lon": 139.758587,
-				    "post": "105-0004",
-				    "e_status": 0,
-				    "SUID": 2654,
-				    "station_g_cd": 1130102,
-				    "add": "東京都港区新橋二丁目17",
-				    "line_cd": 11301,
-				    "open_ymd": "",
-				    "name": "1130102",
-				    "pref_name": "東京都",
-				    "shared_name": "1130102",
-				    "lat": 35.666195,
-				    "y": -356661.95,
-				    "x": 1397585.87
+				    "station_name": "新橋"
 			    },
 			    "position": {
 				    "x": 1397585.87,
@@ -19253,22 +7223,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2746",
-				    "station_name": "北府中",
-				    "close_ymd": "",
-				    "lon": 139.471792,
-				    "post": "183-0057",
-				    "e_status": 0,
-				    "SUID": 2746,
-				    "station_g_cd": 1130502,
-				    "add": "府中市晴見町２丁目",
-				    "line_cd": 11305,
-				    "open_ymd": "",
-				    "name": "1130502",
-				    "pref_name": "東京都",
-				    "shared_name": "1130502",
-				    "lat": 35.68088,
-				    "y": -356808.80000000005,
-				    "x": 1394717.92
+				    "station_name": "北府中"
 			    },
 			    "position": {
 				    "x": 1394717.92,
@@ -19277,22 +7232,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2745",
-				    "station_name": "府中本町",
-				    "close_ymd": "",
-				    "lon": 139.477142,
-				    "post": "183-0027",
-				    "e_status": 0,
-				    "SUID": 2745,
-				    "station_g_cd": 1130320,
-				    "add": "府中市本町１丁目",
-				    "line_cd": 11305,
-				    "open_ymd": "",
-				    "name": "1130501",
-				    "pref_name": "東京都",
-				    "shared_name": "1130501",
-				    "lat": 35.665766,
-				    "y": -356657.66,
-				    "x": 1394771.42
+				    "station_name": "府中本町"
 			    },
 			    "position": {
 				    "x": 1394771.42,
@@ -19301,22 +7241,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2748",
-				    "station_name": "新小平",
-				    "close_ymd": "",
-				    "lon": 139.470745,
-				    "post": "187-0032",
-				    "e_status": 0,
-				    "SUID": 2748,
-				    "station_g_cd": 1130504,
-				    "add": "小平市小川町２丁目",
-				    "line_cd": 11305,
-				    "open_ymd": "",
-				    "name": "1130504",
-				    "pref_name": "東京都",
-				    "shared_name": "1130504",
-				    "lat": 35.73128,
-				    "y": -357312.8,
-				    "x": 1394707.45
+				    "station_name": "新小平"
 			    },
 			    "position": {
 				    "x": 1394707.45,
@@ -19325,22 +7250,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2747",
-				    "station_name": "西国分寺",
-				    "close_ymd": "",
-				    "lon": 139.465994,
-				    "post": "185-0013",
-				    "e_status": 0,
-				    "SUID": 2747,
-				    "station_g_cd": 1130503,
-				    "add": "国分寺市西恋ケ窪２丁目",
-				    "line_cd": 11305,
-				    "open_ymd": "",
-				    "name": "1130503",
-				    "pref_name": "東京都",
-				    "shared_name": "1130503",
-				    "lat": 35.699744,
-				    "y": -356997.44,
-				    "x": 1394659.94
+				    "station_name": "西国分寺"
 			    },
 			    "position": {
 				    "x": 1394659.94,
@@ -19349,22 +7259,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2749",
-				    "station_name": "新秋津",
-				    "close_ymd": "",
-				    "lon": 139.493592,
-				    "post": "189-0001",
-				    "e_status": 0,
-				    "SUID": 2749,
-				    "station_g_cd": 1130505,
-				    "add": "東村山市秋津町５丁目",
-				    "line_cd": 11305,
-				    "open_ymd": "",
-				    "name": "1130505",
-				    "pref_name": "東京都",
-				    "shared_name": "1130505",
-				    "lat": 35.778331,
-				    "y": -357783.31,
-				    "x": 1394935.9200000002
+				    "station_name": "新秋津"
 			    },
 			    "position": {
 				    "x": 1394935.9200000002,
@@ -19373,22 +7268,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2729",
-				    "station_name": "立川",
-				    "close_ymd": "",
-				    "lon": 139.413704,
-				    "post": "190-0012",
-				    "e_status": 0,
-				    "SUID": 2729,
-				    "station_g_cd": 1130325,
-				    "add": "東京都立川市曙町二丁目1-1",
-				    "line_cd": 11303,
-				    "open_ymd": "",
-				    "name": "1130325",
-				    "pref_name": "東京都",
-				    "shared_name": "1130325",
-				    "lat": 35.698202,
-				    "y": -356982.02,
-				    "x": 1394137.04
+				    "station_name": "立川"
 			    },
 			    "position": {
 				    "x": 1394137.04,
@@ -19397,22 +7277,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2727",
-				    "station_name": "矢川",
-				    "close_ymd": "",
-				    "lon": 139.431611,
-				    "post": "186-0011",
-				    "e_status": 0,
-				    "SUID": 2727,
-				    "station_g_cd": 1130323,
-				    "add": "国立市谷保石田",
-				    "line_cd": 11303,
-				    "open_ymd": "",
-				    "name": "1130323",
-				    "pref_name": "東京都",
-				    "shared_name": "1130323",
-				    "lat": 35.685078999999995,
-				    "y": -356850.7899999999,
-				    "x": 1394316.11
+				    "station_name": "矢川"
 			    },
 			    "position": {
 				    "x": 1394316.11,
@@ -19421,22 +7286,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2728",
-				    "station_name": "西国立",
-				    "close_ymd": "",
-				    "lon": 139.423887,
-				    "post": "190-0021",
-				    "e_status": 0,
-				    "SUID": 2728,
-				    "station_g_cd": 1130324,
-				    "add": "立川市羽衣町１丁目",
-				    "line_cd": 11303,
-				    "open_ymd": "",
-				    "name": "1130324",
-				    "pref_name": "東京都",
-				    "shared_name": "1130324",
-				    "lat": 35.69375,
-				    "y": -356937.5,
-				    "x": 1394238.87
+				    "station_name": "西国立"
 			    },
 			    "position": {
 				    "x": 1394238.87,
@@ -19445,22 +7295,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2725",
-				    "station_name": "西府",
-				    "close_ymd": "",
-				    "lon": 139.457477,
-				    "post": "183-0032",
-				    "e_status": 0,
-				    "SUID": 2725,
-				    "station_g_cd": 1130329,
-				    "add": "東京都府中市本宿町一丁目40-6",
-				    "line_cd": 11303,
-				    "open_ymd": "",
-				    "name": "1130329",
-				    "pref_name": "東京都",
-				    "shared_name": "1130329",
-				    "lat": 35.670912,
-				    "y": -356709.12,
-				    "x": 1394574.77
+				    "station_name": "西府"
 			    },
 			    "position": {
 				    "x": 1394574.77,
@@ -19469,22 +7304,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2726",
-				    "station_name": "谷保",
-				    "close_ymd": "",
-				    "lon": 139.446724,
-				    "post": "186-0011",
-				    "e_status": 0,
-				    "SUID": 2726,
-				    "station_g_cd": 1130322,
-				    "add": "国立市谷保町",
-				    "line_cd": 11303,
-				    "open_ymd": "",
-				    "name": "1130322",
-				    "pref_name": "東京都",
-				    "shared_name": "1130322",
-				    "lat": 35.681377000000005,
-				    "y": -356813.7700000001,
-				    "x": 1394467.24
+				    "station_name": "谷保"
 			    },
 			    "position": {
 				    "x": 1394467.24,
@@ -19493,22 +7313,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2724",
-				    "station_name": "分倍河原",
-				    "close_ymd": "",
-				    "lon": 139.468798,
-				    "post": "183-0021",
-				    "e_status": 0,
-				    "SUID": 2724,
-				    "station_g_cd": 1130321,
-				    "add": "府中市片町２丁目",
-				    "line_cd": 11303,
-				    "open_ymd": "",
-				    "name": "1130321",
-				    "pref_name": "東京都",
-				    "shared_name": "1130321",
-				    "lat": 35.668493,
-				    "y": -356684.93,
-				    "x": 1394687.98
+				    "station_name": "分倍河原"
 			    },
 			    "position": {
 				    "x": 1394687.98,
@@ -19517,22 +7322,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2723",
-				    "station_name": "府中本町",
-				    "close_ymd": "",
-				    "lon": 139.477142,
-				    "post": "183-0027",
-				    "e_status": 0,
-				    "SUID": 2723,
-				    "station_g_cd": 1130320,
-				    "add": "府中市本町１丁目",
-				    "line_cd": 11303,
-				    "open_ymd": "",
-				    "name": "1130320",
-				    "pref_name": "東京都",
-				    "shared_name": "1130320",
-				    "lat": 35.665766,
-				    "y": -356657.66,
-				    "x": 1394771.42
+				    "station_name": "府中本町"
 			    },
 			    "position": {
 				    "x": 1394771.42,
@@ -19541,22 +7331,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2722",
-				    "station_name": "南多摩",
-				    "close_ymd": "",
-				    "lon": 139.489781,
-				    "post": "206-0801",
-				    "e_status": 0,
-				    "SUID": 2722,
-				    "station_g_cd": 1130319,
-				    "add": "稲城市大丸",
-				    "line_cd": 11303,
-				    "open_ymd": "",
-				    "name": "1130319",
-				    "pref_name": "東京都",
-				    "shared_name": "1130319",
-				    "lat": 35.649249,
-				    "y": -356492.49,
-				    "x": 1394897.8099999998
+				    "station_name": "南多摩"
 			    },
 			    "position": {
 				    "x": 1394897.8099999998,
@@ -19565,22 +7340,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2721",
-				    "station_name": "稲城長沼",
-				    "close_ymd": "",
-				    "lon": 139.502811,
-				    "post": "206-0802",
-				    "e_status": 0,
-				    "SUID": 2721,
-				    "station_g_cd": 1130318,
-				    "add": "稲城市東長沼",
-				    "line_cd": 11303,
-				    "open_ymd": "",
-				    "name": "1130318",
-				    "pref_name": "東京都",
-				    "shared_name": "1130318",
-				    "lat": 35.644184,
-				    "y": -356441.84,
-				    "x": 1395028.11
+				    "station_name": "稲城長沼"
 			    },
 			    "position": {
 				    "x": 1395028.11,
@@ -19589,22 +7349,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2720",
-				    "station_name": "矢野口",
-				    "close_ymd": "",
-				    "lon": 139.520849,
-				    "post": "206-0812",
-				    "e_status": 0,
-				    "SUID": 2720,
-				    "station_g_cd": 1130317,
-				    "add": "稲城市矢野口",
-				    "line_cd": 11303,
-				    "open_ymd": "",
-				    "name": "1130317",
-				    "pref_name": "東京都",
-				    "shared_name": "1130317",
-				    "lat": 35.641304999999996,
-				    "y": -356413.04999999993,
-				    "x": 1395208.49
+				    "station_name": "矢野口"
 			    },
 			    "position": {
 				    "x": 1395208.49,
@@ -19613,22 +7358,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2806",
-				    "station_name": "西大井",
-				    "close_ymd": "",
-				    "lon": 139.721729,
-				    "post": "140-0015",
-				    "e_status": 0,
-				    "SUID": 2806,
-				    "station_g_cd": 1130804,
-				    "add": "品川区西大井１丁目",
-				    "line_cd": 11308,
-				    "open_ymd": "",
-				    "name": "1130804",
-				    "pref_name": "東京都",
-				    "shared_name": "1130804",
-				    "lat": 35.601616,
-				    "y": -356016.16,
-				    "x": 1397217.29
+				    "station_name": "西大井"
 			    },
 			    "position": {
 				    "x": 1397217.29,
@@ -19637,22 +7367,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2805",
-				    "station_name": "品川",
-				    "close_ymd": "",
-				    "lon": 139.738999,
-				    "post": "108-0074",
-				    "e_status": 0,
-				    "SUID": 2805,
-				    "station_g_cd": 1130103,
-				    "add": "東京都港区高輪三丁目26-26",
-				    "line_cd": 11308,
-				    "open_ymd": "",
-				    "name": "1130803",
-				    "pref_name": "東京都",
-				    "shared_name": "1130803",
-				    "lat": 35.62876,
-				    "y": -356287.6,
-				    "x": 1397389.99
+				    "station_name": "品川"
 			    },
 			    "position": {
 				    "x": 1397389.99,
@@ -19661,22 +7376,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2789",
-				    "station_name": "片倉",
-				    "close_ymd": "",
-				    "lon": 139.34118999999998,
-				    "post": "192-0914",
-				    "e_status": 0,
-				    "SUID": 2789,
-				    "station_g_cd": 1130619,
-				    "add": "八王子市片倉町",
-				    "line_cd": 11306,
-				    "open_ymd": "",
-				    "name": "1130619",
-				    "pref_name": "東京都",
-				    "shared_name": "1130619",
-				    "lat": 35.639703999999995,
-				    "y": -356397.0399999999,
-				    "x": 1393411.9
+				    "station_name": "片倉"
 			    },
 			    "position": {
 				    "x": 1393411.9,
@@ -19685,22 +7385,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2790",
-				    "station_name": "八王子",
-				    "close_ymd": "",
-				    "lon": 139.338998,
-				    "post": "192-0083",
-				    "e_status": 0,
-				    "SUID": 2790,
-				    "station_g_cd": 1130620,
-				    "add": "東京都八王子市旭町1-1",
-				    "line_cd": 11306,
-				    "open_ymd": "",
-				    "name": "1130620",
-				    "pref_name": "東京都",
-				    "shared_name": "1130620",
-				    "lat": 35.655555,
-				    "y": -356555.55,
-				    "x": 1393389.98
+				    "station_name": "八王子"
 			    },
 			    "position": {
 				    "x": 1393389.98,
@@ -19709,22 +7394,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2803",
-				    "station_name": "東京",
-				    "close_ymd": "",
-				    "lon": 139.76610300000002,
-				    "post": "100-0005",
-				    "e_status": 0,
-				    "SUID": 2803,
-				    "station_g_cd": 1130101,
-				    "add": "東京都千代田区丸の内一丁目",
-				    "line_cd": 11308,
-				    "open_ymd": "",
-				    "name": "1130801",
-				    "pref_name": "東京都",
-				    "shared_name": "1130801",
-				    "lat": 35.681391,
-				    "y": -356813.91,
-				    "x": 1397661.0300000003
+				    "station_name": "東京"
 			    },
 			    "position": {
 				    "x": 1397661.0300000003,
@@ -19733,22 +7403,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2804",
-				    "station_name": "新橋",
-				    "close_ymd": "",
-				    "lon": 139.758587,
-				    "post": "105-0004",
-				    "e_status": 0,
-				    "SUID": 2804,
-				    "station_g_cd": 1130102,
-				    "add": "東京都港区新橋二丁目17",
-				    "line_cd": 11308,
-				    "open_ymd": "",
-				    "name": "1130802",
-				    "pref_name": "東京都",
-				    "shared_name": "1130802",
-				    "lat": 35.666195,
-				    "y": -356661.95,
-				    "x": 1397585.87
+				    "station_name": "新橋"
 			    },
 			    "position": {
 				    "x": 1397585.87,
@@ -19757,22 +7412,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2780",
-				    "station_name": "成瀬",
-				    "close_ymd": "",
-				    "lon": 139.472875,
-				    "post": "194-0045",
-				    "e_status": 0,
-				    "SUID": 2780,
-				    "station_g_cd": 1130610,
-				    "add": "町田市南成瀬１丁目",
-				    "line_cd": 11306,
-				    "open_ymd": "",
-				    "name": "1130610",
-				    "pref_name": "東京都",
-				    "shared_name": "1130610",
-				    "lat": 35.535412,
-				    "y": -355354.12,
-				    "x": 1394728.7499999998
+				    "station_name": "成瀬"
 			    },
 			    "position": {
 				    "x": 1394728.7499999998,
@@ -19781,22 +7421,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2781",
-				    "station_name": "町田",
-				    "close_ymd": "",
-				    "lon": 139.445579,
-				    "post": "194-0013",
-				    "e_status": 0,
-				    "SUID": 2781,
-				    "station_g_cd": 1130611,
-				    "add": "町田市原町田１丁目",
-				    "line_cd": 11306,
-				    "open_ymd": "",
-				    "name": "1130611",
-				    "pref_name": "東京都",
-				    "shared_name": "1130611",
-				    "lat": 35.542004,
-				    "y": -355420.04,
-				    "x": 1394455.79
+				    "station_name": "町田"
 			    },
 			    "position": {
 				    "x": 1394455.79,
@@ -19805,22 +7430,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2788",
-				    "station_name": "八王子みなみ野",
-				    "close_ymd": "",
-				    "lon": 139.330678,
-				    "post": "192-0915",
-				    "e_status": 0,
-				    "SUID": 2788,
-				    "station_g_cd": 1130618,
-				    "add": "八王子市宇津貫町",
-				    "line_cd": 11306,
-				    "open_ymd": "",
-				    "name": "1130618",
-				    "pref_name": "東京都",
-				    "shared_name": "1130618",
-				    "lat": 35.630664,
-				    "y": -356306.64,
-				    "x": 1393306.78
+				    "station_name": "八王子みなみ野"
 			    },
 			    "position": {
 				    "x": 1393306.78,
@@ -19829,22 +7439,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2787",
-				    "station_name": "相原",
-				    "close_ymd": "",
-				    "lon": 139.33168999999998,
-				    "post": "194-0211",
-				    "e_status": 0,
-				    "SUID": 2787,
-				    "station_g_cd": 1130617,
-				    "add": "町田市相原町",
-				    "line_cd": 11306,
-				    "open_ymd": "",
-				    "name": "1130617",
-				    "pref_name": "東京都",
-				    "shared_name": "1130617",
-				    "lat": 35.60694,
-				    "y": -356069.4,
-				    "x": 1393316.9
+				    "station_name": "相原"
 			    },
 			    "position": {
 				    "x": 1393316.9,
@@ -19853,22 +7448,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2900",
-				    "station_name": "阿佐ケ谷",
-				    "close_ymd": "",
-				    "lon": 139.635868,
-				    "post": "166-0004",
-				    "e_status": 0,
-				    "SUID": 2900,
-				    "station_g_cd": 1131216,
-				    "add": "東京都杉並区阿佐谷南三丁目36-3",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131216",
-				    "pref_name": "東京都",
-				    "shared_name": "1131216",
-				    "lat": 35.704817999999996,
-				    "y": -357048.17999999993,
-				    "x": 1396358.68
+				    "station_name": "阿佐ケ谷"
 			    },
 			    "position": {
 				    "x": 1396358.68,
@@ -19877,22 +7457,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2899",
-				    "station_name": "高円寺",
-				    "close_ymd": "",
-				    "lon": 139.649664,
-				    "post": "166-0003",
-				    "e_status": 0,
-				    "SUID": 2899,
-				    "station_g_cd": 1131215,
-				    "add": "杉並区高円寺南４丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131215",
-				    "pref_name": "東京都",
-				    "shared_name": "1131215",
-				    "lat": 35.705326,
-				    "y": -357053.26,
-				    "x": 1396496.64
+				    "station_name": "高円寺"
 			    },
 			    "position": {
 				    "x": 1396496.64,
@@ -19901,22 +7466,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2898",
-				    "station_name": "中野",
-				    "close_ymd": "",
-				    "lon": 139.66583500000002,
-				    "post": "164-0001",
-				    "e_status": 0,
-				    "SUID": 2898,
-				    "station_g_cd": 1131214,
-				    "add": "中野区中野５丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131214",
-				    "pref_name": "東京都",
-				    "shared_name": "1131214",
-				    "lat": 35.705765,
-				    "y": -357057.65,
-				    "x": 1396658.35
+				    "station_name": "中野"
 			    },
 			    "position": {
 				    "x": 1396658.35,
@@ -19925,22 +7475,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2897",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.70046399999998,
-				    "post": "160-0022",
-				    "e_status": 0,
-				    "SUID": 2897,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区新宿三丁目38-1",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131211",
-				    "pref_name": "東京都",
-				    "shared_name": "1131211",
-				    "lat": 35.689729,
-				    "y": -356897.29,
-				    "x": 1397004.64
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1397004.64,
@@ -19949,22 +7484,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2896",
-				    "station_name": "四ツ谷",
-				    "close_ymd": "",
-				    "lon": 139.73064399999998,
-				    "post": "160-0004",
-				    "e_status": 0,
-				    "SUID": 2896,
-				    "station_g_cd": 1131102,
-				    "add": "東京都新宿区四谷一丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131207",
-				    "pref_name": "東京都",
-				    "shared_name": "1131207",
-				    "lat": 35.686040999999996,
-				    "y": -356860.41,
-				    "x": 1397306.44
+				    "station_name": "四ツ谷"
 			    },
 			    "position": {
 				    "x": 1397306.44,
@@ -19973,22 +7493,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2895",
-				    "station_name": "御茶ノ水",
-				    "close_ymd": "",
-				    "lon": 139.76495500000001,
-				    "post": "101-0062",
-				    "e_status": 0,
-				    "SUID": 2895,
-				    "station_g_cd": 1131203,
-				    "add": "千代田区神田駿河台２丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131203",
-				    "pref_name": "東京都",
-				    "shared_name": "1131203",
-				    "lat": 35.699605,
-				    "y": -356996.05,
-				    "x": 1397649.55
+				    "station_name": "御茶ノ水"
 			    },
 			    "position": {
 				    "x": 1397649.55,
@@ -19997,22 +7502,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2894",
-				    "station_name": "神田",
-				    "close_ymd": "",
-				    "lon": 139.77064099999998,
-				    "post": "101-0044",
-				    "e_status": 0,
-				    "SUID": 2894,
-				    "station_g_cd": 1130223,
-				    "add": "東京都千代田区鍛冶町二丁目13-1",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131202",
-				    "pref_name": "東京都",
-				    "shared_name": "1131202",
-				    "lat": 35.691173,
-				    "y": -356911.73,
-				    "x": 1397706.41
+				    "station_name": "神田"
 			    },
 			    "position": {
 				    "x": 1397706.41,
@@ -20021,22 +7511,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2893",
-				    "station_name": "東京",
-				    "close_ymd": "",
-				    "lon": 139.76610300000002,
-				    "post": "100-0005",
-				    "e_status": 0,
-				    "SUID": 2893,
-				    "station_g_cd": 1130101,
-				    "add": "東京都千代田区丸の内一丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131201",
-				    "pref_name": "東京都",
-				    "shared_name": "1131201",
-				    "lat": 35.681391,
-				    "y": -356813.91,
-				    "x": 1397661.0300000003
+				    "station_name": "東京"
 			    },
 			    "position": {
 				    "x": 1397661.0300000003,
@@ -20045,22 +7520,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2849",
-				    "station_name": "八王子",
-				    "close_ymd": "",
-				    "lon": 139.338998,
-				    "post": "192-0083",
-				    "e_status": 0,
-				    "SUID": 2849,
-				    "station_g_cd": 1130620,
-				    "add": "東京都八王子市旭町1-1",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131110",
-				    "pref_name": "東京都",
-				    "shared_name": "1131110",
-				    "lat": 35.655555,
-				    "y": -356555.55,
-				    "x": 1393389.98
+				    "station_name": "八王子"
 			    },
 			    "position": {
 				    "x": 1393389.98,
@@ -20069,22 +7529,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2850",
-				    "station_name": "西八王子",
-				    "close_ymd": "",
-				    "lon": 139.31264,
-				    "post": "193-0835",
-				    "e_status": 0,
-				    "SUID": 2850,
-				    "station_g_cd": 1131111,
-				    "add": "八王子市千人町２丁目",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131111",
-				    "pref_name": "東京都",
-				    "shared_name": "1131111",
-				    "lat": 35.656621,
-				    "y": -356566.21,
-				    "x": 1393126.4
+				    "station_name": "西八王子"
 			    },
 			    "position": {
 				    "x": 1393126.4,
@@ -20093,22 +7538,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2851",
-				    "station_name": "高尾",
-				    "close_ymd": "",
-				    "lon": 139.282288,
-				    "post": "193-0844",
-				    "e_status": 0,
-				    "SUID": 2851,
-				    "station_g_cd": 1131112,
-				    "add": "八王子市高尾町",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131112",
-				    "pref_name": "東京都",
-				    "shared_name": "1131112",
-				    "lat": 35.642026,
-				    "y": -356420.26,
-				    "x": 1392822.88
+				    "station_name": "高尾"
 			    },
 			    "position": {
 				    "x": 1392822.88,
@@ -20117,22 +7547,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2845",
-				    "station_name": "国分寺",
-				    "close_ymd": "",
-				    "lon": 139.480841,
-				    "post": "185-0012",
-				    "e_status": 0,
-				    "SUID": 2845,
-				    "station_g_cd": 1131106,
-				    "add": "東京都国分寺市本町二丁目1-23",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131106",
-				    "pref_name": "東京都",
-				    "shared_name": "1131106",
-				    "lat": 35.700123,
-				    "y": -357001.23,
-				    "x": 1394808.41
+				    "station_name": "国分寺"
 			    },
 			    "position": {
 				    "x": 1394808.41,
@@ -20141,22 +7556,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2846",
-				    "station_name": "立川",
-				    "close_ymd": "",
-				    "lon": 139.413704,
-				    "post": "190-0012",
-				    "e_status": 0,
-				    "SUID": 2846,
-				    "station_g_cd": 1130325,
-				    "add": "東京都立川市曙町二丁目1-1",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131107",
-				    "pref_name": "東京都",
-				    "shared_name": "1131107",
-				    "lat": 35.698202,
-				    "y": -356982.02,
-				    "x": 1394137.04
+				    "station_name": "立川"
 			    },
 			    "position": {
 				    "x": 1394137.04,
@@ -20165,22 +7565,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2847",
-				    "station_name": "日野",
-				    "close_ymd": "",
-				    "lon": 139.39393,
-				    "post": "191-0061",
-				    "e_status": 0,
-				    "SUID": 2847,
-				    "station_g_cd": 1131108,
-				    "add": "日野市大坂上１丁目",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131108",
-				    "pref_name": "東京都",
-				    "shared_name": "1131108",
-				    "lat": 35.679244,
-				    "y": -356792.43999999994,
-				    "x": 1393939.3
+				    "station_name": "日野"
 			    },
 			    "position": {
 				    "x": 1393939.3,
@@ -20189,22 +7574,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2848",
-				    "station_name": "豊田",
-				    "close_ymd": "",
-				    "lon": 139.381495,
-				    "post": "191-0053",
-				    "e_status": 0,
-				    "SUID": 2848,
-				    "station_g_cd": 1131109,
-				    "add": "日野市豊田４丁目",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131109",
-				    "pref_name": "東京都",
-				    "shared_name": "1131109",
-				    "lat": 35.659502,
-				    "y": -356595.02,
-				    "x": 1393814.95
+				    "station_name": "豊田"
 			    },
 			    "position": {
 				    "x": 1393814.95,
@@ -20213,22 +7583,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2841",
-				    "station_name": "四ツ谷",
-				    "close_ymd": "",
-				    "lon": 139.73064399999998,
-				    "post": "160-0004",
-				    "e_status": 0,
-				    "SUID": 2841,
-				    "station_g_cd": 1131102,
-				    "add": "東京都新宿区四谷一丁目",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131102",
-				    "pref_name": "東京都",
-				    "shared_name": "1131102",
-				    "lat": 35.686040999999996,
-				    "y": -356860.41,
-				    "x": 1397306.44
+				    "station_name": "四ツ谷"
 			    },
 			    "position": {
 				    "x": 1397306.44,
@@ -20237,22 +7592,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2842",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.70046399999998,
-				    "post": "160-0022",
-				    "e_status": 0,
-				    "SUID": 2842,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区新宿三丁目38-1",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131103",
-				    "pref_name": "東京都",
-				    "shared_name": "1131103",
-				    "lat": 35.689729,
-				    "y": -356897.29,
-				    "x": 1397004.64
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1397004.64,
@@ -20261,22 +7601,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2843",
-				    "station_name": "吉祥寺",
-				    "close_ymd": "",
-				    "lon": 139.57976499999998,
-				    "post": "180-0003",
-				    "e_status": 0,
-				    "SUID": 2843,
-				    "station_g_cd": 1131104,
-				    "add": "東京都武蔵野市吉祥寺南町",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131104",
-				    "pref_name": "東京都",
-				    "shared_name": "1131104",
-				    "lat": 35.703119,
-				    "y": -357031.19,
-				    "x": 1395797.65
+				    "station_name": "吉祥寺"
 			    },
 			    "position": {
 				    "x": 1395797.65,
@@ -20285,22 +7610,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2844",
-				    "station_name": "三鷹",
-				    "close_ymd": "",
-				    "lon": 139.560325,
-				    "post": "181-0013",
-				    "e_status": 0,
-				    "SUID": 2844,
-				    "station_g_cd": 1131105,
-				    "add": "東京都三鷹市下連雀三丁目46-1",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131105",
-				    "pref_name": "東京都",
-				    "shared_name": "1131105",
-				    "lat": 35.702683,
-				    "y": -357026.83,
-				    "x": 1395603.25
+				    "station_name": "三鷹"
 			    },
 			    "position": {
 				    "x": 1395603.25,
@@ -20309,22 +7619,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2840",
-				    "station_name": "東京",
-				    "close_ymd": "",
-				    "lon": 139.76610300000002,
-				    "post": "100-0005",
-				    "e_status": 0,
-				    "SUID": 2840,
-				    "station_g_cd": 1130101,
-				    "add": "東京都千代田区丸の内一丁目",
-				    "line_cd": 11311,
-				    "open_ymd": "",
-				    "name": "1131101",
-				    "pref_name": "東京都",
-				    "shared_name": "1131101",
-				    "lat": 35.681391,
-				    "y": -356813.91,
-				    "x": 1397661.0300000003
+				    "station_name": "東京"
 			    },
 			    "position": {
 				    "x": 1397661.0300000003,
@@ -20333,22 +7628,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2941",
-				    "station_name": "新小岩",
-				    "close_ymd": "",
-				    "lon": 139.857777,
-				    "post": "124-0024",
-				    "e_status": 0,
-				    "SUID": 2941,
-				    "station_g_cd": 1131325,
-				    "add": "葛飾区新小岩１丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131325",
-				    "pref_name": "東京都",
-				    "shared_name": "1131325",
-				    "lat": 35.716903,
-				    "y": -357169.03,
-				    "x": 1398577.77
+				    "station_name": "新小岩"
 			    },
 			    "position": {
 				    "x": 1398577.77,
@@ -20357,22 +7637,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2942",
-				    "station_name": "小岩",
-				    "close_ymd": "",
-				    "lon": 139.881755,
-				    "post": "133-0056",
-				    "e_status": 0,
-				    "SUID": 2942,
-				    "station_g_cd": 1131326,
-				    "add": "江戸川区南小岩７丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131326",
-				    "pref_name": "東京都",
-				    "shared_name": "1131326",
-				    "lat": 35.733207,
-				    "y": -357332.07,
-				    "x": 1398817.55
+				    "station_name": "小岩"
 			    },
 			    "position": {
 				    "x": 1398817.55,
@@ -20381,22 +7646,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2935",
-				    "station_name": "秋葉原",
-				    "close_ymd": "",
-				    "lon": 139.77328799999998,
-				    "post": "101-0021",
-				    "e_status": 0,
-				    "SUID": 2935,
-				    "station_g_cd": 1130222,
-				    "add": "東京都千代田区外神田一丁目17-6",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131319",
-				    "pref_name": "東京都",
-				    "shared_name": "1131319",
-				    "lat": 35.698619,
-				    "y": -356986.19,
-				    "x": 1397732.88
+				    "station_name": "秋葉原"
 			    },
 			    "position": {
 				    "x": 1397732.88,
@@ -20405,22 +7655,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2936",
-				    "station_name": "浅草橋",
-				    "close_ymd": "",
-				    "lon": 139.784427,
-				    "post": "111-0053",
-				    "e_status": 0,
-				    "SUID": 2936,
-				    "station_g_cd": 1131320,
-				    "add": "台東区浅草橋１丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131320",
-				    "pref_name": "東京都",
-				    "shared_name": "1131320",
-				    "lat": 35.697403,
-				    "y": -356974.03,
-				    "x": 1397844.27
+				    "station_name": "浅草橋"
 			    },
 			    "position": {
 				    "x": 1397844.27,
@@ -20429,22 +7664,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2933",
-				    "station_name": "水道橋",
-				    "close_ymd": "",
-				    "lon": 139.754312,
-				    "post": "101-0061",
-				    "e_status": 0,
-				    "SUID": 2933,
-				    "station_g_cd": 1131204,
-				    "add": "千代田区三崎町２丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131317",
-				    "pref_name": "東京都",
-				    "shared_name": "1131317",
-				    "lat": 35.702039,
-				    "y": -357020.39,
-				    "x": 1397543.1199999999
+				    "station_name": "水道橋"
 			    },
 			    "position": {
 				    "x": 1397543.1199999999,
@@ -20453,22 +7673,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2934",
-				    "station_name": "御茶ノ水",
-				    "close_ymd": "",
-				    "lon": 139.76495500000001,
-				    "post": "101-0062",
-				    "e_status": 0,
-				    "SUID": 2934,
-				    "station_g_cd": 1131203,
-				    "add": "千代田区神田駿河台２丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131318",
-				    "pref_name": "東京都",
-				    "shared_name": "1131318",
-				    "lat": 35.699605,
-				    "y": -356996.05,
-				    "x": 1397649.55
+				    "station_name": "御茶ノ水"
 			    },
 			    "position": {
 				    "x": 1397649.55,
@@ -20477,22 +7682,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2939",
-				    "station_name": "亀戸",
-				    "close_ymd": "",
-				    "lon": 139.826262,
-				    "post": "136-0071",
-				    "e_status": 0,
-				    "SUID": 2939,
-				    "station_g_cd": 1131323,
-				    "add": "江東区亀戸５丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131323",
-				    "pref_name": "東京都",
-				    "shared_name": "1131323",
-				    "lat": 35.697345,
-				    "y": -356973.45,
-				    "x": 1398262.62
+				    "station_name": "亀戸"
 			    },
 			    "position": {
 				    "x": 1398262.62,
@@ -20501,22 +7691,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2940",
-				    "station_name": "平井",
-				    "close_ymd": "",
-				    "lon": 139.842181,
-				    "post": "132-0035",
-				    "e_status": 0,
-				    "SUID": 2940,
-				    "station_g_cd": 1131324,
-				    "add": "江戸川区平井３丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131324",
-				    "pref_name": "東京都",
-				    "shared_name": "1131324",
-				    "lat": 35.70643,
-				    "y": -357064.3,
-				    "x": 1398421.81
+				    "station_name": "平井"
 			    },
 			    "position": {
 				    "x": 1398421.81,
@@ -20525,22 +7700,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2937",
-				    "station_name": "両国",
-				    "close_ymd": "",
-				    "lon": 139.79333400000002,
-				    "post": "130-0015",
-				    "e_status": 0,
-				    "SUID": 2937,
-				    "station_g_cd": 1131321,
-				    "add": "墨田区横網１丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131321",
-				    "pref_name": "東京都",
-				    "shared_name": "1131321",
-				    "lat": 35.69579,
-				    "y": -356957.9,
-				    "x": 1397933.34
+				    "station_name": "両国"
 			    },
 			    "position": {
 				    "x": 1397933.34,
@@ -20549,22 +7709,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2938",
-				    "station_name": "錦糸町",
-				    "close_ymd": "",
-				    "lon": 139.81413600000002,
-				    "post": "130-0022",
-				    "e_status": 0,
-				    "SUID": 2938,
-				    "station_g_cd": 1131322,
-				    "add": "墨田区江東橋３丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131322",
-				    "pref_name": "東京都",
-				    "shared_name": "1131322",
-				    "lat": 35.696802000000005,
-				    "y": -356968.0200000001,
-				    "x": 1398141.36
+				    "station_name": "錦糸町"
 			    },
 			    "position": {
 				    "x": 1398141.36,
@@ -20573,22 +7718,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2960",
-				    "station_name": "新小岩",
-				    "close_ymd": "",
-				    "lon": 139.857777,
-				    "post": "124-0024",
-				    "e_status": 0,
-				    "SUID": 2960,
-				    "station_g_cd": 1131325,
-				    "add": "葛飾区新小岩１丁目",
-				    "line_cd": 11314,
-				    "open_ymd": "",
-				    "name": "1131405",
-				    "pref_name": "東京都",
-				    "shared_name": "1131405",
-				    "lat": 35.716903,
-				    "y": -357169.03,
-				    "x": 1398577.77
+				    "station_name": "新小岩"
 			    },
 			    "position": {
 				    "x": 1398577.77,
@@ -20597,22 +7727,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2959",
-				    "station_name": "錦糸町",
-				    "close_ymd": "",
-				    "lon": 139.81413600000002,
-				    "post": "130-0022",
-				    "e_status": 0,
-				    "SUID": 2959,
-				    "station_g_cd": 1131322,
-				    "add": "墨田区江東橋３丁目",
-				    "line_cd": 11314,
-				    "open_ymd": "",
-				    "name": "1131404",
-				    "pref_name": "東京都",
-				    "shared_name": "1131404",
-				    "lat": 35.696802000000005,
-				    "y": -356968.0200000001,
-				    "x": 1398141.36
+				    "station_name": "錦糸町"
 			    },
 			    "position": {
 				    "x": 1398141.36,
@@ -20621,22 +7736,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2958",
-				    "station_name": "馬喰町",
-				    "close_ymd": "",
-				    "lon": 139.78238000000002,
-				    "post": "103-0002",
-				    "e_status": 0,
-				    "SUID": 2958,
-				    "station_g_cd": 1131403,
-				    "add": "中央区日本橋馬喰町１丁目",
-				    "line_cd": 11314,
-				    "open_ymd": "",
-				    "name": "1131403",
-				    "pref_name": "東京都",
-				    "shared_name": "1131403",
-				    "lat": 35.693365,
-				    "y": -356933.65,
-				    "x": 1397823.8000000003
+				    "station_name": "馬喰町"
 			    },
 			    "position": {
 				    "x": 1397823.8000000003,
@@ -20645,22 +7745,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2957",
-				    "station_name": "新日本橋",
-				    "close_ymd": "",
-				    "lon": 139.77323,
-				    "post": "103-0022",
-				    "e_status": 0,
-				    "SUID": 2957,
-				    "station_g_cd": 1131402,
-				    "add": "中央区日本橋室町４丁目",
-				    "line_cd": 11314,
-				    "open_ymd": "",
-				    "name": "1131402",
-				    "pref_name": "東京都",
-				    "shared_name": "1131402",
-				    "lat": 35.688687,
-				    "y": -356886.87,
-				    "x": 1397732.3
+				    "station_name": "新日本橋"
 			    },
 			    "position": {
 				    "x": 1397732.3,
@@ -20669,22 +7754,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2956",
-				    "station_name": "東京",
-				    "close_ymd": "",
-				    "lon": 139.76610300000002,
-				    "post": "100-0005",
-				    "e_status": 0,
-				    "SUID": 2956,
-				    "station_g_cd": 1130101,
-				    "add": "東京都千代田区丸の内一丁目",
-				    "line_cd": 11314,
-				    "open_ymd": "",
-				    "name": "1131401",
-				    "pref_name": "東京都",
-				    "shared_name": "1131401",
-				    "lat": 35.681391,
-				    "y": -356813.91,
-				    "x": 1397661.0300000003
+				    "station_name": "東京"
 			    },
 			    "position": {
 				    "x": 1397661.0300000003,
@@ -20693,22 +7763,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2909",
-				    "station_name": "西国分寺",
-				    "close_ymd": "",
-				    "lon": 139.465994,
-				    "post": "185-0013",
-				    "e_status": 0,
-				    "SUID": 2909,
-				    "station_g_cd": 1130503,
-				    "add": "国分寺市西恋ケ窪２丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131225",
-				    "pref_name": "東京都",
-				    "shared_name": "1131225",
-				    "lat": 35.699744,
-				    "y": -356997.44,
-				    "x": 1394659.94
+				    "station_name": "西国分寺"
 			    },
 			    "position": {
 				    "x": 1394659.94,
@@ -20717,22 +7772,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2910",
-				    "station_name": "国立",
-				    "close_ymd": "",
-				    "lon": 139.44634,
-				    "post": "186-0001",
-				    "e_status": 0,
-				    "SUID": 2910,
-				    "station_g_cd": 1131226,
-				    "add": "国立市北１丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131226",
-				    "pref_name": "東京都",
-				    "shared_name": "1131226",
-				    "lat": 35.69923,
-				    "y": -356992.3,
-				    "x": 1394463.4
+				    "station_name": "国立"
 			    },
 			    "position": {
 				    "x": 1394463.4,
@@ -20741,22 +7781,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2911",
-				    "station_name": "立川",
-				    "close_ymd": "",
-				    "lon": 139.413704,
-				    "post": "190-0012",
-				    "e_status": 0,
-				    "SUID": 2911,
-				    "station_g_cd": 1130325,
-				    "add": "東京都立川市曙町二丁目1-1",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131227",
-				    "pref_name": "東京都",
-				    "shared_name": "1131227",
-				    "lat": 35.698202,
-				    "y": -356982.02,
-				    "x": 1394137.04
+				    "station_name": "立川"
 			    },
 			    "position": {
 				    "x": 1394137.04,
@@ -20765,22 +7790,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2912",
-				    "station_name": "日野",
-				    "close_ymd": "",
-				    "lon": 139.39393,
-				    "post": "191-0061",
-				    "e_status": 0,
-				    "SUID": 2912,
-				    "station_g_cd": 1131108,
-				    "add": "日野市大坂上１丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131228",
-				    "pref_name": "東京都",
-				    "shared_name": "1131228",
-				    "lat": 35.679244,
-				    "y": -356792.43999999994,
-				    "x": 1393939.3
+				    "station_name": "日野"
 			    },
 			    "position": {
 				    "x": 1393939.3,
@@ -20789,22 +7799,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2913",
-				    "station_name": "豊田",
-				    "close_ymd": "",
-				    "lon": 139.381495,
-				    "post": "191-0053",
-				    "e_status": 0,
-				    "SUID": 2913,
-				    "station_g_cd": 1131109,
-				    "add": "日野市豊田４丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131229",
-				    "pref_name": "東京都",
-				    "shared_name": "1131229",
-				    "lat": 35.659502,
-				    "y": -356595.02,
-				    "x": 1393814.95
+				    "station_name": "豊田"
 			    },
 			    "position": {
 				    "x": 1393814.95,
@@ -20813,22 +7808,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2914",
-				    "station_name": "八王子",
-				    "close_ymd": "",
-				    "lon": 139.338998,
-				    "post": "192-0083",
-				    "e_status": 0,
-				    "SUID": 2914,
-				    "station_g_cd": 1130620,
-				    "add": "東京都八王子市旭町1-1",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131230",
-				    "pref_name": "東京都",
-				    "shared_name": "1131230",
-				    "lat": 35.655555,
-				    "y": -356555.55,
-				    "x": 1393389.98
+				    "station_name": "八王子"
 			    },
 			    "position": {
 				    "x": 1393389.98,
@@ -20837,22 +7817,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2915",
-				    "station_name": "西八王子",
-				    "close_ymd": "",
-				    "lon": 139.31264,
-				    "post": "193-0835",
-				    "e_status": 0,
-				    "SUID": 2915,
-				    "station_g_cd": 1131111,
-				    "add": "八王子市千人町２丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131231",
-				    "pref_name": "東京都",
-				    "shared_name": "1131231",
-				    "lat": 35.656621,
-				    "y": -356566.21,
-				    "x": 1393126.4
+				    "station_name": "西八王子"
 			    },
 			    "position": {
 				    "x": 1393126.4,
@@ -20861,22 +7826,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2916",
-				    "station_name": "高尾",
-				    "close_ymd": "",
-				    "lon": 139.282288,
-				    "post": "193-0844",
-				    "e_status": 0,
-				    "SUID": 2916,
-				    "station_g_cd": 1131112,
-				    "add": "八王子市高尾町",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131232",
-				    "pref_name": "東京都",
-				    "shared_name": "1131232",
-				    "lat": 35.642026,
-				    "y": -356420.26,
-				    "x": 1392822.88
+				    "station_name": "高尾"
 			    },
 			    "position": {
 				    "x": 1392822.88,
@@ -20885,22 +7835,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2901",
-				    "station_name": "荻窪",
-				    "close_ymd": "",
-				    "lon": 139.620109,
-				    "post": "167-0043",
-				    "e_status": 0,
-				    "SUID": 2901,
-				    "station_g_cd": 1131217,
-				    "add": "杉並区上荻１丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131217",
-				    "pref_name": "東京都",
-				    "shared_name": "1131217",
-				    "lat": 35.704522999999995,
-				    "y": -357045.2299999999,
-				    "x": 1396201.09
+				    "station_name": "荻窪"
 			    },
 			    "position": {
 				    "x": 1396201.09,
@@ -20909,22 +7844,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2902",
-				    "station_name": "西荻窪",
-				    "close_ymd": "",
-				    "lon": 139.59936100000002,
-				    "post": "167-0053",
-				    "e_status": 0,
-				    "SUID": 2902,
-				    "station_g_cd": 1131218,
-				    "add": "杉並区西荻南３丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131218",
-				    "pref_name": "東京都",
-				    "shared_name": "1131218",
-				    "lat": 35.703842,
-				    "y": -357038.42000000004,
-				    "x": 1395993.61
+				    "station_name": "西荻窪"
 			    },
 			    "position": {
 				    "x": 1395993.61,
@@ -20933,22 +7853,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2903",
-				    "station_name": "吉祥寺",
-				    "close_ymd": "",
-				    "lon": 139.57976499999998,
-				    "post": "180-0003",
-				    "e_status": 0,
-				    "SUID": 2903,
-				    "station_g_cd": 1131104,
-				    "add": "東京都武蔵野市吉祥寺南町",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131219",
-				    "pref_name": "東京都",
-				    "shared_name": "1131219",
-				    "lat": 35.703119,
-				    "y": -357031.19,
-				    "x": 1395797.65
+				    "station_name": "吉祥寺"
 			    },
 			    "position": {
 				    "x": 1395797.65,
@@ -20957,22 +7862,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2904",
-				    "station_name": "三鷹",
-				    "close_ymd": "",
-				    "lon": 139.560325,
-				    "post": "181-0013",
-				    "e_status": 0,
-				    "SUID": 2904,
-				    "station_g_cd": 1131105,
-				    "add": "東京都三鷹市下連雀三丁目46-1",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131220",
-				    "pref_name": "東京都",
-				    "shared_name": "1131220",
-				    "lat": 35.702683,
-				    "y": -357026.83,
-				    "x": 1395603.25
+				    "station_name": "三鷹"
 			    },
 			    "position": {
 				    "x": 1395603.25,
@@ -20981,22 +7871,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2905",
-				    "station_name": "武蔵境",
-				    "close_ymd": "",
-				    "lon": 139.54340200000001,
-				    "post": "180-0022",
-				    "e_status": 0,
-				    "SUID": 2905,
-				    "station_g_cd": 1131221,
-				    "add": "武蔵野市境１丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131221",
-				    "pref_name": "東京都",
-				    "shared_name": "1131221",
-				    "lat": 35.702083,
-				    "y": -357020.83,
-				    "x": 1395434.0200000003
+				    "station_name": "武蔵境"
 			    },
 			    "position": {
 				    "x": 1395434.0200000003,
@@ -21005,22 +7880,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2906",
-				    "station_name": "東小金井",
-				    "close_ymd": "",
-				    "lon": 139.52483700000002,
-				    "post": "184-0002",
-				    "e_status": 0,
-				    "SUID": 2906,
-				    "station_g_cd": 1131222,
-				    "add": "小金井市梶野町５丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131222",
-				    "pref_name": "東京都",
-				    "shared_name": "1131222",
-				    "lat": 35.701643,
-				    "y": -357016.43,
-				    "x": 1395248.37
+				    "station_name": "東小金井"
 			    },
 			    "position": {
 				    "x": 1395248.37,
@@ -21029,22 +7889,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2907",
-				    "station_name": "武蔵小金井",
-				    "close_ymd": "",
-				    "lon": 139.506483,
-				    "post": "184-0004",
-				    "e_status": 0,
-				    "SUID": 2907,
-				    "station_g_cd": 1131223,
-				    "add": "小金井市本町６丁目",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131223",
-				    "pref_name": "東京都",
-				    "shared_name": "1131223",
-				    "lat": 35.701337,
-				    "y": -357013.37,
-				    "x": 1395064.83
+				    "station_name": "武蔵小金井"
 			    },
 			    "position": {
 				    "x": 1395064.83,
@@ -21053,22 +7898,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2908",
-				    "station_name": "国分寺",
-				    "close_ymd": "",
-				    "lon": 139.480841,
-				    "post": "185-0012",
-				    "e_status": 0,
-				    "SUID": 2908,
-				    "station_g_cd": 1131106,
-				    "add": "東京都国分寺市本町二丁目1-23",
-				    "line_cd": 11312,
-				    "open_ymd": "",
-				    "name": "1131224",
-				    "pref_name": "東京都",
-				    "shared_name": "1131224",
-				    "lat": 35.700123,
-				    "y": -357001.23,
-				    "x": 1394808.41
+				    "station_name": "国分寺"
 			    },
 			    "position": {
 				    "x": 1394808.41,
@@ -21077,22 +7907,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2926",
-				    "station_name": "新宿",
-				    "close_ymd": "",
-				    "lon": 139.70046399999998,
-				    "post": "160-0022",
-				    "e_status": 0,
-				    "SUID": 2926,
-				    "station_g_cd": 1130208,
-				    "add": "東京都新宿区新宿三丁目38-1",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131310",
-				    "pref_name": "東京都",
-				    "shared_name": "1131310",
-				    "lat": 35.689729,
-				    "y": -356897.29,
-				    "x": 1397004.64
+				    "station_name": "新宿"
 			    },
 			    "position": {
 				    "x": 1397004.64,
@@ -21101,22 +7916,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2925",
-				    "station_name": "大久保",
-				    "close_ymd": "",
-				    "lon": 139.69732,
-				    "post": "169-0073",
-				    "e_status": 0,
-				    "SUID": 2925,
-				    "station_g_cd": 1131212,
-				    "add": "新宿区百人町１丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131309",
-				    "pref_name": "東京都",
-				    "shared_name": "1131309",
-				    "lat": 35.700784000000006,
-				    "y": -357007.8400000001,
-				    "x": 1396973.2
+				    "station_name": "大久保"
 			    },
 			    "position": {
 				    "x": 1396973.2,
@@ -21125,22 +7925,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2928",
-				    "station_name": "千駄ケ谷",
-				    "close_ymd": "",
-				    "lon": 139.711644,
-				    "post": "151-0051",
-				    "e_status": 0,
-				    "SUID": 2928,
-				    "station_g_cd": 1131209,
-				    "add": "東京都渋谷区千駄ヶ谷一丁目35-10",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131312",
-				    "pref_name": "東京都",
-				    "shared_name": "1131312",
-				    "lat": 35.681231,
-				    "y": -356812.30999999994,
-				    "x": 1397116.4400000002
+				    "station_name": "千駄ケ谷"
 			    },
 			    "position": {
 				    "x": 1397116.4400000002,
@@ -21149,22 +7934,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2927",
-				    "station_name": "代々木",
-				    "close_ymd": "",
-				    "lon": 139.702042,
-				    "post": "151-0053",
-				    "e_status": 0,
-				    "SUID": 2927,
-				    "station_g_cd": 1130207,
-				    "add": "東京都渋谷区代々木一丁目34-1",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131311",
-				    "pref_name": "東京都",
-				    "shared_name": "1131311",
-				    "lat": 35.683061,
-				    "y": -356830.61000000004,
-				    "x": 1397020.4200000002
+				    "station_name": "代々木"
 			    },
 			    "position": {
 				    "x": 1397020.4200000002,
@@ -21173,22 +7943,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2930",
-				    "station_name": "四ツ谷",
-				    "close_ymd": "",
-				    "lon": 139.73064399999998,
-				    "post": "160-0004",
-				    "e_status": 0,
-				    "SUID": 2930,
-				    "station_g_cd": 1131102,
-				    "add": "東京都新宿区四谷一丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131314",
-				    "pref_name": "東京都",
-				    "shared_name": "1131314",
-				    "lat": 35.686040999999996,
-				    "y": -356860.41,
-				    "x": 1397306.44
+				    "station_name": "四ツ谷"
 			    },
 			    "position": {
 				    "x": 1397306.44,
@@ -21197,22 +7952,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2929",
-				    "station_name": "信濃町",
-				    "close_ymd": "",
-				    "lon": 139.720729,
-				    "post": "160-0016",
-				    "e_status": 0,
-				    "SUID": 2929,
-				    "station_g_cd": 1131208,
-				    "add": "新宿区信濃町",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131313",
-				    "pref_name": "東京都",
-				    "shared_name": "1131313",
-				    "lat": 35.680031,
-				    "y": -356800.31,
-				    "x": 1397207.29
+				    "station_name": "信濃町"
 			    },
 			    "position": {
 				    "x": 1397207.29,
@@ -21221,22 +7961,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2932",
-				    "station_name": "飯田橋",
-				    "close_ymd": "",
-				    "lon": 139.74514299999998,
-				    "post": "102-0072",
-				    "e_status": 0,
-				    "SUID": 2932,
-				    "station_g_cd": 1131205,
-				    "add": "東京都千代田区飯田橋四丁目10-2",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131316",
-				    "pref_name": "東京都",
-				    "shared_name": "1131316",
-				    "lat": 35.701834999999996,
-				    "y": -357018.35,
-				    "x": 1397451.43
+				    "station_name": "飯田橋"
 			    },
 			    "position": {
 				    "x": 1397451.43,
@@ -21245,22 +7970,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2931",
-				    "station_name": "市ケ谷",
-				    "close_ymd": "",
-				    "lon": 139.735241,
-				    "post": "162-0843",
-				    "e_status": 0,
-				    "SUID": 2931,
-				    "station_g_cd": 1131206,
-				    "add": "東京都新宿区市谷田町一丁目1",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131315",
-				    "pref_name": "東京都",
-				    "shared_name": "1131315",
-				    "lat": 35.691105,
-				    "y": -356911.05,
-				    "x": 1397352.41
+				    "station_name": "市ケ谷"
 			    },
 			    "position": {
 				    "x": 1397352.41,
@@ -21269,22 +7979,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2918",
-				    "station_name": "吉祥寺",
-				    "close_ymd": "",
-				    "lon": 139.57976499999998,
-				    "post": "180-0003",
-				    "e_status": 0,
-				    "SUID": 2918,
-				    "station_g_cd": 1131104,
-				    "add": "東京都武蔵野市吉祥寺南町",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131302",
-				    "pref_name": "東京都",
-				    "shared_name": "1131302",
-				    "lat": 35.703119,
-				    "y": -357031.19,
-				    "x": 1395797.65
+				    "station_name": "吉祥寺"
 			    },
 			    "position": {
 				    "x": 1395797.65,
@@ -21293,22 +7988,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2917",
-				    "station_name": "三鷹",
-				    "close_ymd": "",
-				    "lon": 139.560325,
-				    "post": "181-0013",
-				    "e_status": 0,
-				    "SUID": 2917,
-				    "station_g_cd": 1131105,
-				    "add": "東京都三鷹市下連雀三丁目46-1",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131301",
-				    "pref_name": "東京都",
-				    "shared_name": "1131301",
-				    "lat": 35.702683,
-				    "y": -357026.83,
-				    "x": 1395603.25
+				    "station_name": "三鷹"
 			    },
 			    "position": {
 				    "x": 1395603.25,
@@ -21317,22 +7997,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2920",
-				    "station_name": "荻窪",
-				    "close_ymd": "",
-				    "lon": 139.620109,
-				    "post": "167-0043",
-				    "e_status": 0,
-				    "SUID": 2920,
-				    "station_g_cd": 1131217,
-				    "add": "杉並区上荻１丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131304",
-				    "pref_name": "東京都",
-				    "shared_name": "1131304",
-				    "lat": 35.704522999999995,
-				    "y": -357045.2299999999,
-				    "x": 1396201.09
+				    "station_name": "荻窪"
 			    },
 			    "position": {
 				    "x": 1396201.09,
@@ -21341,22 +8006,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2919",
-				    "station_name": "西荻窪",
-				    "close_ymd": "",
-				    "lon": 139.59936100000002,
-				    "post": "167-0053",
-				    "e_status": 0,
-				    "SUID": 2919,
-				    "station_g_cd": 1131218,
-				    "add": "杉並区西荻南３丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131303",
-				    "pref_name": "東京都",
-				    "shared_name": "1131303",
-				    "lat": 35.703842,
-				    "y": -357038.42000000004,
-				    "x": 1395993.61
+				    "station_name": "西荻窪"
 			    },
 			    "position": {
 				    "x": 1395993.61,
@@ -21365,22 +8015,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2922",
-				    "station_name": "高円寺",
-				    "close_ymd": "",
-				    "lon": 139.649664,
-				    "post": "166-0003",
-				    "e_status": 0,
-				    "SUID": 2922,
-				    "station_g_cd": 1131215,
-				    "add": "杉並区高円寺南４丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131306",
-				    "pref_name": "東京都",
-				    "shared_name": "1131306",
-				    "lat": 35.705326,
-				    "y": -357053.26,
-				    "x": 1396496.64
+				    "station_name": "高円寺"
 			    },
 			    "position": {
 				    "x": 1396496.64,
@@ -21389,22 +8024,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2921",
-				    "station_name": "阿佐ケ谷",
-				    "close_ymd": "",
-				    "lon": 139.635868,
-				    "post": "166-0004",
-				    "e_status": 0,
-				    "SUID": 2921,
-				    "station_g_cd": 1131216,
-				    "add": "東京都杉並区阿佐谷南三丁目36-2",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131305",
-				    "pref_name": "東京都",
-				    "shared_name": "1131305",
-				    "lat": 35.704817999999996,
-				    "y": -357048.17999999993,
-				    "x": 1396358.68
+				    "station_name": "阿佐ケ谷"
 			    },
 			    "position": {
 				    "x": 1396358.68,
@@ -21413,22 +8033,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2924",
-				    "station_name": "東中野",
-				    "close_ymd": "",
-				    "lon": 139.684436,
-				    "post": "164-0003",
-				    "e_status": 0,
-				    "SUID": 2924,
-				    "station_g_cd": 1131213,
-				    "add": "中野区東中野４丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131308",
-				    "pref_name": "東京都",
-				    "shared_name": "1131308",
-				    "lat": 35.706528999999996,
-				    "y": -357065.29,
-				    "x": 1396844.36
+				    "station_name": "東中野"
 			    },
 			    "position": {
 				    "x": 1396844.36,
@@ -21437,22 +8042,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2923",
-				    "station_name": "中野",
-				    "close_ymd": "",
-				    "lon": 139.66583500000002,
-				    "post": "164-0001",
-				    "e_status": 0,
-				    "SUID": 2923,
-				    "station_g_cd": 1131214,
-				    "add": "中野区中野５丁目",
-				    "line_cd": 11313,
-				    "open_ymd": "",
-				    "name": "1131307",
-				    "pref_name": "東京都",
-				    "shared_name": "1131307",
-				    "lat": 35.705765,
-				    "y": -357057.65,
-				    "x": 1396658.35
+				    "station_name": "中野"
 			    },
 			    "position": {
 				    "x": 1396658.35,
@@ -21461,22 +8051,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3004",
-				    "station_name": "軍畑",
-				    "close_ymd": "",
-				    "lon": 139.207431,
-				    "post": "198-0172",
-				    "e_status": 0,
-				    "SUID": 3004,
-				    "station_g_cd": 1131518,
-				    "add": "青梅市沢井１丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131518",
-				    "pref_name": "東京都",
-				    "shared_name": "1131518",
-				    "lat": 35.807382000000004,
-				    "y": -358073.82000000007,
-				    "x": 1392074.31
+				    "station_name": "軍畑"
 			    },
 			    "position": {
 				    "x": 1392074.31,
@@ -21485,22 +8060,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3003",
-				    "station_name": "二俣尾",
-				    "close_ymd": "",
-				    "lon": 139.216161,
-				    "post": "198-0171",
-				    "e_status": 0,
-				    "SUID": 3003,
-				    "station_g_cd": 1131517,
-				    "add": "青梅市二俣尾４丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131517",
-				    "pref_name": "東京都",
-				    "shared_name": "1131517",
-				    "lat": 35.803946,
-				    "y": -358039.46,
-				    "x": 1392161.61
+				    "station_name": "二俣尾"
 			    },
 			    "position": {
 				    "x": 1392161.61,
@@ -21509,22 +8069,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3002",
-				    "station_name": "石神前",
-				    "close_ymd": "",
-				    "lon": 139.225096,
-				    "post": "198-0171",
-				    "e_status": 0,
-				    "SUID": 3002,
-				    "station_g_cd": 1131516,
-				    "add": "青梅市二俣尾１丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131516",
-				    "pref_name": "東京都",
-				    "shared_name": "1131516",
-				    "lat": 35.79683,
-				    "y": -357968.3,
-				    "x": 1392250.96
+				    "station_name": "石神前"
 			    },
 			    "position": {
 				    "x": 1392250.96,
@@ -21533,22 +8078,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3001",
-				    "station_name": "日向和田",
-				    "close_ymd": "",
-				    "lon": 139.229515,
-				    "post": "198-0046",
-				    "e_status": 0,
-				    "SUID": 3001,
-				    "station_g_cd": 1131515,
-				    "add": "青梅市日向和田３丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131515",
-				    "pref_name": "東京都",
-				    "shared_name": "1131515",
-				    "lat": 35.788665,
-				    "y": -357886.65,
-				    "x": 1392295.15
+				    "station_name": "日向和田"
 			    },
 			    "position": {
 				    "x": 1392295.15,
@@ -21557,22 +8087,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3000",
-				    "station_name": "宮ノ平",
-				    "close_ymd": "",
-				    "lon": 139.23728899999998,
-				    "post": "198-0046",
-				    "e_status": 0,
-				    "SUID": 3000,
-				    "station_g_cd": 1131514,
-				    "add": "青梅市日向和田２丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131514",
-				    "pref_name": "東京都",
-				    "shared_name": "1131514",
-				    "lat": 35.787545,
-				    "y": -357875.45,
-				    "x": 1392372.8899999997
+				    "station_name": "宮ノ平"
 			    },
 			    "position": {
 				    "x": 1392372.8899999997,
@@ -21581,22 +8096,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2999",
-				    "station_name": "青梅",
-				    "close_ymd": "",
-				    "lon": 139.258096,
-				    "post": "198-0000",
-				    "e_status": 0,
-				    "SUID": 2999,
-				    "station_g_cd": 1131513,
-				    "add": "青梅市青梅",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131513",
-				    "pref_name": "東京都",
-				    "shared_name": "1131513",
-				    "lat": 35.790512,
-				    "y": -357905.12,
-				    "x": 1392580.96
+				    "station_name": "青梅"
 			    },
 			    "position": {
 				    "x": 1392580.96,
@@ -21605,22 +8105,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2998",
-				    "station_name": "東青梅",
-				    "close_ymd": "",
-				    "lon": 139.272841,
-				    "post": "198-0042",
-				    "e_status": 0,
-				    "SUID": 2998,
-				    "station_g_cd": 1131512,
-				    "add": "青梅市東青梅１丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131512",
-				    "pref_name": "東京都",
-				    "shared_name": "1131512",
-				    "lat": 35.789768,
-				    "y": -357897.68000000005,
-				    "x": 1392728.41
+				    "station_name": "東青梅"
 			    },
 			    "position": {
 				    "x": 1392728.41,
@@ -21629,22 +8114,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2997",
-				    "station_name": "河辺",
-				    "close_ymd": "",
-				    "lon": 139.284032,
-				    "post": "198-0036",
-				    "e_status": 0,
-				    "SUID": 2997,
-				    "station_g_cd": 1131511,
-				    "add": "青梅市河辺町５丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131511",
-				    "pref_name": "東京都",
-				    "shared_name": "1131511",
-				    "lat": 35.784729999999996,
-				    "y": -357847.3,
-				    "x": 1392840.32
+				    "station_name": "河辺"
 			    },
 			    "position": {
 				    "x": 1392840.32,
@@ -21653,22 +8123,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3012",
-				    "station_name": "拝島",
-				    "close_ymd": "",
-				    "lon": 139.343468,
-				    "post": "196-0003",
-				    "e_status": 0,
-				    "SUID": 3012,
-				    "station_g_cd": 1131506,
-				    "add": "昭島市松原町４丁目",
-				    "line_cd": 11316,
-				    "open_ymd": "",
-				    "name": "1131601",
-				    "pref_name": "東京都",
-				    "shared_name": "1131601",
-				    "lat": 35.721278000000005,
-				    "y": -357212.78,
-				    "x": 1393434.68
+				    "station_name": "拝島"
 			    },
 			    "position": {
 				    "x": 1393434.68,
@@ -21677,22 +8132,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3011",
-				    "station_name": "奥多摩",
-				    "close_ymd": "",
-				    "lon": 139.09696100000002,
-				    "post": "198-0212",
-				    "e_status": 0,
-				    "SUID": 3011,
-				    "station_g_cd": 1131525,
-				    "add": "西多摩郡奥多摩町氷川",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131525",
-				    "pref_name": "東京都",
-				    "shared_name": "1131525",
-				    "lat": 35.809357,
-				    "y": -358093.57,
-				    "x": 1390969.61
+				    "station_name": "奥多摩"
 			    },
 			    "position": {
 				    "x": 1390969.61,
@@ -21701,22 +8141,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3010",
-				    "station_name": "白丸",
-				    "close_ymd": "",
-				    "lon": 139.11486100000002,
-				    "post": "198-0107",
-				    "e_status": 0,
-				    "SUID": 3010,
-				    "station_g_cd": 1131524,
-				    "add": "西多摩郡奥多摩町白丸",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131524",
-				    "pref_name": "東京都",
-				    "shared_name": "1131524",
-				    "lat": 35.811735,
-				    "y": -358117.35,
-				    "x": 1391148.61
+				    "station_name": "白丸"
 			    },
 			    "position": {
 				    "x": 1391148.61,
@@ -21725,22 +8150,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3009",
-				    "station_name": "鳩ノ巣",
-				    "close_ymd": "",
-				    "lon": 139.12893200000002,
-				    "post": "198-0106",
-				    "e_status": 0,
-				    "SUID": 3009,
-				    "station_g_cd": 1131523,
-				    "add": "西多摩郡奥多摩町棚沢",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131523",
-				    "pref_name": "東京都",
-				    "shared_name": "1131523",
-				    "lat": 35.815127000000004,
-				    "y": -358151.27,
-				    "x": 1391289.3200000003
+				    "station_name": "鳩ノ巣"
 			    },
 			    "position": {
 				    "x": 1391289.3200000003,
@@ -21749,22 +8159,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3008",
-				    "station_name": "古里",
-				    "close_ymd": "",
-				    "lon": 139.152102,
-				    "post": "198-0105",
-				    "e_status": 0,
-				    "SUID": 3008,
-				    "station_g_cd": 1131522,
-				    "add": "西多摩郡奥多摩町小丹波",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131522",
-				    "pref_name": "東京都",
-				    "shared_name": "1131522",
-				    "lat": 35.816247,
-				    "y": -358162.47,
-				    "x": 1391521.02
+				    "station_name": "古里"
 			    },
 			    "position": {
 				    "x": 1391521.02,
@@ -21773,22 +8168,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3007",
-				    "station_name": "川井",
-				    "close_ymd": "",
-				    "lon": 139.16429,
-				    "post": "198-0102",
-				    "e_status": 0,
-				    "SUID": 3007,
-				    "station_g_cd": 1131521,
-				    "add": "西多摩郡奥多摩町川井",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131521",
-				    "pref_name": "東京都",
-				    "shared_name": "1131521",
-				    "lat": 35.813697,
-				    "y": -358136.97,
-				    "x": 1391642.9
+				    "station_name": "川井"
 			    },
 			    "position": {
 				    "x": 1391642.9,
@@ -21797,22 +8177,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3006",
-				    "station_name": "御嶽",
-				    "close_ymd": "",
-				    "lon": 139.18258899999998,
-				    "post": "198-0173",
-				    "e_status": 0,
-				    "SUID": 3006,
-				    "station_g_cd": 1131520,
-				    "add": "青梅市御岳本町",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131520",
-				    "pref_name": "東京都",
-				    "shared_name": "1131520",
-				    "lat": 35.801468,
-				    "y": -358014.68,
-				    "x": 1391825.89
+				    "station_name": "御嶽"
 			    },
 			    "position": {
 				    "x": 1391825.89,
@@ -21821,22 +8186,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3005",
-				    "station_name": "沢井",
-				    "close_ymd": "",
-				    "lon": 139.193324,
-				    "post": "198-0172",
-				    "e_status": 0,
-				    "SUID": 3005,
-				    "station_g_cd": 1131519,
-				    "add": "青梅市沢井２丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131519",
-				    "pref_name": "東京都",
-				    "shared_name": "1131519",
-				    "lat": 35.80594,
-				    "y": -358059.4,
-				    "x": 1391933.24
+				    "station_name": "沢井"
 			    },
 			    "position": {
 				    "x": 1391933.24,
@@ -21845,22 +8195,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3019",
-				    "station_name": "八王子",
-				    "close_ymd": "",
-				    "lon": 139.338998,
-				    "post": "192-0083",
-				    "e_status": 0,
-				    "SUID": 3019,
-				    "station_g_cd": 1130620,
-				    "add": "東京都八王子市旭町1-1",
-				    "line_cd": 11317,
-				    "open_ymd": "",
-				    "name": "1131701",
-				    "pref_name": "東京都",
-				    "shared_name": "1131701",
-				    "lat": 35.655555,
-				    "y": -356555.55,
-				    "x": 1393389.98
+				    "station_name": "八王子"
 			    },
 			    "position": {
 				    "x": 1393389.98,
@@ -21869,22 +8204,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3020",
-				    "station_name": "北八王子",
-				    "close_ymd": "",
-				    "lon": 139.363348,
-				    "post": "192-0032",
-				    "e_status": 0,
-				    "SUID": 3020,
-				    "station_g_cd": 1131702,
-				    "add": "八王子市石川町",
-				    "line_cd": 11317,
-				    "open_ymd": "",
-				    "name": "1131702",
-				    "pref_name": "東京都",
-				    "shared_name": "1131702",
-				    "lat": 35.669232,
-				    "y": -356692.32,
-				    "x": 1393633.48
+				    "station_name": "北八王子"
 			    },
 			    "position": {
 				    "x": 1393633.48,
@@ -21893,22 +8213,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3017",
-				    "station_name": "武蔵増戸",
-				    "close_ymd": "",
-				    "lon": 139.256355,
-				    "post": "190-0142",
-				    "e_status": 0,
-				    "SUID": 3017,
-				    "station_g_cd": 1131606,
-				    "add": "あきる野市伊奈",
-				    "line_cd": 11316,
-				    "open_ymd": "",
-				    "name": "1131606",
-				    "pref_name": "東京都",
-				    "shared_name": "1131606",
-				    "lat": 35.730961,
-				    "y": -357309.61,
-				    "x": 1392563.55
+				    "station_name": "武蔵増戸"
 			    },
 			    "position": {
 				    "x": 1392563.55,
@@ -21917,22 +8222,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3018",
-				    "station_name": "武蔵五日市",
-				    "close_ymd": "",
-				    "lon": 139.228039,
-				    "post": "190-0163",
-				    "e_status": 0,
-				    "SUID": 3018,
-				    "station_g_cd": 1131607,
-				    "add": "あきる野市舘谷",
-				    "line_cd": 11316,
-				    "open_ymd": "",
-				    "name": "1131607",
-				    "pref_name": "東京都",
-				    "shared_name": "1131607",
-				    "lat": 35.732248,
-				    "y": -357322.48,
-				    "x": 1392280.39
+				    "station_name": "武蔵五日市"
 			    },
 			    "position": {
 				    "x": 1392280.39,
@@ -21941,22 +8231,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3015",
-				    "station_name": "秋川",
-				    "close_ymd": "",
-				    "lon": 139.286715,
-				    "post": "197-0827",
-				    "e_status": 0,
-				    "SUID": 3015,
-				    "station_g_cd": 1131604,
-				    "add": "あきる野市油平",
-				    "line_cd": 11316,
-				    "open_ymd": "",
-				    "name": "1131604",
-				    "pref_name": "東京都",
-				    "shared_name": "1131604",
-				    "lat": 35.727998,
-				    "y": -357279.98,
-				    "x": 1392867.15
+				    "station_name": "秋川"
 			    },
 			    "position": {
 				    "x": 1392867.15,
@@ -21965,22 +8240,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3016",
-				    "station_name": "武蔵引田",
-				    "close_ymd": "",
-				    "lon": 139.26990700000002,
-				    "post": "190-0100",
-				    "e_status": 0,
-				    "SUID": 3016,
-				    "station_g_cd": 1131605,
-				    "add": "あきる野市下引田",
-				    "line_cd": 11316,
-				    "open_ymd": "",
-				    "name": "1131605",
-				    "pref_name": "東京都",
-				    "shared_name": "1131605",
-				    "lat": 35.729711,
-				    "y": -357297.11000000004,
-				    "x": 1392699.07
+				    "station_name": "武蔵引田"
 			    },
 			    "position": {
 				    "x": 1392699.07,
@@ -21989,22 +8249,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3013",
-				    "station_name": "熊川",
-				    "close_ymd": "",
-				    "lon": 139.33584,
-				    "post": "197-0003",
-				    "e_status": 0,
-				    "SUID": 3013,
-				    "station_g_cd": 1131602,
-				    "add": "福生市熊川北",
-				    "line_cd": 11316,
-				    "open_ymd": "",
-				    "name": "1131602",
-				    "pref_name": "東京都",
-				    "shared_name": "1131602",
-				    "lat": 35.728321,
-				    "y": -357283.21,
-				    "x": 1393358.4
+				    "station_name": "熊川"
 			    },
 			    "position": {
 				    "x": 1393358.4,
@@ -22013,22 +8258,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3014",
-				    "station_name": "東秋留",
-				    "close_ymd": "",
-				    "lon": 139.31166499999998,
-				    "post": "197-0823",
-				    "e_status": 0,
-				    "SUID": 3014,
-				    "station_g_cd": 1131603,
-				    "add": "あきる野市野辺",
-				    "line_cd": 11316,
-				    "open_ymd": "",
-				    "name": "1131603",
-				    "pref_name": "東京都",
-				    "shared_name": "1131603",
-				    "lat": 35.725904,
-				    "y": -357259.04,
-				    "x": 1393116.6499999997
+				    "station_name": "東秋留"
 			    },
 			    "position": {
 				    "x": 1393116.6499999997,
@@ -22037,22 +8267,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3023",
-				    "station_name": "東福生",
-				    "close_ymd": "",
-				    "lon": 139.33594,
-				    "post": "197-0013",
-				    "e_status": 0,
-				    "SUID": 3023,
-				    "station_g_cd": 1131705,
-				    "add": "福生市武蔵野台１丁目",
-				    "line_cd": 11317,
-				    "open_ymd": "",
-				    "name": "1131705",
-				    "pref_name": "東京都",
-				    "shared_name": "1131705",
-				    "lat": 35.745810999999996,
-				    "y": -357458.11,
-				    "x": 1393359.4
+				    "station_name": "東福生"
 			    },
 			    "position": {
 				    "x": 1393359.4,
@@ -22061,22 +8276,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3024",
-				    "station_name": "箱根ケ崎",
-				    "close_ymd": "",
-				    "lon": 139.34680500000002,
-				    "post": "190-1221",
-				    "e_status": 0,
-				    "SUID": 3024,
-				    "station_g_cd": 1131706,
-				    "add": "東京都西多摩郡瑞穂町大字箱根ケ崎397",
-				    "line_cd": 11317,
-				    "open_ymd": "",
-				    "name": "1131706",
-				    "pref_name": "東京都",
-				    "shared_name": "1131706",
-				    "lat": 35.771158,
-				    "y": -357711.58,
-				    "x": 1393468.0500000003
+				    "station_name": "箱根ケ崎"
 			    },
 			    "position": {
 				    "x": 1393468.0500000003,
@@ -22085,22 +8285,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3021",
-				    "station_name": "小宮",
-				    "close_ymd": "",
-				    "lon": 139.368481,
-				    "post": "192-0031",
-				    "e_status": 0,
-				    "SUID": 3021,
-				    "station_g_cd": 1131703,
-				    "add": "八王子市小宮町",
-				    "line_cd": 11317,
-				    "open_ymd": "",
-				    "name": "1131703",
-				    "pref_name": "東京都",
-				    "shared_name": "1131703",
-				    "lat": 35.685798999999996,
-				    "y": -356857.98999999993,
-				    "x": 1393684.81
+				    "station_name": "小宮"
 			    },
 			    "position": {
 				    "x": 1393684.81,
@@ -22109,22 +8294,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3022",
-				    "station_name": "拝島",
-				    "close_ymd": "",
-				    "lon": 139.343468,
-				    "post": "196-0003",
-				    "e_status": 0,
-				    "SUID": 3022,
-				    "station_g_cd": 1131506,
-				    "add": "昭島市松原町４丁目",
-				    "line_cd": 11317,
-				    "open_ymd": "",
-				    "name": "1131704",
-				    "pref_name": "東京都",
-				    "shared_name": "1131704",
-				    "lat": 35.721278000000005,
-				    "y": -357212.78,
-				    "x": 1393434.68
+				    "station_name": "拝島"
 			    },
 			    "position": {
 				    "x": 1393434.68,
@@ -22133,22 +8303,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2987",
-				    "station_name": "立川",
-				    "close_ymd": "",
-				    "lon": 139.413704,
-				    "post": "190-0012",
-				    "e_status": 0,
-				    "SUID": 2987,
-				    "station_g_cd": 1130325,
-				    "add": "東京都立川市曙町二丁目1-1",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131501",
-				    "pref_name": "東京都",
-				    "shared_name": "1131501",
-				    "lat": 35.698202,
-				    "y": -356982.02,
-				    "x": 1394137.04
+				    "station_name": "立川"
 			    },
 			    "position": {
 				    "x": 1394137.04,
@@ -22157,22 +8312,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2988",
-				    "station_name": "西立川",
-				    "close_ymd": "",
-				    "lon": 139.39355600000002,
-				    "post": "190-0013",
-				    "e_status": 0,
-				    "SUID": 2988,
-				    "station_g_cd": 1131502,
-				    "add": "立川市富士見町１丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131502",
-				    "pref_name": "東京都",
-				    "shared_name": "1131502",
-				    "lat": 35.703526000000004,
-				    "y": -357035.26,
-				    "x": 1393935.5600000003
+				    "station_name": "西立川"
 			    },
 			    "position": {
 				    "x": 1393935.5600000003,
@@ -22181,22 +8321,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2993",
-				    "station_name": "牛浜",
-				    "close_ymd": "",
-				    "lon": 139.333677,
-				    "post": "197-0024",
-				    "e_status": 0,
-				    "SUID": 2993,
-				    "station_g_cd": 1131507,
-				    "add": "福生市牛浜",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131507",
-				    "pref_name": "東京都",
-				    "shared_name": "1131507",
-				    "lat": 35.734547,
-				    "y": -357345.47,
-				    "x": 1393336.77
+				    "station_name": "牛浜"
 			    },
 			    "position": {
 				    "x": 1393336.77,
@@ -22205,22 +8330,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2994",
-				    "station_name": "福生",
-				    "close_ymd": "",
-				    "lon": 139.32776299999998,
-				    "post": "197-0022",
-				    "e_status": 0,
-				    "SUID": 2994,
-				    "station_g_cd": 1131508,
-				    "add": "福生市本町",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131508",
-				    "pref_name": "東京都",
-				    "shared_name": "1131508",
-				    "lat": 35.742456,
-				    "y": -357424.56,
-				    "x": 1393277.6299999997
+				    "station_name": "福生"
 			    },
 			    "position": {
 				    "x": 1393277.6299999997,
@@ -22229,22 +8339,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2995",
-				    "station_name": "羽村",
-				    "close_ymd": "",
-				    "lon": 139.31618799999998,
-				    "post": "205-0014",
-				    "e_status": 0,
-				    "SUID": 2995,
-				    "station_g_cd": 1131509,
-				    "add": "羽村市羽東１丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131509",
-				    "pref_name": "東京都",
-				    "shared_name": "1131509",
-				    "lat": 35.758072999999996,
-				    "y": -357580.73,
-				    "x": 1393161.88
+				    "station_name": "羽村"
 			    },
 			    "position": {
 				    "x": 1393161.88,
@@ -22253,22 +8348,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2996",
-				    "station_name": "小作",
-				    "close_ymd": "",
-				    "lon": 139.302233,
-				    "post": "205-0001",
-				    "e_status": 0,
-				    "SUID": 2996,
-				    "station_g_cd": 1131510,
-				    "add": "羽村市小作台",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131510",
-				    "pref_name": "東京都",
-				    "shared_name": "1131510",
-				    "lat": 35.776047999999996,
-				    "y": -357760.48,
-				    "x": 1393022.33
+				    "station_name": "小作"
 			    },
 			    "position": {
 				    "x": 1393022.33,
@@ -22277,22 +8357,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2989",
-				    "station_name": "東中神",
-				    "close_ymd": "",
-				    "lon": 139.38452900000001,
-				    "post": "196-0034",
-				    "e_status": 0,
-				    "SUID": 2989,
-				    "station_g_cd": 1131503,
-				    "add": "昭島市玉川町１丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131503",
-				    "pref_name": "東京都",
-				    "shared_name": "1131503",
-				    "lat": 35.706337,
-				    "y": -357063.37,
-				    "x": 1393845.29
+				    "station_name": "東中神"
 			    },
 			    "position": {
 				    "x": 1393845.29,
@@ -22301,22 +8366,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2990",
-				    "station_name": "中神",
-				    "close_ymd": "",
-				    "lon": 139.375816,
-				    "post": "196-0025",
-				    "e_status": 0,
-				    "SUID": 2990,
-				    "station_g_cd": 1131504,
-				    "add": "昭島市朝日町１丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131504",
-				    "pref_name": "東京都",
-				    "shared_name": "1131504",
-				    "lat": 35.709058,
-				    "y": -357090.58,
-				    "x": 1393758.16
+				    "station_name": "中神"
 			    },
 			    "position": {
 				    "x": 1393758.16,
@@ -22325,22 +8375,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2991",
-				    "station_name": "昭島",
-				    "close_ymd": "",
-				    "lon": 139.361564,
-				    "post": "196-0015",
-				    "e_status": 0,
-				    "SUID": 2991,
-				    "station_g_cd": 1131505,
-				    "add": "昭島市昭和町２丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131505",
-				    "pref_name": "東京都",
-				    "shared_name": "1131505",
-				    "lat": 35.713305,
-				    "y": -357133.05,
-				    "x": 1393615.64
+				    "station_name": "昭島"
 			    },
 			    "position": {
 				    "x": 1393615.64,
@@ -22349,22 +8384,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "2992",
-				    "station_name": "拝島",
-				    "close_ymd": "",
-				    "lon": 139.343468,
-				    "post": "196-0003",
-				    "e_status": 0,
-				    "SUID": 2992,
-				    "station_g_cd": 1131506,
-				    "add": "昭島市松原町４丁目",
-				    "line_cd": 11315,
-				    "open_ymd": "",
-				    "name": "1131506",
-				    "pref_name": "東京都",
-				    "shared_name": "1131506",
-				    "lat": 35.721278000000005,
-				    "y": -357212.78,
-				    "x": 1393434.68
+				    "station_name": "拝島"
 			    },
 			    "position": {
 				    "x": 1393434.68,
@@ -22373,22 +8393,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3079",
-				    "station_name": "三河島",
-				    "close_ymd": "",
-				    "lon": 139.777131,
-				    "post": "116-0013",
-				    "e_status": 0,
-				    "SUID": 3079,
-				    "station_g_cd": 1132003,
-				    "add": "荒川区西日暮里１丁目",
-				    "line_cd": 11320,
-				    "open_ymd": "",
-				    "name": "1132003",
-				    "pref_name": "東京都",
-				    "shared_name": "1132003",
-				    "lat": 35.733383,
-				    "y": -357333.83,
-				    "x": 1397771.31
+				    "station_name": "三河島"
 			    },
 			    "position": {
 				    "x": 1397771.31,
@@ -22397,22 +8402,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3080",
-				    "station_name": "南千住",
-				    "close_ymd": "",
-				    "lon": 139.7994,
-				    "post": "116-0003",
-				    "e_status": 0,
-				    "SUID": 3080,
-				    "station_g_cd": 1132004,
-				    "add": "荒川区南千住４丁目",
-				    "line_cd": 11320,
-				    "open_ymd": "",
-				    "name": "1132004",
-				    "pref_name": "東京都",
-				    "shared_name": "1132004",
-				    "lat": 35.734033000000004,
-				    "y": -357340.33,
-				    "x": 1397994.0
+				    "station_name": "南千住"
 			    },
 			    "position": {
 				    "x": 1397994.0,
@@ -22421,22 +8411,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3077",
-				    "station_name": "上野",
-				    "close_ymd": "",
-				    "lon": 139.777043,
-				    "post": "110-0005",
-				    "e_status": 0,
-				    "SUID": 3077,
-				    "station_g_cd": 1130220,
-				    "add": "東京都台東区上野七丁目1-1",
-				    "line_cd": 11320,
-				    "open_ymd": "",
-				    "name": "1132001",
-				    "pref_name": "東京都",
-				    "shared_name": "1132001",
-				    "lat": 35.71379,
-				    "y": -357137.9,
-				    "x": 1397770.43
+				    "station_name": "上野"
 			    },
 			    "position": {
 				    "x": 1397770.43,
@@ -22445,22 +8420,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3078",
-				    "station_name": "日暮里",
-				    "close_ymd": "",
-				    "lon": 139.771287,
-				    "post": "116-0013",
-				    "e_status": 0,
-				    "SUID": 3078,
-				    "station_g_cd": 1130218,
-				    "add": "東京都荒川区西日暮里二丁目",
-				    "line_cd": 11320,
-				    "open_ymd": "",
-				    "name": "1132002",
-				    "pref_name": "東京都",
-				    "shared_name": "1132002",
-				    "lat": 35.727908,
-				    "y": -357279.08,
-				    "x": 1397712.87
+				    "station_name": "日暮里"
 			    },
 			    "position": {
 				    "x": 1397712.87,
@@ -22469,22 +8429,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3083",
-				    "station_name": "亀有",
-				    "close_ymd": "",
-				    "lon": 139.847573,
-				    "post": "125-0061",
-				    "e_status": 0,
-				    "SUID": 3083,
-				    "station_g_cd": 1132007,
-				    "add": "葛飾区亀有３",
-				    "line_cd": 11320,
-				    "open_ymd": "",
-				    "name": "1132007",
-				    "pref_name": "東京都",
-				    "shared_name": "1132007",
-				    "lat": 35.766527,
-				    "y": -357665.27,
-				    "x": 1398475.7300000002
+				    "station_name": "亀有"
 			    },
 			    "position": {
 				    "x": 1398475.7300000002,
@@ -22493,22 +8438,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3084",
-				    "station_name": "金町",
-				    "close_ymd": "",
-				    "lon": 139.870482,
-				    "post": "125-0042",
-				    "e_status": 0,
-				    "SUID": 3084,
-				    "station_g_cd": 1132008,
-				    "add": "葛飾区金町６丁目",
-				    "line_cd": 11320,
-				    "open_ymd": "",
-				    "name": "1132008",
-				    "pref_name": "東京都",
-				    "shared_name": "1132008",
-				    "lat": 35.769582,
-				    "y": -357695.82,
-				    "x": 1398704.82
+				    "station_name": "金町"
 			    },
 			    "position": {
 				    "x": 1398704.82,
@@ -22517,22 +8447,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3081",
-				    "station_name": "北千住",
-				    "close_ymd": "",
-				    "lon": 139.804872,
-				    "post": "120-0026",
-				    "e_status": 0,
-				    "SUID": 3081,
-				    "station_g_cd": 1132005,
-				    "add": "足立区千住旭町",
-				    "line_cd": 11320,
-				    "open_ymd": "",
-				    "name": "1132005",
-				    "pref_name": "東京都",
-				    "shared_name": "1132005",
-				    "lat": 35.749677,
-				    "y": -357496.76999999996,
-				    "x": 1398048.72
+				    "station_name": "北千住"
 			    },
 			    "position": {
 				    "x": 1398048.72,
@@ -22541,22 +8456,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3082",
-				    "station_name": "綾瀬",
-				    "close_ymd": "",
-				    "lon": 139.825019,
-				    "post": "120-0005",
-				    "e_status": 0,
-				    "SUID": 3082,
-				    "station_g_cd": 1132006,
-				    "add": "足立区綾瀬３丁目",
-				    "line_cd": 11320,
-				    "open_ymd": "",
-				    "name": "1132006",
-				    "pref_name": "東京都",
-				    "shared_name": "1132006",
-				    "lat": 35.762221999999994,
-				    "y": -357622.2199999999,
-				    "x": 1398250.19
+				    "station_name": "綾瀬"
 			    },
 			    "position": {
 				    "x": 1398250.19,
@@ -22565,22 +8465,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3044",
-				    "station_name": "上野",
-				    "close_ymd": "",
-				    "lon": 139.777043,
-				    "post": "110-0005",
-				    "e_status": 0,
-				    "SUID": 3044,
-				    "station_g_cd": 1130220,
-				    "add": "東京都台東区上野七丁目1-1",
-				    "line_cd": 11319,
-				    "open_ymd": "",
-				    "name": "1131901",
-				    "pref_name": "東京都",
-				    "shared_name": "1131901",
-				    "lat": 35.71379,
-				    "y": -357137.9,
-				    "x": 1397770.43
+				    "station_name": "上野"
 			    },
 			    "position": {
 				    "x": 1397770.43,
@@ -22589,22 +8474,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3045",
-				    "station_name": "尾久",
-				    "close_ymd": "",
-				    "lon": 139.753846,
-				    "post": "114-0011",
-				    "e_status": 0,
-				    "SUID": 3045,
-				    "station_g_cd": 1131902,
-				    "add": "北区昭和町１丁目",
-				    "line_cd": 11319,
-				    "open_ymd": "",
-				    "name": "1131902",
-				    "pref_name": "東京都",
-				    "shared_name": "1131902",
-				    "lat": 35.746829999999996,
-				    "y": -357468.29999999993,
-				    "x": 1397538.4600000002
+				    "station_name": "尾久"
 			    },
 			    "position": {
 				    "x": 1397538.4600000002,
@@ -22613,22 +8483,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "3046",
-				    "station_name": "赤羽",
-				    "close_ymd": "",
-				    "lon": 139.72092800000001,
-				    "post": "115-0045",
-				    "e_status": 0,
-				    "SUID": 3046,
-				    "station_g_cd": 1131903,
-				    "add": "北区赤羽１丁目",
-				    "line_cd": 11319,
-				    "open_ymd": "",
-				    "name": "1131903",
-				    "pref_name": "東京都",
-				    "shared_name": "1131903",
-				    "lat": 35.778026000000004,
-				    "y": -357780.26000000007,
-				    "x": 1397209.2800000003
+				    "station_name": "赤羽"
 			    },
 			    "position": {
 				    "x": 1397209.2800000003,
