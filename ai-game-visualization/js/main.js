@@ -2,10 +2,9 @@
 require(["./requirejs/config"], function() {
     //  App entry point
     require([
-        'jquery',
         './controllers/mainController'
 
-    ], function($, mainController) {
+    ], function(mainController) {
         mainController.render();
     });
 });

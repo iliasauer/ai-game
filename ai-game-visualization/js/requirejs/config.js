@@ -1,15 +1,15 @@
 requirejs.config({
     paths: {
-        'bootstrap': 'libs/bootstrap',
+        'cytoscape': 'libs/cytoscape',
+        'cytoscapeQtip': 'libs/cytoscape-qtip',
+        'handlebars': 'libs/handlebars',
         'jquery': 'libs/jquery',
         'jqueryQtip': 'libs/jquery-qtip',
-        'handlebars': 'libs/handlebars',
-        'text': 'libs/text',
-        'cytoscape': 'libs/cytoscape'
+        'text': 'libs/text'
     },
     map: {
-        'ChartScatter': {
-            'Chart': 'ChartCore'
-        }
+        // 'ChartScatter': {
+        //     'Chart': 'ChartCore'
+        // }
     }
 });
