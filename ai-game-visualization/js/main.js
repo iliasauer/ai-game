@@ -4,7 +4,7 @@ require(["./requirejs/config"], function() {
     require([
         'jquery',
         './controllers/mainController'
-        
+
     ], function($, mainController) {
         mainController.render();
     });

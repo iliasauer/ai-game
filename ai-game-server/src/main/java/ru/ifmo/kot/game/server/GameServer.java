@@ -216,19 +216,19 @@ public class GameServer {
         }
     }
 
+
     private static void sendMessage(final Session session, final Messenger.Message message) {
         if (session.isOpen()) {
             try {
                 session.getBasicRemote().sendObject(message);
             } catch (final IOException | EncodeException e) {
                 LOGGER.error("Failed to send the message to the client");
-
             }
         }
     }
 
     private void sendMessage(final Messenger.Message message) {
-        if (localClient.isOpen()) { // todo check the need
+        if (localClient.isOpen()) {
             try {
                 localClient.getBasicRemote().sendObject(message);
             } catch (final IOException | EncodeException e) {
