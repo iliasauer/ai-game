@@ -44,14 +44,12 @@ define([
 
         function renderField() {
 
-            // get exported json from cytoscape desktop via ajax
+            // get exported json from cytoscape desktop
             var graphP = content.FIELD_CONTENT;
 
-            // also get style via ajax
+            // also get style
             var styleP = content.FIELD_STYLE;
 
-            // when both graph export json and style loaded, init cy
-            // Promise.all([graphP, styleP]).then(initCy);
             initCy(graphP, styleP);
 
             function initCy(expJson, styleArr) {
@@ -63,13 +61,16 @@ define([
                 loading.classList.add('loaded');
 
                 var cy = window.cy = cytoscape({
+                    // common
                     container: document.getElementById('cy'),
-                    layout: {name: 'preset'},
-                    style: styleArr,
                     elements: elements,
-                    motionBlur: true,
-                    selectionType: 'single',
-                    boxSelectionEnabled: false
+                    style: styleArr,
+                    layout: {name: 'preset'}, // preset because node positions are already specified in elements JSON
+                    // viewport
+                    boxSelectionEnabled: false,
+                    selectionType: 'single', // for 'single' a previously selected element becomes unselected otherwise - 'additive'
+                    // render
+                    motionBlur: true // this is beautiful but can decrease the performance
                 });
 
                 mendData();
