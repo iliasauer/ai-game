@@ -90,7 +90,7 @@ define([
                 var metanames = []; // names that are repeated
                 for (i = 0; i < nodes.length; i++) {
                     var node = nodes[i];
-                    name = node.data('station_name');
+                    name = node.data('name');
                     nbin = bin[name] = bin[name] || []; // reference to List of nodes
 
                     nbin.push(node); // several nodes with the same name ??? yes
@@ -100,7 +100,7 @@ define([
                     }
                 }
 
-                // connect all nodes together with walking edges
+                // connect nodes with cross transitions
                 for (i = 0; i < metanames.length; i++) {
                     name = metanames[i];
                     nbin = bin[name]; // list of nodes with the same name
@@ -114,14 +114,9 @@ define([
                                 group: 'edges',
                                 data: {
                                     source: nj.id(),
-                                    target: nk.id(),
-                                    is_walking: true // you can walk from the station (node) to the next station (node)
+                                    target: nk.id()
                                 }
                             });
-
-                            //.css({
-                            //    'line-color': 'yellow'
-                            // });
                         }
                     }
 
