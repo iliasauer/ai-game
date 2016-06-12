@@ -8497,7 +8497,7 @@ define([], function () {
 				    "target": "8221",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "北総鉄道北総線"
+				    "line_name": "line_1"
 			    }
 		    }, {
 			    "data": {
@@ -8506,7 +8506,7 @@ define([], function () {
 				    "target": "5902",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8515,7 +8515,7 @@ define([], function () {
 				    "target": "5903",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8524,7 +8524,7 @@ define([], function () {
 				    "target": "5904",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8533,7 +8533,7 @@ define([], function () {
 				    "target": "5905",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8542,7 +8542,7 @@ define([], function () {
 				    "target": "5906",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8551,7 +8551,7 @@ define([], function () {
 				    "target": "5907",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8560,7 +8560,7 @@ define([], function () {
 				    "target": "5908",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8569,7 +8569,7 @@ define([], function () {
 				    "target": "5909",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8578,7 +8578,7 @@ define([], function () {
 				    "target": "5894",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8587,7 +8587,7 @@ define([], function () {
 				    "target": "5895",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8596,7 +8596,7 @@ define([], function () {
 				    "target": "5896",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8605,7 +8605,7 @@ define([], function () {
 				    "target": "5897",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8614,7 +8614,7 @@ define([], function () {
 				    "target": "5898",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8623,7 +8623,7 @@ define([], function () {
 				    "target": "5899",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8632,7 +8632,7 @@ define([], function () {
 				    "target": "5900",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8641,7 +8641,7 @@ define([], function () {
 				    "target": "5901",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -8650,7 +8650,7 @@ define([], function () {
 				    "target": "5872",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急空港線"
+				    "line_name": "line_3"
 			    }
 		    }, {
 			    "data": {
@@ -8659,7 +8659,7 @@ define([], function () {
 				    "target": "5870",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急空港線"
+				    "line_name": "line_3"
 			    }
 		    }, {
 			    "data": {
@@ -8668,7 +8668,7 @@ define([], function () {
 				    "target": "5871",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急空港線"
+				    "line_name": "line_3"
 			    }
 		    }, {
 			    "data": {
@@ -8677,7 +8677,7 @@ define([], function () {
 				    "target": "5868",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急空港線"
+				    "line_name": "line_3"
 			    }
 		    }, {
 			    "data": {
@@ -8686,7 +8686,7 @@ define([], function () {
 				    "target": "5869",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急空港線"
+				    "line_name": "line_3"
 			    }
 		    }, {
 			    "data": {
@@ -8695,7 +8695,7 @@ define([], function () {
 				    "target": "5867",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急空港線"
+				    "line_name": "line_3"
 			    }
 		    }, {
 			    "data": {
@@ -8704,7 +8704,7 @@ define([], function () {
 				    "target": "5827",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8713,7 +8713,7 @@ define([], function () {
 				    "target": "5826",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8722,7 +8722,7 @@ define([], function () {
 				    "target": "5829",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8731,7 +8731,7 @@ define([], function () {
 				    "target": "5828",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8740,7 +8740,7 @@ define([], function () {
 				    "target": "5823",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8749,7 +8749,7 @@ define([], function () {
 				    "target": "5822",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8758,7 +8758,7 @@ define([], function () {
 				    "target": "5825",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8767,7 +8767,7 @@ define([], function () {
 				    "target": "5824",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8776,7 +8776,7 @@ define([], function () {
 				    "target": "5819",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8785,7 +8785,7 @@ define([], function () {
 				    "target": "5818",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8794,7 +8794,7 @@ define([], function () {
 				    "target": "5821",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8803,7 +8803,7 @@ define([], function () {
 				    "target": "5820",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8812,7 +8812,7 @@ define([], function () {
 				    "target": "5817",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京急本線"
+				    "line_name": "line_4"
 			    }
 		    }, {
 			    "data": {
@@ -8821,7 +8821,7 @@ define([], function () {
 				    "target": "5797",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急多摩川線"
+				    "line_name": "line_5"
 			    }
 		    }, {
 			    "data": {
@@ -8830,7 +8830,7 @@ define([], function () {
 				    "target": "5795",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8839,7 +8839,7 @@ define([], function () {
 				    "target": "5794",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8848,7 +8848,7 @@ define([], function () {
 				    "target": "5793",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8857,7 +8857,7 @@ define([], function () {
 				    "target": "5792",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8866,7 +8866,7 @@ define([], function () {
 				    "target": "5791",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8875,7 +8875,7 @@ define([], function () {
 				    "target": "5790",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8884,7 +8884,7 @@ define([], function () {
 				    "target": "5789",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8893,7 +8893,7 @@ define([], function () {
 				    "target": "5788",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8902,7 +8902,7 @@ define([], function () {
 				    "target": "5787",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8911,7 +8911,7 @@ define([], function () {
 				    "target": "5786",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8920,7 +8920,7 @@ define([], function () {
 				    "target": "5785",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8929,7 +8929,7 @@ define([], function () {
 				    "target": "5784",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8938,7 +8938,7 @@ define([], function () {
 				    "target": "5783",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8947,7 +8947,7 @@ define([], function () {
 				    "target": "5782",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急池上線"
+				    "line_name": "line_6"
 			    }
 		    }, {
 			    "data": {
@@ -8956,7 +8956,7 @@ define([], function () {
 				    "target": "5812",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急世田谷線"
+				    "line_name": "line_7"
 			    }
 		    }, {
 			    "data": {
@@ -8965,7 +8965,7 @@ define([], function () {
 				    "target": "5810",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急世田谷線"
+				    "line_name": "line_7"
 			    }
 		    }, {
 			    "data": {
@@ -8974,7 +8974,7 @@ define([], function () {
 				    "target": "5811",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急世田谷線"
+				    "line_name": "line_7"
 			    }
 		    }, {
 			    "data": {
@@ -8983,7 +8983,7 @@ define([], function () {
 				    "target": "5808",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急世田谷線"
+				    "line_name": "line_7"
 			    }
 		    }, {
 			    "data": {
@@ -8992,7 +8992,7 @@ define([], function () {
 				    "target": "5809",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急世田谷線"
+				    "line_name": "line_7"
 			    }
 		    }, {
 			    "data": {
@@ -9001,7 +9001,7 @@ define([], function () {
 				    "target": "5806",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急世田谷線"
+				    "line_name": "line_7"
 			    }
 		    }, {
 			    "data": {
@@ -9010,7 +9010,7 @@ define([], function () {
 				    "target": "5807",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急世田谷線"
+				    "line_name": "line_7"
 			    }
 		    }, {
 			    "data": {
@@ -9019,7 +9019,7 @@ define([], function () {
 				    "target": "5804",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急世田谷線"
+				    "line_name": "line_7"
 			    }
 		    }, {
 			    "data": {
@@ -9028,7 +9028,7 @@ define([], function () {
 				    "target": "5805",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急世田谷線"
+				    "line_name": "line_7"
 			    }
 		    }, {
 			    "data": {
@@ -9037,7 +9037,7 @@ define([], function () {
 				    "target": "5802",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急多摩川線"
+				    "line_name": "line_5"
 			    }
 		    }, {
 			    "data": {
@@ -9046,7 +9046,7 @@ define([], function () {
 				    "target": "5800",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急多摩川線"
+				    "line_name": "line_5"
 			    }
 		    }, {
 			    "data": {
@@ -9055,7 +9055,7 @@ define([], function () {
 				    "target": "5801",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急多摩川線"
+				    "line_name": "line_5"
 			    }
 		    }, {
 			    "data": {
@@ -9064,7 +9064,7 @@ define([], function () {
 				    "target": "5798",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急多摩川線"
+				    "line_name": "line_5"
 			    }
 		    }, {
 			    "data": {
@@ -9073,7 +9073,7 @@ define([], function () {
 				    "target": "5799",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急多摩川線"
+				    "line_name": "line_5"
 			    }
 		    }, {
 			    "data": {
@@ -9082,7 +9082,7 @@ define([], function () {
 				    "target": "8158",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9091,7 +9091,7 @@ define([], function () {
 				    "target": "8159",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9100,7 +9100,7 @@ define([], function () {
 				    "target": "8160",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9109,7 +9109,7 @@ define([], function () {
 				    "target": "8161",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9118,7 +9118,7 @@ define([], function () {
 				    "target": "8162",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9127,7 +9127,7 @@ define([], function () {
 				    "target": "8163",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9136,7 +9136,7 @@ define([], function () {
 				    "target": "8164",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9145,7 +9145,7 @@ define([], function () {
 				    "target": "8150",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9154,7 +9154,7 @@ define([], function () {
 				    "target": "5759",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急田園都市線"
+				    "line_name": "line_9"
 			    }
 		    }, {
 			    "data": {
@@ -9163,7 +9163,7 @@ define([], function () {
 				    "target": "8151",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9172,7 +9172,7 @@ define([], function () {
 				    "target": "5760",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急田園都市線"
+				    "line_name": "line_9"
 			    }
 		    }, {
 			    "data": {
@@ -9181,7 +9181,7 @@ define([], function () {
 				    "target": "8152",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9190,7 +9190,7 @@ define([], function () {
 				    "target": "8153",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9199,7 +9199,7 @@ define([], function () {
 				    "target": "8154",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9208,7 +9208,7 @@ define([], function () {
 				    "target": "8155",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9217,7 +9217,7 @@ define([], function () {
 				    "target": "5764",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9226,7 +9226,7 @@ define([], function () {
 				    "target": "8156",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9235,7 +9235,7 @@ define([], function () {
 				    "target": "8157",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9244,7 +9244,7 @@ define([], function () {
 				    "target": "5765",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9253,7 +9253,7 @@ define([], function () {
 				    "target": "5767",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9262,7 +9262,7 @@ define([], function () {
 				    "target": "5766",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9271,7 +9271,7 @@ define([], function () {
 				    "target": "8177",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "東京モノレール"
+				    "line_name": "line_11"
 			    }
 		    }, {
 			    "data": {
@@ -9280,7 +9280,7 @@ define([], function () {
 				    "target": "5769",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9289,7 +9289,7 @@ define([], function () {
 				    "target": "8176",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "東京モノレール"
+				    "line_name": "line_11"
 			    }
 		    }, {
 			    "data": {
@@ -9298,7 +9298,7 @@ define([], function () {
 				    "target": "5768",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9307,7 +9307,7 @@ define([], function () {
 				    "target": "8179",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "東京モノレール"
+				    "line_name": "line_11"
 			    }
 		    }, {
 			    "data": {
@@ -9316,7 +9316,7 @@ define([], function () {
 				    "target": "5771",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9325,7 +9325,7 @@ define([], function () {
 				    "target": "8178",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "東京モノレール"
+				    "line_name": "line_11"
 			    }
 		    }, {
 			    "data": {
@@ -9334,7 +9334,7 @@ define([], function () {
 				    "target": "5770",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9343,7 +9343,7 @@ define([], function () {
 				    "target": "8181",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "東京モノレール"
+				    "line_name": "line_11"
 			    }
 		    }, {
 			    "data": {
@@ -9352,7 +9352,7 @@ define([], function () {
 				    "target": "5773",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9361,7 +9361,7 @@ define([], function () {
 				    "target": "8180",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "東京モノレール"
+				    "line_name": "line_11"
 			    }
 		    }, {
 			    "data": {
@@ -9370,7 +9370,7 @@ define([], function () {
 				    "target": "5772",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9379,7 +9379,7 @@ define([], function () {
 				    "target": "5775",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9388,7 +9388,7 @@ define([], function () {
 				    "target": "5774",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9397,7 +9397,7 @@ define([], function () {
 				    "target": "5777",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9406,7 +9406,7 @@ define([], function () {
 				    "target": "5776",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急大井町線"
+				    "line_name": "line_10"
 			    }
 		    }, {
 			    "data": {
@@ -9415,7 +9415,7 @@ define([], function () {
 				    "target": "8192",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "りんかい線"
+				    "line_name": "line_12"
 			    }
 		    }, {
 			    "data": {
@@ -9424,7 +9424,7 @@ define([], function () {
 				    "target": "8193",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "りんかい線"
+				    "line_name": "line_12"
 			    }
 		    }, {
 			    "data": {
@@ -9433,7 +9433,7 @@ define([], function () {
 				    "target": "8190",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "りんかい線"
+				    "line_name": "line_12"
 			    }
 		    }, {
 			    "data": {
@@ -9442,7 +9442,7 @@ define([], function () {
 				    "target": "8191",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "りんかい線"
+				    "line_name": "line_12"
 			    }
 		    }, {
 			    "data": {
@@ -9451,7 +9451,7 @@ define([], function () {
 				    "target": "5724",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急目黒線"
+				    "line_name": "line_13"
 			    }
 		    }, {
 			    "data": {
@@ -9460,7 +9460,7 @@ define([], function () {
 				    "target": "5725",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急目黒線"
+				    "line_name": "line_13"
 			    }
 		    }, {
 			    "data": {
@@ -9469,7 +9469,7 @@ define([], function () {
 				    "target": "5728",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急目黒線"
+				    "line_name": "line_13"
 			    }
 		    }, {
 			    "data": {
@@ -9478,7 +9478,7 @@ define([], function () {
 				    "target": "8184",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "東京モノレール"
+				    "line_name": "line_11"
 			    }
 		    }, {
 			    "data": {
@@ -9487,7 +9487,7 @@ define([], function () {
 				    "target": "5729",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急目黒線"
+				    "line_name": "line_13"
 			    }
 		    }, {
 			    "data": {
@@ -9496,7 +9496,7 @@ define([], function () {
 				    "target": "8185",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "東京モノレール"
+				    "line_name": "line_11"
 			    }
 		    }, {
 			    "data": {
@@ -9505,7 +9505,7 @@ define([], function () {
 				    "target": "5726",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急目黒線"
+				    "line_name": "line_13"
 			    }
 		    }, {
 			    "data": {
@@ -9514,7 +9514,7 @@ define([], function () {
 				    "target": "8182",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "東京モノレール"
+				    "line_name": "line_11"
 			    }
 		    }, {
 			    "data": {
@@ -9523,7 +9523,7 @@ define([], function () {
 				    "target": "5727",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急目黒線"
+				    "line_name": "line_13"
 			    }
 		    }, {
 			    "data": {
@@ -9532,7 +9532,7 @@ define([], function () {
 				    "target": "8183",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "東京モノレール"
+				    "line_name": "line_11"
 			    }
 		    }, {
 			    "data": {
@@ -9541,7 +9541,7 @@ define([], function () {
 				    "target": "8188",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "りんかい線"
+				    "line_name": "line_12"
 			    }
 		    }, {
 			    "data": {
@@ -9550,7 +9550,7 @@ define([], function () {
 				    "target": "8189",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "りんかい線"
+				    "line_name": "line_12"
 			    }
 		    }, {
 			    "data": {
@@ -9559,7 +9559,7 @@ define([], function () {
 				    "target": "5730",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急目黒線"
+				    "line_name": "line_13"
 			    }
 		    }, {
 			    "data": {
@@ -9568,7 +9568,7 @@ define([], function () {
 				    "target": "5731",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急目黒線"
+				    "line_name": "line_13"
 			    }
 		    }, {
 			    "data": {
@@ -9577,7 +9577,7 @@ define([], function () {
 				    "target": "8187",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "りんかい線"
+				    "line_name": "line_12"
 			    }
 		    }, {
 			    "data": {
@@ -9586,7 +9586,7 @@ define([], function () {
 				    "target": "5737",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急田園都市線"
+				    "line_name": "line_9"
 			    }
 		    }, {
 			    "data": {
@@ -9595,7 +9595,7 @@ define([], function () {
 				    "target": "5741",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急田園都市線"
+				    "line_name": "line_9"
 			    }
 		    }, {
 			    "data": {
@@ -9604,7 +9604,7 @@ define([], function () {
 				    "target": "5740",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急田園都市線"
+				    "line_name": "line_9"
 			    }
 		    }, {
 			    "data": {
@@ -9613,7 +9613,7 @@ define([], function () {
 				    "target": "5739",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急田園都市線"
+				    "line_name": "line_9"
 			    }
 		    }, {
 			    "data": {
@@ -9622,7 +9622,7 @@ define([], function () {
 				    "target": "5738",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急田園都市線"
+				    "line_name": "line_9"
 			    }
 		    }, {
 			    "data": {
@@ -9631,7 +9631,7 @@ define([], function () {
 				    "target": "5742",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急田園都市線"
+				    "line_name": "line_9"
 			    }
 		    }, {
 			    "data": {
@@ -9640,7 +9640,7 @@ define([], function () {
 				    "target": "5700",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急多摩線"
+				    "line_name": "line_14"
 			    }
 		    }, {
 			    "data": {
@@ -9649,7 +9649,7 @@ define([], function () {
 				    "target": "5701",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急多摩線"
+				    "line_name": "line_14"
 			    }
 		    }, {
 			    "data": {
@@ -9658,7 +9658,7 @@ define([], function () {
 				    "target": "5707",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急東横線"
+				    "line_name": "line_15"
 			    }
 		    }, {
 			    "data": {
@@ -9667,7 +9667,7 @@ define([], function () {
 				    "target": "5706",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急東横線"
+				    "line_name": "line_15"
 			    }
 		    }, {
 			    "data": {
@@ -9676,7 +9676,7 @@ define([], function () {
 				    "target": "5709",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急東横線"
+				    "line_name": "line_15"
 			    }
 		    }, {
 			    "data": {
@@ -9685,7 +9685,7 @@ define([], function () {
 				    "target": "5708",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急東横線"
+				    "line_name": "line_15"
 			    }
 		    }, {
 			    "data": {
@@ -9694,7 +9694,7 @@ define([], function () {
 				    "target": "5703",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急東横線"
+				    "line_name": "line_15"
 			    }
 		    }, {
 			    "data": {
@@ -9703,7 +9703,7 @@ define([], function () {
 				    "target": "5705",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急東横線"
+				    "line_name": "line_15"
 			    }
 		    }, {
 			    "data": {
@@ -9712,7 +9712,7 @@ define([], function () {
 				    "target": "5704",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急東横線"
+				    "line_name": "line_15"
 			    }
 		    }, {
 			    "data": {
@@ -9721,7 +9721,7 @@ define([], function () {
 				    "target": "5710",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東急東横線"
+				    "line_name": "line_15"
 			    }
 		    }, {
 			    "data": {
@@ -9730,7 +9730,7 @@ define([], function () {
 				    "target": "5656",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -9739,7 +9739,7 @@ define([], function () {
 				    "target": "5655",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -9748,7 +9748,7 @@ define([], function () {
 				    "target": "8149",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9757,7 +9757,7 @@ define([], function () {
 				    "target": "8148",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9766,7 +9766,7 @@ define([], function () {
 				    "target": "8147",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "多摩モノレール"
+				    "line_name": "line_8"
 			    }
 		    }, {
 			    "data": {
@@ -9775,7 +9775,7 @@ define([], function () {
 				    "target": "7784",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "つくばエクスプレス"
+				    "line_name": "line_17"
 			    }
 		    }, {
 			    "data": {
@@ -9784,7 +9784,7 @@ define([], function () {
 				    "target": "7785",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "つくばエクスプレス"
+				    "line_name": "line_17"
 			    }
 		    }, {
 			    "data": {
@@ -9793,7 +9793,7 @@ define([], function () {
 				    "target": "7783",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "つくばエクスプレス"
+				    "line_name": "line_17"
 			    }
 		    }, {
 			    "data": {
@@ -9802,7 +9802,7 @@ define([], function () {
 				    "target": "7788",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "つくばエクスプレス"
+				    "line_name": "line_17"
 			    }
 		    }, {
 			    "data": {
@@ -9811,7 +9811,7 @@ define([], function () {
 				    "target": "7786",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "つくばエクスプレス"
+				    "line_name": "line_17"
 			    }
 		    }, {
 			    "data": {
@@ -9820,7 +9820,7 @@ define([], function () {
 				    "target": "7787",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "つくばエクスプレス"
+				    "line_name": "line_17"
 			    }
 		    }, {
 			    "data": {
@@ -9829,7 +9829,7 @@ define([], function () {
 				    "target": "7814",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9838,7 +9838,7 @@ define([], function () {
 				    "target": "7815",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9847,7 +9847,7 @@ define([], function () {
 				    "target": "7816",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9856,7 +9856,7 @@ define([], function () {
 				    "target": "7817",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9865,7 +9865,7 @@ define([], function () {
 				    "target": "7818",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9874,7 +9874,7 @@ define([], function () {
 				    "target": "7819",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9883,7 +9883,7 @@ define([], function () {
 				    "target": "7820",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9892,7 +9892,7 @@ define([], function () {
 				    "target": "7821",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9901,7 +9901,7 @@ define([], function () {
 				    "target": "7822",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9910,7 +9910,7 @@ define([], function () {
 				    "target": "7823",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9919,7 +9919,7 @@ define([], function () {
 				    "target": "7809",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9928,7 +9928,7 @@ define([], function () {
 				    "target": "7811",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9937,7 +9937,7 @@ define([], function () {
 				    "target": "7810",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9946,7 +9946,7 @@ define([], function () {
 				    "target": "7813",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9955,7 +9955,7 @@ define([], function () {
 				    "target": "7812",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "ゆりかもめ"
+				    "line_name": "line_18"
 			    }
 		    }, {
 			    "data": {
@@ -9964,7 +9964,7 @@ define([], function () {
 				    "target": "7724",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -9973,7 +9973,7 @@ define([], function () {
 				    "target": "7722",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -9982,7 +9982,7 @@ define([], function () {
 				    "target": "7723",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -9991,7 +9991,7 @@ define([], function () {
 				    "target": "7720",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -10000,7 +10000,7 @@ define([], function () {
 				    "target": "7721",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -10009,7 +10009,7 @@ define([], function () {
 				    "target": "7718",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -10018,7 +10018,7 @@ define([], function () {
 				    "target": "7719",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -10027,7 +10027,7 @@ define([], function () {
 				    "target": "7709",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -10036,7 +10036,7 @@ define([], function () {
 				    "target": "7708",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -10045,7 +10045,7 @@ define([], function () {
 				    "target": "7707",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -10054,7 +10054,7 @@ define([], function () {
 				    "target": "7706",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -10063,7 +10063,7 @@ define([], function () {
 				    "target": "7705",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -10072,7 +10072,7 @@ define([], function () {
 				    "target": "7704",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -10081,7 +10081,7 @@ define([], function () {
 				    "target": "7703",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -10090,7 +10090,7 @@ define([], function () {
 				    "target": "6078",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10099,7 +10099,7 @@ define([], function () {
 				    "target": "7702",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -10108,7 +10108,7 @@ define([], function () {
 				    "target": "7717",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -10117,7 +10117,7 @@ define([], function () {
 				    "target": "6077",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10126,7 +10126,7 @@ define([], function () {
 				    "target": "6076",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10135,7 +10135,7 @@ define([], function () {
 				    "target": "7716",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -10144,7 +10144,7 @@ define([], function () {
 				    "target": "6075",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10153,7 +10153,7 @@ define([], function () {
 				    "target": "7715",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -10162,7 +10162,7 @@ define([], function () {
 				    "target": "6074",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10171,7 +10171,7 @@ define([], function () {
 				    "target": "7714",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -10180,7 +10180,7 @@ define([], function () {
 				    "target": "6073",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10189,7 +10189,7 @@ define([], function () {
 				    "target": "7713",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "日暮里・舎人ライナー"
+				    "line_name": "line_19"
 			    }
 		    }, {
 			    "data": {
@@ -10198,7 +10198,7 @@ define([], function () {
 				    "target": "6072",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10207,7 +10207,7 @@ define([], function () {
 				    "target": "6071",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10216,7 +10216,7 @@ define([], function () {
 				    "target": "7711",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -10225,7 +10225,7 @@ define([], function () {
 				    "target": "6070",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10234,7 +10234,7 @@ define([], function () {
 				    "target": "7710",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -10243,7 +10243,7 @@ define([], function () {
 				    "target": "6066",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10252,7 +10252,7 @@ define([], function () {
 				    "target": "6067",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10261,7 +10261,7 @@ define([], function () {
 				    "target": "6068",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10270,7 +10270,7 @@ define([], function () {
 				    "target": "6069",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10279,7 +10279,7 @@ define([], function () {
 				    "target": "6062",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10288,7 +10288,7 @@ define([], function () {
 				    "target": "6065",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ副都心線"
+				    "line_name": "line_21"
 			    }
 		    }, {
 			    "data": {
@@ -10297,7 +10297,7 @@ define([], function () {
 				    "target": "6058",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10306,7 +10306,7 @@ define([], function () {
 				    "target": "6059",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10315,7 +10315,7 @@ define([], function () {
 				    "target": "6060",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10324,7 +10324,7 @@ define([], function () {
 				    "target": "6061",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10333,7 +10333,7 @@ define([], function () {
 				    "target": "6054",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10342,7 +10342,7 @@ define([], function () {
 				    "target": "6055",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10351,7 +10351,7 @@ define([], function () {
 				    "target": "6056",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10360,7 +10360,7 @@ define([], function () {
 				    "target": "6057",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10369,7 +10369,7 @@ define([], function () {
 				    "target": "6051",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10378,7 +10378,7 @@ define([], function () {
 				    "target": "6050",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10387,7 +10387,7 @@ define([], function () {
 				    "target": "6053",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10396,7 +10396,7 @@ define([], function () {
 				    "target": "6052",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10405,7 +10405,7 @@ define([], function () {
 				    "target": "6047",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10414,7 +10414,7 @@ define([], function () {
 				    "target": "6046",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10423,7 +10423,7 @@ define([], function () {
 				    "target": "6049",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10432,7 +10432,7 @@ define([], function () {
 				    "target": "6048",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10441,7 +10441,7 @@ define([], function () {
 				    "target": "6043",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10450,7 +10450,7 @@ define([], function () {
 				    "target": "6042",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10459,7 +10459,7 @@ define([], function () {
 				    "target": "6045",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ南北線"
+				    "line_name": "line_22"
 			    }
 		    }, {
 			    "data": {
@@ -10468,7 +10468,7 @@ define([], function () {
 				    "target": "6039",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10477,7 +10477,7 @@ define([], function () {
 				    "target": "6038",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10486,7 +10486,7 @@ define([], function () {
 				    "target": "6041",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10495,7 +10495,7 @@ define([], function () {
 				    "target": "6040",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10504,7 +10504,7 @@ define([], function () {
 				    "target": "6025",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10513,7 +10513,7 @@ define([], function () {
 				    "target": "6024",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10522,7 +10522,7 @@ define([], function () {
 				    "target": "6023",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10531,7 +10531,7 @@ define([], function () {
 				    "target": "6022",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10540,7 +10540,7 @@ define([], function () {
 				    "target": "6029",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町新線"
+				    "line_name": "line_25"
 			    }
 		    }, {
 			    "data": {
@@ -10549,7 +10549,7 @@ define([], function () {
 				    "target": "6027",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10558,7 +10558,7 @@ define([], function () {
 				    "target": "6026",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10567,7 +10567,7 @@ define([], function () {
 				    "target": "6033",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10576,7 +10576,7 @@ define([], function () {
 				    "target": "6032",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10585,7 +10585,7 @@ define([], function () {
 				    "target": "6031",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10594,7 +10594,7 @@ define([], function () {
 				    "target": "6037",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10603,7 +10603,7 @@ define([], function () {
 				    "target": "6036",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10612,7 +10612,7 @@ define([], function () {
 				    "target": "6035",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10621,7 +10621,7 @@ define([], function () {
 				    "target": "6034",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ半蔵門線"
+				    "line_name": "line_23"
 			    }
 		    }, {
 			    "data": {
@@ -10630,7 +10630,7 @@ define([], function () {
 				    "target": "6008",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10639,7 +10639,7 @@ define([], function () {
 				    "target": "6009",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10648,7 +10648,7 @@ define([], function () {
 				    "target": "6006",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10657,7 +10657,7 @@ define([], function () {
 				    "target": "6007",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10666,7 +10666,7 @@ define([], function () {
 				    "target": "6012",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10675,7 +10675,7 @@ define([], function () {
 				    "target": "6013",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10684,7 +10684,7 @@ define([], function () {
 				    "target": "6010",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10693,7 +10693,7 @@ define([], function () {
 				    "target": "6011",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10702,7 +10702,7 @@ define([], function () {
 				    "target": "6016",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10711,7 +10711,7 @@ define([], function () {
 				    "target": "6017",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10720,7 +10720,7 @@ define([], function () {
 				    "target": "6014",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10729,7 +10729,7 @@ define([], function () {
 				    "target": "6015",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10738,7 +10738,7 @@ define([], function () {
 				    "target": "6020",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10747,7 +10747,7 @@ define([], function () {
 				    "target": "6021",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10756,7 +10756,7 @@ define([], function () {
 				    "target": "6018",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10765,7 +10765,7 @@ define([], function () {
 				    "target": "6019",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ有楽町線"
+				    "line_name": "line_24"
 			    }
 		    }, {
 			    "data": {
@@ -10774,7 +10774,7 @@ define([], function () {
 				    "target": "5991",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10783,7 +10783,7 @@ define([], function () {
 				    "target": "5990",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10792,7 +10792,7 @@ define([], function () {
 				    "target": "5993",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10801,7 +10801,7 @@ define([], function () {
 				    "target": "5992",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10810,7 +10810,7 @@ define([], function () {
 				    "target": "5995",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10819,7 +10819,7 @@ define([], function () {
 				    "target": "5994",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10828,7 +10828,7 @@ define([], function () {
 				    "target": "5997",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10837,7 +10837,7 @@ define([], function () {
 				    "target": "5996",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10846,7 +10846,7 @@ define([], function () {
 				    "target": "5999",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10855,7 +10855,7 @@ define([], function () {
 				    "target": "5998",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10864,7 +10864,7 @@ define([], function () {
 				    "target": "6001",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10873,7 +10873,7 @@ define([], function () {
 				    "target": "6000",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10882,7 +10882,7 @@ define([], function () {
 				    "target": "6003",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10891,7 +10891,7 @@ define([], function () {
 				    "target": "6002",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10900,7 +10900,7 @@ define([], function () {
 				    "target": "5974",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -10909,7 +10909,7 @@ define([], function () {
 				    "target": "5975",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -10918,7 +10918,7 @@ define([], function () {
 				    "target": "5976",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -10927,7 +10927,7 @@ define([], function () {
 				    "target": "5977",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -10936,7 +10936,7 @@ define([], function () {
 				    "target": "5985",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10945,7 +10945,7 @@ define([], function () {
 				    "target": "5986",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10954,7 +10954,7 @@ define([], function () {
 				    "target": "5987",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10963,7 +10963,7 @@ define([], function () {
 				    "target": "5988",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10972,7 +10972,7 @@ define([], function () {
 				    "target": "5989",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ千代田線"
+				    "line_name": "line_26"
 			    }
 		    }, {
 			    "data": {
@@ -10981,7 +10981,7 @@ define([], function () {
 				    "target": "5965",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -10990,7 +10990,7 @@ define([], function () {
 				    "target": "5964",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -10999,7 +10999,7 @@ define([], function () {
 				    "target": "5963",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -11008,7 +11008,7 @@ define([], function () {
 				    "target": "5962",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -11017,7 +11017,7 @@ define([], function () {
 				    "target": "5960",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11026,7 +11026,7 @@ define([], function () {
 				    "target": "5959",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11035,7 +11035,7 @@ define([], function () {
 				    "target": "5958",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11044,7 +11044,7 @@ define([], function () {
 				    "target": "5973",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -11053,7 +11053,7 @@ define([], function () {
 				    "target": "5972",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -11062,7 +11062,7 @@ define([], function () {
 				    "target": "5971",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -11071,7 +11071,7 @@ define([], function () {
 				    "target": "5970",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -11080,7 +11080,7 @@ define([], function () {
 				    "target": "5969",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -11089,7 +11089,7 @@ define([], function () {
 				    "target": "5968",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -11098,7 +11098,7 @@ define([], function () {
 				    "target": "5967",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -11107,7 +11107,7 @@ define([], function () {
 				    "target": "5966",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ東西線"
+				    "line_name": "line_27"
 			    }
 		    }, {
 			    "data": {
@@ -11116,7 +11116,7 @@ define([], function () {
 				    "target": "5948",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11125,7 +11125,7 @@ define([], function () {
 				    "target": "5949",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11134,7 +11134,7 @@ define([], function () {
 				    "target": "5946",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11143,7 +11143,7 @@ define([], function () {
 				    "target": "5947",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11152,7 +11152,7 @@ define([], function () {
 				    "target": "5944",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11161,7 +11161,7 @@ define([], function () {
 				    "target": "5945",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11170,7 +11170,7 @@ define([], function () {
 				    "target": "5942",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11179,7 +11179,7 @@ define([], function () {
 				    "target": "5943",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11188,7 +11188,7 @@ define([], function () {
 				    "target": "5956",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11197,7 +11197,7 @@ define([], function () {
 				    "target": "5957",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11206,7 +11206,7 @@ define([], function () {
 				    "target": "5954",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11215,7 +11215,7 @@ define([], function () {
 				    "target": "5955",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11224,7 +11224,7 @@ define([], function () {
 				    "target": "5952",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11233,7 +11233,7 @@ define([], function () {
 				    "target": "5953",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11242,7 +11242,7 @@ define([], function () {
 				    "target": "5950",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11251,7 +11251,7 @@ define([], function () {
 				    "target": "5951",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11260,7 +11260,7 @@ define([], function () {
 				    "target": "5931",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11269,7 +11269,7 @@ define([], function () {
 				    "target": "5930",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11278,7 +11278,7 @@ define([], function () {
 				    "target": "5934",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11287,7 +11287,7 @@ define([], function () {
 				    "target": "5932",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11296,7 +11296,7 @@ define([], function () {
 				    "target": "5933",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11305,7 +11305,7 @@ define([], function () {
 				    "target": "5927",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11314,7 +11314,7 @@ define([], function () {
 				    "target": "5926",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11323,7 +11323,7 @@ define([], function () {
 				    "target": "5929",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11332,7 +11332,7 @@ define([], function () {
 				    "target": "5928",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11341,7 +11341,7 @@ define([], function () {
 				    "target": "5939",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11350,7 +11350,7 @@ define([], function () {
 				    "target": "5941",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ日比谷線"
+				    "line_name": "line_28"
 			    }
 		    }, {
 			    "data": {
@@ -11359,7 +11359,7 @@ define([], function () {
 				    "target": "5935",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11368,7 +11368,7 @@ define([], function () {
 				    "target": "5938",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11377,7 +11377,7 @@ define([], function () {
 				    "target": "5937",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11386,7 +11386,7 @@ define([], function () {
 				    "target": "5936",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11395,7 +11395,7 @@ define([], function () {
 				    "target": "5914",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11404,7 +11404,7 @@ define([], function () {
 				    "target": "5915",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11413,7 +11413,7 @@ define([], function () {
 				    "target": "5916",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11422,7 +11422,7 @@ define([], function () {
 				    "target": "5917",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11431,7 +11431,7 @@ define([], function () {
 				    "target": "5910",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -11440,7 +11440,7 @@ define([], function () {
 				    "target": "5911",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ銀座線"
+				    "line_name": "line_2"
 			    }
 		    }, {
 			    "data": {
@@ -11449,7 +11449,7 @@ define([], function () {
 				    "target": "5913",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11458,7 +11458,7 @@ define([], function () {
 				    "target": "5922",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11467,7 +11467,7 @@ define([], function () {
 				    "target": "5923",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11476,7 +11476,7 @@ define([], function () {
 				    "target": "5924",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11485,7 +11485,7 @@ define([], function () {
 				    "target": "5925",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11494,7 +11494,7 @@ define([], function () {
 				    "target": "5918",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11503,7 +11503,7 @@ define([], function () {
 				    "target": "5919",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11512,7 +11512,7 @@ define([], function () {
 				    "target": "5920",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11521,7 +11521,7 @@ define([], function () {
 				    "target": "5921",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東京メトロ丸ノ内線"
+				    "line_name": "line_29"
 			    }
 		    }, {
 			    "data": {
@@ -11530,7 +11530,7 @@ define([], function () {
 				    "target": "3104",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR埼京線"
+				    "line_name": "line_30"
 			    }
 		    }, {
 			    "data": {
@@ -11539,7 +11539,7 @@ define([], function () {
 				    "target": "3105",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR埼京線"
+				    "line_name": "line_30"
 			    }
 		    }, {
 			    "data": {
@@ -11548,7 +11548,7 @@ define([], function () {
 				    "target": "3102",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR埼京線"
+				    "line_name": "line_30"
 			    }
 		    }, {
 			    "data": {
@@ -11557,7 +11557,7 @@ define([], function () {
 				    "target": "3103",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR埼京線"
+				    "line_name": "line_30"
 			    }
 		    }, {
 			    "data": {
@@ -11566,7 +11566,7 @@ define([], function () {
 				    "target": "3097",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR埼京線"
+				    "line_name": "line_30"
 			    }
 		    }, {
 			    "data": {
@@ -11575,7 +11575,7 @@ define([], function () {
 				    "target": "3100",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR埼京線"
+				    "line_name": "line_30"
 			    }
 		    }, {
 			    "data": {
@@ -11584,7 +11584,7 @@ define([], function () {
 				    "target": "5301",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武亀戸線"
+				    "line_name": "line_31"
 			    }
 		    }, {
 			    "data": {
@@ -11593,7 +11593,7 @@ define([], function () {
 				    "target": "3101",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR埼京線"
+				    "line_name": "line_30"
 			    }
 		    }, {
 			    "data": {
@@ -11602,7 +11602,7 @@ define([], function () {
 				    "target": "3098",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR埼京線"
+				    "line_name": "line_30"
 			    }
 		    }, {
 			    "data": {
@@ -11611,7 +11611,7 @@ define([], function () {
 				    "target": "3099",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR埼京線"
+				    "line_name": "line_30"
 			    }
 		    }, {
 			    "data": {
@@ -11620,7 +11620,7 @@ define([], function () {
 				    "target": "5303",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武亀戸線"
+				    "line_name": "line_31"
 			    }
 		    }, {
 			    "data": {
@@ -11629,7 +11629,7 @@ define([], function () {
 				    "target": "5302",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武亀戸線"
+				    "line_name": "line_31"
 			    }
 		    }, {
 			    "data": {
@@ -11638,7 +11638,7 @@ define([], function () {
 				    "target": "5304",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武亀戸線"
+				    "line_name": "line_31"
 			    }
 		    }, {
 			    "data": {
@@ -11647,7 +11647,7 @@ define([], function () {
 				    "target": "5306",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武大師線"
+				    "line_name": "line_32"
 			    }
 		    }, {
 			    "data": {
@@ -11656,7 +11656,7 @@ define([], function () {
 				    "target": "3127",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR高崎線"
+				    "line_name": "line_33"
 			    }
 		    }, {
 			    "data": {
@@ -11665,7 +11665,7 @@ define([], function () {
 				    "target": "3128",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR高崎線"
+				    "line_name": "line_33"
 			    }
 		    }, {
 			    "data": {
@@ -11674,7 +11674,7 @@ define([], function () {
 				    "target": "5364",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11683,7 +11683,7 @@ define([], function () {
 				    "target": "5365",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11692,7 +11692,7 @@ define([], function () {
 				    "target": "5363",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11701,7 +11701,7 @@ define([], function () {
 				    "target": "5371",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11710,7 +11710,7 @@ define([], function () {
 				    "target": "5370",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11719,7 +11719,7 @@ define([], function () {
 				    "target": "5373",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11728,7 +11728,7 @@ define([], function () {
 				    "target": "5372",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11737,7 +11737,7 @@ define([], function () {
 				    "target": "5367",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11746,7 +11746,7 @@ define([], function () {
 				    "target": "3214",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京葉線"
+				    "line_name": "line_35"
 			    }
 		    }, {
 			    "data": {
@@ -11755,7 +11755,7 @@ define([], function () {
 				    "target": "5366",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11764,7 +11764,7 @@ define([], function () {
 				    "target": "5369",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11773,7 +11773,7 @@ define([], function () {
 				    "target": "5368",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11782,7 +11782,7 @@ define([], function () {
 				    "target": "3211",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京葉線"
+				    "line_name": "line_35"
 			    }
 		    }, {
 			    "data": {
@@ -11791,7 +11791,7 @@ define([], function () {
 				    "target": "3210",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京葉線"
+				    "line_name": "line_35"
 			    }
 		    }, {
 			    "data": {
@@ -11800,7 +11800,7 @@ define([], function () {
 				    "target": "3213",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京葉線"
+				    "line_name": "line_35"
 			    }
 		    }, {
 			    "data": {
@@ -11809,7 +11809,7 @@ define([], function () {
 				    "target": "3212",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京葉線"
+				    "line_name": "line_35"
 			    }
 		    }, {
 			    "data": {
@@ -11818,7 +11818,7 @@ define([], function () {
 				    "target": "5375",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11827,7 +11827,7 @@ define([], function () {
 				    "target": "5374",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11836,7 +11836,7 @@ define([], function () {
 				    "target": "5377",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11845,7 +11845,7 @@ define([], function () {
 				    "target": "5376",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武池袋線"
+				    "line_name": "line_34"
 			    }
 		    }, {
 			    "data": {
@@ -11854,7 +11854,7 @@ define([], function () {
 				    "target": "7608",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -11863,7 +11863,7 @@ define([], function () {
 				    "target": "5152",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武東上線"
+				    "line_name": "line_37"
 			    }
 		    }, {
 			    "data": {
@@ -11872,7 +11872,7 @@ define([], function () {
 				    "target": "7609",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -11881,7 +11881,7 @@ define([], function () {
 				    "target": "5153",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武東上線"
+				    "line_name": "line_37"
 			    }
 		    }, {
 			    "data": {
@@ -11890,7 +11890,7 @@ define([], function () {
 				    "target": "7606",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -11899,7 +11899,7 @@ define([], function () {
 				    "target": "5150",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武東上線"
+				    "line_name": "line_37"
 			    }
 		    }, {
 			    "data": {
@@ -11908,7 +11908,7 @@ define([], function () {
 				    "target": "7607",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -11917,7 +11917,7 @@ define([], function () {
 				    "target": "5151",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武東上線"
+				    "line_name": "line_37"
 			    }
 		    }, {
 			    "data": {
@@ -11926,7 +11926,7 @@ define([], function () {
 				    "target": "7612",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -11935,7 +11935,7 @@ define([], function () {
 				    "target": "7613",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -11944,7 +11944,7 @@ define([], function () {
 				    "target": "7610",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -11953,7 +11953,7 @@ define([], function () {
 				    "target": "5154",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武東上線"
+				    "line_name": "line_37"
 			    }
 		    }, {
 			    "data": {
@@ -11962,7 +11962,7 @@ define([], function () {
 				    "target": "7611",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -11971,7 +11971,7 @@ define([], function () {
 				    "target": "5155",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武東上線"
+				    "line_name": "line_37"
 			    }
 		    }, {
 			    "data": {
@@ -11980,7 +11980,7 @@ define([], function () {
 				    "target": "7616",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -11989,7 +11989,7 @@ define([], function () {
 				    "target": "7617",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -11998,7 +11998,7 @@ define([], function () {
 				    "target": "7615",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12007,7 +12007,7 @@ define([], function () {
 				    "target": "5148",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武東上線"
+				    "line_name": "line_37"
 			    }
 		    }, {
 			    "data": {
@@ -12016,7 +12016,7 @@ define([], function () {
 				    "target": "7620",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12025,7 +12025,7 @@ define([], function () {
 				    "target": "7621",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12034,7 +12034,7 @@ define([], function () {
 				    "target": "5149",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武東上線"
+				    "line_name": "line_37"
 			    }
 		    }, {
 			    "data": {
@@ -12043,7 +12043,7 @@ define([], function () {
 				    "target": "7618",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12052,7 +12052,7 @@ define([], function () {
 				    "target": "5147",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武東上線"
+				    "line_name": "line_37"
 			    }
 		    }, {
 			    "data": {
@@ -12061,7 +12061,7 @@ define([], function () {
 				    "target": "7619",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12070,7 +12070,7 @@ define([], function () {
 				    "target": "7625",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12079,7 +12079,7 @@ define([], function () {
 				    "target": "7624",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12088,7 +12088,7 @@ define([], function () {
 				    "target": "7623",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12097,7 +12097,7 @@ define([], function () {
 				    "target": "7622",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12106,7 +12106,7 @@ define([], function () {
 				    "target": "7629",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12115,7 +12115,7 @@ define([], function () {
 				    "target": "7628",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12124,7 +12124,7 @@ define([], function () {
 				    "target": "7627",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12133,7 +12133,7 @@ define([], function () {
 				    "target": "7626",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12142,7 +12142,7 @@ define([], function () {
 				    "target": "7633",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12151,7 +12151,7 @@ define([], function () {
 				    "target": "7632",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12160,7 +12160,7 @@ define([], function () {
 				    "target": "7631",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12169,7 +12169,7 @@ define([], function () {
 				    "target": "7630",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営浅草線"
+				    "line_name": "line_38"
 			    }
 		    }, {
 			    "data": {
@@ -12178,7 +12178,7 @@ define([], function () {
 				    "target": "7637",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -12187,7 +12187,7 @@ define([], function () {
 				    "target": "7636",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -12196,7 +12196,7 @@ define([], function () {
 				    "target": "7635",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -12205,7 +12205,7 @@ define([], function () {
 				    "target": "3271",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR成田エクスプレス"
+				    "line_name": "line_40"
 			    }
 		    }, {
 			    "data": {
@@ -12214,7 +12214,7 @@ define([], function () {
 				    "target": "3272",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR成田エクスプレス"
+				    "line_name": "line_40"
 			    }
 		    }, {
 			    "data": {
@@ -12223,7 +12223,7 @@ define([], function () {
 				    "target": "3273",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR成田エクスプレス"
+				    "line_name": "line_40"
 			    }
 		    }, {
 			    "data": {
@@ -12232,7 +12232,7 @@ define([], function () {
 				    "target": "7577",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12241,7 +12241,7 @@ define([], function () {
 				    "target": "7578",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12250,7 +12250,7 @@ define([], function () {
 				    "target": "5185",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12259,7 +12259,7 @@ define([], function () {
 				    "target": "3274",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR成田エクスプレス"
+				    "line_name": "line_40"
 			    }
 		    }, {
 			    "data": {
@@ -12268,7 +12268,7 @@ define([], function () {
 				    "target": "7605",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12277,7 +12277,7 @@ define([], function () {
 				    "target": "5186",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12286,7 +12286,7 @@ define([], function () {
 				    "target": "3275",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR成田エクスプレス"
+				    "line_name": "line_40"
 			    }
 		    }, {
 			    "data": {
@@ -12295,7 +12295,7 @@ define([], function () {
 				    "target": "7579",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12304,7 +12304,7 @@ define([], function () {
 				    "target": "5187",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12313,7 +12313,7 @@ define([], function () {
 				    "target": "3261",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR成田エクスプレス"
+				    "line_name": "line_40"
 			    }
 		    }, {
 			    "data": {
@@ -12322,7 +12322,7 @@ define([], function () {
 				    "target": "7580",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12331,7 +12331,7 @@ define([], function () {
 				    "target": "5188",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12340,7 +12340,7 @@ define([], function () {
 				    "target": "5189",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12349,7 +12349,7 @@ define([], function () {
 				    "target": "7581",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12358,7 +12358,7 @@ define([], function () {
 				    "target": "7582",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12367,7 +12367,7 @@ define([], function () {
 				    "target": "7583",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12376,7 +12376,7 @@ define([], function () {
 				    "target": "7584",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12385,7 +12385,7 @@ define([], function () {
 				    "target": "7585",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12394,7 +12394,7 @@ define([], function () {
 				    "target": "7586",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12403,7 +12403,7 @@ define([], function () {
 				    "target": "7587",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12412,7 +12412,7 @@ define([], function () {
 				    "target": "7588",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12421,7 +12421,7 @@ define([], function () {
 				    "target": "7589",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12430,7 +12430,7 @@ define([], function () {
 				    "target": "7591",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12439,7 +12439,7 @@ define([], function () {
 				    "target": "7590",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12448,7 +12448,7 @@ define([], function () {
 				    "target": "7593",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12457,7 +12457,7 @@ define([], function () {
 				    "target": "7592",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12466,7 +12466,7 @@ define([], function () {
 				    "target": "7595",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12475,7 +12475,7 @@ define([], function () {
 				    "target": "7594",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12484,7 +12484,7 @@ define([], function () {
 				    "target": "3261",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR成田エクスプレス"
+				    "line_name": "line_40"
 			    }
 		    }, {
 			    "data": {
@@ -12493,7 +12493,7 @@ define([], function () {
 				    "target": "7597",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12502,7 +12502,7 @@ define([], function () {
 				    "target": "7596",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12511,7 +12511,7 @@ define([], function () {
 				    "target": "5191",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12520,7 +12520,7 @@ define([], function () {
 				    "target": "3263",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR成田エクスプレス"
+				    "line_name": "line_40"
 			    }
 		    }, {
 			    "data": {
@@ -12529,7 +12529,7 @@ define([], function () {
 				    "target": "7599",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12538,7 +12538,7 @@ define([], function () {
 				    "target": "5190",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12547,7 +12547,7 @@ define([], function () {
 				    "target": "3262",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR成田エクスプレス"
+				    "line_name": "line_40"
 			    }
 		    }, {
 			    "data": {
@@ -12556,7 +12556,7 @@ define([], function () {
 				    "target": "7598",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12565,7 +12565,7 @@ define([], function () {
 				    "target": "5193",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12574,7 +12574,7 @@ define([], function () {
 				    "target": "7601",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12583,7 +12583,7 @@ define([], function () {
 				    "target": "5192",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12592,7 +12592,7 @@ define([], function () {
 				    "target": "3264",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR成田エクスプレス"
+				    "line_name": "line_40"
 			    }
 		    }, {
 			    "data": {
@@ -12601,7 +12601,7 @@ define([], function () {
 				    "target": "7600",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12610,7 +12610,7 @@ define([], function () {
 				    "target": "5195",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12619,7 +12619,7 @@ define([], function () {
 				    "target": "7603",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12628,7 +12628,7 @@ define([], function () {
 				    "target": "5194",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12637,7 +12637,7 @@ define([], function () {
 				    "target": "7602",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12646,7 +12646,7 @@ define([], function () {
 				    "target": "5197",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12655,7 +12655,7 @@ define([], function () {
 				    "target": "7576",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12664,7 +12664,7 @@ define([], function () {
 				    "target": "5196",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "東武伊勢崎線"
+				    "line_name": "line_41"
 			    }
 		    }, {
 			    "data": {
@@ -12673,7 +12673,7 @@ define([], function () {
 				    "target": "7604",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営大江戸線"
+				    "line_name": "line_36"
 			    }
 		    }, {
 			    "data": {
@@ -12682,7 +12682,7 @@ define([], function () {
 				    "target": "7676",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -12691,7 +12691,7 @@ define([], function () {
 				    "target": "7677",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -12700,7 +12700,7 @@ define([], function () {
 				    "target": "7674",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -12709,7 +12709,7 @@ define([], function () {
 				    "target": "7675",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -12718,7 +12718,7 @@ define([], function () {
 				    "target": "7672",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -12727,7 +12727,7 @@ define([], function () {
 				    "target": "7673",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -12736,7 +12736,7 @@ define([], function () {
 				    "target": "7670",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -12745,7 +12745,7 @@ define([], function () {
 				    "target": "7671",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -12754,7 +12754,7 @@ define([], function () {
 				    "target": "3316",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -12763,7 +12763,7 @@ define([], function () {
 				    "target": "7684",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12772,7 +12772,7 @@ define([], function () {
 				    "target": "3317",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -12781,7 +12781,7 @@ define([], function () {
 				    "target": "7685",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12790,7 +12790,7 @@ define([], function () {
 				    "target": "3314",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -12799,7 +12799,7 @@ define([], function () {
 				    "target": "3315",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -12808,7 +12808,7 @@ define([], function () {
 				    "target": "7683",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12817,7 +12817,7 @@ define([], function () {
 				    "target": "3312",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -12826,7 +12826,7 @@ define([], function () {
 				    "target": "7680",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -12835,7 +12835,7 @@ define([], function () {
 				    "target": "3313",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -12844,7 +12844,7 @@ define([], function () {
 				    "target": "7678",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -12853,7 +12853,7 @@ define([], function () {
 				    "target": "7679",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -12862,7 +12862,7 @@ define([], function () {
 				    "target": "7693",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12871,7 +12871,7 @@ define([], function () {
 				    "target": "7692",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12880,7 +12880,7 @@ define([], function () {
 				    "target": "7691",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12889,7 +12889,7 @@ define([], function () {
 				    "target": "7690",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12898,7 +12898,7 @@ define([], function () {
 				    "target": "7689",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12907,7 +12907,7 @@ define([], function () {
 				    "target": "7688",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12916,7 +12916,7 @@ define([], function () {
 				    "target": "7687",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12925,7 +12925,7 @@ define([], function () {
 				    "target": "7686",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12934,7 +12934,7 @@ define([], function () {
 				    "target": "7701",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12943,7 +12943,7 @@ define([], function () {
 				    "target": "7700",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12952,7 +12952,7 @@ define([], function () {
 				    "target": "7699",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12961,7 +12961,7 @@ define([], function () {
 				    "target": "7698",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12970,7 +12970,7 @@ define([], function () {
 				    "target": "7697",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12979,7 +12979,7 @@ define([], function () {
 				    "target": "7696",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12988,7 +12988,7 @@ define([], function () {
 				    "target": "7695",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -12997,7 +12997,7 @@ define([], function () {
 				    "target": "7694",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都電荒川線"
+				    "line_name": "line_20"
 			    }
 		    }, {
 			    "data": {
@@ -13006,7 +13006,7 @@ define([], function () {
 				    "target": "7642",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13015,7 +13015,7 @@ define([], function () {
 				    "target": "7643",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13024,7 +13024,7 @@ define([], function () {
 				    "target": "3340",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR湘南新宿ライン"
+				    "line_name": "line_44"
 			    }
 		    }, {
 			    "data": {
@@ -13033,7 +13033,7 @@ define([], function () {
 				    "target": "7644",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13042,7 +13042,7 @@ define([], function () {
 				    "target": "3341",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR湘南新宿ライン"
+				    "line_name": "line_44"
 			    }
 		    }, {
 			    "data": {
@@ -13051,7 +13051,7 @@ define([], function () {
 				    "target": "7645",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13060,7 +13060,7 @@ define([], function () {
 				    "target": "7638",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13069,7 +13069,7 @@ define([], function () {
 				    "target": "7639",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13078,7 +13078,7 @@ define([], function () {
 				    "target": "7640",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13087,7 +13087,7 @@ define([], function () {
 				    "target": "7641",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13096,7 +13096,7 @@ define([], function () {
 				    "target": "7650",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13105,7 +13105,7 @@ define([], function () {
 				    "target": "7651",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13114,7 +13114,7 @@ define([], function () {
 				    "target": "7652",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13123,7 +13123,7 @@ define([], function () {
 				    "target": "7653",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13132,7 +13132,7 @@ define([], function () {
 				    "target": "3342",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR湘南新宿ライン"
+				    "line_name": "line_44"
 			    }
 		    }, {
 			    "data": {
@@ -13141,7 +13141,7 @@ define([], function () {
 				    "target": "7646",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13150,7 +13150,7 @@ define([], function () {
 				    "target": "3343",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR湘南新宿ライン"
+				    "line_name": "line_44"
 			    }
 		    }, {
 			    "data": {
@@ -13159,7 +13159,7 @@ define([], function () {
 				    "target": "7647",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13168,7 +13168,7 @@ define([], function () {
 				    "target": "3344",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR湘南新宿ライン"
+				    "line_name": "line_44"
 			    }
 		    }, {
 			    "data": {
@@ -13177,7 +13177,7 @@ define([], function () {
 				    "target": "7648",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13186,7 +13186,7 @@ define([], function () {
 				    "target": "3345",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR湘南新宿ライン"
+				    "line_name": "line_44"
 			    }
 		    }, {
 			    "data": {
@@ -13195,7 +13195,7 @@ define([], function () {
 				    "target": "7649",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13204,7 +13204,7 @@ define([], function () {
 				    "target": "3323",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13213,7 +13213,7 @@ define([], function () {
 				    "target": "7659",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13222,7 +13222,7 @@ define([], function () {
 				    "target": "3322",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13231,7 +13231,7 @@ define([], function () {
 				    "target": "7658",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13240,7 +13240,7 @@ define([], function () {
 				    "target": "3325",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13249,7 +13249,7 @@ define([], function () {
 				    "target": "3324",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13258,7 +13258,7 @@ define([], function () {
 				    "target": "7660",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13267,7 +13267,7 @@ define([], function () {
 				    "target": "3319",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13276,7 +13276,7 @@ define([], function () {
 				    "target": "7655",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13285,7 +13285,7 @@ define([], function () {
 				    "target": "3318",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13294,7 +13294,7 @@ define([], function () {
 				    "target": "7654",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13303,7 +13303,7 @@ define([], function () {
 				    "target": "3321",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13312,7 +13312,7 @@ define([], function () {
 				    "target": "7657",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13321,7 +13321,7 @@ define([], function () {
 				    "target": "3320",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13330,7 +13330,7 @@ define([], function () {
 				    "target": "7656",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営三田線"
+				    "line_name": "line_39"
 			    }
 		    }, {
 			    "data": {
@@ -13339,7 +13339,7 @@ define([], function () {
 				    "target": "3331",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13348,7 +13348,7 @@ define([], function () {
 				    "target": "7667",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -13357,7 +13357,7 @@ define([], function () {
 				    "target": "3330",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13366,7 +13366,7 @@ define([], function () {
 				    "target": "7666",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -13375,7 +13375,7 @@ define([], function () {
 				    "target": "7669",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -13384,7 +13384,7 @@ define([], function () {
 				    "target": "7668",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -13393,7 +13393,7 @@ define([], function () {
 				    "target": "3327",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13402,7 +13402,7 @@ define([], function () {
 				    "target": "7663",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -13411,7 +13411,7 @@ define([], function () {
 				    "target": "3326",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13420,7 +13420,7 @@ define([], function () {
 				    "target": "7662",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -13429,7 +13429,7 @@ define([], function () {
 				    "target": "3329",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13438,7 +13438,7 @@ define([], function () {
 				    "target": "7665",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -13447,7 +13447,7 @@ define([], function () {
 				    "target": "3328",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR京浜東北線"
+				    "line_name": "line_43"
 			    }
 		    }, {
 			    "data": {
@@ -13456,7 +13456,7 @@ define([], function () {
 				    "target": "7664",
 				    "is_bullet": false,
 				    "company_type": 0,
-				    "line_name": "都営新宿線"
+				    "line_name": "line_42"
 			    }
 		    }, {
 			    "data": {
@@ -13465,7 +13465,7 @@ define([], function () {
 				    "target": "5542",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "成田スカイアクセス"
+				    "line_name": "line_45"
 			    }
 		    }, {
 			    "data": {
@@ -13474,7 +13474,7 @@ define([], function () {
 				    "target": "5543",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "成田スカイアクセス"
+				    "line_name": "line_45"
 			    }
 		    }, {
 			    "data": {
@@ -13483,7 +13483,7 @@ define([], function () {
 				    "target": "5544",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "成田スカイアクセス"
+				    "line_name": "line_45"
 			    }
 		    }, {
 			    "data": {
@@ -13492,7 +13492,7 @@ define([], function () {
 				    "target": "5553",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13501,7 +13501,7 @@ define([], function () {
 				    "target": "5554",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13510,7 +13510,7 @@ define([], function () {
 				    "target": "5555",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13519,7 +13519,7 @@ define([], function () {
 				    "target": "5556",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13528,7 +13528,7 @@ define([], function () {
 				    "target": "5557",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13537,7 +13537,7 @@ define([], function () {
 				    "target": "5576",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13546,7 +13546,7 @@ define([], function () {
 				    "target": "5577",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13555,7 +13555,7 @@ define([], function () {
 				    "target": "5574",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13564,7 +13564,7 @@ define([], function () {
 				    "target": "5575",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13573,7 +13573,7 @@ define([], function () {
 				    "target": "5580",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13582,7 +13582,7 @@ define([], function () {
 				    "target": "5581",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13591,7 +13591,7 @@ define([], function () {
 				    "target": "5578",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13600,7 +13600,7 @@ define([], function () {
 				    "target": "5579",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13609,7 +13609,7 @@ define([], function () {
 				    "target": "5584",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13618,7 +13618,7 @@ define([], function () {
 				    "target": "5585",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13627,7 +13627,7 @@ define([], function () {
 				    "target": "5582",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13636,7 +13636,7 @@ define([], function () {
 				    "target": "5583",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13645,7 +13645,7 @@ define([], function () {
 				    "target": "5587",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王相模原線"
+				    "line_name": "line_47"
 			    }
 		    }, {
 			    "data": {
@@ -13654,7 +13654,7 @@ define([], function () {
 				    "target": "5561",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13663,7 +13663,7 @@ define([], function () {
 				    "target": "5560",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13672,7 +13672,7 @@ define([], function () {
 				    "target": "5559",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13681,7 +13681,7 @@ define([], function () {
 				    "target": "5558",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13690,7 +13690,7 @@ define([], function () {
 				    "target": "5565",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13699,7 +13699,7 @@ define([], function () {
 				    "target": "5564",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13708,7 +13708,7 @@ define([], function () {
 				    "target": "5563",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13717,7 +13717,7 @@ define([], function () {
 				    "target": "5562",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13726,7 +13726,7 @@ define([], function () {
 				    "target": "5569",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13735,7 +13735,7 @@ define([], function () {
 				    "target": "5568",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13744,7 +13744,7 @@ define([], function () {
 				    "target": "5567",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13753,7 +13753,7 @@ define([], function () {
 				    "target": "5566",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13762,7 +13762,7 @@ define([], function () {
 				    "target": "5573",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13771,7 +13771,7 @@ define([], function () {
 				    "target": "5572",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13780,7 +13780,7 @@ define([], function () {
 				    "target": "5571",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13789,7 +13789,7 @@ define([], function () {
 				    "target": "5570",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王線"
+				    "line_name": "line_46"
 			    }
 		    }, {
 			    "data": {
@@ -13798,7 +13798,7 @@ define([], function () {
 				    "target": "5610",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13807,7 +13807,7 @@ define([], function () {
 				    "target": "5611",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13816,7 +13816,7 @@ define([], function () {
 				    "target": "5612",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13825,7 +13825,7 @@ define([], function () {
 				    "target": "5613",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13834,7 +13834,7 @@ define([], function () {
 				    "target": "5606",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王競馬場線"
+				    "line_name": "line_49"
 			    }
 		    }, {
 			    "data": {
@@ -13852,7 +13852,7 @@ define([], function () {
 				    "target": "5618",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13861,7 +13861,7 @@ define([], function () {
 				    "target": "5619",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13870,7 +13870,7 @@ define([], function () {
 				    "target": "5620",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13879,7 +13879,7 @@ define([], function () {
 				    "target": "5621",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13888,7 +13888,7 @@ define([], function () {
 				    "target": "5614",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13897,7 +13897,7 @@ define([], function () {
 				    "target": "5615",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13906,7 +13906,7 @@ define([], function () {
 				    "target": "5616",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13915,7 +13915,7 @@ define([], function () {
 				    "target": "5617",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -13924,7 +13924,7 @@ define([], function () {
 				    "target": "5595",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王相模原線"
+				    "line_name": "line_47"
 			    }
 		    }, {
 			    "data": {
@@ -13933,7 +13933,7 @@ define([], function () {
 				    "target": "5594",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王相模原線"
+				    "line_name": "line_47"
 			    }
 		    }, {
 			    "data": {
@@ -13942,7 +13942,7 @@ define([], function () {
 				    "target": "5596",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王相模原線"
+				    "line_name": "line_47"
 			    }
 		    }, {
 			    "data": {
@@ -13951,7 +13951,7 @@ define([], function () {
 				    "target": "5590",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王相模原線"
+				    "line_name": "line_47"
 			    }
 		    }, {
 			    "data": {
@@ -13960,7 +13960,7 @@ define([], function () {
 				    "target": "5593",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王相模原線"
+				    "line_name": "line_47"
 			    }
 		    }, {
 			    "data": {
@@ -13969,7 +13969,7 @@ define([], function () {
 				    "target": "5603",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王高尾線"
+				    "line_name": "line_50"
 			    }
 		    }, {
 			    "data": {
@@ -13978,7 +13978,7 @@ define([], function () {
 				    "target": "5602",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王高尾線"
+				    "line_name": "line_50"
 			    }
 		    }, {
 			    "data": {
@@ -13987,7 +13987,7 @@ define([], function () {
 				    "target": "5604",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王高尾線"
+				    "line_name": "line_50"
 			    }
 		    }, {
 			    "data": {
@@ -13996,7 +13996,7 @@ define([], function () {
 				    "target": "5599",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王高尾線"
+				    "line_name": "line_50"
 			    }
 		    }, {
 			    "data": {
@@ -14005,7 +14005,7 @@ define([], function () {
 				    "target": "5601",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王高尾線"
+				    "line_name": "line_50"
 			    }
 		    }, {
 			    "data": {
@@ -14014,7 +14014,7 @@ define([], function () {
 				    "target": "5600",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王高尾線"
+				    "line_name": "line_50"
 			    }
 		    }, {
 			    "data": {
@@ -14023,7 +14023,7 @@ define([], function () {
 				    "target": "5644",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14032,7 +14032,7 @@ define([], function () {
 				    "target": "5645",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14041,7 +14041,7 @@ define([], function () {
 				    "target": "5642",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14050,7 +14050,7 @@ define([], function () {
 				    "target": "5643",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14059,7 +14059,7 @@ define([], function () {
 				    "target": "5640",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14068,7 +14068,7 @@ define([], function () {
 				    "target": "5641",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14077,7 +14077,7 @@ define([], function () {
 				    "target": "5638",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14086,7 +14086,7 @@ define([], function () {
 				    "target": "5639",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14095,7 +14095,7 @@ define([], function () {
 				    "target": "5646",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14104,7 +14104,7 @@ define([], function () {
 				    "target": "5629",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王新線"
+				    "line_name": "line_51"
 			    }
 		    }, {
 			    "data": {
@@ -14113,7 +14113,7 @@ define([], function () {
 				    "target": "5628",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王新線"
+				    "line_name": "line_51"
 			    }
 		    }, {
 			    "data": {
@@ -14122,7 +14122,7 @@ define([], function () {
 				    "target": "5627",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王新線"
+				    "line_name": "line_51"
 			    }
 		    }, {
 			    "data": {
@@ -14131,7 +14131,7 @@ define([], function () {
 				    "target": "5625",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -14140,7 +14140,7 @@ define([], function () {
 				    "target": "5624",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -14149,7 +14149,7 @@ define([], function () {
 				    "target": "5623",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -14158,7 +14158,7 @@ define([], function () {
 				    "target": "5622",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京王井の頭線"
+				    "line_name": "line_48"
 			    }
 		    }, {
 			    "data": {
@@ -14167,7 +14167,7 @@ define([], function () {
 				    "target": "5637",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14176,7 +14176,7 @@ define([], function () {
 				    "target": "5636",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14185,7 +14185,7 @@ define([], function () {
 				    "target": "5635",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14194,7 +14194,7 @@ define([], function () {
 				    "target": "5634",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14203,7 +14203,7 @@ define([], function () {
 				    "target": "5633",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14212,7 +14212,7 @@ define([], function () {
 				    "target": "5632",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14221,7 +14221,7 @@ define([], function () {
 				    "target": "5631",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "小田急線"
+				    "line_name": "line_16"
 			    }
 		    }, {
 			    "data": {
@@ -14230,7 +14230,7 @@ define([], function () {
 				    "target": "5423",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14239,7 +14239,7 @@ define([], function () {
 				    "target": "5422",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14248,7 +14248,7 @@ define([], function () {
 				    "target": "5425",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14257,7 +14257,7 @@ define([], function () {
 				    "target": "5424",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14266,7 +14266,7 @@ define([], function () {
 				    "target": "5427",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14275,7 +14275,7 @@ define([], function () {
 				    "target": "5426",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14284,7 +14284,7 @@ define([], function () {
 				    "target": "5429",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14293,7 +14293,7 @@ define([], function () {
 				    "target": "5428",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14302,7 +14302,7 @@ define([], function () {
 				    "target": "5417",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14311,7 +14311,7 @@ define([], function () {
 				    "target": "5416",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14320,7 +14320,7 @@ define([], function () {
 				    "target": "5419",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14329,7 +14329,7 @@ define([], function () {
 				    "target": "5418",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14338,7 +14338,7 @@ define([], function () {
 				    "target": "5421",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14347,7 +14347,7 @@ define([], function () {
 				    "target": "5420",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14356,7 +14356,7 @@ define([], function () {
 				    "target": "5406",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武有楽町線"
+				    "line_name": "line_53"
 			    }
 		    }, {
 			    "data": {
@@ -14374,7 +14374,7 @@ define([], function () {
 				    "target": "5405",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武有楽町線"
+				    "line_name": "line_53"
 			    }
 		    }, {
 			    "data": {
@@ -14383,7 +14383,7 @@ define([], function () {
 				    "target": "5457",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武国分寺線"
+				    "line_name": "line_54"
 			    }
 		    }, {
 			    "data": {
@@ -14392,7 +14392,7 @@ define([], function () {
 				    "target": "5456",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武国分寺線"
+				    "line_name": "line_54"
 			    }
 		    }, {
 			    "data": {
@@ -14401,7 +14401,7 @@ define([], function () {
 				    "target": "5455",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武国分寺線"
+				    "line_name": "line_54"
 			    }
 		    }, {
 			    "data": {
@@ -14410,7 +14410,7 @@ define([], function () {
 				    "target": "5461",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武多摩湖線"
+				    "line_name": "line_55"
 			    }
 		    }, {
 			    "data": {
@@ -14419,7 +14419,7 @@ define([], function () {
 				    "target": "5460",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武多摩湖線"
+				    "line_name": "line_55"
 			    }
 		    }, {
 			    "data": {
@@ -14428,7 +14428,7 @@ define([], function () {
 				    "target": "5458",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武国分寺線"
+				    "line_name": "line_54"
 			    }
 		    }, {
 			    "data": {
@@ -14437,7 +14437,7 @@ define([], function () {
 				    "target": "5449",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武拝島線"
+				    "line_name": "line_56"
 			    }
 		    }, {
 			    "data": {
@@ -14446,7 +14446,7 @@ define([], function () {
 				    "target": "5448",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武拝島線"
+				    "line_name": "line_56"
 			    }
 		    }, {
 			    "data": {
@@ -14455,7 +14455,7 @@ define([], function () {
 				    "target": "5447",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武拝島線"
+				    "line_name": "line_56"
 			    }
 		    }, {
 			    "data": {
@@ -14464,7 +14464,7 @@ define([], function () {
 				    "target": "5446",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武拝島線"
+				    "line_name": "line_56"
 			    }
 		    }, {
 			    "data": {
@@ -14473,7 +14473,7 @@ define([], function () {
 				    "target": "5453",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武西武園線"
+				    "line_name": "line_57"
 			    }
 		    }, {
 			    "data": {
@@ -14482,7 +14482,7 @@ define([], function () {
 				    "target": "5451",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武拝島線"
+				    "line_name": "line_56"
 			    }
 		    }, {
 			    "data": {
@@ -14491,7 +14491,7 @@ define([], function () {
 				    "target": "5450",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武拝島線"
+				    "line_name": "line_56"
 			    }
 		    }, {
 			    "data": {
@@ -14500,7 +14500,7 @@ define([], function () {
 				    "target": "5445",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武拝島線"
+				    "line_name": "line_56"
 			    }
 		    }, {
 			    "data": {
@@ -14509,7 +14509,7 @@ define([], function () {
 				    "target": "5432",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14518,7 +14518,7 @@ define([], function () {
 				    "target": "5433",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14527,7 +14527,7 @@ define([], function () {
 				    "target": "5430",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14536,7 +14536,7 @@ define([], function () {
 				    "target": "5431",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14545,7 +14545,7 @@ define([], function () {
 				    "target": "5434",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14554,7 +14554,7 @@ define([], function () {
 				    "target": "5435",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武新宿線"
+				    "line_name": "line_52"
 			    }
 		    }, {
 			    "data": {
@@ -14563,7 +14563,7 @@ define([], function () {
 				    "target": "5483",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成本線"
+				    "line_name": "line_58"
 			    }
 		    }, {
 			    "data": {
@@ -14572,7 +14572,7 @@ define([], function () {
 				    "target": "5482",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成本線"
+				    "line_name": "line_58"
 			    }
 		    }, {
 			    "data": {
@@ -14581,7 +14581,7 @@ define([], function () {
 				    "target": "5479",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成本線"
+				    "line_name": "line_58"
 			    }
 		    }, {
 			    "data": {
@@ -14590,7 +14590,7 @@ define([], function () {
 				    "target": "5478",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成本線"
+				    "line_name": "line_58"
 			    }
 		    }, {
 			    "data": {
@@ -14599,7 +14599,7 @@ define([], function () {
 				    "target": "5481",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成本線"
+				    "line_name": "line_58"
 			    }
 		    }, {
 			    "data": {
@@ -14608,7 +14608,7 @@ define([], function () {
 				    "target": "5480",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成本線"
+				    "line_name": "line_58"
 			    }
 		    }, {
 			    "data": {
@@ -14617,7 +14617,7 @@ define([], function () {
 				    "target": "5474",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成本線"
+				    "line_name": "line_58"
 			    }
 		    }, {
 			    "data": {
@@ -14626,7 +14626,7 @@ define([], function () {
 				    "target": "5475",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成本線"
+				    "line_name": "line_58"
 			    }
 		    }, {
 			    "data": {
@@ -14635,7 +14635,7 @@ define([], function () {
 				    "target": "5476",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成本線"
+				    "line_name": "line_58"
 			    }
 		    }, {
 			    "data": {
@@ -14644,7 +14644,7 @@ define([], function () {
 				    "target": "5477",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成本線"
+				    "line_name": "line_58"
 			    }
 		    }, {
 			    "data": {
@@ -14653,7 +14653,7 @@ define([], function () {
 				    "target": "5470",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武多摩川線"
+				    "line_name": "line_59"
 			    }
 		    }, {
 			    "data": {
@@ -14662,7 +14662,7 @@ define([], function () {
 				    "target": "5471",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武多摩川線"
+				    "line_name": "line_59"
 			    }
 		    }, {
 			    "data": {
@@ -14671,7 +14671,7 @@ define([], function () {
 				    "target": "5473",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成本線"
+				    "line_name": "line_58"
 			    }
 		    }, {
 			    "data": {
@@ -14680,7 +14680,7 @@ define([], function () {
 				    "target": "5467",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武多摩川線"
+				    "line_name": "line_59"
 			    }
 		    }, {
 			    "data": {
@@ -14689,7 +14689,7 @@ define([], function () {
 				    "target": "5468",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武多摩川線"
+				    "line_name": "line_59"
 			    }
 		    }, {
 			    "data": {
@@ -14698,7 +14698,7 @@ define([], function () {
 				    "target": "5469",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武多摩川線"
+				    "line_name": "line_59"
 			    }
 		    }, {
 			    "data": {
@@ -14707,7 +14707,7 @@ define([], function () {
 				    "target": "5462",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武多摩湖線"
+				    "line_name": "line_55"
 			    }
 		    }, {
 			    "data": {
@@ -14716,7 +14716,7 @@ define([], function () {
 				    "target": "5463",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武多摩湖線"
+				    "line_name": "line_55"
 			    }
 		    }, {
 			    "data": {
@@ -14725,7 +14725,7 @@ define([], function () {
 				    "target": "5464",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武多摩湖線"
+				    "line_name": "line_55"
 			    }
 		    }, {
 			    "data": {
@@ -14734,7 +14734,7 @@ define([], function () {
 				    "target": "5465",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "西武多摩湖線"
+				    "line_name": "line_55"
 			    }
 		    }, {
 			    "data": {
@@ -14743,7 +14743,7 @@ define([], function () {
 				    "target": "5524",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成金町線"
+				    "line_name": "line_60"
 			    }
 		    }, {
 			    "data": {
@@ -14752,7 +14752,7 @@ define([], function () {
 				    "target": "5523",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成金町線"
+				    "line_name": "line_60"
 			    }
 		    }, {
 			    "data": {
@@ -14761,7 +14761,7 @@ define([], function () {
 				    "target": "5521",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成押上線"
+				    "line_name": "line_61"
 			    }
 		    }, {
 			    "data": {
@@ -14770,7 +14770,7 @@ define([], function () {
 				    "target": "5520",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成押上線"
+				    "line_name": "line_61"
 			    }
 		    }, {
 			    "data": {
@@ -14779,7 +14779,7 @@ define([], function () {
 				    "target": "5519",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成押上線"
+				    "line_name": "line_61"
 			    }
 		    }, {
 			    "data": {
@@ -14788,7 +14788,7 @@ define([], function () {
 				    "target": "5518",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成押上線"
+				    "line_name": "line_61"
 			    }
 		    }, {
 			    "data": {
@@ -14797,7 +14797,7 @@ define([], function () {
 				    "target": "5517",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成押上線"
+				    "line_name": "line_61"
 			    }
 		    }, {
 			    "data": {
@@ -14806,7 +14806,7 @@ define([], function () {
 				    "target": "5516",
 				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "京成押上線"
+				    "line_name": "line_61"
 			    }
 		    }, {
 			    "data": {
@@ -14815,7 +14815,7 @@ define([], function () {
 				    "target": "2674",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14824,7 +14824,7 @@ define([], function () {
 				    "target": "2702",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14833,7 +14833,7 @@ define([], function () {
 				    "target": "2695",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14842,7 +14842,7 @@ define([], function () {
 				    "target": "2694",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14851,7 +14851,7 @@ define([], function () {
 				    "target": "2697",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14860,7 +14860,7 @@ define([], function () {
 				    "target": "2696",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14869,7 +14869,7 @@ define([], function () {
 				    "target": "2699",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14878,7 +14878,7 @@ define([], function () {
 				    "target": "2698",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14887,7 +14887,7 @@ define([], function () {
 				    "target": "2701",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14896,7 +14896,7 @@ define([], function () {
 				    "target": "2700",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14905,7 +14905,7 @@ define([], function () {
 				    "target": "2686",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14914,7 +14914,7 @@ define([], function () {
 				    "target": "2687",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14923,7 +14923,7 @@ define([], function () {
 				    "target": "2688",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14932,7 +14932,7 @@ define([], function () {
 				    "target": "2689",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14941,7 +14941,7 @@ define([], function () {
 				    "target": "2690",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14950,7 +14950,7 @@ define([], function () {
 				    "target": "2691",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14959,7 +14959,7 @@ define([], function () {
 				    "target": "2692",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14968,7 +14968,7 @@ define([], function () {
 				    "target": "2693",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14977,7 +14977,7 @@ define([], function () {
 				    "target": "2678",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14986,7 +14986,7 @@ define([], function () {
 				    "target": "2679",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -14995,7 +14995,7 @@ define([], function () {
 				    "target": "2680",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -15004,7 +15004,7 @@ define([], function () {
 				    "target": "2681",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -15013,7 +15013,7 @@ define([], function () {
 				    "target": "2682",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -15022,7 +15022,7 @@ define([], function () {
 				    "target": "2683",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -15031,7 +15031,7 @@ define([], function () {
 				    "target": "2684",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -15040,7 +15040,7 @@ define([], function () {
 				    "target": "2685",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -15049,7 +15049,7 @@ define([], function () {
 				    "target": "2677",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -15058,7 +15058,7 @@ define([], function () {
 				    "target": "2676",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -15067,7 +15067,7 @@ define([], function () {
 				    "target": "2675",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR山手線"
+				    "line_name": "line_62"
 			    }
 		    }, {
 			    "data": {
@@ -15076,7 +15076,7 @@ define([], function () {
 				    "target": "2654",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR東海道本線(東京～熱海)"
+				    "line_name": "line_63"
 			    }
 		    }, {
 			    "data": {
@@ -15085,7 +15085,7 @@ define([], function () {
 				    "target": "2655",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR東海道本線(東京～熱海)"
+				    "line_name": "line_63"
 			    }
 		    }, {
 			    "data": {
@@ -15094,7 +15094,7 @@ define([], function () {
 				    "target": "2747",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR武蔵野線"
+				    "line_name": "line_64"
 			    }
 		    }, {
 			    "data": {
@@ -15103,7 +15103,7 @@ define([], function () {
 				    "target": "2746",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR武蔵野線"
+				    "line_name": "line_64"
 			    }
 		    }, {
 			    "data": {
@@ -15112,7 +15112,7 @@ define([], function () {
 				    "target": "2749",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR武蔵野線"
+				    "line_name": "line_64"
 			    }
 		    }, {
 			    "data": {
@@ -15121,7 +15121,7 @@ define([], function () {
 				    "target": "2748",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR武蔵野線"
+				    "line_name": "line_64"
 			    }
 		    }, {
 			    "data": {
@@ -15130,7 +15130,7 @@ define([], function () {
 				    "target": "2728",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR南武線"
+				    "line_name": "line_65"
 			    }
 		    }, {
 			    "data": {
@@ -15139,7 +15139,7 @@ define([], function () {
 				    "target": "2729",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR南武線"
+				    "line_name": "line_65"
 			    }
 		    }, {
 			    "data": {
@@ -15148,7 +15148,7 @@ define([], function () {
 				    "target": "2726",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR南武線"
+				    "line_name": "line_65"
 			    }
 		    }, {
 			    "data": {
@@ -15157,7 +15157,7 @@ define([], function () {
 				    "target": "2727",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR南武線"
+				    "line_name": "line_65"
 			    }
 		    }, {
 			    "data": {
@@ -15166,7 +15166,7 @@ define([], function () {
 				    "target": "2725",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR南武線"
+				    "line_name": "line_65"
 			    }
 		    }, {
 			    "data": {
@@ -15175,7 +15175,7 @@ define([], function () {
 				    "target": "2724",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR南武線"
+				    "line_name": "line_65"
 			    }
 		    }, {
 			    "data": {
@@ -15184,7 +15184,7 @@ define([], function () {
 				    "target": "2723",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR南武線"
+				    "line_name": "line_65"
 			    }
 		    }, {
 			    "data": {
@@ -15193,7 +15193,7 @@ define([], function () {
 				    "target": "2722",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR南武線"
+				    "line_name": "line_65"
 			    }
 		    }, {
 			    "data": {
@@ -15202,7 +15202,7 @@ define([], function () {
 				    "target": "2721",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR南武線"
+				    "line_name": "line_65"
 			    }
 		    }, {
 			    "data": {
@@ -15211,7 +15211,7 @@ define([], function () {
 				    "target": "2806",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR横須賀線"
+				    "line_name": "line_66"
 			    }
 		    }, {
 			    "data": {
@@ -15220,7 +15220,7 @@ define([], function () {
 				    "target": "2790",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR横浜線"
+				    "line_name": "line_67"
 			    }
 		    }, {
 			    "data": {
@@ -15229,7 +15229,7 @@ define([], function () {
 				    "target": "2804",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR横須賀線"
+				    "line_name": "line_66"
 			    }
 		    }, {
 			    "data": {
@@ -15238,7 +15238,7 @@ define([], function () {
 				    "target": "2805",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR横須賀線"
+				    "line_name": "line_66"
 			    }
 		    }, {
 			    "data": {
@@ -15247,7 +15247,7 @@ define([], function () {
 				    "target": "2781",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR横浜線"
+				    "line_name": "line_67"
 			    }
 		    }, {
 			    "data": {
@@ -15256,7 +15256,7 @@ define([], function () {
 				    "target": "2789",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR横浜線"
+				    "line_name": "line_67"
 			    }
 		    }, {
 			    "data": {
@@ -15265,7 +15265,7 @@ define([], function () {
 				    "target": "2788",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR横浜線"
+				    "line_name": "line_67"
 			    }
 		    }, {
 			    "data": {
@@ -15274,7 +15274,7 @@ define([], function () {
 				    "target": "2901",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15283,7 +15283,7 @@ define([], function () {
 				    "target": "2900",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15292,7 +15292,7 @@ define([], function () {
 				    "target": "2899",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15301,7 +15301,7 @@ define([], function () {
 				    "target": "2898",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15310,7 +15310,7 @@ define([], function () {
 				    "target": "2897",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15319,7 +15319,7 @@ define([], function () {
 				    "target": "2896",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15328,7 +15328,7 @@ define([], function () {
 				    "target": "2895",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15337,7 +15337,7 @@ define([], function () {
 				    "target": "2894",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15346,7 +15346,7 @@ define([], function () {
 				    "target": "2850",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央本線(東京～塩尻)"
+				    "line_name": "line_69"
 			    }
 		    }, {
 			    "data": {
@@ -15355,7 +15355,7 @@ define([], function () {
 				    "target": "2851",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央本線(東京～塩尻)"
+				    "line_name": "line_69"
 			    }
 		    }, {
 			    "data": {
@@ -15364,7 +15364,7 @@ define([], function () {
 				    "target": "2846",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央本線(東京～塩尻)"
+				    "line_name": "line_69"
 			    }
 		    }, {
 			    "data": {
@@ -15373,7 +15373,7 @@ define([], function () {
 				    "target": "2847",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央本線(東京～塩尻)"
+				    "line_name": "line_69"
 			    }
 		    }, {
 			    "data": {
@@ -15382,7 +15382,7 @@ define([], function () {
 				    "target": "2848",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央本線(東京～塩尻)"
+				    "line_name": "line_69"
 			    }
 		    }, {
 			    "data": {
@@ -15391,7 +15391,7 @@ define([], function () {
 				    "target": "2849",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央本線(東京～塩尻)"
+				    "line_name": "line_69"
 			    }
 		    }, {
 			    "data": {
@@ -15400,7 +15400,7 @@ define([], function () {
 				    "target": "2842",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央本線(東京～塩尻)"
+				    "line_name": "line_69"
 			    }
 		    }, {
 			    "data": {
@@ -15409,7 +15409,7 @@ define([], function () {
 				    "target": "2843",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央本線(東京～塩尻)"
+				    "line_name": "line_69"
 			    }
 		    }, {
 			    "data": {
@@ -15418,7 +15418,7 @@ define([], function () {
 				    "target": "2844",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央本線(東京～塩尻)"
+				    "line_name": "line_69"
 			    }
 		    }, {
 			    "data": {
@@ -15427,7 +15427,7 @@ define([], function () {
 				    "target": "2845",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央本線(東京～塩尻)"
+				    "line_name": "line_69"
 			    }
 		    }, {
 			    "data": {
@@ -15436,7 +15436,7 @@ define([], function () {
 				    "target": "2841",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央本線(東京～塩尻)"
+				    "line_name": "line_69"
 			    }
 		    }, {
 			    "data": {
@@ -15445,7 +15445,7 @@ define([], function () {
 				    "target": "2942",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15454,7 +15454,7 @@ define([], function () {
 				    "target": "2936",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15463,7 +15463,7 @@ define([], function () {
 				    "target": "2937",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15472,7 +15472,7 @@ define([], function () {
 				    "target": "2934",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15481,7 +15481,7 @@ define([], function () {
 				    "target": "2935",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15490,7 +15490,7 @@ define([], function () {
 				    "target": "2940",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15499,7 +15499,7 @@ define([], function () {
 				    "target": "2941",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15508,7 +15508,7 @@ define([], function () {
 				    "target": "2938",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15517,7 +15517,7 @@ define([], function () {
 				    "target": "2939",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15526,7 +15526,7 @@ define([], function () {
 				    "target": "2960",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR総武本線"
+				    "line_name": "line_71"
 			    }
 		    }, {
 			    "data": {
@@ -15535,7 +15535,7 @@ define([], function () {
 				    "target": "2959",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR総武本線"
+				    "line_name": "line_71"
 			    }
 		    }, {
 			    "data": {
@@ -15544,7 +15544,7 @@ define([], function () {
 				    "target": "2958",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR総武本線"
+				    "line_name": "line_71"
 			    }
 		    }, {
 			    "data": {
@@ -15553,7 +15553,7 @@ define([], function () {
 				    "target": "2957",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR総武本線"
+				    "line_name": "line_71"
 			    }
 		    }, {
 			    "data": {
@@ -15562,7 +15562,7 @@ define([], function () {
 				    "target": "2910",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15571,7 +15571,7 @@ define([], function () {
 				    "target": "2911",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15580,7 +15580,7 @@ define([], function () {
 				    "target": "2912",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15589,7 +15589,7 @@ define([], function () {
 				    "target": "2913",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15598,7 +15598,7 @@ define([], function () {
 				    "target": "2914",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15607,7 +15607,7 @@ define([], function () {
 				    "target": "2915",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15616,7 +15616,7 @@ define([], function () {
 				    "target": "2916",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15625,7 +15625,7 @@ define([], function () {
 				    "target": "2902",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15634,7 +15634,7 @@ define([], function () {
 				    "target": "2903",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15643,7 +15643,7 @@ define([], function () {
 				    "target": "2904",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15652,7 +15652,7 @@ define([], function () {
 				    "target": "2905",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15661,7 +15661,7 @@ define([], function () {
 				    "target": "2906",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15670,7 +15670,7 @@ define([], function () {
 				    "target": "2907",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15679,7 +15679,7 @@ define([], function () {
 				    "target": "2908",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15688,7 +15688,7 @@ define([], function () {
 				    "target": "2909",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央線(快速)"
+				    "line_name": "line_68"
 			    }
 		    }, {
 			    "data": {
@@ -15697,7 +15697,7 @@ define([], function () {
 				    "target": "2927",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15706,7 +15706,7 @@ define([], function () {
 				    "target": "2926",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15715,7 +15715,7 @@ define([], function () {
 				    "target": "2929",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15724,7 +15724,7 @@ define([], function () {
 				    "target": "2928",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15733,7 +15733,7 @@ define([], function () {
 				    "target": "2931",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15742,7 +15742,7 @@ define([], function () {
 				    "target": "2930",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15751,7 +15751,7 @@ define([], function () {
 				    "target": "2933",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15760,7 +15760,7 @@ define([], function () {
 				    "target": "2932",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15769,7 +15769,7 @@ define([], function () {
 				    "target": "2919",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15778,7 +15778,7 @@ define([], function () {
 				    "target": "2918",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15787,7 +15787,7 @@ define([], function () {
 				    "target": "2921",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15796,7 +15796,7 @@ define([], function () {
 				    "target": "2920",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15805,7 +15805,7 @@ define([], function () {
 				    "target": "2923",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15814,7 +15814,7 @@ define([], function () {
 				    "target": "2922",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15823,7 +15823,7 @@ define([], function () {
 				    "target": "2925",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15832,7 +15832,7 @@ define([], function () {
 				    "target": "2924",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR中央・総武線"
+				    "line_name": "line_70"
 			    }
 		    }, {
 			    "data": {
@@ -15841,7 +15841,7 @@ define([], function () {
 				    "target": "3005",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15850,7 +15850,7 @@ define([], function () {
 				    "target": "3004",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15859,7 +15859,7 @@ define([], function () {
 				    "target": "3003",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15868,7 +15868,7 @@ define([], function () {
 				    "target": "3002",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15877,7 +15877,7 @@ define([], function () {
 				    "target": "3001",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15886,7 +15886,7 @@ define([], function () {
 				    "target": "3000",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15895,7 +15895,7 @@ define([], function () {
 				    "target": "2999",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15904,7 +15904,7 @@ define([], function () {
 				    "target": "2998",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15913,7 +15913,7 @@ define([], function () {
 				    "target": "3013",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR五日市線"
+				    "line_name": "line_73"
 			    }
 		    }, {
 			    "data": {
@@ -15922,7 +15922,7 @@ define([], function () {
 				    "target": "3011",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15931,7 +15931,7 @@ define([], function () {
 				    "target": "3010",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15940,7 +15940,7 @@ define([], function () {
 				    "target": "3009",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15949,7 +15949,7 @@ define([], function () {
 				    "target": "3008",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15958,7 +15958,7 @@ define([], function () {
 				    "target": "3007",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15967,7 +15967,7 @@ define([], function () {
 				    "target": "3006",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -15976,7 +15976,7 @@ define([], function () {
 				    "target": "3020",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR八高線(八王子～高麗川)"
+				    "line_name": "line_74"
 			    }
 		    }, {
 			    "data": {
@@ -15985,7 +15985,7 @@ define([], function () {
 				    "target": "3021",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR八高線(八王子～高麗川)"
+				    "line_name": "line_74"
 			    }
 		    }, {
 			    "data": {
@@ -15994,7 +15994,7 @@ define([], function () {
 				    "target": "3018",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR五日市線"
+				    "line_name": "line_73"
 			    }
 		    }, {
 			    "data": {
@@ -16003,7 +16003,7 @@ define([], function () {
 				    "target": "3016",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR五日市線"
+				    "line_name": "line_73"
 			    }
 		    }, {
 			    "data": {
@@ -16012,7 +16012,7 @@ define([], function () {
 				    "target": "3017",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR五日市線"
+				    "line_name": "line_73"
 			    }
 		    }, {
 			    "data": {
@@ -16021,7 +16021,7 @@ define([], function () {
 				    "target": "3014",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR五日市線"
+				    "line_name": "line_73"
 			    }
 		    }, {
 			    "data": {
@@ -16030,7 +16030,7 @@ define([], function () {
 				    "target": "3015",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR五日市線"
+				    "line_name": "line_73"
 			    }
 		    }, {
 			    "data": {
@@ -16039,7 +16039,7 @@ define([], function () {
 				    "target": "3024",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR八高線(八王子～高麗川)"
+				    "line_name": "line_74"
 			    }
 		    }, {
 			    "data": {
@@ -16048,7 +16048,7 @@ define([], function () {
 				    "target": "3022",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR八高線(八王子～高麗川)"
+				    "line_name": "line_74"
 			    }
 		    }, {
 			    "data": {
@@ -16057,7 +16057,7 @@ define([], function () {
 				    "target": "3023",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR八高線(八王子～高麗川)"
+				    "line_name": "line_74"
 			    }
 		    }, {
 			    "data": {
@@ -16066,7 +16066,7 @@ define([], function () {
 				    "target": "2988",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -16075,7 +16075,7 @@ define([], function () {
 				    "target": "2989",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -16084,7 +16084,7 @@ define([], function () {
 				    "target": "2994",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -16093,7 +16093,7 @@ define([], function () {
 				    "target": "2995",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -16102,7 +16102,7 @@ define([], function () {
 				    "target": "2996",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -16111,7 +16111,7 @@ define([], function () {
 				    "target": "2997",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -16120,7 +16120,7 @@ define([], function () {
 				    "target": "2990",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -16129,7 +16129,7 @@ define([], function () {
 				    "target": "2991",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -16138,7 +16138,7 @@ define([], function () {
 				    "target": "2992",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -16147,7 +16147,7 @@ define([], function () {
 				    "target": "2993",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR青梅線"
+				    "line_name": "line_72"
 			    }
 		    }, {
 			    "data": {
@@ -16156,7 +16156,7 @@ define([], function () {
 				    "target": "3080",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR常磐線(上野～取手)"
+				    "line_name": "line_75"
 			    }
 		    }, {
 			    "data": {
@@ -16165,7 +16165,7 @@ define([], function () {
 				    "target": "3081",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR常磐線(上野～取手)"
+				    "line_name": "line_75"
 			    }
 		    }, {
 			    "data": {
@@ -16174,7 +16174,7 @@ define([], function () {
 				    "target": "3078",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR常磐線(上野～取手)"
+				    "line_name": "line_75"
 			    }
 		    }, {
 			    "data": {
@@ -16183,7 +16183,7 @@ define([], function () {
 				    "target": "3079",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR常磐線(上野～取手)"
+				    "line_name": "line_75"
 			    }
 		    }, {
 			    "data": {
@@ -16192,7 +16192,7 @@ define([], function () {
 				    "target": "3084",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR常磐線(上野～取手)"
+				    "line_name": "line_75"
 			    }
 		    }, {
 			    "data": {
@@ -16201,7 +16201,7 @@ define([], function () {
 				    "target": "3082",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR常磐線(上野～取手)"
+				    "line_name": "line_75"
 			    }
 		    }, {
 			    "data": {
@@ -16210,7 +16210,7 @@ define([], function () {
 				    "target": "3083",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "JR常磐線(上野～取手)"
+				    "line_name": "line_75"
 			    }
 		    }, {
 			    "data": {
@@ -16219,7 +16219,7 @@ define([], function () {
 				    "target": "3045",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "宇都宮線"
+				    "line_name": "line_76"
 			    }
 		    }, {
 			    "data": {
@@ -16228,7 +16228,7 @@ define([], function () {
 				    "target": "3046",
 				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "宇都宮線"
+				    "line_name": "line_76"
 			    }
 		    }]
 	    }
