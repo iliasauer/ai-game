@@ -1,12 +1,5 @@
 package ru.ifmo.kot.game.model;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import javax.json.Json;
-import javax.json.JsonArray;
-import javax.json.JsonArrayBuilder;
-import javax.json.JsonObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -16,18 +9,8 @@ import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static ru.ifmo.kot.game.model.Graph.CONTENT_KEY;
-import static ru.ifmo.kot.game.model.Graph.EDGE;
-import static ru.ifmo.kot.game.model.Graph.NAME_KEY;
-import static ru.ifmo.kot.game.model.Graph.SOURCE_KEY;
-import static ru.ifmo.kot.game.model.Graph.TARGET_KEY;
-import static ru.ifmo.kot.game.model.Graph.TYPE_KEY;
-import static ru.ifmo.kot.game.model.Graph.VERTEX;
-import static ru.ifmo.kot.game.model.Graph.WEIGHT_KEY;
-
 public class SymbolGraph {
 
-    private static final Logger LOGGER = LogManager.getFormatterLogger(SymbolGraph.class);
     private static final Random USUAL_RANDOM = new Random();
     private Map<String, Map<String, EdgeContent>> adjacencyEdgeMap;
     private Map<String, Integer> vertexIndices;
@@ -60,36 +43,6 @@ public class SymbolGraph {
     public Graph graph() {
         return graph;
     }
-
-    public JsonArray graphAsJson() {
-        final JsonArrayBuilder jsonArrayBuilder = Json.createArrayBuilder();
-        verticesNames.forEach(
-            vertexName -> jsonArrayBuilder.add(vertexAsJson(new JsonVertex(vertexName))));
-        graph.edges().forEach(edge -> jsonArrayBuilder.add(edgeAsJson(
-            new JsonEdge(name(edge.anyVertexIndex()), name(edge.otherVertexIndex()),
-                edge.weight()
-            ))));
-        return jsonArrayBuilder.build();
-    }
-    //	public void printVertices() {
-    //		for (int i = 0; i < verticesNames.size(); i++) {
-    //			System.out.println(i + ": " + verticesNames.get(i));
-    //		}
-    //	}
-    //
-    //	public void printEdges() {
-    //		for (final Edge edge : graph.edges()) {
-    //			final int srcVrtxIndx = edge.anyVertexIndex();
-    //			final int dstVrtxIndx = edge.otherVertexIndex(srcVrtxIndx);
-    //			System.out.println(MessageFormat.format(Edge.STRING_PATTERN,
-    //					name(srcVrtxIndx),
-    //					name(dstVrtxIndx),
-    //					edge.weight()));
-    //		}
-    //	}
-    //	public List<String> verticesNames() {
-    //		return verticesNames;
-    //	}
 
     public EdgeContent takeEdgeContent(final String vertexName1, final String vertexName2) {
         if(adjacencyEdgeMap.containsKey(vertexName1)) {
@@ -164,60 +117,4 @@ public class SymbolGraph {
         return names;
     }
 
-    private JsonObject vertexAsJson(final JsonVertex vertex) {
-        return Json.createObjectBuilder().add(TYPE_KEY, VERTEX).add(
-            CONTENT_KEY, Json.createObjectBuilder().add(NAME_KEY, vertex.getId())).build();
-    }
-
-    private JsonObject edgeAsJson(final JsonEdge edge) {
-        return Json.createObjectBuilder().add(TYPE_KEY, EDGE).add(
-            CONTENT_KEY, Json.createObjectBuilder().add(NAME_KEY, edge.getId()).add(SOURCE_KEY,
-                edge.getSource()
-            ).add(TARGET_KEY, edge.getTarget()).add(
-                WEIGHT_KEY, edge.getWeight())).build();
-    }
-
-    private static class JsonVertex {
-
-        private final String id;
-
-        JsonVertex(final String id) {
-            this.id = id;
-        }
-
-        String getId() {
-            return id;
-        }
-    }
-
-    private static class JsonEdge {
-
-        private final String id;
-        private final String source;
-        private final String target;
-        private final int weight;
-
-        JsonEdge(final String srcVrtxName, final String dstVrtxName, final int weight) {
-            id = srcVrtxName + dstVrtxName;
-            source = srcVrtxName;
-            target = dstVrtxName;
-            this.weight = weight;
-        }
-
-        String getId() {
-            return id;
-        }
-
-        String getSource() {
-            return source;
-        }
-
-        String getTarget() {
-            return target;
-        }
-
-        int getWeight() {
-            return weight;
-        }
-    }
 }

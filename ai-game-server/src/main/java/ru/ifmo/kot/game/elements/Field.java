@@ -2,6 +2,7 @@ package ru.ifmo.kot.game.elements;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.ifmo.kot.game.model.Edge;
 import ru.ifmo.kot.game.model.EdgeContent;
 import ru.ifmo.kot.game.model.SymbolGraph;
 import ru.ifmo.kot.game.util.BinaryRandom;
@@ -12,6 +13,10 @@ import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonString;
+import javax.json.stream.JsonGenerator;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -22,12 +27,12 @@ import java.util.Queue;
 import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import static java.lang.Double.sum;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 import static ru.ifmo.kot.game.elements.ElementsConstants.COEFFICIENT_OF_EDGE_CONTENT_NUMBER;
-import static ru.ifmo.kot.game.elements.ElementsConstants.GAME_MODEL_KEY;
 import static ru.ifmo.kot.game.elements.ElementsConstants.GRID_STEP;
 import static ru.ifmo.kot.game.elements.ElementsConstants.OBSTACLE_MAX_FACTOR;
 import static ru.ifmo.kot.game.elements.ElementsConstants.THRESHOLD_OF_BENEFIT;
@@ -36,6 +41,20 @@ import static ru.ifmo.kot.game.elements.ElementsConstants.VERTICES_FILE_PATH;
 import static ru.ifmo.kot.game.elements.ElementsConstants.VERTICES_NAMES_KEY;
 
 public class Field {
+
+    private static final String FIELD_KEY = "elements";
+    private static final String VERTICES_KEY = "nodes";
+    private static final String EDGES_KEY = "edges";
+    private static final String CONTENT_KEY = "data";
+    private static final String ID_KEY = "id";
+    private static final String NAME_KEY = "name";
+    private static final String SOURCE_KEY = "source";
+    private static final String DESTINATION_KEY = "target";
+    private static final String TYPE_KEY = "type";
+    private static final String WEIGHT_KEY = "weight";
+    private static final String COORDINATES_KEY = "position";
+    private static final String X_KEY = "x";
+    private static final String Y_KEY = "y";
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(Field.class);
     private static Random USUAL_RANDOM = new Random();
@@ -85,7 +104,7 @@ public class Field {
         for (int srcVrtxIndex = 0; srcVrtxIndex < numberOfVertices - 1; srcVrtxIndex++) {
             final int QUEUE_MAX_SIZE = 5;
             final Queue<Map.Entry<Integer, Integer>> dstWeights =
-                new PriorityQueue<>(QUEUE_MAX_SIZE, DstVrtxWeightPair.REVERSED_COMPARATOR);
+                new PriorityQueue<>(QUEUE_MAX_SIZE, DstVrtxWeightPair.reversedComparator());
             for (int dstVrtxIndx = srcVrtxIndex + 1; dstVrtxIndx < numberOfVertices; dstVrtxIndx++) {
                 final int[] srcVrtxCoords = coordinates.get(srcVrtxIndex);
                 final int[] dstVrtxCoords = coordinates.get(dstVrtxIndx);
@@ -167,12 +186,71 @@ public class Field {
         return (int) sqrt(sum(pow(x, 2), pow(y, 2)));
     }
 
-    public SymbolGraph getGameModel() {
-        return gameModel;
+    public String asJson() {
+        try(
+            final Writer jsonStringWriter = new StringWriter();
+        ) {
+            try(
+                final JsonGenerator jsonGenerator = Json.createGenerator(jsonStringWriter);
+            ) {
+                jsonGenerator
+                    .writeStartObject()
+                    .writeStartObject(FIELD_KEY)
+                    .writeStartArray(VERTICES_KEY);
+                writeVertices(jsonGenerator);
+                jsonGenerator.writeEnd()
+                    .writeStartArray(EDGES_KEY);
+                writeEdges(jsonGenerator);
+                jsonGenerator.writeEnd()
+                    .writeEnd()
+                    .writeEnd();
+                jsonGenerator.flush();
+                return jsonStringWriter.toString();
+            }
+        } catch(final IOException e) {
+            LOGGER.error("Internal server error");
+        }
+        return null;
     }
 
-    public JsonObject getGameModelAsJson() {
-        return Json.createObjectBuilder().add(GAME_MODEL_KEY, gameModel.graphAsJson()).build();
+    private void writeVertices(final JsonGenerator jsonGenerator) {
+        IntStream.range(0, coordinates.size()).forEach(i -> {
+            final String name = gameModel.name(i);
+            final int[] coords = coordinates.get(i);
+            jsonGenerator
+                .writeStartObject()
+                .writeStartObject(CONTENT_KEY)
+                .write(ID_KEY, "v" + i)
+                .write(NAME_KEY, name)
+                .writeEnd()
+                .writeStartObject(COORDINATES_KEY)
+                .write(X_KEY, coords[0])
+                .write(Y_KEY, coords[1])
+                .writeEnd()
+                .writeEnd();
+        });
+    }
+
+    private void writeEdges(final JsonGenerator jsonGenerator) {
+        final Iterable<Edge> edges = gameModel.graph().edges();
+        edges.forEach(edge -> {
+            final int srcVrtx = edge.anyVertexIndex();
+            final int dstVrtx = edge.otherVertexIndex();
+            jsonGenerator
+                .writeStartObject()
+                .writeStartObject(CONTENT_KEY)
+                .write(ID_KEY, "v" + srcVrtx + "-" + "v" + dstVrtx)
+                .write(SOURCE_KEY, "v" + srcVrtx)
+                .write(DESTINATION_KEY, "v" + dstVrtx)
+                .write(TYPE_KEY, 2)
+                .write(WEIGHT_KEY, edge.weight())
+                .writeEnd()
+                .writeEnd();
+        });
+    }
+
+    public SymbolGraph getGameModel() {
+        return gameModel;
     }
 
     public String[] getStartVertices() {
