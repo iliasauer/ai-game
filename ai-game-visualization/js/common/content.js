@@ -8,17 +8,17 @@ define([], function () {
 				    "station_name": "Moscow"
 			    },
 			    "position": {
-				    "x": 1397400.2,
-				    "y": -356386.92
+				    "x": 97400,
+				    "y": -6386
 			    }
 		    },  {
 			    "data": {
 				    "id": "v2",
-				    "station_name": "St.Petersburg"
+				    "station_name": "StPetersburg"
 			    },
 			    "position": {
-				    "x": 1397380.9,
-				    "y": -356282.84
+				    "x": 97380,
+				    "y": -6282
 			    }
 		    }, {
 			    "data": {
@@ -26,8 +26,8 @@ define([], function () {
 				    "station_name": "Kaluga"
 			    },
 			    "position": {
-				    "x": 1397391.9100000001,
-				    "y": -356224.58
+				    "x": 97391,
+				    "y": -6224
 			    }
 		    }, {
 			    "data": {
@@ -35,8 +35,8 @@ define([], function () {
 				    "station_name": "Nizhniy Novgorod"
 			    },
 			    "position": {
-				    "x": 1397413.66,
-				    "y": -356176.2
+				    "x": 97413,
+				    "y": -6176
 			    }
 		    }, {
 			    "data": {
@@ -44,8 +44,8 @@ define([], function () {
 				    "station_name": "Gatchina"
 			    },
 			    "position": {
-				    "x": 1397429.58,
-				    "y": -356093.51
+				    "x": 97429,
+				    "y": -6093
 			    }
 		    }, {
 			    "data": {
@@ -53,8 +53,8 @@ define([], function () {
 				    "station_name": "Yaroslavl"
 			    },
 			    "position": {
-				    "x": 1397422.2700000003,
-				    "y": -356049.7700000001
+				    "x": 97422,
+				    "y": -6049
 			    }
 		    }, {
 			    "data": {
@@ -62,8 +62,8 @@ define([], function () {
 				    "station_name": "Smolensk"
 			    },
 			    "position": {
-				    "x": 1397388.86,
-				    "y": -355984.89
+				    "x": 97388,
+				    "y": -5984
 			    }
 		    }, {
 			    "data": {
@@ -71,8 +71,8 @@ define([], function () {
 				    "station_name": "Bryansk"
 			    },
 			    "position": {
-				    "x": 1397354.4,
-				    "y": -355875.76
+				    "x": 97354,
+				    "y": -5875
 			    }
 		    }, {
 			    "data": {
@@ -80,8 +80,8 @@ define([], function () {
 				    "station_name": "Oryol"
 			    },
 			    "position": {
-				    "x": 1397349.1,
-				    "y": -355786.8
+				    "x": 97349,
+				    "y": -5786
 			    }
 		    }, {
 			    "data": {
@@ -89,8 +89,8 @@ define([], function () {
 				    "station_name": "Stary Oskol"
 			    },
 			    "position": {
-				    "x": 1397320.2699999998,
-				    "y": -355724.31
+				    "x": 97320,
+				    "y": -5724
 			    }
 		    }, {
 			    "data": {
@@ -98,8 +98,8 @@ define([], function () {
 				    "station_name": "Salavat"
 			    },
 			    "position": {
-				    "x": 1397282.66,
-				    "y": -355668.73000000004
+				    "x": 97282,
+				    "y": -5668
 			    }
 		    }, {
 			    "data": {
@@ -107,8 +107,8 @@ define([], function () {
 				    "station_name": "Saransk"
 			    },
 			    "position": {
-				    "x": 1397236.81,
-				    "y": -355607.96
+				    "x": 97236,
+				    "y": -5607
 			    }
 		    }, {
 			    "data": {
@@ -116,8 +116,8 @@ define([], function () {
 				    "station_name": "Perm"
 			    },
 			    "position": {
-				    "x": 1397150.0499999998,
-				    "y": -355497.25
+				    "x": 97150,
+				    "y": -5497
 			    }
 		    }, {
 			    "data": {
@@ -125,8 +125,8 @@ define([], function () {
 				    "station_name": "Penza"
 			    },
 			    "position": {
-				    "x": 1397076.0000000002,
-				    "y": -355405.77
+				    "x": 97076,
+				    "y": -5405
 			    }
 		    }, {
 			    "data": {
@@ -134,8 +134,8 @@ define([], function () {
 				    "station_name": "Cheboksary"
 			    },
 			    "position": {
-				    "x": 1398320.35,
-				    "y": -357771.17
+				    "x": 98320,
+				    "y": -7771
 			    }
 		    }, {
 			    "data": {
@@ -143,8 +143,8 @@ define([], function () {
 				    "station_name": "Kazan"
 			    },
 			    "position": {
-				    "x": 1398250.19,
-				    "y": -357622.2199999999
+				    "x": 98250,
+				    "y": -7622
 			    }
 		    }, {
 			    "data": {
@@ -152,8 +152,8 @@ define([], function () {
 				    "station_name": "Ekaterinburg"
 			    },
 			    "position": {
-				    "x": 1398042.7599999998,
-				    "y": -357489.1599999999
+				    "x": 98042,
+				    "y": -7489
 			    }
 		    }, {
 			    "data": {
@@ -161,8 +161,8 @@ define([], function () {
 				    "station_name": "Ufa"
 			    },
 			    "position": {
-				    "x": 1397805.0099999998,
-				    "y": -357427.33
+				    "x": 97805,
+				    "y": -7427
 			    }
 		    }, {
 			    "data": {
@@ -170,8 +170,8 @@ define([], function () {
 				    "station_name": "Naberzhnye Chelny"
 			    },
 			    "position": {
-				    "x": 1397665.11,
-				    "y": -357322.57000000007
+				    "x": 97665,
+				    "y": -7322
 			    }
 		    }, {
 			    "data": {
@@ -179,8 +179,8 @@ define([], function () {
 				    "station_name": "Tambov"
 			    },
 			    "position": {
-				    "x": 1397632.43,
-				    "y": -357255.49
+				    "x": 97632,
+				    "y": -7255
 			    }
 		    }, {
 			    "data": {
@@ -188,8 +188,8 @@ define([], function () {
 				    "station_name": "Vladimir"
 			    },
 			    "position": {
-				    "x": 1397656.55,
-				    "y": -357174.0
+				    "x": 97656,
+				    "y": -7174
 			    }
 		    }, {
 			    "data": {
@@ -197,8 +197,8 @@ define([], function () {
 				    "station_name": "Ivanovo"
 			    },
 			    "position": {
-				    "x": 1397699.16,
-				    "y": -357082.42999999993
+				    "x": 97699,
+				    "y": -7082
 			    }
 		    }, {
 			    "data": {
@@ -206,8 +206,8 @@ define([], function () {
 				    "station_name": "Ryazan"
 			    },
 			    "position": {
-				    "x": 1397660.14,
-				    "y": -356980.72
+				    "x": 97660,
+				    "y": -6980
 			    }
 		    }, {
 			    "data": {
@@ -215,8 +215,8 @@ define([], function () {
 				    "station_name": "Tula"
 			    },
 			    "position": {
-				    "x": 1397633.99,
-				    "y": -356861.5399999999
+				    "x": 97633,
+				    "y": -6861
 			    }
 		    }, {
 			    "data": {
@@ -224,8 +224,8 @@ define([], function () {
 				    "station_name": "Cherepovets"
 			    },
 			    "position": {
-				    "x": 1397619.48,
-				    "y": -356810.71
+				    "x": 97619,
+				    "y": -6810
 			    }
 		    }, {
 			    "data": {
@@ -233,26 +233,26 @@ define([], function () {
 				    "station_name": "Pushkin"
 			    },
 			    "position": {
-				    "x": 1397587.32,
-				    "y": -356742.41
+				    "x": 97587,
+				    "y": -6742
 			    }
-		    }, {
-			    "data": {
-				    "id": "v26-2",
-				    "station_name": "Pushkin"
-			    },
-			    "position": {
-				    "x": 1397587.32,
-				    "y": -356742.41
-			    }
+		    // }, {
+			 //    "data": {
+				//     "id": "v26-2",
+				//     "station_name": "Pushkin"
+			 //    },
+			 //    "position": {
+				//     "x": 97587,
+				//     "y": -6742
+			 //    }
 		    }, {
 			    "data": {
 				    "id": "v27",
 				    "station_name": "Lysva"
 			    },
 			    "position": {
-				    "x": 1397508.99,
-				    "y": -356738.38000000006
+				    "x": 97508,
+				    "y": -6738
 			    }
 		    }, {
 			    "data": {
@@ -260,8 +260,8 @@ define([], function () {
 				    "station_name": "Miass"
 			    },
 			    "position": {
-				    "x": 1397452.19,
-				    "y": -356739.3
+				    "x": 97452,
+				    "y": -6739
 			    }
 		    }, {
 			    "data": {
@@ -269,8 +269,8 @@ define([], function () {
 				    "station_name": "Zheleznogorsk"
 			    },
 			    "position": {
-				    "x": 1397383.48,
-				    "y": -356732.3
+				    "x": 97383,
+				    "y": -6732
 			    }
 		    }, {
 			    "data": {
@@ -278,8 +278,8 @@ define([], function () {
 				    "station_name": "Vladivostok"
 			    },
 			    "position": {
-				    "x": 1397262.15,
-				    "y": -356665.72
+				    "x": 97262,
+				    "y": -6665
 			    }
 		    }, {
 			    "data": {
@@ -287,8 +287,8 @@ define([], function () {
 				    "station_name": "Novosibirsk"
 			    },
 			    "position": {
-				    "x": 1397123.14,
-				    "y": -356652.4699999999
+				    "x": 97123,
+				    "y": -6652
 			    }
 		    }, {
 			    "data": {
@@ -296,8 +296,8 @@ define([], function () {
 				    "station_name": "Tomsk"
 			    },
 			    "position": {
-				    "x": 1397039.95,
-				    "y": -356690.71
+				    "x": 97039,
+				    "y": -6690
 			    }
 		    }, {
 			    "data": {
@@ -305,8 +305,8 @@ define([], function () {
 				    "station_name": "Grozny"
 			    },
 			    "position": {
-				    "x": 1396890.99,
-				    "y": -356691.87
+				    "x": 96890,
+				    "y": -6691
 			    }
 		    }, {
 			    "data": {
@@ -314,8 +314,8 @@ define([], function () {
 				    "station_name": "Makhachkala"
 			    },
 			    "position": {
-				    "x": 1396801.5299999998,
-				    "y": -356691.59
+				    "x": 96801,
+				    "y": -6691
 			    }
 		    }, {
 			    "data": {
@@ -323,8 +323,8 @@ define([], function () {
 				    "station_name": "Sterlitamak"
 			    },
 			    "position": {
-				    "x": 1396314.97,
-				    "y": -357765.57000000007
+				    "x": 96314,
+				    "y": -7765
 			    }
 		    }, {
 			    "data": {
@@ -332,8 +332,8 @@ define([], function () {
 				    "station_name": "Vladikavkaz"
 			    },
 			    "position": {
-				    "x": 1396440.2100000002,
-				    "y": -357699.39
+				    "x": 96440,
+				    "y": -7699
 			    }
 		    }, {
 			    "data": {
@@ -341,8 +341,8 @@ define([], function () {
 				    "station_name": "Tver"
 			    },
 			    "position": {
-				    "x": 1396537.62,
-				    "y": -357578.63
+				    "x": 96537,
+				    "y": -7578
 			    }
 		    }, {
 			    "data": {
@@ -350,8 +350,8 @@ define([], function () {
 				    "station_name": "Kizlyar"
 			    },
 			    "position": {
-				    "x": 1396655.67,
-				    "y": -357495.5
+				    "x": 96655,
+				    "y": -7495
 			    }
 		    }, {
 			    "data": {
@@ -359,8 +359,8 @@ define([], function () {
 				    "station_name": "Pyatigorsk"
 			    },
 			    "position": {
-				    "x": 1396785.72,
-				    "y": -357438.02999999997
+				    "x": 96785,
+				    "y": -7438
 			    }
 		    }, {
 			    "data": {
@@ -368,8 +368,8 @@ define([], function () {
 				    "station_name": "Astrakhan"
 			    },
 			    "position": {
-				    "x": 1396892.71,
-				    "y": -357382.29
+				    "x": 96892,
+				    "y": -7382
 			    }
 		    }, {
 			    "data": {
@@ -377,8 +377,8 @@ define([], function () {
 				    "station_name": "Sevastopol"
 			    },
 			    "position": {
-				    "x": 1396987.15,
-				    "y": -357332.3
+				    "x": 96987,
+				    "y": -7332
 			    }
 		    }, {
 			    "data": {
@@ -386,8 +386,8 @@ define([], function () {
 				    "station_name": "Simferopol"
 			    },
 			    "position": {
-				    "x": 1397100.88,
-				    "y": -357295.65
+				    "x": 97100,
+				    "y": -7295
 			    }
 		    }, {
 			    "data": {
@@ -395,8 +395,8 @@ define([], function () {
 				    "station_name": "Sochi"
 			    },
 			    "position": {
-				    "x": 1397195.4600000002,
-				    "y": -357257.32
+				    "x": 97195,
+				    "y": -7257
 			    }
 		    }, {
 			    "data": {
@@ -404,8 +404,8 @@ define([], function () {
 				    "station_name": "Krasnoyarsk"
 			    },
 			    "position": {
-				    "x": 1397275.4000000001,
-				    "y": -357190.43999999994
+				    "x": 97275,
+				    "y": -7190
 			    }
 		    }, {
 			    "data": {
@@ -413,8 +413,8 @@ define([], function () {
 				    "station_name": "Izhevsk"
 			    },
 			    "position": {
-				    "x": 1397335.38,
-				    "y": -357094.95
+				    "x": 97335,
+				    "y": -7094
 			    }
 		    }, {
 			    "data": {
@@ -422,8 +422,8 @@ define([], function () {
 				    "station_name": "Irkutsk"
 			    },
 			    "position": {
-				    "x": 1397436.69,
-				    "y": -357019.34
+				    "x": 97436,
+				    "y": -7019
 			    }
 		    }, {
 			    "data": {
@@ -431,8 +431,8 @@ define([], function () {
 				    "station_name": "Nalchik"
 			    },
 			    "position": {
-				    "x": 1397364.7,
-				    "y": -356919.58
+				    "x": 97364,
+				    "y": -6919
 			    }
 		    }, {
 			    "data": {
@@ -440,8 +440,8 @@ define([], function () {
 				    "station_name": "Kislovodsk"
 			    },
 			    "position": {
-				    "x": 1397376.13,
-				    "y": -356840.05999999994
+				    "x": 97376,
+				    "y": -6840
 			    }
 		    }, {
 			    "data": {
@@ -449,8 +449,8 @@ define([], function () {
 				    "station_name": "Omsk"
 			    },
 			    "position": {
-				    "x": 1397402.58,
-				    "y": -356787.56999999995
+				    "x": 97402,
+				    "y": -6787
 			    }
 		    }, {
 			    "data": {
@@ -458,8 +458,8 @@ define([], function () {
 				    "station_name": "Chita"
 			    },
 			    "position": {
-				    "x": 1397514.9,
-				    "y": -356774.05
+				    "x": 97514,
+				    "y": -6774
 			    }
 		    }, {
 			    "data": {
@@ -467,8 +467,8 @@ define([], function () {
 				    "station_name": "Bratsk"
 			    },
 			    "position": {
-				    "x": 1397632.65,
-				    "y": -356757.14
+				    "x": 97632,
+				    "y": -6757
 			    }
 		    }, {
 			    "data": {
@@ -476,8 +476,8 @@ define([], function () {
 				    "station_name": "Anadyr"
 			    },
 			    "position": {
-				    "x": 1397670.45,
-				    "y": -356743.49999999994
+				    "x": 97670,
+				    "y": -6743
 			    }
 		    }, {
 			    "data": {
@@ -485,8 +485,8 @@ define([], function () {
 				    "station_name": "Birobidzhan"
 			    },
 			    "position": {
-				    "x": 1397737.11,
-				    "y": -356704.62
+				    "x": 97737,
+				    "y": -6704
 			    }
 		    }, {
 			    "data": {
@@ -494,8 +494,8 @@ define([], function () {
 				    "station_name": "Petropavlovsk-Kamchatsky"
 			    },
 			    "position": {
-				    "x": 1397842.33,
-				    "y": -356648.7100000001
+				    "x": 97842,
+				    "y": -6648
 			    }
 		    }, {
 			    "data": {
@@ -503,8 +503,8 @@ define([], function () {
 				    "station_name": "Tolyatti"
 			    },
 			    "position": {
-				    "x": 1397962.1,
-				    "y": -356549.08
+				    "x": 97962,
+				    "y": -6549
 			    }
 		    }, {
 			    "data": {
@@ -512,8 +512,8 @@ define([], function () {
 				    "station_name": "Kirov"
 			    },
 			    "position": {
-				    "x": 1398105.2,
-				    "y": -356455.76
+				    "x": 98105,
+				    "y": -6455
 			    }
 		    }, {
 			    "data": {
@@ -521,8 +521,8 @@ define([], function () {
 				    "station_name": "Kotlas"
 			    },
 			    "position": {
-				    "x": 1398262.54,
-				    "y": -356458.32
+				    "x": 98262,
+				    "y": -6458
 			    }
 		    }],
 		    "edges": [{
@@ -913,14 +913,14 @@ define([], function () {
 			    "data": {
 				    "id": "e49",
 				    "source": "v50",
-				    "target": "v26-2",
+				    "target": "v26-1",
 				    "company_type": 3,
 				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e50",
-				    "source": "v26-2",
+				    "source": "v26-1",
 				    "target": "v51",
 				    "company_type": 3,
 				    "line_name": "line 3"
