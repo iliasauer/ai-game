@@ -9,6 +9,7 @@ import javax.websocket.EndpointConfig;
 /**
  Created on 12.06.16.
  */
+@SuppressWarnings("WeakerAccess")
 public class FieldEncoder implements Encoder.Text<Field> {
     
     @Override

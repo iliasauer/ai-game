@@ -2,9 +2,11 @@
 require(["./requirejs/config"], function() {
     //  App entry point
     require([
-        './controllers/mainController'
+        './controllers/mainController',
+        './controllers/webSocketController'
 
-    ], function(mainController) {
+    ], function(mainController, webSocketController) {
         mainController.render();
+        webSocketController.connectWs();
     });
 });

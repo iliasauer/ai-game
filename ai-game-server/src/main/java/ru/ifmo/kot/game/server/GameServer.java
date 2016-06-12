@@ -294,6 +294,7 @@ public class GameServer {
         sendMessage(client, command, ResponseStatus.OK);
     }
 
+    @SuppressWarnings("WeakerAccess")
     public static class Game {
         private ConcurrentMap<String, ResponseStatus> turnMap = new ConcurrentHashMap<>(2);
         private volatile int turnCounter = 0;

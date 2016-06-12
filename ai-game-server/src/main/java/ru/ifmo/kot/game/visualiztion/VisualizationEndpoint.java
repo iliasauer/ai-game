@@ -27,7 +27,9 @@ public class VisualizationEndpoint {
 	public void addVisualiser(final Session session) {
 		VISUALIZERS.offer(session);
 		LOGGER.debug("The visualizer %s was added successfully", session.getId());
-		sendMessage(GameServer.game().field());
+		final Field field = GameServer.game().field();
+		sendMessage(field);
+		sendMessage(field.getStartVerticesJson());
 	}
 
 	@OnClose
@@ -47,19 +49,21 @@ public class VisualizationEndpoint {
 		LOGGER.info("The visualizer %s: %s", session.getId(), message);
 	}
 
-	public static void sendMessage(final String message) throws IOException {
-		for (final Session session: VISUALIZERS) {
-			if (session.isOpen()) {
+	public static void sendMessage(final String message) {
+		VISUALIZERS.stream().filter(Session:: isOpen).forEach(session -> {
+			try {
 				session.getBasicRemote().sendText(message);
+			} catch(final IOException e) {
+				LOGGER.error("Internal server error");
 			}
-		}
+		});
 	}
 
 	public static void sendMessage(final Field field) {
 		VISUALIZERS.stream().filter(Session:: isOpen).forEach(session -> {
 			try {
 				session.getBasicRemote().sendObject(field);
-			} catch(IOException | EncodeException e) {
+			} catch(final IOException | EncodeException e) {
 				LOGGER.error("Internal server error");
 			}
 		});

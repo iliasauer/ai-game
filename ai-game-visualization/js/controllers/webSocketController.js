@@ -1,21 +1,18 @@
 define(['jquery',
 		'../common/constants',
-		'../common/fieldBuilder'],
+		'./gameController'],
 	function ($,
-	          constants,
-	          fieldBuilder) {
+	          constants, 
+	          gameController) {
 
 		const WS_URL = constants.WS_URL;
 		const GREETING = 'The connection is open';
 		var ws;
 		var gameField;
+		var startNodes;
 
 		function getGameField() {
-			if (gameField) {
-				return gameField;
-			} else {
-				setTimeout(getGameField, 100);
-			}
+			return gameField;
 		}
 
 		function greetServer() {
@@ -27,6 +24,12 @@ define(['jquery',
 			const JSON_MESSAGE = JSON.parse(message.data);
 			if (JSON_MESSAGE.elements) {
 				gameField = JSON_MESSAGE;
+				gameController.drawField(gameField);
+			} else {
+				if (JSON_MESSAGE.start !== undefined) {
+					startNodes = JSON_MESSAGE;
+					gameController.setStartNodes(startNodes);
+				}
 			}
 		}
 

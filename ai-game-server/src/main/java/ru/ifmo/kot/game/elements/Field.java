@@ -95,13 +95,9 @@ public class Field {
         LOGGER.info("Players should go from %s to %s", startVertices[0], startVertices[1]);
     }
 
-    public List<int[]> getCoordinates() {
-        return coordinates;
-    }
-
     private void connectVertices() {
         final int numberOfVertices = coordinates.size();
-        for (int srcVrtxIndex = 0; srcVrtxIndex < numberOfVertices - 1; srcVrtxIndex++) {
+        for (int srcVrtxIndex = 0; srcVrtxIndex < numberOfVertices; srcVrtxIndex++) {
             final int QUEUE_MAX_SIZE = 5;
             final Queue<Map.Entry<Integer, Integer>> dstWeights =
                 new PriorityQueue<>(QUEUE_MAX_SIZE, DstVrtxWeightPair.reversedComparator());
@@ -191,10 +187,10 @@ public class Field {
 
     public String asJson() {
         try(
-            final Writer jsonStringWriter = new StringWriter();
+            final Writer jsonStringWriter = new StringWriter()
         ) {
             try(
-                final JsonGenerator jsonGenerator = Json.createGenerator(jsonStringWriter);
+                final JsonGenerator jsonGenerator = Json.createGenerator(jsonStringWriter)
             ) {
                 jsonGenerator
                     .writeStartObject()
@@ -258,6 +254,27 @@ public class Field {
 
     public String[] getStartVertices() {
         return startVertices;
+    }
+
+    public String getStartVerticesJson() {
+        try(
+            final Writer jsonStringWriter = new StringWriter()
+        ) {
+            try(
+                final JsonGenerator jsonGenerator = Json.createGenerator(jsonStringWriter)
+            ) {
+                jsonGenerator
+                    .writeStartObject()
+                        .write("start", gameModel.index(startVertices[0]))
+                        .write("finish", gameModel.index(startVertices[1]))
+                    .writeEnd();
+                jsonGenerator.flush();
+                return jsonStringWriter.toString();
+            }
+        } catch(final IOException e) {
+            LOGGER.error("Internal server error");
+        }
+        return null;
     }
 
     public Set<String> getNextVertices(final String vertexName) {

@@ -32,7 +32,7 @@ public class SymbolGraph {
         return verticesNames.contains(vertexName);
     }
 
-    private int index(final String vertexName) {
+    public int index(final String vertexName) {
         return vertexIndices.get(vertexName);
     }
 
