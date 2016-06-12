@@ -48,20 +48,21 @@ public class SymbolGraph {
         }
         graph = new UndirectedWeightedGraph(verticesNames.size());
         adjacencyEdgeMap = new HashMap<>();
-        graph.edges().forEach(edge -> {
-            final String vrtxName1 = name(edge.anyVertexIndex());
-            final String vrtxName2 = name(edge.otherVertexIndex());
-            final double edgeCoeff = edgeCoefficient(edge.weight());
-            if(BINARY_RANDOM.nextBoolean()) {
-                if(edgeCoeff < THRESHOLD_OF_BENEFIT) {
-                    putEdge(vrtxName1, vrtxName2, EdgeContent.BENEFIT);
-                    LOGGER.debug("On %s-%s benefit was added", vrtxName1, vrtxName2);
-                } else if (edgeCoeff > THRESHOLD_OF_OBSTACLE) {
-                    putEdge(vrtxName1, vrtxName2, EdgeContent.OBSTACLE);
-                    LOGGER.debug("On %s-%s obstacle was added", vrtxName1, vrtxName2);
-                }
-            }
-        });
+        verticesNames.forEach(vertexName -> adjacencyEdgeMap.put(vertexName, new HashMap<>()));
+//        graph.edges().forEach(edge -> {
+//            final String vrtxName1 = name(edge.anyVertexIndex());
+//            final String vrtxName2 = name(edge.otherVertexIndex());
+//            final double edgeCoeff = edgeCoefficient(edge.weight());
+//            if(BINARY_RANDOM.nextBoolean()) {
+//                if(edgeCoeff < THRESHOLD_OF_BENEFIT) {
+//                    putEdge(vrtxName1, vrtxName2, EdgeContent.BENEFIT);
+//                    LOGGER.debug("On %s-%s benefit was added", vrtxName1, vrtxName2);
+//                } else if (edgeCoeff > THRESHOLD_OF_OBSTACLE) {
+//                    putEdge(vrtxName1, vrtxName2, EdgeContent.OBSTACLE);
+//                    LOGGER.debug("On %s-%s obstacle was added", vrtxName1, vrtxName2);
+//                }
+//            }
+//        });
     }
 
     private double edgeCoefficient(final double weight) {
@@ -145,9 +146,6 @@ public class SymbolGraph {
     private void putOneSideEdge(
         final String vertexName1, final String vertexName2, final EdgeContent content
     ) {
-        if(!adjacencyEdgeMap.containsKey(vertexName1)) {
-            adjacencyEdgeMap.put(vertexName1, new HashMap<>());
-        }
         adjacencyEdgeMap.get(vertexName1).put(vertexName2, content);
     }
 

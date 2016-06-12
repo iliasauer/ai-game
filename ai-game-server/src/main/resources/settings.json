@@ -6,6 +6,7 @@
   },
   "elements": {
     "verticesFilePath": "vertices.json",
+    "gridStep": 100,
     "numberOfLives": 3,
     "turnPoints": 100,
     "obstacleMaxFactor": 1.3,

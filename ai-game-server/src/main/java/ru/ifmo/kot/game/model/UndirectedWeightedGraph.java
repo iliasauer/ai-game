@@ -35,19 +35,19 @@ class UndirectedWeightedGraph implements Graph {
         for (int i = 0; i < numberOfVertices; i++) {
             adjacencyEdgeList.add(new HashMap<>());
         }
-        for (int srcVrtxIndex = 0; srcVrtxIndex < numberOfVertices - 1; srcVrtxIndex++) {
-            for (int dstVrtxIndx = srcVrtxIndex + 1; dstVrtxIndx < numberOfVertices; dstVrtxIndx++) {
-                if (BINARY_RANDOM.nextBoolean()) {
-                    final int weight = nextWeight(srcVrtxIndex, dstVrtxIndx);
-                    putEdge(srcVrtxIndex, dstVrtxIndx, weight);
-                }
-            }
-        }
-        collectMainVerticesSet();
-        if (! hasSpanningTree()) {
-            fillGaps();
-            collectMainVerticesSet();
-        }
+//        for (int srcVrtxIndex = 0; srcVrtxIndex < numberOfVertices - 1; srcVrtxIndex++) {
+//            for (int dstVrtxIndx = srcVrtxIndex + 1; dstVrtxIndx < numberOfVertices; dstVrtxIndx++) {
+//                if (BINARY_RANDOM.nextBoolean()) {
+//                    final int weight = nextWeight(srcVrtxIndex, dstVrtxIndx);
+//                    putEdge(srcVrtxIndex, dstVrtxIndx, weight);
+//                }
+//            }
+//        }
+//        collectMainVerticesSet();
+//        if (! hasSpanningTree()) {
+//            fillGaps();
+//            collectMainVerticesSet();
+//        }
     }
 
     @Override
