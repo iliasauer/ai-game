@@ -229,7 +229,16 @@ define([], function () {
 			    }
 		    }, {
 			    "data": {
-				    "id": "v26",
+				    "id": "v26-1",
+				    "station_name": "Pushkin"
+			    },
+			    "position": {
+				    "x": 1397587.32,
+				    "y": -356742.41
+			    }
+		    }, {
+			    "data": {
+				    "id": "v26-2",
 				    "station_name": "Pushkin"
 			    },
 			    "position": {
@@ -727,7 +736,7 @@ define([], function () {
 			    "data": {
 				    "id": "e24",
 				    "source": "v25",
-				    "target": "v26",
+				    "target": "v26-1",
 				    "is_bullet": false,
 				    "company_type": 2,
 				    "line_name": "line_2"
@@ -735,7 +744,7 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "e25",
-				    "source": "v26",
+				    "source": "v26-1",
 				    "target": "v27",
 				    "is_bullet": false,
 				    "company_type": 2,
@@ -951,6 +960,24 @@ define([], function () {
 		    }, {
 			    "data": {
 				    "id": "e49",
+				    "source": "v50",
+				    "target": "v26-2",
+				    "is_bullet": false,
+				    "company_type": 3,
+				    "line_name": "line_3"
+			    }
+		    }, {
+			    "data": {
+				    "id": "e50",
+				    "source": "v26-2",
+				    "target": "v51",
+				    "is_bullet": false,
+				    "company_type": 3,
+				    "line_name": "line_3"
+			    }
+		    }, {
+			    "data": {
+				    "id": "e51",
 				    "source": "v51",
 				    "target": "v52",
 				    "is_bullet": false,
@@ -959,7 +986,7 @@ define([], function () {
 			    }
 		    }, {
 			    "data": {
-				    "id": "e50",
+				    "id": "e52",
 				    "source": "v52",
 				    "target": "v53",
 				    "is_bullet": false,
@@ -968,7 +995,7 @@ define([], function () {
 			    }
 		    }, {
 			    "data": {
-				    "id": "e51",
+				    "id": "e53",
 				    "source": "v53",
 				    "target": "v54",
 				    "is_bullet": false,
@@ -977,7 +1004,7 @@ define([], function () {
 			    }
 		    }, {
 			    "data": {
-				    "id": "e52",
+				    "id": "e54",
 				    "source": "v54",
 				    "target": "v55",
 				    "is_bullet": false,
@@ -986,7 +1013,7 @@ define([], function () {
 			    }
 		    }, {
 			    "data": {
-				    "id": "e53",
+				    "id": "e55",
 				    "source": "v55",
 				    "target": "v56",
 				    "is_bullet": false,
@@ -995,7 +1022,7 @@ define([], function () {
 			    }
 		    }, {
 			    "data": {
-				    "id": "e54",
+				    "id": "e56",
 				    "source": "v56",
 				    "target": "v57",
 				    "is_bullet": false,

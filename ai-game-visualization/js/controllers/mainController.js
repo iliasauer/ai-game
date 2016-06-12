@@ -10,21 +10,21 @@
  - using `min-zoomed-font-size` to show labels only when needed for better performance
  */
 define([
-    '../common/util/templateUtil',
-    'text!../../templates/app.hbs',
-    '../common/util/handlebarsUtil',
-    '../common/content',
-    'cytoscape', 
-    'jquery', 
-    'jqueryQtip', 
-    'cytoscapeQtip',
-    './webSocketController'],
+        '../common/util/templateUtil',
+        'text!../../templates/app.hbs',
+        '../common/util/handlebarsUtil',
+        '../common/content',
+        'cytoscape',
+        'jquery',
+        'jqueryQtip',
+        'cytoscapeQtip',
+        './webSocketController'],
     function (templateUtil,
               appTemplate,
               hbUtil,
               content,
-              cytoscape, 
-              $, 
+              cytoscape,
+              $,
               jqQtip,
               cyQtip,
               webSocketController) {
@@ -72,108 +72,156 @@ define([
                     // render
                     motionBlur: true // this is beautiful but can decrease the performance
                 });
-                
+
+                createCrossTransitions();
                 bindRouters();
             }
 
-            var start, end;
-            var $body = $('body');
+            function createCrossTransitions() {
+                // because the source data doesn't connect nodes properly, use the cytoscape api to mend it:
+
+                var i, name, nbin;
+                
+                cy.startBatch(); //starts batching manually (an manipulation of elements without triggering style calculations or multiple redraw)
+
+                // put nodes in bins based on name
+                var nodes = cy.nodes(); // get nodes in the graph matching the specified selector (all nodes if no selector)
+                var bin = {}; // Map<String, List<?>> where key = name, value = List of nodes
+                var metanames = []; // names that are repeated
+                for (i = 0; i < nodes.length; i++) {
+                    var node = nodes[i];
+                    name = node.data('station_name');
+                    nbin = bin[name] = bin[name] || []; // reference to List of nodes
+
+                    nbin.push(node); // several nodes with the same name ??? yes
+
+                    if (nbin.length === 2) {
+                        metanames.push(name); // if at least 2 nodes with the same name then add them to metanames list
+                    }
+                }
+
+                // connect all nodes together with walking edges
+                for (i = 0; i < metanames.length; i++) {
+                    name = metanames[i];
+                    nbin = bin[name]; // list of nodes with the same name
+
+                    for (var j = 0; j < nbin.length; j++) {
+                        for (var k = j + 1; k < nbin.length; k++) {
+                            var nj = nbin[j]; // the node
+                            var nk = nbin[k]; // the next node
+
+                            cy.add({ // add an edge between the node an the next node
+                                group: 'edges',
+                                data: {
+                                    source: nj.id(),
+                                    target: nk.id(),
+                                    is_walking: true // you can walk from the station (node) to the next station (node)
+                                }
+                            });
+
+                            //.css({
+                            //    'line-color': 'yellow'
+                            // });
+                        }
+                    }
+
+                }
+
+                cy.endBatch(); //.autolock( true ); ends batching manually
+            }
+
+            var start, end; // vars for the start node element and the end node element
+            var $body = $('body'); // memorize the html body in the variable (to save state???!!!)
 
             function selectStart(node) {
-                clear();
+                clear(); // see clear() description
 
-                $body.addClass('has-start');
+                $body.addClass('has-start'); // set has-start state for the map
 
-                start = node;
+                start = node; // set the start node element
 
-                start.addClass('start');
+                start.addClass('start'); // add start class to the start node element
             }
 
             function selectEnd(node) {
-                $body.addClass('has-end calc');
+                $body.addClass('has-end calc'); // set has-end state for the map and show a loading cover while the way calculation is executed
 
-                end = node;
+                end = node; // set the end node element
 
-                cy.startBatch();
+                cy.startBatch();  //starts batching manually (an manipulation of elements without triggering style calculations or multiple redraw)
 
                 end.addClass('end');
 
                 setTimeout(function () {
+                    // A star search (* if no weight function is defined, a constant weight of 1 is used for each edge)
                     var aStar = cy.elements().aStar({
                         root: start,
-                        goal: end,
-                        weight: function (e) {
-                            if (e.data('is_walking')) {
-                                return 0.25; // assume very little time to walk inside stn
-                            }
-
-                            return e.data('is_bullet') ? 1 : 3; // assume bullet is ~3x faster
-                        }
+                        goal: end
                     });
 
-                    if (!aStar.found) {
-                        $body.removeClass('calc');
-                        clear();
+                    if (!aStar.found) { // if the shortest path was not found then show nothing
+                        $body.removeClass('calc'); // remove a loading cover because the way calculation is completed
+                        clear(); // see clear() description
 
-                        cy.endBatch();
+                        cy.endBatch(); // ends batching manually
                         return;
                     }
 
-                    cy.elements().not(aStar.path).addClass('not-path');
-                    aStar.path.addClass('path');
+                    cy.elements().not(aStar.path).addClass('not-path'); // mark all elements that are not in the path with class as 'not-path'
+                    aStar.path.addClass('path'); // mark all elements that are in the path with class as 'path'
 
-                    cy.endBatch();
+                    cy.endBatch(); // ends batching manually
 
-                    $body.removeClass('calc');
+                    $body.removeClass('calc'); // remove a loading cover because the way calculation is completed
                 }, 300);
             }
 
             function clear() {
-                $body.removeClass('has-start has-end');
-                cy.elements().removeClass('path not-path start end');
+                $body.removeClass('has-start has-end'); // remove earlier selected start and end
+                cy.elements().removeClass('path not-path start end'); // and remove the path from start to end
             }
 
             function bindRouters() {
 
-                var $clear = $('#clear');
+                var $clear = $('#clear'); // memorize the clear button in the variable
+                $clear.on('click', clear);
 
+                // for each node qtip is defined by a function
                 cy.nodes().qtip({
                     content: {
                         text: function () {
-                            var $ctr = $('<div class="select-buttons"></div>');
-                            var $start = $('<button id="start">START</button>');
-                            var $end = $('<button id="end">END</button>');
+                            var $ctr = $('<div class="select-buttons"></div>'); // buttons block in the var
+                            var $start = $('<button id="start">START</button>'); // start button in the var
+                            var $end = $('<button id="end">END</button>'); // stop button in the var
 
                             $start.on('click', function () {
-                                var n = cy.$('node:selected');
+                                var n = cy.$('node:selected'); // memorize selected node element in the var
 
-                                selectStart(n);
+                                selectStart(n); // mark this node element as the start
 
-                                n.qtip('api').hide();
+                                n.qtip('api').hide(); // hide the start qtip
                             });
 
                             $end.on('click', function () {
-                                var n = cy.$('node:selected');
+                                var n = cy.$('node:selected'); // memorize selected node element in the var
 
-                                selectEnd(n);
+                                selectEnd(n); // mark this node element as the end
 
-                                n.qtip('api').hide();
+                                n.qtip('api').hide(); // hide the end qtip
                             });
 
-                            $ctr.append($start).append($end);
+                            $ctr.append($start).append($end); // add the start and the end buttons to the button block
 
-                            return $ctr;
+                            return $ctr; // return buttons block
                         }
                     },
                     show: {
-                        solo: true
+                        solo: true // hides all others qtips when shown
                     },
+                    // we want to position my qtip {my} corner at the {at} of my target
                     position: {
                         my: 'top center',
-                        at: 'bottom center',
-                        adjust: {
-                            method: 'flip'
-                        }
+                        at: 'bottom center'
                     },
                     style: {
                         classes: 'qtip-bootstrap',
@@ -184,7 +232,6 @@ define([
                     }
                 });
 
-                $clear.on('click', clear);
             }
         }
 
