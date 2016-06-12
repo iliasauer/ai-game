@@ -2,7 +2,9 @@ package ru.ifmo.kot.game.elements;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.ifmo.kot.game.model.EdgeContent;
 import ru.ifmo.kot.game.model.SymbolGraph;
+import ru.ifmo.kot.game.util.BinaryRandom;
 import ru.ifmo.kot.game.util.RandomUtil;
 import ru.ifmo.kot.settings.JsonFileReader;
 
@@ -12,7 +14,11 @@ import javax.json.JsonObject;
 import javax.json.JsonString;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -20,12 +26,21 @@ import java.util.stream.Collectors;
 import static java.lang.Double.sum;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
-import static ru.ifmo.kot.game.elements.ElementsConstants.*;
+import static ru.ifmo.kot.game.elements.ElementsConstants.COEFFICIENT_OF_EDGE_CONTENT_NUMBER;
+import static ru.ifmo.kot.game.elements.ElementsConstants.GAME_MODEL_KEY;
+import static ru.ifmo.kot.game.elements.ElementsConstants.GRID_STEP;
+import static ru.ifmo.kot.game.elements.ElementsConstants.OBSTACLE_MAX_FACTOR;
+import static ru.ifmo.kot.game.elements.ElementsConstants.THRESHOLD_OF_BENEFIT;
+import static ru.ifmo.kot.game.elements.ElementsConstants.THRESHOLD_OF_OBSTACLE;
+import static ru.ifmo.kot.game.elements.ElementsConstants.VERTICES_FILE_PATH;
+import static ru.ifmo.kot.game.elements.ElementsConstants.VERTICES_NAMES_KEY;
 
 public class Field {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(Field.class);
     private static Random USUAL_RANDOM = new Random();
+    private static final BinaryRandom BINARY_RANDOM =
+        new BinaryRandom(COEFFICIENT_OF_EDGE_CONTENT_NUMBER);
     private static final double MIN_WEIGHT_FACTOR = 1.1;
     private List<int[]> coordinates;
     private SymbolGraph gameModel;
@@ -46,15 +61,70 @@ public class Field {
                     verticesNamesArray.getValuesAs(JsonString.class).stream()
                             .collect(Collectors.mapping(
                                     JsonString::getString, Collectors.toList()));
-            coordinates = distributeVerticesCoordinates(verticesNames.size());
+            final int numberOfVertices = verticesNames.size();
+            coordinates = distributeVerticesCoordinates(numberOfVertices);
             gameModel = new SymbolGraph(verticesNames);
+            connectVertices();
+            arrangeEdgeContent();
+
         } else {
             LOGGER.error("Vertices names are not specified");
         }
-//        final List<String> startVerticesList = gameModel.randomVertexNamesPair();
-//        startVertices = new String[startVerticesList.size()];
-//        startVerticesList.toArray(startVertices);
-//        LOGGER.info("Players should go from %s to %s", startVertices[0], startVertices[1]);
+        final List<String> startVerticesList = gameModel.randomVertexNamesPair();
+        startVertices = new String[startVerticesList.size()];
+        startVerticesList.toArray(startVertices);
+        LOGGER.info("Players should go from %s to %s", startVertices[0], startVertices[1]);
+    }
+
+    public List<int[]> getCoordinates() {
+        return coordinates;
+    }
+
+    private void connectVertices() {
+        final int numberOfVertices = coordinates.size();
+        for (int srcVrtxIndex = 0; srcVrtxIndex < numberOfVertices - 1; srcVrtxIndex++) {
+            final int QUEUE_MAX_SIZE = 10;
+            final Queue<Map.Entry<Integer, Integer>> dstWeights =
+                new PriorityQueue<>(QUEUE_MAX_SIZE, DstVrtxWeightPair.REVERSED_COMPARATOR);
+            for (int dstVrtxIndx = srcVrtxIndex + 1; dstVrtxIndx < numberOfVertices; dstVrtxIndx++) {
+                final int[] srcVrtxCoords = coordinates.get(srcVrtxIndex);
+                final int[] dstVrtxCoords = coordinates.get(dstVrtxIndx);
+                final int weight = calculateWeight(srcVrtxCoords, dstVrtxCoords);
+                dstWeights.offer(new DstVrtxWeightPair(dstVrtxIndx, weight));
+                if(dstWeights.size() > QUEUE_MAX_SIZE) {
+                    dstWeights.poll();
+                }
+            }
+            final int currentNumberOfEdges = gameModel.graph().nextVertices(srcVrtxIndex).size();
+            final int numberOfEdges = USUAL_RANDOM.nextInt(4) + 2 - currentNumberOfEdges;
+            final Map.Entry<Integer, Integer>[] dstWeightArr = new DstVrtxWeightPair[dstWeights.size()];
+            dstWeights.toArray(dstWeightArr);
+            for (int i = 0; i < numberOfEdges; i++) {
+                final Map.Entry<Integer, Integer> dstVrtxWeightPair = dstWeightArr[i];
+                gameModel.graph().putEdge(srcVrtxIndex, dstVrtxWeightPair.getKey(), dstVrtxWeightPair.getValue());
+            }
+        }
+    }
+
+    private void arrangeEdgeContent() {
+        gameModel.graph().edges().forEach(edge -> {
+            final String vrtxName1 = gameModel.name(edge.anyVertexIndex());
+            final String vrtxName2 = gameModel.name(edge.otherVertexIndex());
+            final double edgeCoeff = edgeCoefficient(edge.weight());
+            if(BINARY_RANDOM.nextBoolean()) {
+                if(edgeCoeff < THRESHOLD_OF_BENEFIT) {
+                    gameModel.putEdge(vrtxName1, vrtxName2, EdgeContent.BENEFIT);
+                    LOGGER.debug("On %s-%s benefit was added", vrtxName1, vrtxName2);
+                } else if (edgeCoeff > THRESHOLD_OF_OBSTACLE) {
+                    gameModel.putEdge(vrtxName1, vrtxName2, EdgeContent.OBSTACLE);
+                    LOGGER.debug("On %s-%s obstacle was added", vrtxName1, vrtxName2);
+                }
+            }
+        });
+    }
+
+    private double edgeCoefficient(final double weight) {
+        return weight / gameModel.graph().maxWeight();
     }
 
     private List<int[]> distributeVerticesCoordinates(final int numberOfVertices) {
@@ -72,7 +142,6 @@ public class Field {
         final int rowsNum = Math.max(2, numSqrt - 1);
         final int colsNum = numSqrt + 2;
         final int[][][] grid = new int[rowsNum][colsNum][2];
-        int verticesCounter = 0;
         final List<int[]> verticesCoordinates = new ArrayList<>();
         for(int i = 0; i < rowsNum; i++) {
             for(int j = 0; j < colsNum; j++) {
@@ -81,17 +150,15 @@ public class Field {
                     coords[0] = j * step + USUAL_RANDOM.nextInt(step);
                     coords[1] = -(i * step + USUAL_RANDOM.nextInt(step));
                     verticesCoordinates.add(coords);
-                    verticesCounter++;
+                    if (verticesCoordinates.size() == verticesNum) {
+                        return verticesCoordinates;
+                    }
                 } else {
                     coords[0] = -1;
                 }
             }
         }
-        if(verticesCounter < verticesNum) {
-            return distributeVerticesCoordinates(verticesNum, step);
-        } else {
-            return verticesCoordinates;
-        }
+        return distributeVerticesCoordinates(verticesNum, step);
     }
 
     private int calculateWeight(final int[] coordinates1, final int[] coordinates2) {
@@ -129,6 +196,44 @@ public class Field {
         final int weight = gameModel.getWeight(vertexName1, vertexName2);
         gameModel.putEdge(vertexName1, vertexName2, (int) (weight *
                 RandomUtil.nextDouble(MIN_WEIGHT_FACTOR, OBSTACLE_MAX_FACTOR)));
+    }
+
+    private static class DstVrtxWeightPair
+        implements Map.Entry<Integer, Integer> {
+
+        private static Comparator<Map.Entry<Integer, Integer>> REVERSED_COMPARATOR =
+            Map.Entry.<Integer, Integer>comparingByValue().reversed();
+        private final int key;
+        private final int value;
+
+        DstVrtxWeightPair(final int key, final int value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        @Override
+        public Integer getKey() {
+            return key;
+        }
+
+        @Override
+        public Integer getValue() {
+            return value;
+        }
+
+        @Override
+        public Integer setValue(final Integer value) {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override
+        public String toString() {
+            return key + ": " + value;
+        }
+
+        public static Comparator<Map.Entry<Integer, Integer>> reversedComparator() {
+            return REVERSED_COMPARATOR;
+        }
     }
 
 }

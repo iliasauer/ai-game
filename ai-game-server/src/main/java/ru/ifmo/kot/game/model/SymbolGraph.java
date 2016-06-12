@@ -2,7 +2,6 @@ package ru.ifmo.kot.game.model;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.ifmo.kot.game.util.BinaryRandom;
 
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -25,16 +24,11 @@ import static ru.ifmo.kot.game.model.Graph.TARGET_KEY;
 import static ru.ifmo.kot.game.model.Graph.TYPE_KEY;
 import static ru.ifmo.kot.game.model.Graph.VERTEX;
 import static ru.ifmo.kot.game.model.Graph.WEIGHT_KEY;
-import static ru.ifmo.kot.game.model.ModelConstants.COEFFICIENT_OF_EDGE_CONTENT_NUMBER;
-import static ru.ifmo.kot.game.model.ModelConstants.THRESHOLD_OF_BENEFIT;
-import static ru.ifmo.kot.game.model.ModelConstants.THRESHOLD_OF_OBSTACLE;
 
 public class SymbolGraph {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(SymbolGraph.class);
     private static final Random USUAL_RANDOM = new Random();
-    private static final BinaryRandom BINARY_RANDOM =
-        new BinaryRandom(COEFFICIENT_OF_EDGE_CONTENT_NUMBER);
     private Map<String, Map<String, EdgeContent>> adjacencyEdgeMap;
     private Map<String, Integer> vertexIndices;
     private List<String> verticesNames;
@@ -49,24 +43,6 @@ public class SymbolGraph {
         graph = new UndirectedWeightedGraph(verticesNames.size());
         adjacencyEdgeMap = new HashMap<>();
         verticesNames.forEach(vertexName -> adjacencyEdgeMap.put(vertexName, new HashMap<>()));
-//        graph.edges().forEach(edge -> {
-//            final String vrtxName1 = name(edge.anyVertexIndex());
-//            final String vrtxName2 = name(edge.otherVertexIndex());
-//            final double edgeCoeff = edgeCoefficient(edge.weight());
-//            if(BINARY_RANDOM.nextBoolean()) {
-//                if(edgeCoeff < THRESHOLD_OF_BENEFIT) {
-//                    putEdge(vrtxName1, vrtxName2, EdgeContent.BENEFIT);
-//                    LOGGER.debug("On %s-%s benefit was added", vrtxName1, vrtxName2);
-//                } else if (edgeCoeff > THRESHOLD_OF_OBSTACLE) {
-//                    putEdge(vrtxName1, vrtxName2, EdgeContent.OBSTACLE);
-//                    LOGGER.debug("On %s-%s obstacle was added", vrtxName1, vrtxName2);
-//                }
-//            }
-//        });
-    }
-
-    private double edgeCoefficient(final double weight) {
-        return weight / graph.maxWeight();
     }
 
     public boolean contains(final String vertexName) {
@@ -131,7 +107,7 @@ public class SymbolGraph {
         return graph.getWeight(index(vertexName1), index(vertexName2));
     }
 
-    private boolean putEdge(
+    public boolean putEdge(
         final String vertexName1, final String vertexName2, final EdgeContent content
     ) {
         if(contains(vertexName1) && contains(vertexName2)) {
