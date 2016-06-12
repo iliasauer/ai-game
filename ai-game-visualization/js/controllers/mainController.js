@@ -113,7 +113,7 @@ define([
                                 data: {
                                     source: nj.id(),
                                     target: nk.id(),
-                                    is_walking: true // some custom property
+                                    is_walking: true // you can walk from the station (node) to the next station (node)
                                 }
                             });
 
