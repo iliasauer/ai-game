@@ -42,30 +42,6 @@ button {
   outline: 0;
 }
 
-#clear {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 0.25em;
-  visibility: hidden;
-}
-
-body.has-start #clear {
-  visibility: visible;
-}
-
-#end {
-  display: none;
-}
-
-body.has-start:not(.has-end) #end {
-  display: inline;
-}
-
-body.has-start:not(.has-end) #start {
-  display: none;
-}
-
 body.calc #loading {
   display: block;
 }
