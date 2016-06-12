@@ -83,7 +83,7 @@ public class Field {
     private void connectVertices() {
         final int numberOfVertices = coordinates.size();
         for (int srcVrtxIndex = 0; srcVrtxIndex < numberOfVertices - 1; srcVrtxIndex++) {
-            final int QUEUE_MAX_SIZE = 10;
+            final int QUEUE_MAX_SIZE = 5;
             final Queue<Map.Entry<Integer, Integer>> dstWeights =
                 new PriorityQueue<>(QUEUE_MAX_SIZE, DstVrtxWeightPair.REVERSED_COMPARATOR);
             for (int dstVrtxIndx = srcVrtxIndex + 1; dstVrtxIndx < numberOfVertices; dstVrtxIndx++) {
@@ -96,7 +96,7 @@ public class Field {
                 }
             }
             final int currentNumberOfEdges = gameModel.graph().nextVertices(srcVrtxIndex).size();
-            final int numberOfEdges = USUAL_RANDOM.nextInt(4) + 2 - currentNumberOfEdges;
+            final int numberOfEdges = USUAL_RANDOM.nextInt(2) + 2 - currentNumberOfEdges;
             final Map.Entry<Integer, Integer>[] dstWeightArr = new DstVrtxWeightPair[dstWeights.size()];
             dstWeights.toArray(dstWeightArr);
             for (int i = 0; i < numberOfEdges; i++) {

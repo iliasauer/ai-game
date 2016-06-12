@@ -30,8 +30,8 @@ public class FieldTest {
     private static final String X_KEY = "x";
     private static final String Y_KEY = "y";
 
-    List<int[]> coordinates;
-    SymbolGraph gameModel;
+    private List<int[]> coordinates;
+    private SymbolGraph gameModel;
 
     @Before
     public void initFields() throws Exception {
@@ -95,7 +95,7 @@ public class FieldTest {
                         .write(ID_KEY, "v" + srcVrtx + "-" + "v" + dstVrtx)
                         .write(SOURCE_KEY, "v" + srcVrtx)
                         .write(DESTINATION_KEY, "v" + dstVrtx)
-                        .write(TYPE_KEY, 1)
+                        .write(TYPE_KEY, 2)
                         .write(WEIGHT_KEY, edge.weight())
                     .writeEnd()
                 .writeEnd();

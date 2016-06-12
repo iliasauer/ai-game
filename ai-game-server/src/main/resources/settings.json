@@ -6,7 +6,7 @@
   },
   "elements": {
     "verticesFilePath": "vertices.json",
-    "gridStep": 100,
+    "gridStep": 170,
     "numberOfLives": 3,
     "turnPoints": 100,
     "contentCoefficient": 0.7,
