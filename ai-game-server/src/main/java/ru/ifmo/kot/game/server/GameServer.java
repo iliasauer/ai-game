@@ -83,6 +83,10 @@ public class GameServer {
         }
     }
 
+    public static Game game() {
+        return GAME;
+    }
+
     @OnOpen
     public void addClient(final Session client) {
         this.localClient = client;
@@ -290,7 +294,7 @@ public class GameServer {
         sendMessage(client, command, ResponseStatus.OK);
     }
 
-    private static class Game {
+    public static class Game {
         private ConcurrentMap<String, ResponseStatus> turnMap = new ConcurrentHashMap<>(2);
         private volatile int turnCounter = 0;
         private Future<Void> turnFuture;
@@ -298,6 +302,10 @@ public class GameServer {
         private final Field field = new Field();
         private final String startVertex = startVertices()[0];
         private final String finishVertex = startVertices()[1];
+
+        public Field field() {
+            return field;
+        }
 
         private int getTurnNumber() {
             return turnCounter;

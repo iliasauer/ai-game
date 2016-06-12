@@ -14,8 +14,7 @@ public class FieldEncoder implements Encoder.Text<Field> {
     @Override
     public String encode(final Field field)
     throws EncodeException {
-
-        return null;
+        return field.asJson();
     }
 
     @Override

@@ -35,8 +35,11 @@ define([
 
         function render() {
             renderApp();
+            webSocketController.connectWs();
             renderField();
         }
+
+
 
         function renderApp() {
             hbUtil.compileAndInsertInside(jqId(['app']), appTemplate);
@@ -44,18 +47,18 @@ define([
 
         function renderField() {
 
-            // get exported json from cytoscape desktop
-            var graphP = content.FIELD_CONTENT;
-
+            const field = webSocketController.gameField();
             // also get style
             var styleP = content.FIELD_STYLE;
 
-            initCy(graphP, styleP);
+            if (field) {
+                initCy(field, styleP);
+            } else {
+                setTimeout(renderField, 250)
+            }
 
             function initCy(expJson, styleArr) {
                 var loading = document.getElementById('loading');
-                // var expJson = then[0];
-                // var styleJson = then[1];
                 var elements = expJson.elements;
 
                 loading.classList.add('loaded');
@@ -81,7 +84,7 @@ define([
                 // because the source data doesn't connect nodes properly, use the cytoscape api to mend it:
 
                 var i, name, nbin;
-                
+
                 cy.startBatch(); //starts batching manually (an manipulation of elements without triggering style calculations or multiple redraw)
 
                 // put nodes in bins based on name

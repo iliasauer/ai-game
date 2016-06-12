@@ -3,6 +3,7 @@ package ru.ifmo.kot.game.visualiztion;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.elements.Field;
+import ru.ifmo.kot.game.server.GameServer;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
@@ -13,7 +14,10 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 /**
  * Created on 07.05.16.
  */
-@ServerEndpoint(value = "/visual")
+@ServerEndpoint(
+	value = "/visual",
+	encoders = {FieldEncoder.class}
+)
 public class VisualizationEndpoint {
 
 	private static final Logger LOGGER = LogManager.getFormatterLogger(VisualizationEndpoint.class);
@@ -22,13 +26,8 @@ public class VisualizationEndpoint {
 	@OnOpen
 	public void addVisualiser(final Session session) {
 		VISUALIZERS.offer(session);
-		final Field field = new Field();
-		try {
-			sendMessage(field.getGameModelAsJson().toString());
-		} catch (IOException e) {
-			LOGGER.error("Failed to show the game field");
-		}
 		LOGGER.debug("The visualizer %s was added successfully", session.getId());
+		sendMessage(GameServer.game().field());
 	}
 
 	@OnClose
@@ -54,6 +53,16 @@ public class VisualizationEndpoint {
 				session.getBasicRemote().sendText(message);
 			}
 		}
+	}
+
+	public static void sendMessage(final Field field) {
+		VISUALIZERS.stream().filter(Session:: isOpen).forEach(session -> {
+			try {
+				session.getBasicRemote().sendObject(field);
+			} catch(IOException | EncodeException e) {
+				LOGGER.error("Internal server error");
+			}
+		});
 	}
 
 }

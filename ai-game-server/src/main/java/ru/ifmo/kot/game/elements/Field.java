@@ -105,7 +105,10 @@ public class Field {
             final int QUEUE_MAX_SIZE = 5;
             final Queue<Map.Entry<Integer, Integer>> dstWeights =
                 new PriorityQueue<>(QUEUE_MAX_SIZE, DstVrtxWeightPair.reversedComparator());
-            for (int dstVrtxIndx = srcVrtxIndex + 1; dstVrtxIndx < numberOfVertices; dstVrtxIndx++) {
+            for (int dstVrtxIndx = 1; dstVrtxIndx < numberOfVertices; dstVrtxIndx++) {
+                if (srcVrtxIndex == dstVrtxIndx) {
+                    continue;
+                }
                 final int[] srcVrtxCoords = coordinates.get(srcVrtxIndex);
                 final int[] dstVrtxCoords = coordinates.get(dstVrtxIndx);
                 final int weight = calculateWeight(srcVrtxCoords, dstVrtxCoords);

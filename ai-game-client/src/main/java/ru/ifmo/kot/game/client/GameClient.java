@@ -39,7 +39,6 @@ import java.util.function.Consumer;
 public class GameClient {
 
     private static final Logger LOGGER = LogManager.getFormatterLogger(GameClient.class);
-    private static final Random USUAL_RANDOM = new Random();
     private Session serverSession;
     private Map<String, Object> responseMap = new LinkedHashMap<>();
     private Game game = new Game();
@@ -58,16 +57,10 @@ public class GameClient {
         }
     }
 
-    public Game game() {
-        return game;
-    }
-
     @OnOpen
     public void addServerSession(final Session session) {
         this.serverSession = session;
         try {
-//			final ExecutorService executor = Executors.newSingleThreadExecutor();
-//			executor.submit(game);
             LOGGER.info("I have joined the game");
         } catch (final Exception e) {
             LOGGER.error("Failed to greet the server");

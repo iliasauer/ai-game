@@ -10,19 +10,23 @@ define(['jquery',
 		var ws;
 		var gameField;
 
+		function getGameField() {
+			if (gameField) {
+				return gameField;
+			} else {
+				setTimeout(getGameField, 100);
+			}
+		}
+
 		function greetServer() {
 			sendMessage(GREETING);
 			console.log(GREETING);
 		}
 
 		function handleMessage(message) {
-			console.log('The server: ' + message.data);
 			const JSON_MESSAGE = JSON.parse(message.data);
-			if (JSON_MESSAGE.map) {
-				gameField = JSON_MESSAGE.map;
-				fieldBuilder.setFieldElement($('#field'));
-				fieldBuilder.setFieldData(gameField);
-				fieldBuilder.build();
+			if (JSON_MESSAGE.elements) {
+				gameField = JSON_MESSAGE;
 			}
 		}
 
@@ -60,7 +64,8 @@ define(['jquery',
 
 		return {
 			connectWs: connectWs,
-			sendMessage: sendMessage
+			sendMessage: sendMessage,
+			gameField: getGameField
 		}
 
 	});

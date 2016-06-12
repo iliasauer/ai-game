@@ -1019,7 +1019,7 @@ define([], function () {
 				    "min-zoomed-font-size": 12,
 				    "font-size": 8,
 				    "color": "#fff",
-				    "content": "data(name)",
+				    "content": "data(weight)",
 				    "line-color": "green",
 				    "width": 20,
 				    "curve-style": "haystack",
