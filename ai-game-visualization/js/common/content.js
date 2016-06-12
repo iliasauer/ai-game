@@ -530,7 +530,6 @@ define([], function () {
 				    "id": "e1",
 				    "source": "v1",
 				    "target": "v2",
-				    "is_bullet": false,
 				    "company_type": 1,
 				    "line_name": "line_1"
 			    }
@@ -539,495 +538,440 @@ define([], function () {
 				    "id": "e2",
 				    "source": "v2",
 				    "target": "v3",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e3",
 				    "source": "v3",
 				    "target": "v4",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e4",
 				    "source": "v4",
 				    "target": "v5",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e5",
 				    "source": "v5",
 				    "target": "v6",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e6",
 				    "source": "v6",
 				    "target": "v7",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e7",
 				    "source": "v7",
 				    "target": "v8",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e8",
 				    "source": "v8",
 				    "target": "v9",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e9",
 				    "source": "v9",
 				    "target": "v10",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e10",
 				    "source": "v10",
 				    "target": "v11",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e11",
 				    "source": "v11",
 				    "target": "v12",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e12",
 				    "source": "v12",
 				    "target": "v13",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e13",
 				    "source": "v13",
 				    "target": "v14",
-				    "is_bullet": false,
 				    "company_type": 1,
-				    "line_name": "line_1"
+				    "line_name": "line 1"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e14",
 				    "source": "v15",
 				    "target": "v16",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e15",
 				    "source": "v16",
 				    "target": "v17",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e16",
 				    "source": "v17",
 				    "target": "v18",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e17",
 				    "source": "v18",
 				    "target": "v19",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e18",
 				    "source": "v19",
 				    "target": "v20",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e19",
 				    "source": "v20",
 				    "target": "v21",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e20",
 				    "source": "v21",
 				    "target": "v22",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e21",
 				    "source": "v22",
 				    "target": "v23",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e22",
 				    "source": "v23",
 				    "target": "v24",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e23",
 				    "source": "v24",
 				    "target": "v25",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e24",
 				    "source": "v25",
 				    "target": "v26-1",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e25",
 				    "source": "v26-1",
 				    "target": "v27",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e26",
 				    "source": "v27",
 				    "target": "v28",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e27",
 				    "source": "v28",
 				    "target": "v29",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e28",
 				    "source": "v29",
 				    "target": "v30",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e29",
 				    "source": "v30",
 				    "target": "v31",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e30",
 				    "source": "v31",
 				    "target": "v32",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e31",
 				    "source": "v32",
 				    "target": "v33",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e32",
 				    "source": "v33",
 				    "target": "v34",
-				    "is_bullet": false,
 				    "company_type": 2,
-				    "line_name": "line_2"
+				    "line_name": "line 2"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e33",
 				    "source": "v35",
 				    "target": "v36",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e34",
 				    "source": "v36",
 				    "target": "v37",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e35",
 				    "source": "v37",
 				    "target": "v38",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e36",
 				    "source": "v38",
 				    "target": "v39",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e37",
 				    "source": "v39",
 				    "target": "v40",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e38",
 				    "source": "v40",
 				    "target": "v41",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e39",
 				    "source": "v41",
 				    "target": "v42",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e40",
 				    "source": "v42",
 				    "target": "v43",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e41",
 				    "source": "v43",
 				    "target": "v44",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e42",
 				    "source": "v44",
 				    "target": "v45",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e43",
 				    "source": "v45",
 				    "target": "v46",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e44",
 				    "source": "v46",
 				    "target": "v47",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e45",
 				    "source": "v47",
 				    "target": "v48",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e46",
 				    "source": "v48",
 				    "target": "v49",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e47",
 				    "source": "v49",
 				    "target": "v50",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e48",
 				    "source": "v50",
 				    "target": "v51",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e49",
 				    "source": "v50",
 				    "target": "v26-2",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e50",
 				    "source": "v26-2",
 				    "target": "v51",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e51",
 				    "source": "v51",
 				    "target": "v52",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e52",
 				    "source": "v52",
 				    "target": "v53",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e53",
 				    "source": "v53",
 				    "target": "v54",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e54",
 				    "source": "v54",
 				    "target": "v55",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e55",
 				    "source": "v55",
 				    "target": "v56",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }, {
 			    "data": {
 				    "id": "e56",
 				    "source": "v56",
 				    "target": "v57",
-				    "is_bullet": false,
 				    "company_type": 3,
-				    "line_name": "line_3"
+				    "line_name": "line 3"
 			    }
 		    }]
 	    }
