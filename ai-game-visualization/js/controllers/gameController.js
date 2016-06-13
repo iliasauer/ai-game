@@ -48,7 +48,7 @@ define([
                 content: {
                     text: function () {
                          // start button in the var
-                        return $('<button id="start">START</button>');
+                        return $('<button id="start" disabled>START</button>');
                     }
                 },
                 show: {
@@ -78,7 +78,7 @@ define([
                 content: {
                     text: function () {
                         // start button in the var
-                        return $('<button id="end">FINISH</button>');
+                        return $('<button id="end" disabled>FINISH</button>');
                     }
                 },
                 show: {

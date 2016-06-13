@@ -10,6 +10,7 @@ import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.elements.Player;
 import ru.ifmo.kot.game.model.EdgeContent;
 import ru.ifmo.kot.game.model.SymbolGraph;
+import ru.ifmo.kot.game.visualiztion.EventMessage;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
 import ru.ifmo.kot.protocol.Command;
 import ru.ifmo.kot.protocol.Messenger;
@@ -416,6 +417,9 @@ public class GameServer {
                             Optional.ofNullable(gameModel.takeEdgeContent(currentVertex, nextVertex));
                     if (optEdgeContent.isPresent()) {
                         final EdgeContent edgeContent = optEdgeContent.get();
+                        VisualizationEndpoint.sendMessage(
+                                new EventMessage(playerName, currentVertex + nextVertex,
+                                        edgeContent));
                         switch (edgeContent) {
                             case BENEFIT:
                                 LOGGER.info("The player %s got a %s", playerName, edgeContent.name());

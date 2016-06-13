@@ -239,6 +239,7 @@ public class Field {
                 .writeStartObject()
                 .writeStartObject(CONTENT_KEY)
                 .write(ID_KEY, "v" + srcVrtx + "-" + "v" + dstVrtx)
+                .write(NAME_KEY, gameModel.name(srcVrtx) + gameModel.name(dstVrtx))
                 .write(SOURCE_KEY, "v" + srcVrtx)
                 .write(DESTINATION_KEY, "v" + dstVrtx)
                 .write(TYPE_KEY, 2)

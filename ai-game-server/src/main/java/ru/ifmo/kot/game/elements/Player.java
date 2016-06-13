@@ -3,6 +3,8 @@ package ru.ifmo.kot.game.elements;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.util.RandomUtil;
+import ru.ifmo.kot.game.visualiztion.EventMessage;
+import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -46,10 +48,12 @@ public class Player {
                 currentPosition = expectedPosition;
                 expectedPosition = null;
                 LOGGER.info("The player %s arrived in %s", name, currentPosition);
+                VisualizationEndpoint.sendMessage(new EventMessage(name, currentPosition));
                 return false;
             } else {
                 LOGGER.info("The player %s goes to %s", name, expectedPosition);
                 LOGGER.info("Left %d km", expectedPositionDistance);
+                VisualizationEndpoint.sendMessage(new EventMessage(name, expectedPosition));
                 return false;
             }
         } else {

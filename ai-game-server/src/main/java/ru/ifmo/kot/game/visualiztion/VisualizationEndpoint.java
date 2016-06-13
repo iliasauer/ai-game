@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  */
 @ServerEndpoint(
 	value = "/visual",
-	encoders = {FieldEncoder.class}
+	encoders = {EventEncoder.class}
 )
 public class VisualizationEndpoint {
 
@@ -28,7 +28,7 @@ public class VisualizationEndpoint {
 		VISUALIZERS.offer(session);
 		LOGGER.debug("The visualizer %s was added successfully", session.getId());
 		final Field field = GameServer.game().field();
-		sendMessage(field);
+		sendMessage(field.asJson());
 		sendMessage(field.getStartVerticesJson());
 	}
 
@@ -59,10 +59,10 @@ public class VisualizationEndpoint {
 		});
 	}
 
-	public static void sendMessage(final Field field) {
+	public static void sendMessage(final EventMessage evtMsg) {
 		VISUALIZERS.stream().filter(Session:: isOpen).forEach(session -> {
 			try {
-				session.getBasicRemote().sendObject(field);
+				session.getBasicRemote().sendObject(evtMsg);
 			} catch(final IOException | EncodeException e) {
 				LOGGER.error("Internal server error");
 			}
