@@ -1,4 +1,4 @@
-version = '0.1'
+version = '1.0'
 description = 'an educational ai game - server side'
 
 dependencies {
@@ -7,4 +7,11 @@ dependencies {
     compile 'org.eclipse.jetty.websocket:javax-websocket-server-impl:9.3.9.M1'
 
     compile project(':ai-game-library')
+}
+
+jar {
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    manifest {
+        attributes 'Main-Class': 'ru.ifmo.kot.game.server.GameServer'
+    }
 }
