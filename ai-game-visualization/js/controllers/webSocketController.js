@@ -8,12 +8,8 @@ define(['jquery',
         const WS_URL = constants.WS_URL;
         const GREETING = 'The connection is open';
         var ws;
-        var gameField;
-        var startNodes;
 
-        function getGameField() {
-            return gameField;
-        }
+        var playersNames = [];
 
         function greetServer() {
             sendMessage(GREETING);
@@ -22,18 +18,39 @@ define(['jquery',
 
         function handleMessage(message) {
             const JSON_MESSAGE = JSON.parse(message.data);
-            if (JSON_MESSAGE.elements) {
-                gameField = JSON_MESSAGE;
-                gameController.drawField(gameField);
+            if (JSON_MESSAGE.elements !== undefined) {
+                handleFieldMessage(JSON_MESSAGE);
             } else {
                 if (JSON_MESSAGE.start !== undefined) {
-                    startNodes = JSON_MESSAGE;
-                    gameController.setStartNodes(startNodes);
+                    handleStartMessage(JSON_MESSAGE);
                 } else {
-                    if (JSON_MESSAGE.element) {
-                        console.log(JSON_MESSAGE);
+                    if (JSON_MESSAGE.element !== undefined) {
+                        if (JSON_MESSAGE.content !== undefined) {
+                            handleEventMessage(JSON_MESSAGE);
+                        } else {
+                            handleMoveMessage(JSON_MESSAGE);
+                        }
                     }
                 }
+            }
+        }
+
+        function handleFieldMessage(gameField) {
+            gameController.drawField(gameField);
+        }
+
+        function handleStartMessage(startNodes) {
+            gameController.setStartNodes(startNodes);
+        }
+
+        function handleEventMessage(evtMsg) {
+        }
+
+        function handleMoveMessage(mvMsg) {
+            const playerName = mvMsg.player;
+            if ($.inArray(playerName, playersNames) < 0) {
+                playersNames.push(playerName);
+                gameController.addPlayerFigure(playerName, mvMsg.element)
             }
         }
 
@@ -71,8 +88,7 @@ define(['jquery',
 
         return {
             connectWs: connectWs,
-            sendMessage: sendMessage,
-            gameField: getGameField
+            sendMessage: sendMessage
         }
 
     });

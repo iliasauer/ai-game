@@ -7,9 +7,11 @@ import ru.ifmo.kot.api.ServerApi;
 import ru.ifmo.kot.game.aibase.AiBase;
 import ru.ifmo.kot.game.client.GameClient;
 
+import java.sql.Time;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created on 29.05.16.
@@ -29,6 +31,11 @@ public class AiImpl extends AiBase {
     public String move() {
         final String currentVertex = api().currentVertex();
         final List<String> nextVertices = api().nextVertices(currentVertex);
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            LOGGER.error("Internal error");
+        }
         return nextVertices.get(USUAL_RANDOM.nextInt(nextVertices.size()));
     }
 

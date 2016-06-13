@@ -375,6 +375,7 @@ public class GameServer {
             final String clientId = client.getId();
             if (! isNameOccupied(name)) {
                 players.put(clientId, new Player(name, startVertex));
+                VisualizationEndpoint.sendMessage(new EventMessage(name, startVertex));
                 LOGGER.info("There is %s name for the client %s", name, clientId);
                 return true;
             } else {

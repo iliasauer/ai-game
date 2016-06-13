@@ -103,9 +103,37 @@ define([
             });
         }
 
+        function nameSelector(name) {
+            return "[name='" + name + "']";
+        }
+
+        const figureColors = ['red', 'blue', 'green', 'yellow'];
+
+        function getColor() {
+            const index = Math.floor(Math.random() * figureColors.length);
+            const color = figureColors[index];
+            figureColors.splice(index, 1);
+            return color;
+        }
+
+        function addPlayerFigure(playerName, startNodeName) {
+            const startNode = cy.nodes(nameSelector(startNodeName))[0];
+            const x = startNode.position('x');
+            const y = startNode.position('y');
+            const playerFigure = cy.add({
+                group: "nodes",
+                data: { id: playerName },
+                position: { x: x, y: y }
+            });
+            const figureColor = getColor();
+            playerFigure.style('background-color', figureColor);
+            console.log("Figure of " + playerName + " is " + figureColor);
+        }
+        
         return {
             drawField: drawField,
-            setStartNodes: setStartNodes
+            setStartNodes: setStartNodes,
+            addPlayerFigure: addPlayerFigure
         }
 
     });
