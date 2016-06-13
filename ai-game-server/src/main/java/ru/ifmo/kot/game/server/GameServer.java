@@ -475,7 +475,7 @@ public class GameServer {
                                 session -> {
                                     sendMessage(session, Command.LOSE);
                                     VisualizationEndpoint.sendMessage(
-                                            new ViewMessage(getClientName(client), Event.LOSE));
+                                            new ViewMessage(getClientName(session), Event.LOSE));
                                 });
                         System.exit(0);
                     }
