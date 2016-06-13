@@ -53,7 +53,7 @@ public class Player {
             } else {
                 LOGGER.info("The player %s goes to %s", name, expectedPosition);
                 LOGGER.info("Left %d km", expectedPositionDistance);
-                VisualizationEndpoint.sendMessage(new EventMessage(name, expectedPosition));
+                VisualizationEndpoint.sendMessage(new EventMessage(name, currentPosition + expectedPosition));
                 return false;
             }
         } else {

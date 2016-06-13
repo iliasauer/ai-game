@@ -50,6 +50,7 @@ public class SymbolGraph {
             if(nextVerticesContents.containsKey(vertexName2)) {
                 final EdgeContent edgeContent = nextVerticesContents.get(vertexName2);
                 nextVerticesContents.remove(vertexName2);
+                adjacencyEdgeMap.get(vertexName2).remove(vertexName1);
                 return edgeContent;
             }
         }

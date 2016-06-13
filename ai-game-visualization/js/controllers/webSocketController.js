@@ -44,6 +44,7 @@ define(['jquery',
         }
 
         function handleEventMessage(evtMsg) {
+            gameController.showTip(evtMsg.player, evtMsg.element, evtMsg.content)
         }
 
         function handleMoveMessage(mvMsg) {

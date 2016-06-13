@@ -40,6 +40,33 @@ define([
             }
         }
 
+        function setTips() {
+            cy.elements.qtip({
+                text: '',
+                show: {
+                    ready: true,
+                    solo: false // hides all others qtips when shown
+                },
+                hide: {
+                    event: false
+                },
+                // we want to position my qtip {my} corner at the {at} of my target
+                position: {
+                    my: 'top center',
+                    at: 'bottom center'
+                },
+                style: {
+                    classes: 'qtip-bootstrap',
+                    tip: {
+                        width: 16,
+                        height: 8
+                    }
+                }
+            });
+            cy.elements.qtip('api')
+        }
+
+
         function setStartNodes(startVertices) {
             const start = cy.$("#" + 'v' + startVertices.start);
             start.select();
@@ -150,12 +177,51 @@ define([
                 duration: 100
             });
         }
-        
+
+        function showTip(playerName, elementName, content) {
+            var message;
+            if (content === 'OBSTACLE') {
+                message = 'Stumbled upon bandits!'
+            } else {
+                message = 'Got an acceleration!'
+            }
+            const playerFigure = cy.$('#' + playerName);
+            playerFigure.qtip({
+                content: {
+                    text: message
+                },
+                show: {
+                    ready: true,
+                    solo: false // hides all others qtips when shown
+                },
+                hide: {
+                    event: false
+                },
+                // we want to position my qtip {my} corner at the {at} of my target
+                position: {
+                    my: 'top center',
+                    at: 'bottom center'
+                },
+                style: {
+                    classes: 'qtip-bootstrap',
+                    tip: {
+                        width: 16,
+                        height: 8
+                    }
+                }
+            });
+            setTimeout(function () {
+                playerFigure.qtip('api').destroy();
+            }, 1500);
+        }
+
+
         return {
             drawField: drawField,
             setStartNodes: setStartNodes,
             addPlayerFigure: addPlayerFigure,
-            movePlayerFigure: movePlayerFigure
+            movePlayerFigure: movePlayerFigure,
+            showTip: showTip
         }
 
     });
