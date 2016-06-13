@@ -198,7 +198,20 @@ define([
                     break;
             }
             const playerFigure = cy.$('#' + playerName);
-            playerFigure.qtip({
+            if (!endFlag) {
+                addTip(playerFigure, message);
+                setTimeout(function () {
+                    playerFigure.qtip('api').destroy();
+                }, 1500);
+            } else {
+                setTimeout(function () {
+                    addTip(playerFigure, message)
+                }, 1000)
+            }
+        }
+
+        function addTip(element, message) {
+            element.qtip({
                 content: {
                     text: message
                 },
@@ -222,11 +235,6 @@ define([
                     }
                 }
             });
-            if (!endFlag) {
-                setTimeout(function () {
-                    playerFigure.qtip('api').destroy();
-                }, 1500);
-            }
         }
 
 
