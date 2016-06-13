@@ -180,6 +180,7 @@ define([
 
         function showTip(playerName, event) {
             var message;
+            var endFlag;
             switch (event) {
                 case 'OBSTACLE':
                     message = 'Stumbled upon bandits!';
@@ -189,9 +190,11 @@ define([
                     break;
                 case 'LOSE':
                     message = 'I lost!';
+                    endFlag = true;
                     break;
                 case 'WIN':
                     message = 'I won!';
+                    endFlag = true;
                     break;
             }
             const playerFigure = cy.$('#' + playerName);
@@ -219,9 +222,11 @@ define([
                     }
                 }
             });
-            setTimeout(function () {
-                playerFigure.qtip('api').destroy();
-            }, 1500);
+            if (!endFlag) {
+                setTimeout(function () {
+                    playerFigure.qtip('api').destroy();
+                }, 1500);
+            }
         }
 
 
