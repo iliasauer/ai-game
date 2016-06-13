@@ -50,7 +50,9 @@ define(['jquery',
             const playerName = mvMsg.player;
             if ($.inArray(playerName, playersNames) < 0) {
                 playersNames.push(playerName);
-                gameController.addPlayerFigure(playerName, mvMsg.element)
+                gameController.addPlayerFigure(playerName, mvMsg.element);
+            } else {
+                gameController.movePlayerFigure(playerName, mvMsg.element);
             }
         }
 

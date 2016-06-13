@@ -42,6 +42,10 @@ button {
   outline: 0;
 }
 
+.upperElement {
+  z-index: 1999;
+}
+
 body.calc #loading {
   display: block;
 }
