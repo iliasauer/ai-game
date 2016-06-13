@@ -14,26 +14,34 @@ import java.io.Writer;
 import java.util.Optional;
 
 @SuppressWarnings("WeakerAccess")
-public class EventEncoder implements Encoder.Text<EventMessage> {
+public class ViewMessageEncoder implements Encoder.Text<ViewMessage> {
 
-    private static final Logger LOGGER = LogManager.getFormatterLogger(EventEncoder.class);
+    private static final Logger LOGGER = LogManager.getFormatterLogger(ViewMessageEncoder.class);
+    private static final String TYPE_KEY = "type";
     private static final String PLAYER_KEY = "player";
     private static final String ELEMENT_KEY = "element";
-    private static final String CONTENT_KEY = "content";
+    private static final String EVENT_KEY = "event";
 
     @Override
-    public String encode(final EventMessage evtMsg) throws EncodeException {
+    public String encode(final ViewMessage viewMessage) throws EncodeException {
         try(
                 final Writer jsonStringWriter = new StringWriter();
         ) {
             try(
                     final JsonGenerator jsonGenerator = Json.createGenerator(jsonStringWriter);
             ) {
+                final ViewMessage.Type type = viewMessage.getType();
                 jsonGenerator.writeStartObject()
-                        .write(PLAYER_KEY, evtMsg.getName())
-                        .write(ELEMENT_KEY, evtMsg.getElement());
-                        writeOptional(jsonGenerator, CONTENT_KEY,
-                                Optional.ofNullable(evtMsg.getContent()));
+                        .write(TYPE_KEY, type.name())
+                        .write(PLAYER_KEY, viewMessage.getName());
+                switch (type) {
+                    case MOVE:
+                        jsonGenerator.write(ELEMENT_KEY, viewMessage.getElement());
+                        break;
+                    case EVENT:
+                        jsonGenerator.write(EVENT_KEY, viewMessage.getEvent().name());
+                        break;
+                }
                 jsonGenerator.writeEnd();
                 jsonGenerator.flush();
                 return jsonStringWriter.toString();

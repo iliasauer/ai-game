@@ -10,7 +10,8 @@ import ru.ifmo.kot.game.elements.Field;
 import ru.ifmo.kot.game.elements.Player;
 import ru.ifmo.kot.game.model.EdgeContent;
 import ru.ifmo.kot.game.model.SymbolGraph;
-import ru.ifmo.kot.game.visualiztion.EventMessage;
+import ru.ifmo.kot.game.visualiztion.Event;
+import ru.ifmo.kot.game.visualiztion.ViewMessage;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
 import ru.ifmo.kot.protocol.Command;
 import ru.ifmo.kot.protocol.Messenger;
@@ -375,7 +376,7 @@ public class GameServer {
             final String clientId = client.getId();
             if (! isNameOccupied(name)) {
                 players.put(clientId, new Player(name, startVertex));
-                VisualizationEndpoint.sendMessage(new EventMessage(name, startVertex));
+                VisualizationEndpoint.sendMessage(new ViewMessage(name, startVertex));
                 LOGGER.info("There is %s name for the client %s", name, clientId);
                 return true;
             } else {
@@ -418,21 +419,25 @@ public class GameServer {
                             Optional.ofNullable(gameModel.takeEdgeContent(currentVertex, nextVertex));
                     if (optEdgeContent.isPresent()) {
                         final EdgeContent edgeContent = optEdgeContent.get();
-                        VisualizationEndpoint.sendMessage(
-                                new EventMessage(playerName, currentVertex + nextVertex,
-                                        edgeContent));
+
                         switch (edgeContent) {
                             case BENEFIT:
                                 LOGGER.info("The player %s got a %s", playerName, edgeContent.name());
                                 player.enableTempAcceleration();
+                                VisualizationEndpoint.sendMessage(
+                                        new ViewMessage(playerName, Event.BONUS));
                                 break;
                             case OBSTACLE:
+                                VisualizationEndpoint.sendMessage(
+                                        new ViewMessage(playerName, Event.OBSTACLE));
                                 LOGGER.info("The player %s stumbled upon %s", playerName,
                                         edgeContent.name());
                                 final boolean isAlive = player.removeLife();
                                 if (! isAlive) {
                                     LOGGER.info("The player %s is dead", playerName);
                                     sendMessage(client, Command.LOSE);
+                                    VisualizationEndpoint.sendMessage(
+                                            new ViewMessage(playerName, Event.LOSE));
                                     clients.remove(client);
                                     if (clients.isEmpty()) {
                                         LOGGER.info("The game over");
@@ -464,8 +469,14 @@ public class GameServer {
                     if (player.getCurrentPosition().equals(finishVertex)) {
                         LOGGER.info("The player %s won! Congratulations!", player.getName());
                         sendMessage(client, Command.WIN);
+                        VisualizationEndpoint.sendMessage(
+                                new ViewMessage(getClientName(client), Event.WIN));
                         clients.stream().filter((session) -> ! client.equals(session)).forEach(
-                                session -> sendMessage(session, Command.LOSE));
+                                session -> {
+                                    sendMessage(session, Command.LOSE);
+                                    VisualizationEndpoint.sendMessage(
+                                            new ViewMessage(getClientName(client), Event.LOSE));
+                                });
                         System.exit(0);
                     }
                 }

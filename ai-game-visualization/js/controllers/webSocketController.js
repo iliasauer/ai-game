@@ -18,20 +18,20 @@ define(['jquery',
 
         function handleMessage(message) {
             const JSON_MESSAGE = JSON.parse(message.data);
-            if (JSON_MESSAGE.elements !== undefined) {
-                handleFieldMessage(JSON_MESSAGE);
-            } else {
-                if (JSON_MESSAGE.start !== undefined) {
-                    handleStartMessage(JSON_MESSAGE);
-                } else {
-                    if (JSON_MESSAGE.element !== undefined) {
-                        if (JSON_MESSAGE.content !== undefined) {
-                            handleEventMessage(JSON_MESSAGE);
-                        } else {
-                            handleMoveMessage(JSON_MESSAGE);
-                        }
-                    }
+            if (JSON_MESSAGE.type) {
+                const type = JSON_MESSAGE.type;
+                switch (type) {
+                    case 'MOVE':
+                        handleMoveMessage(JSON_MESSAGE);
+                        break;
+                    case 'EVENT':
+                        handleEventMessage(JSON_MESSAGE);
+                        break;
                 }
+            } else if (JSON_MESSAGE.elements !== undefined) {
+                handleFieldMessage(JSON_MESSAGE);
+            } else if (JSON_MESSAGE.start !== undefined) {
+                handleStartMessage(JSON_MESSAGE);
             }
         }
 
@@ -44,7 +44,7 @@ define(['jquery',
         }
 
         function handleEventMessage(evtMsg) {
-            gameController.showTip(evtMsg.player, evtMsg.element, evtMsg.content)
+            gameController.showTip(evtMsg.player, evtMsg.event)
         }
 
         function handleMoveMessage(mvMsg) {

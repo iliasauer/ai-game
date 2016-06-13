@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  */
 @ServerEndpoint(
 	value = "/visual",
-	encoders = {EventEncoder.class}
+	encoders = {ViewMessageEncoder.class}
 )
 public class VisualizationEndpoint {
 
@@ -59,7 +59,7 @@ public class VisualizationEndpoint {
 		});
 	}
 
-	public static void sendMessage(final EventMessage evtMsg) {
+	public static void sendMessage(final ViewMessage evtMsg) {
 		VISUALIZERS.stream().filter(Session:: isOpen).forEach(session -> {
 			try {
 				session.getBasicRemote().sendObject(evtMsg);

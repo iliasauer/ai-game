@@ -3,17 +3,11 @@ package ru.ifmo.kot.game.elements;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.ifmo.kot.game.util.RandomUtil;
-import ru.ifmo.kot.game.visualiztion.EventMessage;
+import ru.ifmo.kot.game.visualiztion.ViewMessage;
 import ru.ifmo.kot.game.visualiztion.VisualizationEndpoint;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Objects;
-import java.util.Random;
-import java.util.Set;
-import java.util.function.Consumer;
-import java.util.function.Function;;import static ru.ifmo.kot.game.elements.ElementsConstants.BENEFIT_MAX_FACTOR;
+;import static ru.ifmo.kot.game.elements.ElementsConstants.BENEFIT_MAX_FACTOR;
 import static ru.ifmo.kot.game.elements.ElementsConstants.TURN_POINTS;
 
 public class Player {
@@ -48,12 +42,12 @@ public class Player {
                 currentPosition = expectedPosition;
                 expectedPosition = null;
                 LOGGER.info("The player %s arrived in %s", name, currentPosition);
-                VisualizationEndpoint.sendMessage(new EventMessage(name, currentPosition));
+                VisualizationEndpoint.sendMessage(new ViewMessage(name, currentPosition));
                 return false;
             } else {
                 LOGGER.info("The player %s goes to %s", name, expectedPosition);
                 LOGGER.info("Left %d km", expectedPositionDistance);
-                VisualizationEndpoint.sendMessage(new EventMessage(name, currentPosition + expectedPosition));
+                VisualizationEndpoint.sendMessage(new ViewMessage(name, currentPosition + expectedPosition));
                 return false;
             }
         } else {

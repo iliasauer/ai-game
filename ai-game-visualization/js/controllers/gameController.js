@@ -178,12 +178,21 @@ define([
             });
         }
 
-        function showTip(playerName, elementName, content) {
+        function showTip(playerName, event) {
             var message;
-            if (content === 'OBSTACLE') {
-                message = 'Stumbled upon bandits!'
-            } else {
-                message = 'Got an acceleration!'
+            switch (event) {
+                case 'OBSTACLE':
+                    message = 'Stumbled upon bandits!';
+                    break;
+                case 'BONUS':
+                    message = 'Got an acceleration!';
+                    break;
+                case 'LOSE':
+                    message = 'I lost!';
+                    break;
+                case 'WIN':
+                    message = 'I won!';
+                    break;
             }
             const playerFigure = cy.$('#' + playerName);
             playerFigure.qtip({

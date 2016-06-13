@@ -7,6 +7,5 @@ public enum ResponseStatus {
 	OK,
 	FAIL,
 	NOT_ACCEPTED,
-	PASS,
-	END
+	PASS
 }
