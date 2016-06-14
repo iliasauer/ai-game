@@ -188,9 +188,11 @@ define([
             switch (event) {
                 case 'OBSTACLE':
                     message = 'Stumbled upon bandits!';
+                    endFlag = false;
                     break;
                 case 'BONUS':
                     message = 'Got an acceleration!';
+                    endFlag = false;
                     break;
                 case 'LOSE':
                     message = 'I lost!';
@@ -209,8 +211,8 @@ define([
                 }, 1500);
             } else {
                 setTimeout(function () {
-                    addTip(playerFigure, message)
-                }, 1000)
+                    addTip(playerFigure, message);
+                }, 500)
             }
         }
 
