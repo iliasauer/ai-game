@@ -159,7 +159,11 @@ define([
         }
 
         function movePlayerFigure(playerName, aimElementName) {
-            const aimElement = cy.elements(nameSelector(aimElementName))[0];
+            var aimElement = cy.elements(nameSelector(aimElementName))[0];
+            if (aimElement === undefined) {
+                aimElementName = aimElementName.split('+').reverse().join('+');
+                aimElement = cy.elements(nameSelector(aimElementName))[0];
+            }
             var x, y;
             if (aimElement.isEdge()) {
                 const nodes = aimElement.connectedNodes();
