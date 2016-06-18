@@ -19,6 +19,7 @@ class UndirectedWeightedGraph implements Graph {
     private final int numberOfVertices;
     private int numberOfEdges;
     private List<Map<Integer, Integer>> adjacencyEdgeList;
+    private Set<Integer> mainVerticesSet;
 
     UndirectedWeightedGraph(final int numberOfVertices) {
         if (numberOfVertices < 1) {
@@ -103,9 +104,57 @@ class UndirectedWeightedGraph implements Graph {
                 deltaIndex(srcVrtxIndx, dstVrtxIndx);
     }
 
+    private void collectMainVerticesSet() {
+        final Set<Integer> mainVerticesSet = new HashSet<>();
+        final Set<Integer> checkedVertices = new HashSet<>();
+        mainVerticesSet.add(0);
+        mainVerticesSet.addAll(adjacencyEdgeList.get(0).keySet());
+        checkedVertices.add(0);
+        while (checkedVertices.size() < mainVerticesSet.size()) {
+            Set<Integer> currentVerticesSet = new HashSet<>();
+            mainVerticesSet.stream().filter(vertex -> !checkedVertices.contains(vertex))
+                    .forEach(vertex -> {
+                        currentVerticesSet.addAll(adjacencyEdgeList.get(vertex).keySet());
+                        checkedVertices.add(vertex);
+                    });
+            mainVerticesSet.addAll(currentVerticesSet);
+        }
+        this.mainVerticesSet = mainVerticesSet;
+    }
+
+    @Override
+    public void fillGaps() {
+        if (numberOfVertices < 2) {
+            return;
+        }
+        if (! mainVerticesSet.contains(0)) {
+            putEdge(0, 1, nextWeight(0, 1));
+        }
+        if (numberOfVertices == 2) {
+            return;
+        }
+        if (numberOfVertices > 2) {
+            final int lastIndex = numberOfVertices - 1;
+            final int preLastIndex = lastIndex - 1;
+            if (! mainVerticesSet.contains(lastIndex)) {
+                putEdge(preLastIndex, lastIndex, nextWeight(preLastIndex, lastIndex));
+            }
+            for (int i = 1; i < lastIndex; i++) {
+                if (! mainVerticesSet.contains(i)) {
+                    putEdge(i, i + 1, nextWeight(i, i + 1));
+                }
+            }
+        }
+    }
+
     @Override
     public Set<Integer> nextVertices(final int vrtxIndx) {
         return adjacencyEdgeList.get(vrtxIndx).keySet();
     }
 
+    @Override
+    public boolean hasSpanningTree() {
+        collectMainVerticesSet();
+        return mainVerticesSet.size() == numberOfVertices;
+    }
 }
