@@ -49,6 +49,6 @@ public class ServerApiImpl implements ServerApi {
 
 	@Override
 	public Map<String, String> whereAreCompetitors() {
-		return null;
+		return game.knowWhereAreCompetitors();
 	}
 }

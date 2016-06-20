@@ -16,6 +16,7 @@ interface ElementsConstants {
     String THRESHOLD_OF_BENEFIT_KEY = "benefitThreshold";
     String OBSTACLE_MAX_FACTOR_KEY = "obstacleMaxFactor";
     String BENEFIT_MAX_FACTOR_KEY = "benefitMaxFactor";
+    String FULL_RECONNECTION_KEY = "fullReconnection";
     JsonObject SETTINGS = Engine.getSettings().getJsonObject(SETTINGS_KEY);
     String VERTICES_FILE_PATH = SETTINGS.getString(VERTICES_FILE_PATH_KEY);
     int GRID_STEP = SETTINGS.getInt(GRID_STEP_KEY);
@@ -31,6 +32,8 @@ interface ElementsConstants {
             SETTINGS.getJsonNumber(OBSTACLE_MAX_FACTOR_KEY).doubleValue();
     double BENEFIT_MAX_FACTOR =
             SETTINGS.getJsonNumber(BENEFIT_MAX_FACTOR_KEY).doubleValue();
+    boolean FULL_RECONNECTION =
+            SETTINGS.getBoolean(FULL_RECONNECTION_KEY);
 
 
 

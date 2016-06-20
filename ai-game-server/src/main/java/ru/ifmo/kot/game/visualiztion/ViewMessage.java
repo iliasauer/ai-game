@@ -1,7 +1,5 @@
 package ru.ifmo.kot.game.visualiztion;
 
-import ru.ifmo.kot.game.model.EdgeContent;
-
 public class ViewMessage {
 
     private final Type type;

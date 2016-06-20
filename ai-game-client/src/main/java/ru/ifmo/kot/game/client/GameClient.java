@@ -2,8 +2,10 @@ package ru.ifmo.kot.game.client;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.ifmo.kot.game.aibase.Ai;
+import ru.ifmo.kot.api.ServerApi;
 import ru.ifmo.kot.game.ai.AiImpl;
+import ru.ifmo.kot.game.ai.RepeaterAi;
+import ru.ifmo.kot.game.aibase.Ai;
 import ru.ifmo.kot.game.api.ServerApiImpl;
 import ru.ifmo.kot.protocol.function.Action;
 import ru.ifmo.kot.protocol.Command;
@@ -26,7 +28,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.Random;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -246,7 +247,8 @@ public class GameClient {
     public class Game {
 
         private final ExecutorService executor = Executors.newSingleThreadExecutor();
-        private final Ai ai = new AiImpl(new ServerApiImpl(GameClient.Game.this));
+        final ServerApi api = new ServerApiImpl(GameClient.Game.this);
+        private final Ai ai = new AiImpl(api);
         private String startVertex;
         private String currentVertex;
         private String finishVertex;
@@ -287,6 +289,20 @@ public class GameClient {
                 final String s = ai.move();
                 sendMessage(Command.MOVE, s);
             });
+        }
+
+        @SuppressWarnings("unchecked")
+        public  Map<String, String> knowWhereAreCompetitors() {
+            final Future<Void> future =
+                    executor.submit(getSendMessageTask(Command.COMPETITORS_POSITIONS));
+            try {
+                future.get(20, TimeUnit.SECONDS);
+            } catch (final InterruptedException | ExecutionException e) {
+                LOGGER.error("Internal error");
+            } catch(TimeoutException e) {
+                LOGGER.error("Timeout error");
+            }
+            return (Map<String, String>) responseMap.get(Command.COMPETITORS_POSITIONS.name());
         }
 
         @SuppressWarnings("unchecked")

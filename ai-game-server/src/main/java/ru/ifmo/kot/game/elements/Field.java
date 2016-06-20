@@ -32,13 +32,7 @@ import java.util.stream.IntStream;
 import static java.lang.Double.sum;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
-import static ru.ifmo.kot.game.elements.ElementsConstants.COEFFICIENT_OF_EDGE_CONTENT_NUMBER;
-import static ru.ifmo.kot.game.elements.ElementsConstants.GRID_STEP;
-import static ru.ifmo.kot.game.elements.ElementsConstants.OBSTACLE_MAX_FACTOR;
-import static ru.ifmo.kot.game.elements.ElementsConstants.THRESHOLD_OF_BENEFIT;
-import static ru.ifmo.kot.game.elements.ElementsConstants.THRESHOLD_OF_OBSTACLE;
-import static ru.ifmo.kot.game.elements.ElementsConstants.VERTICES_FILE_PATH;
-import static ru.ifmo.kot.game.elements.ElementsConstants.VERTICES_NAMES_KEY;
+import static ru.ifmo.kot.game.elements.ElementsConstants.*;
 
 public class Field {
 
@@ -82,8 +76,7 @@ public class Field {
                                     JsonString::getString, Collectors.toList()));
             final int numberOfVertices = verticesNames.size();
             coordinates = distributeVerticesCoordinates(numberOfVertices);
-            gameModel = new SymbolGraph(verticesNames);
-            connectVertices();
+            connectVertices(verticesNames);
             arrangeEdgeContent();
 
         } else {
@@ -95,7 +88,8 @@ public class Field {
         LOGGER.info("Players should go from %s to %s", startVertices[0], startVertices[1]);
     }
 
-    private void connectVertices() {
+    private void connectVertices(final List<String> verticesNames) {
+        gameModel = new SymbolGraph(verticesNames);
         final int numberOfVertices = coordinates.size();
         for (int srcVrtxIndex = 0; srcVrtxIndex < numberOfVertices; srcVrtxIndex++) {
             final int QUEUE_MAX_SIZE = 5;
@@ -120,6 +114,13 @@ public class Field {
             for (int i = 0; i < numberOfEdges; i++) {
                 final Map.Entry<Integer, Integer> dstVrtxWeightPair = dstWeightArr[i];
                 gameModel.graph().putEdge(srcVrtxIndex, dstVrtxWeightPair.getKey(), dstVrtxWeightPair.getValue());
+            }
+        }
+        if (!gameModel.graph().hasSpanningTree()) {
+            if (FULL_RECONNECTION) {
+                connectVertices(verticesNames);
+            } else {
+                gameModel.graph().fillGaps();
             }
         }
     }

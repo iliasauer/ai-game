@@ -2,15 +2,11 @@ package ru.ifmo.kot.game.ai;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.eclipse.jetty.server.Server;
 import ru.ifmo.kot.api.ServerApi;
 import ru.ifmo.kot.game.aibase.AiBase;
-import ru.ifmo.kot.game.client.GameClient;
 
-import java.sql.Time;
 import java.util.List;
 import java.util.Random;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**

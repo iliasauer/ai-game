@@ -7,11 +7,12 @@
   "elements": {
     "verticesFilePath": "vertices.json",
     "gridStep": 170,
+    "fullReconnection": true,
     "numberOfLives": 3,
     "turnPoints": 100,
-    "contentCoefficient": 0.7,
-    "obstacleThreshold": 0.5,
-    "benefitThreshold": 0.3,
+    "contentCoefficient": 0.8,
+    "obstacleThreshold": 0.6,
+    "benefitThreshold": 0.7,
     "obstacleMaxFactor": 1.3,
     "benefitMaxFactor": 4.0
   }
